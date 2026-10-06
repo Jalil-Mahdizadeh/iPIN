@@ -8,9 +8,9 @@
 #SBATCH --mem=320G
 #SBATCH --time=12:00:00
 #SBATCH --open-mode=append
-#SBATCH --output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/logs/slurm-%x-%j.log
+#SBATCH --output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-v5-nonhuman/logs/slurm-%x-%j.log
 set -euo pipefail
-cd /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5
+cd /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-v5-nonhuman
 exec 9>predictions/sprint-hsp.lock
 flock -n 9
 test -f provenance/sprint-input.json

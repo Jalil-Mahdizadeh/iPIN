@@ -82,7 +82,7 @@ def audit_legacy():
         dsrows = [(*sorted((a, b)), int(y)) for a, b, y in map(str.split, dscript.open())]
         assert Counter(idrows) == Counter(rawrows) == Counter(dsrows)
         rows = [(*sorted((lookup[a], lookup[b])), y) for a, b, y in idrows]
-        native = PROJECT / f"bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.{split}.csv"
+        native = PROJECT / f"bechmark-v5-nonhuman/data/exposure/human.ppi.qrels.seq.{split}.csv"
         memo = {}
         def digest(s):
             if s not in memo:

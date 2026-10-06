@@ -10,7 +10,7 @@ def main():
         source=ROOT/rel;assert sha(source)==info['sha256'] and source.stat().st_size==info['bytes'],rel
         target=dest/rel;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,target)
     for rel in ['artifact-manifest.json','completed.json']:shutil.copy2(ROOT/rel,dest/rel)
-    other=PROJECT/'bechmark-nonhuman-v5';native=read(other/'provenance/selection.json')['models']['native-human']
+    other=PROJECT/'bechmark-v5-nonhuman';native=read(other/'provenance/selection.json')['models']['native-human']
     tuna=read(other/'provenance/tuna-human-download.json')
     for item in [native['checkpoint'],tuna]:assert sha(item['path'])==item['sha256']
     target=ROOT/'scripts/human_transfer_tuna';target.mkdir(exist_ok=True)

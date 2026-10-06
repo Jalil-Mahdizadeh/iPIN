@@ -1,6 +1,8 @@
 # Frozen v5 iPIN: nonhuman transfer benchmark
 
-The requested folder spelling, `bechmark-nonhuman-v5`, is retained. The models are the existing human-trained v5 checkpoints; this folder does not train or select a model on nonhuman data.
+This benchmark is stored in `bechmark-v5-nonhuman`. The models are the existing human-trained v5 checkpoints; this folder does not train or select a model on nonhuman data.
+
+This folder was renamed from `bechmark-nonhuman-v5`. Frozen results and provenance retain the original paths and hashes; a local compatibility symlink preserves access to those paths on the HPC. The symlink is excluded from Git. Completion manifests describe the original run, before the rename-related documentation and launcher edits.
 
 Read [PROTOCOL.md](PROTOCOL.md) for the frozen evaluation design, [provenance/roster.json](provenance/roster.json) for the 11 separately labeled predictors, and [provenance/prepared.json](provenance/prepared.json) for the five source datasets and checksums. The final comparison is [REPORT.md](REPORT.md), published only after complete coverage and analysis. Until `results/COMPLETE.json` exists, this benchmark is still in progress.
 
@@ -17,16 +19,16 @@ The native humanV11 reduced-precision pilot failed its numeric tolerance before 
 After every model completes, run from the project directory:
 
 ```bash
-bash bechmark-nonhuman-v5/scripts/container.sh analysis python scripts/collect.py
-bash bechmark-nonhuman-v5/scripts/container.sh analysis python scripts/analyze.py
-bash bechmark-nonhuman-v5/scripts/container.sh analysis python scripts/report_nonhuman.py
-bash bechmark-nonhuman-v5/scripts/container.sh analysis python scripts/verify_complete.py
+bash bechmark-v5-nonhuman/scripts/container.sh analysis python scripts/collect.py
+bash bechmark-v5-nonhuman/scripts/container.sh analysis python scripts/analyze.py
+bash bechmark-v5-nonhuman/scripts/container.sh analysis python scripts/report_nonhuman.py
+bash bechmark-v5-nonhuman/scripts/container.sh analysis python scripts/verify_complete.py
 ```
 
 Inference uses the existing ARM64 SIF images. CPU-only SPRINT uses the same upstream source compiled on Arrhenius x86 CPU nodes, with Boost headers extracted from its pinned SIF. Numerical qualification compares its native and sparse serial scorers against native SIF outputs. Sparse scoring omits unrequested cells while preserving each requested cell's arithmetic and accumulation order; it leaves native HSP/high-count preprocessing intact.
 
 SPRINT copying recovery (2026-10-05): job 3383829 was stopped before prediction because Python's 4 MiB input buffer refilled on each small random HSP-block read. Its completed 6.34 GB raw similarity file and 2.51 GB canonical prefix were preserved. Job 3402258 resumes validation and scoring with `slurm/sprint-score-mmap.sbatch`, using qualified memory-mapped copying and the unchanged scorer. The new canonical file must match the preserved prefix exactly before scoring. See [recovery provenance](provenance/sprint-copy-recovery.json) and [byte-equivalence checks](qualification/sprint-copy/qualification.json). This does not repeat HSP generation or change the training graph, sequences, HSP records, their ordering, or SPRINT parameters.
 
-All four main figure groups now include 13 models: the original eleven plus the two completed historical v2 controls (length-capped update 8,000 and clean BCE update 4,000). The saved predictions and full-test bootstrap samples were reused. [Combined figure metrics](results/combined-figure-metrics.csv), [intervals](results/combined-figure-confidence-intervals.csv), and [verification](provenance/historical-figure-extension.json) accompany the figures. The prior eleven-model figures are preserved in `archive/figures-before-v1-v4-inclusion/`. Rebuild these combined figures with `bash bechmark-nonhuman-v5/scripts/container.sh analysis python scripts/plot_with_historical.py` from the project root.
+All four main figure groups now include 13 models: the original eleven plus the two completed historical v2 controls (length-capped update 8,000 and clean BCE update 4,000). The saved predictions and full-test bootstrap samples were reused. [Combined figure metrics](results/combined-figure-metrics.csv), [intervals](results/combined-figure-confidence-intervals.csv), and [verification](provenance/historical-figure-extension.json) accompany the figures. The prior eleven-model figures are preserved in `archive/figures-before-v1-v4-inclusion/`. Rebuild these combined figures with `bash bechmark-v5-nonhuman/scripts/container.sh analysis python scripts/plot_with_historical.py` from the project root.
 
 Exact matching is not a homology audit. The nonhuman tests were not protected during v5 human data construction. Known supervised membership of the precise RAPPPID and X-PAIR Bernett releases is not fully established. X-PAIR default includes substantial nonhuman supervised exposure and is not a clean human-only transfer baseline.

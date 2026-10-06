@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#SBATCH --job-name=bechmark-nonhuman-v5-pair
+#SBATCH --job-name=bechmark-v5-nonhuman-pair
 #SBATCH --account=naiss2025-3-10-gpu
 #SBATCH --partition=gpu
 #SBATCH --nodes=1
@@ -9,13 +9,13 @@
 #SBATCH --mem=400G
 #SBATCH --time=02:00:00
 #SBATCH --open-mode=append
-#SBATCH --output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/logs/slurm-%x-%j.log
+#SBATCH --output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-v5-nonhuman/logs/slurm-%x-%j.log
 set -euo pipefail
 cd /nobackup/proj/disk/theo-storage/personal/jalil/iPIN
 BENCH_NAME=${1:?model}; BENCH_RUNTIME=${2:?runtime}
-[[ -f bechmark-nonhuman-v5/provenance/runtime-inputs.json ]]
+[[ -f bechmark-v5-nonhuman/provenance/runtime-inputs.json ]]
 srun --ntasks=1 --gpus-per-node=4 --cpus-per-task=72 --cpu-bind=none --kill-on-bad-exit=1 \
- bash bechmark-nonhuman-v5/scripts/container.sh "$BENCH_RUNTIME" python scripts/pair_infer.py --model "$BENCH_NAME" --qualify
+ bash bechmark-v5-nonhuman/scripts/container.sh "$BENCH_RUNTIME" python scripts/pair_infer.py --model "$BENCH_NAME" --qualify
 srun --ntasks=1 --gpus-per-node=4 --cpus-per-task=72 --cpu-bind=none --kill-on-bad-exit=1 \
- bash bechmark-nonhuman-v5/scripts/container.sh "$BENCH_RUNTIME" python scripts/launch_workers.py \
+ bash bechmark-v5-nonhuman/scripts/container.sh "$BENCH_RUNTIME" python scripts/launch_workers.py \
  scripts/pair_infer.py --model "$BENCH_NAME"

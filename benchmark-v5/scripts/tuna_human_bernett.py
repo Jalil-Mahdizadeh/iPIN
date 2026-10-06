@@ -29,7 +29,7 @@ def main():
     initial={k:v.clone() for k,v in model.state_dict().items()}
     enc,alphabet,_=load_encoder(EXTERNAL/'.private/frozen_pair_models_v1/bundle/encoder',device);enc.requires_grad_(False)
     # Reuse only exact-sequence, same-checkpoint features committed by the prior benchmark.
-    other=PROJECT/'bechmark-nonhuman-v5';oldmeta=read(other/'data/sequences.json');lookup={s:i for i,s in enumerate(meta['sha256'])}
+    other=PROJECT/'bechmark-v5-nonhuman';oldmeta=read(other/'data/sequences.json');lookup={s:i for i,s in enumerate(meta['sha256'])}
     z=np.full((len(meta['sequence']),256),np.nan,np.float32);reused=np.zeros(len(z),bool);cache_sources=[]
     for rank in range(4):
         q=read(other/'qualification'/f'tuna-rank-{rank:02d}.json');d=read(other/'features/tuna'/f'rank-{rank:02d}.done.json')

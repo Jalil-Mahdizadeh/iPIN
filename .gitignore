@@ -107,3 +107,6 @@ literature/string-v11-baselines/logs/*
 
 # Git-local review bundles and export inventories
 .publication-review/
+
+# Local compatibility symlink for absolute paths in frozen benchmark records
+/bechmark-nonhuman-v5

@@ -23,7 +23,7 @@ def main():
     provenance = ROOT / "provenance"
     provenance.mkdir(parents=True, exist_ok=True)
     previous = PROJECT / "benchmark-v5/provenance/human-releases-exposure.json"
-    native_origin = PROJECT / "bechmark-nonhuman-v5/provenance/native-human-exposure-inputs.json"
+    native_origin = PROJECT / "bechmark-v5-nonhuman/provenance/native-human-exposure-inputs.json"
     origin = {x["sha256"]: x["url"] for x in json.loads(native_origin.read_text())}
     audit = json.loads(previous.read_text())
     records = []
