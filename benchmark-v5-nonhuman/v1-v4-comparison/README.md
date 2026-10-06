@@ -13,11 +13,11 @@ The comparison uses both native releases and the two v5 models, reusing their co
 From the project root:
 
 ```bash
-bash bechmark-v5-nonhuman/scripts/container.sh native python scripts/historical_infer.py --model v2-capped --qualify
-bash bechmark-v5-nonhuman/scripts/container.sh native python scripts/historical_infer.py --model v2-clean-bce --qualify
-sbatch --job-name=nhv5-v2-capped bechmark-v5-nonhuman/slurm/historical.sbatch v2-capped
-sbatch --job-name=nhv5-v2-clean-bce bechmark-v5-nonhuman/slurm/historical.sbatch v2-clean-bce
-bash bechmark-v5-nonhuman/scripts/container.sh analysis python scripts/historical_analyze.py
+bash benchmark-v5-nonhuman/scripts/container.sh native python scripts/historical_infer.py --model v2-capped --qualify
+bash benchmark-v5-nonhuman/scripts/container.sh native python scripts/historical_infer.py --model v2-clean-bce --qualify
+sbatch --job-name=nhv5-v2-capped benchmark-v5-nonhuman/slurm/historical.sbatch v2-capped
+sbatch --job-name=nhv5-v2-clean-bce benchmark-v5-nonhuman/slurm/historical.sbatch v2-clean-bce
+bash benchmark-v5-nonhuman/scripts/container.sh analysis python scripts/historical_analyze.py
 ```
 
 Resubmit the same model command after an interruption; verified committed chunks are reused. Do not launch simultaneous workers for the same model/rank. The analyzer refuses incomplete coverage and never reruns baseline inference.

@@ -12,7 +12,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT = ROOT.parent.parent
 PREVIOUS = PROJECT / 'literature/string-v11-train-degree-baseline'
-NONHUMAN = PROJECT / 'bechmark-v5-nonhuman'
+NONHUMAN = PROJECT / 'benchmark-v5-nonhuman'
 SPECIES = ['mouse', 'fly', 'worm', 'yeast', 'ecoli']
 DATASETS = ['human-validation'] + SPECIES
 BASELINES = ['exact-degree', 'homology-degree', 'sequence-propensity', 'interolog']

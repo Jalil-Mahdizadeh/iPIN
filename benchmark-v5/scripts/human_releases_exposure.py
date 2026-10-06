@@ -10,7 +10,7 @@ def main():
     endpoints=np.zeros(len(lookup),np.uint8);hit=np.zeros(len(union),np.uint8)
     source_positive=hit.copy();source_negative=hit.copy();sources=[]
     for split,bit in [('train',1),('test',2)]:
-        csvpath=PROJECT/'bechmark-v5-nonhuman/data/exposure'/f'human.ppi.qrels.seq.{split}.csv'
+        csvpath=PROJECT/'benchmark-v5-nonhuman/data/exposure'/f'human.ppi.qrels.seq.{split}.csv'
         source=Counter();memo={};n=positive=0
         def digest(s):
             if s not in memo:memo[s]=hashlib.sha256(s.encode()).hexdigest()

@@ -55,7 +55,7 @@ def qualify(device):
         le=float(abs(z-ref).max());pe=float(abs(expit(z)-expit(ref)).max());assert le<=.002 and pe<=.0001
         padding.append({'rows':ids[positions].tolist(),'logit_error':le,'probability_error':pe})
     # Same frozen weights/precision as the independently qualified five-species release.
-    other=PROJECT/'bechmark-v5-nonhuman';q=read(other/'qualification/native-human.json');assert q['passed']
+    other=PROJECT/'benchmark-v5-nonhuman';q=read(other/'qualification/native-human.json');assert q['passed']
     atomic(ROOT/'qualification/native-human.json',{'passed':True,'fingerprint':contract,'at_utc':now(),
         'cases':cases,'padding_checks':padding,'previous_qualification':record(other/'qualification/native-human.json'),
         'native_raw_tokenizer_and_eager_attention':True,'no_truncation':True,'test_metrics_read':False,

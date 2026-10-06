@@ -8,7 +8,7 @@ Research code, protocols, provenance and evaluation results for protein–protei
 - [V5 simple-baseline benchmark](benchmark-v5-baselines/REPORT.md): three fixed CPU methods refitted on v5 TRAIN and evaluated on v5 validation and both tests. Their AP and AUROC are approximately 0.500–0.506; the iPIN checkpoints score substantially higher. This addresses the tested mechanisms, not every possible dataset bias.
 - [STRING V11 simple baselines](literature/string-v11-baselines/REPORT.md): the same homology-transferred degree, sequence-propensity and interolog methods on V11 human validation and five species.
 - [Exact V11 TRAIN-degree assessment](literature/string-v11-train-degree-baseline/REPORT.md): independent verification of AP 0.8360 and AUROC 0.9635 on the released human validation data.
-- [Five-species model benchmark](bechmark-v5-nonhuman/REPORT.md): mouse, fly, worm, yeast and E. coli.
+- [Five-species model benchmark](benchmark-v5-nonhuman/REPORT.md): mouse, fly, worm, yeast and E. coli.
 
 The two v5 tests share their positive pairs and are not independent replications. Their 1:1 class balance also differs from V11's approximately 1:10 ratio, so raw AP should not be compared across these settings without accounting for prevalence.
 
@@ -41,6 +41,6 @@ bash benchmark-v5-baselines/scripts/run.sh
 
 The V11 baseline folder was renamed from `literature/V11-baselines` to `literature/string-v11-baselines`; older provenance retains the original absolute paths. Preserve or remap those paths when restoring that archived run.
 
-The nonhuman benchmark folder was renamed from `bechmark-nonhuman-v5` to `bechmark-v5-nonhuman`. Frozen result and provenance records retain their original paths and hashes. The HPC workspace has an ignored compatibility symlink from the old name to the new name; recreate that link when using those archived absolute paths. Completion manifests describe the original run, before documentation and launcher paths were updated for the rename.
+The nonhuman benchmark folder was renamed from `bechmark-nonhuman-v5` to `benchmark-v5-nonhuman`. Frozen result and provenance records retain their original paths and hashes. The HPC workspace has an ignored compatibility symlink from the old name to the new name; recreate that link when using those archived absolute paths. Completion manifests describe the original run, before documentation and launcher paths were updated for the rename.
 
 Method definitions, source attribution, uncertainty estimates and limitations are recorded in the individual protocols and reports.

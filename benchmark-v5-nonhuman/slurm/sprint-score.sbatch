@@ -8,9 +8,9 @@
 #SBATCH --mem=160G
 #SBATCH --time=04:00:00
 #SBATCH --open-mode=append
-#SBATCH --output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-v5-nonhuman/logs/slurm-%x-%j.log
+#SBATCH --output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/logs/slurm-%x-%j.log
 set -euo pipefail
-cd /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-v5-nonhuman
+cd /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman
 exec 9>predictions/sprint-score.lock
 flock -n 9
 OMP_NUM_THREADS=1 python3 scripts/run_sprint_cpu.py
