@@ -1,0 +1,15 @@
+{
+  "counts": {
+    "discarded": 287829,
+    "feasible": true,
+    "retained": 433253,
+    "train": 350382,
+    "train_fraction": 0.8087237710991038,
+    "val": 82871,
+    "val_fraction": 0.19127622890089624
+  },
+  "elapsed_seconds": 1797.183446074996,
+  "raw_dual_bound": -637657.8385087491,
+  "solver_observed_feasible_incumbent": true,
+  "updated_utc": "2026-10-02T19:36:43.886348+00:00"
+}

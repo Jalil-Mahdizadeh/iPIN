@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "code": {
+    "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+  },
+  "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+  "source_sha256": {
+    "configs/clean-cls-linear-lr2e-5-fold2-seed2.json": "e99e9cf28cd52c25309a1bdc929bd946a753afaf237ff3a1ce072fcb755890de",
+    "configs/qualification.json": "1d0b471a8746a6dac73cd1602da7f2829fe06f7700e922dea42b89e939c7a592",
+    "configs/clean-residue-mean-lr5e-6-fold2-seed2.json": "9a2a9c8fe5a10d2f0be98df51ed3f9ca35179ad644803aae8470e9d9581d5464",
+    "configs/clean-cls-linear-lr5e-6-fold0-seed2.json": "b11fa1e4a99fe993332032c17dfb1c3392c35948e7af347a39d508ff3b26e724",
+    "configs/clean-cls-mlp-lr2e-5-fold2-seed2.json": "e6e0179568c40e1f2643150b6a38fa54a14c59ba19dc1421fe4dcb2e53705ae2",
+    "configs/clean-cls-mlp-lr2e-5-fold1-seed2.json": "d395912b77f20224020f55598864a9a8525cda3da04913b8a5387737523af983",
+    "configs/clean-residue-mean-lr5e-6-fold1-seed2.json": "acbef13679beee5216fc18e1acee12c4d46db4bb80a4ba68522ae54a64acf018",
+    "configs/clean-cls-mlp-lr5e-6-fold0-seed2.json": "da1ecf4a8ffd1999fad83e72871168f224ac3ade00f1994b269ff2c8afd036af",
+    "configs/clean-cls-mlp-lr5e-6-fold1-seed2.json": "69d61fb63fa8c3953ea9ef0b959370028fc61f6912a7adbfac6c3ed6c969fdac",
+    "configs/clean-cls-linear-lr5e-6-fold2-seed2.json": "b293efe2665215ef19a5e2fdd331d788223e97974a1c858bcf691a1198313c92",
+    "configs/clean-cls-mlp-lr2e-5-fold0-seed2.json": "472837acd7ca4d2600d2208e87e33a712472aeaab838f2cb668756958c168b1c",
+    "configs/clean-cls-linear-lr5e-6-fold1-seed2.json": "4a34cc8b4b0ef1d7732a8e400a80335ff6d93463c02bb3b3bb707e3255697df2",
+    "configs/clean-residue-mean-lr5e-6-fold0-seed2.json": "1296af8419509399646e1c8583a12dfd1b529462ddf5ea8d32109903782da26f",
+    "configs/clean-residue-mean-lr2e-5-fold0-seed2.json": "ba5fde56b2b23234aa13405a58adf61153f1b24682fbbef6f0e1452dbbced5c8",
+    "configs/campaign.json": "e4260d123558726c3b323291976aab88bcef3b99e84262eb942177fdf8ce110f",
+    "configs/clean-cls-linear-lr2e-5-fold0-seed2.json": "0f273acc84b9f05cdbc9d9e1e972d1602cfb248d9e72998ad9f4aa8e4549daed",
+    "configs/clean-residue-mean-lr2e-5-fold2-seed2.json": "befe2ddc4f4af58a52b33aea1309c91e97909ea730f8b75ce9655c4aef1188a3",
+    "configs/clean-cls-linear-lr2e-5-fold1-seed2.json": "c6ce6fba12b9cf4d73ad8b3d0f605b27e319c003cae89f4ec240ec110c8fdb71",
+    "configs/clean-cls-mlp-lr5e-6-fold2-seed2.json": "a6f28fb21bc55848ddd12be9f964e620a65c21d1a3dc8de1f7e65c72534b8cb4",
+    "configs/clean-residue-mean-lr2e-5-fold1-seed2.json": "891c63a0fd440a3e8cec68e3cac63f80beb6706015f3c2025afa8033bd40903d",
+    "configs/clean-capped-official-seed2.json": "5551276eced7c0beb01d0f7a54008bfe1b8a7e7939f6df6b1086a5bb053008a7",
+    "scripts/qualify_v3.py": "89ca37ff1159d9851d052d9e3f89f92d065add79c2580ed9ca107478772c2c23",
+    "scripts/metrics.py": "4e0ccc96e4d38d718550deb32bbd225ed5f6ca6bbf44f4070bd05814a47b41f2",
+    "scripts/make_configs.py": "6575c78ef9050cd65c2176c1b21b886e711df24e211781926413389cb9088de9",
+    "provenance/v2-qualification/science.json": "5fbe4d68dc98334cde96796138fbd0f363ace27c497b43be9b9056db1382f02d",
+    "provenance/v2-qualification/ddp.json": "a12c19d93bfe419a7606348637376b54b0da6ee645b5c0940f6a5c38bbbb3215",
+    "provenance/v2-qualification/signal-resume.json": "6b2ec0aaf0a27603575e99ef7d5dd824bf557ebdef1b83ba256e1f1b02911537",
+    "provenance/v2-qualification/checkpoint-faults.json": "c9423d87a81b707936581c1364f10dd4777cc9db6776e8d21c797bae0b430479",
+    "provenance/v2-qualification/scheduler-requeue.json": "4528de1b069c63a9c9b0575421438ff6f9dcece26c8234ce83e1b470e9fb0c5c",
+    "provenance/v2-qualification/full-model-profile.json": "fa8e5f4c81bb77ab8fc361b7c8bd36beeed9af2467f0d7fea91e8a9b596b6bcd"
+  },
+  "initial_runs": [
+    "clean-cls-linear-lr2e-5-fold0-seed2",
+    "clean-cls-linear-lr2e-5-fold1-seed2",
+    "clean-cls-linear-lr2e-5-fold2-seed2",
+    "clean-cls-linear-lr5e-6-fold0-seed2",
+    "clean-cls-linear-lr5e-6-fold1-seed2",
+    "clean-cls-linear-lr5e-6-fold2-seed2"
+  ],
+  "folds": [
+    {
+      "fold": 0,
+      "train_rows": 73691,
+      "val_rows": 17490,
+      "crossing_unused": 71904,
+      "pair_exposures": 384000,
+      "effective_epochs": 5.210948419752751,
+      "maximum_train_tokens": 12219,
+      "maximum_val_tokens": 16322
+    },
+    {
+      "fold": 1,
+      "train_rows": 71698,
+      "val_rows": 18285,
+      "crossing_unused": 73102,
+      "pair_exposures": 384000,
+      "effective_epochs": 5.355797930207258,
+      "maximum_train_tokens": 16322,
+      "maximum_val_tokens": 10416
+    },
+    {
+      "fold": 2,
+      "train_rows": 71986,
+      "val_rows": 18515,
+      "crossing_unused": 72584,
+      "pair_exposures": 384000,
+      "effective_epochs": 5.334370572055677,
+      "maximum_train_tokens": 16322,
+      "maximum_val_tokens": 11599
+    }
+  ],
+  "active_sequences": 7995,
+  "no_test_tokens": true,
+  "unchanged_v2_data": true,
+  "core_byte_identical_to_qualified_v2_release": true,
+  "inherited_qualification_scope": "Exact unchanged training/model/data/checkpoint engine; v3 launcher is separately tested. No claim of a new v3 real scheduler requeue.",
+  "objectives_explicitly_clean": true,
+  "controlled_configurations_checked": 19,
+  "folds_disjoint_and_no_dropped_sampling_rows": true,
+  "macro_eligibility_and_promotion_guards_verified": true,
+  "residual_head_counts_tiny": {
+    "cls_linear": 69249,
+    "cls_mlp": 102146,
+    "residue_mean": 102146
+  },
+  "zero_residual_preserves_initial_logits": true,
+  "pooling_excludes_special_and_padding_tokens": true
+}

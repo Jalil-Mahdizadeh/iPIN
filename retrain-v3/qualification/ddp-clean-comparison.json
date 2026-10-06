@@ -1,0 +1,31 @@
+{
+  "model": {
+    "tensor_count": 575,
+    "tensor_elements": 652401111
+  },
+  "optimizer": {
+    "tensor_count": 1599,
+    "tensor_elements": 1298803735
+  },
+  "training_state": {
+    "tensor_count": 0,
+    "tensor_elements": 0
+  },
+  "rng_by_rank": {
+    "tensor_count": 8,
+    "tensor_elements": 20288
+  },
+  "fingerprint": {
+    "tensor_count": 0,
+    "tensor_elements": 0
+  },
+  "world_size": {
+    "tensor_count": 0,
+    "tensor_elements": 0
+  },
+  "validation_predictions_bitwise_identical": true,
+  "passed": true,
+  "bitwise_identical": true,
+  "uninterrupted": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/ddp-clean-run-full",
+  "resumed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/ddp-clean-run-resumed"
+}

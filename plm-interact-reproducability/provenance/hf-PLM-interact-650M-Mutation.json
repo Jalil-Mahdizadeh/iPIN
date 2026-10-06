@@ -1,0 +1,61 @@
+{
+  "_id": "688a80e195ef2982590eeb06",
+  "id": "danliu1226/PLM-interact-650M-Mutation",
+  "private": false,
+  "tags": [
+    "pytorch",
+    "Mutation effect prediction",
+    "dataset:danliu1226/Mutation_effect_dataset",
+    "region:us"
+  ],
+  "downloads": 0,
+  "likes": 0,
+  "modelId": "danliu1226/PLM-interact-650M-Mutation",
+  "author": "danliu1226",
+  "sha": "cc97135bc142101376f4a884d7cd29a411816470",
+  "lastModified": "2025-07-30T21:01:25.000Z",
+  "gated": false,
+  "disabled": false,
+  "mask_token": "<mask>",
+  "model-index": null,
+  "config": {
+    "tokenizer_config": {
+      "cls_token": "<cls>",
+      "eos_token": "<eos>",
+      "mask_token": "<mask>",
+      "pad_token": "<pad>",
+      "unk_token": "<unk>"
+    }
+  },
+  "cardData": {
+    "tags": [
+      "Mutation effect prediction"
+    ],
+    "datasets": [
+      "danliu1226/Mutation_effect_dataset"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "pytorch_model.bin"
+    },
+    {
+      "rfilename": "special_tokens_map.json"
+    },
+    {
+      "rfilename": "tokenizer_config.json"
+    },
+    {
+      "rfilename": "vocab.txt"
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2025-07-30T20:30:25.000Z",
+  "usedStorage": 2609675141
+}

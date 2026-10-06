@@ -1,0 +1,18 @@
+{
+  "run": "symmetric-seed2",
+  "job_id": 3112401,
+  "submitted_at_utc": "2026-09-28T19:51:58.944898+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--job-name=plmi-v1-symmetric",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/slurm/train.sbatch",
+    "symmetric-seed2"
+  ],
+  "output": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/runs/symmetric-seed2",
+  "nodes": 1,
+  "gpus_per_node": 4,
+  "epochs": 5,
+  "total_updates": 12745,
+  "frozen_files_manifest_sha256": "421bf345c184eb365404476b346a8683b4deb5c4d4a14a595a78f675906a17ce"
+}

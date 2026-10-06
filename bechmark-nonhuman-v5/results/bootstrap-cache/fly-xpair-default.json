@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-default",
+    "test": "fly",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "9072984474b1d6117638a5de571d527305b4630e20b751c2254751a35b55ee75",
+    "scores": "38769a781f4244797c243b4bfa4caf75b0bfa39e0f801e044cc78a43284e19e3",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/fly-xpair-default.npz",
+    "bytes": 14665,
+    "sha256": "5ec9ac818f85ab704421f0bcb38601361df80452b1a7736937eae16fda697c68"
+  }
+}

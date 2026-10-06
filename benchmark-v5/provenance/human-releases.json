@@ -1,0 +1,133 @@
+{
+  "at_utc": "2026-10-05T17:03:01.769856+00:00",
+  "request": "Add the exact nonhuman humanV11 and TUnA seed-47 releases to both frozen v5 human tests",
+  "addendum": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/HUMAN-RELEASES-ADDENDUM.md",
+    "bytes": 2714,
+    "sha256": "a8a85e8734ea4ad25d2434da5b0f8aa7d77a5be83e2a99fc18b0bedaca4b3f08"
+  },
+  "previous_completion": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-human-releases/completed.json",
+    "bytes": 1156,
+    "sha256": "4ba6c7dbbde7618dae611f6ee44c0cc9136ecc0bad40d1b2d97a042b1cc3d326"
+  },
+  "previous_collection": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-human-releases/results/collection.json",
+    "bytes": 11134,
+    "sha256": "f59234e887cc06cd1b270c312e0178ff05eedc37c1334eb7e64b6c500bbd02e0"
+  },
+  "previous_manifest": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-human-releases/artifact-manifest.json",
+    "bytes": 33832,
+    "sha256": "b2a01b97767ee6a92d8346b7149ecc136fda0106281aaab2246f5ab95bc5798d"
+  },
+  "models": {
+    "native-human": {
+      "checkpoint": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/native-human.bin",
+        "bytes": 2609670405,
+        "sha256": "68c50e1dc84ee3cb6c08a7c83eefb382a29a3c1237fd577986854f746c63d665"
+      },
+      "base": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/assets/esm2",
+      "release": "danliu1226/PLM-interact-650M-humanV11",
+      "revision": "e86e392dec13dd0c23252c94947b04a7a9821b0e",
+      "source": "Verified existing SIF asset and prior reproduction"
+    },
+    "tuna-human": {
+      "checkpoint": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/tuna-human-seed47.pt",
+        "bytes": 143364769,
+        "sha256": "f63876dfdfb8a8a2c855bbb814a74b20ccf333dc8c75be00bf281365fcac6c07"
+      },
+      "revision": "eaec69cafc574d984119079220e75b11ffcb7c09",
+      "url": "https://huggingface.co/datasets/yk0/TUnA_models/resolve/eaec69cafc574d984119079220e75b11ffcb7c09/x-species/TUnA_seed47/model",
+      "seed": 47,
+      "hid_dim": 256,
+      "ff_dim": 1024
+    }
+  },
+  "inference_code": {
+    "scripts/native_human_bernett.py": "e3016472a8cf4a5729a5123e8220fa8eb5b97c0fe4d2eb3f66035dd114b523d0",
+    "scripts/tuna_human_bernett.py": "e46a664a8e1b61020409310ef711f09eb58dcb6f029bff53707ccbdf1db4f90f",
+    "scripts/pair_infer.py": "a9883cafa3fafa699a869cd2e1865fb8d4d517e5358a3497dc292c49c90c9dc0",
+    "scripts/bench_utils.py": "4edfb542692793b64c8c6ce5cf61a6bb38b9f8a7d2a9eeaed74b26e524aa1ae1",
+    "scripts/container.sh": "7fc8c90ac5f3b22ea2d470dab8ca4eef7233ae8098046dea92abe2c9bd621d1f",
+    "scripts/native_model/model.py": "7d7dfa0c86947bf47a9fe7ec4a20ee31a85693eea2ee3e26c125de7a5285fc9a",
+    "scripts/v5_model/data.py": "a940d7906b2449a1e4b3f37fcd62e4a9ab4fac5a3e537ff0d3c26916edf39d59",
+    "scripts/human_transfer_tuna/adapter.py": "0609d6e38a0885fcd96fa8a15b0e272db5f8e8487ee17dd3b0458ce57233674f",
+    "scripts/human_transfer_tuna/common.py": "bc5fddb8bb8bea7d627f2435e445fe0b9cbfaf79a3a922a573fcf7a71e13f73d",
+    "scripts/human_transfer_tuna/esm_cache.py": "42686a117c5ecd86ea854dde87c77ba162950406b4e5f0ea9b88cd179a58cbc6"
+  },
+  "frozen_data": {
+    "data/ilp.npy": "bced44a7b60dcdca586d2a076ed9979ad003f9e988a54c37ca259ea1ea63c21d",
+    "data/ipin-esm2-selected-dev.npz": "0e065ace2bcdc2733ee853d4b7bf4d9922ad217dbe62d0083670479e2034b91c",
+    "data/ipin-esmc-selected-dev.npz": "bd57aa218dcdfce048f37a65ac05cd8e7f2633e6d17f28bdfc10a180d3c32a33",
+    "data/native-original-reused.npz": "52a2b76dc9b30cfec5ba5fe414ca2abd4f9f41777415a205bc19ca2f5ba2d0cb",
+    "data/offsets.npy": "ccba3ed0988be45c426209e36a52e117875084a50e54fcc6cda64e79696d1a1f",
+    "data/original.npy": "402d3c928752fc3d91b1f17005cd68297d6df34a14fa6ae47e26e79a002f1188",
+    "data/pair-mapping.npz": "ddbeba9e2f459e7e33073a81ae4cf31e89a97a0caf71557c355b7a252a8620a2",
+    "data/sequences.json": "3b4ac0a9026070ef518f216cdf88ad51b776e4db007c3edd10f0c6ac9d7d7cab",
+    "data/test-sequences.fasta": "947a52bf70bca3c7af4661fbc6dfd816a925450c35ec4bf23cdad406477f8355",
+    "data/tokens.npy": "dc7e4ce3d13a44ca3baf3d63bc5faecf7075b055eb692a0703a05d4cf1577e3f",
+    "data/tuna-cache-indices.npy": "f16301772830dfa8caec3c0ca2d8767ff58bd8d2342ab297c47ebe3438ceeafe",
+    "data/union.npy": "340f13363a78f1cc89705220a21e853b85a447b3d82b4bddb0e055fc20e1e168",
+    "data/xpair-cache-indices.npy": "68c74500485ee8700205755f1011064d12d00def8a0cef2c3f62d1ae767d18df"
+  },
+  "prepared": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/prepared.json",
+    "bytes": 2803,
+    "sha256": "a72b0d84c4577b0682d297b577dd0ecaddb9c042631a605125b8554fe898a3c1"
+  },
+  "images": {
+    "native": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact/plm-interact-native-arm64-v1.sif",
+      "bytes": 13101785088,
+      "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+    },
+    "tuna": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/containers/images/tuna-arm64-v1.sif",
+      "bytes": 10666606592,
+      "sha256": "98070c7c2d206d8421817849e11ffce308016dc982938a7d9a3ef3141ab1dec1"
+    }
+  },
+  "copied_adapters": [
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/tuna/adapter.py",
+        "bytes": 4724,
+        "sha256": "0609d6e38a0885fcd96fa8a15b0e272db5f8e8487ee17dd3b0458ce57233674f"
+      },
+      "copy": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/human_transfer_tuna/adapter.py",
+        "bytes": 4724,
+        "sha256": "0609d6e38a0885fcd96fa8a15b0e272db5f8e8487ee17dd3b0458ce57233674f"
+      }
+    },
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/tuna/esm_cache.py",
+        "bytes": 9715,
+        "sha256": "42686a117c5ecd86ea854dde87c77ba162950406b4e5f0ea9b88cd179a58cbc6"
+      },
+      "copy": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/human_transfer_tuna/esm_cache.py",
+        "bytes": 9715,
+        "sha256": "42686a117c5ecd86ea854dde87c77ba162950406b4e5f0ea9b88cd179a58cbc6"
+      }
+    },
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/tuna/common.py",
+        "bytes": 2504,
+        "sha256": "bc5fddb8bb8bea7d627f2435e445fe0b9cbfaf79a3a922a573fcf7a71e13f73d"
+      },
+      "copy": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/human_transfer_tuna/common.py",
+        "bytes": 2504,
+        "sha256": "bc5fddb8bb8bea7d627f2435e445fe0b9cbfaf79a3a922a573fcf7a71e13f73d"
+      }
+    }
+  ],
+  "selection_uses_these_tests": false,
+  "training": false
+}

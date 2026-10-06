@@ -1,0 +1,11 @@
+{
+  "job_id": "3300703",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/slurm/qualify.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/qualification/frozen-code"
+  ],
+  "time_utc": "2026-10-02T20:02:54.057701+00:00",
+  "purpose": "two full-size four-GPU four-update resume checks; no production models"
+}

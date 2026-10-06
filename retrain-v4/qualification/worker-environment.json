@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "scope": "Two distributed worker processes import the pinned ESM C SDK/adapter from its venv; no GPU training in this launcher check.",
+  "entrypoint": "python -m torch.distributed.run",
+  "workers": [
+    {
+      "passed": true,
+      "rank": 0,
+      "world_size": 2,
+      "python": "/opt/esmc/venv/bin/python",
+      "prefix": "/opt/esmc/venv",
+      "esm": "3.2.3",
+      "model_adapter_imported": true,
+      "gpu_training_performed": false
+    },
+    {
+      "passed": true,
+      "rank": 1,
+      "world_size": 2,
+      "python": "/opt/esmc/venv/bin/python",
+      "prefix": "/opt/esmc/venv",
+      "esm": "3.2.3",
+      "model_adapter_imported": true,
+      "gpu_training_performed": false
+    }
+  ],
+  "source_sha256": {
+    "scripts/check_worker_environment.py": "e288b675fb04ebf3a2164b0c521eab0dbe832ffbf8692524ae11826e7ab635a1",
+    "scripts/container.sh": "6e42e0d539b06bb29875f8f87d8536326d1d9653286fa66047d0101aac1c16d1",
+    "slurm/train.sbatch": "df501e224ffce8811be10d0dd8de253cda823bd3f3e207583c590161da58542b"
+  }
+}

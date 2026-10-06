@@ -1,0 +1,63 @@
+{
+  "_id": "685d4abefba980f80a4d624a",
+  "id": "danliu1226/cross_species_benchmarking",
+  "author": "danliu1226",
+  "sha": "19dbed25184466fda5341b5ba70c2560ade1bf85",
+  "lastModified": "2025-08-08T20:08:40.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "size_categories:100K<n<1M",
+    "format:csv",
+    "modality:text",
+    "library:datasets",
+    "library:dask",
+    "library:mlcroissant",
+    "library:polars",
+    "region:us",
+    "biology"
+  ],
+  "description": "**Repository: https://d-script.readthedocs.io/en/stable/data.html\n**Reference:  \tSledzieski, S., Singh, R., Cowen, L. & Berger, B. D-SCRIPT translates genome to phenome with sequence-based, structure-aware, genome-scale predictions of protein-protein interactions. Cell Systems 12, 969-982.e6 (2021).\n",
+  "downloads": 148,
+  "likes": 2,
+  "cardData": {
+    "tags": [
+      "biology"
+    ],
+    "size_categories": [
+      "100K<n<1M"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "test/ecoli.ppi.qrels.seq.test.csv"
+    },
+    {
+      "rfilename": "test/fly.ppi.qrels.seq.test.csv"
+    },
+    {
+      "rfilename": "test/mouse.ppi.qrels.seq.test.csv"
+    },
+    {
+      "rfilename": "test/worm.ppi.qrels.seq.test.csv"
+    },
+    {
+      "rfilename": "test/yeast.ppi.qrels.seq.test.csv"
+    },
+    {
+      "rfilename": "train/human.ppi.qrels.seq.train.csv"
+    },
+    {
+      "rfilename": "val/human.ppi.qrels.seq.test.csv"
+    }
+  ],
+  "createdAt": "2025-06-26T13:27:26.000Z",
+  "usedStorage": 1040046188
+}

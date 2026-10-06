@@ -1,0 +1,41 @@
+{
+  "completed_at_utc": "2026-10-02T10:03:47.804791+00:00",
+  "benchmark_completed": true,
+  "scope": "C0 ESMC standard-attention benchmark",
+  "models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric",
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce",
+    "v3-residue-mlp",
+    "v4-esmc-standard"
+  ],
+  "fresh_test_inference_models": [
+    "v4-esmc-standard"
+  ],
+  "reused_test_inference_models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric",
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce",
+    "v3-residue-mlp"
+  ],
+  "test_rows_per_model": 52048,
+  "selected_update": 7000,
+  "training_horizon_completed": true,
+  "prediction_fingerprint": "c34a0054e0989543c8f2f1368a0eab1fe8d2c8c1aefabdec07737ab8b46f7d1a",
+  "summary_sha256": "64a14020c4fae7ebcee90b6260055a0b1511ec07742892ebe1ad5bfff8b3ca58",
+  "macro_summary_sha256": "dbcc4ae4c7a39c08d6fcacc4b9814c66bc4dc379409065c572fbdfbe013ef390",
+  "report_sha256": "62924be49159a833794cb661e4707ece1835ab2667d4f22ddcbfb3c15c95fa1f",
+  "all_coverage_and_numerical_checks_passed": true,
+  "c0_descriptive_numerical_practical_gain_criterion_met": false,
+  "original_c1_primary_comparison_completed": false,
+  "conclusion": "ESMC standard attention does not outperform native in pooled test AP.",
+  "additional_training_or_model_search_scheduled": false
+}

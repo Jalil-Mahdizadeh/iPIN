@@ -1,0 +1,12 @@
+{
+  "file": "update-000000004.pt",
+  "sha256": "fa540a06963ce12f89fea97ebb80fb1bad3457e90250bba0e33a337d16c3b01f",
+  "bytes": 7818552843,
+  "update": 4,
+  "epoch": 3,
+  "next_chunk": 3,
+  "world_size": 4,
+  "fingerprint": "2affd0f2460fe68b32687ab0e14e78d22d8322483601469e4faf3c4d55b950cf",
+  "best_update": 2,
+  "best_ap": 0.5011904761904762
+}

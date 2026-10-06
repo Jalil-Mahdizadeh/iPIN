@@ -1,0 +1,293 @@
+{
+  "backbone": "esmc",
+  "training_pair_indices": [
+    94584,
+    52702,
+    117453,
+    64727,
+    99600,
+    3808,
+    113934,
+    51921
+  ],
+  "no_optimizer_steps": true,
+  "test_data_used": false,
+  "masked_residue_protocol": "15% of actual residues independently masked in both orientations with fixed seed; diagnostics, not a held-out benchmark",
+  "stages": {
+    "pretrained": {
+      "masked_residue": {
+        "standard": {
+          "mean_ce": 1.4784409353666217,
+          "tokens": 2354,
+          "accuracy": 0.5305862361937128,
+          "pairs": [
+            {
+              "pair": 94584,
+              "tokens": 115,
+              "mean_ce": 1.3885184526443481
+            },
+            {
+              "pair": 52702,
+              "tokens": 116,
+              "mean_ce": 1.2766505479812622
+            },
+            {
+              "pair": 117453,
+              "tokens": 193,
+              "mean_ce": 1.284362554550171
+            },
+            {
+              "pair": 64727,
+              "tokens": 146,
+              "mean_ce": 0.47223010659217834
+            },
+            {
+              "pair": 99600,
+              "tokens": 290,
+              "mean_ce": 0.9150744080543518
+            },
+            {
+              "pair": 3808,
+              "tokens": 391,
+              "mean_ce": 2.29538893699646
+            },
+            {
+              "pair": 113934,
+              "tokens": 561,
+              "mean_ce": 1.8826817274093628
+            },
+            {
+              "pair": 51921,
+              "tokens": 542,
+              "mean_ce": 1.1745353937149048
+            }
+          ]
+        },
+        "chain_aware": {
+          "mean_ce": 3.107780631558816,
+          "tokens": 2354,
+          "accuracy": 0.08538657604078165,
+          "pairs": [
+            {
+              "pair": 94584,
+              "tokens": 115,
+              "mean_ce": 3.0591869354248047
+            },
+            {
+              "pair": 52702,
+              "tokens": 116,
+              "mean_ce": 2.9422523975372314
+            },
+            {
+              "pair": 117453,
+              "tokens": 193,
+              "mean_ce": 3.234710216522217
+            },
+            {
+              "pair": 64727,
+              "tokens": 146,
+              "mean_ce": 3.2777175903320312
+            },
+            {
+              "pair": 99600,
+              "tokens": 290,
+              "mean_ce": 3.166975736618042
+            },
+            {
+              "pair": 3808,
+              "tokens": 391,
+              "mean_ce": 2.9932777881622314
+            },
+            {
+              "pair": 113934,
+              "tokens": 561,
+              "mean_ce": 2.960512399673462
+            },
+            {
+              "pair": 51921,
+              "tokens": 542,
+              "mean_ce": 3.265903949737549
+            }
+          ]
+        }
+      },
+      "ppi_gradient": {}
+    },
+    "trained_chain_best1000": {
+      "masked_residue": {
+        "standard": {
+          "mean_ce": 1.4971026904317617,
+          "tokens": 2354,
+          "accuracy": 0.5246389124893798,
+          "pairs": [
+            {
+              "pair": 94584,
+              "tokens": 115,
+              "mean_ce": 1.3613872528076172
+            },
+            {
+              "pair": 52702,
+              "tokens": 116,
+              "mean_ce": 1.3007123470306396
+            },
+            {
+              "pair": 117453,
+              "tokens": 193,
+              "mean_ce": 1.2806097269058228
+            },
+            {
+              "pair": 64727,
+              "tokens": 146,
+              "mean_ce": 0.46780383586883545
+            },
+            {
+              "pair": 99600,
+              "tokens": 290,
+              "mean_ce": 0.9224125146865845
+            },
+            {
+              "pair": 3808,
+              "tokens": 391,
+              "mean_ce": 2.2931270599365234
+            },
+            {
+              "pair": 113934,
+              "tokens": 561,
+              "mean_ce": 1.8904602527618408
+            },
+            {
+              "pair": 51921,
+              "tokens": 542,
+              "mean_ce": 1.2483763694763184
+            }
+          ]
+        },
+        "chain_aware": {
+          "mean_ce": 4.093466928072065,
+          "tokens": 2354,
+          "accuracy": 0.05310110450297366,
+          "pairs": [
+            {
+              "pair": 94584,
+              "tokens": 115,
+              "mean_ce": 3.317479372024536
+            },
+            {
+              "pair": 52702,
+              "tokens": 116,
+              "mean_ce": 3.425992965698242
+            },
+            {
+              "pair": 117453,
+              "tokens": 193,
+              "mean_ce": 5.1355881690979
+            },
+            {
+              "pair": 64727,
+              "tokens": 146,
+              "mean_ce": 2.9294893741607666
+            },
+            {
+              "pair": 99600,
+              "tokens": 290,
+              "mean_ce": 3.105780601501465
+            },
+            {
+              "pair": 3808,
+              "tokens": 391,
+              "mean_ce": 4.405059814453125
+            },
+            {
+              "pair": 113934,
+              "tokens": 561,
+              "mean_ce": 4.496823787689209
+            },
+            {
+              "pair": 51921,
+              "tokens": 542,
+              "mean_ce": 4.229610443115234
+            }
+          ]
+        }
+      },
+      "ppi_gradient": {
+        "standard": [
+          {
+            "checkpointing": false,
+            "mean_classification_loss_times_10": 6.9411091804504395,
+            "gradient_norms": {
+              "encoder": 0.28448225851132813,
+              "classifier": 0.23515291040466355,
+              "residual_head": 0.12940563219988147
+            },
+            "missing_trainable_gradients": []
+          },
+          {
+            "checkpointing": true,
+            "mean_classification_loss_times_10": 6.9411091804504395,
+            "gradient_norms": {
+              "encoder": 0.28448225851132813,
+              "classifier": 0.23515291040466355,
+              "residual_head": 0.12940563219988147
+            },
+            "missing_trainable_gradients": [],
+            "all_gradients_bitwise_identical": true,
+            "gradient_relative_l2": 0.0,
+            "max_abs_gradient_difference": 0.0
+          }
+        ],
+        "chain_aware": [
+          {
+            "checkpointing": false,
+            "mean_classification_loss_times_10": 6.954084396362305,
+            "gradient_norms": {
+              "encoder": 3.1906328192325417,
+              "classifier": 0.6834129801114363,
+              "residual_head": 0.29005749230619915
+            },
+            "missing_trainable_gradients": []
+          },
+          {
+            "checkpointing": true,
+            "mean_classification_loss_times_10": 6.954084396362305,
+            "gradient_norms": {
+              "encoder": 3.1906328192325417,
+              "classifier": 0.6834129801114363,
+              "residual_head": 0.29005749230619915
+            },
+            "missing_trainable_gradients": [],
+            "all_gradients_bitwise_identical": true,
+            "gradient_relative_l2": 0.0,
+            "max_abs_gradient_difference": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "code": {
+    "train.py": "7f6c8e5c81c39a0978c477c07b19eb4151c851b01c37769acc9783ae61b03e73",
+    "model.py": "8f8e27750e81ddb81b5b553c763f7e2c356a081ee29f00fa70c25ae0226be114",
+    "model_esm2.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "model_esmc.py": "9721571f554b51edcf52228ddb898e1730d52ffb4a67f8e63ee0051780a083a2",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "d4c0344c34346aae8b7f64b7836e88877a6951eb0d910b277fcf2c8e316ee9f1",
+    "release.py": "1fb6118a20c513548a5da0b544cb38a8d179bc3d6e15b4f5937b1c118a9d1ce9"
+  },
+  "script_sha256": "fa36d17e5fd4536511b9ee5540c117695f28b9e90ff614ab10c3dea20d16733b",
+  "fp32_all_one_chain_control": {
+    "relative_l2": 2.231046892120503e-06,
+    "max_abs": 3.7103891372680664e-06
+  },
+  "checkpoint": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/runs/esmc-chain-aware-official-seed2/checkpoints/update-000001000.pt",
+    "sha256": "a9e92121fe641175d2835d1ddb96077186e9ada9a57aaa65144469a69168a20a",
+    "update": 1000,
+    "encoder_relative_weight_l2_change": 0.0028401877618526175,
+    "encoder_changed_parameter_elements": 573627502,
+    "encoder_trainable_parameter_elements": 573632640,
+    "optimizer_parameter_tensors": 367,
+    "optimizer_steps_all_1000": true,
+    "optimizer_exp_avg_nonzero_elements": 574176508
+  }
+}

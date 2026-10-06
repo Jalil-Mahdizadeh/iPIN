@@ -1,0 +1,182 @@
+{
+  "time_utc": "2026-10-01T07:24:05.398479+00:00",
+  "analysis_command": "bash retrain-v3/scripts/container.sh python -B retrain-v3/releases/20260930-readout/code/compare_readout.py",
+  "analysis_bootstrap_replicates": 1000,
+  "release_sha256": "fb32362f661a66d42f4e65ae12c888fd5f6ad836067b32f040eae41d68de4867",
+  "files_sha256": {
+    "decisions/readout-window5000.json": "6eb147ffd453dcb7b1f4f489010b051a5c77a3c059abb47591c4d5c8a6ada6c2",
+    "provenance/readout-completion-3196827.json": "3cc5700399b88d9308c93e828a56534230c4ea863abd464fe9500b4cdbadd2e6",
+    "scripts/report_readout_results.py": "aaf12a06089e4db1e9bb6d7a5adfd18075fe23cb182f320fb50677b1189e99b3",
+    "READOUT_RESULTS.md": "fd337929a2d06c3802248fb3221dca4a35b3795620645034b26a59fbeee5d8b2",
+    "reports/readout-validation-ap.png": "ca43114a60a7aed1b05197d6f2b1afa42eb7e453ebe2c107442c826ca8c85b3f",
+    "reports/readout-validation-ap.svg": "0853da7ae5ebb3e717dab71a0e6292b310bcd81d2e47fcdc8a18cb540c436d89"
+  },
+  "means": {
+    "CLS-linear control": {
+      "ap": 0.6164881348768242,
+      "auroc": 0.6096209891059017,
+      "macro_ap": 0.6580642812120744,
+      "brier": 0.2575594742650242
+    },
+    "CLS-MLP": {
+      "ap": 0.6147891932947407,
+      "auroc": 0.6093657288874045,
+      "macro_ap": 0.6588627065665623,
+      "brier": 0.2512487405236479
+    },
+    "Residue-MLP": {
+      "ap": 0.6203737357738107,
+      "auroc": 0.6132526823002059,
+      "macro_ap": 0.6619242384536995,
+      "brier": 0.25854981664521387
+    }
+  },
+  "curves": {
+    "clean-cls-linear-lr2e-5-fold0-seed2": {
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "validation_ap": [
+        0.5746757393060947,
+        0.6085789757251195,
+        0.6193526625119848,
+        0.6163791638353567,
+        0.6091601440983709
+      ]
+    },
+    "clean-cls-mlp-lr2e-5-fold0-seed2": {
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "validation_ap": [
+        0.5756388210777879,
+        0.608904295604328,
+        0.6215494591685585,
+        0.6160402600046301,
+        0.6081791427960674
+      ]
+    },
+    "clean-residue-mean-lr2e-5-fold0-seed2": {
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "validation_ap": [
+        0.5729541335587724,
+        0.6068779375937714,
+        0.6232240259132884,
+        0.6166089543827592,
+        0.607930057410357
+      ]
+    },
+    "clean-cls-linear-lr2e-5-fold1-seed2": {
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "validation_ap": [
+        0.5576133642772947,
+        0.619448827346229,
+        0.6214089469057591,
+        0.6195521795410623,
+        0.5993379915678482
+      ]
+    },
+    "clean-cls-mlp-lr2e-5-fold1-seed2": {
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "validation_ap": [
+        0.5699326468960995,
+        0.6169156756437171,
+        0.6204813829975613,
+        0.6135051307074153,
+        0.5997836764650158
+      ]
+    },
+    "clean-residue-mean-lr2e-5-fold1-seed2": {
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "validation_ap": [
+        0.5695265702676392,
+        0.6137269088889048,
+        0.6275596011266071,
+        0.6183533523548385,
+        0.602683088846219
+      ]
+    },
+    "clean-cls-linear-lr2e-5-fold2-seed2": {
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "validation_ap": [
+        0.5533468732712172,
+        0.5936981947245696,
+        0.6036946865679605,
+        0.6087027952127286,
+        0.599846158136511
+      ]
+    },
+    "clean-cls-mlp-lr2e-5-fold2-seed2": {
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "validation_ap": [
+        0.5695722480836398,
+        0.5944010831027602,
+        0.6023367377181021,
+        0.6019889905749012,
+        0.5906963359495074
+      ]
+    },
+    "clean-residue-mean-lr2e-5-fold2-seed2": {
+      "updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "validation_ap": [
+        0.5694920873073971,
+        0.6010063749520582,
+        0.6083390192943525,
+        0.6103375802815367,
+        0.597850279447929
+      ]
+    }
+  },
+  "test_evaluated": false,
+  "production_jobs_submitted": 0
+}

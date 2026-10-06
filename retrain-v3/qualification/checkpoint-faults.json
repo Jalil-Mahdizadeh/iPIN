@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "partial_ignored": true,
+  "corrupt_pointer_recovered_from_sidecar": true,
+  "corrupt_latest_fell_back": true,
+  "fallback_model_optimizer_rng_exact": true,
+  "changed_contract_rejected": true,
+  "changed_world_size_rejected": true,
+  "lost_all_checkpoints_rejected": true,
+  "previous_best_retained_and_restored_on_rollback": true,
+  "scope": "small synthetic model; no production files modified",
+  "fallback_selection": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/checkpoint-fault-fixture/checkpoints/update-000000001.pt",
+    "manifest": {
+      "file": "update-000000001.pt",
+      "sha256": "30c042d1eb948cf895483a16b662d44982061ef3886e9b7a43e689ccfd4e84ac",
+      "bytes": 17413,
+      "update": 1,
+      "epoch": 0,
+      "next_chunk": 1,
+      "world_size": 1,
+      "fingerprint": "synthetic-checkpoint-fault-test-v1",
+      "best_update": null,
+      "best_ap": null
+    },
+    "fallback_failures": [
+      {
+        "candidate": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/checkpoint-fault-fixture/latest.json",
+        "error": "checkpoint size/hash mismatch"
+      },
+      {
+        "candidate": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/checkpoint-fault-fixture/checkpoints/update-000000002.pt.json",
+        "error": "checkpoint size/hash mismatch"
+      }
+    ]
+  }
+}

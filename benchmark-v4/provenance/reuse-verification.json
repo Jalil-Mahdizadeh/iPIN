@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "verified_against": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/provenance/artifact-sha256.txt",
+  "source_manifest_sha256": "b96974bf594424f04bef9a584e89444fc7b400f343ddee33f55492f2cdeddf9a",
+  "files": {
+    "data/test.npy": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/data/test.npy",
+      "sha256": "84b0b7ae068b2beba19103f8bed3e1c4feae117a0a6ffd271798537868a51c0d"
+    },
+    "data/val.npy": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/data/val.npy",
+      "sha256": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0"
+    },
+    "data/tokens.npy": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/data/tokens.npy",
+      "sha256": "bf82ee25023396948d4d96417cc396de2668afcba8e15f824883caa5e7a599af"
+    },
+    "data/offsets.npy": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/data/offsets.npy",
+      "sha256": "61a71e45a1ca7137af32e148510f7c5de01d30c10704451d1a91dd3e3f464a1d"
+    },
+    "data/prepared-manifest.json": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/data/prepared-manifest.json",
+      "sha256": "c184eb9dd87ce4a082a3fe580f8d220eecd129e75bdbaeb6ea66e3b322d02405"
+    },
+    "reused/native-bernett-test.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/native-bernett-test.npz",
+      "sha256": "52a2b76dc9b30cfec5ba5fe414ca2abd4f9f41777415a205bc19ca2f5ba2d0cb"
+    },
+    "reused/native-bernett-val.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/native-bernett-val.npz",
+      "sha256": "0154f6f960373e3fc673c4120dfad987d8cb001b39657c42e4d33f44c97f9a5a"
+    },
+    "reused/v1-reference-test.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v1-reference-test.npz",
+      "sha256": "3a745003a2b4adadf7043a871cd9c3aaf77a88607fe7da6abcec0968dffdb870"
+    },
+    "reused/v1-reference-val.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v1-reference-val.npz",
+      "sha256": "163ab3436e7fe5a08223efd2cbfff4bc4be5aee4b93dcd2ef75037fa97ecb046"
+    },
+    "reused/v1-symmetric-test.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v1-symmetric-test.npz",
+      "sha256": "aa229856365165d30697bc427bd079267e3115ae0cd1f1ec3dea7802b46eb19c"
+    },
+    "reused/v1-symmetric-val.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v1-symmetric-val.npz",
+      "sha256": "4ad6014ca54d9a351b8684b0ba171363ff08e28098c2c7880d4ff3ef9f0c13f7"
+    },
+    "reused/v2-reference-test.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-reference-test.npz",
+      "sha256": "f7b9ba05fe1d7ba09f214fef560382b47b2a22e898391f87e86114f548701061"
+    },
+    "reused/v2-reference-val.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-reference-val.npz",
+      "sha256": "22e135ca688975901974ee81f41b6427dcaf82c86f67ef647f255da97f6f7609"
+    },
+    "reused/v2-capped-test.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-capped-test.npz",
+      "sha256": "f49ea95c73218ea08579798d6ed04625c50e0f022f83c76b2b8c3029a0f66eaf"
+    },
+    "reused/v2-capped-val.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-capped-val.npz",
+      "sha256": "52590ff91b4af00653fdc678e23269f5cd2261688d64a5500b20eb1d90ca8213"
+    },
+    "reused/v2-positive10-test.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-positive10-test.npz",
+      "sha256": "3cc4986ebecad76e48791a025f52dc693b62955d04d7228bd309d676c8f02d1e"
+    },
+    "reused/v2-positive10-val.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-positive10-val.npz",
+      "sha256": "f391268469a3b1d275bb24752b4ccfbb2aa3cba39dcb6e0d63a4165d6c56f6eb"
+    },
+    "reused/v2-clean-bce-test.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-clean-bce-test.npz",
+      "sha256": "d055d03cdd31a405e0982fdd80f51e8545c7b9ca9d11ebc361b5ac29a496c302"
+    },
+    "reused/v2-clean-bce-val.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-clean-bce-val.npz",
+      "sha256": "4bf41d08a421d215be348384c8faa25707252a555710c8570f05b3128db68d51"
+    },
+    "reused/v3-residue-mlp-test.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v3-residue-mlp-test.npz",
+      "sha256": "1dc16e3d906711c6f63f026bd331cf5d2eaf7de34309c124d7fd6839df9b3774"
+    },
+    "reused/v3-residue-mlp-val.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v3-residue-mlp-val.npz",
+      "sha256": "f8bf27ae8d231ed9c7b88b5cf3d3d06b420c34959f3961028cf5db9b192dc782"
+    },
+    "provenance/benchmark-v3-summary.json": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/benchmark-summary.json",
+      "sha256": "16c94a66a49d0c10abce5fd1cf135f9092686fe6bd76aeff408072696aeadc76"
+    },
+    "reused/benchmark-v3-bootstrap.npz": {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/bootstrap-replicates.npz",
+      "sha256": "91ff1b7485a0db78f264040d42bca58c51fcce1901c66d02c7bf9f56bf00ed14"
+    }
+  },
+  "reused_models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric",
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce",
+    "v3-residue-mlp"
+  ],
+  "new_baseline_inference_required": false
+}

@@ -1,0 +1,12 @@
+{
+  "file": "update-000000004.pt",
+  "sha256": "bfcb1b0eed52fd52fed2d024cdd4f3452d88185188c189f6fcd3285ec7edfeb7",
+  "bytes": 17413,
+  "update": 4,
+  "epoch": 0,
+  "next_chunk": 4,
+  "world_size": 1,
+  "fingerprint": "best-rollback-v2",
+  "best_update": 4,
+  "best_ap": 0.4
+}

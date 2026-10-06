@@ -1,0 +1,270 @@
+{
+  "time_utc": "2026-09-30T19:20:47.613212+00:00",
+  "stage": "adaptation",
+  "decision_type": "user-authorized early development selection",
+  "selected_learning_rate": 2e-05,
+  "selected_learning_rate_tag": "lr2e-5",
+  "completed_prespecified_6000_update_comparison": false,
+  "common_validation_updates": [
+    1000,
+    2000,
+    3000,
+    4000,
+    5000
+  ],
+  "evaluation_selection_window_end": 5000,
+  "training_schedule_updates": 6000,
+  "decision_basis": [
+    {
+      "fold": 0,
+      "control": {
+        "name": "clean-cls-linear-lr2e-5-fold0-seed2",
+        "best_update": 3000,
+        "metrics": {
+          "rows": 17490,
+          "prevalence": 0.4992567181246427,
+          "ap": 0.6193526625119848,
+          "auroc": 0.6091567142015933,
+          "brier": 0.25744764894623834,
+          "macro_ap": 0.6600387438875577,
+          "macro_eligible_proteins": 1093,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "actual_stopped_update": 5367
+      },
+      "lower_lr": {
+        "name": "clean-cls-linear-lr5e-6-fold0-seed2",
+        "best_update": 5000,
+        "metrics": {
+          "rows": 17490,
+          "prevalence": 0.4992567181246427,
+          "ap": 0.5979814964993462,
+          "auroc": 0.5931577040171216,
+          "brier": 0.25466897435617475,
+          "macro_ap": 0.6518191562423677,
+          "macro_eligible_proteins": 1093,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "actual_stopped_update": 5380
+      },
+      "lower_minus_control": {
+        "ap": -0.021371166012638665,
+        "auroc": -0.015999010184471696,
+        "macro_ap": -0.00821958764518993
+      }
+    },
+    {
+      "fold": 1,
+      "control": {
+        "name": "clean-cls-linear-lr2e-5-fold1-seed2",
+        "best_update": 3000,
+        "metrics": {
+          "rows": 18285,
+          "prevalence": 0.4948318293683347,
+          "ap": 0.6214089469057591,
+          "auroc": 0.622370734285009,
+          "brier": 0.24442976954758763,
+          "macro_ap": 0.651820354949339,
+          "macro_eligible_proteins": 1099,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "actual_stopped_update": 5419
+      },
+      "lower_lr": {
+        "name": "clean-cls-linear-lr5e-6-fold1-seed2",
+        "best_update": 4000,
+        "metrics": {
+          "rows": 18285,
+          "prevalence": 0.4948318293683347,
+          "ap": 0.612115781059779,
+          "auroc": 0.6099175441634368,
+          "brier": 0.24806141715634714,
+          "macro_ap": 0.6375250986119751,
+          "macro_eligible_proteins": 1099,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "actual_stopped_update": 5386
+      },
+      "lower_minus_control": {
+        "ap": -0.009293165845980056,
+        "auroc": -0.0124531901215722,
+        "macro_ap": -0.014295256337363837
+      }
+    },
+    {
+      "fold": 2,
+      "control": {
+        "name": "clean-cls-linear-lr2e-5-fold2-seed2",
+        "best_update": 4000,
+        "metrics": {
+          "rows": 18515,
+          "prevalence": 0.49986497434512556,
+          "ap": 0.6087027952127286,
+          "auroc": 0.5973355188311028,
+          "brier": 0.2708010043012466,
+          "macro_ap": 0.6623337447993266,
+          "macro_eligible_proteins": 1075,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "actual_stopped_update": 5477
+      },
+      "lower_lr": {
+        "name": "clean-cls-linear-lr5e-6-fold2-seed2",
+        "best_update": 4000,
+        "metrics": {
+          "rows": 18515,
+          "prevalence": 0.49986497434512556,
+          "ap": 0.5913609003777132,
+          "auroc": 0.5838674967590923,
+          "brier": 0.25288143108615063,
+          "macro_ap": 0.6456979442639262,
+          "macro_eligible_proteins": 1075,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "actual_stopped_update": 5385
+      },
+      "lower_minus_control": {
+        "ap": -0.01734189483501547,
+        "auroc": -0.013468022072010477,
+        "macro_ap": -0.01663580053540037
+      }
+    }
+  ],
+  "lower_lr_promotion_rule_on_observed_window": {
+    "promoted": false,
+    "checks": {
+      "mean_ap_gain": false,
+      "positive_folds": false,
+      "no_large_fold_ap_drop": false,
+      "mean_auroc_guard": false,
+      "mean_macro_ap_guard": false
+    },
+    "mean_deltas": {
+      "ap": -0.01600207556454473,
+      "auroc": -0.013973407459351458,
+      "macro_ap": -0.013050214839318045
+    },
+    "positive_folds": 0,
+    "interpretation": "Prospective development decision rule, not a significance test or proof of native superiority."
+  },
+  "next_runs": [
+    "clean-cls-mlp-lr2e-5-fold0-seed2",
+    "clean-cls-mlp-lr2e-5-fold1-seed2",
+    "clean-cls-mlp-lr2e-5-fold2-seed2",
+    "clean-residue-mean-lr2e-5-fold0-seed2",
+    "clean-residue-mean-lr2e-5-fold1-seed2",
+    "clean-residue-mean-lr2e-5-fold2-seed2"
+  ],
+  "next_stage_budget": "Keep the 6000-update learning-rate schedule, stop after committed validation 5000; compare exactly the same five checkpoint opportunities.",
+  "test_evaluated": false,
+  "checkpoint_payloads_verified": {
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr2e-5-fold0-seed2/checkpoints/update-000003000.pt": "c4bf8ae5b813deb1ed91f4b71ec6841b4b6edfb56a25320355aae8c38d03f4c7",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr2e-5-fold0-seed2/checkpoints/update-000005367.pt": "83322b3e51404b0b8e3d5f96b717d6c8ac90a1ee835a60dc8d96bb793076e54c",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr5e-6-fold0-seed2/checkpoints/update-000005000.pt": "dbf03d5707d7b6f4853b3402f1d20f58f679745574a86290b7cae73e387c365c",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr5e-6-fold0-seed2/checkpoints/update-000005380.pt": "0f8b136e3544df589d85ce60dd010ad5350bf4fb87769b0c78d4b6defa09706d",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr2e-5-fold1-seed2/checkpoints/update-000003000.pt": "dea10cdd4116160f60ac025e33bb6855aa8313a8a359af3d4d4ce308a6838e83",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr2e-5-fold1-seed2/checkpoints/update-000005419.pt": "3b8d8668e4d6578acc825a11850257b50cff3d3b14f35965b0e22bd0d9272d68",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr5e-6-fold1-seed2/checkpoints/update-000004000.pt": "821eadcbafea15de0b45ef92e4dc3823947a6290995209a6e452277e8ee385a8",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr5e-6-fold1-seed2/checkpoints/update-000005386.pt": "8f60d3c767ac6c53b0d7e0a6f62c9e175e09a87b8f4d97d6b16df42cf436e4b4",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr2e-5-fold2-seed2/checkpoints/update-000004000.pt": "8e6aecce8d5a97848d999494f646fb4185636b9d609a0fdf9e161920a8e91296",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr2e-5-fold2-seed2/checkpoints/update-000005477.pt": "44ad2067edc14e3d696525757a0b5dfeca28c84a6c64054f5441ed13d1a6bd1b",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr5e-6-fold2-seed2/checkpoints/update-000004000.pt": "c3770daa31f6a6a3a124dda5e694014b2dfbac60c8127360ec2788da08784abb",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-cls-linear-lr5e-6-fold2-seed2/checkpoints/update-000005385.pt": "59a105eee15bf5ec92eb38ccf17bf58fa5c9ec21a76ad201cc7e4d3d22860750"
+  },
+  "evidence_sha256": {
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/contract.json": "5905f0f2adb2a9d4efaa7165df71f9555f1c450673eb6b985160a3afb3546eab",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/stopped.json": "7b1ac08cf0ba4dd356c628f925cd2d1c88a9a4003fb0d9cc50c8961ed2a1e713",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/latest.json": "7c025b9f377a886fffde2199c9a9903b44c17edfaa6448832da1deb227c5f0b7",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/best.json": "877e17abe184dd530c09e8d833aad7d905756b0cc8ef9cf6449ace414cfa2c4d",
+    "data/prepared/manifest.json": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+    "configs/clean-cls-linear-lr2e-5-fold0-seed2.json": "0f273acc84b9f05cdbc9d9e1e972d1602cfb248d9e72998ad9f4aa8e4549daed",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000001000.npz": "8c42f1b620ebfcab75031b6c00330e8adeef7f6cc41244e2555ee7161fa50b8e",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000001000.json": "f2de6ea9c6889e83d169ee73ba7a6e85109d445674f6eb121f08c87adbae884c",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000002000.npz": "a4e350652ddea1649bf478b8df602a889e458083ce1fbe21b84cc4f85ab4d367",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000002000.json": "98415660556e04078e647d38deaa385e66dde6dc0b950ffaaf221d7b841086d0",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000003000.npz": "52b0e0a44f928c06dbbcf3e1e1dc0288b2e60dd249648c088377c7453e38e34f",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000003000.json": "825a8912e0ed55104f58051ca08ffa830dd13cedc5afbbb6662e5f95e766ad01",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000004000.npz": "c01b854ec868de588bfc1f88efa63883c2fd80f5716778242e5a4500be01d023",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000004000.json": "87fe08ee0f2d60e45f07ac0f48cf4999be96b53139b1ba4ee0feaade8ee6510e",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000005000.npz": "77362a6b55d11328302b67ba504a14567a7962896832e876dca8b46e6d79561f",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000005000.json": "8f17b82aeafc85fad797289b4cc3bb556b46d53339e1961f2feb948b8a015aed",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/contract.json": "898e88c420f744f1729e48b4e67d131d04cf0efd43f2056432ffc027e10b5939",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/stopped.json": "12b74e8759b7576beb7a91e1ddc7b7a2b7c964abed40b3f216d3d51354694742",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/latest.json": "78c06873784a365095d95637ff9438d1156171be8aaa05711c768dbf5cbb896a",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/best.json": "b0da31f8ce509708da893ef07c96f6370bf1e4b6531d9ccd9e83372afa5ac1ff",
+    "configs/clean-cls-linear-lr5e-6-fold0-seed2.json": "b11fa1e4a99fe993332032c17dfb1c3392c35948e7af347a39d508ff3b26e724",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000001000.npz": "6d391c2f37876f9fd849e12063e986007f7b43a0d0000c1d92bb06be68b87a4a",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000001000.json": "70f42f3bdbc5e2852087c58bce8f28448df9eadfdfeb1ea2092810fbef8d4c7e",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000002000.npz": "8c1b35401d9de0d9d17a4e443707ff1ff2d598fca8a6d18d8ddeb996664a9363",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000002000.json": "2fbb9a7487399705d11a6bba9f11317bf1029726ed1af59f987bbaa2486a835c",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000003000.npz": "1d580b91abc929a68d5019cc4ac07b13d5b727e6a4596cc15df07fb7b8027ac6",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000003000.json": "02fdad9ae4c6b08383507c1967adf1a48ec94208f359a127bdb6b3481d651578",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000004000.npz": "4fea7c1b11111e7b26d0c2b616c5cdbd06a385a82a5480f407093234456bb0ab",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000004000.json": "802b220700c198e7069bcba64e0c896d34bf79acbe09f1bf1af55d5a76c7f994",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000005000.npz": "fe9be4cfa1f54dfd1f824434798f5c7ceea57afb31a4acef25037327b5b8e211",
+    "runs/clean-cls-linear-lr5e-6-fold0-seed2/validation/update-000005000.json": "0289d8e29f37d7b15e1948ebf4a6153a135d1d4d23b7f7f836f85c8ade3e918c",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/contract.json": "c685073ef226fa40cdcd02bf4c00e48a3b3cc0689a9b7c84f98a2db6d64554e4",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/stopped.json": "229960cd213ec617119cfd637c9d7897ce51b44ed8203447bbf4119258b5b40e",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/latest.json": "adc91e964cdaecf371e941f40835217fa135a1234473b191351c28305330ee10",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/best.json": "c9e89ec1b15644994b115bffa0bc91d9862c2b36e3f63f7914fbe0c7cd283dfa",
+    "configs/clean-cls-linear-lr2e-5-fold1-seed2.json": "c6ce6fba12b9cf4d73ad8b3d0f605b27e319c003cae89f4ec240ec110c8fdb71",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000001000.npz": "20b3c9397835afc06a5a4b3e44776f9256e0658fb5ef22a490886a7e456964f4",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000001000.json": "6b3142f6df7f3619a7fde1868dcedc164a24bbacad1df0041c26c4780c3a1c1c",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000002000.npz": "d6b4608c3c36f1c2328f9e07bedbfc1c82bf8a8f2ad80be385d5b6ac4ff5568c",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000002000.json": "67e12a079ff858ff42e1ddd8986b100a312769226028cb711e37917081d7ba08",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000003000.npz": "7232d4b5d472e7782f01cd70ab845a1533da0983a45f27a823fe8dc759cd78c5",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000003000.json": "6ae0cd4f87695c9d4f4b2c573bd07d79f8e3e9c99651cd796b4ecb9526eb417f",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000004000.npz": "f520234fdf1699c45c9cf60c3969725d34d0c2187380ce54bbddd4c98b0dca2b",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000004000.json": "3adf2181cd8b9748e64182fcae33e800a7210f90cf8dd55496f4179649b0a02e",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000005000.npz": "33b6b2b102a872010d3776b6b0052f4aa47e0f7a04605fedf17fe3bc1758d60b",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000005000.json": "2da275af61e3c6fce038865d936d6573954f98c200e84bc980e522c873b530be",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/contract.json": "799d6e7a49d03487515d86553923683182eadf471881c9aac74a82e86ec7e0d9",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/stopped.json": "cdb9ab4fb6bf6d6b3e117ad1f0e985d1b9bcac6e832150e0580ee013c2055a24",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/latest.json": "0f3cdb07bcebddbeaa57929c1d7aeee6609b0936f9c5f32e9901770c86773d99",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/best.json": "dc8a33ffe8785319fb0865e34bae1e3ba49a4a084543b4c9ab6c4d3f1e11c3d5",
+    "configs/clean-cls-linear-lr5e-6-fold1-seed2.json": "4a34cc8b4b0ef1d7732a8e400a80335ff6d93463c02bb3b3bb707e3255697df2",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000001000.npz": "548230bb765136784633c1e8830ab3da3338b68cd19342ff768ad30cadafe4f8",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000001000.json": "77ed35f4b044143f314795e54614b744f818e25d954b3ff5fb3fd6abcd02c460",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000002000.npz": "1175f6bfd172c9ca664a36854665d55dc164510c6bc43c11a5b88a220029312b",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000002000.json": "8b359ad89fe742cccd9b160b533d54112cd07b0fd53bbea20de5e46727d5ff0e",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000003000.npz": "8ea6573e6ecbb0ab3c0493768b2bda1956731df4fa51808c9ed9cb76d5b76e5d",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000003000.json": "a9ae56aa242cdbcd8029b756bf030f93fee19fe0363f37693dae92748bc9c032",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000004000.npz": "b8395547af2e8a9feccf06c3955b5c6c57baf7abf230ec180565d6d3fc6d49b3",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000004000.json": "ebfd94be74c6bed33464a05942877b120c3ee3186024d0ccd7720e4da076c9d5",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000005000.npz": "5ef5eec07d6a00d5907988d3938b8e44c561c68e40b51cf34a690255066229a8",
+    "runs/clean-cls-linear-lr5e-6-fold1-seed2/validation/update-000005000.json": "a813cf16e88223ef3612b0871def79dca4205dba6826cd19e53514f334570db8",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/contract.json": "dc2cb05cd1d942d1def07c4a16a31b4154a553105cb704ae096473e57e7b3109",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/stopped.json": "67f34cf13de17ff0df003b5a007437541d48d2903fb16b0885761b27245eaf8d",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/latest.json": "58fec7d82d718aeb3672dc615c75cb976d1f15460bc036b7b483cbe93748472b",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/best.json": "f735da221242b0e858ed4e4f77a8f0236ac31e9abdae8679ebb9b45e0e92fb8f",
+    "configs/clean-cls-linear-lr2e-5-fold2-seed2.json": "e99e9cf28cd52c25309a1bdc929bd946a753afaf237ff3a1ce072fcb755890de",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000001000.npz": "426ce21084994b2f720925ed0701ef67ac471bd20db26e682d377605e384dbf0",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000001000.json": "79a4108c5baa2238e1e8de7884782b2ef2932f23ff664d839c9a939f384a69b3",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000002000.npz": "c18bfd21f35354dff6d0a1826e6e0a63ad619a01092e70c2a7b875e087052022",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000002000.json": "7fe9a98fbe5f90c23f94a4b327b6dc1b7751d1431de0231be27a2493e602c3c3",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000003000.npz": "d407280346143c0cfc2ede88618a166cdd7b2ceaefcf331e6977e45608436a02",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000003000.json": "5b70f06b7e17493b57e4cb60ab88ac3627188990a74312c7fb388d2e93b79a03",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000004000.npz": "12ee6f88ebe7ab3405c5940ed6520b0cac0ca0f7cdc5b1e10aadf1b8bea91f37",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000004000.json": "a160dc1c23bf529c641e371608cc0c8e9c5aca05885bab30ccda04f6169a00a0",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000005000.npz": "249a8418fb74923063f79fd90e5056937cf77d6273620b6dd4ed9f06f8ce5bf7",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000005000.json": "6ab70de70928697f1c57ab9c652166a15dc77635befbc70de5ee0f1db2e838b5",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/contract.json": "f1dbe0e600314e953d540c5a6e997f60922fd758f72612def0769bff3b18dda8",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/stopped.json": "5b424779abf10ec87c25bbe57e011f2eb633b1b0798ea71f0eb25819bb4263ac",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/latest.json": "9a68b97e9d509b211ad7aad675a635253b442bf7f8b9d1ab38569c3d4aaddd9c",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/best.json": "c2824b19358c1607d8423b71170e2a187c45da91073014cf10b88e16194d394e",
+    "configs/clean-cls-linear-lr5e-6-fold2-seed2.json": "b293efe2665215ef19a5e2fdd331d788223e97974a1c858bcf691a1198313c92",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000001000.npz": "891540eebb3e697cfbcd11bd212a5c45def56a80fdfe96148d868a9967c1ce8f",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000001000.json": "81febd078956aa3080fed02bbff862244672b73b71f1672f181ed1a727dd5497",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000002000.npz": "cd42b140d97ecbd9f17e0b0a6d15de5dd7507b0de860dd52daf2667c070fcd36",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000002000.json": "3b69a98da2f925c95111b120451903eb7474baeeb0ee7a20b76c5c3f05e521e2",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000003000.npz": "8a0f09d8e85bbd67220c588a6b89a5928df720cbf3fb4844143f1a4f004b06fe",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000003000.json": "eda333e2a7028f0168f4315819bcbe86b0daa2dcc27f1795d591bcfa89cd454c",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000004000.npz": "a741a75702073c57c256405088b766abfb6a6f6d4f0e2e87bdab1a2125e8d061",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000004000.json": "35e7148267bf87b06942d1b416219ddee9976ba76c11c2c0309cc99e96d76484",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000005000.npz": "cae0e1067ac5da871aaa052e6cf7f15cd191e57769e074c5ac22e3360bd67195",
+    "runs/clean-cls-linear-lr5e-6-fold2-seed2/validation/update-000005000.json": "abd7ef75f862bc09504715c3e17a365e66d3ebcb8570bec0f072316d1e328048",
+    "provenance/stop-adaptation-request.json": "c6d4e7dd8a24fd5a2cc35c921147d28ed5e006426beb3421156d35d932871df8",
+    "configs/campaign.json": "e4260d123558726c3b323291976aab88bcef3b99e84262eb942177fdf8ce110f"
+  },
+  "limitation": "Window and early stop were chosen after seeing adaptation development outcomes; freeze this window before readout training. No external superiority claim."
+}

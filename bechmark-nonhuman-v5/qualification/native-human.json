@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-05T13:12:03.427943+00:00",
+  "fingerprint": "9821140ede31e19faae3af635755a838e669c6f12d5eff73df95158ff60c135a",
+  "precision": "FP32, TF32 disabled",
+  "source": "Independent original-runtime FP32 archived logits; full supplied sequences",
+  "cases": [
+    {
+      "union_row": 0,
+      "orientation": 1,
+      "reference_logit": 8.093416213989258,
+      "fresh_fp32_logit": 8.093421936035156,
+      "logit_error": 5.7220458984375e-06,
+      "probability_error": 1.7472646662852753e-09
+    },
+    {
+      "union_row": 21285,
+      "orientation": 0,
+      "reference_logit": -11.093433380126951,
+      "fresh_fp32_logit": -11.093433380126953,
+      "logit_error": 1.7763568394002505e-15,
+      "probability_error": 2.710505431213761e-20
+    },
+    {
+      "union_row": 27486,
+      "orientation": 0,
+      "reference_logit": -10.922874450683594,
+      "fresh_fp32_logit": -10.92287540435791,
+      "logit_error": 9.5367431640625e-07,
+      "probability_error": 1.7204422897443023e-11
+    },
+    {
+      "union_row": 54966,
+      "orientation": 0,
+      "reference_logit": 4.608284950256348,
+      "fresh_fp32_logit": 4.608254432678223,
+      "logit_error": 3.0517578125e-05,
+      "probability_error": 2.9825506930869494e-07
+    },
+    {
+      "union_row": 64471,
+      "orientation": 0,
+      "reference_logit": -5.799979209899902,
+      "fresh_fp32_logit": -5.799976348876953,
+      "logit_error": 2.86102294921875e-06,
+      "probability_error": 8.609882220806525e-09
+    },
+    {
+      "union_row": 82453,
+      "orientation": 1,
+      "reference_logit": -5.456113338470459,
+      "fresh_fp32_logit": -5.456111907958984,
+      "logit_error": 1.430511474609375e-06,
+      "probability_error": 6.056624590744519e-09
+    },
+    {
+      "union_row": 109890,
+      "orientation": 1,
+      "reference_logit": 9.099393844604492,
+      "fresh_fp32_logit": 9.099395751953125,
+      "logit_error": 1.9073486328125e-06,
+      "probability_error": 2.130670084810049e-10
+    },
+    {
+      "union_row": 137378,
+      "orientation": 1,
+      "reference_logit": -11.018004417419434,
+      "fresh_fp32_logit": -11.01800537109375,
+      "logit_error": 9.5367431640625e-07,
+      "probability_error": 1.5643254524182843e-11
+    },
+    {
+      "union_row": 148353,
+      "orientation": 0,
+      "reference_logit": 8.018560409545898,
+      "fresh_fp32_logit": 8.018560409545898,
+      "logit_error": 0.0,
+      "probability_error": 0.0
+    },
+    {
+      "union_row": 164851,
+      "orientation": 0,
+      "reference_logit": 5.930942058563232,
+      "fresh_fp32_logit": 5.930949687957764,
+      "logit_error": 7.62939453125e-06,
+      "probability_error": 2.0156221469669333e-08
+    },
+    {
+      "union_row": 178794,
+      "orientation": 1,
+      "reference_logit": -10.69544792175293,
+      "fresh_fp32_logit": -10.695448875427246,
+      "logit_error": 9.5367431640625e-07,
+      "probability_error": 2.1597634854045138e-11
+    },
+    {
+      "union_row": 192328,
+      "orientation": 0,
+      "reference_logit": -10.374601364135742,
+      "fresh_fp32_logit": -10.374598503112793,
+      "logit_error": 2.86102294921875e-06,
+      "probability_error": 8.930231666046682e-11
+    },
+    {
+      "union_row": 219796,
+      "orientation": 1,
+      "reference_logit": 9.251486778259276,
+      "fresh_fp32_logit": 9.251485824584961,
+      "logit_error": 9.536743146298932e-07,
+      "probability_error": 9.15054698680251e-11
+    },
+    {
+      "union_row": 220223,
+      "orientation": 0,
+      "reference_logit": 7.999362468719482,
+      "fresh_fp32_logit": 7.9993672370910645,
+      "logit_error": 4.76837158203125e-06,
+      "probability_error": 1.5995527125056697e-09
+    },
+    {
+      "union_row": 229977,
+      "orientation": 1,
+      "reference_logit": -5.848300457000732,
+      "fresh_fp32_logit": -5.848306179046631,
+      "logit_error": 5.7220458984375e-06,
+      "probability_error": 1.6412071051578186e-08
+    }
+  ],
+  "padding_checks": [
+    {
+      "indices": [
+        219796,
+        109890,
+        137378,
+        164851,
+        229977,
+        192328,
+        54966,
+        82453
+      ],
+      "logit_error": 0.0,
+      "probability_error": 0.0
+    },
+    {
+      "indices": [
+        0,
+        27486,
+        220223,
+        178794,
+        148353
+      ],
+      "logit_error": 0.0,
+      "probability_error": 0.0
+    },
+    {
+      "indices": [
+        21285,
+        64471
+      ],
+      "logit_error": 0.0,
+      "probability_error": 0.0
+    }
+  ],
+  "test_metrics_read": false,
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "device": "NVIDIA GH200 120GB"
+}

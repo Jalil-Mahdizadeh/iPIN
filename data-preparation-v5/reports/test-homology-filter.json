@@ -1,0 +1,7 @@
+{
+  "directions": 2,
+  "excluded_homologous_sequence_entities": 1770,
+  "excluded_positive_pairs": 86933,
+  "retained_positive_pairs": 721082,
+  "retained_sequence_entities": 20812
+}

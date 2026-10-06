@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "fingerprint": "21f973d007737bfe61b3f8327ecbd94768982529426db4dd9e641f0b249d76e5",
+  "at_utc": "2026-10-05T17:06:22.552733+00:00",
+  "encoder_sdpa_error": 8.58306884765625e-06,
+  "native_probability_error": 1.9371509552001953e-07,
+  "padding_error": 4.76837158203125e-07,
+  "reuse_checks": [
+    {
+      "id": 38,
+      "error": 2.5033950805664062e-06
+    }
+  ],
+  "longest_pair_union_id": 51541,
+  "pair_lengths": [
+    [
+      5183,
+      2240
+    ],
+    [
+      51,
+      391
+    ],
+    [
+      391,
+      391
+    ]
+  ],
+  "checkpoint": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/tuna-human-seed47.pt",
+    "bytes": 143364769,
+    "sha256": "f63876dfdfb8a8a2c855bbb814a74b20ccf333dc8c75be00bf281365fcac6c07"
+  },
+  "no_truncation": true,
+  "test_metrics_read": false
+}

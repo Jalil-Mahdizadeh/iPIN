@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "profiles": [
+    {
+      "model": "clean-cls",
+      "stage": "longest-training",
+      "tokens": 16322,
+      "orientations": 2,
+      "trainable_parameters": 649401601,
+      "seconds": 16.378731347998837,
+      "peak_allocated_gib": 11.433467864990234,
+      "peak_reserved_gib": 13.03515625,
+      "finite_output": 6.652087688446045,
+      "source_row": 75064
+    },
+    {
+      "model": "clean-cls",
+      "stage": "longest-validation",
+      "tokens": 16322,
+      "orientations": 2,
+      "trainable_parameters": 649401601,
+      "seconds": 1.190181355981622,
+      "peak_allocated_gib": 10.742469310760498,
+      "peak_reserved_gib": 13.03515625,
+      "finite_output": [
+        [
+          0.1435546875,
+          0.162109375
+        ]
+      ],
+      "source_row": 75064
+    },
+    {
+      "model": "clean-residue",
+      "stage": "longest-training",
+      "tokens": 16322,
+      "orientations": 2,
+      "trainable_parameters": 650057090,
+      "seconds": 16.151731249992736,
+      "peak_allocated_gib": 11.436466217041016,
+      "peak_reserved_gib": 13.0234375,
+      "finite_output": 6.652087688446045,
+      "source_row": 75064
+    },
+    {
+      "model": "clean-residue",
+      "stage": "longest-validation",
+      "tokens": 16322,
+      "orientations": 2,
+      "trainable_parameters": 650057090,
+      "seconds": 1.1870892299921252,
+      "peak_allocated_gib": 10.747323513031006,
+      "peak_reserved_gib": 13.0234375,
+      "finite_output": [
+        [
+          0.1435546875,
+          0.1611328125
+        ]
+      ],
+      "source_row": 75064
+    }
+  ],
+  "precision": "FP32 parameters/AdamW, BF16 autocast",
+  "device": "NVIDIA GH200 120GB",
+  "total_device_gib": 95.0,
+  "no_test_data": true,
+  "source_sha256": {
+    "scripts/qualify_profile.py": "bb8eb2d9551328d1c46410e812ead5edb129c062e075d7b1b74b0759ec58b905"
+  },
+  "disposable_optimizer_steps": 2,
+  "code": {
+    "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+  }
+}

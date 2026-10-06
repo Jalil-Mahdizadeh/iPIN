@@ -1,0 +1,71 @@
+{
+  "selected_at_utc": "2026-09-29T09:11:58.854736+00:00",
+  "selection_basis": "Existing validation-selected best.json; fixed before benchmark test inference",
+  "models": {
+    "reference-seed2": {
+      "kind": "local_training_checkpoint",
+      "path": "checkpoints/reference-seed2-update-000004000.pt",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/runs/reference-seed2/checkpoints/update-000004000.pt",
+      "snapshot_method": "hard link to immutable atomically committed checkpoint",
+      "source_manifest": {
+        "file": "update-000004000.pt",
+        "sha256": "85d64e2745060b2c917b5c85af0a0e6ec0010391e4350c26a98560592fe3c675",
+        "bytes": 7818552779,
+        "update": 4000,
+        "epoch": 1,
+        "next_chunk": 1451,
+        "world_size": 4,
+        "fingerprint": "13cb972a87f5715622752b94712e2c2541d3292eaeb2666bfcaee2e2a1491e2d"
+      },
+      "sha256": "85d64e2745060b2c917b5c85af0a0e6ec0010391e4350c26a98560592fe3c675",
+      "update": 4000,
+      "epoch_equivalent": 1.569242840329541,
+      "validation_primary_ap": 0.648935984074678
+    },
+    "symmetric-seed2": {
+      "kind": "local_training_checkpoint",
+      "path": "checkpoints/symmetric-seed2-update-000007000.pt",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/runs/symmetric-seed2/checkpoints/update-000007000.pt",
+      "snapshot_method": "hard link to immutable atomically committed checkpoint",
+      "source_manifest": {
+        "file": "update-000007000.pt",
+        "sha256": "bb99dbdee7af654d362e4738c1fb9da98ab232cead4eacb52a439c10aeadf7c0",
+        "bytes": 7818552779,
+        "update": 7000,
+        "epoch": 2,
+        "next_chunk": 1902,
+        "world_size": 4,
+        "fingerprint": "c2563b1fd7b9e188549843483b8daee67496f8765c091aa59e2763d10327610f"
+      },
+      "sha256": "bb99dbdee7af654d362e4738c1fb9da98ab232cead4eacb52a439c10aeadf7c0",
+      "update": 7000,
+      "epoch_equivalent": 2.7461749705766967,
+      "validation_primary_ap": 0.6474107570134193
+    },
+    "native-bernett": {
+      "kind": "released_state_dict",
+      "path": "checkpoints/native-bernett.bin",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/checkpoints/PLM-interact-650M-Leakage-Free-Dataset/pytorch_model.bin",
+      "repository": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+      "revision": "d995319a6e53510bfbb4eff6ab0292fedf2ec4db",
+      "sha256": "207f1bf02e9bebc393fe510a98c0f9af04039d0a9258047ac107c6d24221c7e2",
+      "update": null,
+      "selected_epoch": null
+    }
+  },
+  "data": {
+    "path": "data",
+    "manifest_sha256": "c184eb9dd87ce4a082a3fe580f8d220eecd129e75bdbaeb6ea66e3b322d02405",
+    "sha256": {
+      "test.npy": "84b0b7ae068b2beba19103f8bed3e1c4feae117a0a6ffd271798537868a51c0d",
+      "val.npy": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0",
+      "tokens.npy": "bf82ee25023396948d4d96417cc396de2668afcba8e15f824883caa5e7a599af",
+      "offsets.npy": "61a71e45a1ca7137af32e148510f7c5de01d30c10704451d1a91dd3e3f464a1d"
+    }
+  },
+  "container": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact/plm-interact-native-arm64-v1.sif",
+    "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+  },
+  "base_model_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/assets/esm2"
+}

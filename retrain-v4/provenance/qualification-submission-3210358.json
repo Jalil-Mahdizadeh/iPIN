@@ -1,0 +1,41 @@
+{
+  "time_utc": "2026-10-01T10:15:04.192617+00:00",
+  "job_id": "3210358",
+  "purpose": "remaining ESM C four-GPU engineering qualification; preserve the passing ESM2 check",
+  "production_training": false,
+  "production_jobs_submitted": 0,
+  "time_limit": "00:20:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/qualification/job-20261001-r2/slurm/qualify.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/qualification/job-20261001-r2/code"
+  ],
+  "code": {
+    "train.py": "7f6c8e5c81c39a0978c477c07b19eb4151c851b01c37769acc9783ae61b03e73",
+    "model.py": "8f8e27750e81ddb81b5b553c763f7e2c356a081ee29f00fa70c25ae0226be114",
+    "model_esm2.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "model_esmc.py": "9721571f554b51edcf52228ddb898e1730d52ffb4a67f8e63ee0051780a083a2",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "d4c0344c34346aae8b7f64b7836e88877a6951eb0d910b277fcf2c8e316ee9f1",
+    "release.py": "1fb6118a20c513548a5da0b544cb38a8d179bc3d6e15b4f5937b1c118a9d1ce9"
+  },
+  "files": {
+    "slurm/qualify.sbatch": "4c774d0e8960b91d4dc999156416e28e6267c9c5c0a01df998fc80f18d38ccab",
+    "configs/esmc-chain-aware-official-seed2.json": "2132ee2f9baac347e47af5e40fc1a42b0abe0a5428a1cf9c8ad3f2a83eaaac9b",
+    "configs/esm2-chain-aware-official-seed2.json": "192c2c322c0dc40d5b8d1e9b0d6497fcd135f095dd080e715ca9d044be4f3e02",
+    "configs/esmc-standard-official-seed2.json": "3815c557ed7bbad46dfc3ddf604f5f6ba6dcf9dc0188f69003e7a3d3e8e08d42",
+    "code/compare_resume.py": "353e1af3831b3a74cc3f15885e59bfcdb2c6f407c2984fea16eb62f5353c99ff",
+    "code/release.py": "1fb6118a20c513548a5da0b544cb38a8d179bc3d6e15b4f5937b1c118a9d1ce9",
+    "code/train.py": "7f6c8e5c81c39a0978c477c07b19eb4151c851b01c37769acc9783ae61b03e73",
+    "code/state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "code/contracts.py": "d4c0344c34346aae8b7f64b7836e88877a6951eb0d910b277fcf2c8e316ee9f1",
+    "code/qualify_ddp.py": "c87c08c32ae365b50bfb9840e9e999a981503e9c98b3318894f98905d9e62792",
+    "code/model_esm2.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "code/model.py": "8f8e27750e81ddb81b5b553c763f7e2c356a081ee29f00fa70c25ae0226be114",
+    "code/model_esmc.py": "9721571f554b51edcf52228ddb898e1730d52ffb4a67f8e63ee0051780a083a2",
+    "code/container.sh": "6e42e0d539b06bb29875f8f87d8536326d1d9653286fa66047d0101aac1c16d1",
+    "code/data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd"
+  }
+}

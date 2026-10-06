@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "code": {
+    "train.py": "17a9674accce46ed9908fbd1bec925d438079b61975b1f9b4a90d24d0ec1e16c",
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+  },
+  "scope": "AST verifies the only executable trainer change is DDP gradient_as_bucket_view=True to False; all other core files are identical. Both full-size heads pass four-GPU bitwise resume.",
+  "initial_failed_qualification_job": "3196205",
+  "corrected_qualification_job": "3196606",
+  "model_architecture_objective_optimizer_schedule_data_unchanged": true,
+  "original_controls_keep_original_code": true,
+  "extra_gradient_storage_bytes": 2600228360,
+  "limitation": "Qualifies the observed same-hardware/software resume case, not every possible CUDA/backend version or future workload. Existing controls used bucket views; no claim that all amended versus original trajectories are bitwise identical.",
+  "source_sha256": {
+    "readout-code/train.py": "17a9674accce46ed9908fbd1bec925d438079b61975b1f9b4a90d24d0ec1e16c",
+    "readout-code/model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "readout-code/data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "readout-code/state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "readout-code/release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280",
+    "qualification/readout-aligned-ddp.json": "a606f0603c0e622f91c6acb08786e87940a695163cf71dfa9ad1d35d7233fc4a",
+    "qualification/readout-resume-failure-diagnostics.json": "2e498427ae32f5517e6d39d3e0961d7ef93df756e611f319c97cafa179954b1e",
+    "qualification/gradient-storage-offset-diagnostic.json": "7afc45ca3106091524116b15865a3859dcdef5c41e8fad249402221ba4d52186",
+    "scripts/qualify_readout_engine.py": "2d58c095846e7bf303c00768c765ee663be4a36306363ebd4fe1f48b1c538576",
+    "qualification/readout-aligned-cls-mlp-comparison.json": "f075f2c6fd6201e6e2cb698dc54ee8b57142285ca3bd7759787ae0970b667837",
+    "qualification/readout-aligned-residue-mean-comparison.json": "fbf1091d41a116908f02f390aba4ca866a73bb39e3852db678ffed22629e4518"
+  }
+}

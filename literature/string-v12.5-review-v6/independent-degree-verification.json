@@ -1,0 +1,9 @@
+{
+  "source": "native sequence CSVs, independently aggregated from TUnA-ID implementation",
+  "rows": 52725,
+  "metrics": {
+    "ap": 0.8360138743588236,
+    "auroc": 0.963460067714674
+  },
+  "agrees_to_1e_minus_12": true
+}

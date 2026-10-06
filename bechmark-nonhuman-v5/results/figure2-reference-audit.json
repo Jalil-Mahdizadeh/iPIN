@@ -1,0 +1,66 @@
+{
+  "at_utc": "2026-10-05T13:31:25.757898+00:00",
+  "status": "Independent source-data and prior native-FP32 reproduction; symmetric fresh run still in progress",
+  "species": [
+    {
+      "species": "mouse",
+      "archived_native_human_ap": 0.9039627831314209,
+      "archived_native_human_auroc": 0.9821473199999999,
+      "fig2_deposited_ap": 0.9039627460927473,
+      "fig2_deposited_auroc": 0.9821473260000002,
+      "rows": 55000,
+      "TUnA_deposited_ap": 0.8862223868233002,
+      "TUnA_deposited_auroc": 0.9789524580000001,
+      "D-SCRIPT_deposited_ap": 0.5797881677192571,
+      "D-SCRIPT_deposited_auroc": 0.8328985579999999
+    },
+    {
+      "species": "fly",
+      "archived_native_human_ap": 0.913301756798012,
+      "archived_native_human_auroc": 0.9825128759999999,
+      "fig2_deposited_ap": 0.9132991902002577,
+      "fig2_deposited_auroc": 0.9825121499999999,
+      "rows": 55000,
+      "TUnA_deposited_ap": 0.8577529071429855,
+      "TUnA_deposited_auroc": 0.9714846680000001,
+      "D-SCRIPT_deposited_ap": 0.5522859692200858,
+      "D-SCRIPT_deposited_auroc": 0.8236194959999998
+    },
+    {
+      "species": "worm",
+      "archived_native_human_ap": 0.8875920405939197,
+      "archived_native_human_auroc": 0.973782838,
+      "fig2_deposited_ap": 0.887592022095778,
+      "fig2_deposited_auroc": 0.9737828339999999,
+      "rows": 55000,
+      "TUnA_deposited_ap": 0.8420051733451992,
+      "TUnA_deposited_auroc": 0.9635295199999999,
+      "D-SCRIPT_deposited_ap": 0.548092131048893,
+      "D-SCRIPT_deposited_auroc": 0.81305481
+    },
+    {
+      "species": "yeast",
+      "archived_native_human_ap": 0.7055137180729972,
+      "archived_native_human_auroc": 0.912316318,
+      "fig2_deposited_ap": 0.7055137444761124,
+      "fig2_deposited_auroc": 0.9123163400000001,
+      "rows": 55000,
+      "TUnA_deposited_ap": 0.647393068195169,
+      "TUnA_deposited_auroc": 0.898714872,
+      "D-SCRIPT_deposited_ap": 0.404675162126782,
+      "D-SCRIPT_deposited_auroc": 0.788972494
+    },
+    {
+      "species": "ecoli",
+      "archived_native_human_ap": 0.7215698491554343,
+      "archived_native_human_auroc": 0.9042654125,
+      "fig2_deposited_ap": 0.7215701201670358,
+      "fig2_deposited_auroc": 0.9042653250000001,
+      "rows": 22000,
+      "TUnA_deposited_ap": 0.68850558548851,
+      "TUnA_deposited_auroc": 0.8841530375000001,
+      "D-SCRIPT_deposited_ap": 0.5348917653696004,
+      "D-SCRIPT_deposited_auroc": 0.8603378875
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "fingerprint": "d7c7d8753779ea6900da546b92a094a41d9315dc95210d99622683d80a1d75b9",
+  "configuration": {
+    "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1",
+    "name": "qualification",
+    "mode": "symmetric",
+    "seed": 2,
+    "epochs": 5,
+    "global_pairs_per_update": 8,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_updates": 1,
+    "clip_grad_norm": 1.0,
+    "classification_weight": 10.0,
+    "mlm_weight": 1.0,
+    "attention_backend": "efficient",
+    "train_token_budget": 8192,
+    "train_max_pairs": 4,
+    "eval_token_budget": 16384,
+    "eval_max_pairs": 8,
+    "checkpoint_every_updates": 2,
+    "checkpoint_minutes": 15,
+    "validate_every_updates": 4,
+    "log_every_updates": 1
+  },
+  "tiny": false,
+  "train_limit": 16,
+  "val_limit": 8,
+  "total_steps": 4,
+  "data_manifest_sha256": "c184eb9dd87ce4a082a3fe580f8d220eecd129e75bdbaeb6ea66e3b322d02405",
+  "initialization_manifest_sha256": "1a5b88444110dd139ca0c3bb734f125d4951a9e608474e63a1dad59bcc4caa2d",
+  "code": {
+    "train.py": "8d415822c3fa73edad553a1a30d547e41b9802876c28408d38015645c369322d",
+    "model.py": "7d7dfa0c86947bf47a9fe7ec4a20ee31a85693eea2ee3e26c125de7a5285fc9a",
+    "data.py": "004b2c4652f1671b81e594f158d73fbf2ae3882b4a88d8b9a8c6bd24eac7ce09",
+    "state.py": "f1bbbc4ef15118594de163a7cd7c0a325b010d244099fa49631dac4ffab275b8"
+  },
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "cuda": "13.0"
+}

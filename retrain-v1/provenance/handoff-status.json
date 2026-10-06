@@ -1,0 +1,117 @@
+{
+  "as_of_utc": "2026-09-28T20:01:23.737756+00:00",
+  "training_finished": false,
+  "runs": {
+    "reference-seed2": {
+      "submission": {
+        "run": "reference-seed2",
+        "job_id": 3112402,
+        "submitted_at_utc": "2026-09-28T19:51:58.969667+00:00",
+        "command": [
+          "sbatch",
+          "--parsable",
+          "--job-name=plmi-v1-reference",
+          "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/slurm/train.sbatch",
+          "reference-seed2"
+        ],
+        "output": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/runs/reference-seed2",
+        "nodes": 1,
+        "gpus_per_node": 4,
+        "epochs": 5,
+        "total_updates": 12745,
+        "frozen_files_manifest_sha256": "45ab5acb77f56c9973b5193dbb8c2d1310b7063cde12381d1c2aa068d7afa9e7"
+      },
+      "progress": {
+        "state": {
+          "update": 140,
+          "epoch": 0,
+          "next_chunk": 140,
+          "examples_seen": 8960,
+          "best_ap": null,
+          "best_update": null,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": null
+        },
+        "last_committed_update": 100,
+        "attempt": "20260928T195235-3112402",
+        "seconds_since_launch": 527.3666849330002,
+        "world_size": 4,
+        "phase": "training"
+      },
+      "checkpoint": {
+        "last_committed_update": 100,
+        "latest": {
+          "file": "update-000000100.pt",
+          "sha256": "f90567c54a0cd96715742d3ed2f82600144326611e80edeb3b8d3ed7a85aa413",
+          "bytes": 7818552779,
+          "update": 100,
+          "epoch": 0,
+          "next_chunk": 100,
+          "world_size": 4,
+          "fingerprint": "13cb972a87f5715622752b94712e2c2541d3292eaeb2666bfcaee2e2a1491e2d"
+        },
+        "retained": [
+          "update-000000000.pt",
+          "update-000000100.pt"
+        ]
+      }
+    },
+    "symmetric-seed2": {
+      "submission": {
+        "run": "symmetric-seed2",
+        "job_id": 3112401,
+        "submitted_at_utc": "2026-09-28T19:51:58.944898+00:00",
+        "command": [
+          "sbatch",
+          "--parsable",
+          "--job-name=plmi-v1-symmetric",
+          "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/slurm/train.sbatch",
+          "symmetric-seed2"
+        ],
+        "output": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/runs/symmetric-seed2",
+        "nodes": 1,
+        "gpus_per_node": 4,
+        "epochs": 5,
+        "total_updates": 12745,
+        "frozen_files_manifest_sha256": "421bf345c184eb365404476b346a8683b4deb5c4d4a14a595a78f675906a17ce"
+      },
+      "progress": {
+        "state": {
+          "update": 140,
+          "epoch": 0,
+          "next_chunk": 140,
+          "examples_seen": 8960,
+          "best_ap": null,
+          "best_update": null,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": null
+        },
+        "last_committed_update": 100,
+        "attempt": "20260928T195223-3112401",
+        "seconds_since_launch": 521.0047021450009,
+        "world_size": 4,
+        "phase": "training"
+      },
+      "checkpoint": {
+        "last_committed_update": 100,
+        "latest": {
+          "file": "update-000000100.pt",
+          "sha256": "3061140ef806519fbea37ee4962be791cc3a32d3d15a503df99b49228b2d97c1",
+          "bytes": 7818552779,
+          "update": 100,
+          "epoch": 0,
+          "next_chunk": 100,
+          "world_size": 4,
+          "fingerprint": "c2563b1fd7b9e188549843483b8daee67496f8765c091aa59e2763d10327610f"
+        },
+        "retained": [
+          "update-000000000.pt",
+          "update-000000100.pt"
+        ]
+      }
+    }
+  },
+  "slurm": "JOBID NAME STATE TIME NODELIST(REASON)\n3112402 plmi-v1-reference RUNNING 9:13 n410\n3112401 plmi-v1-symmetric RUNNING 9:24 n472\n"
+}

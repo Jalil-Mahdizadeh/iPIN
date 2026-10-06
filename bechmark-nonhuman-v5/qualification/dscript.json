@@ -1,0 +1,293 @@
+{
+  "passed": true,
+  "signature": {
+    "scripts/dscript_benchmark.py": "26b98976eef5edc24de63069f83ba068c4f411592d1dc1e302fe3c32d02a628f",
+    "scripts/dscript/native_adapter.py": "0266c81f593870267ddadb8897499926176bde691aa8d3ee1d3467c93b296d7d",
+    "scripts/dscript/common.py": "20c67e528d2f6e50a7248c52db0bc92fab399e8feb159831e36fbb00172573b2",
+    "scripts/container_dscript.sh": "1affc4e130a3cd5169180fedc067a67c2ffac6754694215b745000e7a1f14279",
+    "provenance/dscript-runtime.json": "334b64c495d558fb8f6166221613e958520ab6154e6d2717c493d1bee01f375c",
+    "provenance/prepared.json": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba"
+  },
+  "workers": [
+    {
+      "passed": true,
+      "at_utc": "2026-10-05T13:00:25.131619+00:00",
+      "signature": {
+        "scripts/dscript_benchmark.py": "26b98976eef5edc24de63069f83ba068c4f411592d1dc1e302fe3c32d02a628f",
+        "scripts/dscript/native_adapter.py": "0266c81f593870267ddadb8897499926176bde691aa8d3ee1d3467c93b296d7d",
+        "scripts/dscript/common.py": "20c67e528d2f6e50a7248c52db0bc92fab399e8feb159831e36fbb00172573b2",
+        "scripts/container_dscript.sh": "1affc4e130a3cd5169180fedc067a67c2ffac6754694215b745000e7a1f14279",
+        "provenance/dscript-runtime.json": "334b64c495d558fb8f6166221613e958520ab6154e6d2717c493d1bee01f375c",
+        "provenance/prepared.json": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba"
+      },
+      "fixture_ids": [
+        52751,
+        23599,
+        34267,
+        33110
+      ],
+      "native_pairs": [
+        [
+          52751,
+          23599
+        ],
+        [
+          23599,
+          34267
+        ],
+        [
+          34267,
+          34267
+        ]
+      ],
+      "native_probability_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "projection_cache_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "long_pair": [
+        33110,
+        23599
+      ],
+      "long_pair_lengths": [
+        599,
+        183
+      ],
+      "tiled_fullmap_error": 0.0,
+      "swap_error": 0.0,
+      "learned_state_sha256": "edc1e0725873828186cc53fd714be2b49e832c9ab532b818355afa4dc878fa3c",
+      "cache": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/dscript/runs/original-v1/projection_cache/CACHE.json",
+        "bytes": 1402,
+        "sha256": "4ff2e994aa21f3c0bdb20ff1d7f782404f573a9837611d57f5ec32f12758ec83"
+      },
+      "reference": "Unmodified human_v1 for supported lengths; same formula full-map vs tiled for long lengths",
+      "checkpoint": {
+        "path": "/opt/dscript/weights/dscript_human_v1.pt",
+        "bytes": 2539686,
+        "sha256": "9fc07ac14bb218a8b65288a9114b0c934e8f9c426a53274b0119ea2336b2a32a"
+      },
+      "encoder": {
+        "path": "/opt/dscript/weights/dscript_lm_v1.pt",
+        "bytes": 238235733,
+        "sha256": "b91f32fcd7d68460ca3c3e3bd2396c1f5826a333ad4ad4962b7f4ab3a410b17c"
+      }
+    },
+    {
+      "passed": true,
+      "at_utc": "2026-10-05T13:00:25.131755+00:00",
+      "signature": {
+        "scripts/dscript_benchmark.py": "26b98976eef5edc24de63069f83ba068c4f411592d1dc1e302fe3c32d02a628f",
+        "scripts/dscript/native_adapter.py": "0266c81f593870267ddadb8897499926176bde691aa8d3ee1d3467c93b296d7d",
+        "scripts/dscript/common.py": "20c67e528d2f6e50a7248c52db0bc92fab399e8feb159831e36fbb00172573b2",
+        "scripts/container_dscript.sh": "1affc4e130a3cd5169180fedc067a67c2ffac6754694215b745000e7a1f14279",
+        "provenance/dscript-runtime.json": "334b64c495d558fb8f6166221613e958520ab6154e6d2717c493d1bee01f375c",
+        "provenance/prepared.json": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba"
+      },
+      "fixture_ids": [
+        52751,
+        23599,
+        34267,
+        33110
+      ],
+      "native_pairs": [
+        [
+          52751,
+          23599
+        ],
+        [
+          23599,
+          34267
+        ],
+        [
+          34267,
+          34267
+        ]
+      ],
+      "native_probability_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "projection_cache_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "long_pair": [
+        33110,
+        23599
+      ],
+      "long_pair_lengths": [
+        599,
+        183
+      ],
+      "tiled_fullmap_error": 0.0,
+      "swap_error": 0.0,
+      "learned_state_sha256": "edc1e0725873828186cc53fd714be2b49e832c9ab532b818355afa4dc878fa3c",
+      "cache": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/dscript/runs/original-v1/projection_cache/CACHE.json",
+        "bytes": 1402,
+        "sha256": "4ff2e994aa21f3c0bdb20ff1d7f782404f573a9837611d57f5ec32f12758ec83"
+      },
+      "reference": "Unmodified human_v1 for supported lengths; same formula full-map vs tiled for long lengths",
+      "checkpoint": {
+        "path": "/opt/dscript/weights/dscript_human_v1.pt",
+        "bytes": 2539686,
+        "sha256": "9fc07ac14bb218a8b65288a9114b0c934e8f9c426a53274b0119ea2336b2a32a"
+      },
+      "encoder": {
+        "path": "/opt/dscript/weights/dscript_lm_v1.pt",
+        "bytes": 238235733,
+        "sha256": "b91f32fcd7d68460ca3c3e3bd2396c1f5826a333ad4ad4962b7f4ab3a410b17c"
+      }
+    },
+    {
+      "passed": true,
+      "at_utc": "2026-10-05T13:00:25.131717+00:00",
+      "signature": {
+        "scripts/dscript_benchmark.py": "26b98976eef5edc24de63069f83ba068c4f411592d1dc1e302fe3c32d02a628f",
+        "scripts/dscript/native_adapter.py": "0266c81f593870267ddadb8897499926176bde691aa8d3ee1d3467c93b296d7d",
+        "scripts/dscript/common.py": "20c67e528d2f6e50a7248c52db0bc92fab399e8feb159831e36fbb00172573b2",
+        "scripts/container_dscript.sh": "1affc4e130a3cd5169180fedc067a67c2ffac6754694215b745000e7a1f14279",
+        "provenance/dscript-runtime.json": "334b64c495d558fb8f6166221613e958520ab6154e6d2717c493d1bee01f375c",
+        "provenance/prepared.json": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba"
+      },
+      "fixture_ids": [
+        52751,
+        23599,
+        34267,
+        33110
+      ],
+      "native_pairs": [
+        [
+          52751,
+          23599
+        ],
+        [
+          23599,
+          34267
+        ],
+        [
+          34267,
+          34267
+        ]
+      ],
+      "native_probability_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "projection_cache_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "long_pair": [
+        33110,
+        23599
+      ],
+      "long_pair_lengths": [
+        599,
+        183
+      ],
+      "tiled_fullmap_error": 0.0,
+      "swap_error": 0.0,
+      "learned_state_sha256": "edc1e0725873828186cc53fd714be2b49e832c9ab532b818355afa4dc878fa3c",
+      "cache": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/dscript/runs/original-v1/projection_cache/CACHE.json",
+        "bytes": 1402,
+        "sha256": "4ff2e994aa21f3c0bdb20ff1d7f782404f573a9837611d57f5ec32f12758ec83"
+      },
+      "reference": "Unmodified human_v1 for supported lengths; same formula full-map vs tiled for long lengths",
+      "checkpoint": {
+        "path": "/opt/dscript/weights/dscript_human_v1.pt",
+        "bytes": 2539686,
+        "sha256": "9fc07ac14bb218a8b65288a9114b0c934e8f9c426a53274b0119ea2336b2a32a"
+      },
+      "encoder": {
+        "path": "/opt/dscript/weights/dscript_lm_v1.pt",
+        "bytes": 238235733,
+        "sha256": "b91f32fcd7d68460ca3c3e3bd2396c1f5826a333ad4ad4962b7f4ab3a410b17c"
+      }
+    },
+    {
+      "passed": true,
+      "at_utc": "2026-10-05T13:00:25.131774+00:00",
+      "signature": {
+        "scripts/dscript_benchmark.py": "26b98976eef5edc24de63069f83ba068c4f411592d1dc1e302fe3c32d02a628f",
+        "scripts/dscript/native_adapter.py": "0266c81f593870267ddadb8897499926176bde691aa8d3ee1d3467c93b296d7d",
+        "scripts/dscript/common.py": "20c67e528d2f6e50a7248c52db0bc92fab399e8feb159831e36fbb00172573b2",
+        "scripts/container_dscript.sh": "1affc4e130a3cd5169180fedc067a67c2ffac6754694215b745000e7a1f14279",
+        "provenance/dscript-runtime.json": "334b64c495d558fb8f6166221613e958520ab6154e6d2717c493d1bee01f375c",
+        "provenance/prepared.json": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba"
+      },
+      "fixture_ids": [
+        52751,
+        23599,
+        34267,
+        33110
+      ],
+      "native_pairs": [
+        [
+          52751,
+          23599
+        ],
+        [
+          23599,
+          34267
+        ],
+        [
+          34267,
+          34267
+        ]
+      ],
+      "native_probability_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "projection_cache_errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "long_pair": [
+        33110,
+        23599
+      ],
+      "long_pair_lengths": [
+        599,
+        183
+      ],
+      "tiled_fullmap_error": 0.0,
+      "swap_error": 0.0,
+      "learned_state_sha256": "edc1e0725873828186cc53fd714be2b49e832c9ab532b818355afa4dc878fa3c",
+      "cache": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/dscript/runs/original-v1/projection_cache/CACHE.json",
+        "bytes": 1402,
+        "sha256": "4ff2e994aa21f3c0bdb20ff1d7f782404f573a9837611d57f5ec32f12758ec83"
+      },
+      "reference": "Unmodified human_v1 for supported lengths; same formula full-map vs tiled for long lengths",
+      "checkpoint": {
+        "path": "/opt/dscript/weights/dscript_human_v1.pt",
+        "bytes": 2539686,
+        "sha256": "9fc07ac14bb218a8b65288a9114b0c934e8f9c426a53274b0119ea2336b2a32a"
+      },
+      "encoder": {
+        "path": "/opt/dscript/weights/dscript_lm_v1.pt",
+        "bytes": 238235733,
+        "sha256": "b91f32fcd7d68460ca3c3e3bd2396c1f5826a333ad4ad4962b7f4ab3a410b17c"
+      }
+    }
+  ]
+}

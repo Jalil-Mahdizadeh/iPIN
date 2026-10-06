@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "native-plm",
+    "test": "yeast",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "12bd80ca34e8dcbbc42c64c69bd597d0e46449eca7c67ce37ae6e25204772db2",
+    "scores": "b43dc62bafad81aa55ac2f2675164eedffd779e8c1948706eec8d4159f229ab1",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/yeast-native-plm.npz",
+    "bytes": 15044,
+    "sha256": "2c2db4a3d422f4e0503b116ef014ceeb84035cbbb432be38b39ac03c66bdfb72"
+  }
+}

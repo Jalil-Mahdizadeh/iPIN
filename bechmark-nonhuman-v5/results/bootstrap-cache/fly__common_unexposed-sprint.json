@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "sprint",
+    "test": "fly__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "101e30480e8c99bb67cefef02b2a91d86f15e39277dab92e126906b57e0e90ca",
+    "scores": "dfae532f88333b01c650218a9d2d516db6576e95f167904fbf1b117654d15901",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/fly__common_unexposed-sprint.npz",
+    "bytes": 15320,
+    "sha256": "80cad7599fa28a5bec0a3e014961a5d928e8aa55f35dc74de039c476f6b0b8bb"
+  }
+}

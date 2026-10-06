@@ -1,0 +1,200 @@
+[
+  {
+    "path": "figure2_PLM-interact_mouse.csv",
+    "sheet": 2,
+    "n": 55000,
+    "sha256": "585deebedf2c742be94949e3915ced5d81f3c8de963da82f5950025164278a93"
+  },
+  {
+    "path": "figure2_PLM-interact_fly.csv",
+    "sheet": 2,
+    "n": 55000,
+    "sha256": "49970b1d68b4a0879b162a73f84bfd3f3ab97f59eccd0832495c2fcd7b027a77"
+  },
+  {
+    "path": "figure2_PLM-interact_worm.csv",
+    "sheet": 2,
+    "n": 55000,
+    "sha256": "a2cfd31045e414bb785b2ec8850d2884f169c66032eedce3147dce944175c756"
+  },
+  {
+    "path": "figure2_PLM-interact_yeast.csv",
+    "sheet": 2,
+    "n": 55000,
+    "sha256": "d5db525dd9c6232a0c9eb733186e47ff8f84229efe49c73b5aad615b2ed21164"
+  },
+  {
+    "path": "figure2_PLM-interact_ecoli.csv",
+    "sheet": 2,
+    "n": 22000,
+    "sha256": "5159b3e813a935c5dc06a53ba01c5f5dbb7da85e7521c23ace4f16b94ff023ec"
+  },
+  {
+    "path": "figure2_TUnA_mouse.csv",
+    "sheet": 3,
+    "n": 55000,
+    "sha256": "bd6da0b223a0d8a88be6a4e3a4aae71bf973555aaf85c3e3db90fab270b52be2"
+  },
+  {
+    "path": "figure2_TUnA_fly.csv",
+    "sheet": 3,
+    "n": 55000,
+    "sha256": "dbe16f1a45519fc70722c4bb6b9a36efc36756e409a255242e7d12dfaa1342da"
+  },
+  {
+    "path": "figure2_TUnA_worm.csv",
+    "sheet": 3,
+    "n": 55000,
+    "sha256": "3b67dfc383015dedae05ee7e9b13ee0bace810e8dd62a13843346fca2c4c6be8"
+  },
+  {
+    "path": "figure2_TUnA_yeast.csv",
+    "sheet": 3,
+    "n": 55000,
+    "sha256": "372adf3b601921a40b9fc300f92cc058be6a6877ff512fc55fa2396edd9c68ab"
+  },
+  {
+    "path": "figure2_TUnA_ecoli.csv",
+    "sheet": 3,
+    "n": 22000,
+    "sha256": "a20c202cde6da74799ea9a2ae18777c2dd3cab30f013c78c8bbad34a3c0dcf56"
+  },
+  {
+    "path": "figure2_TT3D_mouse.csv",
+    "sheet": 4,
+    "n": 55000,
+    "sha256": "ca40395ef82e070e1046110bcdf09a49740c0c157e4231479d5300e7e5a4dfa1"
+  },
+  {
+    "path": "figure2_TT3D_fly.csv",
+    "sheet": 4,
+    "n": 55000,
+    "sha256": "8c85398871f0b78d5286d836ed91bf271b6cdc662fa2a1b39d8f0579a01d0a2b"
+  },
+  {
+    "path": "figure2_TT3D_worm.csv",
+    "sheet": 4,
+    "n": 55000,
+    "sha256": "5e1de1e0822d84c6ee2e8c490036019cfb9b315b3b2904a022821f21c6231158"
+  },
+  {
+    "path": "figure2_TT3D_yeast.csv",
+    "sheet": 4,
+    "n": 55000,
+    "sha256": "953c6cc2c451ec082245498d5d2bd33b7c9b6f5d1b334ff6bae0785a668617c2"
+  },
+  {
+    "path": "figure2_TT3D_ecoli.csv",
+    "sheet": 4,
+    "n": 22000,
+    "sha256": "2b77da092b40fd0d49e89f832e0730ca781917baa9b153b3b19c57f7c8fe5da6"
+  },
+  {
+    "path": "figure2_Topsy-Turvy_mouse.csv",
+    "sheet": 5,
+    "n": 55000,
+    "sha256": "398d21d6094fd32334ca5cad70099d343a8a0961712db6899fa7c37e34c203e2"
+  },
+  {
+    "path": "figure2_Topsy-Turvy_fly.csv",
+    "sheet": 5,
+    "n": 55000,
+    "sha256": "ee91e4a33ed5d8d67819c914a9bbbed1cbfb2e861b0979138e3a62adef36b4f8"
+  },
+  {
+    "path": "figure2_Topsy-Turvy_worm.csv",
+    "sheet": 5,
+    "n": 55000,
+    "sha256": "2000b76f0238c0d2e094292affe8dddd20b7fd948a3b4a8e5424eae640db856c"
+  },
+  {
+    "path": "figure2_Topsy-Turvy_yeast.csv",
+    "sheet": 5,
+    "n": 55000,
+    "sha256": "e94ebcaec9d432912095720e3a4149c9fb6f51de0a408d8316943ba21707c578"
+  },
+  {
+    "path": "figure2_Topsy-Turvy_ecoli.csv",
+    "sheet": 5,
+    "n": 22000,
+    "sha256": "0a4fca161417406eb5402da4fe55035a5285fe2074ad180239f66e3b6123ca2e"
+  },
+  {
+    "path": "figure2_D-SCRIPT_mouse.csv",
+    "sheet": 6,
+    "n": 55000,
+    "sha256": "ccddceb49bed4970bf9d3f2501641eeaf7ec3058dfd103f504193f5272500344"
+  },
+  {
+    "path": "figure2_D-SCRIPT_fly.csv",
+    "sheet": 6,
+    "n": 55000,
+    "sha256": "0a1b746efac28c5d04d66aef41d8dff4de9c8abce3389083e0af94394b3451f3"
+  },
+  {
+    "path": "figure2_D-SCRIPT_worm.csv",
+    "sheet": 6,
+    "n": 55000,
+    "sha256": "41b5701caceec44300cea43a6fdc74eaa846da8369deb4a339c103b4881fdc58"
+  },
+  {
+    "path": "figure2_D-SCRIPT_yeast.csv",
+    "sheet": 6,
+    "n": 55000,
+    "sha256": "b9b03e772d99ccd6209682125299540d0ec7bdebba75c9f27758ac821c85d676"
+  },
+  {
+    "path": "figure2_D-SCRIPT_ecoli.csv",
+    "sheet": 6,
+    "n": 22000,
+    "sha256": "3aeb249d2f8a542d39c28d5b1ba84495a23a76c3ce8c1b8a1dd91de1747dfef6"
+  },
+  {
+    "path": "figure4_PLM-interact.csv",
+    "sheet": 9,
+    "n": 52048,
+    "sha256": "eb2a643fda0a38753c163bcc843e10080672d628393ec8cf263f3c6cad1ab779"
+  },
+  {
+    "path": "figure4_TUnA.csv",
+    "sheet": 10,
+    "n": 52048,
+    "sha256": "049fe7673a1930be6d8b68ca2b7b55d90d6f968c21e6d8a1884cf7e07bc109d5"
+  },
+  {
+    "path": "figure5_mutation.csv",
+    "sheet": 11,
+    "n": 598,
+    "sha256": "fc1d6918123b0353e70686483ae5727cfcbb06d63a5d493854d899099ad7cbf2"
+  },
+  {
+    "path": "supplement6_mouse.csv",
+    "sheet": 20,
+    "n": 55000,
+    "sha256": "8844835b9fe0c21675929b0e77d5fbb4126788e3a57cb78aa3ab9aea7d8acde8"
+  },
+  {
+    "path": "supplement6_fly.csv",
+    "sheet": 21,
+    "n": 55000,
+    "sha256": "e21ca6739ef20a3a789c86ff6e9620cf90da9bfe7b6fae54ae2f8d7ccd015360"
+  },
+  {
+    "path": "supplement6_worm.csv",
+    "sheet": 22,
+    "n": 55000,
+    "sha256": "652915d6374cff4468acbca8751a36159a08dd622e0708cf14ea86430b4ca385"
+  },
+  {
+    "path": "supplement6_yeast.csv",
+    "sheet": 23,
+    "n": 55000,
+    "sha256": "bc4e377b4ec2ad2716f9dc7ce01982c31f7c444db7280439a1f6b02c88d7ec8f"
+  },
+  {
+    "path": "supplement6_ecoli.csv",
+    "sheet": 24,
+    "n": 22000,
+    "sha256": "0ba02906cf2e1f07f51edada696deb92164e7ff949e45d3f8f3896834d9297ef"
+  }
+]

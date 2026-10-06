@@ -1,0 +1,93 @@
+{
+  "observed_at_utc": "2026-09-28T21:30:30.615810+00:00",
+  "update": 1000,
+  "rows": 59258,
+  "positives": 29628,
+  "prevalence": 0.49998312464139866,
+  "results": {
+    "reference-seed2": {
+      "ordinary_AB": {
+        "ap": 0.5168215416578681,
+        "auroc": 0.5029279843600982,
+        "brier": 0.24996638432676044,
+        "probability_min": 0.46028889330999867,
+        "probability_median": 0.4881613927144118,
+        "probability_max": 0.5392258679822007,
+        "predicted_positive_fraction_at_0_5": 0.12651456343447298
+      },
+      "ordinary_BA": {
+        "ap": 0.5608920957653223,
+        "auroc": 0.5482791764692857,
+        "brier": 0.2492033621330118,
+        "probability_min": 0.46295861324381593,
+        "probability_median": 0.48864941135778783,
+        "probability_max": 0.535827165965063,
+        "predicted_positive_fraction_at_0_5": 0.14610685477066387
+      },
+      "pooled": {
+        "ap": 0.5497648121012173,
+        "auroc": 0.5212578475059463,
+        "brier": 0.24956850804977862,
+        "probability_min": 0.4667240637163961,
+        "probability_median": 0.4888324239776132,
+        "probability_max": 0.5332759362836039,
+        "predicted_positive_fraction_at_0_5": 0.12005130109014817
+      },
+      "orientation_logit_gap_mean": 0.022893089329706733,
+      "orientation_class_flips_at_0_5": 8695
+    },
+    "symmetric-seed2": {
+      "ordinary_AB": {
+        "ap": 0.5157205555477696,
+        "auroc": 0.5007162894592007,
+        "brier": 0.24996854218581774,
+        "probability_min": 0.45810626362947604,
+        "probability_median": 0.48730741495092655,
+        "probability_max": 0.5491571023687412,
+        "predicted_positive_fraction_at_0_5": 0.13792230584899928
+      },
+      "ordinary_BA": {
+        "ap": 0.5604857231540905,
+        "auroc": 0.5487146278153298,
+        "brier": 0.24903771300042665,
+        "probability_min": 0.4605315033125118,
+        "probability_median": 0.4879173917975274,
+        "probability_max": 0.545043565586644,
+        "predicted_positive_fraction_at_0_5": 0.16180093826993824
+      },
+      "pooled": {
+        "ap": 0.5484569381753295,
+        "auroc": 0.5190545592435867,
+        "brier": 0.2494779101991414,
+        "probability_min": 0.4646586421213344,
+        "probability_median": 0.4881613927144118,
+        "probability_max": 0.5435902306396628,
+        "predicted_positive_fraction_at_0_5": 0.14077424145263087
+      },
+      "orientation_logit_gap_mean": 0.027848137359352147,
+      "orientation_class_flips_at_0_5": 9727
+    }
+  },
+  "checks": {
+    "reference-seed2": {
+      "complete_unique_rows": true,
+      "labels_match_frozen_validation": true,
+      "all_logits_finite": true
+    },
+    "symmetric-seed2": {
+      "complete_unique_rows": true,
+      "labels_match_frozen_validation": true,
+      "all_logits_finite": true
+    }
+  },
+  "symmetric_minus_pooled_reference": {
+    "ap": -0.0013078739258878258,
+    "auroc": -0.002203288262359604,
+    "brier": -9.059785063722514e-05
+  },
+  "constant_prevalence_brier": 0.2499999997152223,
+  "training_fraction": 0.07846214201647705,
+  "examples_seen_at_validation": 64000,
+  "first_epoch_fraction_examples": 0.39243339362908913,
+  "all_checks_passed": true
+}

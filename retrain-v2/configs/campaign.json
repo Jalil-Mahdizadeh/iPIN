@@ -1,0 +1,112 @@
+{
+  "initial_group": "initial-screen",
+  "groups": {
+    "initial-screen": [
+      "reference-official-seed2",
+      "capped-official-seed2",
+      "positive10-official-seed2",
+      "clean-bce-official-seed2"
+    ],
+    "objective-completion": [
+      "masked-bce-official-seed2",
+      "clean-plus-mlm-official-seed2"
+    ],
+    "weight-coverage-interaction": [
+      "capped-positive10-official-seed2"
+    ],
+    "readout-screen": [
+      "cls-mlp-official-seed2",
+      "residue-readout-official-seed2"
+    ],
+    "attention-screen": [
+      "chain-aware-official-seed2"
+    ],
+    "attention-readout-combination": [
+      "chain-residue-official-seed2"
+    ],
+    "adaptation-screen": [
+      "lower-lr-official-seed2"
+    ],
+    "development-confirmation": {
+      "reference": [
+        "reference-fold0-seed2",
+        "reference-fold1-seed2",
+        "reference-fold2-seed2"
+      ],
+      "capped": [
+        "capped-fold0-seed2",
+        "capped-fold1-seed2",
+        "capped-fold2-seed2"
+      ],
+      "positive10": [
+        "positive10-fold0-seed2",
+        "positive10-fold1-seed2",
+        "positive10-fold2-seed2"
+      ],
+      "capped-positive10": [
+        "capped-positive10-fold0-seed2",
+        "capped-positive10-fold1-seed2",
+        "capped-positive10-fold2-seed2"
+      ],
+      "masked-bce": [
+        "masked-bce-fold0-seed2",
+        "masked-bce-fold1-seed2",
+        "masked-bce-fold2-seed2"
+      ],
+      "clean-bce": [
+        "clean-bce-fold0-seed2",
+        "clean-bce-fold1-seed2",
+        "clean-bce-fold2-seed2"
+      ],
+      "clean-plus-mlm": [
+        "clean-plus-mlm-fold0-seed2",
+        "clean-plus-mlm-fold1-seed2",
+        "clean-plus-mlm-fold2-seed2"
+      ],
+      "lower-lr": [
+        "lower-lr-fold0-seed2",
+        "lower-lr-fold1-seed2",
+        "lower-lr-fold2-seed2"
+      ],
+      "cls-mlp": [
+        "cls-mlp-fold0-seed2",
+        "cls-mlp-fold1-seed2",
+        "cls-mlp-fold2-seed2"
+      ],
+      "residue-readout": [
+        "residue-readout-fold0-seed2",
+        "residue-readout-fold1-seed2",
+        "residue-readout-fold2-seed2"
+      ],
+      "chain-aware": [
+        "chain-aware-fold0-seed2",
+        "chain-aware-fold1-seed2",
+        "chain-aware-fold2-seed2"
+      ],
+      "chain-residue": [
+        "chain-residue-fold0-seed2",
+        "chain-residue-fold1-seed2",
+        "chain-residue-fold2-seed2"
+      ]
+    }
+  },
+  "production_submission_authorized_now": false,
+  "staging": "Initial four-run screen only; follow-up groups require reviewing development results.",
+  "development_promotion": {
+    "minimum_mean_ap_delta": 0.005,
+    "minimum_positive_folds": 2,
+    "maximum_single_fold_ap_drop": 0.01,
+    "maximum_mean_auroc_drop": 0.005,
+    "interpretation": "Screening thresholds, not a statistical or external-generalization claim."
+  },
+  "external_confirmation": {
+    "minimum_ap_delta": 0.01,
+    "paired_ci_lower_above_zero": true,
+    "training_seeds": [
+      2,
+      17,
+      42
+    ],
+    "status": "Requires independently curated exposure-audited holdout and seed confirmation; not replaced by Bernett test."
+  }
+}

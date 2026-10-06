@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-05T16:12:50.802343+00:00",
+  "replaces_timed_out_job": "3382643",
+  "job_id": "3366323",
+  "host": "n581",
+  "gpu_uuid": "09d50e1d-2f80-8d07-8213-222e863e2c8b",
+  "wrapper": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/xpair_resume_default.py",
+    "bytes": 2476,
+    "sha256": "11b5872007a8a3f95fb80699936514cf7410ce5d163824b500de1dfe5af6f304"
+  },
+  "original_qualification": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/xpair.json",
+    "bytes": 5404,
+    "sha256": "1e3db3f7061c704aa5875dc0d14bd64da6471e688883f734c29cdc7d6dcc8606"
+  },
+  "native_signature": {
+    "scripts/xpair_benchmark.py": "139faa9914f024d83007d1c00f2852ddfc78ed59b30f3aea5a173dbca24afe1f",
+    "scripts/xpair/native.py": "b2739aab3fca75e78a8d927edb42da720f4d987994afaf9e97f9f27786bfd1ad",
+    "scripts/xpair/io_utils.py": "ad692593bba01ee6cb11b787c8036b11e41b16f394cdb2c0dce2ada9b9e5ff4a",
+    "scripts/container.sh": "7fc8c90ac5f3b22ea2d470dab8ca4eef7233ae8098046dea92abe2c9bd621d1f",
+    "provenance/prepared.json": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba",
+    "provenance/runtime-inputs.json": "9ac60777c878da594b8ed2255c5923f3d9fbf7e369f395588277f0959ee4853c"
+  },
+  "new_encoder_inference": false,
+  "changed_model_or_batching": false,
+  "physical_gpus": 1,
+  "logical_shards": 4,
+  "shared_projection_cache_requires_identical_weights": true,
+  "state": "complete",
+  "completed_logical_shards": 4
+}

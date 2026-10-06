@@ -1,0 +1,215 @@
+{
+  "at_utc": "2026-10-05T17:39:25.448845+00:00",
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/plot_combined_exposure.py",
+    "bytes": 5127,
+    "sha256": "38ae5701931c04a1d515c1b6d702825c369e4e0a84a2aeb00e8e67969ab236be"
+  },
+  "plot_helper": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/plot_exposure_subsets.py",
+    "bytes": 9010,
+    "sha256": "5e9f46e33042f8e1587ece9a490ef7ddc972ea7fb58528f1f9dc2158b6d6ae10"
+  },
+  "sources": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/collection.json",
+      "bytes": 13227,
+      "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/exposure.json",
+      "bytes": 19981,
+      "sha256": "42784de097b9c43c3f1f9d6c6a206cd2b388b8a88592bf63bac162f1a5ac00d7"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/exposure-flags.npz",
+      "bytes": 19343,
+      "sha256": "5ad970a5f4992e681383c68ca633273ff0cdc3aa80491631bc1104cb5d774697"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/pair-mapping.npz",
+      "bytes": 162847,
+      "sha256": "ddbeba9e2f459e7e33073a81ae4cf31e89a97a0caf71557c355b7a252a8620a2"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/original.npy",
+      "bytes": 1665664,
+      "sha256": "402d3c928752fc3d91b1f17005cd68297d6df34a14fa6ae47e26e79a002f1188"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/ilp.npy",
+      "bytes": 1665664,
+      "sha256": "bced44a7b60dcdca586d2a076ed9979ad003f9e988a54c37ca259ea1ea63c21d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/union.npy",
+      "bytes": 2461504,
+      "sha256": "340f13363a78f1cc89705220a21e853b85a447b3d82b4bddb0e055fc20e1e168"
+    }
+  ],
+  "exclusion_rule": "Remove a pair if either endpoint is exposed to D-SCRIPT OR X-PAIR default.",
+  "exposed_sequences": {
+    "dscript": 2233,
+    "xpair_default": 1873,
+    "union": 2543,
+    "remaining": 479
+  },
+  "checks": {
+    "all_models": true,
+    "same_rows_within_each_test": true,
+    "no_retained_endpoints_exposed_to_either_source": true,
+    "previously_reported_counts_verified": true,
+    "positive_pairs_identical_between_tests": true
+  },
+  "data": {
+    "original": {
+      "counts": {
+        "pairs": 1073,
+        "positives": 566,
+        "negatives": 507,
+        "prevalence": 0.527493010251631,
+        "unique_proteins": 374,
+        "fraction_of_full_test": 0.02061558561328005
+      },
+      "models": {
+        "native-plm": {
+          "ap": 0.6804623387006148,
+          "auroc": 0.6781403112607245
+        },
+        "ipin-esm2": {
+          "ap": 0.7142210008018983,
+          "auroc": 0.7130874471184339
+        },
+        "ipin-esmc": {
+          "ap": 0.6937317762053823,
+          "auroc": 0.7004411733957805
+        },
+        "tuna": {
+          "ap": 0.6759727072180202,
+          "auroc": 0.6965521567315534
+        },
+        "xpair-bernett": {
+          "ap": 0.7100886753916684,
+          "auroc": 0.7163492030303664
+        },
+        "xpair-default": {
+          "ap": 0.7050828564003218,
+          "auroc": 0.6812400248116475
+        },
+        "rapppid": {
+          "ap": 0.6367916462805834,
+          "auroc": 0.6490963960384999
+        },
+        "sprint": {
+          "ap": 0.5890022248751728,
+          "auroc": 0.5854851861918999
+        },
+        "dscript": {
+          "ap": 0.5694715936680063,
+          "auroc": 0.520138554930618
+        },
+        "native-human": {
+          "ap": 0.6555483684800435,
+          "auroc": 0.6271074218886125
+        },
+        "tuna-human": {
+          "ap": 0.6535792071179463,
+          "auroc": 0.6276719565656778
+        }
+      }
+    },
+    "ilp": {
+      "counts": {
+        "pairs": 1057,
+        "positives": 566,
+        "negatives": 491,
+        "prevalence": 0.5354777672658467,
+        "unique_proteins": 351,
+        "fraction_of_full_test": 0.02030817706732247
+      },
+      "models": {
+        "native-plm": {
+          "ap": 0.6229299431044938,
+          "auroc": 0.5953128036098537
+        },
+        "ipin-esm2": {
+          "ap": 0.6810856039202522,
+          "auroc": 0.6615438313674409
+        },
+        "ipin-esmc": {
+          "ap": 0.6421959986546388,
+          "auroc": 0.6282142163177478
+        },
+        "tuna": {
+          "ap": 0.6058617269861528,
+          "auroc": 0.6064064827675545
+        },
+        "xpair-bernett": {
+          "ap": 0.6284437639732372,
+          "auroc": 0.6242110641727778
+        },
+        "xpair-default": {
+          "ap": 0.6035701427325305,
+          "auroc": 0.5614524335566702
+        },
+        "rapppid": {
+          "ap": 0.6072132454954476,
+          "auroc": 0.5906673479521853
+        },
+        "sprint": {
+          "ap": 0.5745131930162681,
+          "auroc": 0.5629745309565104
+        },
+        "dscript": {
+          "ap": 0.5318293332899506,
+          "auroc": 0.4814073823523062
+        },
+        "native-human": {
+          "ap": 0.5750808774836664,
+          "auroc": 0.5430253395032852
+        },
+        "tuna-human": {
+          "ap": 0.5851739416520964,
+          "auroc": 0.5512799291846884
+        }
+      }
+    }
+  },
+  "metrics_csv": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposure-removed-metrics.csv",
+    "bytes": 2539,
+    "sha256": "8b82381a796e63601262a030047633380e591d345e18ec9dfc033dd1fac0b59b"
+  },
+  "retained_rows": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposure-removed-rows.npz",
+    "bytes": 8826,
+    "sha256": "0ad662fba39f5f01640d2038d1b521eb75b67f654a7f7269bd1676dbb2e7d1df"
+  },
+  "figure": {
+    "spec": {
+      "stem": "combined-exposed-sequences-removed",
+      "title": "Performance after excluding D-SCRIPT and X-PAIR exposure",
+      "source": "Exclude proteins in D-SCRIPT human TRAIN or X-PAIR default TRAIN + DEV (interaction / interface)",
+      "scope": "Both exposure lists are applied together; about 2% of each full test remains."
+    },
+    "files": [
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposed-sequences-removed.png",
+        "bytes": 474750,
+        "sha256": "3286e1864c8f11cd4c74bb73e20b6d2b7d30ad302bc68b826fc9a40d7644132b"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposed-sequences-removed.pdf",
+        "bytes": 34144,
+        "sha256": "da2ae23adcf934f765aeedd51f7c71f9fcb8bb5586fa250765ff9f2a892e0e3d"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposed-sequences-removed.svg",
+        "bytes": 44760,
+        "sha256": "6c580405552c98e128821903096820578fd436b3e73aa62666cfd5c0814a4256"
+      }
+    ]
+  },
+  "inference_repeated": false,
+  "confidence_intervals": false
+}

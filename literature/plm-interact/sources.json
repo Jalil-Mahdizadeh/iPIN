@@ -1,0 +1,61 @@
+{
+  "paper_doi": "10.1038/s41467-025-64512-w",
+  "published": "2025-10-27",
+  "retrieved_utc": "2026-09-28T17:05:29.807935+00:00",
+  "sources": [
+    {
+      "file": "article.pdf",
+      "url": "https://www.nature.com/articles/s41467-025-64512-w.pdf",
+      "pages": 14,
+      "coverage": "Full text, methods, figures and end matter read.",
+      "sha256": "294ce07d524dde9b549ce67d9ccd111f89a172b73a6edae62eb1be95f7971e6e"
+    },
+    {
+      "file": "supplementary-information.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM1_ESM.pdf",
+      "pages": 12,
+      "coverage": "All 10 figures and 4 tables read, including visual inspection.",
+      "sha256": "112304df473b376fe8bb3b887bce3bbd435fc6d23567521dd8c71a59c37091f3"
+    },
+    {
+      "file": "reporting-summary.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM2_ESM.pdf",
+      "pages": 3,
+      "coverage": "Full text read.",
+      "sha256": "6bada1e8e6ea01747593a9d6fb0103a3b0ef2dd242112b241757b8322aeac182"
+    },
+    {
+      "file": "peer-review.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM3_ESM.pdf",
+      "pages": 31,
+      "coverage": "All reviewer reports and author responses read.",
+      "sha256": "400bd6ba8288481daa62c1126d6e04e26d29a9c1912af1e94ad018fe754aa67f"
+    },
+    {
+      "file": "source-data-index.json",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip",
+      "coverage": "Archive inventory inspected; complete archive not downloaded.",
+      "sha256": "a8ba259fd8ee380301c7a5f5e691ce095f84584ed103e4256d6c401cc5750d55"
+    },
+    {
+      "file": "repository-README.md",
+      "url": "https://raw.githubusercontent.com/liudan111/PLM-interact/main/README.md",
+      "coverage": "Targeted inspection of model description and loss weights; current main, not publication archive.",
+      "sha256": "51be469ab50c0bbcdad00105eb4424e877cd91a77f0ea22cb5aa78d3db555652"
+    },
+    {
+      "file": "repository-train_mlm.py",
+      "url": "https://raw.githubusercontent.com/liudan111/PLM-interact/main/PLMinteract/train_mlm.py",
+      "coverage": "Targeted inspection of head, loss and masking configuration; current main, not publication archive.",
+      "sha256": "5ae68c4acb324824e7dbeb1e84198919f1da73d73bc70f965a140612adb5a917"
+    },
+    {
+      "file": "source-data.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip",
+      "archive_member": "Source Data/Source Data.xlsx",
+      "coverage": "Workbook inventory and targeted summary-table/header checks; no exhaustive row-level audit.",
+      "sha256": "140de50feab7eb5bb0c53ba9ab38ecaedfe05f83e0f3554c2f357d4045e0c50e"
+    }
+  ],
+  "scope": "Literature reading with limited source checks. No training, model inference, or comprehensive numerical reproduction."
+}

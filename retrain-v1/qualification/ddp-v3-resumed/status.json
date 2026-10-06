@@ -1,0 +1,16 @@
+{
+  "state": {
+    "update": 5,
+    "epoch": 1,
+    "next_chunk": 0,
+    "examples_seen": 35,
+    "best_ap": 0.3946428571428572,
+    "best_update": 4,
+    "total_steps": 5,
+    "pending_validation": false,
+    "last_validation_update": 5
+  },
+  "last_committed_update": 5,
+  "phase": "complete",
+  "attempt": "20260928T194840-3112184"
+}

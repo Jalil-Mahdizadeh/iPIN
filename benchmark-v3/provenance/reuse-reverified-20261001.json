@@ -1,0 +1,11 @@
+{
+  "verified_at_utc": "2026-10-01T21:32:17.316181+00:00",
+  "passed": true,
+  "reused_files_and_source_files": 21,
+  "reuse_manifest_sha256": "3b390be5fd8dd4e04a25d7d6a7a65460bf8b75cfd7a6e40165a7a94a44e67800",
+  "container": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact/plm-interact-native-arm64-v1.sif",
+    "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+  },
+  "new_baseline_inference_required": false
+}

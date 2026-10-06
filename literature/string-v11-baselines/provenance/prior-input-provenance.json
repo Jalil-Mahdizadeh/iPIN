@@ -1,0 +1,106 @@
+{
+  "created_at_utc": "2026-10-05T21:09:57.063685+00:00",
+  "dataset": "Released STRING v11/D-SCRIPT human TRAIN and validation used by humanV11 and TUnA human seed 47",
+  "native_dataset_revision": "19dbed25184466fda5341b5ba70c2560ade1bf85",
+  "tuna_repository_revision": "b5bda8fee261a4f27821738db995cf5883dcd133",
+  "native_model_revision": "e86e392dec13dd0c23252c94947b04a7a9821b0e",
+  "tuna_model_revision": "eaec69cafc574d984119079220e75b11ffcb7c09",
+  "tuna_model_path": "x-species/TUnA_seed47/model",
+  "inputs": [
+    {
+      "model_source": "native",
+      "split": "train",
+      "kind": "native_file",
+      "archive": "inputs/native/train.csv.gz",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.train.csv",
+      "source_url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/train/human.ppi.qrels.seq.train.csv",
+      "uncompressed_bytes": 318980144,
+      "uncompressed_sha256": "86c5134846df36df17455500154eab6049cd07250c79d6d263afcb5dcb6bf5fd",
+      "archive_bytes": 184845032,
+      "archive_sha256": "8900b339e7e4c9b890a837266724af1ad99c25e8fb072567cd8fee037eceb642"
+    },
+    {
+      "model_source": "tuna",
+      "split": "train",
+      "kind": "tuna_dictionary",
+      "archive": "inputs/tuna/train.dictionary.tsv.gz",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_train_dictionary.tsv",
+      "source_url": "https://raw.githubusercontent.com/Wang-lab-UCSD/TUnA/b5bda8fee261a4f27821738db995cf5883dcd133/data/processed/xspecies/human_train_dictionary.tsv",
+      "uncompressed_bytes": 6414663,
+      "uncompressed_sha256": "83b49176590a94ed72fb8176a75d4bc35b90ebdcc9537677bfc0049ec423dded",
+      "archive_bytes": 3596086,
+      "archive_sha256": "bc32f50f0dc881136c190e5f263cd6b62ad7b3c9781911ca0e138c8bc8affbfb"
+    },
+    {
+      "model_source": "tuna",
+      "split": "train",
+      "kind": "tuna_interactions",
+      "archive": "inputs/tuna/train.interactions.tsv.gz",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_train_interaction.tsv",
+      "source_url": "https://raw.githubusercontent.com/Wang-lab-UCSD/TUnA/b5bda8fee261a4f27821738db995cf5883dcd133/data/processed/xspecies/human_train_interaction.tsv",
+      "uncompressed_bytes": 18980640,
+      "uncompressed_sha256": "1311d05d166653a57e6e39e2a55ad3e1da93eb9500294fab2e06f00510392cda",
+      "archive_bytes": 3333129,
+      "archive_sha256": "1106a0ec8b4bb040f1bdfab912a7a9b814a8fa661df312106c460ffc611aa381"
+    },
+    {
+      "model_source": "native",
+      "split": "validation",
+      "kind": "native_file",
+      "archive": "inputs/native/validation.csv.gz",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.test.csv",
+      "source_url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/val/human.ppi.qrels.seq.test.csv",
+      "uncompressed_bytes": 39851844,
+      "uncompressed_sha256": "abb126f34f617fdc4c956e1f056df5cb0921ab3c12d6f0d87948411d34a7b9f3",
+      "archive_bytes": 23085674,
+      "archive_sha256": "e255f6b684c0ed7eff54b68f75bdb186d0059d2abb99493550e957a7244f6fa1"
+    },
+    {
+      "model_source": "tuna",
+      "split": "validation",
+      "kind": "tuna_dictionary",
+      "archive": "inputs/tuna/validation.dictionary.tsv.gz",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_test_dictionary.tsv",
+      "source_url": "https://raw.githubusercontent.com/Wang-lab-UCSD/TUnA/b5bda8fee261a4f27821738db995cf5883dcd133/data/processed/xspecies/human_test_dictionary.tsv",
+      "uncompressed_bytes": 6297772,
+      "uncompressed_sha256": "756fe5bc557ea596784b6f5d316780036fcde4408ed1ef886c39754c38e682ce",
+      "archive_bytes": 3532283,
+      "archive_sha256": "3b04c15d13e3410847a909ee199443e2f4bc2075ba2baa5a1a417ae49616598d"
+    },
+    {
+      "model_source": "tuna",
+      "split": "validation",
+      "kind": "tuna_interactions",
+      "archive": "inputs/tuna/validation.interactions.tsv.gz",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_test_interaction.tsv",
+      "source_url": "https://raw.githubusercontent.com/Wang-lab-UCSD/TUnA/b5bda8fee261a4f27821738db995cf5883dcd133/data/processed/xspecies/human_test_interaction.tsv",
+      "uncompressed_bytes": 2372625,
+      "uncompressed_sha256": "6afd73e10f74048364f6676934a3b638bc9dadd349b8d5ae3e00c1836724af48",
+      "archive_bytes": 416698,
+      "archive_sha256": "b093da83e6e529630bef0a20282792e9fd2b3d8888e7821db1697f9d7ab2b4d3"
+    }
+  ],
+  "copied_provenance": [
+    {
+      "path": "provenance/human-releases-exposure.json",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/human-releases-exposure.json",
+      "sha256": "373d70302230fb4a4393d0a55c0b48dc755a5eade9aa5423363b6d0ce5cb39d8"
+    },
+    {
+      "path": "provenance/native-human-exposure-inputs.json",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/provenance/native-human-exposure-inputs.json",
+      "sha256": "25f920c979ef5d0d328eb084943fcc1942cad0e5b9c5cf1e510a4a1717a618df"
+    },
+    {
+      "path": "provenance/tuna-seed47-config.yaml",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v12.5-review-v6/tuna-seed47-config.yaml",
+      "sha256": "bdd30ca50773da99a799125ed193c3f1ec89cc2eb3d50beb27d0b4ec2a98c487"
+    },
+    {
+      "path": "provenance/legacy-degree-baseline.json",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v12.5-review-v6/legacy-degree-baseline.json",
+      "sha256": "682c7f5c8701e1cb462ffcd8f98fdcd963805bd2dc30d5e94e418e3a3358ada1"
+    }
+  ],
+  "storage": "Lossless gzip copies; uncompressed bytes and SHA256 exactly match the released source files."
+}

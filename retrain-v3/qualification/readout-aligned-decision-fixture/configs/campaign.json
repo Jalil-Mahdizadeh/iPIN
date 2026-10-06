@@ -1,0 +1,70 @@
+{
+  "version": 3,
+  "initial_group": "adaptation",
+  "initial_runs": [
+    "clean-cls-linear-lr2e-5-fold0-seed2",
+    "clean-cls-linear-lr2e-5-fold1-seed2",
+    "clean-cls-linear-lr2e-5-fold2-seed2",
+    "clean-cls-linear-lr5e-6-fold0-seed2",
+    "clean-cls-linear-lr5e-6-fold1-seed2",
+    "clean-cls-linear-lr5e-6-fold2-seed2"
+  ],
+  "stage2_templates_by_learning_rate": {
+    "lr2e-5": [
+      "clean-cls-mlp-lr2e-5-fold0-seed2",
+      "clean-cls-mlp-lr2e-5-fold1-seed2",
+      "clean-cls-mlp-lr2e-5-fold2-seed2",
+      "clean-residue-mean-lr2e-5-fold0-seed2",
+      "clean-residue-mean-lr2e-5-fold1-seed2",
+      "clean-residue-mean-lr2e-5-fold2-seed2"
+    ],
+    "lr5e-6": [
+      "clean-cls-mlp-lr5e-6-fold0-seed2",
+      "clean-cls-mlp-lr5e-6-fold1-seed2",
+      "clean-cls-mlp-lr5e-6-fold2-seed2",
+      "clean-residue-mean-lr5e-6-fold0-seed2",
+      "clean-residue-mean-lr5e-6-fold1-seed2",
+      "clean-residue-mean-lr5e-6-fold2-seed2"
+    ]
+  },
+  "optional_disabled_runs": [
+    "clean-capped-official-seed2"
+  ],
+  "stage3": {
+    "status": "not configured: requires development decision and exposure-audited panel",
+    "training_seeds": [
+      2,
+      17,
+      42
+    ],
+    "candidate_and_matched_control_runs": 6
+  },
+  "production_submission_authorized_now": false,
+  "staging": "Only six adaptation runs can enter the initial release. No automatic later-stage submission.",
+  "development_promotion": {
+    "minimum_mean_ap_delta": 0.005,
+    "minimum_positive_folds": 2,
+    "maximum_single_fold_ap_drop": 0.01,
+    "maximum_mean_auroc_drop": 0.005,
+    "maximum_mean_macro_ap_drop": 0.005,
+    "macro_minimum_positives_per_protein": 2,
+    "macro_minimum_negatives_per_protein": 2
+  },
+  "adaptation_selection": "Choose 5e-6 only if all gates pass against 2e-5; otherwise retain 2e-5 for the readout screen. Inspect horizon trends before interpreting a non-promotion.",
+  "readout_selection": "Require gates against CLS-linear; a residue-mechanism claim additionally requires gates against matched CLS-MLP. Select largest mean AP gain among passing candidates, ties prefer CLS-MLP.",
+  "checkpoint_selection": "Maximum pooled fold-validation AP, strict greater-than, earlier update on exact ties; evaluate every 1000 updates and final 6000.",
+  "historical_test_policy": "Exploratory only; absent from this package and unavailable to development selection.",
+  "external_confirmation": {
+    "minimum_ap_delta": 0.01,
+    "paired_ci_lower_above_zero": true,
+    "status": "not ready; external provenance/exposure audit required"
+  },
+  "stage1_budget_gpu_hours": [
+    150,
+    270
+  ],
+  "core_budget_with_contingency_gpu_hours": [
+    1000,
+    1500
+  ]
+}

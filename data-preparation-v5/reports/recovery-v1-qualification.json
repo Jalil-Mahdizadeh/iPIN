@@ -1,0 +1,10 @@
+{
+  "all_enumerated_objectives_agree": true,
+  "checkpoint_reload_verified": true,
+  "exhaustive_optimum": 0.49999999999999994,
+  "forced_interruption_preserves_checked_selection": true,
+  "interrupted_model_status": "kInterrupt",
+  "invalid_empty_selection_rejected": true,
+  "passed": true,
+  "warm_start_accepted": true
+}

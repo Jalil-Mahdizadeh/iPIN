@@ -1,0 +1,10 @@
+model,mean_absolute_logit_gap,decisions_changed_on_reversal,rows,final_pooled_score_is_order_invariant
+native-bernett,0.45081875204600225,5891,52048,True
+v1-reference,0.2323326702452131,8995,52048,True
+v1-symmetric,0.816546532978489,13995,52048,True
+v2-reference,0.22276979103103817,8633,52048,True
+v2-capped,0.6810628808977565,10091,52048,True
+v2-positive10,0.2503324380259568,0,52048,True
+v2-clean-bce,0.24857883526157168,7151,52048,True
+v3-residue-mlp,0.2514823326652614,6552,52048,True
+v4-esmc-standard,0.29843952866140017,5349,52048,True

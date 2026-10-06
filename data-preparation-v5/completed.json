@@ -1,0 +1,302 @@
+{
+  "audit": {
+    "development_protected_test_family_overlap": 0,
+    "development_protected_test_sequence_overlap": 0,
+    "duplicate_pairs": 0,
+    "final_directed_homology_checks": {
+      "final-train-vs-val.tsv": 0,
+      "final-val-vs-train.tsv": 0
+    },
+    "historical_exposure": {
+      "historical_homology": "Existing v1 manifest records 107 training and 2 validation rows removed by the 40%-identity/80%-both-coverage rule; native was not retroactively retrained.",
+      "identical_v1_to_v4_official_pair_arrays": {
+        "retrain-v2/data/prepared/official/train.npy": "9c290cf84301a697bea1a37677973e1d710a75083fec1265113b56ea7a11c519",
+        "retrain-v2/data/prepared/official/val.npy": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0",
+        "retrain-v3/data/prepared/official/train.npy": "9c290cf84301a697bea1a37677973e1d710a75083fec1265113b56ea7a11c519",
+        "retrain-v3/data/prepared/official/val.npy": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0",
+        "retrain-v4/data/prepared/official/train.npy": "9c290cf84301a697bea1a37677973e1d710a75083fec1265113b56ea7a11c519",
+        "retrain-v4/data/prepared/official/val.npy": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0"
+      },
+      "ilp_test_new_proteins": 0,
+      "limitations": [
+        "Current alias coverage is reported, not assumed complete.",
+        "No assertion about unsupervised pretraining exposure or independence from previous benchmark-guided research."
+      ],
+      "native_scope": "Historical source dataset checked; native checkpoint training membership cannot be proven from weights.",
+      "original_test_proteins": 3022,
+      "passed": true,
+      "source_hashes": {
+        "retrain-v1/data/raw/pairs_uniprot_seqs_train.csv": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a",
+        "retrain-v1/data/raw/pairs_uniprot_seqs_val.csv": "0df36cbb69047e21ba01051641eede26a6e054e9c3e827c3bbe62e391854d9f2"
+      },
+      "splits": {
+        "train": {
+          "historical_source": {
+            "exact_test_sequence_overlap": 0,
+            "proteins": 4286,
+            "rows": 163192,
+            "shared_test_accessions": [],
+            "shared_test_entry_families": [],
+            "unresolved_current_alias_bases": [
+              "A2A2Z9",
+              "A9Z1Z3",
+              "O60397",
+              "Q3SXR2",
+              "Q52M75",
+              "Q5YKI7",
+              "Q8N1T3",
+              "Q8NFI4"
+            ]
+          },
+          "v1_to_v4_used": {
+            "exact_test_sequence_overlap": 0,
+            "proteins": 4285,
+            "rows": 163085,
+            "shared_test_accessions": [],
+            "shared_test_entry_families": [],
+            "unresolved_current_alias_bases": [
+              "A2A2Z9",
+              "A9Z1Z3",
+              "O60397",
+              "Q3SXR2",
+              "Q52M75",
+              "Q5YKI7",
+              "Q8N1T3",
+              "Q8NFI4"
+            ]
+          }
+        },
+        "val": {
+          "historical_source": {
+            "exact_test_sequence_overlap": 0,
+            "proteins": 3711,
+            "rows": 59260,
+            "shared_test_accessions": [],
+            "shared_test_entry_families": [],
+            "unresolved_current_alias_bases": [
+              "A0A1B0GX68",
+              "A6NM62",
+              "P01854",
+              "P07202",
+              "P20800",
+              "P55103",
+              "P58512",
+              "Q5SWW7",
+              "Q6NVV9",
+              "Q6ZSB3",
+              "Q7Z4U5",
+              "Q86Y30",
+              "Q8IUK8",
+              "Q8N1L1",
+              "Q8N268",
+              "Q8WV35"
+            ]
+          },
+          "v1_to_v4_used": {
+            "exact_test_sequence_overlap": 0,
+            "proteins": 3710,
+            "rows": 59258,
+            "shared_test_accessions": [],
+            "shared_test_entry_families": [],
+            "unresolved_current_alias_bases": [
+              "A0A1B0GX68",
+              "A6NM62",
+              "P01854",
+              "P07202",
+              "P20800",
+              "P55103",
+              "P58512",
+              "Q5SWW7",
+              "Q6NVV9",
+              "Q6ZSB3",
+              "Q7Z4U5",
+              "Q86Y30",
+              "Q8IUK8",
+              "Q8N1L1",
+              "Q8N268",
+              "Q8WV35"
+            ]
+          }
+        }
+      }
+    },
+    "independent_backbone_tokenization_verified": true,
+    "new_negative_known_positive_conflicts": 0,
+    "new_self_pairs": 0,
+    "original_positive_rows_and_sequences_preserved": true,
+    "original_test_unchanged": true,
+    "passed": true,
+    "splits": {
+      "test-ilp": {
+        "combined_length_quantiles": [
+          114.0,
+          910.0,
+          2429.0,
+          3614.5899999999965,
+          7319.0
+        ],
+        "negatives": 26024,
+        "pairs": 52048,
+        "pairs_over_2193": 3373,
+        "pairs_over_8192": 0,
+        "positives": 26024,
+        "proteins_without_go": 352,
+        "sha256": "85de70eedb2e039726edb784e02edd23248f871dd83f680a66ae11fb21a35bf0",
+        "unique_sequences": 2948
+      },
+      "train": {
+        "combined_length_quantiles": [
+          88.0,
+          1135.0,
+          3059.0,
+          5113.0,
+          17649.0
+        ],
+        "negatives": 350382,
+        "pairs": 700764,
+        "pairs_over_2193": 90316,
+        "pairs_over_8192": 585,
+        "positives": 350382,
+        "proteins_without_go": 2032,
+        "sha256": "64c866b46f1a4e32bbe61ac0b10f052fc56a0a98246a93da254f042e0e29b997",
+        "unique_sequences": 13110
+      },
+      "val": {
+        "combined_length_quantiles": [
+          133.0,
+          1154.0,
+          2929.0,
+          4845.5899999999965,
+          42875.0
+        ],
+        "negatives": 82871,
+        "pairs": 165742,
+        "pairs_over_2193": 20804,
+        "pairs_over_8192": 446,
+        "positives": 82871,
+        "proteins_without_go": 727,
+        "sha256": "a3a173f7f34eee67a2525d8bb61560c7ef8dfbf9cb95af1b44869e2d4df20e60",
+        "unique_sequences": 6023
+      }
+    },
+    "train_val_shared_entry_families": 0,
+    "train_val_shared_identifiers": 0,
+    "train_val_shared_sequences": 0
+  },
+  "complete": true,
+  "configuration_sha256": "910603ef9af3c60ef15b3af5660e1b822d33d195a44201732c143d8070047609",
+  "created_utc": "2026-10-02T18:40:34.134903+00:00",
+  "files": {
+    "frozen-tests/original-manifest.json": "539f76766d9b8dca1caa99dcd6dc38f4383b9f107c0465b4b3e9d5cec8a8d980",
+    "frozen-tests/original-positives.csv": "2247a713c1cc6fd10e34ba8ce17f2b521b252a685cc404cf0c129b5413e172f4",
+    "frozen-tests/original-sequences.fasta": "947a52bf70bca3c7af4661fbc6dfd816a925450c35ec4bf23cdad406477f8355",
+    "frozen-tests/original-test.csv": "89f164f9bd391fd3a2cb400cb3b402d87b73af8142143c58cac56d55d3d7abcc",
+    "frozen-tests/protected-proteins.tsv": "723308b19571df0523fc8791655a895b70b28f948cc2dd516d730f61be061932",
+    "frozen-tests/test-go-annotations.tsv": "7ceaf67f7d7e1e6de3a8aeda4b2f6829490ce3aadd87f36a8d8dd2c5a4725157",
+    "frozen-tests/test-ilp.csv": "85de70eedb2e039726edb784e02edd23248f871dd83f680a66ae11fb21a35bf0",
+    "prepared/esm2/offsets.npy": "47c715813ddfea3c20a91ba1578ea19b4db052e2acfb10be6c37909a6b27aa3f",
+    "prepared/esm2/protein-order.json": "7baa90631c4d3b10e6c573d1ec5ab0abf67b7bae468edf2de7c43d7c62b213be",
+    "prepared/esm2/tokenizer-contract.json": "3ba4fbe7c7969814930171a42e97e628c6c01c4ce786b2b43897341a76efb84b",
+    "prepared/esm2/tokens.npy": "a1ec8120c2831a835a8461914acda119d393c7c28894e1044f713a4353cf0cf1",
+    "prepared/esm2/train.npy": "6d1d3a5238be05097234327fd0ea4ccf32d224076b167953eae213458cf4b3a3",
+    "prepared/esm2/val.npy": "56a682651ba4dbe85072b753df77dbc8edaa0a8e10a2502306c7b11f0a16f42c",
+    "prepared/esmc/offsets.npy": "47c715813ddfea3c20a91ba1578ea19b4db052e2acfb10be6c37909a6b27aa3f",
+    "prepared/esmc/protein-order.json": "7baa90631c4d3b10e6c573d1ec5ab0abf67b7bae468edf2de7c43d7c62b213be",
+    "prepared/esmc/tokenizer-contract.json": "c0d44f1eb8d2378ccf580d864fb4c522b16e2803198ae7259211d8a90034228c",
+    "prepared/esmc/tokens.npy": "a1ec8120c2831a835a8461914acda119d393c7c28894e1044f713a4353cf0cf1",
+    "prepared/esmc/train.npy": "6d1d3a5238be05097234327fd0ea4ccf32d224076b167953eae213458cf4b3a3",
+    "prepared/esmc/val.npy": "56a682651ba4dbe85072b753df77dbc8edaa0a8e10a2502306c7b11f0a16f42c",
+    "prepared/proteins.tsv": "98074836933a8a1fc12254199ffc8e4f673f2cb91878873eeae525ac16e256d3",
+    "prepared/sequences.fasta": "c5c097298fe4ee6357b50833974b2e818b51d3c18c21a968922b242272d23eb1",
+    "prepared/train.csv": "64c866b46f1a4e32bbe61ac0b10f052fc56a0a98246a93da254f042e0e29b997",
+    "prepared/val.csv": "a3a173f7f34eee67a2525d8bb61560c7ef8dfbf9cb95af1b44869e2d4df20e60"
+  },
+  "interpretation": "original positives shared; ILP negatives are sampled unreported interactions; tests are dependent; no test model inference performed",
+  "pipeline_contract": {
+    "fingerprint": "1875daba04071b7462429f6ab63f71d02fa8de3e4613372a9454891cb8faab5f",
+    "host": "n505",
+    "identities": {
+      "../images/plm-interact-esmc/plm-interact-esmc-arm64-v1.sif": "ed6aeac781502090632bc2a705300b161b6a65ccfbcf6c7cf64d8d61d8e5b5ef",
+      "../retrain-v1/data/raw/pairs_uniprot_seqs_train.csv": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a",
+      "../retrain-v1/data/raw/pairs_uniprot_seqs_val.csv": "0df36cbb69047e21ba01051641eede26a6e054e9c3e827c3bbe62e391854d9f2",
+      "configuration.json": "910603ef9af3c60ef15b3af5660e1b822d33d195a44201732c143d8070047609",
+      "environment/kahip-smoke.json": "252d8ccdb082ab39ef17e7cecba44ece2a9f267c8fb350e2e565a8fd8e3864e5",
+      "environment/requirements.lock": "510ed58122822bed69538dd8a8b0b2c2980425b8cde67396061287d16c12cccd",
+      "environment/runtime.json": "9ae804303e088159dc781c24b9a751a1288829619dad215e27b3642d2f7b1297",
+      "environment/vocabularies.json": "c0ac36bcb30f04d306521cd2b6fc59f90483439117a9523b1feec257efba817f",
+      "provenance/mmseqs-binary.sha256": "6d8ffb8157ab12737b1a6ea200e633c7043e67d50755108ebb34173d4632ca76",
+      "provenance/uniprot-downloads.json": "b0003fba6d11357c419f902af4150a07f416c046c15e7ba38e973e853124dddb",
+      "scripts/audit_history.py": "f24b28781bc9466eddd979505b63fa105391031b3d68f6b8bff41ad2857e3eb8",
+      "scripts/bootstrap.py": "1ff6bd9181ff37c57bce5732ddcdc38fe1cc1dccbe56506a22825fc2b5187cad",
+      "scripts/common.py": "592103c19c0483712601b40be278fee596193a6b45b3000eba8d4acbef6ea6f1",
+      "scripts/export_vocabularies.py": "56827caacaa9f5f58ba56f5c5e721ca356c626d5161c9e8fde182f2351b33dda",
+      "scripts/fetch_sources.py": "c81bd9dacb7d532fbec90ca7cd6abde1f90d7d662ad46ff86437dab3038031c5",
+      "scripts/fetch_uniprot.py": "8b88447adb2d2ce11248c4bb84ec411170281516ac1e252735adb8a40a61e5d7",
+      "scripts/finalize.py": "0450217dfbfd2dd7dcdbffe3f3460762b37ac5014f8dbbcfa510bf831f6bad63",
+      "scripts/homology.sh": "8672d09b6dd2646fd7495ce5faf99747dcf1f0c9388eb10f5f03f355429d2578",
+      "scripts/launch.py": "932c31fd90123c0f44a4a6d1a6c35dc3fa70204f5bda2ca9e57d6f798ebceb88",
+      "scripts/normalize.py": "1c91c9ef006426a878571c338a542580449a1d95749939872303539dfb580fa0",
+      "scripts/prepare_groups.py": "8fd35ae77564b05b8793213122ff7b5075bf989d848dfa6e804ee11b7f0b843a",
+      "scripts/python.sh": "c94518918c79f8fa02e3a6ce97b13da2b5a2a6d8168846d9026112a36a24d233",
+      "scripts/qualify.py": "fdcb8bbd6b3e36db94a5426dbb0a1b36867051a2904720f3487b305a21c6b871",
+      "scripts/run_pipeline.py": "0e68006e28cce62322e982fb41713191969731045a3e1ff059bd6592bfd799b8",
+      "scripts/sample_ilp.py": "805afdd01e5c45a220ee72cfd22375ab084a5b54c893cef76dc22ed510622cdd",
+      "scripts/split_positives.py": "31b2adedd0579be70baeceaac436afea9913223030c2b50eb8c1f7f48295944c",
+      "scripts/verify_boundaries.sh": "4d8f443e68c85cd2fb063338e6def24083a9a792202dbf573ce23665c548ae16",
+      "sources/author-hippie-v3.csv": "b57e661d3210fae84318246da6d5bd5eff1a17aa889886ce23908879390d09a7",
+      "sources/author-pipeline/bin/sample_negatives_ilp.py": "ffcf164c594f9fb0ecac8cb1aea21ba712542460ec09112bdff96f8104a8df58",
+      "sources/author-pipeline/bin/utils.py": "10e9ba8d46fc6539712acde470f9e8be584219341aa3fc550cad36e1ea53d838",
+      "sources/hippie-v3-snapshot.txt.gz": "9b26647bc3ade483bf247789a68d0b336d708732fa54c6805cdac385eabdb7e5"
+    },
+    "model_inference": false,
+    "models_trained": false,
+    "resource_policy": "CPU-only: 16-thread sequence search, up to three 8-thread ILPs; no new GPU or training job",
+    "slurm_job_id": "3266861",
+    "solver_time_limits_seconds": 7200
+  },
+  "recovery_contract": {
+    "correction": "Explicit complete feasible MIP start; equivalent equality/deviation model with scaled objective; IPM relaxation; durable checked incumbents",
+    "created_utc": "2026-10-02T18:38:37.194358+00:00",
+    "fingerprint": "122ac3b3c3bc9a4473a45e5ecb592961e9d31d729ce14f1c26f0af942aa858b5",
+    "identities": {
+      "configuration.json": "910603ef9af3c60ef15b3af5660e1b822d33d195a44201732c143d8070047609",
+      "provenance/execution-contract.json": "71c444f9851330d15bc6c34caf55023445613d1430388f6d12ad7012dfeac526",
+      "recovery-v1/finalize.py": "4c52a007b16eada63bade73490735afff018132dc22e066664afbb62f6a1b9d5",
+      "recovery-v1/launch.py": "4073571b0b54318e02724bcc7a73d17b0f2f84e5def1f4c0065837e0ab58b72c",
+      "recovery-v1/qualify.py": "c5020b442ed49a0683b1b7b2007b961ac2442e53bafa6a860bc6fa86f52e89c9",
+      "recovery-v1/run.py": "f3bcac51d85dc0644af7c5dedd5e1b3ad9a74afc1b162e4b828f3b90aec6b72c",
+      "recovery-v1/solver.py": "174fbe80d1bcbe350630b61596a8edcca4e300a93b8131084e49c06fb4392c1b",
+      "recovery-v1/worker.py": "e2add8d6f239e0eec60645163757baee1ccfb9252f8201409f3a7470537ff10c",
+      "reports/recovery-v1-qualification.json": "e63df1fd2623a30bcb4b0cf88d4b1a33e6ce36f4a29e8b36ddb84c2e6c14f52d",
+      "work/known-positive-families.tsv": "9311a00b21460293fd722221e8956b6214dd51f85a1212824d9e445edd3eb27b",
+      "work/negative-train/candidate-manifest.json": "e29a7cd11347758e7a2ff073a6e4d362ba4682ae824c48ee27a726e020e324dc",
+      "work/negative-train/candidates.npz": "ea3f6660659f337041b44e1f9836ce78fa7f06e59b6cd5b6d33a8eaf8d0f0cf7",
+      "work/negative-train/positive-pairs.npy": "30c08d87feb4d06b3bbab9f3088d5212a7c9dd005426caa520cfa465762a5682",
+      "work/negative-train/protein-order.json": "d16ef8ca792774bf1795ab84cd2475639b3ac15adc7982d1e3484eab62e93b49",
+      "work/negative-val/candidate-manifest.json": "b0aa81acc70755c1db4708983db39073e1c662742bcd03996f3c64ab0481496f",
+      "work/negative-val/candidates.npz": "b64c64a6b88690a12805d95ef0f1cd531ee7788e28fc8c1808e7860d4de8660d",
+      "work/negative-val/positive-pairs.npy": "30882078f749b0b36be48339fd0e266f18129636a6e0c0bd4b39af3f7df9a692",
+      "work/negative-val/protein-order.json": "adec5f31658166da4df62e3a869233e5e539e138c6813ae42b05fecca8e1b7f3",
+      "work/protein-registry.json": "08ca8dcd392ada31e79e82c1f4794f715fc0d81355e911576a5de587aa481fc8",
+      "work/train-positives.csv": "2e9ca0268b5b1af32e37d6a88fc00c3e9d2f201425c07de4a9e4664ed92f9545",
+      "work/val-positives.csv": "abffb5cc1c9d27dcca8f3e386210667728e4ace7409bd330526c3764b6c7c02b"
+    },
+    "model_inference": false,
+    "models_trained": false,
+    "original_runtime_failure": "Validation reached time limit without an integer incumbent; original driver cancelled training",
+    "parent_contract": "1875daba04071b7462429f6ab63f71d02fa8de3e4613372a9454891cb8faab5f",
+    "policy": {
+      "candidate_pools_regenerated": false,
+      "checkpoint_every_improving_incumbent": true,
+      "max_concurrent_samplers": 2,
+      "no_improvement_seconds": 300,
+      "positive_partition_changed": false,
+      "solver_seconds_per_split": 1800,
+      "test_changed": false,
+      "threads_per_split": 8,
+      "unchanged_initialization_without_optimality_not_published": true,
+      "watchdog_grace_seconds": 90
+    }
+  },
+  "schema_version": 1
+}

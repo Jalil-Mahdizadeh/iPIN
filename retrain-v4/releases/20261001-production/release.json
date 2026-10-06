@@ -1,0 +1,60 @@
+{
+  "stage": "v4-three-run-training-only",
+  "ready_for_submission": true,
+  "created_at_utc": "2026-10-01T10:26:46.175792+00:00",
+  "enabled_runs": [
+    "esm2-chain-aware-official-seed2",
+    "esmc-standard-official-seed2",
+    "esmc-chain-aware-official-seed2"
+  ],
+  "production_submitted_at_preparation": false,
+  "automatic_benchmark": false,
+  "reused_control_retrained": false,
+  "qualification_reports": {
+    "qualification/model-and-data.json": "19109f8791060560b6ef7225491e3d2b3fe33daf49dfdde888e38b5443436ed8",
+    "qualification/full-length-esm2.json": "49a06df369455dc5c12251eb0051e9e61ea5f9044200a0352bd1ca1575a500e4",
+    "qualification/full-length-esmc.json": "15bb0fae28abf7f56a45f5e7ade391157cbb0a69fec4fb88d89c26172aa4d51f",
+    "qualification/checkpoint-faults.json": "9fadf48d4a42e6ba841b64da0ebb452beebdbf9ffea97db72816363add3cb044",
+    "qualification/wrapper.json": "beff662c8d1e463138d9ffcb17260c6295aaa031af8eb71f3a6f5478a8af501b",
+    "qualification/production-guards.json": "0a409920148c26ed1235affedfa92962c3d7668c2036c65ce664554cc88ab479",
+    "qualification/worker-environment.json": "f127bcd642e4ae64c0e2812f1e9e97d8ba446b5912d43a1e339f3403b32543ff",
+    "qualification/ddp-resume.json": "df81da076acd53f4f2b9c8348d55bcb453095d1e4ac5c0d01e8530ff06059ba4"
+  },
+  "input_manifests": {
+    "data/prepared/manifest.json": "dd56c133ba0357a22e0d4b1449defe216ed90fbbda751114316379b02d473b14",
+    "provenance/downloads.json": "0d84f5222e2705346caa2c6e489db8128243d05f9888903813bbc1c51fa006d2",
+    "provenance/images.json": "40bf9fba653496a02be50afea2effdc7ffdff38dad7d7e0a17fc6d38a8da2747",
+    "provenance/reused-control.json": "32ba5441e7d4d8ae5bab1a1da62dfee9b297eeb403ee800da1836e48b3c2ae40",
+    "provenance/v3-source.json": "9caffcf2fbb5effb0757aef65fe1899da51beaf5fa2a039a5093c95718edb993"
+  },
+  "code": {
+    "train.py": "7f6c8e5c81c39a0978c477c07b19eb4151c851b01c37769acc9783ae61b03e73",
+    "model.py": "8f8e27750e81ddb81b5b553c763f7e2c356a081ee29f00fa70c25ae0226be114",
+    "model_esm2.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "model_esmc.py": "9721571f554b51edcf52228ddb898e1730d52ffb4a67f8e63ee0051780a083a2",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "d4c0344c34346aae8b7f64b7836e88877a6951eb0d910b277fcf2c8e316ee9f1",
+    "release.py": "1fb6118a20c513548a5da0b544cb38a8d179bc3d6e15b4f5937b1c118a9d1ce9"
+  },
+  "files": {
+    "code/container.sh": "6e42e0d539b06bb29875f8f87d8536326d1d9653286fa66047d0101aac1c16d1",
+    "code/contracts.py": "d4c0344c34346aae8b7f64b7836e88877a6951eb0d910b277fcf2c8e316ee9f1",
+    "code/data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "code/launch.py": "0f6da90075d327a486bc7a54b87f504ddadbf145e09aa14bfb9abc902bf16f3a",
+    "code/model.py": "8f8e27750e81ddb81b5b553c763f7e2c356a081ee29f00fa70c25ae0226be114",
+    "code/model_esm2.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "code/model_esmc.py": "9721571f554b51edcf52228ddb898e1730d52ffb4a67f8e63ee0051780a083a2",
+    "code/release.py": "1fb6118a20c513548a5da0b544cb38a8d179bc3d6e15b4f5937b1c118a9d1ce9",
+    "code/runtime.py": "b6802cd414af313055b917812fa85d1fb5d518962e847c9742385b1c5af9d468",
+    "code/state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "code/train.py": "7f6c8e5c81c39a0978c477c07b19eb4151c851b01c37769acc9783ae61b03e73",
+    "configs/esm2-chain-aware-official-seed2.json": "192c2c322c0dc40d5b8d1e9b0d6497fcd135f095dd080e715ca9d044be4f3e02",
+    "configs/esmc-chain-aware-official-seed2.json": "2132ee2f9baac347e47af5e40fc1a42b0abe0a5428a1cf9c8ad3f2a83eaaac9b",
+    "configs/esmc-standard-official-seed2.json": "3815c557ed7bbad46dfc3ddf604f5f6ba6dcf9dc0188f69003e7a3d3e8e08d42",
+    "protocol/PROTOCOL.md": "7b2163db2882100de4322046726658142e6184e2dd7de477508a94723cb874d4",
+    "protocol/improvment-proposal-v4.md": "d40480ea3b0acfde247dcd06749972b7232214b00dbe1f49601c63fcfa6bf39a",
+    "protocol/reused-control.json": "32ba5441e7d4d8ae5bab1a1da62dfee9b297eeb403ee800da1836e48b3c2ae40",
+    "slurm/train.sbatch": "df501e224ffce8811be10d0dd8de253cda823bd3f3e207583c590161da58542b"
+  }
+}

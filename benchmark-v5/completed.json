@@ -1,0 +1,35 @@
+{
+  "completed_at_utc": "2026-10-05T17:39:44.699708+00:00",
+  "complete": true,
+  "checks": {
+    "predictors": 11,
+    "tests": 2,
+    "test_rows_per_predictor": 104096,
+    "union_rows_per_predictor": 76918,
+    "finite_full_coverage": true,
+    "neural_intervals_unchanged_after_sprint": true,
+    "frozen_data_unchanged": true,
+    "metrics_csv_matches_summary": true,
+    "sprint_graph_and_hsp_hashes_verified": true,
+    "native_original_predictions_reproduced_exactly": true,
+    "all_nine_previous_scores_and_bootstraps_unchanged": true,
+    "added_releases_full_length_qualified": true,
+    "added_releases_exposure_checked": true,
+    "prior_sealed_artifacts_preserved": true
+  },
+  "artifact_manifest": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/artifact-manifest.json",
+    "bytes": 38093,
+    "sha256": "bc452dda4d72c0b4a33be66880d8d801c254c0f7b02cbdb60862b7657e4e4642"
+  },
+  "summary": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/summary.json",
+    "bytes": 38888,
+    "sha256": "4653d69159f32cecfaa04b1be729873561d4cc1b6c84302cb9436d9264bf8382"
+  },
+  "report": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/REPORT.md",
+    "bytes": 18711,
+    "sha256": "ab69945cbf42f83be4c47941ad90fd88595e7a4ec2c708b8e3b16f8f23c58157"
+  }
+}

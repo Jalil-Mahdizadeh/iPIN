@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "sprint",
+    "test": "ecoli__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e4241b56546efc75cc1bde57ccb67ddf3da9e8c4d38de416dc8e3396069d36fd",
+    "scores": "82b8c9781f24997ff2e6a7df2f35facc6b797b82b2b1ab81f2a03b5fd35ac767",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/ecoli__common_unexposed-sprint.npz",
+    "bytes": 15154,
+    "sha256": "e904f322029df53edd0300355d6042c79be2d47e633eb9c70fa132abc1b66d18"
+  }
+}

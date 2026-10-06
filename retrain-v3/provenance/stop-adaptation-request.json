@@ -1,0 +1,227 @@
+{
+  "requested_utc": "2026-09-30T19:13:54.246635+00:00",
+  "array_job_id": "3177489",
+  "authorization": "User: yes! end this screen and move on to the next step.",
+  "selected_learning_rate": 2e-05,
+  "method": "REQUEST_STOP at safe optimizer boundary; retain complete latest/fallback/best checkpoints",
+  "planned_updates": 6000,
+  "last_common_validated_update": 5000,
+  "runs": [
+    {
+      "run": "clean-cls-linear-lr2e-5-fold0-seed2",
+      "best_checkpoint_at_request": {
+        "file": "update-000003000.pt",
+        "sha256": "c4bf8ae5b813deb1ed91f4b71ec6841b4b6edfb56a25320355aae8c38d03f4c7",
+        "bytes": 7805410278,
+        "update": 3000,
+        "epoch": 2,
+        "next_chunk": 44618,
+        "world_size": 4,
+        "fingerprint": "39a8d7cc7f875616b7b833123c33f65b43fd4e071bc94320ebf312509ade2e42",
+        "best_update": 3000,
+        "best_ap": 0.6193526625119848
+      },
+      "current_status": {
+        "state": {
+          "update": 5360,
+          "cursor": {
+            "cycle": 4,
+            "offset": 48276
+          },
+          "epoch": 4,
+          "next_chunk": 48276,
+          "examples_seen": 343040,
+          "best_ap": 0.6193526625119848,
+          "best_update": 3000,
+          "total_steps": 6000,
+          "pending_validation": false,
+          "last_validation_update": 5000
+        },
+        "last_committed_update": 5300,
+        "attempt": "20260930T111424-3177490",
+        "phase": "training",
+        "seconds_since_launch": 28735.808645482
+      }
+    },
+    {
+      "run": "clean-cls-linear-lr2e-5-fold1-seed2",
+      "best_checkpoint_at_request": {
+        "file": "update-000003000.pt",
+        "sha256": "dea10cdd4116160f60ac025e33bb6855aa8313a8a359af3d4d4ce308a6838e83",
+        "bytes": 7805410278,
+        "update": 3000,
+        "epoch": 2,
+        "next_chunk": 48604,
+        "world_size": 4,
+        "fingerprint": "0f2c3afae40ee4cc6ef7bb3e96e192eca2a67bd56cf512e601cba3a9090d38bd",
+        "best_update": 3000,
+        "best_ap": 0.6214089469057591
+      },
+      "current_status": {
+        "state": {
+          "update": 5410,
+          "cursor": {
+            "cycle": 4,
+            "offset": 59448
+          },
+          "epoch": 4,
+          "next_chunk": 59448,
+          "examples_seen": 346240,
+          "best_ap": 0.6214089469057591,
+          "best_update": 3000,
+          "total_steps": 6000,
+          "pending_validation": false,
+          "last_validation_update": 5000
+        },
+        "last_committed_update": 5400,
+        "attempt": "20260930T111424-3177491",
+        "phase": "training",
+        "seconds_since_launch": 28741.57180310198
+      }
+    },
+    {
+      "run": "clean-cls-linear-lr2e-5-fold2-seed2",
+      "best_checkpoint_at_request": {
+        "file": "update-000004000.pt",
+        "sha256": "8e6aecce8d5a97848d999494f646fb4185636b9d609a0fdf9e161920a8e91296",
+        "bytes": 7805410278,
+        "update": 4000,
+        "epoch": 3,
+        "next_chunk": 40042,
+        "world_size": 4,
+        "fingerprint": "4cb4b4ba132417297ad9d90924932d93d2b0a51d897c9875263fa1038361814e",
+        "best_update": 4000,
+        "best_ap": 0.6087027952127286
+      },
+      "current_status": {
+        "state": {
+          "update": 5470,
+          "cursor": {
+            "cycle": 4,
+            "offset": 62136
+          },
+          "epoch": 4,
+          "next_chunk": 62136,
+          "examples_seen": 350080,
+          "best_ap": 0.6087027952127286,
+          "best_update": 4000,
+          "total_steps": 6000,
+          "pending_validation": false,
+          "last_validation_update": 5000
+        },
+        "last_committed_update": 5400,
+        "attempt": "20260930T111424-3177492",
+        "phase": "training",
+        "seconds_since_launch": 28745.845885254996
+      }
+    },
+    {
+      "run": "clean-cls-linear-lr5e-6-fold0-seed2",
+      "best_checkpoint_at_request": {
+        "file": "update-000005000.pt",
+        "sha256": "dbf03d5707d7b6f4853b3402f1d20f58f679745574a86290b7cae73e387c365c",
+        "bytes": 7805410278,
+        "update": 5000,
+        "epoch": 4,
+        "next_chunk": 25236,
+        "world_size": 4,
+        "fingerprint": "4129e2bd5eec9017f5d28eea426dc66208562b07c03671c2b715e9752610c14c",
+        "best_update": 5000,
+        "best_ap": 0.5979814964993462
+      },
+      "current_status": {
+        "state": {
+          "update": 5370,
+          "cursor": {
+            "cycle": 4,
+            "offset": 48916
+          },
+          "epoch": 4,
+          "next_chunk": 48916,
+          "examples_seen": 343680,
+          "best_ap": 0.5979814964993462,
+          "best_update": 5000,
+          "total_steps": 6000,
+          "pending_validation": false,
+          "last_validation_update": 5000
+        },
+        "last_committed_update": 5300,
+        "attempt": "20260930T111747-3177575",
+        "phase": "training",
+        "seconds_since_launch": 28527.36957008601
+      }
+    },
+    {
+      "run": "clean-cls-linear-lr5e-6-fold1-seed2",
+      "best_checkpoint_at_request": {
+        "file": "update-000004000.pt",
+        "sha256": "821eadcbafea15de0b45ef92e4dc3823947a6290995209a6e452277e8ee385a8",
+        "bytes": 7805410278,
+        "update": 4000,
+        "epoch": 3,
+        "next_chunk": 40906,
+        "world_size": 4,
+        "fingerprint": "cfee06dfcc7178321efd175e1c0ecf79d7908aca0828fd76aedd6bebf9a9ad62",
+        "best_update": 4000,
+        "best_ap": 0.612115781059779
+      },
+      "current_status": {
+        "state": {
+          "update": 5380,
+          "cursor": {
+            "cycle": 4,
+            "offset": 57528
+          },
+          "epoch": 4,
+          "next_chunk": 57528,
+          "examples_seen": 344320,
+          "best_ap": 0.612115781059779,
+          "best_update": 4000,
+          "total_steps": 6000,
+          "pending_validation": false,
+          "last_validation_update": 5000
+        },
+        "last_committed_update": 5300,
+        "attempt": "20260930T112219-3177662",
+        "phase": "training",
+        "seconds_since_launch": 28257.027136638004
+      }
+    },
+    {
+      "run": "clean-cls-linear-lr5e-6-fold2-seed2",
+      "best_checkpoint_at_request": {
+        "file": "update-000004000.pt",
+        "sha256": "c3770daa31f6a6a3a124dda5e694014b2dfbac60c8127360ec2788da08784abb",
+        "bytes": 7805410278,
+        "update": 4000,
+        "epoch": 3,
+        "next_chunk": 40042,
+        "world_size": 4,
+        "fingerprint": "3ce7edf8676e60e7e7ed38c726b604a5fcea3c46dfa11d160b6d0b1e4c2b32aa",
+        "best_update": 4000,
+        "best_ap": 0.5913609003777132
+      },
+      "current_status": {
+        "state": {
+          "update": 5380,
+          "cursor": {
+            "cycle": 4,
+            "offset": 56376
+          },
+          "epoch": 4,
+          "next_chunk": 56376,
+          "examples_seen": 344320,
+          "best_ap": 0.5913609003777132,
+          "best_update": 4000,
+          "total_steps": 6000,
+          "pending_validation": false,
+          "last_validation_update": 5000
+        },
+        "last_committed_update": 5300,
+        "attempt": "20260930T112244-3177489",
+        "phase": "training",
+        "seconds_since_launch": 28227.70776957
+      }
+    }
+  ]
+}

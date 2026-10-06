@@ -1,0 +1,28 @@
+{
+  "checked_at_utc": "2026-09-29T09:28:26.688212+00:00",
+  "splits": {
+    "test": {
+      "pairs_checked": 52048,
+      "original_rows": 52048,
+      "excluded_source_row_ids": [],
+      "all_sequences_and_labels_exactly_match": true,
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/data/raw/pairs_uniprot_seqs_test.csv",
+      "source_sha256": "89f164f9bd391fd3a2cb400cb3b402d87b73af8142143c58cac56d55d3d7abcc",
+      "prepared_sha256": "84b0b7ae068b2beba19103f8bed3e1c4feae117a0a6ffd271798537868a51c0d",
+      "unique_protein_sequences": 3022
+    },
+    "val": {
+      "pairs_checked": 59258,
+      "original_rows": 59260,
+      "excluded_source_row_ids": [
+        23930,
+        25304
+      ],
+      "all_sequences_and_labels_exactly_match": true,
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/data/raw/pairs_uniprot_seqs_val.csv",
+      "source_sha256": "0df36cbb69047e21ba01051641eede26a6e054e9c3e827c3bbe62e391854d9f2",
+      "prepared_sha256": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0",
+      "unique_protein_sequences": 3710
+    }
+  }
+}

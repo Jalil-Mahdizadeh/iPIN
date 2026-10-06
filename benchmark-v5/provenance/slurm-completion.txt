@@ -1,0 +1,6 @@
+JobID                         JobName      State ExitCode    Elapsed                                                              AllocTRES 
+------------ ------------------------ ---------- -------- ---------- ---------------------------------------------------------------------- 
+3367739                 bv5-ipin-esm2  COMPLETED      0:0   00:08:08 billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,no+ 
+3367740                 bv5-ipin-esmc  COMPLETED      0:0   00:07:46 billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,no+ 
+3367741                bv5-native-plm  COMPLETED      0:0   00:03:11 billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,no+ 
+3367742                bv5-xpair-both  COMPLETED      0:0   00:03:07 billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,no+ 

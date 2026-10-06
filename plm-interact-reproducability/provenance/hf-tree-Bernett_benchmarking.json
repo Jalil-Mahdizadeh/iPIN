@@ -1,0 +1,62 @@
+[
+  {
+    "type": "file",
+    "oid": "446fdde947bda666da6253cb3c2a04fd3404dcad",
+    "size": 2726,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "fdc1cc606d2239fba462a190fd795ab1b6f245f6",
+    "size": 825,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "dfbd4b4ffc57bbbfdbdb785c4871df8d4aa8a8b3",
+    "size": 57001326,
+    "lfs": {
+      "oid": "89f164f9bd391fd3a2cb400cb3b402d87b73af8142143c58cac56d55d3d7abcc",
+      "size": 57001326,
+      "pointerSize": 133
+    },
+    "xetHash": "b732dc6dc780ecb7a9d5fa1b058cd9cd61376f5c756b7b5da9e5bbdf41ca3f9b",
+    "path": "pairs_uniprot_seqs_test.csv"
+  },
+  {
+    "type": "file",
+    "oid": "a0877e356cb039ca1f32eab957887c4a8cf0b153",
+    "size": 270001117,
+    "lfs": {
+      "oid": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a",
+      "size": 270001117,
+      "pointerSize": 134
+    },
+    "xetHash": "84ea63ae8d78cb25f2d0ba6f7c94c0193a51f1627fe04c4cb15b19f3522a253e",
+    "path": "pairs_uniprot_seqs_train.csv"
+  },
+  {
+    "type": "file",
+    "oid": "db2530e9094d750723a4779bea292f89d03151eb",
+    "size": 164944373,
+    "lfs": {
+      "oid": "317c812217239086f26572a5a57454cf4d25db2fb1ee18d3b4f35487eb94e497",
+      "size": 164944373,
+      "pointerSize": 134
+    },
+    "xetHash": "17490e6caf94bd0a57a9eac8ec549678df06450635e7344756db5543b33b15ca",
+    "path": "pairs_uniprot_seqs_train_cut_0.8.csv"
+  },
+  {
+    "type": "file",
+    "oid": "80b573e9771ccbab359a517d514cfe9b492babdf",
+    "size": 72666471,
+    "lfs": {
+      "oid": "0df36cbb69047e21ba01051641eede26a6e054e9c3e827c3bbe62e391854d9f2",
+      "size": 72666471,
+      "pointerSize": 133
+    },
+    "xetHash": "8609ed8fc374a9f23750153aeaf44876a24c6d62c40659aba3cd9cc06558d1ce",
+    "path": "pairs_uniprot_seqs_val.csv"
+  }
+]

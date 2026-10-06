@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "test_imported": false,
+  "partition": "v5_ilp",
+  "partition_changed": false,
+  "source_completion_manifest_sha256": "8805825a1cca647c21dccd247f148b587b69c1e458083615e45f8fe446aa00c9",
+  "source": "../data-preparation-v5",
+  "counts": {
+    "train": 700764,
+    "val": 165742
+  },
+  "source_source_split_hashes": {
+    "train": "64c866b46f1a4e32bbe61ac0b10f052fc56a0a98246a93da254f042e0e29b997",
+    "val": "a3a173f7f34eee67a2525d8bb61560c7ef8dfbf9cb95af1b44869e2d4df20e60"
+  },
+  "files": {
+    "esm2/offsets.npy": "47c715813ddfea3c20a91ba1578ea19b4db052e2acfb10be6c37909a6b27aa3f",
+    "esm2/protein-order.json": "7baa90631c4d3b10e6c573d1ec5ab0abf67b7bae468edf2de7c43d7c62b213be",
+    "esm2/tokenizer-contract.json": "3ba4fbe7c7969814930171a42e97e628c6c01c4ce786b2b43897341a76efb84b",
+    "esm2/tokens.npy": "a1ec8120c2831a835a8461914acda119d393c7c28894e1044f713a4353cf0cf1",
+    "esm2/train.npy": "6d1d3a5238be05097234327fd0ea4ccf32d224076b167953eae213458cf4b3a3",
+    "esm2/val.npy": "56a682651ba4dbe85072b753df77dbc8edaa0a8e10a2502306c7b11f0a16f42c",
+    "esmc/offsets.npy": "47c715813ddfea3c20a91ba1578ea19b4db052e2acfb10be6c37909a6b27aa3f",
+    "esmc/protein-order.json": "7baa90631c4d3b10e6c573d1ec5ab0abf67b7bae468edf2de7c43d7c62b213be",
+    "esmc/tokenizer-contract.json": "c0d44f1eb8d2378ccf580d864fb4c522b16e2803198ae7259211d8a90034228c",
+    "esmc/tokens.npy": "a1ec8120c2831a835a8461914acda119d393c7c28894e1044f713a4353cf0cf1",
+    "esmc/train.npy": "6d1d3a5238be05097234327fd0ea4ccf32d224076b167953eae213458cf4b3a3",
+    "esmc/val.npy": "56a682651ba4dbe85072b753df77dbc8edaa0a8e10a2502306c7b11f0a16f42c"
+  },
+  "same_physical_pairs_for_both_backbones": true
+}

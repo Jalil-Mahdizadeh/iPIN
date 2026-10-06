@@ -1,0 +1,22 @@
+{
+  "extracted_at_utc": "2026-09-29T06:03:43.558579+00:00",
+  "workbook": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/plm-interact/source-data.xlsx",
+  "workbook_sha256": "140de50feab7eb5bb0c53ba9ab38ecaedfe05f83e0f3554c2f357d4045e0c50e",
+  "outputs": {
+    "train": {
+      "sha256": "4625cf8c90abc9d83f567ccdf3045ee556ba80415a49fdc0e0b3ffe3a8581e36",
+      "source_sheet": "Supplemtrary Figure10_train",
+      "epochs": 40
+    },
+    "val": {
+      "sha256": "7d1d37fa330d38d66d167f01bcf514aa107742f557db4bc3f424cd3201b3da3f",
+      "source_sheet": "Supplemtrary Figure10_val",
+      "epochs": 40
+    },
+    "test": {
+      "sha256": "bdff7bea6daa3519d5a79758999744fdf8767725003f0bb86a798307f30d8da7",
+      "source_sheet": "Supplemtrary Figure10_test",
+      "epochs": 40
+    }
+  }
+}

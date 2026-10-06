@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "profiles": [
+    {
+      "run": "esmc-standard-official-seed2",
+      "stage": "longest-training",
+      "tokens": 16322,
+      "orientations": 2,
+      "source_row": 75064,
+      "seconds": 17.829641335993074,
+      "peak_allocated_gib": 9.68296480178833,
+      "peak_reserved_gib": 11.685546875,
+      "finite_output": 7.019133567810059,
+      "trainable_parameters": 574223746
+    },
+    {
+      "run": "esmc-standard-official-seed2",
+      "stage": "longest-validation",
+      "tokens": 39391,
+      "orientations": 2,
+      "source_row": 16728,
+      "seconds": 5.972988102003001,
+      "peak_allocated_gib": 10.453145027160645,
+      "peak_reserved_gib": 13.88671875,
+      "finite_output": [
+        [
+          -0.01416015625,
+          -0.0145263671875
+        ]
+      ],
+      "trainable_parameters": 574223746
+    },
+    {
+      "run": "esmc-chain-aware-official-seed2",
+      "stage": "longest-training",
+      "tokens": 16322,
+      "orientations": 2,
+      "source_row": 75064,
+      "seconds": 35.133814140979666,
+      "peak_allocated_gib": 10.100446224212646,
+      "peak_reserved_gib": 12.279296875,
+      "finite_output": 7.016979217529297,
+      "trainable_parameters": 574223746
+    },
+    {
+      "run": "esmc-chain-aware-official-seed2",
+      "stage": "longest-validation",
+      "tokens": 39391,
+      "orientations": 2,
+      "source_row": 16728,
+      "seconds": 12.092360137001378,
+      "peak_allocated_gib": 11.323481559753418,
+      "peak_reserved_gib": 14.876953125,
+      "finite_output": [
+        [
+          -0.01611328125,
+          -0.01953125
+        ]
+      ],
+      "trainable_parameters": 574223746
+    }
+  ],
+  "backbone": "esmc",
+  "test_data_used": false,
+  "candidate_checkpoints_saved": false,
+  "disposable_optimizer_steps": 2,
+  "esm2_control_and_chain_initial_head_hash": null,
+  "device": "NVIDIA GH200 120GB",
+  "device_memory_gib": 95.0,
+  "code": {
+    "train.py": "7f6c8e5c81c39a0978c477c07b19eb4151c851b01c37769acc9783ae61b03e73",
+    "model.py": "8f8e27750e81ddb81b5b553c763f7e2c356a081ee29f00fa70c25ae0226be114",
+    "model_esm2.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "model_esmc.py": "9721571f554b51edcf52228ddb898e1730d52ffb4a67f8e63ee0051780a083a2",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "d4c0344c34346aae8b7f64b7836e88877a6951eb0d910b277fcf2c8e316ee9f1",
+    "release.py": "1fb6118a20c513548a5da0b544cb38a8d179bc3d6e15b4f5937b1c118a9d1ce9"
+  },
+  "source_sha256": {
+    "scripts/qualify_profile.py": "1fac36ffda0cc5ae1495d79a44d90c970da3daf72ab968f3bfc1e3ddcff74652"
+  }
+}

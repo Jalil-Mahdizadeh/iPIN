@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "benchmark_preflight_sha256": "320cbbddeb4177d0aee60a2943805816243fd67261387d3359dae5bdd91faf65",
+  "benchmark_finalization_check_sha256": "b7d6ade251138545e2ef4c7f97237926ee7b54bf5bb948df0b0ba10ba66e8b32",
+  "same_qualified_core": {
+    "train.py": "17a9674accce46ed9908fbd1bec925d438079b61975b1f9b4a90d24d0ec1e16c",
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+  },
+  "source_release_sha256": "fb32362f661a66d42f4e65ae12c888fd5f6ad836067b32f040eae41d68de4867",
+  "scope": "Identical core; full-size four-GPU exact residue resume qualification inherited; final adapter forward checked separately."
+}

@@ -1,0 +1,20 @@
+{
+  "state": {
+    "update": 5386,
+    "cursor": {
+      "cycle": 4,
+      "offset": 57912
+    },
+    "epoch": 4,
+    "next_chunk": 57912,
+    "examples_seen": 344704,
+    "best_ap": 0.612115781059779,
+    "best_update": 4000,
+    "total_steps": 6000,
+    "pending_validation": false,
+    "last_validation_update": 5000
+  },
+  "reason": "signal_or_REQUEST_STOP",
+  "attempt": "20260930T112219-3177662",
+  "checkpoint_committed": true
+}

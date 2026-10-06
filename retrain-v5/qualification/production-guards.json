@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "changed_production_fields_rejected": [
+    "total_updates",
+    "warmup_updates",
+    "learning_rate",
+    "global_pairs_per_update",
+    "world_size",
+    "seed",
+    "train_cap_residues",
+    "partition",
+    "readout",
+    "classification_corruption",
+    "mlm_weight",
+    "positive_weight",
+    "attention_backend",
+    "attention_mode",
+    "initialization"
+  ],
+  "unfrozen_source_rejected": true,
+  "cli_cases": [
+    {
+      "arguments": [
+        "--production",
+        "--tiny"
+      ],
+      "rejected_before_output_creation": true
+    },
+    {
+      "arguments": [
+        "--production",
+        "--max-updates",
+        "4"
+      ],
+      "rejected_before_output_creation": true
+    },
+    {
+      "arguments": [
+        "--production",
+        "--train-limit",
+        "11"
+      ],
+      "rejected_before_output_creation": true
+    },
+    {
+      "arguments": [
+        "--production",
+        "--stop-after-updates",
+        "2"
+      ],
+      "rejected_before_output_creation": true
+    },
+    {
+      "arguments": [
+        "--qualification",
+        "--max-updates",
+        "4",
+        "--train-limit",
+        "11",
+        "--val-limit",
+        "8"
+      ],
+      "rejected_before_output_creation": true
+    }
+  ],
+  "production_output_created": false,
+  "code": {
+    "train.py": "4add811c2218c39dde7ab79cd4b62f6143b7d4cc8419a9eb2a9f91a4e86662e2",
+    "model.py": "7680c5aba9d350dfece2eb7394eb0995518b6e474e5ca54bfdac5346ad402c6e",
+    "native_head.py": "278c7180b249f46d130acd36561035d13af47458836a91a7a4ab89694fab896c",
+    "model_esm2.py": "e944e891ce2ffdf5f961d977e6c8dd25334f735569419fef366ce6d76e79552c",
+    "model_esmc.py": "ea568585e29f7d0211c5c717527c210dd40ce0f53ff476f4acc1577f3c280149",
+    "data.py": "a940d7906b2449a1e4b3f37fcd62e4a9ab4fac5a3e537ff0d3c26916edf39d59",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "043e9794b825e4d08ce6794eba24afe50e6a96a90addcbc847c91d6cc822dddd",
+    "release.py": "3ff0cb6f5254c303b80c8c9b81c38efea21621c2cd70cf9dfdbf04feb9a9f5e8"
+  },
+  "source_sha256": {
+    "scripts/qualify_guards.py": "5fec8f50d6004ddc21d28f5557c595753b30205036274536c788b859e76cd1b5"
+  }
+}

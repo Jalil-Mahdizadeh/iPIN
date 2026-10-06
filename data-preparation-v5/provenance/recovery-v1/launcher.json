@@ -1,0 +1,8 @@
+{
+  "host": "n505",
+  "log": "logs/recovery-v1-pipeline.log",
+  "pid": 725019,
+  "resume_command": "python data-preparation-v5/recovery-v1/launch.py",
+  "slurm_job_id": "3266861",
+  "started_utc": "2026-10-02T18:38:25.801024+00:00"
+}

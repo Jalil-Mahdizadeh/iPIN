@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-09-29T09:41:18.559045+00:00",
+  "job_id": "3125767",
+  "completed_worker_tasks": 16,
+  "physical_pairs_in_fresh_inference": 215402,
+  "orientation_passes": 430804,
+  "worker_evaluation_hours": 1.466150990616071,
+  "physical_gpu_count": 4,
+  "nodes": [
+    "n442"
+  ],
+  "max_allocated_gpu_gib": 7.658323764801025,
+  "training_jobs_unchanged": [
+    3112401,
+    3112402
+  ]
+}

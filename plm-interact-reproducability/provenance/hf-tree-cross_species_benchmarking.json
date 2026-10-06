@@ -1,0 +1,116 @@
+[
+  {
+    "type": "directory",
+    "oid": "d788b4778019c7ab0e34e4acae8bd0fa6ebf3bbd",
+    "size": 0,
+    "path": "test"
+  },
+  {
+    "type": "directory",
+    "oid": "4d2779690d167aebaf935a1484dbadfbfea4e2f5",
+    "size": 0,
+    "path": "train"
+  },
+  {
+    "type": "directory",
+    "oid": "6414a50012e72417ee17ec7619020c7a0b79f186",
+    "size": 0,
+    "path": "val"
+  },
+  {
+    "type": "file",
+    "oid": "ec7cda1f7110c6a6a4448bfaa65892de97057921",
+    "size": 2949,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "40ae228b228adbd786a9fb8d2f93f80d4179df9e",
+    "size": 356,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "06f7d4edd5d53fd5b84dfdb3bff2ea8fcb586250",
+    "size": 12526313,
+    "lfs": {
+      "oid": "54b5de269e285c928516ac081bd7e8ef99f330ac09021ae898bc651e81b2a4c0",
+      "size": 12526313,
+      "pointerSize": 133
+    },
+    "xetHash": "be0cfc9124c1f506771580c344f5c929997c2d12a619474f27fb42d57c28b0fe",
+    "path": "test/ecoli.ppi.qrels.seq.test.csv"
+  },
+  {
+    "type": "file",
+    "oid": "1f166d2ce949f8ecd72b8b8f90d147a927026151",
+    "size": 42359686,
+    "lfs": {
+      "oid": "a7599e8bae38984e243ef3278d645b7ff90aef21646649f4ea36603af4bd3706",
+      "size": 42359686,
+      "pointerSize": 133
+    },
+    "xetHash": "1904aaa740890b5c203a05a1c6805fc5a3d46d5e20500f41582c52cf8c42cf70",
+    "path": "test/fly.ppi.qrels.seq.test.csv"
+  },
+  {
+    "type": "file",
+    "oid": "953647240297ad69105c0986ec32760a45e796dd",
+    "size": 43035414,
+    "lfs": {
+      "oid": "b78cf5f216896721dfddedb3ba1a4405cec87f3da501056df24024988c1a1658",
+      "size": 43035414,
+      "pointerSize": 133
+    },
+    "xetHash": "c3435dd58587c8a36ceefda874df7a1e3aad260c2ef9f4839a7507b3a3ceb0bd",
+    "path": "test/mouse.ppi.qrels.seq.test.csv"
+  },
+  {
+    "type": "file",
+    "oid": "cde2f1d9b025e5de1ab6885e89ff8e12170ac615",
+    "size": 38758522,
+    "lfs": {
+      "oid": "4d90948073100cf844d31893df6b4dd9bdc50cf9799a6b555e745c859cf5780d",
+      "size": 38758522,
+      "pointerSize": 133
+    },
+    "xetHash": "d9d3b6c5a93bd05164c21f02f3e5ebfedddc3fd1e3e14d4c7f8499baada94611",
+    "path": "test/worm.ppi.qrels.seq.test.csv"
+  },
+  {
+    "type": "file",
+    "oid": "c3ceb40812b066d7527499513c292daed70162a5",
+    "size": 37772124,
+    "lfs": {
+      "oid": "11854f594ac14fcf8dfc73a94fbfefc5e05fc59e38f9d75ac273ca2a68243357",
+      "size": 37772124,
+      "pointerSize": 133
+    },
+    "xetHash": "778c71465429e4b0d7f93b13541226295b19dc4e42f01dfdc563af11caeec839",
+    "path": "test/yeast.ppi.qrels.seq.test.csv"
+  },
+  {
+    "type": "file",
+    "oid": "439a997d3754321954d635d6359eb504c2dc52e5",
+    "size": 318980144,
+    "lfs": {
+      "oid": "86c5134846df36df17455500154eab6049cd07250c79d6d263afcb5dcb6bf5fd",
+      "size": 318980144,
+      "pointerSize": 134
+    },
+    "xetHash": "9c7ec6d1079979bb52f4ac9abb36aaacdc44a80a509394ddb1c7d7b90662bd2d",
+    "path": "train/human.ppi.qrels.seq.train.csv"
+  },
+  {
+    "type": "file",
+    "oid": "6590be965a4e208e1266268efb494d0652073acb",
+    "size": 39851844,
+    "lfs": {
+      "oid": "abb126f34f617fdc4c956e1f056df5cb0921ab3c12d6f0d87948411d34a7b9f3",
+      "size": 39851844,
+      "pointerSize": 133
+    },
+    "xetHash": "77e8e549410dddbd7fe700ae3a380f6c15607ddeeca1c5bf8951bd376a9ae40a",
+    "path": "val/human.ppi.qrels.seq.test.csv"
+  }
+]

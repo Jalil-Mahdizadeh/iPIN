@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-05T07:18:07.952233+00:00",
+  "fixture_ids": [
+    122,
+    2230,
+    696,
+    1790
+  ],
+  "pairs": [
+    [
+      122,
+      2230
+    ],
+    [
+      2230,
+      1790
+    ],
+    [
+      696,
+      696
+    ],
+    [
+      1790,
+      122
+    ]
+  ],
+  "probability_error": 0.0,
+  "swap_error": 0.0,
+  "reference": "Unmodified native test_step computation at batch size one",
+  "checkpoint": {
+    "path": "/opt/rapppid/upstream/data/pretrained_weights/1690837077.519848_red-dreamy/1690837077.519848_red-dreamy.ckpt",
+    "bytes": 4559467,
+    "sha256": "fe603efd3256517b9fcc3a6e473d842fab2e3fa8483f3dd2b3350b742a3c02fd"
+  }
+}

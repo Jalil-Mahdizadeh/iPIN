@@ -1,0 +1,46 @@
+{
+  "architecture": "aarch64",
+  "versions": {
+    "esm": "3.2.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.8",
+    "transformers": "4.48.1",
+    "tokenizers": "0.21.4",
+    "numpy": "1.26.4",
+    "biotite": "1.7.1",
+    "biotraj": "1.2.2"
+  },
+  "cuda_runtime": "13.0",
+  "pair_layout": "[CLS] A [EOS] B [EOS]",
+  "synthetic_pair_lengths_with_specials": [
+    63,
+    42
+  ],
+  "cpu_imports_and_tokenization": "passed",
+  "production_trainer_qualified": false,
+  "chain_aware_adapter_qualified": false,
+  "long_context_qualified": false,
+  "four_gpu_resume_qualified": false,
+  "weights_sha256": "8ef856e1a237ee3f995442df997a962e70057faadecf38fc0c8561bd3c2f4324",
+  "strict_pretrained_load": "passed",
+  "total_parameters": 575036992,
+  "pretrained_bf16_inference": "passed",
+  "gpu": "NVIDIA GH200 120GB",
+  "compute_capability": [
+    9,
+    0
+  ],
+  "gpu_total_memory_gib": 95.0,
+  "encoder_gradient_norms": {
+    "embed.weight": 0.0007889568223617971,
+    "transformer.blocks.0.attn.layernorm_qkv.1.weight": 0.0017480469541624188,
+    "transformer.blocks.35.attn.layernorm_qkv.1.weight": 0.006477769929915667
+  },
+  "synthetic_loss": 0.6930729150772095,
+  "backward_and_disposable_adamw_step": "passed",
+  "optimizer_state_dtype": "float32",
+  "sdpa_backend": "EFFICIENT_ATTENTION",
+  "peak_allocated_memory_gib": 8.993654251098633,
+  "note": "Synthetic runtime check only; updated weights are discarded and no candidate checkpoint is saved.",
+  "elapsed_seconds": 6.274,
+  "status": "passed"
+}

@@ -1,0 +1,179 @@
+{
+  "created_utc": "2026-09-30T09:41:36.885469+00:00",
+  "note": "Periodically logged training batches; not full-dataset training loss or causal evidence",
+  "script_sha256": "18ded19f60fa8a824df26ef31b4b26e92dbd3403197d98c13d24f14d306ca898",
+  "runs": [
+    {
+      "model": "capped-official-seed2",
+      "file": "retrain-v2/analysis/completed-20260930T082601Z/capped-official-seed2-events.jsonl",
+      "sha256": "9d8ede845cb963d18c5bdfdfe206998b221941f677278b2b37492a3eed0f55e3",
+      "logged_updates": 1277,
+      "validation_example": {
+        "time_utc": "2026-09-29T12:38:49.429079+00:00",
+        "attempt": "20260929T114837-3130217",
+        "event": "validation",
+        "update": 1000,
+        "metrics": {
+          "rows": 59258,
+          "pooled_ap": 0.5436895634287999,
+          "auroc": 0.5166420903487188,
+          "brier": 0.24879278087962073,
+          "ab_ap": 0.519280967483941,
+          "order_logit_gap_mean": 0.09036122199209926
+        },
+        "best": true
+      },
+      "windows": [
+        {
+          "window": [
+            3000,
+            4000
+          ],
+          "n": 101,
+          "mean_bce": 0.6373755557227437,
+          "mean_grad_norm": 7.479572747013356,
+          "fraction_grad_norm_gt1": 1
+        },
+        {
+          "window": [
+            11745,
+            12745
+          ],
+          "n": 100,
+          "mean_bce": 0.30487714046787007,
+          "mean_grad_norm": 46.22210647583008,
+          "fraction_grad_norm_gt1": 1
+        }
+      ]
+    },
+    {
+      "model": "clean-bce-official-seed2",
+      "file": "retrain-v2/analysis/completed-20260930T082601Z/clean-bce-official-seed2-events.jsonl",
+      "sha256": "f7ab072fe8f4ca94b9dd5fe4736180f65655868dd3abc41e6b26549b5473135f",
+      "logged_updates": 1277,
+      "validation_example": {
+        "time_utc": "2026-09-29T13:22:43.387200+00:00",
+        "attempt": "20260929T115014-3130215",
+        "event": "validation",
+        "update": 1000,
+        "metrics": {
+          "rows": 59258,
+          "pooled_ap": 0.5821489909186935,
+          "auroc": 0.5624152717911803,
+          "brier": 0.24494481798906542,
+          "ab_ap": 0.5731679530323233,
+          "order_logit_gap_mean": 0.09978785332601743
+        },
+        "best": true
+      },
+      "windows": [
+        {
+          "window": [
+            3000,
+            4000
+          ],
+          "n": 101,
+          "mean_bce": 0.6277183446408443,
+          "mean_grad_norm": 8.256232747937194,
+          "fraction_grad_norm_gt1": 1
+        },
+        {
+          "window": [
+            11745,
+            12745
+          ],
+          "n": 100,
+          "mean_bce": 0.1957915146293817,
+          "mean_grad_norm": 69.64349397659302,
+          "fraction_grad_norm_gt1": 1
+        }
+      ]
+    },
+    {
+      "model": "positive10-official-seed2",
+      "file": "retrain-v2/analysis/completed-20260930T082601Z/positive10-official-seed2-events.jsonl",
+      "sha256": "6347af2818d64dfcf73778fc0da2f5f21f04633362b6fc8e1ac7b530d2ebdbe3",
+      "logged_updates": 1277,
+      "validation_example": {
+        "time_utc": "2026-09-29T13:21:22.027741+00:00",
+        "attempt": "20260929T114850-3130220",
+        "event": "validation",
+        "update": 1000,
+        "metrics": {
+          "rows": 59258,
+          "pooled_ap": 0.5382334842514565,
+          "auroc": 0.5296367879924587,
+          "brier": 0.40401577165306696,
+          "ab_ap": 0.5229295721595796,
+          "order_logit_gap_mean": 0.05757676244663168
+        },
+        "best": true
+      },
+      "windows": [
+        {
+          "window": [
+            3000,
+            4000
+          ],
+          "n": 101,
+          "mean_bce": 1.5614328924889243,
+          "mean_grad_norm": 16.45371902107012,
+          "fraction_grad_norm_gt1": 1
+        },
+        {
+          "window": [
+            11745,
+            12745
+          ],
+          "n": 100,
+          "mean_bce": 1.1113375393964815,
+          "mean_grad_norm": 85.65932159423828,
+          "fraction_grad_norm_gt1": 1
+        }
+      ]
+    },
+    {
+      "model": "reference-official-seed2",
+      "file": "retrain-v2/analysis/completed-20260930T082601Z/reference-official-seed2-events.jsonl",
+      "sha256": "18f07c7563601bfce3d723095f2dfde64d2b11be330306a151beb40623b560f7",
+      "logged_updates": 1277,
+      "validation_example": {
+        "time_utc": "2026-09-29T13:21:41.096232+00:00",
+        "attempt": "20260929T114837-3130216",
+        "event": "validation",
+        "update": 1000,
+        "metrics": {
+          "rows": 59258,
+          "pooled_ap": 0.5497648121012173,
+          "auroc": 0.5212578475059463,
+          "brier": 0.24956850804977862,
+          "ab_ap": 0.5168215416578681,
+          "order_logit_gap_mean": 0.022893089329706733
+        },
+        "best": true
+      },
+      "windows": [
+        {
+          "window": [
+            3000,
+            4000
+          ],
+          "n": 101,
+          "mean_bce": 0.6447584976402969,
+          "mean_grad_norm": 6.83509893700628,
+          "fraction_grad_norm_gt1": 1
+        },
+        {
+          "window": [
+            11745,
+            12745
+          ],
+          "n": 100,
+          "mean_bce": 0.44364494551497047,
+          "mean_grad_norm": 32.59393913269043,
+          "fraction_grad_norm_gt1": 1
+        }
+      ]
+    }
+  ]
+}

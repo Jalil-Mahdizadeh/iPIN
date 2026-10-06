@@ -1,0 +1,43 @@
+{
+  "ready_for_submission": true,
+  "production_submitted_at_preparation": false,
+  "frozen_utc": "2026-09-29T11:23:21.971778+00:00",
+  "enabled_runs": [
+    "reference-official-seed2",
+    "capped-official-seed2",
+    "positive10-official-seed2",
+    "clean-bce-official-seed2"
+  ],
+  "scope": "Initial four-arm controlled screen only. Later proposal stages remain conditional.",
+  "files": {
+    "code/container.sh": "094467b668f00a06db3666381079d66036eb0f840a75c70068f64b4285a0d7e7",
+    "code/data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "code/launch.py": "217e7588e827822c7b66b221c09f2346be441915ea6b1747b238ef8c25c2973b",
+    "code/model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "code/release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280",
+    "code/state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "code/train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+    "configs/capped-official-seed2.json": "fc7cddcbea8eae95d5fe65c5252fb0f191f99e7f56b9de0a1cfd1c80b515cbd5",
+    "configs/clean-bce-official-seed2.json": "2b6f3fc833a3803a2f07f37675a966e7e1953523ee396909a1a6ddc46047381d",
+    "configs/positive10-official-seed2.json": "3d5135ddc90101f8d0e8b01b438a210221210e16225e10da4ea3e6d08eb55a09",
+    "configs/reference-official-seed2.json": "353aef5ea876e8fa879d5195bc53841ae3a22887b3f721f1fa0f4c4e9656845c",
+    "slurm/train.sbatch": "000916e8da95ba8a8da22e450c929a9b51bc4d78c563975c33e39371c0df6db7"
+  },
+  "qualification_reports": {
+    "qualification/science.json": "5fbe4d68dc98334cde96796138fbd0f363ace27c497b43be9b9056db1382f02d",
+    "qualification/checkpoint-faults.json": "c9423d87a81b707936581c1364f10dd4777cc9db6776e8d21c797bae0b430479",
+    "qualification/full-model-profile.json": "fa8e5f4c81bb77ab8fc361b7c8bd36beeed9af2467f0d7fea91e8a9b596b6bcd",
+    "qualification/ddp.json": "a12c19d93bfe419a7606348637376b54b0da6ee645b5c0940f6a5c38bbbb3215",
+    "qualification/ddp-reference-comparison.json": "7b23034a92afd20e090703ed5d708107449f7b2aceb3928d6f503f39b459d2e2",
+    "qualification/ddp-experimental-comparison.json": "160235e3c614aaaf2c1ebb1098f8bacba1ca12c825d499496e05b1a9df948cd2",
+    "qualification/signal-resume.json": "6b2ec0aaf0a27603575e99ef7d5dd824bf557ebdef1b83ba256e1f1b02911537",
+    "qualification/launcher-checks.json": "6a571138736c4749c132e4ae01903f6d6a5ddd6eaec43aecff0718b404207ece",
+    "qualification/scheduler-requeue.json": "4528de1b069c63a9c9b0575421438ff6f9dcece26c8234ce83e1b470e9fb0c5c",
+    "qualification/ddp-experimental-requeue-comparison.json": "eb4a13e0947596b1c1259359202507860cd9fa9b64ac8edf5b354aac87360980",
+    "qualification/production-guard.json": "6727b44674d3a3228f93bd8a0bb9930cb056daed5e630bfa50b340a1d7548049",
+    "qualification/configurations.json": "fa6a4027411f63acd34c57ff5eec423b2281c9a9f0d6e07e92c5d69907d457b4"
+  },
+  "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+  "initialization_manifest_sha256": "eff778c6c70f8c91fec17a7aeca089cf4d5faa8f6a806738cf12f46c8b680ef7",
+  "sif_sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+}

@@ -1,0 +1,31 @@
+{
+  "model": {
+    "tensor_count": 48,
+    "tensor_elements": 141371
+  },
+  "optimizer": {
+    "tensor_count": 126,
+    "tensor_elements": 147182
+  },
+  "training_state": {
+    "tensor_count": 0,
+    "tensor_elements": 0
+  },
+  "rng_by_rank": {
+    "tensor_count": 2,
+    "tensor_elements": 5072
+  },
+  "fingerprint": {
+    "tensor_count": 0,
+    "tensor_elements": 0
+  },
+  "world_size": {
+    "tensor_count": 0,
+    "tensor_elements": 0
+  },
+  "validation_predictions_bitwise_identical": true,
+  "passed": true,
+  "bitwise_identical": true,
+  "uninterrupted": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/qualification/signal-full",
+  "resumed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/qualification/signal-resumed"
+}

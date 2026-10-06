@@ -1,0 +1,9 @@
+{
+  "pid": 745916,
+  "started_at_utc": "2026-10-02T20:22:26.040055+00:00",
+  "host": "n505",
+  "interactive_allocation": "3266861",
+  "log": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/logs/startup-watch.log",
+  "read_only": true,
+  "extra_slurm_jobs": 0
+}

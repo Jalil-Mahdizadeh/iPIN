@@ -1,0 +1,69 @@
+{
+  "12.0": {
+    "header": [
+      "protein1",
+      "protein2",
+      "homology",
+      "experiments",
+      "experiments_transferred",
+      "database",
+      "database_transferred",
+      "textmining",
+      "textmining_transferred",
+      "combined_score"
+    ],
+    "sequences": 19699,
+    "directed_rows": 1477610,
+    "unique_physical_id_pairs": 738805,
+    "self_rows": 0,
+    "unique_pairs_direct_experiments_positive": 473579,
+    "missing_sequence_direct_rows": 0,
+    "eligible_50_800_direct_id_pairs_before_clustering": 284868,
+    "eligible_unique_sequence_pairs_before_clustering": 279899,
+    "eligible_identical_sequence_pairs": 39,
+    "eligible_unique_ids": 14019,
+    "eligible_unique_sequences": 13937,
+    "eligible_combined_score_ge_400": 73854,
+    "eligible_homology_positive": 0,
+    "eligible_with_transferred_experimental_support_also": 31438,
+    "humanV12_paper_filters_before_clustering_id_pairs": 100536,
+    "note": "Counts precede 40% pair redundancy reduction, splits, test protection, negative sampling and full sequence validation; not proposed final TRAIN size."
+  },
+  "12.5": {
+    "header": [
+      "protein1",
+      "protein2",
+      "homology",
+      "experiments",
+      "experiments_transferred",
+      "database",
+      "database_transferred",
+      "textmining",
+      "textmining_transferred",
+      "combined_score"
+    ],
+    "sequences": 19699,
+    "directed_rows": 1296490,
+    "unique_physical_id_pairs": 648245,
+    "self_rows": 0,
+    "unique_pairs_direct_experiments_positive": 514608,
+    "missing_sequence_direct_rows": 0,
+    "eligible_50_800_direct_id_pairs_before_clustering": 303343,
+    "eligible_unique_sequence_pairs_before_clustering": 296306,
+    "eligible_identical_sequence_pairs": 46,
+    "eligible_unique_ids": 14087,
+    "eligible_unique_sequences": 13993,
+    "eligible_combined_score_ge_400": 209349,
+    "eligible_homology_positive": 0,
+    "eligible_with_transferred_experimental_support_also": 21519,
+    "humanV12_paper_filters_before_clustering_id_pairs": 308080,
+    "note": "Counts precede 40% pair redundancy reduction, splits, test protection, negative sampling and full sequence validation; not proposed final TRAIN size."
+  },
+  "v12.5_vs_v12.0_eligible_id_pairs": {
+    "shared": 227813,
+    "added": 75530,
+    "removed": 57055,
+    "shared_with_changed_direct_experiments_score": 212421,
+    "sequence_gzip_identical": true
+  }
+}

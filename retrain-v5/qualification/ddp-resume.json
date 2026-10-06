@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "job_id": "3300703",
+  "completed_at_utc": "2026-10-02T20:10:52.817074+00:00",
+  "world_size": 4,
+  "actual_size_backbones": [
+    "esm2-650m",
+    "esmc-600m"
+  ],
+  "conditions": [
+    "esm2",
+    "esmc"
+  ],
+  "production_training": false,
+  "updates_per_trajectory": 4,
+  "stop_at": 2,
+  "pending_validation_recovered": true,
+  "global_pairs_per_update": 9,
+  "short_input_max_tokens": 384,
+  "reused_previously_passed_identical_core_checks": [],
+  "scope": "Actual full-size models: uneven accumulation and bitwise model/optimizer/RNG/sampler/selection/validation-prediction resume on the tested GH200 runtime.",
+  "code": {
+    "train.py": "4add811c2218c39dde7ab79cd4b62f6143b7d4cc8419a9eb2a9f91a4e86662e2",
+    "model.py": "7680c5aba9d350dfece2eb7394eb0995518b6e474e5ca54bfdac5346ad402c6e",
+    "native_head.py": "278c7180b249f46d130acd36561035d13af47458836a91a7a4ab89694fab896c",
+    "model_esm2.py": "e944e891ce2ffdf5f961d977e6c8dd25334f735569419fef366ce6d76e79552c",
+    "model_esmc.py": "ea568585e29f7d0211c5c717527c210dd40ce0f53ff476f4acc1577f3c280149",
+    "data.py": "a940d7906b2449a1e4b3f37fcd62e4a9ab4fac5a3e537ff0d3c26916edf39d59",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "043e9794b825e4d08ce6794eba24afe50e6a96a90addcbc847c91d6cc822dddd",
+    "release.py": "3ff0cb6f5254c303b80c8c9b81c38efea21621c2cd70cf9dfdbf04feb9a9f5e8"
+  },
+  "comparison_reports": [
+    "qualification/esm2-native-ilp-seed2-resume-comparison.json",
+    "qualification/esmc-native-ilp-seed2-resume-comparison.json"
+  ],
+  "source_sha256": {
+    "qualification/frozen-code/qualify_ddp.py": "bfce809b7ab41a73f5e1c1e498187e25acf9eb12cd6e314c1fde1203d7a03830",
+    "qualification/frozen-code/container.sh": "975d43ab887506e722f731719a89a5302bdddb6076c7a0fce4b8583590e5c438",
+    "qualification/frozen-code/compare_resume.py": "353e1af3831b3a74cc3f15885e59bfcdb2c6f407c2984fea16eb62f5353c99ff",
+    "qualification/esm2-native-ilp-seed2-resume-comparison.json": "3ddf1777741d1c8d241568a59bf24df9d1e45b28b090b1882b4e1d1669fad9d6",
+    "qualification/esmc-native-ilp-seed2-resume-comparison.json": "42649af766dac29826a2b44c542967a8ba38b1afa6ab7e1d459fc6db4cc3e2aa"
+  }
+}

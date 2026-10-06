@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "backbone": "esmc",
+  "profiles": [
+    {
+      "stage": "longest-training",
+      "tokens": 17652,
+      "orientations": 2,
+      "source_row": 412619,
+      "seconds": 21.03233183598786,
+      "peak_allocated_gib": 10.3008394241333,
+      "peak_reserved_gib": 12.181640625,
+      "finite_output": 9.2818603515625
+    },
+    {
+      "stage": "longest-validation",
+      "tokens": 42878,
+      "orientations": 2,
+      "source_row": 38713,
+      "seconds": 7.1223570379952434,
+      "peak_allocated_gib": 10.69887113571167,
+      "peak_reserved_gib": 14.58203125,
+      "finite_output": [
+        [
+          -0.0206298828125,
+          -0.0203857421875
+        ]
+      ]
+    }
+  ],
+  "representative_training_pair_timings": [
+    {
+      "tokens": 474,
+      "seconds": 0.2852077630086569
+    },
+    {
+      "tokens": 664,
+      "seconds": 0.2766372229962144
+    },
+    {
+      "tokens": 804,
+      "seconds": 0.2881607029994484
+    },
+    {
+      "tokens": 934,
+      "seconds": 0.2779646090057213
+    },
+    {
+      "tokens": 1067,
+      "seconds": 0.2996249819989316
+    },
+    {
+      "tokens": 1216,
+      "seconds": 0.2709706649911823
+    },
+    {
+      "tokens": 1396,
+      "seconds": 0.2765443290118128
+    },
+    {
+      "tokens": 1643,
+      "seconds": 0.43896938899706583
+    },
+    {
+      "tokens": 2069,
+      "seconds": 0.43613638199167326
+    },
+    {
+      "tokens": 2416,
+      "seconds": 0.5334176049946109
+    },
+    {
+      "tokens": 3062,
+      "seconds": 0.7751249139982974
+    },
+    {
+      "tokens": 5116,
+      "seconds": 1.8955888649943518
+    }
+  ],
+  "representative_pairs": 12,
+  "representative_training_seconds": 6.104353681992507,
+  "measured_training_includes_masked_classification_mlm_backward_and_optimizer": true,
+  "trainable_parameters": 575038145,
+  "no_sequence_truncation": true,
+  "decoder_gradients_verified": true,
+  "test_data_used": false,
+  "candidate_checkpoints_saved": false,
+  "disposable_optimizer_steps": 2,
+  "code": {
+    "train.py": "4add811c2218c39dde7ab79cd4b62f6143b7d4cc8419a9eb2a9f91a4e86662e2",
+    "model.py": "7680c5aba9d350dfece2eb7394eb0995518b6e474e5ca54bfdac5346ad402c6e",
+    "native_head.py": "278c7180b249f46d130acd36561035d13af47458836a91a7a4ab89694fab896c",
+    "model_esm2.py": "e944e891ce2ffdf5f961d977e6c8dd25334f735569419fef366ce6d76e79552c",
+    "model_esmc.py": "ea568585e29f7d0211c5c717527c210dd40ce0f53ff476f4acc1577f3c280149",
+    "data.py": "a940d7906b2449a1e4b3f37fcd62e4a9ab4fac5a3e537ff0d3c26916edf39d59",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "043e9794b825e4d08ce6794eba24afe50e6a96a90addcbc847c91d6cc822dddd",
+    "release.py": "3ff0cb6f5254c303b80c8c9b81c38efea21621c2cd70cf9dfdbf04feb9a9f5e8"
+  },
+  "source_sha256": {
+    "scripts/qualify_profile.py": "02ef53cf53dfb0b7ac5b917ea77506f21d9c9ba1f8db631cbcf428f8c72ffeae"
+  },
+  "device": "NVIDIA GH200 120GB",
+  "device_memory_gib": 95.0
+}

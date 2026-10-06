@@ -1,0 +1,15 @@
+{
+  "failed_job_id": "3209856",
+  "failure": "Inherited /usr/local/bin/torchrun selected /usr/bin/python, bypassing the ESM C virtual environment; ESM C stopped before model construction or training.",
+  "fixed_entrypoint": "python -m torch.distributed.run",
+  "model_and_training_core_unchanged": true,
+  "esm2_exact_resume_already_passed": true,
+  "esm2_comparison_sha256": "64cfda2cab2cfeedd86c60910e39c38776b8f275ffca888bdbf44684f1ede56c",
+  "worker_import_check_passed": true,
+  "corrected_qualification_job_id": "3210358",
+  "corrected_job_state": "COMPLETED",
+  "corrected_job_exit_code": "0:0",
+  "all_three_exact_resume_checks_passed": true,
+  "final_resume_report": "qualification/ddp-resume.json",
+  "production_jobs_submitted": 0
+}

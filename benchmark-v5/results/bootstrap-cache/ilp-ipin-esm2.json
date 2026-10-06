@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "ipin-esm2",
+    "test": "ilp",
+    "replicates": 1000,
+    "seed": 20260929,
+    "rows": "bced44a7b60dcdca586d2a076ed9979ad003f9e988a54c37ca259ea1ea63c21d",
+    "scores": "12e14c0f93b88f361debec354b8253885d66503f2d8260ca43bef36513cf33f5",
+    "analysis_code": "7316f52fadd7e2564b511b70c3d0aa01d0eb099f2b27aec827e05ff0d5cdc86b"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/bootstrap-cache/ilp-ipin-esm2.npz",
+    "bytes": 14519,
+    "sha256": "d7eef3ee191b0047c73bdf627196eadb425d2bb1132c91485f00467e401c3a9d"
+  }
+}

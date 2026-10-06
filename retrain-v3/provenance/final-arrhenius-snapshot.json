@@ -1,0 +1,7 @@
+{
+  "partition": "PartitionName=gpu\n   AllowGroups=ALL AllowAccounts=ALL AllowQos=ALL\n   AllocNodes=ALL Default=NO QoS=N/A\n   DefaultTime=02:00:00 DisableRootJobs=YES ExclusiveUser=NO ExclusiveTopo=NO GraceTime=0 Hidden=NO\n   MaxNodes=UNLIMITED MaxTime=3-00:00:00 MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED\n   Nodes=n[21-212,405-594]\n   PriorityJobFactor=1 PriorityTier=1 RootOnly=NO ReqResv=NO OverSubscribe=NO\n   OverTimeLimit=NONE PreemptMode=REQUEUE\n   State=UP TotalCPUs=110016 TotalNodes=382 SelectTypeParameters=NONE\n   JobDefaults=DefCpuPerGPU=72\n   DefMemPerCPU=1459 MaxMemPerNode=UNLIMITED\n   TRES=cpu=110016,mem=185596228M,node=382,billing=1766,gres/gpu=1528,gres/gpu:nvidia_gh200_120gb=1528\n   TRESBillingWeights=CPU=0.013888888888888888,Mem=0.009745002593274616G,GRES/gpu:nvidia_gh200_120gb=1.0\n\n",
+  "filesystem": "Filesystem                                                       Size  Used Avail Use% Mounted on\n2124@kfi,2188@kfi:2125@kfi,2189@kfi:/arrhpc1/nobackup/proj/disk   16T  8.7T  7.1T  56% /nobackup/proj/disk\n",
+  "queue": "3169315|interactive|RUNNING|n519\n",
+  "gpu": "name, memory.total [MiB], memory.used [MiB]\nNVIDIA GH200 120GB, 97871 MiB, 0 MiB\n",
+  "project_allocation_balance": "not verified"
+}

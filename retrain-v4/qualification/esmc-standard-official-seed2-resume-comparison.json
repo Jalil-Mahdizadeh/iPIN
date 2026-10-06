@@ -1,0 +1,31 @@
+{
+  "model": {
+    "tensor_count": 373,
+    "tensor_elements": 575628098
+  },
+  "optimizer": {
+    "tensor_count": 1101,
+    "tensor_elements": 1148447859
+  },
+  "training_state": {
+    "tensor_count": 0,
+    "tensor_elements": 0
+  },
+  "rng_by_rank": {
+    "tensor_count": 8,
+    "tensor_elements": 20288
+  },
+  "fingerprint": {
+    "tensor_count": 0,
+    "tensor_elements": 0
+  },
+  "world_size": {
+    "tensor_count": 0,
+    "tensor_elements": 0
+  },
+  "validation_predictions_bitwise_identical": true,
+  "passed": true,
+  "bitwise_identical": true,
+  "uninterrupted": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/qualification/esmc-standard-official-seed2-full",
+  "resumed": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/qualification/esmc-standard-official-seed2-resumed"
+}

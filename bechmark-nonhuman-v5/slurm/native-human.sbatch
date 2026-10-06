@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#SBATCH --job-name=nhv5-native-human-fp32
+#SBATCH --account=naiss2025-3-10-gpu
+#SBATCH --partition=gpu
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --gpus-per-node=4
+#SBATCH --cpus-per-task=72
+#SBATCH --mem=400G
+#SBATCH --time=02:00:00
+#SBATCH --open-mode=append
+#SBATCH --output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/logs/slurm-%x-%j.log
+set -euo pipefail
+cd /nobackup/proj/disk/theo-storage/personal/jalil/iPIN
+srun --ntasks=1 --gpus-per-node=4 --cpus-per-task=72 --cpu-bind=none --kill-on-bad-exit=1 \
+ bash bechmark-nonhuman-v5/scripts/container.sh native python scripts/native_human_fp32.py --qualify
+srun --ntasks=1 --gpus-per-node=4 --cpus-per-task=72 --cpu-bind=none --kill-on-bad-exit=1 \
+ bash bechmark-nonhuman-v5/scripts/container.sh native python scripts/launch_workers.py scripts/native_human_fp32.py

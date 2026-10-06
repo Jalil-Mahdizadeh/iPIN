@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "full_horizon_selection_checks": {
+    "all_13_validations_required": true,
+    "earlier_tie_selected": true,
+    "selection_idempotent": true,
+    "unfinished_run_rejected": true,
+    "wrong_best_rejected": true
+  },
+  "accepted_verified_early_stop": true,
+  "completed_validation_updates": [
+    1000,
+    2000,
+    3000,
+    4000,
+    5000,
+    6000,
+    7000,
+    8000
+  ],
+  "invalid_cases_rejected": [
+    "early_stop_without_amendment",
+    "unauthorized_early_stop",
+    "training_restart_marker_removed",
+    "missing_intermediate_validation",
+    "changed_best_checkpoint_manifest",
+    "pending_validation_at_stop"
+  ],
+  "training_stop_does_not_stop_benchmark": true,
+  "source_sha256": {
+    "prepare_selected.py": "bb56a96c477fa925675e6a457ea0bf90b1b2507a4cf37734971de9eeb5d5f28d",
+    "common.py": "4963f1679eef579d780acc540537452e96bd569031b9ff5b7d66c8fdeb7ad09e",
+    "verify_selection_guards.py": "a2f37b247c1fcdfe0cc7dbfcf6ab00b5eb4cad82761b3747ae8d04e7b9eac7f1"
+  }
+}

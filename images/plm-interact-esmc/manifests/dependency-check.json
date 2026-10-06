@@ -1,0 +1,11 @@
+{
+  "returncode": 1,
+  "stdout": "esm 3.2.3 requires torchtext, which is not installed.\n",
+  "stderr": "WARNING: The directory '/home/jalil/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\nDEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/nvfuser-0.2.27a0+1a27c18-py3.12-linux-aarch64.egg is deprecated. pip 24.3 will enforce this behaviour change. A possible replacement is to use pip for package installation.. Discussion can be found at https://github.com/pypa/pip/issues/12330\n",
+  "documented_omission": "unused SDK torchtext dependency",
+  "unexpected_conflicts": [],
+  "all_added_wheel_versions_match_lock": true,
+  "python_executable": "/opt/esmc/venv/bin/python",
+  "hub_offline": true,
+  "native_plminteract_package_removed": true
+}

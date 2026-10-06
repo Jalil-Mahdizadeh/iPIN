@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "default_dry_run_submits_nothing": true,
+  "dry_run_creates_no_run_directory": true,
+  "batch_scenarios": [
+    "success",
+    "failure",
+    "requeue",
+    "manual-stop"
+  ],
+  "array_task_specific_requeue": true,
+  "scope": "Real shell logic, mocked SLURM/worker commands; no v2 scheduler requeue was performed.",
+  "source_sha256": {
+    "slurm/train.sbatch": "000916e8da95ba8a8da22e450c929a9b51bc4d78c563975c33e39371c0df6db7",
+    "scripts/launch.py": "217e7588e827822c7b66b221c09f2346be441915ea6b1747b238ef8c25c2973b"
+  }
+}

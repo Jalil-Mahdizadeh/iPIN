@@ -1,0 +1,141 @@
+{
+  "at_utc": "2026-10-05T17:11:04.084243+00:00",
+  "models": [
+    "native-human",
+    "tuna-human"
+  ],
+  "sources": [
+    {
+      "split": "train",
+      "bit": 1,
+      "native_file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.train.csv",
+        "bytes": 318980144,
+        "sha256": "86c5134846df36df17455500154eab6049cd07250c79d6d263afcb5dcb6bf5fd"
+      },
+      "tuna_dictionary": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_train_dictionary.tsv",
+        "bytes": 6414663,
+        "sha256": "83b49176590a94ed72fb8176a75d4bc35b90ebdcc9537677bfc0049ec423dded"
+      },
+      "tuna_interactions": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_train_interaction.tsv",
+        "bytes": 18980640,
+        "sha256": "1311d05d166653a57e6e39e2a55ad3e1da93eb9500294fab2e06f00510392cda"
+      },
+      "rows": 421792,
+      "positives": 38344,
+      "negatives": 383448,
+      "unordered_sequence_pair_label_multisets_identical": true
+    },
+    {
+      "split": "validation",
+      "bit": 2,
+      "native_file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.test.csv",
+        "bytes": 39851844,
+        "sha256": "abb126f34f617fdc4c956e1f056df5cb0921ab3c12d6f0d87948411d34a7b9f3"
+      },
+      "tuna_dictionary": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_test_dictionary.tsv",
+        "bytes": 6297772,
+        "sha256": "756fe5bc557ea596784b6f5d316780036fcde4408ed1ef886c39754c38e682ce"
+      },
+      "tuna_interactions": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_test_interaction.tsv",
+        "bytes": 2372625,
+        "sha256": "6afd73e10f74048364f6676934a3b638bc9dadd349b8d5ae3e00c1836724af48"
+      },
+      "rows": 52725,
+      "positives": 4794,
+      "negatives": 47931,
+      "unordered_sequence_pair_label_multisets_identical": true
+    }
+  ],
+  "source_datasets_identical": true,
+  "endpoint_mask_identical_to_dscript_train": true,
+  "exact_union_sequences_exposed": 2233,
+  "tests": {
+    "original": {
+      "train": {
+        "exact_exposed_sequences": 2233,
+        "pairs_exposed": 1167,
+        "positive_pairs_exposed": 1091,
+        "negative_pairs_exposed": 76,
+        "pairs_with_exposed_endpoint": 47784,
+        "endpoint_unexposed_pairs": 4264,
+        "endpoint_unexposed_positives": 2287,
+        "test_negative_but_source_positive": 27,
+        "test_positive_but_source_negative": 41
+      },
+      "validation": {
+        "exact_exposed_sequences": 2197,
+        "pairs_exposed": 153,
+        "positive_pairs_exposed": 139,
+        "negative_pairs_exposed": 14,
+        "pairs_with_exposed_endpoint": 47519,
+        "endpoint_unexposed_pairs": 4529,
+        "endpoint_unexposed_positives": 2397,
+        "test_negative_but_source_positive": 6,
+        "test_positive_but_source_negative": 6
+      },
+      "train_or_validation": {
+        "exact_exposed_sequences": 2233,
+        "pairs_exposed": 1320,
+        "positive_pairs_exposed": 1230,
+        "negative_pairs_exposed": 90,
+        "pairs_with_exposed_endpoint": 47784,
+        "endpoint_unexposed_pairs": 4264,
+        "endpoint_unexposed_positives": 2287,
+        "test_negative_but_source_positive": 33,
+        "test_positive_but_source_negative": 47
+      }
+    },
+    "ilp": {
+      "train": {
+        "exact_exposed_sequences": 2184,
+        "pairs_exposed": 1292,
+        "positive_pairs_exposed": 1091,
+        "negative_pairs_exposed": 201,
+        "pairs_with_exposed_endpoint": 47607,
+        "endpoint_unexposed_pairs": 4441,
+        "endpoint_unexposed_positives": 2287,
+        "test_negative_but_source_positive": 145,
+        "test_positive_but_source_negative": 41
+      },
+      "validation": {
+        "exact_exposed_sequences": 2150,
+        "pairs_exposed": 164,
+        "positive_pairs_exposed": 139,
+        "negative_pairs_exposed": 25,
+        "pairs_with_exposed_endpoint": 47374,
+        "endpoint_unexposed_pairs": 4674,
+        "endpoint_unexposed_positives": 2397,
+        "test_negative_but_source_positive": 16,
+        "test_positive_but_source_negative": 6
+      },
+      "train_or_validation": {
+        "exact_exposed_sequences": 2184,
+        "pairs_exposed": 1456,
+        "positive_pairs_exposed": 1230,
+        "negative_pairs_exposed": 226,
+        "pairs_with_exposed_endpoint": 47607,
+        "endpoint_unexposed_pairs": 4441,
+        "endpoint_unexposed_positives": 2287,
+        "test_negative_but_source_positive": 161,
+        "test_positive_but_source_negative": 47
+      }
+    }
+  },
+  "flags": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/human-releases-exposure-flags.npz",
+    "bytes": 6833,
+    "sha256": "6de3a1125c4ee791f6eb266a71067fe31e06eac977f116882a8c4e1a957c384b"
+  },
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/human_releases_exposure.py",
+    "bytes": 4355,
+    "sha256": "cbb50239189ceba6afb0b3ddc020a9ee0988b00665ad00d566391e31b3966aa4"
+  },
+  "limitations": "Public supervised TRAIN/validation sources; not proof of full checkpoint history. Exact matching only; homologs, fragments, isoforms and PLM pretraining are not excluded."
+}

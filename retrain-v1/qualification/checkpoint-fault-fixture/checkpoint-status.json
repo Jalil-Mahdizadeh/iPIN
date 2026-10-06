@@ -1,0 +1,17 @@
+{
+  "last_committed_update": 2,
+  "latest": {
+    "file": "update-000000002.pt",
+    "sha256": "ad8e681e4e30e97b55fdaa5c96d8f4995445eddefb11ec1fa02e8e57ed62aacf",
+    "bytes": 17413,
+    "update": 2,
+    "epoch": 0,
+    "next_chunk": 2,
+    "world_size": 1,
+    "fingerprint": "synthetic-checkpoint-fault-test-v1"
+  },
+  "retained": [
+    "update-000000001.pt",
+    "update-000000002.pt"
+  ]
+}

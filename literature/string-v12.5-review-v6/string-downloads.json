@@ -1,0 +1,33 @@
+{
+  "at_utc": "2026-10-05T20:34:46.890347+00:00",
+  "files": [
+    {
+      "name": "9606.protein.physical.links.full.v12.5.txt.gz",
+      "url": "https://stringdb-downloads.org/download/protein.physical.links.full.v12.5/9606.protein.physical.links.full.v12.5.txt.gz",
+      "bytes": 9617451,
+      "sha256": "6182e76caef148027491cf7f50c7cc41114aa4326d8a7d4fb31681099ff3eaea",
+      "first_line": "protein1 protein2 homology experiments experiments_transferred database database_transferred textmining textmining_transferred combined_score"
+    },
+    {
+      "name": "9606.protein.sequences.v12.5.fa.gz",
+      "url": "https://stringdb-downloads.org/download/protein.sequences.v12.5/9606.protein.sequences.v12.5.fa.gz",
+      "bytes": 6760990,
+      "sha256": "afe5ebc2d26777a930f947f350c01dc4261d6fa29dd3f217b22fc0225e066ee1",
+      "first_line": ">9606.ENSP00000000233"
+    },
+    {
+      "name": "9606.protein.physical.links.full.v12.0.txt.gz",
+      "url": "https://stringdb-downloads.org/download/protein.physical.links.full.v12.0/9606.protein.physical.links.full.v12.0.txt.gz",
+      "bytes": 11766797,
+      "sha256": "b28f494f58e1ace634ef1fe41734ada5be37f151e3168bb9658bc6ca1dd1a954",
+      "first_line": "protein1 protein2 homology experiments experiments_transferred database database_transferred textmining textmining_transferred combined_score"
+    },
+    {
+      "name": "9606.protein.sequences.v12.0.fa.gz",
+      "url": "https://stringdb-downloads.org/download/protein.sequences.v12.0/9606.protein.sequences.v12.0.fa.gz",
+      "bytes": 6760990,
+      "sha256": "afe5ebc2d26777a930f947f350c01dc4261d6fa29dd3f217b22fc0225e066ee1",
+      "first_line": ">9606.ENSP00000000233"
+    }
+  ]
+}

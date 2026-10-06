@@ -1,0 +1,60 @@
+{
+  "at_utc": "2026-10-05T20:33:39.612714+00:00",
+  "sources": [
+    {
+      "name": "dscript-paper.bioc.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC8586911/unicode",
+      "final_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC8586911/unicode",
+      "bytes": 184745,
+      "sha256": "875f5181f364f885a6458096a7b42d2c85c577f7dabe13c002079795ae8c4fb3",
+      "content_type": "text/xml"
+    },
+    {
+      "name": "tuna-paper.bioc.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC11269822/unicode",
+      "final_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC11269822/unicode",
+      "bytes": 57323,
+      "sha256": "63aa2af40320ae7b2ad878e3a5465cf57b36c22155041cc48f8e5af26d3a341d",
+      "content_type": "text/xml"
+    },
+    {
+      "name": "dscript-author-thesis.pdf",
+      "url": "https://samsl.io/assets/files/Sledzieski_PhD_Thesis.pdf",
+      "final_url": "https://samsl.io/assets/files/Sledzieski_PhD_Thesis.pdf",
+      "bytes": 25661595,
+      "sha256": "8b81e5e927d1351df95668e79766524f9829e1b107b4b2e948ee0f948393b3ef",
+      "content_type": "application/pdf"
+    },
+    {
+      "name": "string-download.html",
+      "url": "https://string-db.org/cgi/download?species_text=Homo+sapiens&species=9606",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "string-info.html",
+      "url": "https://version-12-5.string-db.org/cgi/info",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "string-versions.html",
+      "url": "https://version-12-5.string-db.org/cgi/access",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "dscript-human-test.tsv",
+      "url": "https://raw.githubusercontent.com/samsledje/D-SCRIPT/23cbb0fbbb454d09ee41ff749c1454d8b3c8a4b8/data/pairs/human_test.tsv",
+      "final_url": "https://raw.githubusercontent.com/samsledje/D-SCRIPT/23cbb0fbbb454d09ee41ff749c1454d8b3c8a4b8/data/pairs/human_test.tsv",
+      "bytes": 2319900,
+      "sha256": "19498f9761e9cb5645799f9e4e36f18b3abe7d2b015bf50b4a78d53283fe8f53",
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "name": "dscript-human-train.tsv",
+      "url": "https://raw.githubusercontent.com/samsledje/D-SCRIPT/23cbb0fbbb454d09ee41ff749c1454d8b3c8a4b8/data/pairs/human_train.tsv",
+      "final_url": "https://raw.githubusercontent.com/samsledje/D-SCRIPT/23cbb0fbbb454d09ee41ff749c1454d8b3c8a4b8/data/pairs/human_train.tsv",
+      "bytes": 18558848,
+      "sha256": "a51caf0b590decf96911b09d1e2cc6afc9a9d669d4e67d8bb3c2f1c94e16cd0b",
+      "content_type": "text/plain; charset=utf-8"
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "status": "both startup audits passed",
+  "monitor_pid": 745916,
+  "monitor_host": "n505",
+  "started_at_utc": "2026-10-02T20:22:26.063094+00:00",
+  "runs": {
+    "esm2-native-ilp-seed2": {
+      "status": "passed",
+      "scheduler_state": "RUNNING",
+      "node": "n105",
+      "reason": "n105",
+      "last_update": 20,
+      "last_update_utc": "2026-10-02T20:41:22.047287+00:00",
+      "checked_at_utc": "2026-10-02T20:41:48.183962+00:00",
+      "initialized": {
+        "time_utc": "2026-10-02T20:39:51.173273+00:00",
+        "attempt": "20261002T203947-3301121",
+        "event": "initialized",
+        "state": {
+          "update": 0,
+          "cursor": {
+            "cycle": 0,
+            "offset": 0
+          },
+          "epoch": 0,
+          "next_chunk": 0,
+          "examples_seen": 0,
+          "best_ap": null,
+          "best_update": null,
+          "total_steps": 54748,
+          "pending_validation": false,
+          "last_validation_update": null
+        },
+        "world_size": 4,
+        "devices": [
+          {
+            "rank": 0,
+            "uuid": "b738802e-2fc7-8ec8-8dba-67071d685cc5",
+            "device": "NVIDIA GH200 120GB"
+          },
+          {
+            "rank": 1,
+            "uuid": "fc0a5c93-8ba8-d5b4-4e8a-5dc9fb179a07",
+            "device": "NVIDIA GH200 120GB"
+          },
+          {
+            "rank": 2,
+            "uuid": "3e9facc7-1a82-f317-04ee-a7de4f7fe028",
+            "device": "NVIDIA GH200 120GB"
+          },
+          {
+            "rank": 3,
+            "uuid": "5eeeacad-96fc-c29c-6ae5-c4c0a658b5f4",
+            "device": "NVIDIA GH200 120GB"
+          }
+        ],
+        "checkpoint": null,
+        "train_rows": 700764,
+        "val_rows": 165742,
+        "trainable_parameters": 651043874
+      },
+      "observed_updates": [
+        {
+          "time_utc": "2026-10-02T20:39:57.017575+00:00",
+          "attempt": "20261002T203947-3301121",
+          "event": "update",
+          "update": 1,
+          "cursor": {
+            "cycle": 0,
+            "offset": 64
+          },
+          "lr": 1e-08,
+          "mean_loss": 8.41086058318615,
+          "mean_bce": 0.6918754829093814,
+          "mean_mlm": 1.4921058023594758,
+          "masked_tokens": 20766,
+          "grad_norm": 1.008832573890686,
+          "seconds": 2.6365632800007006,
+          "global_pairs": 64,
+          "positive_pairs": 30,
+          "batch_digest": "c7ae9a4cc9bd03910ddf2f555f83577826629966bff8e23003f26a0228381176",
+          "max_tokens": 1093,
+          "gpu_peak_allocated_gib": 22.11235237121582
+        },
+        {
+          "time_utc": "2026-10-02T20:39:59.219549+00:00",
+          "attempt": "20261002T203947-3301121",
+          "event": "update",
+          "update": 2,
+          "cursor": {
+            "cycle": 0,
+            "offset": 128
+          },
+          "lr": 2e-08,
+          "mean_loss": 8.372959434986115,
+          "mean_bce": 0.6930973809212446,
+          "mean_mlm": 1.4419856369818744,
+          "masked_tokens": 22120,
+          "grad_norm": 0.6656712293624878,
+          "seconds": 2.194215006999002,
+          "global_pairs": 64,
+          "positive_pairs": 31,
+          "batch_digest": "4ab912cf6428785449a623e868ca24130ae0724bde4334a6606831a558abd771",
+          "max_tokens": 1173,
+          "gpu_peak_allocated_gib": 22.11235237121582
+        },
+        {
+          "time_utc": "2026-10-02T20:40:02.933339+00:00",
+          "attempt": "20261002T203947-3301121",
+          "event": "update",
+          "update": 3,
+          "cursor": {
+            "cycle": 0,
+            "offset": 192
+          },
+          "lr": 3.0000000000000004e-08,
+          "mean_loss": 8.587164014577866,
+          "mean_bce": 0.6950370687991381,
+          "mean_mlm": 1.6367933370840848,
+          "masked_tokens": 34382,
+          "grad_norm": 1.4156830310821533,
+          "seconds": 3.706067572999018,
+          "global_pairs": 64,
+          "positive_pairs": 34,
+          "batch_digest": "059f4ac18aebdd39d3b99cc132d8c6958f7df05eaaff670e17c3650ed598ae0c",
+          "max_tokens": 1838,
+          "gpu_peak_allocated_gib": 22.11235237121582
+        },
+        {
+          "time_utc": "2026-10-02T20:40:50.276922+00:00",
+          "attempt": "20261002T203947-3301121",
+          "event": "update",
+          "update": 10,
+          "cursor": {
+            "cycle": 0,
+            "offset": 640
+          },
+          "lr": 1.0000000000000001e-07,
+          "mean_loss": 8.368336737155914,
+          "mean_bce": 0.6944461688399315,
+          "mean_mlm": 1.4238749512760096,
+          "masked_tokens": 17818,
+          "grad_norm": 2.174738645553589,
+          "seconds": 1.3778510369993455,
+          "global_pairs": 64,
+          "positive_pairs": 36,
+          "batch_digest": "f3c346463fb9b8294a4d62f161606cd25847083ac3f632b8600a86854b5fd5b8",
+          "max_tokens": 931,
+          "gpu_peak_allocated_gib": 22.11235237121582
+        },
+        {
+          "time_utc": "2026-10-02T20:41:22.047287+00:00",
+          "attempt": "20261002T203947-3301121",
+          "event": "update",
+          "update": 20,
+          "cursor": {
+            "cycle": 0,
+            "offset": 1280
+          },
+          "lr": 2.0000000000000002e-07,
+          "mean_loss": 8.326392769813538,
+          "mean_bce": 0.6938425153493881,
+          "mean_mlm": 1.38796758717263,
+          "masked_tokens": 17464,
+          "grad_norm": 4.693373680114746,
+          "seconds": 1.456990216000122,
+          "global_pairs": 64,
+          "positive_pairs": 22,
+          "batch_digest": "cfc27e26211b84e6db2997eec581710a09247aeb0c48c759501b2bf612669119",
+          "max_tokens": 925,
+          "gpu_peak_allocated_gib": 22.11235237121582
+        }
+      ],
+      "checkpoint": {
+        "passed": true,
+        "checked_at_utc": "2026-10-02T20:41:47.669632+00:00",
+        "manifest": {
+          "file": "update-000000010.pt",
+          "sha256": "67ae6a54ba6f761c522ab8ff8a04361ab7207fc28b067836dfbb8748c8000fb5",
+          "bytes": 7818552843,
+          "update": 10,
+          "epoch": 0,
+          "next_chunk": 640,
+          "world_size": 4,
+          "fingerprint": "d72b1cbc823743792301b32c590681f85c54be7c5fac871b88be927b0df06328",
+          "best_update": null,
+          "best_ap": null
+        },
+        "training_state": {
+          "update": 10,
+          "cursor": {
+            "cycle": 0,
+            "offset": 640
+          },
+          "epoch": 0,
+          "next_chunk": 640,
+          "examples_seen": 640,
+          "best_ap": null,
+          "best_update": null,
+          "total_steps": 54748,
+          "pending_validation": false,
+          "last_validation_update": null
+        },
+        "optimizer_parameter_states": 538,
+        "rng_ranks": 4,
+        "classifier_tensors": 2,
+        "active_decoder_tensors": 6
+      }
+    },
+    "esmc-native-ilp-seed2": {
+      "status": "passed",
+      "scheduler_state": "RUNNING",
+      "node": "n187",
+      "reason": "n187",
+      "last_update": 40,
+      "last_update_utc": "2026-10-02T21:13:41.476526+00:00",
+      "checked_at_utc": "2026-10-02T21:14:12.273215+00:00",
+      "initialized": {
+        "time_utc": "2026-10-02T21:11:23.260919+00:00",
+        "attempt": "20261002T211118-3301122",
+        "event": "initialized",
+        "state": {
+          "update": 0,
+          "cursor": {
+            "cycle": 0,
+            "offset": 0
+          },
+          "epoch": 0,
+          "next_chunk": 0,
+          "examples_seen": 0,
+          "best_ap": null,
+          "best_update": null,
+          "total_steps": 54748,
+          "pending_validation": false,
+          "last_validation_update": null
+        },
+        "world_size": 4,
+        "devices": [
+          {
+            "rank": 0,
+            "uuid": "f5a6127a-95e6-91b0-e020-ece8f640b81b",
+            "device": "NVIDIA GH200 120GB"
+          },
+          {
+            "rank": 1,
+            "uuid": "3f100e0e-4a9a-031c-de2f-828603c16d5a",
+            "device": "NVIDIA GH200 120GB"
+          },
+          {
+            "rank": 2,
+            "uuid": "9f55f923-43f8-d1be-5458-0bd9e690fd3c",
+            "device": "NVIDIA GH200 120GB"
+          },
+          {
+            "rank": 3,
+            "uuid": "aae4d6d4-c55a-6827-b351-63ae751759b9",
+            "device": "NVIDIA GH200 120GB"
+          }
+        ],
+        "checkpoint": null,
+        "train_rows": 700764,
+        "val_rows": 165742,
+        "trainable_parameters": 575038145
+      },
+      "observed_updates": [
+        {
+          "time_utc": "2026-10-02T21:11:28.660400+00:00",
+          "attempt": "20261002T211118-3301122",
+          "event": "update",
+          "update": 1,
+          "cursor": {
+            "cycle": 0,
+            "offset": 64
+          },
+          "lr": 1e-08,
+          "mean_loss": 8.47255490720272,
+          "mean_bce": 0.6925063198432326,
+          "mean_mlm": 1.5474917384157472,
+          "masked_tokens": 20766,
+          "grad_norm": 0.9658178687095642,
+          "seconds": 2.5135112830030266,
+          "global_pairs": 64,
+          "positive_pairs": 30,
+          "batch_digest": "c7ae9a4cc9bd03910ddf2f555f83577826629966bff8e23003f26a0228381176",
+          "max_tokens": 1093,
+          "gpu_peak_allocated_gib": 19.59541654586792
+        },
+        {
+          "time_utc": "2026-10-02T21:11:30.905575+00:00",
+          "attempt": "20261002T211118-3301122",
+          "event": "update",
+          "update": 2,
+          "cursor": {
+            "cycle": 0,
+            "offset": 128
+          },
+          "lr": 2e-08,
+          "mean_loss": 8.433437407016754,
+          "mean_bce": 0.6930165607482195,
+          "mean_mlm": 1.5032718706734574,
+          "masked_tokens": 22120,
+          "grad_norm": 0.8633723258972168,
+          "seconds": 2.2335520449996693,
+          "global_pairs": 64,
+          "positive_pairs": 31,
+          "batch_digest": "4ab912cf6428785449a623e868ca24130ae0724bde4334a6606831a558abd771",
+          "max_tokens": 1173,
+          "gpu_peak_allocated_gib": 19.59541654586792
+        },
+        {
+          "time_utc": "2026-10-02T21:11:34.532975+00:00",
+          "attempt": "20261002T211118-3301122",
+          "event": "update",
+          "update": 3,
+          "cursor": {
+            "cycle": 0,
+            "offset": 192
+          },
+          "lr": 3.0000000000000004e-08,
+          "mean_loss": 8.66958373785019,
+          "mean_bce": 0.6937966924160719,
+          "mean_mlm": 1.73161690397819,
+          "masked_tokens": 34382,
+          "grad_norm": 0.9004988074302673,
+          "seconds": 3.6198775340017164,
+          "global_pairs": 64,
+          "positive_pairs": 34,
+          "batch_digest": "059f4ac18aebdd39d3b99cc132d8c6958f7df05eaaff670e17c3650ed598ae0c",
+          "max_tokens": 1838,
+          "gpu_peak_allocated_gib": 19.59541654586792
+        },
+        {
+          "time_utc": "2026-10-02T21:12:23.783640+00:00",
+          "attempt": "20261002T211118-3301122",
+          "event": "update",
+          "update": 10,
+          "cursor": {
+            "cycle": 0,
+            "offset": 640
+          },
+          "lr": 1.0000000000000001e-07,
+          "mean_loss": 8.338551819324493,
+          "mean_bce": 0.6943665407598019,
+          "mean_mlm": 1.394886417198374,
+          "masked_tokens": 17818,
+          "grad_norm": 1.5003349781036377,
+          "seconds": 1.2988112570019439,
+          "global_pairs": 64,
+          "positive_pairs": 36,
+          "batch_digest": "f3c346463fb9b8294a4d62f161606cd25847083ac3f632b8600a86854b5fd5b8",
+          "max_tokens": 931,
+          "gpu_peak_allocated_gib": 19.59541654586792
+        },
+        {
+          "time_utc": "2026-10-02T21:12:55.753003+00:00",
+          "attempt": "20261002T211118-3301122",
+          "event": "update",
+          "update": 20,
+          "cursor": {
+            "cycle": 0,
+            "offset": 1280
+          },
+          "lr": 2.0000000000000002e-07,
+          "mean_loss": 8.333498507738113,
+          "mean_bce": 0.6903205029666424,
+          "mean_mlm": 1.430293447972436,
+          "masked_tokens": 17464,
+          "grad_norm": 2.691699743270874,
+          "seconds": 1.3080380870087538,
+          "global_pairs": 64,
+          "positive_pairs": 22,
+          "batch_digest": "cfc27e26211b84e6db2997eec581710a09247aeb0c48c759501b2bf612669119",
+          "max_tokens": 925,
+          "gpu_peak_allocated_gib": 19.59541654586792
+        },
+        {
+          "time_utc": "2026-10-02T21:13:14.184947+00:00",
+          "attempt": "20261002T211118-3301122",
+          "event": "update",
+          "update": 30,
+          "cursor": {
+            "cycle": 0,
+            "offset": 1920
+          },
+          "lr": 3.0000000000000004e-07,
+          "mean_loss": 8.297823667526245,
+          "mean_bce": 0.6923228241503239,
+          "mean_mlm": 1.3745954815143517,
+          "masked_tokens": 11118,
+          "grad_norm": 1.3179717063903809,
+          "seconds": 1.2702524630003609,
+          "global_pairs": 64,
+          "positive_pairs": 29,
+          "batch_digest": "c009710cf752ad86d3877c157dd196604221a44f6dc189432f6398dc46d96975",
+          "max_tokens": 598,
+          "gpu_peak_allocated_gib": 19.59541654586792
+        },
+        {
+          "time_utc": "2026-10-02T21:13:41.476526+00:00",
+          "attempt": "20261002T211118-3301122",
+          "event": "update",
+          "update": 40,
+          "cursor": {
+            "cycle": 0,
+            "offset": 2560
+          },
+          "lr": 4.0000000000000003e-07,
+          "mean_loss": 8.528663769364357,
+          "mean_bce": 0.6949541438370943,
+          "mean_mlm": 1.5791222571696342,
+          "masked_tokens": 30260,
+          "grad_norm": 1.8193508386611938,
+          "seconds": 3.1814580550126266,
+          "global_pairs": 64,
+          "positive_pairs": 38,
+          "batch_digest": "97c3c9b3ceb7ce1be6fced17c307551c12f8b317956bfb524172ee43087df74b",
+          "max_tokens": 1600,
+          "gpu_peak_allocated_gib": 19.59541654586792
+        }
+      ],
+      "checkpoint": {
+        "passed": true,
+        "checked_at_utc": "2026-10-02T21:14:11.740651+00:00",
+        "manifest": {
+          "file": "update-000000010.pt",
+          "sha256": "ec8b83107c1dae13682989f30dc8e53509c69b173e4d45e9c6a6abacb3762dba",
+          "bytes": 6900990095,
+          "update": 10,
+          "epoch": 0,
+          "next_chunk": 640,
+          "world_size": 4,
+          "fingerprint": "31a5cf349a0eca57e245c3a4d745e9ef7d6e2427aa912187bc17f18812e83c25",
+          "best_update": null,
+          "best_ap": null
+        },
+        "training_state": {
+          "update": 10,
+          "cursor": {
+            "cycle": 0,
+            "offset": 640
+          },
+          "epoch": 0,
+          "next_chunk": 640,
+          "examples_seen": 640,
+          "best_ap": null,
+          "best_update": null,
+          "total_steps": 54748,
+          "pending_validation": false,
+          "last_validation_update": null
+        },
+        "optimizer_parameter_states": 370,
+        "rng_ranks": 4,
+        "classifier_tensors": 2,
+        "active_decoder_tensors": 6
+      }
+    }
+  },
+  "updated_at_utc": "2026-10-02T21:14:12.273245+00:00"
+}

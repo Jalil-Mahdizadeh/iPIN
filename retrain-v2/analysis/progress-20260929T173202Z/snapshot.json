@@ -1,0 +1,428 @@
+{
+  "snapshot_utc": "2026-09-29T17:32:02.059882+00:00",
+  "snapshot_stockholm": "2026-09-29T19:32:02.059882+02:00",
+  "validation_pairs": 59258,
+  "positive_fraction": 0.49998312464139866,
+  "progress": {
+    "reference-official-seed2": {
+      "current_logged_update": 3770,
+      "planned_updates": 12745,
+      "progress_fraction": 0.29580227540211845,
+      "last_logged_utc": "2026-09-29T17:31:48.439922+00:00",
+      "latest_committed_update": 3700,
+      "latest_validation": {
+        "model": "reference-official-seed2",
+        "update": 3000,
+        "validation_utc": "2026-09-29T16:27:41.465810+00:00",
+        "pooled_ap": 0.6243344454529056,
+        "auroc": 0.6119298932138196,
+        "brier": 0.23935681488687427,
+        "predicted_probability_mean": 0.5251314452090713,
+        "mean_probability_true_positive": 0.5513202885339021,
+        "mean_probability_true_negative": 0.4989443696090683,
+        "fraction_predicted_positive_at_half": 0.5814067298930102
+      },
+      "selected_best": {
+        "model": "reference-official-seed2",
+        "update": 3000,
+        "validation_utc": "2026-09-29T16:27:41.465810+00:00",
+        "pooled_ap": 0.6243344454529056,
+        "auroc": 0.6119298932138196,
+        "brier": 0.23935681488687427,
+        "predicted_probability_mean": 0.5251314452090713,
+        "mean_probability_true_positive": 0.5513202885339021,
+        "mean_probability_true_negative": 0.4989443696090683,
+        "fraction_predicted_positive_at_half": 0.5814067298930102
+      },
+      "training_pairs": 163085,
+      "validation_pairs": 59258,
+      "mean_step_seconds_last_100_logged": 4.665292881630594,
+      "rank0_peak_allocated_gib": 21.192320346832275,
+      "all_logged_losses_and_gradients_finite": true,
+      "resume_events": 0,
+      "best_checkpoint": {
+        "file": "update-000003000.pt",
+        "sha256": "6f8f4939519cccac5d2f23f7205777c5d084c95576dc30d9501d70065a9f162b",
+        "bytes": 7818552843,
+        "update": 3000,
+        "epoch": 1,
+        "next_chunk": 28915,
+        "world_size": 4,
+        "fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9",
+        "best_update": 3000,
+        "best_ap": 0.6243344454529056
+      },
+      "latest_checkpoint": {
+        "file": "update-000003700.pt",
+        "sha256": "065c560dba1a781062780aee1a5c95493f1be5096923ea0ac6f677f80fff034a",
+        "bytes": 7818552843,
+        "update": 3700,
+        "epoch": 1,
+        "next_chunk": 73715,
+        "world_size": 4,
+        "fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9",
+        "best_update": 3000,
+        "best_ap": 0.6243344454529056
+      }
+    },
+    "capped-official-seed2": {
+      "current_logged_update": 6670,
+      "planned_updates": 12745,
+      "progress_fraction": 0.523342487249902,
+      "last_logged_utc": "2026-09-29T17:31:39.681944+00:00",
+      "latest_committed_update": 6600,
+      "latest_validation": {
+        "model": "capped-official-seed2",
+        "update": 6000,
+        "validation_utc": "2026-09-29T17:01:52.527674+00:00",
+        "pooled_ap": 0.646045079195977,
+        "auroc": 0.6415215183063554,
+        "brier": 0.24093060183082837,
+        "predicted_probability_mean": 0.4862708164614403,
+        "mean_probability_true_positive": 0.5382946705737819,
+        "mean_probability_true_negative": 0.4342504739153568,
+        "fraction_predicted_positive_at_half": 0.44090249417800126
+      },
+      "selected_best": {
+        "model": "capped-official-seed2",
+        "update": 6000,
+        "validation_utc": "2026-09-29T17:01:52.527674+00:00",
+        "pooled_ap": 0.646045079195977,
+        "auroc": 0.6415215183063554,
+        "brier": 0.24093060183082837,
+        "predicted_probability_mean": 0.4862708164614403,
+        "mean_probability_true_positive": 0.5382946705737819,
+        "mean_probability_true_negative": 0.4342504739153568,
+        "fraction_predicted_positive_at_half": 0.44090249417800126
+      },
+      "training_pairs": 130461,
+      "validation_pairs": 59258,
+      "mean_step_seconds_last_100_logged": 2.6322210744372567,
+      "rank0_peak_allocated_gib": 20.345324993133545,
+      "all_logged_losses_and_gradients_finite": true,
+      "resume_events": 0,
+      "best_checkpoint": {
+        "file": "update-000006000.pt",
+        "sha256": "12ccda82cdbcdcef4e5f257820c7226418b9b3e0fc33ce7693022b4dedf58a98",
+        "bytes": 7818552843,
+        "update": 6000,
+        "epoch": 2,
+        "next_chunk": 123078,
+        "world_size": 4,
+        "fingerprint": "31cde71e5f1db2c99b31c639cdf3f1611dbde2bb663258bab6dc609dd6b9f8b5",
+        "best_update": 6000,
+        "best_ap": 0.646045079195977
+      },
+      "latest_checkpoint": {
+        "file": "update-000006600.pt",
+        "sha256": "79f8736bb5b6870ad0e32e8c3f15bda3c8631125fa7d537031637136c3367356",
+        "bytes": 7818552843,
+        "update": 6600,
+        "epoch": 3,
+        "next_chunk": 31017,
+        "world_size": 4,
+        "fingerprint": "31cde71e5f1db2c99b31c639cdf3f1611dbde2bb663258bab6dc609dd6b9f8b5",
+        "best_update": 6000,
+        "best_ap": 0.646045079195977
+      }
+    },
+    "positive10-official-seed2": {
+      "current_logged_update": 3790,
+      "planned_updates": 12745,
+      "progress_fraction": 0.297371518242448,
+      "last_logged_utc": "2026-09-29T17:31:56.197933+00:00",
+      "latest_committed_update": 3700,
+      "latest_validation": {
+        "model": "positive10-official-seed2",
+        "update": 3000,
+        "validation_utc": "2026-09-29T16:26:18.828451+00:00",
+        "pooled_ap": 0.6253871613393802,
+        "auroc": 0.6237492328657556,
+        "brier": 0.3994677400408316,
+        "predicted_probability_mean": 0.8967670531968504,
+        "mean_probability_true_positive": 0.9075227315846476,
+        "mean_probability_true_negative": 0.8860121008082693,
+        "fraction_predicted_positive_at_half": 1.0
+      },
+      "selected_best": {
+        "model": "positive10-official-seed2",
+        "update": 3000,
+        "validation_utc": "2026-09-29T16:26:18.828451+00:00",
+        "pooled_ap": 0.6253871613393802,
+        "auroc": 0.6237492328657556,
+        "brier": 0.3994677400408316,
+        "predicted_probability_mean": 0.8967670531968504,
+        "mean_probability_true_positive": 0.9075227315846476,
+        "mean_probability_true_negative": 0.8860121008082693,
+        "fraction_predicted_positive_at_half": 1.0
+      },
+      "training_pairs": 163085,
+      "validation_pairs": 59258,
+      "mean_step_seconds_last_100_logged": 4.478988545649917,
+      "rank0_peak_allocated_gib": 21.18936061859131,
+      "all_logged_losses_and_gradients_finite": true,
+      "resume_events": 0,
+      "best_checkpoint": {
+        "file": "update-000003000.pt",
+        "sha256": "02734548755df976e32363e32ecc730688992d732474a70483b5ba4c7b7a5191",
+        "bytes": 7818552843,
+        "update": 3000,
+        "epoch": 1,
+        "next_chunk": 28915,
+        "world_size": 4,
+        "fingerprint": "35286e6343ad16aea219b7e99873cf8652f6a57496e833f717122fbbe962a672",
+        "best_update": 3000,
+        "best_ap": 0.6253871613393802
+      },
+      "latest_checkpoint": {
+        "file": "update-000003700.pt",
+        "sha256": "8e711848746442b7c4ad8dd49a63828a3bceb27e0f1dde3d3b40a008e7da098d",
+        "bytes": 7818552843,
+        "update": 3700,
+        "epoch": 1,
+        "next_chunk": 73715,
+        "world_size": 4,
+        "fingerprint": "35286e6343ad16aea219b7e99873cf8652f6a57496e833f717122fbbe962a672",
+        "best_update": 3000,
+        "best_ap": 0.6253871613393802
+      }
+    },
+    "clean-bce-official-seed2": {
+      "current_logged_update": 3780,
+      "planned_updates": 12745,
+      "progress_fraction": 0.29658689682228323,
+      "last_logged_utc": "2026-09-29T17:31:38.434816+00:00",
+      "latest_committed_update": 3700,
+      "latest_validation": {
+        "model": "clean-bce-official-seed2",
+        "update": 3000,
+        "validation_utc": "2026-09-29T16:27:04.853007+00:00",
+        "pooled_ap": 0.6325568188870133,
+        "auroc": 0.6282933029254509,
+        "brier": 0.24377166941163012,
+        "predicted_probability_mean": 0.5343918231154186,
+        "mean_probability_true_positive": 0.5772063754556577,
+        "mean_probability_true_negative": 0.4915801607213382,
+        "fraction_predicted_positive_at_half": 0.538509568328327
+      },
+      "selected_best": {
+        "model": "clean-bce-official-seed2",
+        "update": 3000,
+        "validation_utc": "2026-09-29T16:27:04.853007+00:00",
+        "pooled_ap": 0.6325568188870133,
+        "auroc": 0.6282933029254509,
+        "brier": 0.24377166941163012,
+        "predicted_probability_mean": 0.5343918231154186,
+        "mean_probability_true_positive": 0.5772063754556577,
+        "mean_probability_true_negative": 0.4915801607213382,
+        "fraction_predicted_positive_at_half": 0.538509568328327
+      },
+      "training_pairs": 163085,
+      "validation_pairs": 59258,
+      "mean_step_seconds_last_100_logged": 4.615321811529575,
+      "rank0_peak_allocated_gib": 21.257610321044922,
+      "all_logged_losses_and_gradients_finite": true,
+      "resume_events": 0,
+      "best_checkpoint": {
+        "file": "update-000003000.pt",
+        "sha256": "6a7c8f09bc9a4de4b1dda2b165bab339c1c55a66312238f7c55e95a643d5bd8a",
+        "bytes": 7805410278,
+        "update": 3000,
+        "epoch": 1,
+        "next_chunk": 28915,
+        "world_size": 4,
+        "fingerprint": "2a7e859f30704a56c15f6bb4156ec3e8e857c2d0f57d22e920651ea8c40bc94b",
+        "best_update": 3000,
+        "best_ap": 0.6325568188870133
+      },
+      "latest_checkpoint": {
+        "file": "update-000003700.pt",
+        "sha256": "a39292898eb5227cc98eb7bc32a2ebd29a33fd5df968059c51c461368efef709",
+        "bytes": 7805410278,
+        "update": 3700,
+        "epoch": 1,
+        "next_chunk": 73715,
+        "world_size": 4,
+        "fingerprint": "2a7e859f30704a56c15f6bb4156ec3e8e857c2d0f57d22e920651ea8c40bc94b",
+        "best_update": 3000,
+        "best_ap": 0.6325568188870133
+      }
+    }
+  },
+  "common_validated_update": 3000,
+  "matched_comparison": {
+    "reference-official-seed2": {
+      "model": "reference-official-seed2",
+      "update": 3000,
+      "validation_utc": "2026-09-29T16:27:41.465810+00:00",
+      "pooled_ap": 0.6243344454529056,
+      "auroc": 0.6119298932138196,
+      "brier": 0.23935681488687427,
+      "predicted_probability_mean": 0.5251314452090713,
+      "mean_probability_true_positive": 0.5513202885339021,
+      "mean_probability_true_negative": 0.4989443696090683,
+      "fraction_predicted_positive_at_half": 0.5814067298930102,
+      "delta_ap_vs_reference": 0.0,
+      "delta_auroc_vs_reference": 0.0,
+      "delta_brier_vs_reference": 0.0
+    },
+    "capped-official-seed2": {
+      "model": "capped-official-seed2",
+      "update": 3000,
+      "validation_utc": "2026-09-29T14:24:03.603041+00:00",
+      "pooled_ap": 0.6176191442055673,
+      "auroc": 0.6031920416608402,
+      "brier": 0.2440514713809083,
+      "predicted_probability_mean": 0.5102412967862023,
+      "mean_probability_true_positive": 0.540720986843288,
+      "mean_probability_true_negative": 0.4797636640824785,
+      "fraction_predicted_positive_at_half": 0.5203516824732526,
+      "delta_ap_vs_reference": -0.006715301247338323,
+      "delta_auroc_vs_reference": -0.008737851552979459,
+      "delta_brier_vs_reference": 0.004694656494034027
+    },
+    "positive10-official-seed2": {
+      "model": "positive10-official-seed2",
+      "update": 3000,
+      "validation_utc": "2026-09-29T16:26:18.828451+00:00",
+      "pooled_ap": 0.6253871613393802,
+      "auroc": 0.6237492328657556,
+      "brier": 0.3994677400408316,
+      "predicted_probability_mean": 0.8967670531968504,
+      "mean_probability_true_positive": 0.9075227315846476,
+      "mean_probability_true_negative": 0.8860121008082693,
+      "fraction_predicted_positive_at_half": 1.0,
+      "delta_ap_vs_reference": 0.0010527158864745978,
+      "delta_auroc_vs_reference": 0.011819339651935934,
+      "delta_brier_vs_reference": 0.1601109251539573
+    },
+    "clean-bce-official-seed2": {
+      "model": "clean-bce-official-seed2",
+      "update": 3000,
+      "validation_utc": "2026-09-29T16:27:04.853007+00:00",
+      "pooled_ap": 0.6325568188870133,
+      "auroc": 0.6282933029254509,
+      "brier": 0.24377166941163012,
+      "predicted_probability_mean": 0.5343918231154186,
+      "mean_probability_true_positive": 0.5772063754556577,
+      "mean_probability_true_negative": 0.4915801607213382,
+      "fraction_predicted_positive_at_half": 0.538509568328327,
+      "delta_ap_vs_reference": 0.0082223734341077,
+      "delta_auroc_vs_reference": 0.016363409711631305,
+      "delta_brier_vs_reference": 0.004414854524755846
+    }
+  },
+  "historical_validation_baselines": {
+    "native-bernett": {
+      "ap": 0.6421420518145138,
+      "auroc": 0.638944655772301,
+      "brier": 0.261641840210981
+    },
+    "reference-seed2": {
+      "ap": 0.6502750559286536,
+      "auroc": 0.6447700291124854,
+      "brier": 0.23396096096264254
+    },
+    "symmetric-seed2": {
+      "ap": 0.6474107570134193,
+      "auroc": 0.6419356859345455,
+      "brier": 0.2467093509427551
+    }
+  },
+  "baseline_csv_sha256": "04bf3ca41e2323d83080acf98fbe9d3f13506197688408133849a01c15d91c7c",
+  "audited_prediction_files": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000001000.npz",
+      "sha256": "b8ee18ee033231c6051f54500cb6b0d587395a22678edbf52d19d0201e81f21b",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000002000.npz",
+      "sha256": "3bdf2daa3830fbbcabda8d48ec7693322ab0aa4ca5124e7bd2df19e16d1cc7c1",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000003000.npz",
+      "sha256": "03e32a50804fd3eb71338749cf4bfae823ce3504dc991596a318de20ec217ece",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000001000.npz",
+      "sha256": "da99a918c874474b01cbc80f96b3b78c49ef27f9aa60d40a94d52e2536416a5d",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000002000.npz",
+      "sha256": "a3d43382ad97d2a06373a80ca6b6ec1f0637b343994ee875749a159eb004d13d",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000003000.npz",
+      "sha256": "4e06b23fbe56da5176a08c8e99216c354be1b6b96360f3ff9038f92223617aad",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000004000.npz",
+      "sha256": "39a0d7c251243b5ea8c55a6eff166bbf2d6c69529babf8b5cb9387d34b5dfe7f",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000005000.npz",
+      "sha256": "bc1f5108709590e4c9c00dba30884fe80c5b5b63fe72ac8fdde5fd2cebe103b7",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000006000.npz",
+      "sha256": "c3b204c1332bfa37e7fa30a04d923c85d78ef9913efa1849e85f6e4a2b5cd4ae",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000001000.npz",
+      "sha256": "4653bace2f776facaf091e4b7231cdb7fd83f4b2dc09504b0d0756417c99256b",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000002000.npz",
+      "sha256": "2d8952d119263b454a9803a4b428865bcfa298e73b800b1d7f8b495d0788bf39",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000003000.npz",
+      "sha256": "8f711edd6f2617cc7869093925ed1dff69a29f54f7627ca71be5b975185d64a9",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000001000.npz",
+      "sha256": "a616b8ed5f620d5d6e896a434fbd21684e14abfad02008c41e7f76fb766834bc",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000002000.npz",
+      "sha256": "d6ff7479c6f5ed008e8b7b5c79a10810880e7a6a6373d867d8efe0926f9816e4",
+      "rows": 59258,
+      "metrics_recomputed": true
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000003000.npz",
+      "sha256": "3fbe07033cca13a7fe42e9bfcce3f130b508285f88d41ebe6f62a98074147570",
+      "rows": 59258,
+      "metrics_recomputed": true
+    }
+  ],
+  "no_test_predictions_read": true,
+  "training_or_selection_modified": false,
+  "confidence_intervals_computed": false
+}

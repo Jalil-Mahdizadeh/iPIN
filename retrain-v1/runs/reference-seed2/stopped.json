@@ -1,0 +1,16 @@
+{
+  "state": {
+    "update": 10053,
+    "epoch": 3,
+    "next_chunk": 2406,
+    "examples_seen": 643188,
+    "best_ap": 0.648935984074678,
+    "best_update": 4000,
+    "total_steps": 12745,
+    "pending_validation": false,
+    "last_validation_update": 10000
+  },
+  "attempt": "20260928T195235-3112402",
+  "reason": "signal_or_REQUEST_STOP",
+  "checkpoint_committed": true
+}

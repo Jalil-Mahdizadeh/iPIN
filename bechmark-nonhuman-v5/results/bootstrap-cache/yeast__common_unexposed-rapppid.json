@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "rapppid",
+    "test": "yeast__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "107d0e6cf193be50d92429c6c2f76d588f05912bfa08522a824394fdfa031e53",
+    "scores": "360a238def07d6b7f3d2b09aa6142bb062e191d5ca41b3f4e9701b329d520596",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/yeast__common_unexposed-rapppid.npz",
+    "bytes": 15290,
+    "sha256": "8f21f95017c488655e8cfe88eb342095cabf30208e54faf9f50579e7c8840724"
+  }
+}

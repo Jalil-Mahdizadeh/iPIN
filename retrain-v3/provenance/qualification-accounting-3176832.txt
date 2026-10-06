@@ -1,0 +1,1 @@
+3176832|plmi-v3-QUALIFY|COMPLETED|192|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1|0:0

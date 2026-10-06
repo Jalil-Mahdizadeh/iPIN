@@ -1,0 +1,19 @@
+{
+  "state": {
+    "update": 4,
+    "cursor": {
+      "cycle": 3,
+      "offset": 55
+    },
+    "epoch": 3,
+    "next_chunk": 55,
+    "examples_seen": 256,
+    "best_ap": 0.5178571428571428,
+    "best_update": 2,
+    "total_steps": 4,
+    "pending_validation": false,
+    "last_validation_update": 4
+  },
+  "phase": "complete",
+  "last_committed_update": 4
+}

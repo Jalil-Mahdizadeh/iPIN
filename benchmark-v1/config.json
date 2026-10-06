@@ -1,0 +1,29 @@
+{
+  "world_size": 4,
+  "models": [
+    "reference-seed2",
+    "symmetric-seed2",
+    "native-bernett"
+  ],
+  "splits_by_model": {
+    "reference-seed2": [
+      "test"
+    ],
+    "symmetric-seed2": [
+      "test"
+    ],
+    "native-bernett": [
+      "test",
+      "val"
+    ]
+  },
+  "precision": "FP32 parameters; BF16 autocast; TF32 disabled",
+  "attention_backend": "efficient",
+  "scoring": "mean AB/BA logits",
+  "token_budget": 16384,
+  "max_pairs": 8,
+  "commit_rows": 512,
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 20260929,
+  "test_sequence_truncation": null
+}

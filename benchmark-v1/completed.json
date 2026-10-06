@@ -1,0 +1,23 @@
+{
+  "completed_at_utc": "2026-09-29T09:45:30.939430+00:00",
+  "status": "complete",
+  "report": "REPORT.md",
+  "models": [
+    "native-bernett",
+    "reference-seed2",
+    "symmetric-seed2"
+  ],
+  "test_pairs_per_model": 52048,
+  "validation_pairs_per_model": 59258,
+  "test_row_exclusions": 0,
+  "primary_inference": "Full length; mean AB/BA logits; BF16 autocast with FP32 weights",
+  "qualification_passed": true,
+  "coverage_checks_passed": true,
+  "bootstrap_replicates": 1000,
+  "slurm_job": "3125767",
+  "slurm_exit_code": "0:0",
+  "training_jobs_left_running": [
+    3112401,
+    3112402
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "at_utc": "2026-10-05T13:22:47.461188+00:00",
+  "complete": false,
+  "finished_models": [
+    "ipin-esm2",
+    "ipin-esmc",
+    "native-plm",
+    "tuna-human",
+    "tuna",
+    "rapppid",
+    "dscript"
+  ],
+  "missing": [
+    "native-human",
+    "xpair-bernett",
+    "xpair-default",
+    "sprint"
+  ],
+  "metrics": [
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.20912298817740094,
+      "auroc": 0.6253576080000001
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.18638236105749517,
+      "auroc": 0.611377646
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.1359112815683476,
+      "auroc": 0.555289526
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.13664177118869217,
+      "auroc": 0.568010722
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "rows": 22000,
+      "positives": 2000,
+      "ap": 0.08069036805938111,
+      "auroc": 0.3757119375
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esmc",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.17682615390896061,
+      "auroc": 0.633061788
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esmc",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.15307742376976546,
+      "auroc": 0.572639952
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esmc",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.10276658408213246,
+      "auroc": 0.523885826
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esmc",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.11652308455342869,
+      "auroc": 0.517971628
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esmc",
+      "rows": 22000,
+      "positives": 2000,
+      "ap": 0.06630287022278158,
+      "auroc": 0.2748716
+    },
+    {
+      "test": "mouse",
+      "model": "native-plm",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.27512105363526546,
+      "auroc": 0.698272728
+    },
+    {
+      "test": "fly",
+      "model": "native-plm",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.30171363366366266,
+      "auroc": 0.693957654
+    },
+    {
+      "test": "worm",
+      "model": "native-plm",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.1856029866264684,
+      "auroc": 0.6175741680000001
+    },
+    {
+      "test": "yeast",
+      "model": "native-plm",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.19738019910966093,
+      "auroc": 0.619594402
+    },
+    {
+      "test": "ecoli",
+      "model": "native-plm",
+      "rows": 22000,
+      "positives": 2000,
+      "ap": 0.1572177151327937,
+      "auroc": 0.4838996
+    },
+    {
+      "test": "mouse",
+      "model": "tuna-human",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.8831988813816839,
+      "auroc": 0.977400784
+    },
+    {
+      "test": "fly",
+      "model": "tuna-human",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.8550181449190795,
+      "auroc": 0.970950582
+    },
+    {
+      "test": "worm",
+      "model": "tuna-human",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.8368484305028039,
+      "auroc": 0.960233962
+    },
+    {
+      "test": "yeast",
+      "model": "tuna-human",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.6441457509269812,
+      "auroc": 0.8992044579999999
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna-human",
+      "rows": 22000,
+      "positives": 2000,
+      "ap": 0.6730014709038996,
+      "auroc": 0.8774775625
+    },
+    {
+      "test": "mouse",
+      "model": "tuna",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.3527823658780556,
+      "auroc": 0.774278456
+    },
+    {
+      "test": "fly",
+      "model": "tuna",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.3740344383474355,
+      "auroc": 0.7855301239999999
+    },
+    {
+      "test": "worm",
+      "model": "tuna",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.3550669034526882,
+      "auroc": 0.778917914
+    },
+    {
+      "test": "yeast",
+      "model": "tuna",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.35267425120290896,
+      "auroc": 0.765634696
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna",
+      "rows": 22000,
+      "positives": 2000,
+      "ap": 0.21388118586396118,
+      "auroc": 0.7412282124999999
+    },
+    {
+      "test": "mouse",
+      "model": "rapppid",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.1674739779199194,
+      "auroc": 0.691833144
+    },
+    {
+      "test": "fly",
+      "model": "rapppid",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.1337786101300876,
+      "auroc": 0.68234095
+    },
+    {
+      "test": "worm",
+      "model": "rapppid",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.16488605926861416,
+      "auroc": 0.7454787679999999
+    },
+    {
+      "test": "yeast",
+      "model": "rapppid",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.1304835121614627,
+      "auroc": 0.667779772
+    },
+    {
+      "test": "ecoli",
+      "model": "rapppid",
+      "rows": 22000,
+      "positives": 2000,
+      "ap": 0.10328000450790785,
+      "auroc": 0.5935264625
+    },
+    {
+      "test": "mouse",
+      "model": "dscript",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.5799094687628724,
+      "auroc": 0.8329019900000001
+    },
+    {
+      "test": "fly",
+      "model": "dscript",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.5523648257327713,
+      "auroc": 0.8236331640000001
+    },
+    {
+      "test": "worm",
+      "model": "dscript",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.5482272922280689,
+      "auroc": 0.8130340300000001
+    },
+    {
+      "test": "yeast",
+      "model": "dscript",
+      "rows": 55000,
+      "positives": 5000,
+      "ap": 0.4048090455221949,
+      "auroc": 0.7889609120000001
+    },
+    {
+      "test": "ecoli",
+      "model": "dscript",
+      "rows": 22000,
+      "positives": 2000,
+      "ap": 0.5349686551606798,
+      "auroc": 0.8603347000000001
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-05T19:17:55.830564+00:00",
+  "native_block_copy_identical_bytes": true,
+  "cases": [
+    {
+      "case": "real-10000-blocks",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/real-10000-blocks.hsp",
+        "bytes": 446369,
+        "sha256": "5bab802c366c048b28b0c5588e614357e0ad165f1578db1c8e24318f398b9ab5"
+      },
+      "legacy": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/real-10000-blocks-legacy.hsp",
+        "bytes": 446369,
+        "sha256": "a93d8ebf06ed4db9091fef5a4230fda5725b11added95a8d1e7df251b3ab0233"
+      },
+      "mmap": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/real-10000-blocks-mmap.hsp",
+        "bytes": 446369,
+        "sha256": "a93d8ebf06ed4db9091fef5a4230fda5725b11added95a8d1e7df251b3ab0233"
+      },
+      "blocks": 10000,
+      "identical_bytes": true,
+      "legacy_seconds": 0.013113870052620769,
+      "mmap_seconds": 0.043916055001318455
+    },
+    {
+      "case": "large-block-and-short-self",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/large-block.hsp",
+        "bytes": 9100047,
+        "sha256": "efcc71e23b0f70e239e6dcdb6f4b1f32efe4ce1fc29420d4c6ad665edb2e1551"
+      },
+      "legacy": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/large-block-and-short-self-legacy.hsp",
+        "bytes": 9100047,
+        "sha256": "af9b381f0306836fd22353fe2ecfbeff6798d343cd16a1e250c559c00fdfe196"
+      },
+      "mmap": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/large-block-and-short-self-mmap.hsp",
+        "bytes": 9100047,
+        "sha256": "af9b381f0306836fd22353fe2ecfbeff6798d343cd16a1e250c559c00fdfe196"
+      },
+      "blocks": 2,
+      "identical_bytes": true,
+      "legacy_seconds": 0.009037369047291577,
+      "mmap_seconds": 0.019798689056187868
+    },
+    {
+      "case": "dispersed-real-blocks",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/dispersed-real-blocks.hsp",
+        "bytes": 9546389,
+        "sha256": "955bd9e6738814bff35b28aeade5f58c4d6b045541848e108df705020ad171dc"
+      },
+      "legacy": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/dispersed-real-blocks-legacy.hsp",
+        "bytes": 9546389,
+        "sha256": "511dfb195d830a5b82bc965720270f889a360afba3bb72eba1cc73463e4a9ae8"
+      },
+      "mmap": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/dispersed-real-blocks-mmap.hsp",
+        "bytes": 9546389,
+        "sha256": "511dfb195d830a5b82bc965720270f889a360afba3bb72eba1cc73463e4a9ae8"
+      },
+      "blocks": 10001,
+      "identical_bytes": true,
+      "legacy_seconds": 0.5489465979626402,
+      "mmap_seconds": 0.06255376897752285
+    }
+  ],
+  "invalid_inputs_rejected": [
+    "out_of_bounds",
+    "incomplete_coverage",
+    "duplicate_key"
+  ],
+  "code": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/sprint_hsp_mmap.py",
+      "bytes": 3045,
+      "sha256": "6d141e516dc23e0db9f902d2bde523825de6788096de1ffe3034e521ad087f44"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/run_sprint_cpu_mmap.py",
+      "bytes": 5092,
+      "sha256": "0781dd3e71b2470e5215a324fc74d83c018d7124215c21f97aea36c80e45f38d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/qualify_sprint_copy.py",
+      "bytes": 5123,
+      "sha256": "3bea10df101937a7ea976eaa6cc9954ae86d2df1e01a6f8d8ebe1245284cf7b9"
+    }
+  ],
+  "model_or_hsp_calculation_changed": false
+}

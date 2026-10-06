@@ -1,0 +1,150 @@
+{
+  "at_utc": "2026-10-05T13:32:30.775391+00:00",
+  "tests": {
+    "mouse": {
+      "all_source_sequences_labels_and_pair_mappings_verified": true,
+      "models": {
+        "ipin-esm2": {
+          "AB_ap": 0.19859750598481016,
+          "BA_ap": 0.20299083499217474,
+          "pooled_ap": 0.20912298817740094,
+          "AB_auroc": 0.622919784,
+          "BA_auroc": 0.6229008759999999,
+          "pooled_auroc": 0.6253576080000001
+        },
+        "ipin-esmc": {
+          "AB_ap": 0.1726320991199193,
+          "BA_ap": 0.17537440519423514,
+          "pooled_ap": 0.17682615390896061,
+          "AB_auroc": 0.6300505240000001,
+          "BA_auroc": 0.6321227700000001,
+          "pooled_auroc": 0.633061788
+        },
+        "native-plm": {
+          "AB_ap": 0.26959665050826187,
+          "BA_ap": 0.26961225802706607,
+          "pooled_ap": 0.27512105363526546,
+          "AB_auroc": 0.693827314,
+          "BA_auroc": 0.693268962,
+          "pooled_auroc": 0.698272728
+        }
+      }
+    },
+    "fly": {
+      "all_source_sequences_labels_and_pair_mappings_verified": true,
+      "models": {
+        "ipin-esm2": {
+          "AB_ap": 0.17929086100020217,
+          "BA_ap": 0.18153410189249813,
+          "pooled_ap": 0.18638236105749517,
+          "AB_auroc": 0.606724438,
+          "BA_auroc": 0.6105685879999999,
+          "pooled_auroc": 0.611377646
+        },
+        "ipin-esmc": {
+          "AB_ap": 0.15417330428419296,
+          "BA_ap": 0.14919077755660046,
+          "pooled_ap": 0.15307742376976546,
+          "AB_auroc": 0.572325242,
+          "BA_auroc": 0.571177088,
+          "pooled_auroc": 0.572639952
+        },
+        "native-plm": {
+          "AB_ap": 0.29348937805357395,
+          "BA_ap": 0.30239713545394137,
+          "pooled_ap": 0.30171363366366266,
+          "AB_auroc": 0.688663902,
+          "BA_auroc": 0.689006862,
+          "pooled_auroc": 0.693957654
+        }
+      }
+    },
+    "worm": {
+      "all_source_sequences_labels_and_pair_mappings_verified": true,
+      "models": {
+        "ipin-esm2": {
+          "AB_ap": 0.1318312781564775,
+          "BA_ap": 0.1327999435982734,
+          "pooled_ap": 0.1359112815683476,
+          "AB_auroc": 0.554079384,
+          "BA_auroc": 0.552668044,
+          "pooled_auroc": 0.555289526
+        },
+        "ipin-esmc": {
+          "AB_ap": 0.1021093511492587,
+          "BA_ap": 0.10108894932811534,
+          "pooled_ap": 0.10276658408213246,
+          "AB_auroc": 0.523643472,
+          "BA_auroc": 0.5228586399999999,
+          "pooled_auroc": 0.523885826
+        },
+        "native-plm": {
+          "AB_ap": 0.18753804473104113,
+          "BA_ap": 0.18187704776859992,
+          "pooled_ap": 0.1856029866264684,
+          "AB_auroc": 0.616139354,
+          "BA_auroc": 0.6121523959999999,
+          "pooled_auroc": 0.6175741680000001
+        }
+      }
+    },
+    "yeast": {
+      "all_source_sequences_labels_and_pair_mappings_verified": true,
+      "models": {
+        "ipin-esm2": {
+          "AB_ap": 0.13150786216289168,
+          "BA_ap": 0.13434062671692873,
+          "pooled_ap": 0.13664177118869217,
+          "AB_auroc": 0.564494592,
+          "BA_auroc": 0.566921344,
+          "pooled_auroc": 0.568010722
+        },
+        "ipin-esmc": {
+          "AB_ap": 0.11511283736763722,
+          "BA_ap": 0.11442603653222744,
+          "pooled_ap": 0.11652308455342869,
+          "AB_auroc": 0.5190612779999999,
+          "BA_auroc": 0.517527666,
+          "pooled_auroc": 0.517971628
+        },
+        "native-plm": {
+          "AB_ap": 0.1925598132432038,
+          "BA_ap": 0.19052788134311854,
+          "pooled_ap": 0.19738019910966093,
+          "AB_auroc": 0.6168589360000001,
+          "BA_auroc": 0.614659676,
+          "pooled_auroc": 0.619594402
+        }
+      }
+    },
+    "ecoli": {
+      "all_source_sequences_labels_and_pair_mappings_verified": true,
+      "models": {
+        "ipin-esm2": {
+          "AB_ap": 0.07861994173973336,
+          "BA_ap": 0.08261160722333935,
+          "pooled_ap": 0.08069036805938111,
+          "AB_auroc": 0.37961152499999995,
+          "BA_auroc": 0.39131193750000004,
+          "pooled_auroc": 0.3757119375
+        },
+        "ipin-esmc": {
+          "AB_ap": 0.06655048520999782,
+          "BA_ap": 0.06617479887075557,
+          "pooled_ap": 0.06630287022278158,
+          "AB_auroc": 0.28328739999999997,
+          "BA_auroc": 0.2784694875,
+          "pooled_auroc": 0.2748716
+        },
+        "native-plm": {
+          "AB_ap": 0.15797547783498989,
+          "BA_ap": 0.1584220852426587,
+          "pooled_ap": 0.1572177151327937,
+          "AB_auroc": 0.488974075,
+          "BA_auroc": 0.47247749999999994,
+          "pooled_auroc": 0.4838996
+        }
+      }
+    }
+  }
+}

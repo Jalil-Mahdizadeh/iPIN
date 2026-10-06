@@ -1,0 +1,10 @@
+{
+  "file": "update-000010053.pt",
+  "sha256": "65a25e31640dba259d5386d052bd5610a3f274d25245f5450a1a3dc4408b1a1a",
+  "bytes": 7818552779,
+  "update": 10053,
+  "epoch": 3,
+  "next_chunk": 2406,
+  "world_size": 4,
+  "fingerprint": "13cb972a87f5715622752b94712e2c2541d3292eaeb2666bfcaee2e2a1491e2d"
+}

@@ -1,0 +1,39 @@
+{
+  "verified_at_utc": "2026-09-30T09:16:26.591003+00:00",
+  "job": {
+    "JobID": "3172100",
+    "State": "COMPLETED",
+    "ExitCode": "0:0",
+    "Elapsed": "00:20:18",
+    "ElapsedRaw": "1218",
+    "NodeList": "n145",
+    "AllocTRES": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+  },
+  "allocated_gpu_hours": 1.3533333333333333,
+  "fresh_test_models": [
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce"
+  ],
+  "reused_test_models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric"
+  ],
+  "pairs_per_model": 52048,
+  "total_fresh_test_pairs": 208192,
+  "distinct_gpu_uuids": [
+    "2963a336-4124-6ae2-ce25-dca2f64f40e1",
+    "3e6fa9df-bf23-cbae-11ba-3e761a69aa2a",
+    "64618745-5bd4-b628-9d97-9bdf2745b149",
+    "a37d9f2a-f5ba-47b6-b561-7371a230f89e"
+  ],
+  "all_coverage_checks_passed": true,
+  "baseline_metrics_and_bootstrap_reproduced_to_1e_12": true,
+  "plots_visually_inspected": [
+    "results/test-curves.png",
+    "results/test-metrics.png"
+  ],
+  "new_model_or_threshold_selection_on_test": false
+}

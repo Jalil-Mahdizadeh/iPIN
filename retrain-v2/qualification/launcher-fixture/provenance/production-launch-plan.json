@@ -1,0 +1,20 @@
+{
+  "time_utc": "2026-09-29T11:11:17.441437+00:00",
+  "dry_run": true,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/qualification/launcher-fixture/releases/mock",
+  "runs": [
+    "unused"
+  ],
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-3%2",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/qualification/launcher-fixture/releases/mock/slurm/train.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/qualification/launcher-fixture/releases/mock"
+  ],
+  "shell_command": "sbatch --parsable --array=0-3%2 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/qualification/launcher-fixture/releases/mock/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/qualification/launcher-fixture/releases/mock",
+  "gpus_per_run": 4,
+  "maximum_concurrent_runs": 2,
+  "production_jobs_submitted_by_this_call": 0,
+  "qualified": true
+}

@@ -1,0 +1,327 @@
+{
+  "at_utc": "2026-10-05T21:54:18.628254+00:00",
+  "protocol_sha256": "475078e430dbad53afd9346c52240b55f43a14d7bb1a9d3672ea775ac6df5cda",
+  "counts": {
+    "human-train": {
+      "rows": 421792,
+      "positives": 38344,
+      "negatives": 383448,
+      "sequences": 15631
+    },
+    "human-validation": {
+      "rows": 52725,
+      "positives": 4794,
+      "negatives": 47931,
+      "sequences": 15351
+    },
+    "mouse": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "sequences": 17250
+    },
+    "fly": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "sequences": 11306
+    },
+    "worm": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "sequences": 18077
+    },
+    "yeast": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "sequences": 5591
+    },
+    "ecoli": {
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "sequences": 4412
+    }
+  },
+  "distinct_sequences_total": 71991,
+  "sources": [
+    {
+      "dataset": "human-train",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v11-train-degree-baseline/inputs/native/train.csv.gz",
+        "bytes": 184845032,
+        "sha256": "8900b339e7e4c9b890a837266724af1ad99c25e8fb072567cd8fee037eceb642"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/human-train.csv.gz",
+        "bytes": 184845032,
+        "sha256": "8900b339e7e4c9b890a837266724af1ad99c25e8fb072567cd8fee037eceb642"
+      },
+      "uncompressed_sha256": "86c5134846df36df17455500154eab6049cd07250c79d6d263afcb5dcb6bf5fd",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/train/human.ppi.qrels.seq.train.csv"
+    },
+    {
+      "dataset": "human-validation",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v11-train-degree-baseline/inputs/native/validation.csv.gz",
+        "bytes": 23085674,
+        "sha256": "e255f6b684c0ed7eff54b68f75bdb186d0059d2abb99493550e957a7244f6fa1"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/human-validation.csv.gz",
+        "bytes": 23085674,
+        "sha256": "e255f6b684c0ed7eff54b68f75bdb186d0059d2abb99493550e957a7244f6fa1"
+      },
+      "uncompressed_sha256": "abb126f34f617fdc4c956e1f056df5cb0921ab3c12d6f0d87948411d34a7b9f3",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/val/human.ppi.qrels.seq.test.csv"
+    },
+    {
+      "dataset": "mouse",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/mouse.ppi.qrels.seq.test.csv",
+        "bytes": 43035414,
+        "sha256": "b78cf5f216896721dfddedb3ba1a4405cec87f3da501056df24024988c1a1658"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/mouse.csv.gz",
+        "bytes": 25740069,
+        "sha256": "c3a5a0a3a74322a4b77ebd18c8a466554fd4958719757194b1555cc2bb203e70"
+      },
+      "uncompressed_sha256": "b78cf5f216896721dfddedb3ba1a4405cec87f3da501056df24024988c1a1658",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/mouse.ppi.qrels.seq.test.csv"
+    },
+    {
+      "dataset": "fly",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/fly.ppi.qrels.seq.test.csv",
+        "bytes": 42359686,
+        "sha256": "a7599e8bae38984e243ef3278d645b7ff90aef21646649f4ea36603af4bd3706"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/fly.csv.gz",
+        "bytes": 25251733,
+        "sha256": "5118f3f5ed42520cb6aa634279e52573aa2c6934ebfcfcd160e1875c01af914e"
+      },
+      "uncompressed_sha256": "a7599e8bae38984e243ef3278d645b7ff90aef21646649f4ea36603af4bd3706",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/fly.ppi.qrels.seq.test.csv"
+    },
+    {
+      "dataset": "worm",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/worm.ppi.qrels.seq.test.csv",
+        "bytes": 38758522,
+        "sha256": "4d90948073100cf844d31893df6b4dd9bdc50cf9799a6b555e745c859cf5780d"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/worm.csv.gz",
+        "bytes": 23284552,
+        "sha256": "8aef7d6a14469ece8af4b1e146e9799a49e3bb5de21f5dc0510deb5f2b4b68e2"
+      },
+      "uncompressed_sha256": "4d90948073100cf844d31893df6b4dd9bdc50cf9799a6b555e745c859cf5780d",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/worm.ppi.qrels.seq.test.csv"
+    },
+    {
+      "dataset": "yeast",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/yeast.ppi.qrels.seq.test.csv",
+        "bytes": 37772124,
+        "sha256": "11854f594ac14fcf8dfc73a94fbfefc5e05fc59e38f9d75ac273ca2a68243357"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/yeast.csv.gz",
+        "bytes": 22415283,
+        "sha256": "976e364753e8329b3d4025b1246a4c2c3dd7681c3c3080883caf60938060633c"
+      },
+      "uncompressed_sha256": "11854f594ac14fcf8dfc73a94fbfefc5e05fc59e38f9d75ac273ca2a68243357",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/yeast.ppi.qrels.seq.test.csv"
+    },
+    {
+      "dataset": "ecoli",
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/ecoli.ppi.qrels.seq.test.csv",
+        "bytes": 12526313,
+        "sha256": "54b5de269e285c928516ac081bd7e8ef99f330ac09021ae898bc651e81b2a4c0"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/ecoli.csv.gz",
+        "bytes": 7349916,
+        "sha256": "5686a6d5c434ee335f259ad74a8abd5fe12551addb44c836866a4a18179fa3ef"
+      },
+      "uncompressed_sha256": "54b5de269e285c928516ac081bd7e8ef99f330ac09021ae898bc651e81b2a4c0",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/ecoli.ppi.qrels.seq.test.csv"
+    }
+  ],
+  "reused_neural_sources": {
+    "native-human": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/native-human-union.npz",
+      "bytes": 4612502,
+      "sha256": "a7db33773e2e40e0eb9d18f3661dd3ac430ac1a64cc2ac3ba462a7ec98086d53"
+    },
+    "tuna-human": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/tuna-human-union.npz",
+      "bytes": 2804292,
+      "sha256": "6c8bf059e8f0b26e70f1d221753eec365c5214830c7ea1490d8a34b693276e46"
+    }
+  },
+  "checks": {
+    "all_archived_bytes_match_releases": true,
+    "all_reused_pair_rows_match": true,
+    "human_validation_proteins_all_in_train": true
+  },
+  "artifacts": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/ecoli.csv.gz",
+      "bytes": 7349916,
+      "sha256": "5686a6d5c434ee335f259ad74a8abd5fe12551addb44c836866a4a18179fa3ef"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/fly.csv.gz",
+      "bytes": 25251733,
+      "sha256": "5118f3f5ed42520cb6aa634279e52573aa2c6934ebfcfcd160e1875c01af914e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/human-train.csv.gz",
+      "bytes": 184845032,
+      "sha256": "8900b339e7e4c9b890a837266724af1ad99c25e8fb072567cd8fee037eceb642"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/human-validation.csv.gz",
+      "bytes": 23085674,
+      "sha256": "e255f6b684c0ed7eff54b68f75bdb186d0059d2abb99493550e957a7244f6fa1"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/mouse.csv.gz",
+      "bytes": 25740069,
+      "sha256": "c3a5a0a3a74322a4b77ebd18c8a466554fd4958719757194b1555cc2bb203e70"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/worm.csv.gz",
+      "bytes": 23284552,
+      "sha256": "8aef7d6a14469ece8af4b1e146e9799a49e3bb5de21f5dc0510deb5f2b4b68e2"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/inputs/yeast.csv.gz",
+      "bytes": 22415283,
+      "sha256": "976e364753e8329b3d4025b1246a4c2c3dd7681c3c3080883caf60938060633c"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/ecoli-labels.npy",
+      "bytes": 22128,
+      "sha256": "ad6087c13429fc82680e018b1a135c8dc89a7f4adcdcfc628644118c4180bcee"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/ecoli-neural-reused.npz",
+      "bytes": 189251,
+      "sha256": "3d312ee24bfc2b31c7b408efa5b80dd8fd3c031225edcdcc8097eb2b9ffd1ee6"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/ecoli-pairs.npy",
+      "bytes": 352128,
+      "sha256": "d85f5d2eb12545f1fa47e165ad9aed9e0295edf8f189ccd18c47a9c35012617e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/fly-labels.npy",
+      "bytes": 55128,
+      "sha256": "ad4e927f9c8258d7836ed740e8e9c1a0861189288349e7c3b30c98341ac7e220"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/fly-neural-reused.npz",
+      "bytes": 453311,
+      "sha256": "3bb92dc6fb2711f616fb040fa06eeedaa2fed89e2b8119e30400c0862a757a9b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/fly-pairs.npy",
+      "bytes": 880128,
+      "sha256": "79a3cd9bc5e4e83d5e197becdf67ff3518c7e062569715a01a06eb2477758ea3"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/human-train-labels.npy",
+      "bytes": 421920,
+      "sha256": "0a71a6f805625df891f8cd775965fce5080758476a15d71b54e86b43caaa5040"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/human-train-pairs.npy",
+      "bytes": 6748800,
+      "sha256": "dda3dd38818efb09ce7cacf4d5ff55337376656cd6d5b432e021a5ed5894cbcb"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/human-train.fasta",
+      "bytes": 6176406,
+      "sha256": "f451796dad39f6ae4a4f3d2c1c6851294d3429d9f54b9010f4a9212c80813360"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/human-validation-labels.npy",
+      "bytes": 52853,
+      "sha256": "dd27c4ad625198d5955d2cd0474c59f5ede24bbbba286d86512f33f47ef2a7ec"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/human-validation-pairs.npy",
+      "bytes": 843728,
+      "sha256": "e437b2d8f8d6105971d546b20dc7f1f44a07ceb8b10d43e5e26f14d9c5f0e793"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/mouse-labels.npy",
+      "bytes": 55128,
+      "sha256": "2815930e7d59e45caf622112d5afb8dd42ea5cdb0c08b649aa03ad14192fbd5f"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/mouse-neural-reused.npz",
+      "bytes": 449227,
+      "sha256": "205fae1fcd5ecbc41fb3c2dbb7bfe6a6c3e6748bd96521ca635360f052dfeb4f"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/mouse-pairs.npy",
+      "bytes": 880128,
+      "sha256": "53a4882283202928cb1c88b93f2372b7e0f9c8bcb0310f8b0f8262d26ef531e5"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/queries.fasta",
+      "bytes": 26208939,
+      "sha256": "27644f0590dc900ad10b851817fbb479157e455347ca4308d15798ef1d81c18e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/sequences.json",
+      "bytes": 31981225,
+      "sha256": "2335006dfe942e26dabe9db4d1ac366cc425410e1563cb19ae4959bf09d182a1"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/worm-labels.npy",
+      "bytes": 55128,
+      "sha256": "7d920ab4e46d9a3a2e3f8e7f16dd2e4d97617d85995ce8f7c69b27aeb4d3f986"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/worm-neural-reused.npz",
+      "bytes": 453033,
+      "sha256": "c49724f5067c9d8287edfafc204f9e80ddb53c626e3acfbf0a31502834bf68e5"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/worm-pairs.npy",
+      "bytes": 880128,
+      "sha256": "dc20080123d860b6de343e4df3bb24e039af1f4a4f599876416e3ab05c0de3b9"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/yeast-labels.npy",
+      "bytes": 55128,
+      "sha256": "e96b8ae8358be5e61279d9938ebed11fb652cf83ca854a75416e0ce3cb0a8aa1"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/yeast-neural-reused.npz",
+      "bytes": 459245,
+      "sha256": "8e5671b1fdf86604ef48c296ab1a419a60512462e67bd19f46393fa9709124e7"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/yeast-pairs.npy",
+      "bytes": 880128,
+      "sha256": "09d53cbe1405d74122f747117cdc593b4bdc14e65aa67504114dc3c6a057f583"
+    }
+  ],
+  "resource_use": {
+    "wall_seconds": 11.786431984975934,
+    "user_seconds": 10.828273,
+    "system_seconds": 0.379588,
+    "max_rss_kib": 110592,
+    "at_utc": "2026-10-05T21:54:18.628628+00:00"
+  }
+}

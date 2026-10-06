@@ -1,0 +1,31 @@
+{
+  "definition": "sum over endpoints log((TRAIN-positive row-degree+1)/(TRAIN-negative row-degree+1)); self pairs counted once; sequence SHA identities",
+  "selection": "No fitting, tuning, PLM or test-species information; degree diagnostic fixed in this script.",
+  "limitation": "This is human warm-protein validation; no identity lookup transfer claim to nonhuman proteins.",
+  "results": {
+    "all_released_validation": {
+      "rows": 52725,
+      "positives": 4794,
+      "smoothed_degree_ratio": {
+        "ap": 0.8360138743588236,
+        "auroc": 0.963460067714674
+      },
+      "number_of_endpoints_seen_in_train_positives": {
+        "ap": 0.29413804357701895,
+        "auroc": 0.8738536954548426
+      }
+    },
+    "excluding_exact_train_pair_overlap": {
+      "rows": 52636,
+      "positives": 4783,
+      "smoothed_degree_ratio": {
+        "ap": 0.836077900902309,
+        "auroc": 0.9635093774251559
+      },
+      "number_of_endpoints_seen_in_train_positives": {
+        "ap": 0.2940713346652009,
+        "auroc": 0.8738775947397865
+      }
+    }
+  }
+}

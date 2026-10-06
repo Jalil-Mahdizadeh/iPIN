@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "fingerprint": "7f908bbf317a310e0cd0f43d67dc5e0c1285b31a863f010bc4af8a0b7e2ac67f",
+  "at_utc": "2026-10-05T17:04:29.289968+00:00",
+  "cases": [
+    {
+      "union_id": 13564,
+      "tokens": 117,
+      "logit_error": 2.9087066650390625e-05,
+      "probability_error": 3.1593594247147916e-06
+    },
+    {
+      "union_id": 39493,
+      "tokens": 916,
+      "logit_error": 5.7220458984375e-06,
+      "probability_error": 9.43867428659928e-10
+    },
+    {
+      "union_id": 69798,
+      "tokens": 2428,
+      "logit_error": 5.7220458984375e-06,
+      "probability_error": 1.341109936536626e-09
+    },
+    {
+      "union_id": 51541,
+      "tokens": 7426,
+      "logit_error": 5.4836273193359375e-06,
+      "probability_error": 8.411635301075471e-07
+    }
+  ],
+  "padding_checks": [
+    {
+      "rows": [
+        13564,
+        39493,
+        69798
+      ],
+      "logit_error": 8.0108642578125e-05,
+      "probability_error": 8.701353542500678e-06
+    },
+    {
+      "rows": [
+        51541
+      ],
+      "logit_error": 0.0,
+      "probability_error": 0.0
+    }
+  ],
+  "previous_qualification": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/native-human.json",
+    "bytes": 4603,
+    "sha256": "df43e8fc1e0998a08f4a0a5755ae8b93968f8aea66b85a6d1f2d471e6a0c0d3a"
+  },
+  "native_raw_tokenizer_and_eager_attention": true,
+  "no_truncation": true,
+  "test_metrics_read": false,
+  "gpu_peak_gib": 22.25011682510376
+}

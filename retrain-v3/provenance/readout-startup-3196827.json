@@ -1,0 +1,180 @@
+{
+  "time_utc": "2026-09-30T19:46:24.910243+00:00",
+  "array_id": "3196827",
+  "selected_learning_rate": 2e-05,
+  "release_sha256": "fb32362f661a66d42f4e65ae12c888fd5f6ad836067b32f040eae41d68de4867",
+  "queue_snapshot": "3196827_5|RUNNING|1:21|n139|n139\n3196827_4|RUNNING|1:42|n24|n24\n3196827_3|RUNNING|1:47|n468|n468\n3196827_2|RUNNING|1:52|n165|n165\n3196827_1|RUNNING|2:54|n487|n487\n3196827_0|RUNNING|3:07|n169|n169\n",
+  "runs": [
+    {
+      "task": "3196827_0",
+      "run": "clean-cls-mlp-lr2e-5-fold0-seed2",
+      "initialized": true,
+      "last_logged_update": 10,
+      "last_update": {
+        "time_utc": "2026-09-30T19:45:39.665898+00:00",
+        "attempt": "20260930T194347-3196849",
+        "event": "update",
+        "update": 10,
+        "cursor": {
+          "cycle": 0,
+          "offset": 640
+        },
+        "lr": 2.0000000000000002e-07,
+        "mean_loss": 6.948577329516411,
+        "mean_bce": 0.694857731461525,
+        "mean_mlm": 0.0,
+        "grad_norm": 1.1338411569595337,
+        "seconds": 2.9311338599654846,
+        "global_pairs": 64,
+        "batch_digest": "bb7b23096d46e9ddbfebdb41c8b01aa6f14447d7ef61d640f4ca074a7f7b4bb6",
+        "max_tokens": 1434,
+        "gpu_peak_allocated_gib": 22.149545192718506
+      },
+      "runtime_checks_passed": true,
+      "errors": []
+    },
+    {
+      "task": "3196827_1",
+      "run": "clean-cls-mlp-lr2e-5-fold1-seed2",
+      "initialized": true,
+      "last_logged_update": 30,
+      "last_update": {
+        "time_utc": "2026-09-30T19:46:00.591257+00:00",
+        "attempt": "20260930T194355-3196862",
+        "event": "update",
+        "update": 30,
+        "cursor": {
+          "cycle": 0,
+          "offset": 1920
+        },
+        "lr": 6.000000000000001e-07,
+        "mean_loss": 6.92560276389122,
+        "mean_bce": 0.6925602741539478,
+        "mean_mlm": 0.0,
+        "grad_norm": 1.084174394607544,
+        "seconds": 4.837260161002632,
+        "global_pairs": 64,
+        "batch_digest": "c846cb007ec6b4e4fb2c061d8eebbaa31b7a2a6629308d1952746fa36c3f495d",
+        "max_tokens": 2063,
+        "gpu_peak_allocated_gib": 22.13150453567505
+      },
+      "runtime_checks_passed": true,
+      "errors": []
+    },
+    {
+      "task": "3196827_2",
+      "run": "clean-cls-mlp-lr2e-5-fold2-seed2",
+      "initialized": true,
+      "last_logged_update": 10,
+      "last_update": {
+        "time_utc": "2026-09-30T19:45:43.843100+00:00",
+        "attempt": "20260930T194501-3196908",
+        "event": "update",
+        "update": 10,
+        "cursor": {
+          "cycle": 0,
+          "offset": 640
+        },
+        "lr": 2.0000000000000002e-07,
+        "mean_loss": 6.9552968963980675,
+        "mean_bce": 0.6955296862870455,
+        "mean_mlm": 0.0,
+        "grad_norm": 1.1165388822555542,
+        "seconds": 7.702381342998706,
+        "global_pairs": 64,
+        "batch_digest": "4e394ef149cb2a05d4cfdaf6384eef4769094717abf4d9400b3ad0f9c4ebbe90",
+        "max_tokens": 2284,
+        "gpu_peak_allocated_gib": 22.111377239227295
+      },
+      "runtime_checks_passed": true,
+      "errors": []
+    },
+    {
+      "task": "3196827_3",
+      "run": "clean-residue-mean-lr2e-5-fold0-seed2",
+      "initialized": true,
+      "last_logged_update": 3,
+      "last_update": {
+        "time_utc": "2026-09-30T19:45:25.816875+00:00",
+        "attempt": "20260930T194503-3196909",
+        "event": "update",
+        "update": 3,
+        "cursor": {
+          "cycle": 0,
+          "offset": 192
+        },
+        "lr": 6.000000000000001e-08,
+        "mean_loss": 6.922954499721527,
+        "mean_bce": 0.6922954525798559,
+        "mean_mlm": 0.0,
+        "grad_norm": 0.467843621969223,
+        "seconds": 2.9799899389618076,
+        "global_pairs": 64,
+        "batch_digest": "ceb0bd53ea0db7fcd093298f936ead684b67fc46f41aedc81290fed33abe70e3",
+        "max_tokens": 1485,
+        "gpu_peak_allocated_gib": 22.149545192718506
+      },
+      "runtime_checks_passed": true,
+      "errors": []
+    },
+    {
+      "task": "3196827_4",
+      "run": "clean-residue-mean-lr2e-5-fold1-seed2",
+      "initialized": true,
+      "last_logged_update": 10,
+      "last_update": {
+        "time_utc": "2026-09-30T19:45:46.705269+00:00",
+        "attempt": "20260930T194508-3196912",
+        "event": "update",
+        "update": 10,
+        "cursor": {
+          "cycle": 0,
+          "offset": 640
+        },
+        "lr": 2.0000000000000002e-07,
+        "mean_loss": 6.911540657281876,
+        "mean_bce": 0.6911540552973747,
+        "mean_mlm": 0.0,
+        "grad_norm": 2.283965587615967,
+        "seconds": 1.2470847240183502,
+        "global_pairs": 64,
+        "batch_digest": "ebb1abc6127c3f7b702b2995d7fde948f08f8e5ca3441ebb59facaaac47163d8",
+        "max_tokens": 712,
+        "gpu_peak_allocated_gib": 22.13345766067505
+      },
+      "runtime_checks_passed": true,
+      "errors": []
+    },
+    {
+      "task": "3196827_5",
+      "run": "clean-residue-mean-lr2e-5-fold2-seed2",
+      "initialized": true,
+      "last_logged_update": 3,
+      "last_update": {
+        "time_utc": "2026-09-30T19:46:21.989640+00:00",
+        "attempt": "20260930T194601-3196827",
+        "event": "update",
+        "update": 3,
+        "cursor": {
+          "cycle": 0,
+          "offset": 192
+        },
+        "lr": 6.000000000000001e-08,
+        "mean_loss": 6.892746061086655,
+        "mean_bce": 0.689274612814188,
+        "mean_mlm": 0.0,
+        "grad_norm": 1.5209426879882812,
+        "seconds": 3.0945964159909636,
+        "global_pairs": 64,
+        "batch_digest": "bdd863378ebd0514bb84c5e37f6bd484b43a62c4d9a41ecaf1e2801994309628",
+        "max_tokens": 1576,
+        "gpu_peak_allocated_gib": 22.112353801727295
+      },
+      "runtime_checks_passed": true,
+      "errors": []
+    }
+  ],
+  "qualification_job": "3196606",
+  "resume_qualification_passed": true,
+  "scope": "Startup snapshot only; finite observed updates and expected contracts. No validation results yet."
+}

@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "sprint",
+    "test": "worm",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e5f3c2b73a922bebc7b8ef1ce9629fd97516a02861dd899908150353632772d5",
+    "scores": "c8ace883e66e8338b637de04580ebd539bd0939b01bcd10c7f1c32f51fe33f1c",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/worm-sprint.npz",
+    "bytes": 15018,
+    "sha256": "53a336bc0259e90ef4192600b6853cc9c6493a341e8c3b251d1d0fa89b075a12"
+  }
+}

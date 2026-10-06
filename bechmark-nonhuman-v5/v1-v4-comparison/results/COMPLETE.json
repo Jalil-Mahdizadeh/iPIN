@@ -1,0 +1,155 @@
+{
+  "complete": true,
+  "at_utc": "2026-10-05T14:37:07.896423+00:00",
+  "models": [
+    "native-human",
+    "native-plm",
+    "v2-capped",
+    "v2-clean-bce",
+    "ipin-esm2",
+    "ipin-esmc"
+  ],
+  "rows_per_model": 242000,
+  "report": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/REPORT.md",
+    "bytes": 6546,
+    "sha256": "4a063a3e700ad538086b92faa70756ea365034e9db9a16c15202521a871dd673"
+  },
+  "summary": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/summary.json",
+    "bytes": 22362,
+    "sha256": "6a88fb25ff2b6b25bd8e29b32ee95f408b204576ba5c1fee76b77a1764ce68c7"
+  },
+  "artifacts": {
+    "results/ap-comparison.pdf": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/ap-comparison.pdf",
+      "bytes": 24937,
+      "sha256": "5c8e3b743438ed1efeae8ae69d7927d8010fb09933517a37493e8c3d4c364ef8"
+    },
+    "results/ap-comparison.png": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/ap-comparison.png",
+      "bytes": 136150,
+      "sha256": "76cb94a34b75a7acd7c8b5333403f90b5dae4f534cd110c98604786e20fccc64"
+    },
+    "results/ap-comparison.svg": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/ap-comparison.svg",
+      "bytes": 111893,
+      "sha256": "84648bfd7ddc409d2b27c5a86dbe614d521466ef5fe69ff2ba6fecb924203d2f"
+    },
+    "results/auroc-comparison.pdf": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/auroc-comparison.pdf",
+      "bytes": 25869,
+      "sha256": "f37b2608dd36d0a6d89bf06ab7347ff2425d8ad9b022ef0504ee051a223d0b18"
+    },
+    "results/auroc-comparison.png": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/auroc-comparison.png",
+      "bytes": 132884,
+      "sha256": "e5a9818ce3ce822f1cfc006c41790ec10148d90cf00cc9944865ee77ac43e3d8"
+    },
+    "results/auroc-comparison.svg": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/auroc-comparison.svg",
+      "bytes": 108516,
+      "sha256": "7db35f274dfbdea01bbc6246b59e6dd2f2048c59ae0c7c6df0aa61fb8c67b107"
+    },
+    "results/confidence-intervals.csv": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/confidence-intervals.csv",
+      "bytes": 4608,
+      "sha256": "9a7833f33329a69fc5e2780fb0732f2fb1b0ea87ec83f49754271bf13496ce6f"
+    },
+    "results/ecoli-bootstrap.npz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/ecoli-bootstrap.npz",
+      "bytes": 91261,
+      "sha256": "a275f2452cdd873601ca60a73e7a5639095023bd9b13ea1678cf05a0255e6f91"
+    },
+    "results/ecoli-predictions.csv.gz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/ecoli-predictions.csv.gz",
+      "bytes": 4615811,
+      "sha256": "6dc7e96d0b904268dc3102dbd7cf2ab406c322d61b838a5ac89979d41c9471b9"
+    },
+    "results/finalizer.lock": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/finalizer.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "results/fly-bootstrap.npz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/fly-bootstrap.npz",
+      "bytes": 90884,
+      "sha256": "278d9a0b8cbaddf28d634c7da7f85732fb8cafca5dd69b9485f29c343bf61557"
+    },
+    "results/fly-predictions.csv.gz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/fly-predictions.csv.gz",
+      "bytes": 11612915,
+      "sha256": "86a24fa4ea042b1d4f5c8391b8c9059af5ffd483ef45c441180df12034a74661"
+    },
+    "results/metrics.csv": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/metrics.csv",
+      "bytes": 3621,
+      "sha256": "de5ab822f7a7002c7d0edf6815c859e0da8354f55ecf56b5aa7c6116c0733f90"
+    },
+    "results/mouse-bootstrap.npz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/mouse-bootstrap.npz",
+      "bytes": 90645,
+      "sha256": "4bb85e2e2ea9217319472008f985ec82903f5d8b2808e7fac1bf2b42e745c1d2"
+    },
+    "results/mouse-predictions.csv.gz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/mouse-predictions.csv.gz",
+      "bytes": 11625613,
+      "sha256": "149fb21cd1c67e82e17251f853c31b1215e54036a033ddd730cd02235c69d5ca"
+    },
+    "results/orientation-metrics.csv": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/orientation-metrics.csv",
+      "bytes": 2672,
+      "sha256": "c6cac67e46492278c84887446e60b53ce9fd35f3380caac593e461769be7a9a5"
+    },
+    "results/paired-differences.csv": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/paired-differences.csv",
+      "bytes": 8425,
+      "sha256": "0b7b8a6e1e7e323df2ac23c04d9288bba5d01859489b1cbe5566418b5bfb36a0"
+    },
+    "results/subsets.csv": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/subsets.csv",
+      "bytes": 10327,
+      "sha256": "b0966568ab829fcf535edf5a83657f2d6e9ba9f4d1878f5b70f603381b802121"
+    },
+    "results/summary.json": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/summary.json",
+      "bytes": 22362,
+      "sha256": "6a88fb25ff2b6b25bd8e29b32ee95f408b204576ba5c1fee76b77a1764ce68c7"
+    },
+    "results/v2-capped-union.npz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/v2-capped-union.npz",
+      "bytes": 2546721,
+      "sha256": "d1be2c601cd64efc6037657a7d7d134dd15efe27e16ee98c3899c2b1dfd26565"
+    },
+    "results/v2-clean-bce-union.npz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/v2-clean-bce-union.npz",
+      "bytes": 2486054,
+      "sha256": "3cd0e04b072be6e3746f9960cac0982517e77a9a3741cee4c2a728fd6083c590"
+    },
+    "results/worm-bootstrap.npz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/worm-bootstrap.npz",
+      "bytes": 90854,
+      "sha256": "68c5c63f0711e06d68c235347420da495af40fb8eeead4226080be5171377e19"
+    },
+    "results/worm-predictions.csv.gz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/worm-predictions.csv.gz",
+      "bytes": 11639072,
+      "sha256": "3d9c3c4953e6e9b195979ea4f80abb101a7d6ba22f6800f4bc3ec3972ee7e288"
+    },
+    "results/yeast-bootstrap.npz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/yeast-bootstrap.npz",
+      "bytes": 90912,
+      "sha256": "831778123eaa00a685facc053960fe6a560897d845a9d9c019ff8e4386e75ee0"
+    },
+    "results/yeast-predictions.csv.gz": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/yeast-predictions.csv.gz",
+      "bytes": 11640934,
+      "sha256": "5ce17e7e18ef79dbee0b730febbb30a4a71272410a18e07b2e4aae4dc82f5547"
+    }
+  },
+  "analysis_code": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/historical_analyze.py",
+    "bytes": 16331,
+    "sha256": "606eb1204e434e151f2d12cba197bc386f6dbe820b13b19fc656ca7d4630382c"
+  }
+}

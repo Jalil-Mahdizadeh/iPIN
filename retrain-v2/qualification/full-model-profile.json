@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "profiles": [
+    {
+      "model": "standard",
+      "stage": "longest-training",
+      "tokens": 16322,
+      "orientations": 2,
+      "seconds": 16.565269282000372,
+      "peak_allocated_gib": 11.439743518829346,
+      "peak_reserved_gib": 13.03515625,
+      "finite_output": 9.649214744567871,
+      "source_row": 75064
+    },
+    {
+      "model": "standard",
+      "stage": "longest-validation",
+      "tokens": 39391,
+      "orientations": 2,
+      "seconds": 6.073760550003499,
+      "peak_allocated_gib": 13.76253080368042,
+      "peak_reserved_gib": 18.306640625,
+      "finite_output": [
+        [
+          0.051025390625,
+          0.051025390625
+        ]
+      ],
+      "source_row": 16728
+    },
+    {
+      "model": "chain-residue-decoupled",
+      "stage": "longest-training",
+      "tokens": 16322,
+      "orientations": 2,
+      "seconds": 64.85156005799945,
+      "peak_allocated_gib": 17.294389724731445,
+      "peak_reserved_gib": 19.744140625,
+      "finite_output": 10.065403938293457,
+      "source_row": 75064
+    },
+    {
+      "model": "chain-residue-decoupled",
+      "stage": "longest-validation",
+      "tokens": 39391,
+      "orientations": 2,
+      "seconds": 12.2944930960075,
+      "peak_allocated_gib": 16.379149436950684,
+      "peak_reserved_gib": 26.140625,
+      "finite_output": [
+        [
+          -0.044677734375,
+          -0.04248046875
+        ]
+      ],
+      "source_row": 16728
+    }
+  ],
+  "precision": "FP32 parameters/AdamW, BF16 autocast",
+  "device": "NVIDIA GH200 120GB",
+  "total_device_gib": 95.0,
+  "no_test_data": true,
+  "disposable_optimizer_steps": 2,
+  "code": {
+    "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+  }
+}

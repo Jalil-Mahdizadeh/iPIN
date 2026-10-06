@@ -1,0 +1,7 @@
+JobID|State|ExitCode|ElapsedRaw|AllocTRES
+3196827_0|COMPLETED|0:0|27071|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3196827_1|COMPLETED|0:0|26630|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3196827_2|COMPLETED|0:0|26607|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3196827_3|COMPLETED|0:0|27122|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3196827_4|COMPLETED|0:0|26325|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3196827_5|COMPLETED|0:0|26593|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1

@@ -1,0 +1,37 @@
+{
+  "active_sequence_entities_before_homology": 22753,
+  "blacklist_policy": "conservative UniProt-family projection of all HIPPIE evidence plus historical train/validation/test positives; prevents isoform/alias contradictions",
+  "canonical_entries": 21453,
+  "distinct_hippie_sequences": 27062,
+  "eligible_positive_pairs_before_homology": 808015,
+  "exact_sequence_aliases_collapsed": 351,
+  "fasta_sequences_including_displayed_isoforms": 43360,
+  "go_bp_coverage_active": 0.8458664791456072,
+  "historical_development_positive_family_additions": 4219,
+  "initially_excluded_sequence_entities": 3912,
+  "invalid_accessions": 1667,
+  "invalid_reasons": {
+    "unresolved_isoform_sequence": 1667
+  },
+  "known_positive_family_pairs": 1113386,
+  "original_negative_evidence_conflicts": {
+    "conservative_family_positive": 358,
+    "exact_accession_positive": 358
+  },
+  "positive_row_exclusions": {
+    "duplicate_sequence_pair": 666,
+    "protected_test_endpoint": 355657,
+    "self_or_identical_sequence": 5067,
+    "unresolved_or_ineligible_endpoint": 9942
+  },
+  "protected_entry_families": 3022,
+  "raw_positive_rows": 1179347,
+  "resolved_hippie_accessions": 27413,
+  "test_annotation_status": {
+    "missing_annotation": 3,
+    "resolved_parent_annotation": 3019
+  },
+  "test_sequences_differing_from_current_parent": 47,
+  "test_sequences_preserved": true,
+  "uniprot_release": "2026_03"
+}

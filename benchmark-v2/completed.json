@@ -1,0 +1,28 @@
+{
+  "completed_at_utc": "2026-09-30T09:15:21.515198+00:00",
+  "models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric",
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce"
+  ],
+  "fresh_test_inference_models": [
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce"
+  ],
+  "reused_test_inference_models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric"
+  ],
+  "test_rows_per_model": 52048,
+  "prediction_fingerprint": "f2863282917e5c0af6bad67b632c8047a613a9db902382657d839a81113a071d",
+  "summary_sha256": "840948269bbb0f98c713150762cc4516c59dad865daeafe003c3a446a0ac24dc",
+  "report_sha256": "17236ef9a857738734ca91cf4632da297750b78f0fafdbc8dfba54412b75631f",
+  "all_coverage_and_numerical_checks_passed": true
+}

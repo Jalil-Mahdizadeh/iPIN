@@ -1,0 +1,12 @@
+{
+  "cross_species_matches_reported_precision_with_source_score_precision": true,
+  "mutation_checkpoint_matches_figure5_with_code_formula": true,
+  "bernett_full_matches_reported_rounded_metrics": true,
+  "bernett_score_closest_variant": "bernett_full",
+  "bernett_closest_mae": 0.0004438411810181,
+  "bernett_post_hoc_inferred_token_cap": 3570,
+  "bernett_inferred_cap_mae": 2.9240895594005954e-07,
+  "no_retraining": true,
+  "complete_test_coverage": true,
+  "not_a_reproduction_of_every_paper_claim": true
+}

@@ -1,0 +1,13 @@
+{
+  "mode": "four_fixed_shards_sequential_single_gpu",
+  "logical_shards": 4,
+  "physical_gpus": 1,
+  "selected_checkpoint_update": 4000,
+  "created_at_utc": "2026-10-01T21:35:42.393134+00:00",
+  "interactive_job_id": "3245989",
+  "reason": "SLURM test-only estimated several-hour wait for a four-GPU node; allocated interactive GPU is idle.",
+  "identical_shard_membership_sorting_microbatches_and_scoring": true,
+  "inference_script_unchanged_from_prepared_setup": true,
+  "training_performed": false,
+  "additional_slurm_job_submitted": false
+}

@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-10-05T21:54:06.843599+00:00",
+  "protocol_sha256": "475078e430dbad53afd9346c52240b55f43a14d7bb1a9d3672ea775ac6df5cda",
+  "config": {
+    "seed": 47,
+    "threads": 16,
+    "smoothing": 1.0,
+    "search": {
+      "sensitivity": 7.5,
+      "evalue": 1e-05,
+      "min_identity": 0.25,
+      "min_coverage": 0.5,
+      "max_prefilter": 1000,
+      "top_k": 5,
+      "gpu": 0,
+      "weight": "fident * sqrt(qcov * tcov)",
+      "no_hit": "mean TRAIN protein log ratio"
+    },
+    "regressor": {
+      "loss": "squared_error",
+      "max_iter": 300,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "l2_regularization": 10.0,
+      "max_bins": 255,
+      "early_stopping": false,
+      "random_state": 47
+    },
+    "features": "log length; 20 AA fractions; 400 ordered dipeptide fractions; unknown fraction",
+    "bootstrap": {
+      "replicates": 500,
+      "seed": 20261006,
+      "unit": "protein endpoints"
+    }
+  },
+  "previous_nonhuman_neural_results_known": true,
+  "baseline_nonhuman_metrics_not_yet_computed": true
+}

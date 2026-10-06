@@ -1,0 +1,57 @@
+{
+  "3367694": {
+    "model": "ipin-esm2",
+    "purpose": "test inference",
+    "launch_failure": "Apptainer --env parsed comma-separated CUDA devices as multiple variables; no inference occurred"
+  },
+  "3367695": {
+    "model": "ipin-esmc",
+    "purpose": "test inference",
+    "launch_failure": "Apptainer --env parsed comma-separated CUDA devices as multiple variables; no inference occurred"
+  },
+  "3367696": {
+    "model": "native-plm",
+    "purpose": "test inference",
+    "launch_failure": "Apptainer --env parsed comma-separated CUDA devices as multiple variables; no inference occurred"
+  },
+  "3367707": {
+    "model": "ipin-esm2",
+    "purpose": "test inference, includes node qualification",
+    "launch_failure": "torch distributed rendezvous cannot resolve localhost in isolated container; replaced by independent-process launcher, no distributed collective required"
+  },
+  "3367708": {
+    "model": "ipin-esmc",
+    "purpose": "test inference, includes node qualification",
+    "launch_failure": "torch distributed rendezvous cannot resolve localhost in isolated container; replaced by independent-process launcher, no distributed collective required"
+  },
+  "3367709": {
+    "model": "native-plm",
+    "purpose": "test inference, includes node qualification",
+    "launch_failure": "torch distributed rendezvous cannot resolve localhost in isolated container; replaced by independent-process launcher, no distributed collective required"
+  },
+  "3367734": {
+    "model": "xpair-both",
+    "launch_failure": "same distributed rendezvous failure before inference"
+  },
+  "3367739": {
+    "model": "ipin-esm2",
+    "purpose": "test inference, includes node qualification"
+  },
+  "3367740": {
+    "model": "ipin-esmc",
+    "purpose": "test inference, includes node qualification"
+  },
+  "3367741": {
+    "model": "native-plm",
+    "purpose": "test inference, includes node qualification"
+  },
+  "3367742": {
+    "model": "xpair-both",
+    "purpose": "shared Ankh embeddings, qualification and two-checkpoint inference"
+  },
+  "3369152": {
+    "model": "dscript",
+    "purpose": "original human_v1 full-test inference; length-safe implementation",
+    "no_training": true
+  }
+}

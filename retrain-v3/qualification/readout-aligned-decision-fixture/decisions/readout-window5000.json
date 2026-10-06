@@ -1,0 +1,649 @@
+{
+  "stage": "readout",
+  "learning_rate": 2e-05,
+  "selection_window_end": 5000,
+  "checkpoint_opportunities_per_run": 5,
+  "optimizer_schedule_updates": 6000,
+  "cls_capacity_vs_linear": {
+    "folds": [
+      {
+        "fold": "fold-0",
+        "control": "clean-cls-linear-lr2e-5-fold0-seed2",
+        "candidate": "clean-cls-mlp-lr2e-5-fold0-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0,
+          "auroc": 0.0,
+          "macro_ap": 0.0,
+          "brier": 0.0
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_replicates": 200,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.001
+      },
+      {
+        "fold": "fold-1",
+        "control": "clean-cls-linear-lr2e-5-fold1-seed2",
+        "candidate": "clean-cls-mlp-lr2e-5-fold1-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0,
+          "auroc": 0.0,
+          "macro_ap": 0.0,
+          "brier": 0.0
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_replicates": 200,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.001
+      },
+      {
+        "fold": "fold-2",
+        "control": "clean-cls-linear-lr2e-5-fold2-seed2",
+        "candidate": "clean-cls-mlp-lr2e-5-fold2-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0,
+          "auroc": 0.0,
+          "macro_ap": 0.0,
+          "brier": 0.0
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_replicates": 200,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.001
+      }
+    ],
+    "promoted": false,
+    "checks": {
+      "mean_ap_gain": false,
+      "positive_folds": false,
+      "no_large_fold_ap_drop": true,
+      "mean_auroc_guard": true,
+      "mean_macro_ap_guard": true
+    },
+    "mean_deltas": {
+      "ap": 0.0,
+      "auroc": 0.0,
+      "macro_ap": 0.0
+    },
+    "positive_folds": 0,
+    "interpretation": "Prospective development decision rule, not a significance test or proof of native superiority."
+  },
+  "residue_vs_linear": {
+    "folds": [
+      {
+        "fold": "fold-0",
+        "control": "clean-cls-linear-lr2e-5-fold0-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold0-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0,
+          "auroc": 0.0,
+          "macro_ap": 0.0,
+          "brier": 0.0
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_replicates": 200,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.001
+      },
+      {
+        "fold": "fold-1",
+        "control": "clean-cls-linear-lr2e-5-fold1-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold1-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0,
+          "auroc": 0.0,
+          "macro_ap": 0.0,
+          "brier": 0.0
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_replicates": 200,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.001
+      },
+      {
+        "fold": "fold-2",
+        "control": "clean-cls-linear-lr2e-5-fold2-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold2-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0,
+          "auroc": 0.0,
+          "macro_ap": 0.0,
+          "brier": 0.0
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_replicates": 200,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.001
+      }
+    ],
+    "promoted": false,
+    "checks": {
+      "mean_ap_gain": false,
+      "positive_folds": false,
+      "no_large_fold_ap_drop": true,
+      "mean_auroc_guard": true,
+      "mean_macro_ap_guard": true
+    },
+    "mean_deltas": {
+      "ap": 0.0,
+      "auroc": 0.0,
+      "macro_ap": 0.0
+    },
+    "positive_folds": 0,
+    "interpretation": "Prospective development decision rule, not a significance test or proof of native superiority."
+  },
+  "residue_vs_capacity": {
+    "folds": [
+      {
+        "fold": "fold-0",
+        "control": "clean-cls-mlp-lr2e-5-fold0-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold0-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0,
+          "auroc": 0.0,
+          "macro_ap": 0.0,
+          "brier": 0.0
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_replicates": 200,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.001
+      },
+      {
+        "fold": "fold-1",
+        "control": "clean-cls-mlp-lr2e-5-fold1-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold1-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0,
+          "auroc": 0.0,
+          "macro_ap": 0.0,
+          "brier": 0.0
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_replicates": 200,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.001
+      },
+      {
+        "fold": "fold-2",
+        "control": "clean-cls-mlp-lr2e-5-fold2-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold2-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 96,
+          "prevalence": 0.5,
+          "ap": 0.7095238095238094,
+          "auroc": 0.625,
+          "brier": 0.38247997122424254,
+          "macro_ap": 0.7095238095238096,
+          "macro_eligible_proteins": 12,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0,
+          "auroc": 0.0,
+          "macro_ap": 0.0,
+          "brier": 0.0
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 96,
+              "prevalence": 0.5,
+              "ap": 0.7095238095238094,
+              "auroc": 0.625,
+              "brier": 0.38247997122424254,
+              "macro_ap": 0.7095238095238096,
+              "macro_eligible_proteins": 12,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_replicates": 200,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.001
+      }
+    ],
+    "promoted": false,
+    "checks": {
+      "mean_ap_gain": false,
+      "positive_folds": false,
+      "no_large_fold_ap_drop": true,
+      "mean_auroc_guard": true,
+      "mean_macro_ap_guard": true
+    },
+    "mean_deltas": {
+      "ap": 0.0,
+      "auroc": 0.0,
+      "macro_ap": 0.0
+    },
+    "positive_folds": 0,
+    "interpretation": "Prospective development decision rule, not a significance test or proof of native superiority."
+  },
+  "selected_candidate": null,
+  "confirmation_recommended": false,
+  "confirmation_blocker": "External provenance/exposure audit and a separate seed-confirmation release are still required.",
+  "evidence_sha256": {
+    "decisions/adaptation-early.json": "b8fb6694ef426689b133eea10518865f14a0b4fdc5dd5cb2ec02938642419e09"
+  },
+  "test_evaluated": false,
+  "jobs_submitted": 0,
+  "limitation": "Development window chosen after the LR screen and frozen before readout training; conditional bootstrap excludes training-seed/model-selection uncertainty."
+}

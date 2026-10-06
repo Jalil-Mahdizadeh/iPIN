@@ -1,0 +1,190 @@
+{
+  "at_utc": "2026-09-16T15:55:40.618988+00:00",
+  "base_model": "facebook/esm2_t33_650M_UR50D",
+  "base_revision": "08e4846e537177426273712802403f7ba8261b6c",
+  "checkpoint_sha256": "68c50e1dc84ee3cb6c08a7c83eefb382a29a3c1237fd577986854f746c63d665",
+  "files": [
+    {
+      "bytes": 46021,
+      "path": "containers/cache/plm-interact-wheels/plminteract-0.1.1-py3-none-any.whl",
+      "sha256": "cb10007c3c4d4d824271ed61b49abf1808e8303af28fa16c782007b1b896d70c",
+      "url": "https://files.pythonhosted.org/packages/67/93/543dbeb0dbbe91f34ddd305911e8500095f32ba33868e0a4e6e38f97909b/plminteract-0.1.1-py3-none-any.whl"
+    },
+    {
+      "bytes": 8998636,
+      "path": "containers/cache/plm-interact-wheels/transformers-4.40.1-py3-none-any.whl",
+      "sha256": "9d5ee0c8142a60501faf9e49a0b42f8e9cb8611823bce4f195a9325a6816337e",
+      "url": "https://files.pythonhosted.org/packages/cf/90/2596ac2ab49c4df6ff1fceaf7f5afb18401ba2f326348ce1a6261a65e7ed/transformers-4.40.1-py3-none-any.whl"
+    },
+    {
+      "bytes": 3566541,
+      "path": "containers/cache/plm-interact-wheels/tokenizers-0.19.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "sha256": "9620b78e0b2d52ef07b0d428323fb34e8ea1219c5eac98c2596311f20f1f9266",
+      "url": "https://files.pythonhosted.org/packages/05/40/fa899f32de483500fbc78befd378fd7afba4270f17db707d1a78c0a4ddc3/tokenizers-0.19.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+    },
+    {
+      "bytes": 171480,
+      "path": "containers/cache/plm-interact-wheels/sentence_transformers-2.7.0-py3-none-any.whl",
+      "sha256": "6a7276b05a95931581bbfa4ba49d780b2cf6904fa4a171ec7fd66c343f761c98",
+      "url": "https://files.pythonhosted.org/packages/76/2c/bd95032aeb087b0706596af0a4518c4bfe0439a1bb149048ece18b617766/sentence_transformers-2.7.0-py3-none-any.whl"
+    },
+    {
+      "bytes": 547777,
+      "path": "containers/cache/plm-interact-wheels/datasets-2.20.0-py3-none-any.whl",
+      "sha256": "76ac02e3bdfff824492e20678f0b6b1b6d080515957fe834b00c2ba8d6b18e5e",
+      "url": "https://files.pythonhosted.org/packages/60/2d/963b266bb8f88492d5ab4232d74292af8beb5b6fdae97902df9e284d4c32/datasets-2.20.0-py3-none-any.whl"
+    },
+    {
+      "bytes": 116252,
+      "path": "containers/cache/plm-interact-wheels/dill-0.3.8-py3-none-any.whl",
+      "sha256": "c36ca9ffb54365bdd2f8eb3eff7d2a21237f8452b57ace88b1ac615b7e815bd7",
+      "url": "https://files.pythonhosted.org/packages/c9/7a/cef76fd8438a42f96db64ddaa85280485a9c395e7df3db8158cfec1eee34/dill-0.3.8-py3-none-any.whl"
+    },
+    {
+      "bytes": 134824,
+      "path": "containers/cache/plm-interact-wheels/multiprocess-0.70.16-py310-none-any.whl",
+      "sha256": "c4a9944c67bd49f823687463660a2d6daae94c289adff97e0f9d696ba6371d02",
+      "url": "https://files.pythonhosted.org/packages/bc/f7/7ec7fddc92e50714ea3745631f79bd9c96424cb2702632521028e57d3a36/multiprocess-0.70.16-py310-none-any.whl"
+    },
+    {
+      "bytes": 316106,
+      "path": "containers/cache/plm-interact-wheels/fsspec-2024.5.0-py3-none-any.whl",
+      "sha256": "e0fdbc446d67e182f49a70b82cf7889028a63588fde6b222521f10937b2b670c",
+      "url": "https://files.pythonhosted.org/packages/ba/a3/16e9fe32187e9c8bc7f9b7bcd9728529faa725231a0c96f2f98714ff2fc5/fsspec-2024.5.0-py3-none-any.whl"
+    },
+    {
+      "bytes": 7923,
+      "path": "containers/cache/plm-interact-wheels/pyarrow_hotfix-0.7-py3-none-any.whl",
+      "sha256": "3236f3b5f1260f0e2ac070a55c1a7b339c4bb7267839bd2015e283234e758100",
+      "url": "https://files.pythonhosted.org/packages/2e/c3/94ade4906a2f88bc935772f59c934013b4205e773bcb4239db114a6da136/pyarrow_hotfix-0.7-py3-none-any.whl"
+    },
+    {
+      "bytes": 220959,
+      "path": "containers/cache/plm-interact-wheels/xxhash-3.5.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "sha256": "08424f6648526076e28fae6ea2806c0a7d504b9ef05ae61d196d571e5c879c84",
+      "url": "https://files.pythonhosted.org/packages/5b/84/de7c89bc6ef63d750159086a6ada6416cc4349eab23f76ab870407178b93/xxhash-3.5.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+    },
+    {
+      "bytes": 3249276,
+      "path": "containers/cache/plm-interact-wheels/biopython-1.85-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+      "sha256": "e54e495239e623660ad367498c2f7a1a294b1997ba603f2ceafb36fd18f0eba6",
+      "url": "https://files.pythonhosted.org/packages/69/0a/9a8a38eff03c4607b9cec8d0e08c76b346b1cee1f77bc6d00efebfc7ec83/biopython-1.85-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl"
+    },
+    {
+      "bytes": 294914,
+      "path": "containers/cache/plm-interact-wheels/seaborn-0.13.2-py3-none-any.whl",
+      "sha256": "636f8336facf092165e27924f223d3c62ca560b1f2bb5dff7ab7fad265361987",
+      "url": "https://files.pythonhosted.org/packages/83/11/00d3c3dfc25ad54e731d91449895a79e4bf2384dc3ac01809010ba88f6d5/seaborn-0.13.2-py3-none-any.whl"
+    },
+    {
+      "bytes": 12695,
+      "path": "plm_interact/upstream/README.md",
+      "sha256": "51be469ab50c0bbcdad00105eb4424e877cd91a77f0ea22cb5aa78d3db555652",
+      "url": "https://raw.githubusercontent.com/liudan111/PLM-interact/ab2ae6ae1aa81accf4c1f7f6f341164baf97809a/README.md"
+    },
+    {
+      "bytes": 1064,
+      "path": "plm_interact/upstream/LICENSE",
+      "sha256": "ced9f398ccef4f3b4db42ae92a57787c06e9bf96158999c2e25cb3b95c17115c",
+      "url": "https://raw.githubusercontent.com/liudan111/PLM-interact/ab2ae6ae1aa81accf4c1f7f6f341164baf97809a/LICENSE"
+    },
+    {
+      "bytes": 1351,
+      "path": "plm_interact/upstream/pyproject.toml",
+      "sha256": "3fd5e3f60a38fc7e928438d9ccb4a1cb8387875dfc9056fb954a71b2322ef4e8",
+      "url": "https://raw.githubusercontent.com/liudan111/PLM-interact/ab2ae6ae1aa81accf4c1f7f6f341164baf97809a/pyproject.toml"
+    },
+    {
+      "bytes": 20534,
+      "path": "plm_interact/upstream/PLMinteract/train_mlm.py",
+      "sha256": "5ae68c4acb324824e7dbeb1e84198919f1da73d73bc70f965a140612adb5a917",
+      "url": "https://raw.githubusercontent.com/liudan111/PLM-interact/ab2ae6ae1aa81accf4c1f7f6f341164baf97809a/PLMinteract/train_mlm.py"
+    },
+    {
+      "bytes": 6839,
+      "path": "plm_interact/upstream/PLMinteract/inference/inference_PPI_singleGPU.py",
+      "sha256": "1820c69e64d18b82113cd39ecb82b604f303db58c9b65347450474ecc1259622",
+      "url": "https://raw.githubusercontent.com/liudan111/PLM-interact/ab2ae6ae1aa81accf4c1f7f6f341164baf97809a/PLMinteract/inference/inference_PPI_singleGPU.py"
+    },
+    {
+      "bytes": 724,
+      "path": "plm_interact/assets/esm2_650m/config.json",
+      "sha256": "539095c22efc52a09d6147074ba4ca119f76a890df5901213b2b55f7d2f96b2b",
+      "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/config.json"
+    },
+    {
+      "bytes": 125,
+      "path": "plm_interact/assets/esm2_650m/special_tokens_map.json",
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+      "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/special_tokens_map.json"
+    },
+    {
+      "bytes": 95,
+      "path": "plm_interact/assets/esm2_650m/tokenizer_config.json",
+      "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad",
+      "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/tokenizer_config.json"
+    },
+    {
+      "bytes": 93,
+      "path": "plm_interact/assets/esm2_650m/vocab.txt",
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03",
+      "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/vocab.txt"
+    },
+    {
+      "bytes": 3868,
+      "path": "plm_interact/assets/humanV11/README.md",
+      "sha256": "2cc70567849f0b8503f84ebf64da4d5392761acd9ae22fbae4d7d786420e25b8",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-humanV11/resolve/e86e392dec13dd0c23252c94947b04a7a9821b0e/README.md"
+    },
+    {
+      "bytes": 139,
+      "path": "plm_interact/assets/humanV11/config.json",
+      "sha256": "bf6b7d6724bb8dfa37d55ea05aedf234d42d1f412e3bf5a046ebeb1e28da9b1f",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-humanV11/resolve/e86e392dec13dd0c23252c94947b04a7a9821b0e/config.json"
+    },
+    {
+      "bytes": 125,
+      "path": "plm_interact/assets/humanV11/special_tokens_map.json",
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-humanV11/resolve/e86e392dec13dd0c23252c94947b04a7a9821b0e/special_tokens_map.json"
+    },
+    {
+      "bytes": 1157,
+      "path": "plm_interact/assets/humanV11/tokenizer_config.json",
+      "sha256": "0318865d1afb7f445e54e14627aa897982d106af25a00ddf5cf8a8288951ada9",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-humanV11/resolve/e86e392dec13dd0c23252c94947b04a7a9821b0e/tokenizer_config.json"
+    },
+    {
+      "bytes": 93,
+      "path": "plm_interact/assets/humanV11/vocab.txt",
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-humanV11/resolve/e86e392dec13dd0c23252c94947b04a7a9821b0e/vocab.txt"
+    },
+    {
+      "bytes": 2609670405,
+      "path": "plm_interact/assets/humanV11/pytorch_model.bin",
+      "sha256": "68c50e1dc84ee3cb6c08a7c83eefb382a29a3c1237fd577986854f746c63d665",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-humanV11/resolve/e86e392dec13dd0c23252c94947b04a7a9821b0e/pytorch_model.bin?download=true"
+    }
+  ],
+  "model": "danliu1226/PLM-interact-650M-humanV11",
+  "packages": {
+    "PLMinteract": "0.1.1",
+    "biopython": "1.85",
+    "datasets": "2.20.0",
+    "dill": "0.3.8",
+    "fsspec": "2024.5.0",
+    "multiprocess": "0.70.16",
+    "pyarrow-hotfix": "0.7",
+    "seaborn": "0.13.2",
+    "sentence-transformers": "2.7.0",
+    "tokenizers": "0.19.1",
+    "transformers": "4.40.1",
+    "xxhash": "3.5.0"
+  },
+  "retraining": false,
+  "revision": "e86e392dec13dd0c23252c94947b04a7a9821b0e",
+  "test_pairs_read": false,
+  "test_truth_read": false,
+  "upstream_commit": "ab2ae6ae1aa81accf4c1f7f6f341164baf97809a"
+}

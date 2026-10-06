@@ -1,0 +1,8 @@
+{
+  "eligible_sequence_ids": 15908,
+  "eligible_distinct_sequences": 15713,
+  "eligible_positive_endpoint_sequences_before_clustering": 13993,
+  "eligible_sequences_absent_from_positive_candidates_before_clustering": 1720,
+  "residue_symbols": "ACDEFGHIKLMNPQRSTUVWXY",
+  "note": "Before test protection, identical-sequence pair removal, or cluster-pair reduction."
+}

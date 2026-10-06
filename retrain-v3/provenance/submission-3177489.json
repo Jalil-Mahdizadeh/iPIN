@@ -1,0 +1,36 @@
+{
+  "time_utc": "2026-09-30T11:13:54.040227+00:00",
+  "dry_run": false,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation",
+  "runs": [
+    "clean-cls-linear-lr2e-5-fold0-seed2",
+    "clean-cls-linear-lr2e-5-fold1-seed2",
+    "clean-cls-linear-lr2e-5-fold2-seed2",
+    "clean-cls-linear-lr5e-6-fold0-seed2",
+    "clean-cls-linear-lr5e-6-fold1-seed2",
+    "clean-cls-linear-lr5e-6-fold2-seed2"
+  ],
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-5%6",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation/slurm/train.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation"
+  ],
+  "shell_command": "sbatch --parsable --array=0-5%6 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation",
+  "gpus_per_run": 4,
+  "maximum_concurrent_runs": 6,
+  "launcher_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation/code/launch.py",
+  "launcher_sha256": "6ad21826aa498e9294169013e540aabff5a9c2763736fbb2b94c5f52b8c6279e",
+  "production_jobs_submitted_by_this_call": 6,
+  "qualified": true,
+  "maximum_total_gpus": 24,
+  "user_authorization": "Submit all six v3 runs at once; current user request.",
+  "verified_source_plan": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/provenance/verified-launch-plan-20260930T111256Z.json",
+  "verified_source_plan_sha256": "635df593d4fcf64cba933c4994d3d484cddb52ea52a23917c5859aa892c63aa5",
+  "release_manifest_sha256": "65d70ae4861c8ff247bcbf6d7f77e37b1582e66d3b791760e6ac6d306b292dc2",
+  "scheduling_override": "Raise array concurrency from the prepared launcher maximum of four to six; execute the same verified frozen batch script and six configurations.",
+  "slurm_job_id": "3177489",
+  "submitted_utc": "2026-09-30T11:13:54.060022+00:00",
+  "submission_stderr": ""
+}

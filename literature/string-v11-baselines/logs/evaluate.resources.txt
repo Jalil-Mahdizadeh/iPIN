@@ -1,0 +1,23 @@
+	Command being timed: "bash literature/V11-baselines/scripts/container.sh python scripts/evaluate.py"
+	User time (seconds): 85.20
+	System time (seconds): 1.51
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:26.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 331776
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1442
+	Minor (reclaiming a frame) page faults: 13234
+	Voluntary context switches: 25417
+	Involuntary context switches: 2057
+	Swaps: 0
+	File system inputs: 40320
+	File system outputs: 69248
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 65536
+	Exit status: 0

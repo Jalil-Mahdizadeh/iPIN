@@ -1,0 +1,206 @@
+[
+  {
+    "sheet": "Figure2",
+    "xml": "xl/worksheets/sheet1.xml",
+    "dimension": "A1:H31",
+    "xml_bytes": 5732
+  },
+  {
+    "sheet": "Figure2b_1",
+    "xml": "xl/worksheets/sheet2.xml",
+    "dimension": "A1:T55001",
+    "xml_bytes": 38466039
+  },
+  {
+    "sheet": "Figure2b_2",
+    "xml": "xl/worksheets/sheet3.xml",
+    "dimension": "A1:T55001",
+    "xml_bytes": 37078644
+  },
+  {
+    "sheet": "Figure2b_3",
+    "xml": "xl/worksheets/sheet4.xml",
+    "dimension": "A1:T55001",
+    "xml_bytes": 37568131
+  },
+  {
+    "sheet": "Figure2b_4",
+    "xml": "xl/worksheets/sheet5.xml",
+    "dimension": "A1:T55001",
+    "xml_bytes": 36958681
+  },
+  {
+    "sheet": "Figure2b_5",
+    "xml": "xl/worksheets/sheet6.xml",
+    "dimension": "A1:T55001",
+    "xml_bytes": 37262750
+  },
+  {
+    "sheet": "Figure3",
+    "xml": "xl/worksheets/sheet7.xml",
+    "dimension": "A1:I8",
+    "xml_bytes": 3379
+  },
+  {
+    "sheet": "Figure4",
+    "xml": "xl/worksheets/sheet8.xml",
+    "dimension": "A1:F12",
+    "xml_bytes": 2906
+  },
+  {
+    "sheet": "Figure4b_1",
+    "xml": "xl/worksheets/sheet9.xml",
+    "dimension": "A1:D52049",
+    "xml_bytes": 10124412
+  },
+  {
+    "sheet": "Figure4b_2",
+    "xml": "xl/worksheets/sheet10.xml",
+    "dimension": "A1:D52049",
+    "xml_bytes": 10124281
+  },
+  {
+    "sheet": "Figure5",
+    "xml": "xl/worksheets/sheet11.xml",
+    "dimension": "A1:R599",
+    "xml_bytes": 414367
+  },
+  {
+    "sheet": "Figure6",
+    "xml": "xl/worksheets/sheet12.xml",
+    "dimension": "A1:P5",
+    "xml_bytes": 2841
+  },
+  {
+    "sheet": "Figure7",
+    "xml": "xl/worksheets/sheet13.xml",
+    "dimension": "A1:I246223",
+    "xml_bytes": 70132893
+  },
+  {
+    "sheet": "Supplemtrary Figure1b",
+    "xml": "xl/worksheets/sheet14.xml",
+    "dimension": "A1:H26",
+    "xml_bytes": 10401
+  },
+  {
+    "sheet": "Supplemtrary Figure1c",
+    "xml": "xl/worksheets/sheet15.xml",
+    "dimension": "A1:H26",
+    "xml_bytes": 10480
+  },
+  {
+    "sheet": "Supplemtrary Figure2",
+    "xml": "xl/worksheets/sheet16.xml",
+    "dimension": "A1:I29",
+    "xml_bytes": 10348
+  },
+  {
+    "sheet": "Supplemtrary Figure3",
+    "xml": "xl/worksheets/sheet17.xml",
+    "dimension": "A1:B6",
+    "xml_bytes": 1783
+  },
+  {
+    "sheet": "Supplemtrary Figure4",
+    "xml": "xl/worksheets/sheet18.xml",
+    "dimension": "A1:I8",
+    "xml_bytes": 3251
+  },
+  {
+    "sheet": "Supplemtrary Figure5 ",
+    "xml": "xl/worksheets/sheet19.xml",
+    "dimension": "A1:C11",
+    "xml_bytes": 2832
+  },
+  {
+    "sheet": "Supplemtrary Figure6_Mouse",
+    "xml": "xl/worksheets/sheet20.xml",
+    "dimension": "A1:D55001",
+    "xml_bytes": 11316748
+  },
+  {
+    "sheet": "Supplemtrary Figure6_Fly",
+    "xml": "xl/worksheets/sheet21.xml",
+    "dimension": "A1:D55001",
+    "xml_bytes": 11299160
+  },
+  {
+    "sheet": "Supplemtrary Figure6_worm",
+    "xml": "xl/worksheets/sheet22.xml",
+    "dimension": "A1:D55001",
+    "xml_bytes": 11300393
+  },
+  {
+    "sheet": "Supplemtrary Figure6_yeast",
+    "xml": "xl/worksheets/sheet23.xml",
+    "dimension": "A1:D55001",
+    "xml_bytes": 11273008
+  },
+  {
+    "sheet": "Supplemtrary Figure6_ecoli",
+    "xml": "xl/worksheets/sheet24.xml",
+    "dimension": "A1:M22001",
+    "xml_bytes": 4461943
+  },
+  {
+    "sheet": "Supplemtrary Figure7",
+    "xml": "xl/worksheets/sheet25.xml",
+    "dimension": "A1:I66",
+    "xml_bytes": 14853
+  },
+  {
+    "sheet": "Supplemtrary Figure8",
+    "xml": "xl/worksheets/sheet26.xml",
+    "dimension": "A1:P5",
+    "xml_bytes": 2841
+  },
+  {
+    "sheet": "Supplemtrary Figure9",
+    "xml": "xl/worksheets/sheet27.xml",
+    "dimension": "A1:R6980",
+    "xml_bytes": 4581472
+  },
+  {
+    "sheet": "Supplemtrary Figure10_train",
+    "xml": "xl/worksheets/sheet28.xml",
+    "dimension": "A1:D41",
+    "xml_bytes": 8895
+  },
+  {
+    "sheet": "Supplemtrary Figure10_val",
+    "xml": "xl/worksheets/sheet29.xml",
+    "dimension": "A1:D41",
+    "xml_bytes": 8874
+  },
+  {
+    "sheet": "Supplemtrary Figure10_test",
+    "xml": "xl/worksheets/sheet30.xml",
+    "dimension": "A1:D41",
+    "xml_bytes": 8877
+  },
+  {
+    "sheet": "Supplementary Table 1",
+    "xml": "xl/worksheets/sheet31.xml",
+    "dimension": "A1:C6",
+    "xml_bytes": 2154
+  },
+  {
+    "sheet": "Supplementary Table 2",
+    "xml": "xl/worksheets/sheet32.xml",
+    "dimension": "A1:E7",
+    "xml_bytes": 2774
+  },
+  {
+    "sheet": "Supplementary Table 3",
+    "xml": "xl/worksheets/sheet33.xml",
+    "dimension": "A1:F6",
+    "xml_bytes": 2732
+  },
+  {
+    "sheet": "Supplementary Table 4",
+    "xml": "xl/worksheets/sheet34.xml",
+    "dimension": "A1:E10",
+    "xml_bytes": 4423
+  }
+]

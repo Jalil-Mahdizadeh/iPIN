@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-bernett",
+    "test": "mouse",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "d5e32b5a0d0c522f1d49cd907116bd64b5d8a2bd8677164d7a8899469d522e59",
+    "scores": "47b34b0600f98452b9c16c1f1356eb1bade1aecbfa876291bf856e45333ed201",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/mouse-xpair-bernett.npz",
+    "bytes": 14944,
+    "sha256": "fb943e07d4f45c9b5c2778b74ebe7d7cd6d9ad8e2e7f1927215819ab4e83bc8b"
+  }
+}

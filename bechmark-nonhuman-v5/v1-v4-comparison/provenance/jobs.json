@@ -1,0 +1,32 @@
+[
+  {
+    "job_id": "3385727",
+    "model": "v2-capped",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--job-name=nhv5-v2-capped",
+      "bechmark-nonhuman-v5/slurm/historical.sbatch",
+      "v2-capped"
+    ],
+    "at_utc": "2026-10-05T14:01:44.440208+00:00",
+    "pending_time_limit_adjustment": "00:20:00",
+    "reason": "Production qualification is already complete; same 238025-pair, four-GPU BF16 workload completed in under 15 minutes for native Bernett and v5. A 20-minute backfill window reduces queue delay; chunks remain resumable.",
+    "previous_pending_time_limit": "00:30:00"
+  },
+  {
+    "job_id": "3385735",
+    "model": "v2-clean-bce",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--job-name=nhv5-v2-clean-bce",
+      "bechmark-nonhuman-v5/slurm/historical.sbatch",
+      "v2-clean-bce"
+    ],
+    "at_utc": "2026-10-05T14:02:39.520824+00:00",
+    "pending_time_limit_adjustment": "00:20:00",
+    "reason": "Production qualification is already complete; same 238025-pair, four-GPU BF16 workload completed in under 15 minutes for native Bernett and v5. A 20-minute backfill window reduces queue delay; chunks remain resumable.",
+    "previous_pending_time_limit": "00:30:00"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-bernett",
+    "test": "yeast",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "12bd80ca34e8dcbbc42c64c69bd597d0e46449eca7c67ce37ae6e25204772db2",
+    "scores": "f165b061a7e4bb9683aa8849f1dc022616f0ea3d18a1d967eecb9a8dbb7b1623",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/yeast-xpair-bernett.npz",
+    "bytes": 14948,
+    "sha256": "e1a61edd8fa5baf0a2d9c00da4bfc35c6fe0db38fb506cdfb3ea7933411d72c2"
+  }
+}

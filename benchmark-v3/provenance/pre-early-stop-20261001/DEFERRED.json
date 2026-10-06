@@ -1,0 +1,6 @@
+{
+  "benchmark_deferred": true,
+  "automatic_handoff_disabled": true,
+  "production_test_inference_started": false,
+  "reason": "User correction on 2026-10-01: retraining only now; benchmark later separately"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "split": "train",
+    "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/train/human.ppi.qrels.seq.train.csv",
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.train.csv",
+    "sha256": "86c5134846df36df17455500154eab6049cd07250c79d6d263afcb5dcb6bf5fd",
+    "bytes": 318980144
+  },
+  {
+    "split": "val",
+    "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/val/human.ppi.qrels.seq.test.csv",
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.test.csv",
+    "sha256": "abb126f34f617fdc4c956e1f056df5cb0921ab3c12d6f0d87948411d34a7b9f3",
+    "bytes": 39851844
+  }
+]

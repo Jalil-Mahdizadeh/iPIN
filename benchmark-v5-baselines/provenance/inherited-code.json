@@ -1,0 +1,45 @@
+{
+  "source_study_current_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v11-baselines",
+  "source_study_original_name": "literature/V11-baselines",
+  "files": [
+    {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v11-baselines/scripts/common.py",
+      "source_sha256": "e13147c10f3ad3f25607e11e23423b6ec0f27bfb9ea87006a132c59d54fe85f5",
+      "target": "scripts/common.py",
+      "target_sha256": "f904374da2b9a8135ea98cf9f7bf39865f6a0a5d9c9ebea973237c8068034de1"
+    },
+    {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v11-baselines/scripts/fit_predict.py",
+      "source_sha256": "65fda9d0b49092868af577942733087a057c767e7960cec3192ba97496bb4f76",
+      "target": "scripts/fit_predict.py",
+      "target_sha256": "5b6579ae1519077194e1d6dd73be4db843bfb20e487250d2ae70fc3f4b45b024"
+    },
+    {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v11-baselines/scripts/search.py",
+      "source_sha256": "0aea8930a8f81cb11d54e273a205e9fbef292516395e36c3a76866727a3f5903",
+      "target": "scripts/search.py",
+      "target_sha256": "ec57c83e596996a525aaa5dc971d1babeb6c848d617cac4d1afffe7fc85a8ae2"
+    },
+    {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v11-baselines/scripts/container.sh",
+      "source_sha256": "a025a3ce08bd7d30a2d9b7f179148328b4aee806c10ba51db6a6e3e0cbc8f5e6",
+      "target": "scripts/container.sh",
+      "target_sha256": "e335b45e460a984cf340e024408ca809600e93b9c94d2a1f2d7f639f5556ba56"
+    },
+    {
+      "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v11-baselines/scripts/finalize.py",
+      "source_sha256": "700f896041352a798a6fd311db33b24959d8216de7547c7588bd3b847ef0eee2",
+      "target": "scripts/finalize.py",
+      "target_sha256": "700f896041352a798a6fd311db33b24959d8216de7547c7588bd3b847ef0eee2"
+    }
+  ],
+  "evaluation_functions": {
+    "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v11-baselines/scripts/evaluate.py",
+    "source_sha256": "ebde209e0f22948843af99b0fe93ebec1beead6a0fb8b70f0e5f49250dbff562",
+    "unchanged_functions": [
+      "write_csv",
+      "metrics",
+      "bootstrap"
+    ]
+  }
+}

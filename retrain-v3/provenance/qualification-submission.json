@@ -1,0 +1,9 @@
+{
+  "time_utc": "2026-09-30T10:47:03.181960+00:00",
+  "job_id": "3176832",
+  "purpose": "bounded disposable qualification only",
+  "gpus": 4,
+  "walltime_limit_minutes": 30,
+  "production_submissions": 0,
+  "script": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/slurm/qualify-ddp.sbatch"
+}

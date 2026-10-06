@@ -1,0 +1,8 @@
+{
+  "reason": "Keep all known historical positive evidence out of new negative candidates, including retired original train and validation positives.",
+  "initial_absent_historical_positive_families": 4219,
+  "original_test_changed": false,
+  "positive_pool_or_homology_settings_changed": false,
+  "candidate_seed_or_objective_changed": false,
+  "partial_ilp_restart": true
+}

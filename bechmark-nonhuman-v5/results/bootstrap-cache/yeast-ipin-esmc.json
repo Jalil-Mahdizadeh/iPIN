@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "ipin-esmc",
+    "test": "yeast",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "12bd80ca34e8dcbbc42c64c69bd597d0e46449eca7c67ce37ae6e25204772db2",
+    "scores": "1b7dcd7d31c7a1e1fe86244a877de6ce346e7377577a9253cabfef26940bf1aa",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/yeast-ipin-esmc.npz",
+    "bytes": 15073,
+    "sha256": "51c4900e451283f274478f324a5d1e63b51b3d771e6072c21d404ecf4b973a0f"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "raw_human_fasta_ids": 70529,
+  "eligible_50_800_ids": 70529,
+  "eligible_50_800_unique_sequences": 15631,
+  "train_dev_ids": 15816,
+  "train_dev_positive_ids": 7696,
+  "used_ids_in_fasta": 15816,
+  "eligible_ids_not_used": 54713,
+  "used_ids_not_eligible": 0
+}

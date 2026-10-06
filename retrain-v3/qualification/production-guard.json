@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "unfrozen_production_rejected_before_creating_output": true,
+  "oversized_qualification_rejected": true,
+  "production_directories_created": 0,
+  "source_sha256": {
+    "scripts/train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+    "scripts/release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280",
+    "scripts/qualify_production_guard.py": "3666a4409c0b570fd317c80fe38d94b34f2ea3c837c5a2a358518d9dcbd2d273"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "scope": "Real shell, OS signal, and window monitor; mocked local worker/scheduler, no real scheduler calls.",
+  "scenarios": {
+    "budget": 0,
+    "failure": 42,
+    "requeue": 0,
+    "manual-stop": 0,
+    "missed-window": 80,
+    "monitor-error": 1,
+    "manual-before-validation": 0
+  },
+  "default_six_way_dry_run": true,
+  "duplicate_campaign_rejected": true,
+  "source_sha256": {
+    "scripts/window_stop.py": "f74742bdd9f329170083bcf6af207a99949034383b71bf3c660c94a5b69698aa",
+    "scripts/launch_readout.py": "7377896d737573ceeb6ca0afb37ecaeba3f8c0851a220ec156dc108647d2ecad",
+    "slurm/readout.sbatch": "235a3fa5f981cd4e0f0e3e9f0face5dd45b8af8907e29223c0a8b0f324934d67",
+    "scripts/qualify_readout_wrapper_v2.py": "8bf59ee575f8d082e09203031221d73bc0fae7f2984d554842efe6e3a3d79d51"
+  }
+}

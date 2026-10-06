@@ -1,0 +1,59 @@
+{
+  "_id": "688a34efaf704b904c03565e",
+  "id": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+  "private": false,
+  "tags": [
+    "pytorch",
+    "dataset:danliu1226/Bernett_benchmarking",
+    "license:mit",
+    "region:us"
+  ],
+  "downloads": 0,
+  "likes": 0,
+  "modelId": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+  "author": "danliu1226",
+  "sha": "d995319a6e53510bfbb4eff6ab0292fedf2ec4db",
+  "lastModified": "2025-07-30T20:33:58.000Z",
+  "gated": false,
+  "disabled": false,
+  "mask_token": "<mask>",
+  "model-index": null,
+  "config": {
+    "tokenizer_config": {
+      "cls_token": "<cls>",
+      "eos_token": "<eos>",
+      "mask_token": "<mask>",
+      "pad_token": "<pad>",
+      "unk_token": "<unk>"
+    }
+  },
+  "cardData": {
+    "license": "mit",
+    "datasets": [
+      "danliu1226/Bernett_benchmarking"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "pytorch_model.bin"
+    },
+    {
+      "rfilename": "special_tokens_map.json"
+    },
+    {
+      "rfilename": "tokenizer_config.json"
+    },
+    {
+      "rfilename": "vocab.txt"
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2025-07-30T15:06:23.000Z",
+  "usedStorage": 5219336714
+}

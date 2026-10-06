@@ -1,0 +1,38 @@
+{
+  "model": {
+    "checkpoint": "human",
+    "path": "/opt/plm_interact/assets/humanV11/pytorch_model.bin",
+    "sha256": "68c50e1dc84ee3cb6c08a7c83eefb382a29a3c1237fd577986854f746c63d665",
+    "strict_load": true,
+    "all_loaded_tensors_equal": true,
+    "state_keys": 575,
+    "removed_prefix": "",
+    "parameters": 652357815,
+    "requires_grad": false,
+    "precision": "float32",
+    "amp": false,
+    "tf32": false,
+    "python": "3.12.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "transformers": "4.40.1",
+    "cuda": "13.0",
+    "device": "NVIDIA GH200 120GB",
+    "load_seconds": 14.933300594013417
+  },
+  "upstream_class_bitwise_equal": true,
+  "pair_tokenization_equal": true,
+  "test_rows": [
+    0,
+    1,
+    2,
+    17,
+    150,
+    21292
+  ],
+  "max_singleton_logit_delta": 5.7220458984375e-06,
+  "max_fixed_padding_logit_delta": 0.0,
+  "pilot_pairs": 512,
+  "pilot_seconds": 18.45396900002379,
+  "pairs_per_second": 27.74470901080087,
+  "peak_gpu_bytes": 17869149696
+}

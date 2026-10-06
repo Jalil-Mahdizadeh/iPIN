@@ -1,0 +1,31 @@
+{
+  "time_utc": "2026-09-30T19:40:21.512679+00:00",
+  "stage": "readout",
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/readout-wrapper-v2-fixture/release",
+  "runs": [
+    "unused-0",
+    "unused-1",
+    "unused-2",
+    "unused-3",
+    "unused-4",
+    "unused-5"
+  ],
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-5%6",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/readout-wrapper-v2-fixture/release/slurm/train.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/readout-wrapper-v2-fixture/release"
+  ],
+  "shell_command": "sbatch --parsable --array=0-5%6 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/readout-wrapper-v2-fixture/release/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/qualification/readout-wrapper-v2-fixture/release",
+  "dry_run": true,
+  "qualified": true,
+  "gpus_per_run": 4,
+  "maximum_concurrent_runs": 6,
+  "screen_stop_update": 5000,
+  "optimizer_schedule_updates": 6000,
+  "launcher_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/scripts/launch_readout.py",
+  "launcher_sha256": "7377896d737573ceeb6ca0afb37ecaeba3f8c0851a220ec156dc108647d2ecad",
+  "production_jobs_submitted_by_this_call": 0,
+  "authorization": "User authorized ending the LR screen and moving to the next step; prior six-way concurrency preference retained."
+}

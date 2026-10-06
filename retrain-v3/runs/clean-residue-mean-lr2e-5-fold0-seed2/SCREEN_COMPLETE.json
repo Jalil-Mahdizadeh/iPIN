@@ -1,0 +1,14 @@
+{
+  "time_utc": "2026-10-01T03:16:39.655636+00:00",
+  "screen_completed": true,
+  "comparison_window_end": 5000,
+  "actual_stopped_update": 5001,
+  "declared_schedule_updates": 6000,
+  "fingerprint": "e2a7ad12a3c862d6e70d42993a603da0aa85f2232a93495eacc9168c6d6eb0f9",
+  "checkpoint_committed": true,
+  "completed_full_schedule": false,
+  "best_update": 3000,
+  "best_ap": 0.6232240259132884,
+  "best_checkpoint_sha256": "720243bfa4e625ce28d528acabe22795ad7b5f8d62429f0a5029a9d64c3208c4",
+  "latest_checkpoint_sha256": "483a8a2bb1d7f9548ca544f1adb12c93b3e4261b9d9d419417c52df273cef431"
+}

@@ -1,0 +1,518 @@
+[
+  {
+    "path": "Source Data/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "header_offset": 0
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "header_offset": 74
+  },
+  {
+    "path": "Source Data/Supplementary Figure4_AF3_protein-protein structures/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "header_offset": 170
+  },
+  {
+    "path": "Source Data/Figure7_human_virus PPI structures/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "header_offset": 297
+  },
+  {
+    "path": "Source Data/.DS_Store",
+    "bytes": 6148,
+    "compressed_bytes": 517,
+    "header_offset": 406
+  },
+  {
+    "path": "__MACOSX/Source Data/._.DS_Store",
+    "bytes": 120,
+    "compressed_bytes": 53,
+    "header_offset": 1022
+  },
+  {
+    "path": "Source Data/Supplementary Figure8_AF3_mutation_protein-protein structures/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "header_offset": 1185
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "header_offset": 1321
+  },
+  {
+    "path": "Source Data/Figure6_Chai-1_mutation_protein-protein structures/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "header_offset": 1417
+  },
+  {
+    "path": "Source Data/Figure3_Chai-1_protein-protein structures/",
+    "bytes": 0,
+    "compressed_bytes": 0,
+    "header_offset": 1542
+  },
+  {
+    "path": "Source Data/Source Data.xlsx",
+    "bytes": 69133853,
+    "compressed_bytes": 68891519,
+    "header_offset": 1658
+  },
+  {
+    "path": "__MACOSX/Source Data/._Source Data.xlsx",
+    "bytes": 326,
+    "compressed_bytes": 173,
+    "header_offset": 68893283
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/fly_identity_plminteract.csv",
+    "bytes": 45714265,
+    "compressed_bytes": 26422544,
+    "header_offset": 68893573
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._fly_identity_plminteract.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 95316257
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/worm_identity_plminteract.csv",
+    "bytes": 41813706,
+    "compressed_bytes": 24727864,
+    "header_offset": 95316460
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._worm_identity_plminteract.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 120044465
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/ecoli_identity_plminteract.csv",
+    "bytes": 13800306,
+    "compressed_bytes": 7788580,
+    "header_offset": 120044669
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._ecoli_identity_plminteract.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 127833391
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/fly_identity_TUnA.csv",
+    "bytes": 45164323,
+    "compressed_bytes": 26018477,
+    "header_offset": 127833596
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._fly_identity_TUnA.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 153852206
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/mouse_identity_plminteract.csv",
+    "bytes": 47280894,
+    "compressed_bytes": 26918578,
+    "header_offset": 153852402
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._mouse_identity_plminteract.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 180771122
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/worm_identity_TUnA.csv",
+    "bytes": 41262276,
+    "compressed_bytes": 24347740,
+    "header_offset": 180771327
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._worm_identity_TUnA.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 205119201
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/mouse_identity_TUnA.csv",
+    "bytes": 46744692,
+    "compressed_bytes": 26539166,
+    "header_offset": 205119398
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._mouse_identity_TUnA.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 231658699
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/ecoli_identity_TUnA.csv",
+    "bytes": 13600317,
+    "compressed_bytes": 7664620,
+    "header_offset": 231658897
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._ecoli_identity_TUnA.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 239323652
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/yeast_identity_TUnA.csv",
+    "bytes": 40130792,
+    "compressed_bytes": 23173097,
+    "header_offset": 239323850
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._yeast_identity_TUnA.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 262497082
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/yeast_identity_plminteract.csv",
+    "bytes": 40689995,
+    "compressed_bytes": 23621284,
+    "header_offset": 262497280
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure7/._yeast_identity_plminteract.csv",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 286118706
+  },
+  {
+    "path": "Source Data/Supplementary Figure4_AF3_protein-protein structures/E.coli.cif",
+    "bytes": 303186,
+    "compressed_bytes": 80787,
+    "header_offset": 286118911
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure4_AF3_protein-protein structures/._E.coli.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 286199851
+  },
+  {
+    "path": "Source Data/Supplementary Figure4_AF3_protein-protein structures/Mouse.cif",
+    "bytes": 319156,
+    "compressed_bytes": 85347,
+    "header_offset": 286200067
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure4_AF3_protein-protein structures/._Mouse.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 286285566
+  },
+  {
+    "path": "Source Data/Supplementary Figure4_AF3_protein-protein structures/Fly.cif",
+    "bytes": 197516,
+    "compressed_bytes": 53444,
+    "header_offset": 286285781
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure4_AF3_protein-protein structures/._Fly.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 286339375
+  },
+  {
+    "path": "Source Data/Supplementary Figure4_AF3_protein-protein structures/Worm.cif",
+    "bytes": 625054,
+    "compressed_bytes": 165031,
+    "header_offset": 286339588
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure4_AF3_protein-protein structures/._Worm.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 286504770
+  },
+  {
+    "path": "Source Data/Supplementary Figure4_AF3_protein-protein structures/Yeast.cif",
+    "bytes": 286970,
+    "compressed_bytes": 77481,
+    "header_offset": 286504984
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure4_AF3_protein-protein structures/._Yeast.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 286582617
+  },
+  {
+    "path": "Source Data/Figure7_human_virus PPI structures/P06400-P03070.pdb",
+    "bytes": 293949,
+    "compressed_bytes": 74172,
+    "header_offset": 286582832
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure7_human_virus PPI structures/._P06400-P03070.pdb",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 286657146
+  },
+  {
+    "path": "Source Data/Figure7_human_virus PPI structures/P52799-Q9IH62.pdb",
+    "bytes": 365229,
+    "compressed_bytes": 92197,
+    "header_offset": 286657351
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure7_human_virus PPI structures/._P52799-Q9IH62.pdb",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 286749690
+  },
+  {
+    "path": "Source Data/Figure7_human_virus PPI structures/Q92956-P57083.pdb",
+    "bytes": 225585,
+    "compressed_bytes": 56945,
+    "header_offset": 286749895
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure7_human_virus PPI structures/._Q92956-P57083.pdb",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 286806982
+  },
+  {
+    "path": "Source Data/Supplementary Figure8_AF3_mutation_protein-protein structures/P33993-P33992_mutant_Y600E.cif",
+    "bytes": 947586,
+    "compressed_bytes": 248566,
+    "header_offset": 286807187
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure8_AF3_mutation_protein-protein structures/._P33993-P33992_mutant_Y600E.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 287055935
+  },
+  {
+    "path": "Source Data/Supplementary Figure8_AF3_mutation_protein-protein structures/Q16595-Q9H1K1_wild_N151A.cif",
+    "bytes": 241764,
+    "compressed_bytes": 65196,
+    "header_offset": 287056180
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure8_AF3_mutation_protein-protein structures/._Q16595-Q9H1K1_wild_N151A.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 287121556
+  },
+  {
+    "path": "Source Data/Supplementary Figure8_AF3_mutation_protein-protein structures/Q16595-Q9H1K1_mutant_N151A.cif",
+    "bytes": 241534,
+    "compressed_bytes": 64935,
+    "header_offset": 287121799
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure8_AF3_mutation_protein-protein structures/._Q16595-Q9H1K1_mutant_N151A.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 287186916
+  },
+  {
+    "path": "Source Data/Supplementary Figure8_AF3_mutation_protein-protein structures/P33993-P33992_wild_Y600E.cif",
+    "bytes": 947815,
+    "compressed_bytes": 248739,
+    "header_offset": 287187161
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure8_AF3_mutation_protein-protein structures/._P33993-P33992_wild_Y600E.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 287436080
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/.DS_Store",
+    "bytes": 6148,
+    "compressed_bytes": 213,
+    "header_offset": 287436323
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure2/._.DS_Store",
+    "bytes": 120,
+    "compressed_bytes": 53,
+    "header_offset": 287436657
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/worm_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 3167902,
+    "compressed_bytes": 1264012,
+    "header_offset": 287436842
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure2/._worm_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 244,
+    "compressed_bytes": 151,
+    "header_offset": 288701013
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/ecoli_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 1194058,
+    "compressed_bytes": 517863,
+    "header_offset": 288701334
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure2/._ecoli_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 226,
+    "compressed_bytes": 128,
+    "header_offset": 289219357
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/mouse_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 3183597,
+    "compressed_bytes": 1242401,
+    "header_offset": 289219656
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure2/._mouse_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 226,
+    "compressed_bytes": 128,
+    "header_offset": 290462217
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/yeast_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 3157659,
+    "compressed_bytes": 1272270,
+    "header_offset": 290462516
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure2/._yeast_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 244,
+    "compressed_bytes": 151,
+    "header_offset": 291734946
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/fly_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 3164963,
+    "compressed_bytes": 1259328,
+    "header_offset": 291735268
+  },
+  {
+    "path": "__MACOSX/Source Data/Supplementary Figure2/._fly_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 226,
+    "compressed_bytes": 128,
+    "header_offset": 292994754
+  },
+  {
+    "path": "Source Data/Figure6_Chai-1_mutation_protein-protein structures/P33993-P33992_mutant_Y600E.cif",
+    "bytes": 989644,
+    "compressed_bytes": 268961,
+    "header_offset": 292995051
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure6_Chai-1_mutation_protein-protein structures/._P33993-P33992_mutant_Y600E.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 293264183
+  },
+  {
+    "path": "Source Data/Figure6_Chai-1_mutation_protein-protein structures/Q16595-Q9H1K1_wild_N151A.cif",
+    "bytes": 247156,
+    "compressed_bytes": 69164,
+    "header_offset": 293264417
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure6_Chai-1_mutation_protein-protein structures/._Q16595-Q9H1K1_wild_N151A.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 293333750
+  },
+  {
+    "path": "Source Data/Figure6_Chai-1_mutation_protein-protein structures/Q16595-Q9H1K1_mutant_N151A.cif",
+    "bytes": 246901,
+    "compressed_bytes": 68860,
+    "header_offset": 293333982
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure6_Chai-1_mutation_protein-protein structures/._Q16595-Q9H1K1_mutant_N151A.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 293403013
+  },
+  {
+    "path": "Source Data/Figure6_Chai-1_mutation_protein-protein structures/P33993-P33992_wild_Y600E.cif",
+    "bytes": 988513,
+    "compressed_bytes": 268479,
+    "header_offset": 293403247
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure6_Chai-1_mutation_protein-protein structures/._P33993-P33992_wild_Y600E.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 293671895
+  },
+  {
+    "path": "Source Data/Figure3_Chai-1_protein-protein structures/E.coli.cif",
+    "bytes": 312918,
+    "compressed_bytes": 86519,
+    "header_offset": 293672127
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure3_Chai-1_protein-protein structures/._E.coli.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 293758788
+  },
+  {
+    "path": "Source Data/Figure3_Chai-1_protein-protein structures/Mouse.cif",
+    "bytes": 329003,
+    "compressed_bytes": 90919,
+    "header_offset": 293758993
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure3_Chai-1_protein-protein structures/._Mouse.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 293850053
+  },
+  {
+    "path": "Source Data/Figure3_Chai-1_protein-protein structures/Fly.cif",
+    "bytes": 199283,
+    "compressed_bytes": 56235,
+    "header_offset": 293850257
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure3_Chai-1_protein-protein structures/._Fly.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 293906631
+  },
+  {
+    "path": "Source Data/Figure3_Chai-1_protein-protein structures/Worm.cif",
+    "bytes": 646750,
+    "compressed_bytes": 175739,
+    "header_offset": 293906833
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure3_Chai-1_protein-protein structures/._Worm.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 294082712
+  },
+  {
+    "path": "Source Data/Figure3_Chai-1_protein-protein structures/Yeast.cif",
+    "bytes": 297192,
+    "compressed_bytes": 82436,
+    "header_offset": 294082915
+  },
+  {
+    "path": "__MACOSX/Source Data/Figure3_Chai-1_protein-protein structures/._Yeast.cif",
+    "bytes": 120,
+    "compressed_bytes": 52,
+    "header_offset": 294165492
+  }
+]

@@ -1,0 +1,19 @@
+model,view,logit_threshold,probability_threshold,validation_f1,validation_rows,selection
+native-bernett,ab,-1.78125,0.14414885303274058,0.6724377316575513,59258,maximum validation F1; highest threshold resolves exact ties
+native-bernett,pooled,-1.87890625,0.13251455444044347,0.6718142124611852,59258,maximum validation F1; highest threshold resolves exact ties
+v1-reference,ab,-0.76171875,0.31827322335346725,0.6750142147289312,59258,maximum validation F1; highest threshold resolves exact ties
+v1-reference,pooled,-0.7763671875,0.3151033679588216,0.6711051930758988,59258,maximum validation F1; highest threshold resolves exact ties
+v1-symmetric,ab,-1.9453125,0.12506538251690355,0.6738050900062073,59258,maximum validation F1; highest threshold resolves exact ties
+v1-symmetric,pooled,-1.685546875,0.15636236748299262,0.6694498143909294,59258,maximum validation F1; highest threshold resolves exact ties
+v2-reference,ab,-0.8359375,0.30239108267790193,0.6729741546832492,59258,maximum validation F1; highest threshold resolves exact ties
+v2-reference,pooled,-0.83984375,0.3015676930738543,0.6715702797707902,59258,maximum validation F1; highest threshold resolves exact ties
+v2-capped,ab,-2.265625,0.09401017961657226,0.6700637833929967,59258,maximum validation F1; highest threshold resolves exact ties
+v2-capped,pooled,-2.05859375,0.11318690654016263,0.6711922836263179,59258,maximum validation F1; highest threshold resolves exact ties
+v2-positive10,ab,1.4296875,0.8068526199774353,0.6761804471234734,59258,maximum validation F1; highest threshold resolves exact ties
+v2-positive10,pooled,1.5078125,0.8187367931713698,0.6746955477689839,59258,maximum validation F1; highest threshold resolves exact ties
+v2-clean-bce,ab,-0.9765625,0.27357439102480946,0.6746387888949159,59258,maximum validation F1; highest threshold resolves exact ties
+v2-clean-bce,pooled,-1.078125,0.2538610069692489,0.6735349852479071,59258,maximum validation F1; highest threshold resolves exact ties
+v3-residue-mlp,ab,-1.15625,0.23934934732271163,0.6748021346568528,59258,maximum validation F1; highest threshold resolves exact ties
+v3-residue-mlp,pooled,-1.09765625,0.2501793000910688,0.6742698733069086,59258,maximum validation F1; highest threshold resolves exact ties
+v4-esmc-standard,ab,-1.3203125,0.2107663063197709,0.6780653764191268,59258,maximum validation F1; highest threshold resolves exact ties
+v4-esmc-standard,pooled,-1.359375,0.20434189993684584,0.6771610802008413,59258,maximum validation F1; highest threshold resolves exact ties

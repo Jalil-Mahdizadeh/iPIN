@@ -1,0 +1,329 @@
+{
+  "requested_utc": "2026-09-29T11:46:56.373268+00:00",
+  "authorization": "User: Kill the current two training jobs and submit all four v2 retraining simultaneously.",
+  "maximum_concurrent_v2_runs": 4,
+  "total_requested_v2_gpus": 16,
+  "v1_jobs": [
+    {
+      "name": "reference-seed2",
+      "job_id": "3112402",
+      "before": {
+        "status.json": {
+          "state": {
+            "update": 10050,
+            "epoch": 3,
+            "next_chunk": 2403,
+            "examples_seen": 642996,
+            "best_ap": 0.648935984074678,
+            "best_update": 4000,
+            "total_steps": 12745,
+            "pending_validation": false,
+            "last_validation_update": 10000
+          },
+          "last_committed_update": 10000,
+          "attempt": "20260928T195235-3112402",
+          "seconds_since_launch": 57253.78979494001,
+          "world_size": 4,
+          "phase": "training"
+        },
+        "latest.json": {
+          "file": "update-000010000.pt",
+          "sha256": "fe08eca8ae63f3aa54c02c08d652974475deccdb9c862dcc9a39cb2ab26122bc",
+          "bytes": 7818552779,
+          "update": 10000,
+          "epoch": 3,
+          "next_chunk": 2353,
+          "world_size": 4,
+          "fingerprint": "13cb972a87f5715622752b94712e2c2541d3292eaeb2666bfcaee2e2a1491e2d"
+        },
+        "best.json": {
+          "file": "update-000004000.pt",
+          "sha256": "85d64e2745060b2c917b5c85af0a0e6ec0010391e4350c26a98560592fe3c675",
+          "bytes": 7818552779,
+          "update": 4000,
+          "epoch": 1,
+          "next_chunk": 1451,
+          "world_size": 4,
+          "fingerprint": "13cb972a87f5715622752b94712e2c2541d3292eaeb2666bfcaee2e2a1491e2d"
+        }
+      },
+      "after": {
+        "stopped": {
+          "state": {
+            "update": 10053,
+            "epoch": 3,
+            "next_chunk": 2406,
+            "examples_seen": 643188,
+            "best_ap": 0.648935984074678,
+            "best_update": 4000,
+            "total_steps": 12745,
+            "pending_validation": false,
+            "last_validation_update": 10000
+          },
+          "attempt": "20260928T195235-3112402",
+          "reason": "signal_or_REQUEST_STOP",
+          "checkpoint_committed": true
+        },
+        "latest": {
+          "file": "update-000010053.pt",
+          "sha256": "65a25e31640dba259d5386d052bd5610a3f274d25245f5450a1a3dc4408b1a1a",
+          "bytes": 7818552779,
+          "update": 10053,
+          "epoch": 3,
+          "next_chunk": 2406,
+          "world_size": 4,
+          "fingerprint": "13cb972a87f5715622752b94712e2c2541d3292eaeb2666bfcaee2e2a1491e2d"
+        },
+        "best": {
+          "file": "update-000004000.pt",
+          "sha256": "85d64e2745060b2c917b5c85af0a0e6ec0010391e4350c26a98560592fe3c675",
+          "bytes": 7818552779,
+          "update": 4000,
+          "epoch": 1,
+          "next_chunk": 1451,
+          "world_size": 4,
+          "fingerprint": "13cb972a87f5715622752b94712e2c2541d3292eaeb2666bfcaee2e2a1491e2d"
+        }
+      }
+    },
+    {
+      "name": "symmetric-seed2",
+      "job_id": "3112401",
+      "before": {
+        "status.json": {
+          "state": {
+            "update": 10110,
+            "epoch": 3,
+            "next_chunk": 2463,
+            "examples_seen": 646836,
+            "best_ap": 0.6474107570134193,
+            "best_update": 7000,
+            "total_steps": 12745,
+            "pending_validation": false,
+            "last_validation_update": 10000
+          },
+          "last_committed_update": 10100,
+          "attempt": "20260928T195223-3112401",
+          "seconds_since_launch": 57233.000521527996,
+          "world_size": 4,
+          "phase": "training"
+        },
+        "latest.json": {
+          "file": "update-000010100.pt",
+          "sha256": "465ef2cb8f18fd6cef3636b3b984b34dc28d18a9187e82cc6f68d258b3f8adfe",
+          "bytes": 7818552779,
+          "update": 10100,
+          "epoch": 3,
+          "next_chunk": 2453,
+          "world_size": 4,
+          "fingerprint": "c2563b1fd7b9e188549843483b8daee67496f8765c091aa59e2763d10327610f"
+        },
+        "best.json": {
+          "file": "update-000007000.pt",
+          "sha256": "bb99dbdee7af654d362e4738c1fb9da98ab232cead4eacb52a439c10aeadf7c0",
+          "bytes": 7818552779,
+          "update": 7000,
+          "epoch": 2,
+          "next_chunk": 1902,
+          "world_size": 4,
+          "fingerprint": "c2563b1fd7b9e188549843483b8daee67496f8765c091aa59e2763d10327610f"
+        }
+      },
+      "after": {
+        "stopped": {
+          "state": {
+            "update": 10113,
+            "epoch": 3,
+            "next_chunk": 2466,
+            "examples_seen": 647028,
+            "best_ap": 0.6474107570134193,
+            "best_update": 7000,
+            "total_steps": 12745,
+            "pending_validation": false,
+            "last_validation_update": 10000
+          },
+          "attempt": "20260928T195223-3112401",
+          "reason": "signal_or_REQUEST_STOP",
+          "checkpoint_committed": true
+        },
+        "latest": {
+          "file": "update-000010113.pt",
+          "sha256": "93d2cd754d7febc932afba40f7050617c57f0ac8872f090baa8280a6ef6437cc",
+          "bytes": 7818552779,
+          "update": 10113,
+          "epoch": 3,
+          "next_chunk": 2466,
+          "world_size": 4,
+          "fingerprint": "c2563b1fd7b9e188549843483b8daee67496f8765c091aa59e2763d10327610f"
+        },
+        "best": {
+          "file": "update-000007000.pt",
+          "sha256": "bb99dbdee7af654d362e4738c1fb9da98ab232cead4eacb52a439c10aeadf7c0",
+          "bytes": 7818552779,
+          "update": 7000,
+          "epoch": 2,
+          "next_chunk": 1902,
+          "world_size": 4,
+          "fingerprint": "c2563b1fd7b9e188549843483b8daee67496f8765c091aa59e2763d10327610f"
+        }
+      }
+    }
+  ],
+  "state": "v1_stopped_all_four_v2_training",
+  "v1_stopped_verified_utc": "2026-09-29T11:48:00.162599+00:00",
+  "v1_final_checkpoint_sha256_verified": [
+    "reference-seed2",
+    "symmetric-seed2"
+  ],
+  "v2_submission": {
+    "time_utc": "2026-09-29T11:48:08.965783+00:00",
+    "dry_run": false,
+    "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen",
+    "runs": [
+      "reference-official-seed2",
+      "capped-official-seed2",
+      "positive10-official-seed2",
+      "clean-bce-official-seed2"
+    ],
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--array=0-3%4",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen/slurm/train.sbatch",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen"
+    ],
+    "shell_command": "sbatch --parsable --array=0-3%4 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen",
+    "gpus_per_run": 4,
+    "maximum_concurrent_runs": 4,
+    "launcher_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/scripts/launch.py",
+    "launcher_sha256": "3458072b511d959ce10068548df7aa1119b72bb84d396d2ae487119a2a17e4b7",
+    "production_jobs_submitted_by_this_call": 4,
+    "qualified": true,
+    "slurm_job_id": "3130215"
+  },
+  "v2_array_task_mapping": {
+    "3130215_0": "reference-official-seed2",
+    "3130215_1": "capped-official-seed2",
+    "3130215_2": "positive10-official-seed2",
+    "3130215_3": "clean-bce-official-seed2"
+  },
+  "updated_utc": "2026-09-29T11:49:28.346134+00:00",
+  "startup_health": {
+    "checked_utc": "2026-09-29T11:52:15.470359+00:00",
+    "passed": true,
+    "array_id": "3130215",
+    "concurrent_models": 4,
+    "total_distinct_gpus": 16,
+    "runs": [
+      {
+        "run": "reference-official-seed2",
+        "array_task": "3130215_0",
+        "slurm_job_id": "3130216",
+        "node": "n537",
+        "state": "RUNNING",
+        "world_size": 4,
+        "train_rows": 163085,
+        "validation_rows": 59258,
+        "last_logged_update": 50,
+        "last_update_utc": "2026-09-29T11:51:57.261282+00:00",
+        "last_loss": 8.558228731155396,
+        "initial_checkpoint": {
+          "file": "update-000000000.pt",
+          "sha256": "4ebf197183d21084b77196904debca2887c10bee96ad334b1db7b649eb737dc3",
+          "bytes": 2609731251,
+          "update": 0,
+          "epoch": 0,
+          "next_chunk": 0,
+          "world_size": 4,
+          "fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9",
+          "best_update": null,
+          "best_ap": null
+        },
+        "finite_initial_losses_and_gradients": true,
+        "contract_fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9"
+      },
+      {
+        "run": "capped-official-seed2",
+        "array_task": "3130215_1",
+        "slurm_job_id": "3130217",
+        "node": "n584",
+        "state": "RUNNING",
+        "world_size": 4,
+        "train_rows": 130461,
+        "validation_rows": 59258,
+        "last_logged_update": 80,
+        "last_update_utc": "2026-09-29T11:52:07.252171+00:00",
+        "last_loss": 8.346608638763428,
+        "initial_checkpoint": {
+          "file": "update-000000000.pt",
+          "sha256": "6966a173665817a56f81e2de88123f39bb1f06e50bf0f0bd6c2184df9d229d85",
+          "bytes": 2609731251,
+          "update": 0,
+          "epoch": 0,
+          "next_chunk": 0,
+          "world_size": 4,
+          "fingerprint": "31cde71e5f1db2c99b31c639cdf3f1611dbde2bb663258bab6dc609dd6b9f8b5",
+          "best_update": null,
+          "best_ap": null
+        },
+        "finite_initial_losses_and_gradients": true,
+        "contract_fingerprint": "31cde71e5f1db2c99b31c639cdf3f1611dbde2bb663258bab6dc609dd6b9f8b5"
+      },
+      {
+        "run": "positive10-official-seed2",
+        "array_task": "3130215_2",
+        "slurm_job_id": "3130220",
+        "node": "n472",
+        "state": "RUNNING",
+        "world_size": 4,
+        "train_rows": 163085,
+        "validation_rows": 59258,
+        "last_logged_update": 50,
+        "last_update_utc": "2026-09-29T11:52:08.157794+00:00",
+        "last_loss": 34.91121944785118,
+        "initial_checkpoint": {
+          "file": "update-000000000.pt",
+          "sha256": "2047529186dfaf99c6cc4941a030c6ae15b2132c1afd248449b962ab13eeee7b",
+          "bytes": 2609731251,
+          "update": 0,
+          "epoch": 0,
+          "next_chunk": 0,
+          "world_size": 4,
+          "fingerprint": "35286e6343ad16aea219b7e99873cf8652f6a57496e833f717122fbbe962a672",
+          "best_update": null,
+          "best_ap": null
+        },
+        "finite_initial_losses_and_gradients": true,
+        "contract_fingerprint": "35286e6343ad16aea219b7e99873cf8652f6a57496e833f717122fbbe962a672"
+      },
+      {
+        "run": "clean-bce-official-seed2",
+        "array_task": "3130215_3",
+        "slurm_job_id": "3130215",
+        "node": "n524",
+        "state": "RUNNING",
+        "world_size": 4,
+        "train_rows": 163085,
+        "validation_rows": 59258,
+        "last_logged_update": 30,
+        "last_update_utc": "2026-09-29T11:52:09.162229+00:00",
+        "last_loss": 6.917225003242493,
+        "initial_checkpoint": {
+          "file": "update-000000000.pt",
+          "sha256": "50192441f2871c8eadc3c3b34dc27d6ee900e645d5da75586d53b81441f47c38",
+          "bytes": 2609731251,
+          "update": 0,
+          "epoch": 0,
+          "next_chunk": 0,
+          "world_size": 4,
+          "fingerprint": "2a7e859f30704a56c15f6bb4156ec3e8e857c2d0f57d22e920651ea8c40bc94b",
+          "best_update": null,
+          "best_ap": null
+        },
+        "finite_initial_losses_and_gradients": true,
+        "contract_fingerprint": "2a7e859f30704a56c15f6bb4156ec3e8e857c2d0f57d22e920651ea8c40bc94b"
+      }
+    ],
+    "scope": "Initial production health; no validation-based performance claim yet."
+  }
+}

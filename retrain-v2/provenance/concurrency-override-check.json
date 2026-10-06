@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "tested_max_concurrent": [
+    2,
+    4
+  ],
+  "dry_run_submits_nothing": true,
+  "training_code_changed": false,
+  "launcher_sha256": "3458072b511d959ce10068548df7aa1119b72bb84d396d2ae487119a2a17e4b7",
+  "reason": "Explicit user request to run all four initial v2 models simultaneously."
+}

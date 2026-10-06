@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "all_initial_model_tensors_identical": true,
+  "optimizer_state_identical": true,
+  "rng_and_initial_counters_identical": true,
+  "initial_checkpoint_sha256": {
+    "reference-seed2": "51b0e86b3a39b212b37ea3d0696f3e6b3397b1dd8c1805910f4ebe444a85c60f",
+    "symmetric-seed2": "0e1d1719a05f0d0004c3052a279575c6691315fb746ebb7c2412e4530f0a59c0"
+  },
+  "note": "Scientific fingerprints intentionally differ by run name and classification objective."
+}

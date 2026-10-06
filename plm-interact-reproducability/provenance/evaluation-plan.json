@@ -1,0 +1,216 @@
+{
+  "created_utc": "2026-09-28T17:44:22.062580+00:00",
+  "primary": "Full released tests; full sequences except cross-species cap1603 which truncates none.",
+  "sensitivity": "1603 token released CLI default;2196 tokens motivated by2193 amino-acid Bernett training cap. Evaluate truncated rows only and merge unchanged full-sequence outputs.",
+  "mutation_scoring": "Report released-code sigmoid(mutant_logit-wild_logit) and paper log(sigmoid(mutant_logit)/sigmoid(wild_logit)).",
+  "tasks": [
+    {
+      "name": "cross_mouse",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/mouse.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "n": 55000,
+      "positives": 5000,
+      "max_tokens": 1595
+    },
+    {
+      "name": "cross_fly",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/fly.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "n": 55000,
+      "positives": 5000,
+      "max_tokens": 1601
+    },
+    {
+      "name": "cross_worm",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/worm.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "n": 55000,
+      "positives": 5000,
+      "max_tokens": 1591
+    },
+    {
+      "name": "cross_yeast",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/yeast.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "n": 55000,
+      "positives": 5000,
+      "max_tokens": 1586
+    },
+    {
+      "name": "cross_ecoli",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/ecoli.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "n": 22000,
+      "positives": 2000,
+      "max_tokens": 1554
+    },
+    {
+      "name": "mutation_zero_full",
+      "model": "human",
+      "kind": "mutation",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/Mutation_effect_dataset/test_mutation_data.csv",
+      "max_length": null,
+      "n": 841,
+      "positives": 180,
+      "max_tokens": 3833
+    },
+    {
+      "name": "mutation_zero_1603",
+      "model": "human",
+      "kind": "mutation",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/Mutation_effect_dataset/test_mutation_data.csv",
+      "max_length": 1603,
+      "over_limit_only": true,
+      "n": 391,
+      "positives": 109,
+      "max_tokens": 3833
+    },
+    {
+      "name": "mutation_zero_2196",
+      "model": "human",
+      "kind": "mutation",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/Mutation_effect_dataset/test_mutation_data.csv",
+      "max_length": 2196,
+      "over_limit_only": true,
+      "n": 391,
+      "positives": 109,
+      "max_tokens": 3833
+    },
+    {
+      "name": "reverse_mouse_sample",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/mouse.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "reverse": true,
+      "sample_stride": 53,
+      "n": 1038,
+      "positives": 98,
+      "max_tokens": 1565
+    },
+    {
+      "name": "reverse_fly_sample",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/fly.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "reverse": true,
+      "sample_stride": 53,
+      "n": 1038,
+      "positives": 84,
+      "max_tokens": 1574
+    },
+    {
+      "name": "reverse_worm_sample",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/worm.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "reverse": true,
+      "sample_stride": 53,
+      "n": 1038,
+      "positives": 99,
+      "max_tokens": 1474
+    },
+    {
+      "name": "reverse_yeast_sample",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/yeast.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "reverse": true,
+      "sample_stride": 53,
+      "n": 1038,
+      "positives": 101,
+      "max_tokens": 1550
+    },
+    {
+      "name": "reverse_ecoli_sample",
+      "model": "human",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/ecoli.ppi.qrels.seq.test.csv",
+      "max_length": 1603,
+      "reverse": true,
+      "sample_stride": 53,
+      "n": 416,
+      "positives": 33,
+      "max_tokens": 1360
+    },
+    {
+      "name": "bernett_full",
+      "model": "bernett",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/Bernett_benchmarking/pairs_uniprot_seqs_test.csv",
+      "max_length": null,
+      "over_limit_only": false,
+      "n": 52048,
+      "positives": 26024,
+      "max_tokens": 7426
+    },
+    {
+      "name": "bernett_1603",
+      "model": "bernett",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/Bernett_benchmarking/pairs_uniprot_seqs_test.csv",
+      "max_length": 1603,
+      "over_limit_only": true,
+      "n": 8200,
+      "positives": 4074,
+      "max_tokens": 7426
+    },
+    {
+      "name": "bernett_2196",
+      "model": "bernett",
+      "kind": "ppi",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/Bernett_benchmarking/pairs_uniprot_seqs_test.csv",
+      "max_length": 2196,
+      "over_limit_only": true,
+      "n": 3392,
+      "positives": 1687,
+      "max_tokens": 7426
+    },
+    {
+      "name": "mutation_ft_full",
+      "model": "mutation",
+      "kind": "mutation",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/Mutation_effect_dataset/test_mutation_data.csv",
+      "max_length": null,
+      "over_limit_only": false,
+      "n": 841,
+      "positives": 180,
+      "max_tokens": 3833
+    },
+    {
+      "name": "mutation_ft_1603",
+      "model": "mutation",
+      "kind": "mutation",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/Mutation_effect_dataset/test_mutation_data.csv",
+      "max_length": 1603,
+      "over_limit_only": true,
+      "n": 391,
+      "positives": 109,
+      "max_tokens": 3833
+    },
+    {
+      "name": "mutation_ft_2196",
+      "model": "mutation",
+      "kind": "mutation",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/Mutation_effect_dataset/test_mutation_data.csv",
+      "max_length": 2196,
+      "over_limit_only": true,
+      "n": 391,
+      "positives": 109,
+      "max_tokens": 3833
+    }
+  ]
+}

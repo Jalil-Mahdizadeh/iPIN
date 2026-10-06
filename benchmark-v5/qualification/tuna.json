@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-05T07:15:34.668877+00:00",
+  "fixture_ids": [
+    122,
+    2228,
+    1982,
+    2157
+  ],
+  "native_pairs": [
+    [
+      122,
+      2228
+    ],
+    [
+      2228,
+      2157
+    ],
+    [
+      1982,
+      1982
+    ]
+  ],
+  "encoder_sdpa_error": 1.0013580322265625e-05,
+  "classifier_sdpa_error": 3.5762786865234375e-07,
+  "reused_feature_error": 5.960464477539062e-07,
+  "native_probability_error": 5.960464477539063e-08,
+  "native_oracle": "authors unchanged singleton forward; original checkpoint; FP32",
+  "checkpoint": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/weights/bernett_original.pt",
+    "bytes": 135352865,
+    "sha256": "bf2dd42af75d98324798b76837ca738e4ed230b096ee538ccdbaa001dcc88500"
+  },
+  "reused_bundle_manifest": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/runs/scorer_bundle/SCORER_FREEZE.json",
+    "bytes": 4609,
+    "sha256": "e0d903371767f866a1a86392999823481aff083354be9f731c72b5b099e2410f"
+  }
+}

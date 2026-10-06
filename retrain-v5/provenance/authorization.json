@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-02T20:01:35.939354+00:00",
+  "production_training_authorized": true,
+  "user_instruction": "create a new folder retraining-v5 and initiate the task inside it. Stop when you validated the healthy jobs.",
+  "production_runs": [
+    "esm2-native-ilp-seed2",
+    "esmc-native-ilp-seed2"
+  ],
+  "maximum_concurrent_production_runs": 2,
+  "gpus_per_run": 4,
+  "benchmark_inference_authorized": false
+}

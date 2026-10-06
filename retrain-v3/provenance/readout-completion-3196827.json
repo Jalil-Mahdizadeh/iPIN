@@ -1,0 +1,484 @@
+{
+  "time_utc": "2026-10-01T07:19:22.098625+00:00",
+  "passed": true,
+  "array_id": "3196827",
+  "runs": [
+    {
+      "job_id": "3196827_0",
+      "run": "clean-cls-mlp-lr2e-5-fold0-seed2",
+      "accounting": {
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_seconds": 27071,
+        "resources": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "state": {
+        "update": 5001,
+        "cursor": {
+          "cycle": 4,
+          "offset": 25300
+        },
+        "epoch": 4,
+        "next_chunk": 25300,
+        "examples_seen": 320064,
+        "best_ap": 0.6215494591685585,
+        "best_update": 3000,
+        "total_steps": 6000,
+        "pending_validation": false,
+        "last_validation_update": 5000
+      },
+      "all_logged_training_metrics_finite": true,
+      "validation_updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "restarts": 0,
+      "maximum_logged_gpu_allocated_gib": 23.77990436553955,
+      "best_validation_metrics": {
+        "rows": 17490,
+        "pooled_ap": 0.6215494591685585,
+        "auroc": 0.6133181538779229,
+        "brier": 0.2570000156279991,
+        "ab_ap": 0.6156744108037069,
+        "order_logit_gap_mean": 0.4473530539790176
+      },
+      "final_validation_metrics": {
+        "rows": 17490,
+        "pooled_ap": 0.6081791427960674,
+        "auroc": 0.601570769875003,
+        "brier": 0.31578118351592244,
+        "ab_ap": 0.5947170675534075,
+        "order_logit_gap_mean": 1.7657014213199953
+      },
+      "evidence_sha256": {
+        "runs/clean-cls-mlp-lr2e-5-fold0-seed2/contract.json": "d18f8ce3f3b1c752880d1648125092ccecd5a3fd1e0f190cc5c5da2469a76281",
+        "runs/clean-cls-mlp-lr2e-5-fold0-seed2/stopped.json": "20b504764937ac4593730088d7edf8266ac37391e765306c2e79b4c8d491a5eb",
+        "runs/clean-cls-mlp-lr2e-5-fold0-seed2/SCREEN_COMPLETE.json": "ae6d11adfb46b774cfeb966ef50f453406621fda924c79be305eff9a2402437c",
+        "runs/clean-cls-mlp-lr2e-5-fold0-seed2/best.json": "b9f770142cc4abcb17e2c55a9a38ffd8a15b1820ebb92c3695f648fd5d22d2df",
+        "runs/clean-cls-mlp-lr2e-5-fold0-seed2/latest.json": "4ebb0431b1b1fb37ef3802bb84b167c7252f89f91dfe2b9ab8f220b813b89e56",
+        "runs/clean-cls-mlp-lr2e-5-fold0-seed2/events.jsonl": "7d239f211ce34cccb27eeec4d14e2f5ede825e335204d1c06761371a081f5b66",
+        "logs/production-3196827_0.log": "ecff3e3c538f7c9d76eb1df3a2b98688b72bf3d9d2b4e1f1836a5f56a155d181"
+      }
+    },
+    {
+      "job_id": "3196827_1",
+      "run": "clean-cls-mlp-lr2e-5-fold1-seed2",
+      "accounting": {
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_seconds": 26630,
+        "resources": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "state": {
+        "update": 5001,
+        "cursor": {
+          "cycle": 4,
+          "offset": 33272
+        },
+        "epoch": 4,
+        "next_chunk": 33272,
+        "examples_seen": 320064,
+        "best_ap": 0.6204813829975613,
+        "best_update": 3000,
+        "total_steps": 6000,
+        "pending_validation": false,
+        "last_validation_update": 5000
+      },
+      "all_logged_training_metrics_finite": true,
+      "validation_updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "restarts": 0,
+      "maximum_logged_gpu_allocated_gib": 23.308347702026367,
+      "best_validation_metrics": {
+        "rows": 18285,
+        "pooled_ap": 0.6204813829975613,
+        "auroc": 0.6213489622952783,
+        "brier": 0.24534886147802962,
+        "ab_ap": 0.6140313468227029,
+        "order_logit_gap_mean": 0.36410699290984117
+      },
+      "final_validation_metrics": {
+        "rows": 18285,
+        "pooled_ap": 0.5997836764650158,
+        "auroc": 0.6047039297324882,
+        "brier": 0.3062876570625155,
+        "ab_ap": 0.5811310145961122,
+        "order_logit_gap_mean": 1.6582740172421897
+      },
+      "evidence_sha256": {
+        "runs/clean-cls-mlp-lr2e-5-fold1-seed2/contract.json": "8297b7fef8a7ab879b53a9aef4bcb7ad8541a254ab73668e593bc4af4988dd46",
+        "runs/clean-cls-mlp-lr2e-5-fold1-seed2/stopped.json": "08e8c14f253d451611df17728e95d21857aa8c3afda0e6ebbdfd3aaf93b03edf",
+        "runs/clean-cls-mlp-lr2e-5-fold1-seed2/SCREEN_COMPLETE.json": "6e62fb710a02402a35414097941bb2a5616c6d928423f2b7c902ac217203d781",
+        "runs/clean-cls-mlp-lr2e-5-fold1-seed2/best.json": "66f8b415ba64ed9d8efa64f407c2079159b798c4145b25b8f801625c9f574711",
+        "runs/clean-cls-mlp-lr2e-5-fold1-seed2/latest.json": "7a7f8d0734f814e33c87422dbbb8172e8194760361512906245f10f4a176c3cd",
+        "runs/clean-cls-mlp-lr2e-5-fold1-seed2/events.jsonl": "b26e278935c1d9b7653a686ec727c1a8b85c42ef65f295cc54bd382f9daa4364",
+        "logs/production-3196827_1.log": "2568a6e6a661bc2f9a741fbb4285c8947fab60c83ee7a26ae76025525daca28e"
+      }
+    },
+    {
+      "job_id": "3196827_2",
+      "run": "clean-cls-mlp-lr2e-5-fold2-seed2",
+      "accounting": {
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_seconds": 26607,
+        "resources": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "state": {
+        "update": 5001,
+        "cursor": {
+          "cycle": 4,
+          "offset": 32120
+        },
+        "epoch": 4,
+        "next_chunk": 32120,
+        "examples_seen": 320064,
+        "best_ap": 0.6023367377181021,
+        "best_update": 3000,
+        "total_steps": 6000,
+        "pending_validation": false,
+        "last_validation_update": 5000
+      },
+      "all_logged_training_metrics_finite": true,
+      "validation_updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "restarts": 0,
+      "maximum_logged_gpu_allocated_gib": 23.237536430358887,
+      "best_validation_metrics": {
+        "rows": 18515,
+        "pooled_ap": 0.6023367377181021,
+        "auroc": 0.5934300704890124,
+        "brier": 0.2513973444649148,
+        "ab_ap": 0.5953864002141778,
+        "order_logit_gap_mean": 0.3961307598776409
+      },
+      "final_validation_metrics": {
+        "rows": 18515,
+        "pooled_ap": 0.5906963359495074,
+        "auroc": 0.5821527736452072,
+        "brier": 0.3185278887102676,
+        "ab_ap": 0.5762954169536825,
+        "order_logit_gap_mean": 1.8416714209078326
+      },
+      "evidence_sha256": {
+        "runs/clean-cls-mlp-lr2e-5-fold2-seed2/contract.json": "39adda1442a3c46d07cf96ed8d7d05f1015a1314b3009175640462d1b1d731a4",
+        "runs/clean-cls-mlp-lr2e-5-fold2-seed2/stopped.json": "5a77c596c706ca3ae3cea7f691e6f58cf4ac102f33b8127b317e69d7a2688d9e",
+        "runs/clean-cls-mlp-lr2e-5-fold2-seed2/SCREEN_COMPLETE.json": "eaeec663bf7250167b603c20b7c0bdcdfcd3038f64ce87991b8020b8507354b5",
+        "runs/clean-cls-mlp-lr2e-5-fold2-seed2/best.json": "71a212d3dffa3caac988eda52d117f35109bde48692b96b7c5bc6edc6f47d14e",
+        "runs/clean-cls-mlp-lr2e-5-fold2-seed2/latest.json": "33807f386c0f81804378962db0b5a4c735a89079c708232b985177ec9e24986c",
+        "runs/clean-cls-mlp-lr2e-5-fold2-seed2/events.jsonl": "60f3e8ef4df9f490528c3ff3180cdd70471f63eba5fa0ce9bb074a7ea212b47b",
+        "logs/production-3196827_2.log": "1fc03f8e7f83740ff2859fb90f4f5051566780fc529fa8bd9cc039952fac2b14"
+      }
+    },
+    {
+      "job_id": "3196827_3",
+      "run": "clean-residue-mean-lr2e-5-fold0-seed2",
+      "accounting": {
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_seconds": 27122,
+        "resources": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "state": {
+        "update": 5001,
+        "cursor": {
+          "cycle": 4,
+          "offset": 25300
+        },
+        "epoch": 4,
+        "next_chunk": 25300,
+        "examples_seen": 320064,
+        "best_ap": 0.6232240259132884,
+        "best_update": 3000,
+        "total_steps": 6000,
+        "pending_validation": false,
+        "last_validation_update": 5000
+      },
+      "all_logged_training_metrics_finite": true,
+      "validation_updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "restarts": 0,
+      "maximum_logged_gpu_allocated_gib": 23.750603675842285,
+      "best_validation_metrics": {
+        "rows": 17490,
+        "pooled_ap": 0.6232240259132884,
+        "auroc": 0.611812436756991,
+        "brier": 0.2542678377524068,
+        "ab_ap": 0.6176808682117374,
+        "order_logit_gap_mean": 0.47281261376478523
+      },
+      "final_validation_metrics": {
+        "rows": 17490,
+        "pooled_ap": 0.607930057410357,
+        "auroc": 0.5961422732198411,
+        "brier": 0.32026030107786874,
+        "ab_ap": 0.590608890181183,
+        "order_logit_gap_mean": 2.034237972758987
+      },
+      "evidence_sha256": {
+        "runs/clean-residue-mean-lr2e-5-fold0-seed2/contract.json": "4556a4b364a69f2a5d72e12e5356e5de1b3ae186e5d59c9dbc25501282da9804",
+        "runs/clean-residue-mean-lr2e-5-fold0-seed2/stopped.json": "83dc4c9e0890adf6f234d4ef9a045eb23000e849214d9ff14dd6053068b15522",
+        "runs/clean-residue-mean-lr2e-5-fold0-seed2/SCREEN_COMPLETE.json": "87bb249c55383702592d6d9b4f45069839966ad9fd95e3f44f61a994c3ec05a2",
+        "runs/clean-residue-mean-lr2e-5-fold0-seed2/best.json": "0b62960357620a4670f2491020de9ed6e73dfee3f08be0a11460b8990c2c6513",
+        "runs/clean-residue-mean-lr2e-5-fold0-seed2/latest.json": "661b814e9135e5d995814cfc5e93acb354d175a99a20656081a5e6d582dc648d",
+        "runs/clean-residue-mean-lr2e-5-fold0-seed2/events.jsonl": "902913b1c9a28d47c72ce8f7a9254271f8d601ae160846e07c03364ea599aaf1",
+        "logs/production-3196827_3.log": "bb1d498d906ef09875dfc9a28ec4d52ea667ae960c4ca991d7c581c0bcda73a0"
+      }
+    },
+    {
+      "job_id": "3196827_4",
+      "run": "clean-residue-mean-lr2e-5-fold1-seed2",
+      "accounting": {
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_seconds": 26325,
+        "resources": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "state": {
+        "update": 5001,
+        "cursor": {
+          "cycle": 4,
+          "offset": 33272
+        },
+        "epoch": 4,
+        "next_chunk": 33272,
+        "examples_seen": 320064,
+        "best_ap": 0.6275596011266071,
+        "best_update": 3000,
+        "total_steps": 6000,
+        "pending_validation": false,
+        "last_validation_update": 5000
+      },
+      "all_logged_training_metrics_finite": true,
+      "validation_updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "restarts": 0,
+      "maximum_logged_gpu_allocated_gib": 23.303601264953613,
+      "best_validation_metrics": {
+        "rows": 18285,
+        "pooled_ap": 0.6275596011266071,
+        "auroc": 0.6250835882139709,
+        "brier": 0.24441747580011136,
+        "ab_ap": 0.6214527172186443,
+        "order_logit_gap_mean": 0.3612750651375466
+      },
+      "final_validation_metrics": {
+        "rows": 18285,
+        "pooled_ap": 0.602683088846219,
+        "auroc": 0.6066600865775754,
+        "brier": 0.2948804277434213,
+        "ab_ap": 0.5886515671288358,
+        "order_logit_gap_mean": 1.4454399586636608
+      },
+      "evidence_sha256": {
+        "runs/clean-residue-mean-lr2e-5-fold1-seed2/contract.json": "101b25aee3f85783bcdf1d5dd33cf61034aa9dd200c645a1421598e3f4f4c44d",
+        "runs/clean-residue-mean-lr2e-5-fold1-seed2/stopped.json": "f3bf8dc59e259a40af441255fd7f90afb78a2afcd0d34542ed7b467b3c3d0500",
+        "runs/clean-residue-mean-lr2e-5-fold1-seed2/SCREEN_COMPLETE.json": "6c9841bf55436863977f824ad9a1bd64a4a581917980460ff17e907ca069c59c",
+        "runs/clean-residue-mean-lr2e-5-fold1-seed2/best.json": "2463d783906953559ec76752e00b65c901b1ee6c761c82ba10c4c66aae2b63c9",
+        "runs/clean-residue-mean-lr2e-5-fold1-seed2/latest.json": "883da3e6245f67c7c2c424879be88d7096bbb507f6e679cb8847721d85bd9df5",
+        "runs/clean-residue-mean-lr2e-5-fold1-seed2/events.jsonl": "35ce150e4fb9e5add105a4df09260322114413b04ec66b36412f8d1fd786118f",
+        "logs/production-3196827_4.log": "17c384332e5dddc4c91c65d6cdbd05288b07f75841fd61e30c78c18a4a17071b"
+      }
+    },
+    {
+      "job_id": "3196827_5",
+      "run": "clean-residue-mean-lr2e-5-fold2-seed2",
+      "accounting": {
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed_seconds": 26593,
+        "resources": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "state": {
+        "update": 5001,
+        "cursor": {
+          "cycle": 4,
+          "offset": 32120
+        },
+        "epoch": 4,
+        "next_chunk": 32120,
+        "examples_seen": 320064,
+        "best_ap": 0.6103375802815367,
+        "best_update": 4000,
+        "total_steps": 6000,
+        "pending_validation": false,
+        "last_validation_update": 5000
+      },
+      "all_logged_training_metrics_finite": true,
+      "validation_updates": [
+        1000,
+        2000,
+        3000,
+        4000,
+        5000
+      ],
+      "restarts": 0,
+      "maximum_logged_gpu_allocated_gib": 23.229302883148193,
+      "best_validation_metrics": {
+        "rows": 18515,
+        "pooled_ap": 0.6103375802815367,
+        "auroc": 0.6028620219296557,
+        "brier": 0.2769641363831235,
+        "ab_ap": 0.5959091517794778,
+        "order_logit_gap_mean": 0.9261540420371521
+      },
+      "final_validation_metrics": {
+        "rows": 18515,
+        "pooled_ap": 0.597850279447929,
+        "auroc": 0.5959270862869058,
+        "brier": 0.3083592766188046,
+        "ab_ap": 0.5829714478468122,
+        "order_logit_gap_mean": 1.6790333714125898
+      },
+      "evidence_sha256": {
+        "runs/clean-residue-mean-lr2e-5-fold2-seed2/contract.json": "1432f615b0db48d916f2818533d89dd3c1086bc6e859f2b871de677468d215fb",
+        "runs/clean-residue-mean-lr2e-5-fold2-seed2/stopped.json": "8ce1174c377c06caa9e5b00bda2f35ee25d548036235d880925455e689983fca",
+        "runs/clean-residue-mean-lr2e-5-fold2-seed2/SCREEN_COMPLETE.json": "948ab88a9907c9fa18115743d30fb9312706d8505797a2fd1c7b0d2632d37850",
+        "runs/clean-residue-mean-lr2e-5-fold2-seed2/best.json": "938549aa2f883472a762e61c25d9dfc5dad8e892888a6205607f575fb89ae65d",
+        "runs/clean-residue-mean-lr2e-5-fold2-seed2/latest.json": "c04a00fd0c9dcf399d4d195b254027ea7ae2f6b3c5cb0b6b5908b78e7076f433",
+        "runs/clean-residue-mean-lr2e-5-fold2-seed2/events.jsonl": "cb92ee605d6db8ee433bab7c58cbf648e31c15f001423ce78228ecd9b91890d3",
+        "logs/production-3196827_5.log": "1f8ec4a6c6e102859075ce949e722349918097d67b0135235ffa5e7e4630fdaa"
+      }
+    }
+  ],
+  "all_retained_payloads": [
+    {
+      "path": "runs/clean-cls-mlp-lr2e-5-fold0-seed2/checkpoints/update-000003000.pt",
+      "sha256": "506bf78016b1f84534c32ccc6b943d8d344b9a422f35b3f70c85735551a0791c",
+      "bytes": 7813279814,
+      "update": 3000
+    },
+    {
+      "path": "runs/clean-cls-mlp-lr2e-5-fold0-seed2/checkpoints/update-000005000.pt",
+      "sha256": "373fed9d271591777a7e5a0b623ff7486b93817547f59cd012bd7f04bb6599db",
+      "bytes": 7813279814,
+      "update": 5000
+    },
+    {
+      "path": "runs/clean-cls-mlp-lr2e-5-fold0-seed2/checkpoints/update-000005001.pt",
+      "sha256": "1e4ec3f9aad986e5e926fd284c4b4602b468b470cb27395f158ea0bf19d5cf86",
+      "bytes": 7813279814,
+      "update": 5001
+    },
+    {
+      "path": "runs/clean-cls-mlp-lr2e-5-fold1-seed2/checkpoints/update-000003000.pt",
+      "sha256": "ad35fb70c6de311124b76d7ce3f4c663056db413c5fad9c9cf96e3d4a375c9d1",
+      "bytes": 7813279814,
+      "update": 3000
+    },
+    {
+      "path": "runs/clean-cls-mlp-lr2e-5-fold1-seed2/checkpoints/update-000005000.pt",
+      "sha256": "21aeb8b93bcb86733c0ba87de16236a0de0ad3d8da922d515a0008a777eb9514",
+      "bytes": 7813279814,
+      "update": 5000
+    },
+    {
+      "path": "runs/clean-cls-mlp-lr2e-5-fold1-seed2/checkpoints/update-000005001.pt",
+      "sha256": "a82d3cc3cc3eb534e466896a94fe6a6a43aacf334e6d3657a00f4478410db5c2",
+      "bytes": 7813279814,
+      "update": 5001
+    },
+    {
+      "path": "runs/clean-cls-mlp-lr2e-5-fold2-seed2/checkpoints/update-000003000.pt",
+      "sha256": "30e16a9fe3563d27e6d8edee28911faf34095e1df9f55c33f312eae9cd6e11b0",
+      "bytes": 7813279814,
+      "update": 3000
+    },
+    {
+      "path": "runs/clean-cls-mlp-lr2e-5-fold2-seed2/checkpoints/update-000005000.pt",
+      "sha256": "792ff16873115b95a5adb926402248c0c5b8267d617848f9eb9470d91b635219",
+      "bytes": 7813279814,
+      "update": 5000
+    },
+    {
+      "path": "runs/clean-cls-mlp-lr2e-5-fold2-seed2/checkpoints/update-000005001.pt",
+      "sha256": "e2927da8bb7b8fd501b2c5c4fe1c16d0cf252758d6396f646b9dd0fdd7837b54",
+      "bytes": 7813279814,
+      "update": 5001
+    },
+    {
+      "path": "runs/clean-residue-mean-lr2e-5-fold0-seed2/checkpoints/update-000003000.pt",
+      "sha256": "720243bfa4e625ce28d528acabe22795ad7b5f8d62429f0a5029a9d64c3208c4",
+      "bytes": 7813279814,
+      "update": 3000
+    },
+    {
+      "path": "runs/clean-residue-mean-lr2e-5-fold0-seed2/checkpoints/update-000005000.pt",
+      "sha256": "27f76ada495bc1b5a4a8457fa0346cfa9b258c00922cc7df9c7d1f3c3cc2093f",
+      "bytes": 7813279814,
+      "update": 5000
+    },
+    {
+      "path": "runs/clean-residue-mean-lr2e-5-fold0-seed2/checkpoints/update-000005001.pt",
+      "sha256": "483a8a2bb1d7f9548ca544f1adb12c93b3e4261b9d9d419417c52df273cef431",
+      "bytes": 7813279814,
+      "update": 5001
+    },
+    {
+      "path": "runs/clean-residue-mean-lr2e-5-fold1-seed2/checkpoints/update-000003000.pt",
+      "sha256": "157fd02c6172d4300ea8150253e7a0273aec45b5f9ed4246346c5332527aeb17",
+      "bytes": 7813279814,
+      "update": 3000
+    },
+    {
+      "path": "runs/clean-residue-mean-lr2e-5-fold1-seed2/checkpoints/update-000005000.pt",
+      "sha256": "5bbae7e34df73375025a255053526c1b6be78518c08d1e6a9c991cdfe244ccda",
+      "bytes": 7813279814,
+      "update": 5000
+    },
+    {
+      "path": "runs/clean-residue-mean-lr2e-5-fold1-seed2/checkpoints/update-000005001.pt",
+      "sha256": "12146ded5535bc3703bae22bbe718a11f6c4c0b64fb9ee126940237cd0a387dc",
+      "bytes": 7813279814,
+      "update": 5001
+    },
+    {
+      "path": "runs/clean-residue-mean-lr2e-5-fold2-seed2/checkpoints/update-000004000.pt",
+      "sha256": "0d1c922f1384ef35f8837b0acf0d4e91d6b3528ee0e34c9831e0985906e9942a",
+      "bytes": 7813279814,
+      "update": 4000
+    },
+    {
+      "path": "runs/clean-residue-mean-lr2e-5-fold2-seed2/checkpoints/update-000005000.pt",
+      "sha256": "71181d4492e14ad30729fda92dadf5ccf90bcc850b81d0db5fd8b457f42ee4c4",
+      "bytes": 7813279814,
+      "update": 5000
+    },
+    {
+      "path": "runs/clean-residue-mean-lr2e-5-fold2-seed2/checkpoints/update-000005001.pt",
+      "sha256": "30c82b2837d654e200b746b13ce5d53e4ef14df6d672e6113bda36075cc2171e",
+      "bytes": 7813279814,
+      "update": 5001
+    }
+  ],
+  "payload_bytes_verified": 140639036652,
+  "allocated_gpu_hours": 178.16444444444446,
+  "screen_window_complete": true,
+  "full_6000_update_schedule_complete": false,
+  "scope": "All six job exits, contracts, logs, validation metadata and hashes, automatic safe stops, and SHA-256 of every retained checkpoint. Scientific prediction/selection recomputation is recorded separately.",
+  "source_sha256": "334260bec656653f2e7c43b2674329ea4f2b5ec26917b85be302c184704f5b9a",
+  "release_sha256": "fb32362f661a66d42f4e65ae12c888fd5f6ad836067b32f040eae41d68de4867"
+}

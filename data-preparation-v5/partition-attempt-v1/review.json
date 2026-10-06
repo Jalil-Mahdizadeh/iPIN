@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "reviewed_utc": "2026-10-02T19:38:10.719201+00:00",
+  "production_attempts": 1,
+  "eligible_rows_recounted": 721082,
+  "row_counts": {
+    "train": 350382,
+    "val": 82871,
+    "crossing": 287829
+  },
+  "assignment_identical_to_completed_partition": true,
+  "code_and_input_hashes_verified": 12,
+  "completed_export_hashes_verified": 23,
+  "original_completion_manifest_sha256": "8805825a1cca647c21dccd247f148b587b69c1e458083615e45f8fe446aa00c9",
+  "result_sha256": "f881271a53cbc6d592a0e312f0ca10a95f2e9fdc89957ff370cb97d291db8e33",
+  "decision": "keep_existing_completed_dataset",
+  "reason": "No additional retained positives; prespecified adoption threshold not met.",
+  "further_optimization_started": false,
+  "production_training_started": false
+}

@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-bernett",
+    "test": "ecoli__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e4241b56546efc75cc1bde57ccb67ddf3da9e8c4d38de416dc8e3396069d36fd",
+    "scores": "6edcc10fe771ad44a2d828a26222aa56296fe8b7ef8ea45741619fc3f17dfe8e",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/ecoli__common_unexposed-xpair-bernett.npz",
+    "bytes": 15182,
+    "sha256": "0c8d2d43fd700d9d0ea3a693f808ee1d5bd74c47a050e8c261d397778c3b5c76"
+  }
+}

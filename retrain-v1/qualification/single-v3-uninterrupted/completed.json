@@ -1,0 +1,18 @@
+{
+  "state": {
+    "update": 4,
+    "epoch": 1,
+    "next_chunk": 0,
+    "examples_seen": 32,
+    "best_ap": 0.6071428571428572,
+    "best_update": 4,
+    "total_steps": 4,
+    "pending_validation": false,
+    "last_validation_update": 4
+  },
+  "fingerprint": "50bd0d06678f6d46e7d57ae44983059fa3e85685996cd616438aba5359bf80d3",
+  "test_evaluated": false,
+  "model_hashes_by_rank": [
+    "cdad3859c69e72e7ce752fe6f12fb2da30e648eeee4a0ddedbbaf5746cdbbd42"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "state": {
+    "update": 45220,
+    "cursor": {
+      "cycle": 4,
+      "offset": 91024
+    },
+    "epoch": 4,
+    "next_chunk": 91024,
+    "examples_seen": 2894080,
+    "best_ap": 0.5924616586439035,
+    "best_update": 21899,
+    "total_steps": 54748,
+    "pending_validation": false,
+    "last_validation_update": 43798
+  },
+  "last_committed_update": 45200,
+  "attempt": "20261004T210848-3301122",
+  "phase": "training",
+  "seconds_since_launch": 34011.23447217801
+}

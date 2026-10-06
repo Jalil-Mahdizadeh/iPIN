@@ -1,0 +1,50 @@
+{
+  "_id": "65c9237355132c1e930095ac",
+  "id": "yk0/TUnA_models",
+  "author": "yk0",
+  "sha": "eaec69cafc574d984119079220e75b11ffcb7c09",
+  "lastModified": "2024-02-11T20:17:05.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "downloads": 42,
+  "likes": 1,
+  "cardData": {
+    "license": "mit"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "bernett/ESM2-GP/model"
+    },
+    {
+      "rfilename": "bernett/ESM2-MLP/model"
+    },
+    {
+      "rfilename": "bernett/T-FC/model"
+    },
+    {
+      "rfilename": "bernett/TUnA/model"
+    },
+    {
+      "rfilename": "x-species/TUnA_seed141/model"
+    },
+    {
+      "rfilename": "x-species/TUnA_seed47/model"
+    },
+    {
+      "rfilename": "x-species/TUnA_seed94/model"
+    }
+  ],
+  "createdAt": "2024-02-11T19:43:47.000Z",
+  "usedStorage": 700559273
+}

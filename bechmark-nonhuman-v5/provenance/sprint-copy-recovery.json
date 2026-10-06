@@ -1,0 +1,62 @@
+{
+  "at_utc": "2026-10-05T19:19:09.462635+00:00",
+  "state": "submitted",
+  "cancelled_job": "3383829",
+  "cancelled_elapsed": "03:41:21",
+  "reason": "Random seeks into Python default 4 MiB buffered input caused severe read amplification during canonical HSP byte copying, before any prediction.",
+  "diagnosis": {
+    "file_block_size_bytes": 4194304,
+    "profile_seconds": 5,
+    "read_syscalls": 19067,
+    "lseek_syscalls": 19068,
+    "percent_profiled_syscall_time_in_read": 98.92,
+    "process_rchar_bytes_at_snapshot": 229027057749188,
+    "physical_read_bytes_at_snapshot": 16438558720
+  },
+  "preserved_previous_prefix": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/logs/sprint-copy-recovery/job-3383829-canonical.partial",
+    "bytes": 2512232234,
+    "sha256": "9364fd46004a0b652bc8121ba837c11046aa5b7c02e944bd615bec498113f00c"
+  },
+  "raw_hsp": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/sprint/raw.hsp",
+    "bytes": 6337742085,
+    "sha256": "8dfeb169507987c41494331c04692139952f2471163b298b3a457143aaee8252"
+  },
+  "previous_wrapper": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/run_sprint_cpu.py",
+    "bytes": 5013,
+    "sha256": "a8a43f549d90e03d64eb5beb947d64c77321544040877006e0adabcfe3bdff59"
+  },
+  "new_wrapper": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/run_sprint_cpu_mmap.py",
+    "bytes": 5092,
+    "sha256": "0781dd3e71b2470e5215a324fc74d83c018d7124215c21f97aea36c80e45f38d"
+  },
+  "copy_helper": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/sprint_hsp_mmap.py",
+    "bytes": 3045,
+    "sha256": "6d141e516dc23e0db9f902d2bde523825de6788096de1ffe3034e521ad087f44"
+  },
+  "copy_qualification": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/sprint-copy/qualification.json",
+    "bytes": 4150,
+    "sha256": "3cd4ad35786c36032da30a0c3567ac2c89882d7576f43d40a01764295df26ea7"
+  },
+  "input_contract": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/provenance/sprint-input.json",
+    "bytes": 907,
+    "sha256": "c0329b94f7db5c8a064c74d06e94d59b5ff19fe70a675eef6e38f9803c115912"
+  },
+  "unchanged_scorer": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/bin/sprint_predict_sparse_cpu",
+    "bytes": 101880,
+    "sha256": "634d6ec07a8622542912d6e89ebd1b4183ed2ab64ca8fce51d5b2346d7fafa14"
+  },
+  "hsp_calculation_repeated": false,
+  "prediction_started_in_cancelled_job": false,
+  "input_validation_and_prediction_ast_unchanged": true,
+  "new_canonical_must_match_preserved_prefix": true,
+  "replacement_job": "3402258",
+  "submitted_at_utc": "2026-10-05T19:19:41.558055+00:00"
+}

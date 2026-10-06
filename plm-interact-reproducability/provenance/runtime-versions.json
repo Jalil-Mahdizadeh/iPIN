@@ -1,0 +1,16 @@
+{
+  "platform": "Linux-5.14.0-687.49.1.el9_8.aarch64+64k-aarch64-with-glibc2.39",
+  "machine": "aarch64",
+  "python": "3.12.3",
+  "packages": {
+    "torch": "2.8.0a0+34c6371d24.nv25.8",
+    "transformers": "4.40.1",
+    "tokenizers": "0.19.1",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.5",
+    "PLMinteract": "0.1.1"
+  }
+}

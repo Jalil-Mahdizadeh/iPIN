@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-default",
+    "test": "worm",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e5f3c2b73a922bebc7b8ef1ce9629fd97516a02861dd899908150353632772d5",
+    "scores": "16de192c9207da694a95d55b3aa5059a79150fe1112e3157dd2d722647041fd9",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/worm-xpair-default.npz",
+    "bytes": 14795,
+    "sha256": "ffc64ea9f415af9b9355b6e5c0e715b4c0f048a9a43a2a378cc89b6bf3e2062f"
+  }
+}

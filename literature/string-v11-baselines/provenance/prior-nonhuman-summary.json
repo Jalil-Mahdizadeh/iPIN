@@ -1,0 +1,6236 @@
+{
+  "at_utc": "2026-10-05T20:07:29.376192+00:00",
+  "complete": true,
+  "names": [
+    "ipin-esm2",
+    "ipin-esmc",
+    "native-human",
+    "native-plm",
+    "tuna-human",
+    "tuna",
+    "xpair-bernett",
+    "xpair-default",
+    "rapppid",
+    "sprint",
+    "dscript"
+  ],
+  "tests": {
+    "mouse": {
+      "counts": {
+        "rows": 55000,
+        "positives": 5000,
+        "negatives": 50000,
+        "unique_proteins": 17250
+      },
+      "models": {
+        "ipin-esm2": {
+          "ap": 0.20912298817740094,
+          "auroc": 0.6253576080000001,
+          "brier": 0.31641321144398166,
+          "score_min": -3.546875,
+          "score_max": 3.8984375,
+          "unique_scores": 9035,
+          "zero_scores": 5
+        },
+        "ipin-esmc": {
+          "ap": 0.17682615390896061,
+          "auroc": 0.633061788,
+          "brier": 0.3226073062133331,
+          "score_min": -1.9765625,
+          "score_max": 2.3515625,
+          "unique_scores": 7110,
+          "zero_scores": 12
+        },
+        "native-human": {
+          "ap": 0.908412121613771,
+          "auroc": 0.9829699979999998,
+          "brier": 0.02566417741863947,
+          "score_min": -11.294849395751953,
+          "score_max": 9.508479118347168,
+          "unique_scores": 54375,
+          "zero_scores": 0
+        },
+        "native-plm": {
+          "ap": 0.27512105363526546,
+          "auroc": 0.698272728,
+          "brier": 0.2858742352098387,
+          "score_min": -2.859375,
+          "score_max": 3.5546875,
+          "unique_scores": 8405,
+          "zero_scores": 6
+        },
+        "tuna-human": {
+          "ap": 0.8831988813816839,
+          "auroc": 0.977400784,
+          "brier": 0.026514258769172246,
+          "score_min": -15.563828468322754,
+          "score_max": 8.119729042053223,
+          "unique_scores": 54906,
+          "zero_scores": 0
+        },
+        "tuna": {
+          "ap": 0.3527823658780556,
+          "auroc": 0.774278456,
+          "brier": 0.21051625635735957,
+          "score_min": -2.952052116394043,
+          "score_max": 3.160212516784668,
+          "unique_scores": 54951,
+          "zero_scores": 0
+        },
+        "xpair-bernett": {
+          "ap": 0.3422768107917593,
+          "auroc": 0.771881166,
+          "brier": 0.22370780424698344,
+          "score_min": -2.9789810180664062,
+          "score_max": 4.397798538208008,
+          "unique_scores": 54943,
+          "zero_scores": 0
+        },
+        "xpair-default": {
+          "ap": 0.8453623117576466,
+          "auroc": 0.9583925779999999,
+          "brier": 0.030960309746145876,
+          "score_min": -13.538952827453613,
+          "score_max": 11.751263618469238,
+          "unique_scores": 54843,
+          "zero_scores": 0
+        },
+        "rapppid": {
+          "ap": 0.1674739779199194,
+          "auroc": 0.691833144,
+          "brier": 0.2628646782303783,
+          "score_min": 0.03863120079040527,
+          "score_max": 0.9921236634254456,
+          "unique_scores": 54871,
+          "zero_scores": 0
+        },
+        "sprint": {
+          "ap": 0.3337199166989846,
+          "auroc": 0.700828684,
+          "brier": null,
+          "score_min": 0.0,
+          "score_max": 1113.93,
+          "unique_scores": 51352,
+          "zero_scores": 1964
+        },
+        "dscript": {
+          "ap": 0.5799094687628724,
+          "auroc": 0.8329019900000001,
+          "brier": 0.060446414384814795,
+          "score_min": 0.004171624779701233,
+          "score_max": 0.9921308159828186,
+          "unique_scores": 23194,
+          "zero_scores": 0
+        }
+      },
+      "bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 17250,
+        "self_pairs": 3,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      },
+      "unexposed_bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 16741,
+        "self_pairs": 3,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      }
+    },
+    "fly": {
+      "counts": {
+        "rows": 55000,
+        "positives": 5000,
+        "negatives": 50000,
+        "unique_proteins": 11306
+      },
+      "models": {
+        "ipin-esm2": {
+          "ap": 0.18638236105749517,
+          "auroc": 0.611377646,
+          "brier": 0.3211098256132187,
+          "score_min": -3.265625,
+          "score_max": 3.828125,
+          "unique_scores": 9101,
+          "zero_scores": 13
+        },
+        "ipin-esmc": {
+          "ap": 0.15307742376976546,
+          "auroc": 0.572639952,
+          "brier": 0.34227654177566885,
+          "score_min": -1.97265625,
+          "score_max": 2.34375,
+          "unique_scores": 7214,
+          "zero_scores": 8
+        },
+        "native-human": {
+          "ap": 0.9167559419559641,
+          "auroc": 0.98339589,
+          "brier": 0.02572551378459999,
+          "score_min": -11.263481616973877,
+          "score_max": 9.501873970031738,
+          "unique_scores": 54537,
+          "zero_scores": 0
+        },
+        "native-plm": {
+          "ap": 0.30171363366366266,
+          "auroc": 0.693957654,
+          "brier": 0.2529791399186642,
+          "score_min": -2.859375,
+          "score_max": 3.5078125,
+          "unique_scores": 8485,
+          "zero_scores": 7
+        },
+        "tuna-human": {
+          "ap": 0.8550181449190795,
+          "auroc": 0.970950582,
+          "brier": 0.0354892606581548,
+          "score_min": -14.774628639221191,
+          "score_max": 7.8344292640686035,
+          "unique_scores": 54861,
+          "zero_scores": 0
+        },
+        "tuna": {
+          "ap": 0.3740344383474355,
+          "auroc": 0.7855301239999999,
+          "brier": 0.21410012352749955,
+          "score_min": -2.7681450843811035,
+          "score_max": 3.068037509918213,
+          "unique_scores": 54907,
+          "zero_scores": 0
+        },
+        "xpair-bernett": {
+          "ap": 0.33655676769390697,
+          "auroc": 0.727311198,
+          "brier": 0.23506180024896564,
+          "score_min": -2.809333562850952,
+          "score_max": 4.457983016967773,
+          "unique_scores": 54899,
+          "zero_scores": 0
+        },
+        "xpair-default": {
+          "ap": 0.8814588625973906,
+          "auroc": 0.967186222,
+          "brier": 0.0247771596963849,
+          "score_min": -12.760880470275879,
+          "score_max": 10.938758850097656,
+          "unique_scores": 54793,
+          "zero_scores": 0
+        },
+        "rapppid": {
+          "ap": 0.1337786101300876,
+          "auroc": 0.68234095,
+          "brier": 0.2625767828873282,
+          "score_min": 0.025398243218660355,
+          "score_max": 0.9813997745513916,
+          "unique_scores": 54810,
+          "zero_scores": 0
+        },
+        "sprint": {
+          "ap": 0.32891115319819053,
+          "auroc": 0.7041774000000001,
+          "brier": null,
+          "score_min": 0.0,
+          "score_max": 1151.51,
+          "unique_scores": 51770,
+          "zero_scores": 174
+        },
+        "dscript": {
+          "ap": 0.5523648257327713,
+          "auroc": 0.8236331640000001,
+          "brier": 0.059823519488556645,
+          "score_min": 0.004171646665781736,
+          "score_max": 0.9922298789024353,
+          "unique_scores": 26560,
+          "zero_scores": 0
+        }
+      },
+      "bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 11306,
+        "self_pairs": 12,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      },
+      "unexposed_bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 7105,
+        "self_pairs": 5,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      }
+    },
+    "worm": {
+      "counts": {
+        "rows": 55000,
+        "positives": 5000,
+        "negatives": 50000,
+        "unique_proteins": 18077
+      },
+      "models": {
+        "ipin-esm2": {
+          "ap": 0.1359112815683476,
+          "auroc": 0.555289526,
+          "brier": 0.35818150604582544,
+          "score_min": -3.2734375,
+          "score_max": 3.828125,
+          "unique_scores": 8836,
+          "zero_scores": 8
+        },
+        "ipin-esmc": {
+          "ap": 0.10276658408213246,
+          "auroc": 0.523885826,
+          "brier": 0.3686594664862274,
+          "score_min": -1.94140625,
+          "score_max": 2.34375,
+          "unique_scores": 6884,
+          "zero_scores": 13
+        },
+        "native-human": {
+          "ap": 0.8908832296816632,
+          "auroc": 0.975250198,
+          "brier": 0.02897112689160947,
+          "score_min": -11.255032539367676,
+          "score_max": 9.504017353057861,
+          "unique_scores": 54600,
+          "zero_scores": 0
+        },
+        "native-plm": {
+          "ap": 0.1856029866264684,
+          "auroc": 0.6175741680000001,
+          "brier": 0.2812468432766022,
+          "score_min": -2.828125,
+          "score_max": 3.5078125,
+          "unique_scores": 8693,
+          "zero_scores": 14
+        },
+        "tuna-human": {
+          "ap": 0.8368484305028039,
+          "auroc": 0.960233962,
+          "brier": 0.03298886234026133,
+          "score_min": -14.662236213684082,
+          "score_max": 8.339930534362793,
+          "unique_scores": 54889,
+          "zero_scores": 0
+        },
+        "tuna": {
+          "ap": 0.3550669034526882,
+          "auroc": 0.778917914,
+          "brier": 0.21400729770192514,
+          "score_min": -2.7479612827301025,
+          "score_max": 2.9978902339935303,
+          "unique_scores": 54940,
+          "zero_scores": 0
+        },
+        "xpair-bernett": {
+          "ap": 0.23099596501800607,
+          "auroc": 0.6850025919999999,
+          "brier": 0.25887192413497373,
+          "score_min": -2.642484664916992,
+          "score_max": 4.32528018951416,
+          "unique_scores": 54931,
+          "zero_scores": 0
+        },
+        "xpair-default": {
+          "ap": 0.7955059639351385,
+          "auroc": 0.9376767020000001,
+          "brier": 0.037578436943925306,
+          "score_min": -11.293227195739746,
+          "score_max": 12.270195960998535,
+          "unique_scores": 54853,
+          "zero_scores": 0
+        },
+        "rapppid": {
+          "ap": 0.16488605926861416,
+          "auroc": 0.7454787679999999,
+          "brier": 0.22915077776215667,
+          "score_min": 0.04885456711053848,
+          "score_max": 0.979748547077179,
+          "unique_scores": 54854,
+          "zero_scores": 0
+        },
+        "sprint": {
+          "ap": 0.3783121565134194,
+          "auroc": 0.7217059360000001,
+          "brier": null,
+          "score_min": 0.0,
+          "score_max": 277.59,
+          "unique_scores": 51973,
+          "zero_scores": 58
+        },
+        "dscript": {
+          "ap": 0.5482272922280689,
+          "auroc": 0.8130340300000001,
+          "brier": 0.06288497331626391,
+          "score_min": 0.0041716028936207294,
+          "score_max": 0.9929861426353455,
+          "unique_scores": 22419,
+          "zero_scores": 0
+        }
+      },
+      "bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 18077,
+        "self_pairs": 5,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      },
+      "unexposed_bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 17989,
+        "self_pairs": 5,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      }
+    },
+    "yeast": {
+      "counts": {
+        "rows": 55000,
+        "positives": 5000,
+        "negatives": 50000,
+        "unique_proteins": 5591
+      },
+      "models": {
+        "ipin-esm2": {
+          "ap": 0.13664177118869217,
+          "auroc": 0.568010722,
+          "brier": 0.30842399133327186,
+          "score_min": -3.34375,
+          "score_max": 3.828125,
+          "unique_scores": 9385,
+          "zero_scores": 18
+        },
+        "ipin-esmc": {
+          "ap": 0.11652308455342869,
+          "auroc": 0.517971628,
+          "brier": 0.33441654826904904,
+          "score_min": -1.9609375,
+          "score_max": 2.3359375,
+          "unique_scores": 6911,
+          "zero_scores": 13
+        },
+        "native-human": {
+          "ap": 0.7147095360032375,
+          "auroc": 0.9143984339999999,
+          "brier": 0.058528365452916675,
+          "score_min": -11.247010231018066,
+          "score_max": 9.522801399230957,
+          "unique_scores": 54623,
+          "zero_scores": 0
+        },
+        "native-plm": {
+          "ap": 0.19738019910966093,
+          "auroc": 0.619594402,
+          "brier": 0.26696355761759966,
+          "score_min": -2.7890625,
+          "score_max": 3.484375,
+          "unique_scores": 9319,
+          "zero_scores": 14
+        },
+        "tuna-human": {
+          "ap": 0.6441457509269812,
+          "auroc": 0.8992044579999999,
+          "brier": 0.06332908930771716,
+          "score_min": -12.671257972717285,
+          "score_max": 8.67768669128418,
+          "unique_scores": 54900,
+          "zero_scores": 0
+        },
+        "tuna": {
+          "ap": 0.35267425120290896,
+          "auroc": 0.765634696,
+          "brier": 0.21709864170787752,
+          "score_min": -2.8397042751312256,
+          "score_max": 2.7882134914398193,
+          "unique_scores": 54930,
+          "zero_scores": 0
+        },
+        "xpair-bernett": {
+          "ap": 0.26441138907126593,
+          "auroc": 0.6975801500000001,
+          "brier": 0.2323772246106168,
+          "score_min": -2.7304458618164062,
+          "score_max": 4.407217502593994,
+          "unique_scores": 54920,
+          "zero_scores": 0
+        },
+        "xpair-default": {
+          "ap": 0.7339322135798869,
+          "auroc": 0.889885996,
+          "brier": 0.0399112667572792,
+          "score_min": -12.099468231201172,
+          "score_max": 10.352972030639648,
+          "unique_scores": 54839,
+          "zero_scores": 0
+        },
+        "rapppid": {
+          "ap": 0.1304835121614627,
+          "auroc": 0.667779772,
+          "brier": 0.2803884247044827,
+          "score_min": 0.04117434471845627,
+          "score_max": 0.9735557436943054,
+          "unique_scores": 54807,
+          "zero_scores": 0
+        },
+        "sprint": {
+          "ap": 0.25957565782841774,
+          "auroc": 0.672649894,
+          "brier": null,
+          "score_min": 0.0,
+          "score_max": 175.035,
+          "unique_scores": 51768,
+          "zero_scores": 40
+        },
+        "dscript": {
+          "ap": 0.4048090455221949,
+          "auroc": 0.7889609120000001,
+          "brier": 0.07309924166060373,
+          "score_min": 0.004171581473201513,
+          "score_max": 0.9915598034858704,
+          "unique_scores": 22500,
+          "zero_scores": 0
+        }
+      },
+      "bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 5591,
+        "self_pairs": 5,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      },
+      "unexposed_bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 2225,
+        "self_pairs": 3,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      }
+    },
+    "ecoli": {
+      "counts": {
+        "rows": 22000,
+        "positives": 2000,
+        "negatives": 20000,
+        "unique_proteins": 4412
+      },
+      "models": {
+        "ipin-esm2": {
+          "ap": 0.08069036805938111,
+          "auroc": 0.3757119375,
+          "brier": 0.32425550848136275,
+          "score_min": -3.1171875,
+          "score_max": 3.8125,
+          "unique_scores": 6142,
+          "zero_scores": 14
+        },
+        "ipin-esmc": {
+          "ap": 0.06630287022278158,
+          "auroc": 0.2748716,
+          "brier": 0.3037956016623588,
+          "score_min": -1.79296875,
+          "score_max": 2.3359375,
+          "unique_scores": 5366,
+          "zero_scores": 7
+        },
+        "native-human": {
+          "ap": 0.7328962829098185,
+          "auroc": 0.9066258125,
+          "brier": 0.2580908324604111,
+          "score_min": -11.246706485748291,
+          "score_max": 9.505672931671143,
+          "unique_scores": 18222,
+          "zero_scores": 0
+        },
+        "native-plm": {
+          "ap": 0.1572177151327937,
+          "auroc": 0.4838996,
+          "brier": 0.24972621469053172,
+          "score_min": -2.421875,
+          "score_max": 2.5234375,
+          "unique_scores": 6443,
+          "zero_scores": 19
+        },
+        "tuna-human": {
+          "ap": 0.6730014709038996,
+          "auroc": 0.8774775625,
+          "brier": 0.06285222938285347,
+          "score_min": -10.674373626708984,
+          "score_max": 7.240675926208496,
+          "unique_scores": 18219,
+          "zero_scores": 0
+        },
+        "tuna": {
+          "ap": 0.21388118586396118,
+          "auroc": 0.7412282124999999,
+          "brier": 0.2655002645181552,
+          "score_min": -2.230754852294922,
+          "score_max": 2.4863874912261963,
+          "unique_scores": 18228,
+          "zero_scores": 0
+        },
+        "xpair-bernett": {
+          "ap": 0.25419125226032485,
+          "auroc": 0.644734425,
+          "brier": 0.313355268669105,
+          "score_min": -2.5855793952941895,
+          "score_max": 4.00686502456665,
+          "unique_scores": 18225,
+          "zero_scores": 0
+        },
+        "xpair-default": {
+          "ap": 0.7073287754019622,
+          "auroc": 0.877945725,
+          "brier": 0.04456681695270712,
+          "score_min": -11.693541526794434,
+          "score_max": 8.511100769042969,
+          "unique_scores": 18214,
+          "zero_scores": 0
+        },
+        "rapppid": {
+          "ap": 0.10328000450790785,
+          "auroc": 0.5935264625,
+          "brier": 0.25450643884866103,
+          "score_min": 0.042383965104818344,
+          "score_max": 0.9826458692550659,
+          "unique_scores": 18214,
+          "zero_scores": 0
+        },
+        "sprint": {
+          "ap": 0.13453642040764102,
+          "auroc": 0.5306301375,
+          "brier": null,
+          "score_min": 0.0,
+          "score_max": 80.8982,
+          "unique_scores": 17806,
+          "zero_scores": 6
+        },
+        "dscript": {
+          "ap": 0.5349686551606798,
+          "auroc": 0.8603347000000001,
+          "brier": 0.05938200534967479,
+          "score_min": 0.004171587526798248,
+          "score_max": 0.991572380065918,
+          "unique_scores": 14449,
+          "zero_scores": 0
+        }
+      },
+      "bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 4412,
+        "self_pairs": 6,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      },
+      "unexposed_bootstrap": {
+        "replicates": 1000,
+        "seed": 20261005,
+        "test_unique_proteins": 4267,
+        "self_pairs": 6,
+        "sklearn_check_passed": true,
+        "method": "Resample endpoints uniformly with replacement; non-self pair multiplicity is product; self-pair uses one multiplicity."
+      }
+    }
+  },
+  "common_unexposed_counts": {
+    "mouse": {
+      "rows": 50786,
+      "positives": 3378,
+      "negatives": 47408,
+      "unique_proteins": 16741
+    },
+    "fly": {
+      "rows": 17944,
+      "positives": 53,
+      "negatives": 17891,
+      "unique_proteins": 7105
+    },
+    "worm": {
+      "rows": 53419,
+      "positives": 3937,
+      "negatives": 49482,
+      "unique_proteins": 17989
+    },
+    "yeast": {
+      "rows": 8104,
+      "positives": 21,
+      "negatives": 8083,
+      "unique_proteins": 2225
+    },
+    "ecoli": {
+      "rows": 19704,
+      "positives": 889,
+      "negatives": 18815,
+      "unique_proteins": 4267
+    }
+  },
+  "confidence_intervals": [
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.2091229881774008,
+      "low": 0.18086263269131153,
+      "high": 0.24191899361703192
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.625357608,
+      "low": 0.605315071906024,
+      "high": 0.6456324656498998
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.17682615390896053,
+      "low": 0.1516556087913858,
+      "high": 0.20722856807769144
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.633061788,
+      "low": 0.6133944122426678,
+      "high": 0.6536854974737089
+    },
+    {
+      "test": "mouse",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.9084121216137712,
+      "low": 0.8919177176141118,
+      "high": 0.923556956132988
+    },
+    {
+      "test": "mouse",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.982969998,
+      "low": 0.9790230669646603,
+      "high": 0.9864306495512902
+    },
+    {
+      "test": "mouse",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.27512105363526546,
+      "low": 0.24147813971560547,
+      "high": 0.314539212307267
+    },
+    {
+      "test": "mouse",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.698272728,
+      "low": 0.6781337351579464,
+      "high": 0.7203294955408777
+    },
+    {
+      "test": "mouse",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.8831988813816837,
+      "low": 0.8638640111394955,
+      "high": 0.9013589010286637
+    },
+    {
+      "test": "mouse",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.977400784,
+      "low": 0.9726383356912265,
+      "high": 0.9813812846249794
+    },
+    {
+      "test": "mouse",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.35278236587805534,
+      "low": 0.3119483847897224,
+      "high": 0.3970012601546065
+    },
+    {
+      "test": "mouse",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.774278456,
+      "low": 0.7555007418435611,
+      "high": 0.7918288725235566
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.3422768107917593,
+      "low": 0.3037088500640977,
+      "high": 0.38937559004239186
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.771881166,
+      "low": 0.7531541363609411,
+      "high": 0.7877824934468307
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.8453623117576462,
+      "low": 0.8225283970644234,
+      "high": 0.8661103310110511
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.958392578,
+      "low": 0.9504414117816945,
+      "high": 0.9654059995712576
+    },
+    {
+      "test": "mouse",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.16747397791991933,
+      "low": 0.147983676702998,
+      "high": 0.19435388704866793
+    },
+    {
+      "test": "mouse",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.691833144,
+      "low": 0.6731739030336972,
+      "high": 0.7106073201839403
+    },
+    {
+      "test": "mouse",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.3337199166989844,
+      "low": 0.3007310714120062,
+      "high": 0.3716042807118344
+    },
+    {
+      "test": "mouse",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.700828684,
+      "low": 0.6796994664201588,
+      "high": 0.7222334983540685
+    },
+    {
+      "test": "mouse",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.5799094687628724,
+      "low": 0.5383920502821017,
+      "high": 0.6213420521130604
+    },
+    {
+      "test": "mouse",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.83290199,
+      "low": 0.8154283511605452,
+      "high": 0.8508108396026753
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.14489171206830204,
+      "low": 0.12295650651303662,
+      "high": 0.16863789431483286
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.6239263584055332,
+      "low": 0.6030684938335026,
+      "high": 0.6455510522152749
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.10905981135587756,
+      "low": 0.09459800328124832,
+      "high": 0.12511970178884743
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.6164273992173455,
+      "low": 0.595493214493158,
+      "high": 0.6379324854093794
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.8617996107250198,
+      "low": 0.8370122906701499,
+      "high": 0.8848034336466803
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.9784472339133505,
+      "low": 0.9732014763670616,
+      "high": 0.9829696617675601
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.18331252653282099,
+      "low": 0.15532113036883477,
+      "high": 0.2159891297834947
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.6917608811167614,
+      "low": 0.6702602868359354,
+      "high": 0.7115917179342549
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.8243172377314794,
+      "low": 0.7952750106657334,
+      "high": 0.8495447225875712
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.9717980556076753,
+      "low": 0.9661765329531157,
+      "high": 0.977005859024581
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.25330372820210656,
+      "low": 0.22245122621714772,
+      "high": 0.2930401992536385
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.76417128537836,
+      "low": 0.7446355172375335,
+      "high": 0.7841349007798147
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.22144447294537786,
+      "low": 0.19189264480438348,
+      "high": 0.2540547298919152
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.7580206732900963,
+      "low": 0.7404276243552762,
+      "high": 0.7755235525879746
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.7768362684448348,
+      "low": 0.7472916187309004,
+      "high": 0.8064886217918004
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.9498178997701472,
+      "low": 0.9408034852559651,
+      "high": 0.9585281011287506
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.1275274464496549,
+      "low": 0.11181624521351048,
+      "high": 0.1486520840628355
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.710867652023466,
+      "low": 0.6914937772408705,
+      "high": 0.7297357442267648
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.2853760034646182,
+      "low": 0.2501543962974551,
+      "high": 0.3217087822634664
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.7011620256750565,
+      "low": 0.6786878818209354,
+      "high": 0.7238741105302594
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.42678575282769526,
+      "low": 0.3847460036482932,
+      "high": 0.47021739631094184
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.7845342239755084,
+      "low": 0.7634091465844715,
+      "high": 0.8049484064505541
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.18638236105749517,
+      "low": 0.15723920224679644,
+      "high": 0.22322732404921578
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.611377646,
+      "low": 0.583550562074326,
+      "high": 0.6449350592793579
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.1530774237697656,
+      "low": 0.12605358574415637,
+      "high": 0.1876547298737515
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.572639952,
+      "low": 0.5399487534710692,
+      "high": 0.6093415996036131
+    },
+    {
+      "test": "fly",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.9167559419559639,
+      "low": 0.8974702977553415,
+      "high": 0.9326735493109781
+    },
+    {
+      "test": "fly",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.98339589,
+      "low": 0.9780555358840567,
+      "high": 0.9874279609325409
+    },
+    {
+      "test": "fly",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.3017136336636628,
+      "low": 0.25379515405696995,
+      "high": 0.35126116199034285
+    },
+    {
+      "test": "fly",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.693957654,
+      "low": 0.6640525550191688,
+      "high": 0.7212546627465115
+    },
+    {
+      "test": "fly",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.8550181449190797,
+      "low": 0.8283154667791386,
+      "high": 0.8794907457686187
+    },
+    {
+      "test": "fly",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.970950582,
+      "low": 0.9649394090135742,
+      "high": 0.9765253419134431
+    },
+    {
+      "test": "fly",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.374034438347436,
+      "low": 0.3254554922538076,
+      "high": 0.4304248755893395
+    },
+    {
+      "test": "fly",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.785530124,
+      "low": 0.7632592113654642,
+      "high": 0.8058729996270573
+    },
+    {
+      "test": "fly",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.3365567676939071,
+      "low": 0.28867574119160466,
+      "high": 0.3881339556458572
+    },
+    {
+      "test": "fly",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.727311198,
+      "low": 0.7033570546105753,
+      "high": 0.751174545367951
+    },
+    {
+      "test": "fly",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.8814588625973916,
+      "low": 0.8580443391043993,
+      "high": 0.9009004848021225
+    },
+    {
+      "test": "fly",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.967186222,
+      "low": 0.9600362911399943,
+      "high": 0.9734988661377875
+    },
+    {
+      "test": "fly",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.13377861013008763,
+      "low": 0.11852418498420988,
+      "high": 0.1526500672100823
+    },
+    {
+      "test": "fly",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.68234095,
+      "low": 0.6626775718631174,
+      "high": 0.703256494963434
+    },
+    {
+      "test": "fly",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.3289111531981907,
+      "low": 0.27453651470083607,
+      "high": 0.3844619444529083
+    },
+    {
+      "test": "fly",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.7041774,
+      "low": 0.6717300684304546,
+      "high": 0.7323322167304019
+    },
+    {
+      "test": "fly",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.5523648257327711,
+      "low": 0.49931117093864863,
+      "high": 0.6027067226883583
+    },
+    {
+      "test": "fly",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.823633164,
+      "low": 0.8013445816129303,
+      "high": 0.8453505339769619
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.027474476209920336,
+      "low": 0.002718440714391753,
+      "high": 0.1350888080761236
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.6138091988909782,
+      "low": 0.4785596619510216,
+      "high": 0.7389083722882913
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.01702151328251224,
+      "low": 0.002473002510363965,
+      "high": 0.13327322251307916
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.6360233826852966,
+      "low": 0.4986771220959214,
+      "high": 0.7628547035455665
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.4195161968867626,
+      "low": 0.20101549862045062,
+      "high": 0.6763989471391622
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.9487367423063984,
+      "low": 0.8715960991833204,
+      "high": 0.991739516441968
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.007373540809747943,
+      "low": 0.003047231291268709,
+      "high": 0.025723794933934476
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.6577324110467685,
+      "low": 0.5279470371041367,
+      "high": 0.7853871540946237
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.24006517254979373,
+      "low": 0.09092124675481077,
+      "high": 0.47034017648284693
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.9301714891961068,
+      "low": 0.841881653117212,
+      "high": 0.9837537432464408
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.01443503163154996,
+      "low": 0.005893188709966533,
+      "high": 0.04388845337377012
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.7875499750586097,
+      "low": 0.6625251301523036,
+      "high": 0.8883921168160887
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.01827729817840881,
+      "low": 0.004354365159722849,
+      "high": 0.1121933851007095
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.7351604000324818,
+      "low": 0.5853824729577374,
+      "high": 0.8450995520464026
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.14878481480321998,
+      "low": 0.036179553790632216,
+      "high": 0.36690675012003315
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.8634055491166107,
+      "low": 0.7417209993120343,
+      "high": 0.9458028211529946
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.005316397511466213,
+      "low": 0.0029607690124547575,
+      "high": 0.012123443508729587
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.6690535876054472,
+      "low": 0.5173919173440289,
+      "high": 0.8007987562211015
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.07495226252313127,
+      "low": 0.0026870826962751,
+      "high": 0.24427082599434521
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.5139713970236959,
+      "low": 0.36012320056782576,
+      "high": 0.6635805119944728
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.04822993688020046,
+      "low": 0.008831225414373017,
+      "high": 0.2081833732713378
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.7388926444517798,
+      "low": 0.5921757690853962,
+      "high": 0.8594064855514365
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.13591128156834759,
+      "low": 0.11657189911150814,
+      "high": 0.1571491221266083
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.555289526,
+      "low": 0.5279358889336127,
+      "high": 0.5844901096207991
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.10276658408213243,
+      "low": 0.09075492007867585,
+      "high": 0.11698030766158883
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.523885826,
+      "low": 0.49038482339291173,
+      "high": 0.5581938428066349
+    },
+    {
+      "test": "worm",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.890883229681663,
+      "low": 0.865105983014155,
+      "high": 0.9108266515033815
+    },
+    {
+      "test": "worm",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.975250198,
+      "low": 0.9685654104867492,
+      "high": 0.9808212341772294
+    },
+    {
+      "test": "worm",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.1856029866264683,
+      "low": 0.15953730915295397,
+      "high": 0.21380639419795294
+    },
+    {
+      "test": "worm",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.617574168,
+      "low": 0.5907833196181546,
+      "high": 0.6449469974358095
+    },
+    {
+      "test": "worm",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.8368484305028032,
+      "low": 0.8041067138793248,
+      "high": 0.8632516429570541
+    },
+    {
+      "test": "worm",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.960233962,
+      "low": 0.9502774505860421,
+      "high": 0.9678612325158874
+    },
+    {
+      "test": "worm",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.3550669034526881,
+      "low": 0.3071753477502681,
+      "high": 0.4011034568873561
+    },
+    {
+      "test": "worm",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.778917914,
+      "low": 0.7595980881777997,
+      "high": 0.7997764344529142
+    },
+    {
+      "test": "worm",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.23099596501800607,
+      "low": 0.19552956553958512,
+      "high": 0.265511427853154
+    },
+    {
+      "test": "worm",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.685002592,
+      "low": 0.6629604059178499,
+      "high": 0.7048300627718751
+    },
+    {
+      "test": "worm",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.7955059639351385,
+      "low": 0.7597374829172473,
+      "high": 0.8231729476857471
+    },
+    {
+      "test": "worm",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.937676702,
+      "low": 0.9254140177485438,
+      "high": 0.9477493153101029
+    },
+    {
+      "test": "worm",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.16488605926861424,
+      "low": 0.14566360120119662,
+      "high": 0.18585996814110325
+    },
+    {
+      "test": "worm",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.745478768,
+      "low": 0.7292528949079,
+      "high": 0.7608461248675784
+    },
+    {
+      "test": "worm",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.3783121565134194,
+      "low": 0.32380664370383844,
+      "high": 0.4270391397687225
+    },
+    {
+      "test": "worm",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.721705936,
+      "low": 0.6907720768414378,
+      "high": 0.7494360524201541
+    },
+    {
+      "test": "worm",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.5482272922280689,
+      "low": 0.4908798692549582,
+      "high": 0.5977750149751515
+    },
+    {
+      "test": "worm",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.81303403,
+      "low": 0.7887461093035956,
+      "high": 0.8345271560202098
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.12712718111724017,
+      "low": 0.10565322290973737,
+      "high": 0.15305681253881714
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.5976007475033421,
+      "low": 0.5721109796853225,
+      "high": 0.6242164297736036
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.09594694006260544,
+      "low": 0.08415416815074696,
+      "high": 0.11221163592444848
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.5774477690986828,
+      "low": 0.5485155916551706,
+      "high": 0.606121222264961
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.8436957961861665,
+      "low": 0.8141630208835177,
+      "high": 0.8687051312054636
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.9695845402361352,
+      "low": 0.9622451096684069,
+      "high": 0.9759131604051648
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.1742049292715581,
+      "low": 0.14732229691221038,
+      "high": 0.20550419193514502
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.6388204531996955,
+      "low": 0.6123310193137907,
+      "high": 0.6649549350128109
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.7743902827956141,
+      "low": 0.736740910243025,
+      "high": 0.8059130856663104
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.9518043943124789,
+      "low": 0.9401103837081323,
+      "high": 0.9612752074565692
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.2855501381662348,
+      "low": 0.2456760478996295,
+      "high": 0.32740117201200103
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.7638855253661359,
+      "low": 0.7435816288312666,
+      "high": 0.7833856756299694
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.18931362969102067,
+      "low": 0.16120186361174416,
+      "high": 0.2188411500728103
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.6943756981972555,
+      "low": 0.6731539753477062,
+      "high": 0.7153335473449269
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.7232477643051772,
+      "low": 0.6868768768028023,
+      "high": 0.7566249181243646
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.9249845288219739,
+      "low": 0.9114773994276034,
+      "high": 0.9370902656130086
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.14577272405431763,
+      "low": 0.12801869311016312,
+      "high": 0.16413506540497405
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.7559729388283803,
+      "low": 0.7378637708574144,
+      "high": 0.7718359241086427
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.30330936286084054,
+      "low": 0.25887336458497595,
+      "high": 0.3507379894596609
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.6980063572915635,
+      "low": 0.6677167006297702,
+      "high": 0.7276488502310101
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.44079516428163534,
+      "low": 0.39018178875954324,
+      "high": 0.48947171395476197
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.778636473201971,
+      "low": 0.7555363969275353,
+      "high": 0.8026977085826985
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.1366417711886921,
+      "low": 0.11955812951410705,
+      "high": 0.15933885570954587
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.568010722,
+      "low": 0.5412065897366446,
+      "high": 0.5939261867717937
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.11652308455342868,
+      "low": 0.10175718875637532,
+      "high": 0.13514712853361688
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.517971628,
+      "low": 0.48740859664096853,
+      "high": 0.5491773493201623
+    },
+    {
+      "test": "yeast",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.7147095360032377,
+      "low": 0.6728039521406268,
+      "high": 0.7549801835695479
+    },
+    {
+      "test": "yeast",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.914398434,
+      "low": 0.9020107767245104,
+      "high": 0.9269444310227223
+    },
+    {
+      "test": "yeast",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.19738019910966098,
+      "low": 0.16835712167448721,
+      "high": 0.23268129654673853
+    },
+    {
+      "test": "yeast",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.619594402,
+      "low": 0.5913001837691116,
+      "high": 0.6459065623611238
+    },
+    {
+      "test": "yeast",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.644145750926981,
+      "low": 0.5935768649607572,
+      "high": 0.6903509243310839
+    },
+    {
+      "test": "yeast",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.899204458,
+      "low": 0.8857370766142845,
+      "high": 0.9116574244594695
+    },
+    {
+      "test": "yeast",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.3526742512029091,
+      "low": 0.30239343858412127,
+      "high": 0.4048227896844125
+    },
+    {
+      "test": "yeast",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.765634696,
+      "low": 0.744756733919405,
+      "high": 0.7860086081891424
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.2644113890712659,
+      "low": 0.22551749127935844,
+      "high": 0.3085274100319583
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.69758015,
+      "low": 0.6752657076350187,
+      "high": 0.7193118768316896
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.7339322135798874,
+      "low": 0.6976811882040987,
+      "high": 0.7672618703630254
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.889885996,
+      "low": 0.8748818687983521,
+      "high": 0.9047789159210179
+    },
+    {
+      "test": "yeast",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.1304835121614627,
+      "low": 0.11759999045630874,
+      "high": 0.14651984565463538
+    },
+    {
+      "test": "yeast",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.667779772,
+      "low": 0.6508849206330863,
+      "high": 0.6858387707432485
+    },
+    {
+      "test": "yeast",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.2595756578284181,
+      "low": 0.21516372543843437,
+      "high": 0.30380201773058907
+    },
+    {
+      "test": "yeast",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.672649894,
+      "low": 0.6452769557730016,
+      "high": 0.7004859756987212
+    },
+    {
+      "test": "yeast",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.404809045522195,
+      "low": 0.35159000752470515,
+      "high": 0.4563351161023091
+    },
+    {
+      "test": "yeast",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.788960912,
+      "low": 0.7678759358726399,
+      "high": 0.8098251148369452
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.0035859081457370124,
+      "low": 0.0013612043543252978,
+      "high": 0.01916243995023659
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.526454699162852,
+      "low": 0.30197795953144296,
+      "high": 0.7574051258783563
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.008098221080975682,
+      "low": 0.0011882436559749803,
+      "high": 0.08894684304032746
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.48505682119439386,
+      "low": 0.24147654674120617,
+      "high": 0.7480622728169476
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.10868018956411853,
+      "low": 0.008188287281774348,
+      "high": 0.48228219850553855
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.7036637740584295,
+      "low": 0.42730424189334354,
+      "high": 0.9315642664373343
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.003464544903035179,
+      "low": 0.0013769366805623242,
+      "high": 0.016083457809550696
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.5680352061646136,
+      "low": 0.37459035804870366,
+      "high": 0.7528371482883072
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.043534879838410735,
+      "low": 0.0038483436266320394,
+      "high": 0.27528784132443185
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.7082000435953176,
+      "low": 0.47535361043611185,
+      "high": 0.9069478625039914
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.01089139256825555,
+      "low": 0.0028925656968517436,
+      "high": 0.04766917766878691
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.6497587529382655,
+      "low": 0.3676400840728399,
+      "high": 0.9037390595026994
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.004138788918181722,
+      "low": 0.0011951819353459507,
+      "high": 0.025274508946185263
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.5109076662955173,
+      "low": 0.2840340413750854,
+      "high": 0.7669080336391274
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.00347367817524736,
+      "low": 0.0013784252628251845,
+      "high": 0.01039548831199344
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.5768838773911148,
+      "low": 0.35703845090161956,
+      "high": 0.7674590001843488
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.004898239282391119,
+      "low": 0.0017817164786909446,
+      "high": 0.017448123445309344
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.6583541000217976,
+      "low": 0.4562444389102651,
+      "high": 0.8302462341531307
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.005872887455880204,
+      "low": 0.002119174049410772,
+      "high": 0.026954504615914587
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.6899636509311136,
+      "low": 0.5055453618160699,
+      "high": 0.8528760133228881
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.050842617669377616,
+      "low": 0.008936684020599312,
+      "high": 0.29236176860160207
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.8702096699127505,
+      "low": 0.6974349552510144,
+      "high": 0.9713575696482606
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.08069036805938115,
+      "low": 0.06586832611603244,
+      "high": 0.10175629067697993
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.3757119375,
+      "low": 0.3195753333894084,
+      "high": 0.44344289491706906
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.0663028702227816,
+      "low": 0.05574627663749765,
+      "high": 0.0810123939606037
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.2748716,
+      "low": 0.2137416387021289,
+      "high": 0.3449108050172788
+    },
+    {
+      "test": "ecoli",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.7328962829098187,
+      "low": 0.6071734355322285,
+      "high": 0.8262368869688526
+    },
+    {
+      "test": "ecoli",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.9066258125,
+      "low": 0.8746089526463514,
+      "high": 0.9348025299301144
+    },
+    {
+      "test": "ecoli",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.15721771513279373,
+      "low": 0.10185101227898051,
+      "high": 0.22958319728237186
+    },
+    {
+      "test": "ecoli",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.4838996,
+      "low": 0.4208406967132108,
+      "high": 0.5544342246241378
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.6730014709038998,
+      "low": 0.5524136688103918,
+      "high": 0.770450618556741
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.8774775625,
+      "low": 0.8319161840039294,
+      "high": 0.9106213861605174
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.21388118586396115,
+      "low": 0.163221207809701,
+      "high": 0.27952804559023814
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.7412282125,
+      "low": 0.704473899502596,
+      "high": 0.7796714260185081
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.25419125226032496,
+      "low": 0.17044519308929387,
+      "high": 0.35200626288453063
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.644734425,
+      "low": 0.5925246576050303,
+      "high": 0.6978362973677071
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.7073287754019626,
+      "low": 0.5904730927778012,
+      "high": 0.7995795495143955
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.877945725,
+      "low": 0.8350064563916614,
+      "high": 0.9120276989618388
+    },
+    {
+      "test": "ecoli",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.10328000450790785,
+      "low": 0.08111641937832845,
+      "high": 0.13562530183351865
+    },
+    {
+      "test": "ecoli",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.5935264625,
+      "low": 0.5576427492895509,
+      "high": 0.6260801195319339
+    },
+    {
+      "test": "ecoli",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.1345364204076411,
+      "low": 0.09726218374390846,
+      "high": 0.1828390905385159
+    },
+    {
+      "test": "ecoli",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.5306301375,
+      "low": 0.4739031319530171,
+      "high": 0.5877628831492209
+    },
+    {
+      "test": "ecoli",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.5349686551606802,
+      "low": 0.4100206276503174,
+      "high": 0.652621122192907
+    },
+    {
+      "test": "ecoli",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.8603347,
+      "low": 0.822086611098504,
+      "high": 0.892493266184766
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "ap",
+      "estimate": 0.05583843403921018,
+      "low": 0.04215160291183885,
+      "high": 0.08011180460090316
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.4861771430843268,
+      "low": 0.43759077299445687,
+      "high": 0.5294872322045733
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "ap",
+      "estimate": 0.0533551639646534,
+      "low": 0.04060201573288287,
+      "high": 0.0740946342413707
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.472275608785681,
+      "low": 0.41605480651979654,
+      "high": 0.5224254355416845
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "native-human",
+      "metric": "ap",
+      "estimate": 0.2989342361833151,
+      "low": 0.20460150929612894,
+      "high": 0.4134687466618968
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.8171047380703774,
+      "low": 0.7839219342586387,
+      "high": 0.8497148671202718
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "native-plm",
+      "metric": "ap",
+      "estimate": 0.07264408156667808,
+      "low": 0.05193366811888344,
+      "high": 0.10732351879761179
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.5481278997712318,
+      "low": 0.5018084254515214,
+      "high": 0.5960126291828689
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna-human",
+      "metric": "ap",
+      "estimate": 0.294176125499873,
+      "low": 0.20138155729294843,
+      "high": 0.3940333259511937
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.776192498924613,
+      "low": 0.7178177167112737,
+      "high": 0.8264958179625008
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna",
+      "metric": "ap",
+      "estimate": 0.11634813662156439,
+      "low": 0.08768243365251274,
+      "high": 0.15611920406652996
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.7190696698389715,
+      "low": 0.6837143748465654,
+      "high": 0.7579109759888907
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "ap",
+      "estimate": 0.11300420178283026,
+      "low": 0.0734575626331026,
+      "high": 0.180355542386437
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.6478498385947836,
+      "low": 0.6044971237562907,
+      "high": 0.6893978990266075
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-default",
+      "metric": "ap",
+      "estimate": 0.29875960065686036,
+      "low": 0.2125090774157423,
+      "high": 0.4002575224837243
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.7623412440173652,
+      "low": 0.7074413836646831,
+      "high": 0.808595184246765
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "rapppid",
+      "metric": "ap",
+      "estimate": 0.054754439032742144,
+      "low": 0.04384898549441076,
+      "high": 0.07220963592484529
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.5654371930588135,
+      "low": 0.5142590357589272,
+      "high": 0.6105295426317343
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "sprint",
+      "metric": "ap",
+      "estimate": 0.07940544251957855,
+      "low": 0.0569407634572783,
+      "high": 0.11457219005286631
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.5727982514011419,
+      "low": 0.5266613149345675,
+      "high": 0.6167964856568088
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "dscript",
+      "metric": "ap",
+      "estimate": 0.21758901758402785,
+      "low": 0.1545990543026368,
+      "high": 0.3123288646676336
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.7619745213219594,
+      "low": 0.7235197155855928,
+      "high": 0.802455486858626
+    }
+  ],
+  "paired_differences": [
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6992891334363703,
+      "low": -0.7247873342917999,
+      "high": -0.6692982882533849
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.35761239,
+      "low": -0.3777012615607817,
+      "high": -0.33726549923993787
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7315859677048107,
+      "low": -0.7559235497470145,
+      "high": -0.7040500005445578
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.34990820999999994,
+      "low": -0.3703770519492199,
+      "high": -0.3301275913289954
+    },
+    {
+      "test": "mouse",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6332910679785058,
+      "low": -0.6687519833201562,
+      "high": -0.5972985436273561
+    },
+    {
+      "test": "mouse",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.28469727,
+      "low": -0.3057484135024322,
+      "high": -0.26299688511898145
+    },
+    {
+      "test": "mouse",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.025213240232087486,
+      "low": -0.03693016202379721,
+      "high": -0.014239428472472396
+    },
+    {
+      "test": "mouse",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.005569213999999989,
+      "low": -0.008603528743484625,
+      "high": -0.0026674613830099726
+    },
+    {
+      "test": "mouse",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5556297557357158,
+      "low": -0.5918471618894179,
+      "high": -0.5138778477502026
+    },
+    {
+      "test": "mouse",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.20869154199999995,
+      "low": -0.22684274290741394,
+      "high": -0.19090621174866493
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5661353108220119,
+      "low": -0.6023022886161468,
+      "high": -0.5235518973465935
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.21108883199999995,
+      "low": -0.22921983745269936,
+      "high": -0.1949638327307052
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.06304980985612496,
+      "low": -0.08207993979244521,
+      "high": -0.04526312809183359
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.02457741999999996,
+      "low": -0.03137593727022657,
+      "high": -0.018533741425767598
+    },
+    {
+      "test": "mouse",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7409381436938518,
+      "low": -0.7613000008937505,
+      "high": -0.716973025877173
+    },
+    {
+      "test": "mouse",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.291136854,
+      "low": -0.31051605081504835,
+      "high": -0.2718064099030778
+    },
+    {
+      "test": "mouse",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5746922049147868,
+      "low": -0.6083212709508597,
+      "high": -0.5367499322768395
+    },
+    {
+      "test": "mouse",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.282141314,
+      "low": -0.3038843282340131,
+      "high": -0.26027707249941034
+    },
+    {
+      "test": "mouse",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.32850265285089875,
+      "low": -0.36367375806913865,
+      "high": -0.2940519721664074
+    },
+    {
+      "test": "mouse",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.15006800799999997,
+      "low": -0.16702847227383116,
+      "high": -0.13299532371069284
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.06599806545786466,
+      "low": -0.09197193621525804,
+      "high": -0.03959302024734366
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.07291512,
+      "low": -0.09133668687982191,
+      "high": -0.05248661257604917
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.09829489972630492,
+      "low": -0.12335784560455423,
+      "high": -0.07417937380369113
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.06521093999999994,
+      "low": -0.08521843819590243,
+      "high": -0.04418264394942452
+    },
+    {
+      "test": "mouse",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6332910679785058,
+      "low": 0.5972985436273561,
+      "high": 0.6687519833201562
+    },
+    {
+      "test": "mouse",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.28469727,
+      "low": 0.26299688511898145,
+      "high": 0.3057484135024322
+    },
+    {
+      "test": "mouse",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6080778277464183,
+      "low": 0.5708278247140983,
+      "high": 0.6424249184813691
+    },
+    {
+      "test": "mouse",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.279128056,
+      "low": 0.25817262389003875,
+      "high": 0.2999705741072335
+    },
+    {
+      "test": "mouse",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.07766131224278988,
+      "low": 0.0501153238505015,
+      "high": 0.10644501179953811
+    },
+    {
+      "test": "mouse",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.07600572800000005,
+      "low": 0.05522408447270267,
+      "high": 0.09439285275233923
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.06715575715649386,
+      "low": 0.04312004740543873,
+      "high": 0.09289268678668892
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.07360843800000005,
+      "low": 0.054930697663944816,
+      "high": 0.09330967959574181
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5702412581223808,
+      "low": 0.5337970774707989,
+      "high": 0.6017969277801214
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.26011985000000004,
+      "low": 0.2381737106393094,
+      "high": 0.280822979375668
+    },
+    {
+      "test": "mouse",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.10764707571534612,
+      "low": -0.14347622035618493,
+      "high": -0.0725795902944499
+    },
+    {
+      "test": "mouse",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.006439583999999998,
+      "low": -0.03733853260998817,
+      "high": 0.023889726086784035
+    },
+    {
+      "test": "mouse",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.05859886306371892,
+      "low": 0.01099588477247925,
+      "high": 0.10819669849434635
+    },
+    {
+      "test": "mouse",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.002555956000000026,
+      "low": -0.026782698513476883,
+      "high": 0.030756918428767804
+    },
+    {
+      "test": "mouse",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.30478841512760696,
+      "low": 0.26392854432944457,
+      "high": 0.3473818430711038
+    },
+    {
+      "test": "mouse",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.13462926200000003,
+      "low": 0.10741316769073611,
+      "high": 0.16193415600924055
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.032296834268440267,
+      "low": 0.015038414853038857,
+      "high": 0.05074455303313924
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": -0.00770418000000006,
+      "low": -0.023868229082773716,
+      "high": 0.007229209118906496
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7169078986567177,
+      "low": -0.7434378263462315,
+      "high": -0.687247402341966
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.3545208755078173,
+      "low": -0.376241889038265,
+      "high": -0.33068591265810976
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7527397993691423,
+      "low": -0.7762832471102044,
+      "high": -0.7275980751128838
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.36201983469600507,
+      "low": -0.3828899729872289,
+      "high": -0.3397899270355256
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6784870841921988,
+      "low": -0.7078013243825892,
+      "high": -0.6438835245532646
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.28668635279658916,
+      "low": -0.3074289222325388,
+      "high": -0.26555419715794115
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.0374823729935404,
+      "low": -0.05722267005884222,
+      "high": -0.021268486107020746
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.006649178305675241,
+      "low": -0.010712766551601393,
+      "high": -0.002544323120627757
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6084958825229132,
+      "low": -0.6421331727402185,
+      "high": -0.570569795312816
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.21427594853499055,
+      "low": -0.23383172098546134,
+      "high": -0.19466771356167376
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6403551377796419,
+      "low": -0.6726921441016203,
+      "high": -0.6049412792739746
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.22042656062325428,
+      "low": -0.2383770461048023,
+      "high": -0.20243755650309747
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.08496334228018498,
+      "low": -0.11241745181099334,
+      "high": -0.057724758793105284
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.028629334143203344,
+      "low": -0.03695406519615383,
+      "high": -0.020443495583901638
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7342721642753649,
+      "low": -0.7583443760646779,
+      "high": -0.7083027162055368
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.2675795818898845,
+      "low": -0.28681456555655316,
+      "high": -0.24908305951657347
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5764236072604015,
+      "low": -0.6132978228659313,
+      "high": -0.5357508988155414
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.27728520823829406,
+      "low": -0.3007023841099123,
+      "high": -0.2535910449729093
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.4350138578973245,
+      "low": -0.4719767053801664,
+      "high": -0.3983719680115269
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.1939130099378421,
+      "low": -0.21442431813304766,
+      "high": -0.1744469157255257
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.03842081446451895,
+      "low": -0.06343177376843004,
+      "high": -0.016525620750361104
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.06783452271122814,
+      "low": -0.08933326976108699,
+      "high": -0.047305673644032646
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.07425271517694343,
+      "low": -0.09893840302761112,
+      "high": -0.05203536681752805
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.07533348189941591,
+      "low": -0.09909693897377736,
+      "high": -0.05263182614275974
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6784870841921988,
+      "low": 0.6438835245532646,
+      "high": 0.7078013243825891
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.28668635279658916,
+      "low": 0.26555419715794115,
+      "high": 0.3074289222325388
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6410047111986583,
+      "low": 0.6044433049853271,
+      "high": 0.6722847671260829
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.2800371744909139,
+      "low": 0.25918068733726457,
+      "high": 0.30104270121421983
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.06999120166928557,
+      "low": 0.04488786776489743,
+      "high": 0.09891125327021577
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.07241040426159862,
+      "low": 0.05263948356028712,
+      "high": 0.09432870323231517
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.03813194641255688,
+      "low": 0.01511801009645947,
+      "high": 0.06083231277129038
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.06625979217333489,
+      "low": 0.045002554461713765,
+      "high": 0.08653990919454232
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5935237419120138,
+      "low": 0.5566964382265964,
+      "high": 0.6268814875011715
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.2580570186533858,
+      "low": 0.2367443642407102,
+      "high": 0.27998699334571997
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.05578508008316607,
+      "low": -0.08596423659175241,
+      "high": -0.026967149568948096
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.01910677090670465,
+      "low": -0.010887845586025612,
+      "high": 0.04847227144601915
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.10206347693179724,
+      "low": 0.05847138946566863,
+      "high": 0.14495928677336742
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.009401144558295105,
+      "low": -0.024348285162593745,
+      "high": 0.042294966629538654
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.24347322629487428,
+      "low": 0.19669189446768548,
+      "high": 0.28697048124902735
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.09277334285874705,
+      "low": 0.061589970757776565,
+      "high": 0.12019488964854606
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.03583190071242448,
+      "low": 0.021313023530795738,
+      "high": 0.050846048307694104
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.00749895918818777,
+      "low": -0.007704393712123542,
+      "high": 0.022478719740254147
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7303735808984687,
+      "low": -0.7582494677434283,
+      "high": -0.6947824645266389
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.37201824400000005,
+      "low": -0.4011503425441355,
+      "high": -0.3386833626782081
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7636785181861983,
+      "low": -0.7898123454839397,
+      "high": -0.7292163307633811
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.4107559380000001,
+      "low": -0.4437311540880703,
+      "high": -0.37495372321883225
+    },
+    {
+      "test": "fly",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6150423082923011,
+      "low": -0.6582195598132534,
+      "high": -0.5677872386952224
+    },
+    {
+      "test": "fly",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.28943823600000007,
+      "low": -0.3190197041364127,
+      "high": -0.26128282384174817
+    },
+    {
+      "test": "fly",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.0617377970368842,
+      "low": -0.08123667866213943,
+      "high": -0.04327629134842618
+    },
+    {
+      "test": "fly",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.0124453080000001,
+      "low": -0.017799681991484614,
+      "high": -0.006884789983801813
+    },
+    {
+      "test": "fly",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5427215036085279,
+      "low": -0.5878255392249454,
+      "high": -0.4921147503029952
+    },
+    {
+      "test": "fly",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.19786576600000005,
+      "low": -0.21947901807461231,
+      "high": -0.1762940280294654
+    },
+    {
+      "test": "fly",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5801991742620568,
+      "low": -0.621117468612818,
+      "high": -0.5308876182666605
+    },
+    {
+      "test": "fly",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.25608469200000006,
+      "low": -0.2807024402279147,
+      "high": -0.23281555425058564
+    },
+    {
+      "test": "fly",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.03529707935857229,
+      "low": -0.05391268873178279,
+      "high": -0.017426120664989435
+    },
+    {
+      "test": "fly",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.01620966800000001,
+      "low": -0.022999269676233187,
+      "high": -0.009907669575073524
+    },
+    {
+      "test": "fly",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7829773318258763,
+      "low": -0.7992532128791888,
+      "high": -0.7612084391619012
+    },
+    {
+      "test": "fly",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.3010549400000001,
+      "low": -0.3217051196178967,
+      "high": -0.2786640568659906
+    },
+    {
+      "test": "fly",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5878447887577731,
+      "low": -0.638345909002744,
+      "high": -0.532405041636851
+    },
+    {
+      "test": "fly",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.2792184900000001,
+      "low": -0.3121715977591928,
+      "high": -0.2520780105613889
+    },
+    {
+      "test": "fly",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.36439111622319276,
+      "low": -0.41010381922793443,
+      "high": -0.32022527493298664
+    },
+    {
+      "test": "fly",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.15976272600000008,
+      "low": -0.18154572836190058,
+      "high": -0.13785651312473576
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.1153312726061676,
+      "low": -0.1523825738645871,
+      "high": -0.08173589364819267
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.08258000799999998,
+      "low": -0.10619558523672186,
+      "high": -0.05697908841751793
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.14863620989389717,
+      "low": -0.17983676794699,
+      "high": -0.11888121311852343
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.12131770200000003,
+      "low": -0.14869933009810402,
+      "high": -0.09543524073960187
+    },
+    {
+      "test": "fly",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6150423082923011,
+      "low": 0.5677872386952223,
+      "high": 0.6582195598132534
+    },
+    {
+      "test": "fly",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.28943823600000007,
+      "low": 0.26128282384174817,
+      "high": 0.3190197041364127
+    },
+    {
+      "test": "fly",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5533045112554169,
+      "low": 0.5047558312020568,
+      "high": 0.6003101392925945
+    },
+    {
+      "test": "fly",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.27699292799999997,
+      "low": 0.24937459989341917,
+      "high": 0.3072881185489634
+    },
+    {
+      "test": "fly",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.07232080468377322,
+      "low": 0.03506313621864443,
+      "high": 0.11208520203441731
+    },
+    {
+      "test": "fly",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.09157247000000002,
+      "low": 0.06593270670294198,
+      "high": 0.11787850934346306
+    },
+    {
+      "test": "fly",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.034843134030244305,
+      "low": -5.886421732141763e-06,
+      "high": 0.06836765098526779
+    },
+    {
+      "test": "fly",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.03335354400000001,
+      "low": 0.008628545670349324,
+      "high": 0.05828001426352515
+    },
+    {
+      "test": "fly",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5797452289337288,
+      "low": 0.5343235848902723,
+      "high": 0.620914642531651
+    },
+    {
+      "test": "fly",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.27322856800000006,
+      "low": 0.24691902769247023,
+      "high": 0.3024889226236882
+    },
+    {
+      "test": "fly",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.16793502353357515,
+      "low": -0.21733715538643797,
+      "high": -0.11913892504227787
+    },
+    {
+      "test": "fly",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.011616704000000033,
+      "low": -0.047276506329144326,
+      "high": 0.02553471399796627
+    },
+    {
+      "test": "fly",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.027197519534527925,
+      "low": -0.0430149893584706,
+      "high": 0.09582239005350603
+    },
+    {
+      "test": "fly",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.010219745999999974,
+      "low": -0.03306555403258317,
+      "high": 0.049446206633310924
+    },
+    {
+      "test": "fly",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.25065119206910835,
+      "low": 0.19270549030033934,
+      "high": 0.30511953953105103
+    },
+    {
+      "test": "fly",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.12967551,
+      "low": 0.0895159165651628,
+      "high": 0.16563682009310718
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.03330493728772957,
+      "low": 0.012488279109124069,
+      "high": 0.056450607889735396
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.038737694000000045,
+      "low": 0.019004751078588462,
+      "high": 0.058682361136664134
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.3920417206768423,
+      "low": -0.6379232994052938,
+      "high": -0.1868111662359672
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.3349275434154202,
+      "low": -0.47699436293302894,
+      "high": -0.19719722350234292
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.4024946836042504,
+      "low": -0.6388622109304068,
+      "high": -0.1880990043377938
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.3127133596211018,
+      "low": -0.4618528844507564,
+      "high": -0.15465677332301972
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.41214265607701467,
+      "low": -0.6643099128753812,
+      "high": -0.19320166674814987
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.2910043312596299,
+      "low": -0.4266573356485943,
+      "high": -0.15265422780189644
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.17945102433696888,
+      "low": -0.41605876663689223,
+      "high": 0.05808261215837786
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.018565253110291557,
+      "low": -0.08123558371565605,
+      "high": 0.03642429977682682
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.40508116525521265,
+      "low": -0.6522293736095397,
+      "high": -0.18780868662597447
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.1611867672477887,
+      "low": -0.2780494642751356,
+      "high": -0.05029165913074003
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.40123889870835383,
+      "low": -0.6614921850057783,
+      "high": -0.17114761344801158
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.21357634227391653,
+      "low": -0.3588416607760817,
+      "high": -0.08542049307835622
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.27073138208354264,
+      "low": -0.48118478668461334,
+      "high": -0.05006456698496201
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.08533119318978766,
+      "low": -0.20497591599256798,
+      "high": 0.005297823811497187
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.4141997993752964,
+      "low": -0.6690969556304082,
+      "high": -0.19695055117325105
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.2796831547009512,
+      "low": -0.4234501389743999,
+      "high": -0.1401012743864177
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.34456393436363136,
+      "low": -0.6066795764543689,
+      "high": -0.09020817337674832
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.4347653452827025,
+      "low": -0.5880346665563871,
+      "high": -0.2980327845211754
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.3712862600065622,
+      "low": -0.6077128333079649,
+      "high": -0.14918202155751795
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.20984409785461855,
+      "low": -0.3507730370331613,
+      "high": -0.07793768833555498
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.020100935400172392,
+      "low": -0.012247257337589,
+      "high": 0.1241470138697861
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.043923212155790314,
+      "low": -0.1669761076385942,
+      "high": 0.07595737740183844
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.009647972472764298,
+      "low": -0.013359550847668156,
+      "high": 0.12042399543933179
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.021709028361471927,
+      "low": -0.14969385370441296,
+      "high": 0.10280581363075847
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.41214265607701467,
+      "low": 0.19320166674814987,
+      "high": 0.6643099128753812
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.2910043312596299,
+      "low": 0.15265422780189644,
+      "high": 0.4266573356485943
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.23269163174004578,
+      "low": 0.08233101943830165,
+      "high": 0.4575156589432205
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.2724390781493383,
+      "low": 0.1449647382828787,
+      "high": 0.4019144388479687
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.007061490821802018,
+      "low": -0.003808940151994591,
+      "high": 0.03137667034316096
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.1298175640118412,
+      "low": 0.04477422700806166,
+      "high": 0.22882450408189695
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.010903757368660866,
+      "low": -0.005531870419031911,
+      "high": 0.09132618132758476
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.07742798898571335,
+      "low": -0.05063102155484675,
+      "high": 0.20644073470823254
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.14141127399347203,
+      "low": 0.02951526542431349,
+      "high": 0.34960087777321475
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.20567313806984222,
+      "low": 0.06909246431419101,
+      "high": 0.32906248997082943
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.00205714329828173,
+      "low": -0.018807866165824316,
+      "high": 0.003958541680500754
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.011321176558678703,
+      "low": -0.1729361862259934,
+      "high": 0.20320007231136167
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.06757872171338332,
+      "low": -0.011545497090793642,
+      "high": 0.23340946920197087
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.14376101402307262,
+      "low": -0.35720719393822975,
+      "high": 0.06401217190937775
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.04085639607045252,
+      "low": 0.0006754526391844403,
+      "high": 0.19167994498578225
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.08116023340501133,
+      "low": -0.0955380175220884,
+      "high": 0.233256468117522
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.010452962927408094,
+      "low": -0.023045066026337317,
+      "high": 0.04203416281404728
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": -0.022214183794318387,
+      "low": -0.14047697930459124,
+      "high": 0.08948874530514946
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7549719481133155,
+      "low": -0.7803849127875058,
+      "high": -0.7248146959115699
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.419960672,
+      "low": -0.44834556783012924,
+      "high": -0.388295737864338
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7881166455995305,
+      "low": -0.8090844606239586,
+      "high": -0.7623103534644219
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.451364372,
+      "low": -0.48650512873578367,
+      "high": -0.41457328603850124
+    },
+    {
+      "test": "worm",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7052802430551948,
+      "low": -0.7349812234254974,
+      "high": -0.6715518005576462
+    },
+    {
+      "test": "worm",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.35767603000000003,
+      "low": -0.38471224631464845,
+      "high": -0.33031599148764607
+    },
+    {
+      "test": "worm",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.05403479917885978,
+      "low": -0.07347808772868844,
+      "high": -0.036710004310864026
+    },
+    {
+      "test": "worm",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.015016236000000016,
+      "low": -0.021530080903696274,
+      "high": -0.00904012700660474
+    },
+    {
+      "test": "worm",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5358163262289749,
+      "low": -0.5732107663344925,
+      "high": -0.49112809254208134
+    },
+    {
+      "test": "worm",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.19633228400000002,
+      "low": -0.2152274977402314,
+      "high": -0.17602088318234477
+    },
+    {
+      "test": "worm",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6598872646636569,
+      "low": -0.6888039633823432,
+      "high": -0.6264867042584955
+    },
+    {
+      "test": "worm",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.290247606,
+      "low": -0.3118505253687431,
+      "high": -0.26821847622349804
+    },
+    {
+      "test": "worm",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.0953772657465245,
+      "low": -0.11801367434125827,
+      "high": -0.07387248745477225
+    },
+    {
+      "test": "worm",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.03757349600000004,
+      "low": -0.04777435526737447,
+      "high": -0.02811658968178247
+    },
+    {
+      "test": "worm",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7259971704130488,
+      "low": -0.7463602420704148,
+      "high": -0.7024926035166231
+    },
+    {
+      "test": "worm",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.22977143,
+      "low": -0.24571043486842992,
+      "high": -0.21337612867709968
+    },
+    {
+      "test": "worm",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5125710731682436,
+      "low": -0.5593760850316781,
+      "high": -0.4692922790999474
+    },
+    {
+      "test": "worm",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.253544262,
+      "low": -0.2837247712834259,
+      "high": -0.2276542414084947
+    },
+    {
+      "test": "worm",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.34265593745359413,
+      "low": -0.38737968427756386,
+      "high": -0.30539552213606774
+    },
+    {
+      "test": "worm",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.16221616800000005,
+      "low": -0.18525216438128014,
+      "high": -0.142839482198778
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.049691705058120705,
+      "low": -0.07366734529354121,
+      "high": -0.02839328897525697
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.062284641999999946,
+      "low": -0.08900825679959495,
+      "high": -0.03653834096769152
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.08283640254433586,
+      "low": -0.10554470894684738,
+      "high": -0.06189908847323007
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.09368834199999998,
+      "low": -0.11979633462272236,
+      "high": -0.06739561141808863
+    },
+    {
+      "test": "worm",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.7052802430551948,
+      "low": 0.6715518005576462,
+      "high": 0.7349812234254974
+    },
+    {
+      "test": "worm",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.35767603000000003,
+      "low": 0.33031599148764607,
+      "high": 0.38471224631464845
+    },
+    {
+      "test": "worm",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6512454438763349,
+      "low": 0.6153370201230212,
+      "high": 0.6826906154217308
+    },
+    {
+      "test": "worm",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.342659794,
+      "low": 0.31313835639770915,
+      "high": 0.3715969931929025
+    },
+    {
+      "test": "worm",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.1694639168262198,
+      "low": 0.12874232052774123,
+      "high": 0.21130063795569942
+    },
+    {
+      "test": "worm",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.161343746,
+      "low": 0.13365415334144853,
+      "high": 0.18901233132035988
+    },
+    {
+      "test": "worm",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.045392978391537775,
+      "low": 0.01796849072032934,
+      "high": 0.07249294307351672
+    },
+    {
+      "test": "worm",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.06742842400000004,
+      "low": 0.037714910906679965,
+      "high": 0.09743079390276865
+    },
+    {
+      "test": "worm",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6099029773086702,
+      "low": 0.5723593480134134,
+      "high": 0.6430068084604208
+    },
+    {
+      "test": "worm",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.320102534,
+      "low": 0.2907335161650617,
+      "high": 0.34762265167951906
+    },
+    {
+      "test": "worm",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.020716927357854048,
+      "low": -0.051188324575490635,
+      "high": 0.004901546336208275
+    },
+    {
+      "test": "worm",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.12790460000000003,
+      "low": 0.0956746999806319,
+      "high": 0.15818103200516143
+    },
+    {
+      "test": "worm",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.19270916988695108,
+      "low": 0.13555957231868224,
+      "high": 0.24756476601895258
+    },
+    {
+      "test": "worm",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.10413176800000001,
+      "low": 0.0628215727660515,
+      "high": 0.14288288674188174
+    },
+    {
+      "test": "worm",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.3626243056016006,
+      "low": 0.30521674495960366,
+      "high": 0.41551139392911624
+    },
+    {
+      "test": "worm",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.19545986199999998,
+      "low": 0.1567262448991246,
+      "high": 0.23367261955964086
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.03314469748621515,
+      "low": 0.020039546022437064,
+      "high": 0.047808242545314045
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.031403700000000034,
+      "low": 0.012572427174273869,
+      "high": 0.049996896135176785
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7165686150689263,
+      "low": -0.7453406242065909,
+      "high": -0.6846884670142609
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.37198379273279303,
+      "low": -0.39983019260678804,
+      "high": -0.34432835366110187
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.7477488561235611,
+      "low": -0.773543350584246,
+      "high": -0.7195726693601697
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.3921367711374524,
+      "low": -0.4240885849461294,
+      "high": -0.361013225669047
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6694908669146085,
+      "low": -0.702161066018806,
+      "high": -0.6342731660664481
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.33076408703643967,
+      "low": -0.3583070205283101,
+      "high": -0.30287990835261663
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.06930551339055246,
+      "low": -0.09459072034230617,
+      "high": -0.04708779526761925
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.017780145923656288,
+      "low": -0.02644258543230859,
+      "high": -0.010594026911168777
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5581456580199318,
+      "low": -0.594358028455117,
+      "high": -0.5188720652954338
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.2056990148699993,
+      "low": -0.22663910478559304,
+      "high": -0.1859240176221347
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6543821664951459,
+      "low": -0.6854489816212537,
+      "high": -0.6230592899824534
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.27520884203887963,
+      "low": -0.29672132679290847,
+      "high": -0.25451340702493136
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.12044803188098929,
+      "low": -0.14899622349870603,
+      "high": -0.0906223653275046
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.044600011414161256,
+      "low": -0.056403393678664406,
+      "high": -0.034165475098977605
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6979230721318489,
+      "low": -0.7213349936008095,
+      "high": -0.6726473115590363
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.21361160140775481,
+      "low": -0.23073693861123892,
+      "high": -0.1984177060215342
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.540386433325326,
+      "low": -0.5823760448713515,
+      "high": -0.4926510394447366
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.2715781829445717,
+      "low": -0.3033662776327989,
+      "high": -0.23963131775759847
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.4029006319045312,
+      "low": -0.4443217024318128,
+      "high": -0.36287186911525837
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.19094806703416412,
+      "low": -0.21341370085312128,
+      "high": -0.1696622074165145
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.04707774815431792,
+      "low": -0.07112179175448734,
+      "high": -0.02517960116452425
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.04121970569635336,
+      "low": -0.06469088816448722,
+      "high": -0.01837196934048885
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.07825798920895265,
+      "low": -0.10258122635502741,
+      "high": -0.05645758810820928
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.06137268410101271,
+      "low": -0.08596843827656485,
+      "high": -0.03504987204633766
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6694908669146085,
+      "low": 0.6342731660664481,
+      "high": 0.702161066018806
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.33076408703643967,
+      "low": 0.3028799083526166,
+      "high": 0.35830702052831004
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.600185353524056,
+      "low": 0.5612267089420794,
+      "high": 0.6371753055147172
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.3129839411127834,
+      "low": 0.28529250889286406,
+      "high": 0.3402335427280866
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.11134520889467672,
+      "low": 0.07719337388314101,
+      "high": 0.14626701512823717
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.12506507216644036,
+      "low": 0.09935409925292653,
+      "high": 0.1509898987274314
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.015108700419462578,
+      "low": -0.007624326447855735,
+      "high": 0.0370147398085242
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.05555524499756004,
+      "low": 0.027529214768185286,
+      "high": 0.08255532097382384
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5490428350336192,
+      "low": 0.5122424055691284,
+      "high": 0.5829914047636622
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.2861640756222784,
+      "low": 0.25918789168259,
+      "high": 0.31399766162756343
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.028432205217240464,
+      "low": -0.06066795914389331,
+      "high": 0.0006320462600051714
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.11715248562868485,
+      "low": 0.0864495160630186,
+      "high": 0.1506535522440214
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.12910443358928245,
+      "low": 0.08039993232068655,
+      "high": 0.17844511834529525
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.05918590409186797,
+      "low": 0.016429244390553776,
+      "high": 0.10170166004082178
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.2665902350100773,
+      "low": 0.2139631217022069,
+      "high": 0.3172914843736167
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.13981602000227555,
+      "low": 0.10244530716527085,
+      "high": 0.17639857006895468
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.031180241054634725,
+      "low": 0.01548863814830386,
+      "high": 0.04857028677397867
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.02015297840465935,
+      "low": 0.0001733322482103869,
+      "high": 0.038761454963681996
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5780677648145456,
+      "low": -0.6151663504118311,
+      "high": -0.5348925987922896
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.34638771199999996,
+      "low": -0.3777784143945623,
+      "high": -0.31618018700926404
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5981864514498091,
+      "low": -0.6379021244941104,
+      "high": -0.5543258884135962
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.396426806,
+      "low": -0.4312805474825097,
+      "high": -0.36055395623705255
+    },
+    {
+      "test": "yeast",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5173293368935767,
+      "low": -0.5571586740139174,
+      "high": -0.469500339557155
+    },
+    {
+      "test": "yeast",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.29480403199999994,
+      "low": -0.32519178630475387,
+      "high": -0.26573979471555503
+    },
+    {
+      "test": "yeast",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.07056378507625671,
+      "low": -0.09393493200151405,
+      "high": -0.04925995959953621
+    },
+    {
+      "test": "yeast",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.015193975999999942,
+      "low": -0.023730008585535835,
+      "high": -0.007142386907872578
+    },
+    {
+      "test": "yeast",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.36203528480032865,
+      "low": -0.40010443858953126,
+      "high": -0.31792481984258514
+    },
+    {
+      "test": "yeast",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.14876373799999998,
+      "low": -0.166755665405743,
+      "high": -0.1296886703909589
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.45029814693197184,
+      "low": -0.4850778321450252,
+      "high": -0.4102315066792344
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.21681828400000003,
+      "low": -0.23825217267450155,
+      "high": -0.19544458456853242
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": 0.01922267757664964,
+      "low": -0.006987521526770248,
+      "high": 0.047414094868709386
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.024512438000000025,
+      "low": -0.0367680828084467,
+      "high": -0.01273500694141408
+    },
+    {
+      "test": "yeast",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.584226023841775,
+      "low": -0.6195354301129029,
+      "high": -0.5437371725461494
+    },
+    {
+      "test": "yeast",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.24661866199999993,
+      "low": -0.2681984907934931,
+      "high": -0.22384831530895852
+    },
+    {
+      "test": "yeast",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.4551338781748196,
+      "low": -0.4939706483196624,
+      "high": -0.4144401984101734
+    },
+    {
+      "test": "yeast",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.24174854,
+      "low": -0.2683693362722881,
+      "high": -0.2142976389542108
+    },
+    {
+      "test": "yeast",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.30990049048104273,
+      "low": -0.3444867518074162,
+      "high": -0.2766387995225314
+    },
+    {
+      "test": "yeast",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.12543752200000002,
+      "low": -0.1450702444779715,
+      "high": -0.10658376857745344
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.06073842792096887,
+      "low": -0.0855398080461785,
+      "high": -0.03643783138803154
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.05158368000000002,
+      "low": -0.07661659057813588,
+      "high": -0.024458575536296077
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.0808571145562323,
+      "low": -0.1067456483890331,
+      "high": -0.0578688508200572
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.10162277400000008,
+      "low": -0.1305522829694426,
+      "high": -0.07122566404118597
+    },
+    {
+      "test": "yeast",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5173293368935767,
+      "low": 0.469500339557155,
+      "high": 0.5571586740139174
+    },
+    {
+      "test": "yeast",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.29480403199999994,
+      "low": 0.26573979471555503,
+      "high": 0.32519178630475387
+    },
+    {
+      "test": "yeast",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.44676555181732003,
+      "low": 0.39569546580126386,
+      "high": 0.49112553483238913
+    },
+    {
+      "test": "yeast",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.279610056,
+      "low": 0.251772062719724,
+      "high": 0.3110676930526186
+    },
+    {
+      "test": "yeast",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.1552940520932481,
+      "low": 0.11429480733032407,
+      "high": 0.19685948216265162
+    },
+    {
+      "test": "yeast",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.14604029399999996,
+      "low": 0.11943154103319041,
+      "high": 0.17465737512876423
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.0670311899616049,
+      "low": 0.036952833113757834,
+      "high": 0.10020653413567632
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.07798574799999991,
+      "low": 0.04990151443584093,
+      "high": 0.10579753484207156
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5365520144702264,
+      "low": 0.4977696795689799,
+      "high": 0.5687790097760101
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.2702915939999999,
+      "low": 0.24365237405667864,
+      "high": 0.29934046731550445
+    },
+    {
+      "test": "yeast",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.06689668694819828,
+      "low": -0.10052565880491872,
+      "high": -0.0398293945480245
+    },
+    {
+      "test": "yeast",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.048185370000000005,
+      "low": 0.012834664418777147,
+      "high": 0.08058441189780881
+    },
+    {
+      "test": "yeast",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.062195458718757146,
+      "low": 0.012574254934093363,
+      "high": 0.1098119276953698
+    },
+    {
+      "test": "yeast",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.053055491999999926,
+      "low": 0.013385040110228327,
+      "high": 0.09170052246697967
+    },
+    {
+      "test": "yeast",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.207428846412534,
+      "low": 0.15074560057176392,
+      "high": 0.2624828086424448
+    },
+    {
+      "test": "yeast",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.16936650999999991,
+      "low": 0.1333121872669029,
+      "high": 0.21046293861526316
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.020118686635263436,
+      "low": 0.008382607374515162,
+      "high": 0.03315924229614847
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.05003909400000006,
+      "low": 0.03037807321438217,
+      "high": 0.0706541844618209
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.10509428141838151,
+      "low": -0.47612874862848065,
+      "high": -0.0025370712504529146
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.17720907489557747,
+      "low": -0.43279374227110023,
+      "high": 0.03148694602954713
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.10058196848314284,
+      "low": -0.4563793592690868,
+      "high": 0.01940923690563179
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.21860695286403564,
+      "low": -0.4799009571580601,
+      "high": 0.07604116946528525
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.10521564466108335,
+      "low": -0.47306019579450315,
+      "high": -0.004538895516150427
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.13562856789381594,
+      "low": -0.3307179523733066,
+      "high": 0.08915245217788152
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.06514530972570778,
+      "low": -0.358516281903283,
+      "high": 0.06357764662997722
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": 0.004536269536888127,
+      "low": -0.08946454767668947,
+      "high": 0.10929617517132813
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.09778879699586297,
+      "low": -0.4439938649854294,
+      "high": -0.001752955379319497
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.05390502112016404,
+      "low": -0.25113213827946335,
+      "high": 0.1622114492185934
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.10454140064593681,
+      "low": -0.47317008126686433,
+      "high": -0.0015494968745743145
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.1927561077629122,
+      "low": -0.4600775378953638,
+      "high": 0.09394844543403572
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.10520651138887116,
+      "low": -0.4762229910823763,
+      "high": -0.005606750400373517
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.1267798966673147,
+      "low": -0.28445042045744723,
+      "high": 0.0490920842941255
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.1037819502817274,
+      "low": -0.4788020934047634,
+      "high": -0.004220286731083635
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.045309674036631886,
+      "low": -0.26700147194771784,
+      "high": 0.20875694715295973
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.10280730210823832,
+      "low": -0.46772129076327884,
+      "high": -0.004356515554773409
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.013700123127315944,
+      "low": -0.29367680311719047,
+      "high": 0.2674347526499542
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.05783757189474091,
+      "low": -0.3826399850939507,
+      "high": 0.12448625103119891
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": 0.166545895854321,
+      "low": -0.04537446301345998,
+      "high": 0.4253864790069719
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.00012136324270183322,
+      "low": -0.0037037790613331746,
+      "high": 0.007911736004915305
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.041580507001761524,
+      "low": -0.25616304180234634,
+      "high": 0.11638250983858163
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.004633676177940502,
+      "low": -0.0014434580833357932,
+      "high": 0.07568135715383692
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.0829783849702197,
+      "low": -0.3252402725419817,
+      "high": 0.10514617167198395
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.10521564466108335,
+      "low": 0.004538895516150415,
+      "high": 0.4730601957945031
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.13562856789381594,
+      "low": -0.08915245217788155,
+      "high": 0.33071795237330653
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.040070334935375554,
+      "low": 0.0004289293535345757,
+      "high": 0.2695954027525434
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.14016483743070407,
+      "low": -0.07248304805576868,
+      "high": 0.3291774300251668
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.00742684766522037,
+      "low": 5.157930029309631e-06,
+      "high": 0.03736666901463792
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.0817235467736519,
+      "low": -0.1657614566435777,
+      "high": 0.2971017574208075
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.0006742440151465425,
+      "low": -0.00216464585325881,
+      "high": 0.012937649534386772
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.057127539869096244,
+      "low": -0.26181770303525786,
+      "high": 0.13916294497196016
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 9.133272212180892e-06,
+      "low": -0.007955912518517128,
+      "high": 0.002877325658896939
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.008848671226501237,
+      "low": -0.1658474331430001,
+      "high": 0.14873184555490893
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.0014336943793559396,
+      "low": -0.01024074527533799,
+      "high": 0.011478178561953382
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.09031889385718406,
+      "low": -0.16834964663671428,
+      "high": 0.28701334781074495
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.0024083425528450245,
+      "low": -0.009147647958179406,
+      "high": 0.022114598649493042
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.1219284447665,
+      "low": -0.12226743832761511,
+      "high": 0.36619838043376424
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.047378072766342434,
+      "low": 0.0052785254348793635,
+      "high": 0.28549695540106085
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.30217446374813695,
+      "low": 0.10861776951381989,
+      "high": 0.4950668142460148
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": -0.00451231293523867,
+      "low": -0.07089811665886352,
+      "high": 0.0013820497616694042
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.041397877968458174,
+      "low": -0.1604559523377943,
+      "high": 0.2557300839237455
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6522059148504376,
+      "low": -0.731237337936634,
+      "high": -0.5326518780729316
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.530913875,
+      "low": -0.6048717419949187,
+      "high": -0.44266345121396433
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6665934126870371,
+      "low": -0.7498106650193285,
+      "high": -0.5431426374110649
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.6317542125,
+      "low": -0.7151984629380245,
+      "high": -0.5326186204788149
+    },
+    {
+      "test": "ecoli",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.575678567777025,
+      "low": -0.6532372376514047,
+      "high": -0.4684261723055507
+    },
+    {
+      "test": "ecoli",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.4227262125,
+      "low": -0.49743197027643,
+      "high": -0.34533855556492726
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.05989481200591884,
+      "low": -0.10113327050388334,
+      "high": -0.015457710271574226
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.029148249999999987,
+      "low": -0.059310686595620735,
+      "high": -0.0038553430890497058
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5190150970458576,
+      "low": -0.5817447555699793,
+      "high": -0.428225395160468
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.16539759999999992,
+      "low": -0.20748795679012516,
+      "high": -0.12265327196454096
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.4787050306494937,
+      "low": -0.5471080174009303,
+      "high": -0.3849963980724092
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.26189138749999996,
+      "low": -0.3158672567773504,
+      "high": -0.20787414025299347
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.02556750750785608,
+      "low": -0.06095955624103748,
+      "high": 0.01387258081922354
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.02868008749999995,
+      "low": -0.0570613509909515,
+      "high": -0.004229758691334752
+    },
+    {
+      "test": "ecoli",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.6296162784019108,
+      "low": -0.6967130393310236,
+      "high": -0.5240383068978244
+    },
+    {
+      "test": "ecoli",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.31309935,
+      "low": -0.3512957165797996,
+      "high": -0.27316208992091634
+    },
+    {
+      "test": "ecoli",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.5983598625021775,
+      "low": -0.6768146078644491,
+      "high": -0.48752281546818627
+    },
+    {
+      "test": "ecoli",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.375995675,
+      "low": -0.4461603130521765,
+      "high": -0.3062599026625646
+    },
+    {
+      "test": "ecoli",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.19792762774913852,
+      "low": -0.2527995978678107,
+      "high": -0.137357731881881
+    },
+    {
+      "test": "ecoli",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.046291112499999953,
+      "low": -0.0698699964156079,
+      "high": -0.02567325081794963
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.07652734707341258,
+      "low": -0.14013082010166195,
+      "high": -0.022557888238333122
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.1081876625,
+      "low": -0.17392088075971823,
+      "high": -0.04151010645524561
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.09091484491001213,
+      "low": -0.16044385807984302,
+      "high": -0.03886407846586427
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.209028,
+      "low": -0.28486973344040134,
+      "high": -0.129371459826015
+    },
+    {
+      "test": "ecoli",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.575678567777025,
+      "low": 0.4684261723055507,
+      "high": 0.6532372376514047
+    },
+    {
+      "test": "ecoli",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.4227262125,
+      "low": 0.3453385555649272,
+      "high": 0.49743197027643
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5157837557711061,
+      "low": 0.4138211905437545,
+      "high": 0.5957546208640812
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.3935779625,
+      "low": 0.30753610937117065,
+      "high": 0.4716340083445329
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.056663470731167426,
+      "low": -0.00196405717834352,
+      "high": 0.11126973924416048
+    },
+    {
+      "test": "ecoli",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.25732861250000005,
+      "low": 0.18756888296545557,
+      "high": 0.3281739450544492
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.09697353712753123,
+      "low": 0.020540532604856474,
+      "high": 0.19028440487937867
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.16083482500000001,
+      "low": 0.0874758052618411,
+      "high": 0.23829218092793336
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5501110602691689,
+      "low": 0.4509612778937376,
+      "high": 0.6279821219991871
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.394046125,
+      "low": 0.30757744522001546,
+      "high": 0.47597719756920315
+    },
+    {
+      "test": "ecoli",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.05393771062488588,
+      "low": -0.1157592573908277,
+      "high": -0.00828605681368511
+    },
+    {
+      "test": "ecoli",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.10962686249999998,
+      "low": 0.037039628384006484,
+      "high": 0.18370131730601102
+    },
+    {
+      "test": "ecoli",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.022681294725152623,
+      "low": -0.09111325381687319,
+      "high": 0.038046510135610105
+    },
+    {
+      "test": "ecoli",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.0467305375,
+      "low": -0.046030222845571414,
+      "high": 0.1345401910830228
+    },
+    {
+      "test": "ecoli",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.37775094002788645,
+      "low": 0.2679595971051351,
+      "high": 0.47902442524276045
+    },
+    {
+      "test": "ecoli",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.3764351,
+      "low": 0.29330122650052803,
+      "high": 0.4533285590961753
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.014387497836599553,
+      "low": 0.0049890199268400465,
+      "high": 0.02836374764530852
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.10084033749999999,
+      "low": 0.05049550576045804,
+      "high": 0.1535161019573747
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.24309580214410492,
+      "low": -0.3555176682276098,
+      "high": -0.14779194074725333
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.3309275949860506,
+      "low": -0.39647568194915456,
+      "high": -0.2721652191676819
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.2455790722186617,
+      "low": -0.35864001832852477,
+      "high": -0.14870981170445485
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.34482912928469645,
+      "low": -0.42189658356816545,
+      "high": -0.27921770597085344
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.22629015461663704,
+      "low": -0.33274473289213335,
+      "high": -0.13186451255847811
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "native-plm",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.26897683829914565,
+      "low": -0.3311534550505967,
+      "high": -0.20849882283967847
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.004758110683442118,
+      "low": -0.07556974599891553,
+      "high": 0.05974070017882316
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.04091223914576447,
+      "low": -0.10183282633570533,
+      "high": 0.005075446616690335
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.1825860995617507,
+      "low": -0.2925179692433724,
+      "high": -0.08873946489945113
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.09803506823140595,
+      "low": -0.14583997332153475,
+      "high": -0.05197642777859499
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.18593003440048483,
+      "low": -0.26421473581751626,
+      "high": -0.11285004850039912
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.1692548994755938,
+      "low": -0.22291081110322988,
+      "high": -0.12089578185125548
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.00017463552645474723,
+      "low": -0.05555363409825436,
+      "high": 0.0565282729242576
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.054763494053012174,
+      "low": -0.11276277314298447,
+      "high": -0.008510483903543004
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.24417979715057297,
+      "low": -0.3541455074920396,
+      "high": -0.1508627992116306
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.25166754501156396,
+      "low": -0.31378794153479395,
+      "high": -0.19471660250122785
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.21952879366373657,
+      "low": -0.3335805501729945,
+      "high": -0.11826859987113092
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "sprint",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.2443064866692355,
+      "low": -0.30951718212876655,
+      "high": -0.18779980008131653
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.08134521859928726,
+      "low": -0.16145013572571681,
+      "high": 0.0074285393361326136
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "dscript",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.055130216748418004,
+      "low": -0.09162504380836328,
+      "high": -0.01879314361366771
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.016805647527467896,
+      "low": -0.047200901733112956,
+      "high": 0.0050533667920683
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.06195075668690497,
+      "low": -0.11592183359150321,
+      "high": -0.012501769293065719
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.019288917602024676,
+      "low": -0.04820440053671753,
+      "high": -0.0005963754160241124
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esmc",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.0758522909855508,
+      "low": -0.1291356238463961,
+      "high": -0.024842229712348545
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.22629015461663704,
+      "low": 0.13186451255847811,
+      "high": 0.33274473289213335
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "native-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.26897683829914565,
+      "low": 0.20849882283967844,
+      "high": 0.3311534550505967
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.22153204393319492,
+      "low": 0.13369918088702884,
+      "high": 0.308922757050152
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna-human",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.22806459915338118,
+      "low": 0.15555370175034047,
+      "high": 0.2969942968526497
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.04370405505488631,
+      "low": 0.009657915021592375,
+      "high": 0.08048976871153853
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "tuna",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.1709417700677397,
+      "low": 0.11957544113337824,
+      "high": 0.21922545908936852
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.04036012021615218,
+      "low": -0.0021065599696313527,
+      "high": 0.09698439373669762
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-bernett",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.09972193882355185,
+      "low": 0.0445306711531341,
+      "high": 0.15819757051683017
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.2261155190901823,
+      "low": 0.14198752766991218,
+      "high": 0.32104706075709233
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-default",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.21421334424613347,
+      "low": 0.1501728627458821,
+      "high": 0.281882382790625
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.017889642533935934,
+      "low": -0.04825834568127917,
+      "high": 0.003363246402365925
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "rapppid",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.017309293287581684,
+      "low": -0.04250356894765392,
+      "high": 0.0724050611477741
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.006761360952900475,
+      "low": -0.0263526729983916,
+      "high": 0.036412735192601534
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "sprint",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.02467035162991016,
+      "low": -0.03879874831483029,
+      "high": 0.07778933454394249
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.14494493601734976,
+      "low": 0.0873855970250041,
+      "high": 0.23065148121508308
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "dscript",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.21384662155072764,
+      "low": 0.1552598628241229,
+      "high": 0.27328779080956916
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.00248327007455678,
+      "low": -0.008873513912611146,
+      "high": 0.01642321447589618
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "ipin-esm2",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.013901534298645823,
+      "low": -0.0327997271323077,
+      "high": 0.05887465813689466
+    }
+  ],
+  "collection": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/collection.json",
+    "bytes": 15098,
+    "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+  },
+  "protocol": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/PROTOCOL.md",
+    "bytes": 3713,
+    "sha256": "7b69443763d80e386036e261ec98cd1503efa68ebb772d3497e21552d08e6cd7"
+  },
+  "analysis_script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/analyze.py",
+    "bytes": 16484,
+    "sha256": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "no_model_or_threshold_selected_on_tests": true
+}

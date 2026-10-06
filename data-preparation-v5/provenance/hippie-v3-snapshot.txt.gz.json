@@ -1,0 +1,16 @@
+{
+  "name": "hippie-v3-snapshot.txt.gz",
+  "url": "https://cbdm-01.zdv.uni-mainz.de/hippienew/downloads/HIPPIE-current.txt.gz",
+  "retrieved_utc": "2026-10-02T12:46:54.079807+00:00",
+  "bytes": 18115846,
+  "sha256": "9b26647bc3ade483bf247789a68d0b336d708732fa54c6805cdac385eabdb7e5",
+  "md5": "c300ca19be079f206a32cf1f03254b64",
+  "expected_md5": null,
+  "expected_bytes": null,
+  "headers": {
+    "Content-Length": "18115846",
+    "Content-Type": "application/x-gzip",
+    "Last-Modified": "Mon, 17 Aug 2026 16:47:02 GMT",
+    "ETag": "\"1146d06-65940eb61338e\""
+  }
+}

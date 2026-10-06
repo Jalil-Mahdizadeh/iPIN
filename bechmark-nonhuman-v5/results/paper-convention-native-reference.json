@@ -1,0 +1,97 @@
+[
+  {
+    "test": "mouse",
+    "source": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_mouse.csv",
+      "bytes": 3158473,
+      "sha256": "96a8c21610bcab10580b2791841d904ac3011c78408e77fd46eb2c0fa465b4a5"
+    },
+    "metrics": {
+      "ap": 0.9039627831314209,
+      "auroc": 0.9821473199999999,
+      "brier": 0.02707300232771891,
+      "score_min": -11.313959121704102,
+      "score_max": 9.51930809020996,
+      "unique_scores": 53718,
+      "zero_scores": 0
+    },
+    "fresh_original_order_max_logit_error": 0.00021541118621826172,
+    "fresh_original_order_max_probability_error": 4.6559768049792005e-05
+  },
+  {
+    "test": "fly",
+    "source": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_fly.csv",
+      "bytes": 3141777,
+      "sha256": "c58b07bd77cd56a054a7fbfb772ee8e910165e10ea5eaf9e4a952bb7c7a587c1"
+    },
+    "metrics": {
+      "ap": 0.913301756798012,
+      "auroc": 0.9825128759999999,
+      "brier": 0.026276861849968226,
+      "score_min": -11.300529479980469,
+      "score_max": 9.51923942565918,
+      "unique_scores": 54162,
+      "zero_scores": 0
+    },
+    "fresh_original_order_max_logit_error": 0.00021648406982421875,
+    "fresh_original_order_max_probability_error": 4.9963640748273974e-05
+  },
+  {
+    "test": "worm",
+    "source": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_worm.csv",
+      "bytes": 3130354,
+      "sha256": "616a76bcbe4999a9191586d0ad499bafd0d25abfd9b2a0d3babe9b68bdfe6d87"
+    },
+    "metrics": {
+      "ap": 0.8875920405939197,
+      "auroc": 0.973782838,
+      "brier": 0.030512917874313483,
+      "score_min": -11.269641876220703,
+      "score_max": 9.51816177368164,
+      "unique_scores": 54190,
+      "zero_scores": 0
+    },
+    "fresh_original_order_max_logit_error": 0.00031685829162597656,
+    "fresh_original_order_max_probability_error": 4.582078503123643e-05
+  },
+  {
+    "test": "yeast",
+    "source": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_yeast.csv",
+      "bytes": 3121285,
+      "sha256": "2272412c8bdd35996dea923b6d6bbfeba735c477aed6c380ddaff389f4b9585b"
+    },
+    "metrics": {
+      "ap": 0.7055137180729972,
+      "auroc": 0.912316318,
+      "brier": 0.06052796071509698,
+      "score_min": -11.276620864868164,
+      "score_max": 9.526359558105469,
+      "unique_scores": 54293,
+      "zero_scores": 0
+    },
+    "fresh_original_order_max_logit_error": 0.00027930736541748047,
+    "fresh_original_order_max_probability_error": 6.506033102277042e-05
+  },
+  {
+    "test": "ecoli",
+    "source": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_ecoli.csv",
+      "bytes": 1180401,
+      "sha256": "937c362920267a74edac2642b5a2029cfc39f9052905612d4158d9914efdabe5"
+    },
+    "metrics": {
+      "ap": 0.7215698491554343,
+      "auroc": 0.9042654125,
+      "brier": 0.26228770193927703,
+      "score_min": -11.235892295837402,
+      "score_max": 9.517732620239258,
+      "unique_scores": 18228,
+      "zero_scores": 0
+    },
+    "fresh_original_order_max_logit_error": 0.0002808570861814186,
+    "fresh_original_order_max_probability_error": 4.6200521546302387e-05
+  }
+]

@@ -1,0 +1,293 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-05T14:01:21.067460+00:00",
+  "model": "v2-capped",
+  "fingerprint": "5dc091eceb8176390044390de21e7fbf9dc9c5c8c1c4771e44144917bddc1d00",
+  "dev_cases": [
+    {
+      "indices": [
+        13440,
+        13288,
+        2144,
+        22584,
+        16384,
+        47092,
+        5196,
+        51772
+      ],
+      "max_tokens": 205,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0
+    },
+    {
+      "indices": [
+        26240,
+        33436,
+        35560,
+        44540,
+        45688,
+        54144
+      ],
+      "max_tokens": 1257,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0
+    },
+    {
+      "indices": [
+        16728
+      ],
+      "max_tokens": 39391,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0
+    }
+  ],
+  "native_cases": [
+    {
+      "union_id": 0,
+      "tokens": 1033,
+      "native_fp32_logits": [
+        -0.8982958793640137,
+        -0.5576106309890747
+      ],
+      "optimized_fp32_logits": [
+        -0.8982943892478943,
+        -0.5576119422912598
+      ],
+      "optimized_bf16_logits": [
+        -0.9140625,
+        -0.55859375
+      ],
+      "fp32_max_logit_error": 1.4901161193847656e-06,
+      "fp32_max_probability_error": 3.0643947446229447e-07,
+      "bf16_max_probability_error": 0.003231576582500173
+    },
+    {
+      "union_id": 21285,
+      "tokens": 1595,
+      "native_fp32_logits": [
+        -1.2725849151611328,
+        -1.622660517692566
+      ],
+      "optimized_fp32_logits": [
+        -1.2725861072540283,
+        -1.6226692199707031
+      ],
+      "optimized_bf16_logits": [
+        -1.28125,
+        -1.6328125
+      ],
+      "fp32_max_logit_error": 8.702278137207031e-06,
+      "fp32_max_probability_error": 1.1980097302244364e-06,
+      "bf16_max_probability_error": 0.0014775573217707116
+    },
+    {
+      "union_id": 54966,
+      "tokens": 958,
+      "native_fp32_logits": [
+        2.2533786296844482,
+        2.073420286178589
+      ],
+      "optimized_fp32_logits": [
+        2.253377676010132,
+        2.0734221935272217
+      ],
+      "optimized_bf16_logits": [
+        2.25,
+        2.078125
+      ],
+      "fp32_max_logit_error": 1.9073486328125e-06,
+      "fp32_max_probability_error": 1.8926358347215455e-07,
+      "bf16_max_probability_error": 0.00046599049832729555
+    },
+    {
+      "union_id": 64471,
+      "tokens": 1601,
+      "native_fp32_logits": [
+        1.4952306747436523,
+        -0.021875668317079544
+      ],
+      "optimized_fp32_logits": [
+        1.4952298402786255,
+        -0.021877404302358627
+      ],
+      "optimized_bf16_logits": [
+        1.4375,
+        -0.060546875
+      ],
+      "fp32_max_logit_error": 1.735985279083252e-06,
+      "fp32_max_probability_error": 4.3394439819266495e-07,
+      "bf16_max_probability_error": 0.009663397276563346
+    },
+    {
+      "union_id": 109890,
+      "tokens": 382,
+      "native_fp32_logits": [
+        -0.2591646611690521,
+        -0.3506487011909485
+      ],
+      "optimized_fp32_logits": [
+        -0.25916773080825806,
+        -0.3506525456905365
+      ],
+      "optimized_bf16_logits": [
+        -0.2373046875,
+        -0.353515625
+      ],
+      "fp32_max_logit_error": 3.844499588012695e-06,
+      "fp32_max_probability_error": 9.321759673608376e-07,
+      "bf16_max_probability_error": 0.005381610587022911
+    },
+    {
+      "union_id": 148353,
+      "tokens": 1591,
+      "native_fp32_logits": [
+        2.005490303039551,
+        1.7550455331802368
+      ],
+      "optimized_fp32_logits": [
+        2.005486488342285,
+        1.7550410032272339
+      ],
+      "optimized_bf16_logits": [
+        1.96875,
+        1.71875
+      ],
+      "fp32_max_logit_error": 4.5299530029296875e-06,
+      "fp32_max_probability_error": 5.693329167000272e-07,
+      "bf16_max_probability_error": 0.004620303345861276
+    },
+    {
+      "union_id": 164851,
+      "tokens": 566,
+      "native_fp32_logits": [
+        0.5778714418411255,
+        0.3131634294986725
+      ],
+      "optimized_fp32_logits": [
+        0.5778734683990479,
+        0.3131570816040039
+      ],
+      "optimized_bf16_logits": [
+        0.60546875,
+        0.27734375
+      ],
+      "fp32_max_logit_error": 6.3478946685791016e-06,
+      "fp32_max_probability_error": 1.548692528996476e-06,
+      "bf16_max_probability_error": 0.00876234106214302
+    },
+    {
+      "union_id": 178794,
+      "tokens": 1586,
+      "native_fp32_logits": [
+        -1.5508185625076294,
+        -1.5392026901245117
+      ],
+      "optimized_fp32_logits": [
+        -1.5508184432983398,
+        -1.539201021194458
+      ],
+      "optimized_bf16_logits": [
+        -1.546875,
+        -1.4921875
+      ],
+      "fp32_max_logit_error": 1.6689300537109375e-06,
+      "fp32_max_probability_error": 2.427385973335916e-07,
+      "bf16_max_probability_error": 0.006942412569030609
+    },
+    {
+      "union_id": 219796,
+      "tokens": 337,
+      "native_fp32_logits": [
+        0.07713495194911957,
+        -1.6470236778259277
+      ],
+      "optimized_fp32_logits": [
+        0.07713093608617783,
+        -1.6470184326171875
+      ],
+      "optimized_bf16_logits": [
+        0.032958984375,
+        -1.65625
+      ],
+      "fp32_max_logit_error": 5.245208740234375e-06,
+      "fp32_max_probability_error": 1.0024739436342855e-06,
+      "bf16_max_probability_error": 0.011035182197160154
+    },
+    {
+      "union_id": 220223,
+      "tokens": 1554,
+      "native_fp32_logits": [
+        0.35521697998046875,
+        0.8963693976402283
+      ],
+      "optimized_fp32_logits": [
+        0.35521453619003296,
+        0.8963683843612671
+      ],
+      "optimized_bf16_logits": [
+        0.361328125,
+        0.90234375
+      ],
+      "fp32_max_logit_error": 2.4437904357910156e-06,
+      "fp32_max_probability_error": 5.92073694849482e-07,
+      "bf16_max_probability_error": 0.0014797889210216297
+    }
+  ],
+  "fixture_selection": [
+    {
+      "species": "mouse",
+      "source_row": 0,
+      "union_id": 0
+    },
+    {
+      "species": "mouse",
+      "source_row": 21292,
+      "union_id": 21285
+    },
+    {
+      "species": "fly",
+      "source_row": 0,
+      "union_id": 54966
+    },
+    {
+      "species": "fly",
+      "source_row": 9507,
+      "union_id": 64471
+    },
+    {
+      "species": "worm",
+      "source_row": 0,
+      "union_id": 109890
+    },
+    {
+      "species": "worm",
+      "source_row": 38481,
+      "union_id": 148353
+    },
+    {
+      "species": "yeast",
+      "source_row": 0,
+      "union_id": 164851
+    },
+    {
+      "species": "yeast",
+      "source_row": 13959,
+      "union_id": 178794
+    },
+    {
+      "species": "ecoli",
+      "source_row": 0,
+      "union_id": 219796
+    },
+    {
+      "species": "ecoli",
+      "source_row": 427,
+      "union_id": 220223
+    }
+  ],
+  "fixture_selection_uses_scores": false,
+  "original_backbone_fp32_and_raw_string_tokenization_verified": true,
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "gpu": "NVIDIA GH200 120GB",
+  "production_precision": "FP32 weights, BF16 autocast, TF32 disabled"
+}

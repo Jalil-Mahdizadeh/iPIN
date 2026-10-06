@@ -1,0 +1,36 @@
+{
+  "at_utc": "2026-10-05T13:34:22.476789+00:00",
+  "comparison": "Fresh FP32 original-order logits versus independent original-runtime archived predictions; not partial-test metrics",
+  "results": [
+    {
+      "species": "mouse",
+      "original_rows_already_checked": 24687,
+      "max_logit_error": 0.00020700693130493164,
+      "max_probability_error": 4.6559768049792005e-05
+    },
+    {
+      "species": "fly",
+      "original_rows_already_checked": 25265,
+      "max_logit_error": 0.0001188069581984641,
+      "max_probability_error": 2.9661806723313422e-05
+    },
+    {
+      "species": "worm",
+      "original_rows_already_checked": 30930,
+      "max_logit_error": 0.00031685829162597656,
+      "max_probability_error": 4.501482481056307e-05
+    },
+    {
+      "species": "yeast",
+      "original_rows_already_checked": 31734,
+      "max_logit_error": 0.00022155046463012695,
+      "max_probability_error": 4.618166645287136e-05
+    },
+    {
+      "species": "ecoli",
+      "original_rows_already_checked": 16861,
+      "max_logit_error": 0.00022649765014648438,
+      "max_probability_error": 4.6200521546302387e-05
+    }
+  ]
+}

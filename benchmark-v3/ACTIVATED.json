@@ -1,0 +1,7 @@
+{
+  "activated_at_utc": "2026-10-01T21:31:41.653119+00:00",
+  "benchmark_deferred": false,
+  "authorization": "User requested stop v3 and benchmark its best checkpoint against v1 and v2, reusing previous results.",
+  "previous_deferral_record": "provenance/pre-early-stop-20261001/DEFERRED.json",
+  "early_stop_amendment": "provenance/early-stop-amendment.json"
+}

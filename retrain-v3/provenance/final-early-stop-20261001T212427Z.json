@@ -1,0 +1,211 @@
+{
+  "requested_at_utc": "2026-10-01T21:24:27.336668+00:00",
+  "job_id": "3206610",
+  "authorization": "User: stop v3 and benchmark its best checkpoint in benchmark-v3 and compare with v1 and v2; reuse previous results if possible.",
+  "run_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-residue-mean-official-seed2",
+  "reason": "Four successive official-validation AP declines after update 4000; user-authorized early stopping before test inference.",
+  "before_status": {
+    "state": {
+      "update": 8440,
+      "cursor": {
+        "cycle": 3,
+        "offset": 50905
+      },
+      "epoch": 3,
+      "next_chunk": 50905,
+      "examples_seen": 540160,
+      "best_ap": 0.6571396551693898,
+      "best_update": 4000,
+      "total_steps": 12745,
+      "pending_validation": false,
+      "last_validation_update": 8000
+    },
+    "last_committed_update": 8400,
+    "attempt": "20261001T081404-3206610",
+    "phase": "training",
+    "seconds_since_launch": 47343.20185563504
+  },
+  "best_at_request": {
+    "file": "update-000004000.pt",
+    "sha256": "355ce9f9110c8ed6d8d10b7b7588a6273e549d21def01dcd5fa409087d67b5b9",
+    "bytes": 7813279814,
+    "update": 4000,
+    "epoch": 1,
+    "next_chunk": 92915,
+    "world_size": 4,
+    "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+    "best_update": 4000,
+    "best_ap": 0.6571396551693898
+  },
+  "validation_history": [
+    {
+      "sha256": "792924844e24689230318da635b6d8f03750d27c5c315985dcb15613e566f04e",
+      "rows": 59258,
+      "update": 1000,
+      "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+      "metrics": {
+        "rows": 59258,
+        "pooled_ap": 0.5929519969103879,
+        "auroc": 0.5722452721315467,
+        "brier": 0.24371174613381946,
+        "ab_ap": 0.5880845757066548,
+        "order_logit_gap_mean": 0.0995880624518835
+      }
+    },
+    {
+      "sha256": "bcf4b498bd68e657ef3506e7164c2f836a8e67e118e5958a62b946406520041c",
+      "rows": 59258,
+      "update": 2000,
+      "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+      "metrics": {
+        "rows": 59258,
+        "pooled_ap": 0.6332630211516306,
+        "auroc": 0.6259437767431917,
+        "brier": 0.2368623109087328,
+        "ab_ap": 0.6293953467917353,
+        "order_logit_gap_mean": 0.16456112247984483
+      }
+    },
+    {
+      "sha256": "bdceaadec4d1c3ccd01f1ef752891725c6228bfc60963c40c882c0481d5396ec",
+      "rows": 59258,
+      "update": 3000,
+      "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+      "metrics": {
+        "rows": 59258,
+        "pooled_ap": 0.6203969711147949,
+        "auroc": 0.6252123473608463,
+        "brier": 0.2483638319557222,
+        "ab_ap": 0.6174894113278667,
+        "order_logit_gap_mean": 0.31291303107095475
+      }
+    },
+    {
+      "sha256": "f8bf27ae8d231ed9c7b88b5cf3d3d06b420c34959f3961028cf5db9b192dc782",
+      "rows": 59258,
+      "update": 4000,
+      "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+      "metrics": {
+        "rows": 59258,
+        "pooled_ap": 0.6571396551693898,
+        "auroc": 0.6566023973454888,
+        "brier": 0.23402483771028287,
+        "ab_ap": 0.653440314923855,
+        "order_logit_gap_mean": 0.2539293619489536
+      }
+    },
+    {
+      "sha256": "23896f7e932c7f7c2d471079c0bcc4e5be092f4dc9033249cf35b4aa356950a3",
+      "rows": 59258,
+      "update": 5000,
+      "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+      "metrics": {
+        "rows": 59258,
+        "pooled_ap": 0.6455065657341943,
+        "auroc": 0.6448081842020716,
+        "brier": 0.24579530123721258,
+        "ab_ap": 0.6407848772708191,
+        "order_logit_gap_mean": 0.3214906480520035
+      }
+    },
+    {
+      "sha256": "762e6e40fd4d928ae2f772c240d8f5d1bc1dd976b6b43041a1ece3ca1927dbf4",
+      "rows": 59258,
+      "update": 6000,
+      "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+      "metrics": {
+        "rows": 59258,
+        "pooled_ap": 0.6434715033414529,
+        "auroc": 0.6405244465504327,
+        "brier": 0.2574461159903446,
+        "ab_ap": 0.6370753781992509,
+        "order_logit_gap_mean": 0.5699395488069648
+      }
+    },
+    {
+      "sha256": "248f59d18be85c5c61de8d6911fed707f15edbde8194e4f52d71ecb8df82ad00",
+      "rows": 59258,
+      "update": 7000,
+      "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+      "metrics": {
+        "rows": 59258,
+        "pooled_ap": 0.6415474863682082,
+        "auroc": 0.6423795256933529,
+        "brier": 0.2610113560654839,
+        "ab_ap": 0.6343950349958499,
+        "order_logit_gap_mean": 0.6785900960944965
+      }
+    },
+    {
+      "sha256": "7523e027bee3df37f8c718034badf55a843bad2b479f200d4e84092896c6025c",
+      "rows": 59258,
+      "update": 8000,
+      "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+      "metrics": {
+        "rows": 59258,
+        "pooled_ap": 0.6384275126134892,
+        "auroc": 0.6347906879140925,
+        "brier": 0.2881239194337752,
+        "ab_ap": 0.6282843009550787,
+        "order_logit_gap_mean": 1.1893940365251316
+      }
+    }
+  ],
+  "verification_pending": false,
+  "planned_updates": 12745,
+  "planned_validation_opportunities": 13,
+  "budget_comparison_note": "Early stopping changes the planned equal-training-budget comparison. Checkpoint selection remains official-validation-only.",
+  "benchmark_root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3",
+  "other_jobs_to_leave_unchanged": [
+    "3210886"
+  ],
+  "verified_at_utc": "2026-10-01T21:26:35.141750+00:00",
+  "stopped": {
+    "state": {
+      "update": 8446,
+      "cursor": {
+        "cycle": 3,
+        "offset": 51289
+      },
+      "epoch": 3,
+      "next_chunk": 51289,
+      "examples_seen": 540544,
+      "best_ap": 0.6571396551693898,
+      "best_update": 4000,
+      "total_steps": 12745,
+      "pending_validation": false,
+      "last_validation_update": 8000
+    },
+    "reason": "signal_or_REQUEST_STOP",
+    "attempt": "20261001T081404-3206610",
+    "checkpoint_committed": true
+  },
+  "latest": {
+    "file": "update-000008446.pt",
+    "sha256": "d8bc2c57483a43d2d572a6a61b08d2a7db4b8ef0d3e0dd342eed150220db4861",
+    "bytes": 7813279814,
+    "update": 8446,
+    "epoch": 3,
+    "next_chunk": 51289,
+    "world_size": 4,
+    "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+    "best_update": 4000,
+    "best_ap": 0.6571396551693898
+  },
+  "best": {
+    "file": "update-000004000.pt",
+    "sha256": "355ce9f9110c8ed6d8d10b7b7588a6273e549d21def01dcd5fa409087d67b5b9",
+    "bytes": 7813279814,
+    "update": 4000,
+    "epoch": 1,
+    "next_chunk": 92915,
+    "world_size": 4,
+    "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+    "best_update": 4000,
+    "best_ap": 0.6571396551693898
+  },
+  "checkpoint_hashes_verified": true,
+  "slurm_accounting": "3206610|COMPLETED|0:0|13:11:38|2026-10-01T23:25:06",
+  "released_gpus": 4,
+  "restart_blocked_by_marker": true
+}

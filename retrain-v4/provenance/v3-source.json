@@ -1,0 +1,10 @@
+{
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final-training",
+  "files": {
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "train.py": "17a9674accce46ed9908fbd1bec925d438079b61975b1f9b4a90d24d0ec1e16c",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024"
+  },
+  "prepared_at_utc": "2026-10-01T09:45:26.566759+00:00"
+}

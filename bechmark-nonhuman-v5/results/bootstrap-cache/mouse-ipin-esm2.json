@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "ipin-esm2",
+    "test": "mouse",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "d5e32b5a0d0c522f1d49cd907116bd64b5d8a2bd8677164d7a8899469d522e59",
+    "scores": "27e7589db07bf18340da865ff5a98c12157de69a1323bb956572c3fa098d1af1",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/mouse-ipin-esm2.npz",
+    "bytes": 14999,
+    "sha256": "d9ce00a23dc791896b2fbb77cf202394180e2c5a975b3bdd7e4049fcdd78a934"
+  }
+}

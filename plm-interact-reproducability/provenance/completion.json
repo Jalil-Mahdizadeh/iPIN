@@ -1,0 +1,11 @@
+{
+  "finished_utc": "2026-09-28T18:23:47.283553+00:00",
+  "no_retraining": true,
+  "apptainer_version": "1.5.3-1.el9",
+  "inference_code_sha256s": [
+    "7e2f17f4a4628a02df925c9ada54d42a090fc2b5eccf299ff79648311b8af482"
+  ],
+  "evaluated_worker_gpu_hours": 3.4849688221605173,
+  "completed_tasks": 19,
+  "coverage_complete": true
+}

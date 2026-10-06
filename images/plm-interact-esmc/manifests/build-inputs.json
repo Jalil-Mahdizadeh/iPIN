@@ -1,0 +1,26 @@
+[
+  {
+    "path": "build/plm-interact-esmc-arm64-v1.def",
+    "sha256": "549cfd003a72c5a5a5da31e9d53a3e930ab4dcabcfa2e17ddb09d22802adb35c"
+  },
+  {
+    "path": "build/build_image.sh",
+    "sha256": "30efe0a7c9e56d45bf9568052c571909748df12e1611ca80b808f99848b00f10"
+  },
+  {
+    "path": "build/build_image_executed.sh",
+    "sha256": "30efe0a7c9e56d45bf9568052c571909748df12e1611ca80b808f99848b00f10"
+  },
+  {
+    "path": "build/requirements.lock",
+    "sha256": "7275c80114dc54bbc21bd1b39a88d191f3fd7d1348b3600e2af92cb9a4a8c889"
+  },
+  {
+    "path": "runtime/esmc_runtime.py",
+    "sha256": "c4142fc8eb3b2a2a838b0dfb08669388c011ee109af25182c7f2c79c1bbbe057"
+  },
+  {
+    "path": "tests/runtime_smoke.py",
+    "sha256": "3e6302219e48cfbdf37eeb34be33aa0c3e6e1c8d05f9b95a12d051a4c105f140"
+  }
+]

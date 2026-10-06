@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/junliu621/PPLM/1267db4592703095b889cc22da6cf1796ce038b5/pplm/multihead_attention.py",
+    "file": "multihead_attention.py",
+    "sha256": "a3717bad059e9b5e45ba7fb5e0537253fff0f41ca8e31aa8a6bd8f78cc927b81"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/junliu621/PPLM/1267db4592703095b889cc22da6cf1796ce038b5/pplm/pplm.py",
+    "file": "pplm.py",
+    "sha256": "521cb8085069f7df1b154101de5c73bf5f4707d8314b7fefbb4319b80c021434"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/junliu621/PPLM/1267db4592703095b889cc22da6cf1796ce038b5/pplm/rotary_embedding.py",
+    "file": "rotary_embedding.py",
+    "sha256": "a856bd6cdc10eab6086a72cd1447a38956c51516a36a90ad815a8e9a52212230"
+  }
+]

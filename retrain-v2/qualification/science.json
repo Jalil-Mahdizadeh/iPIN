@@ -1,0 +1,92 @@
+{
+  "data": {
+    "train_rows": 163085,
+    "validation_rows": 59258,
+    "capped_train_rows": 130461,
+    "active_sequence_count": 7995,
+    "no_unused_test_tokens": true,
+    "fold_edges_disjoint": true,
+    "train_validation_disjoint": true,
+    "folds_reconstruct_parent_exactly": true
+  },
+  "sampler": {
+    "fixed_global_exposure": true,
+    "every_row_once_per_cycle": true,
+    "cycle_crossing_no_drop": true,
+    "cursor_reconstructs_next_batch": true
+  },
+  "tokenization": {
+    "hf_agreement": true,
+    "stateless_corruption": true,
+    "mask_coupled_across_orientations": true,
+    "special_tokens_excluded_from_mlm_and_pooling": true
+  },
+  "chain_attention": {
+    "head_dimension": 64,
+    "expanded_query_key_dimension": 256,
+    "dense_oracle_forward_max_abs": 5.424022674560547e-06,
+    "dense_oracle_gradient_max_abs": 6.961822509765625e-05,
+    "one_joint_softmax": true,
+    "padding_qualified": true
+  },
+  "objectives": [
+    {
+      "classification_corruption": true,
+      "mlm_weight": 1.0,
+      "positive_weight": 1.0,
+      "all_trainable_parameters_used": true
+    },
+    {
+      "classification_corruption": true,
+      "mlm_weight": 0.0,
+      "positive_weight": 1.0,
+      "all_trainable_parameters_used": true
+    },
+    {
+      "classification_corruption": false,
+      "mlm_weight": 0.0,
+      "positive_weight": 1.0,
+      "all_trainable_parameters_used": true
+    },
+    {
+      "classification_corruption": false,
+      "mlm_weight": 1.0,
+      "positive_weight": 1.0,
+      "all_trainable_parameters_used": true
+    },
+    {
+      "classification_corruption": true,
+      "mlm_weight": 1.0,
+      "positive_weight": 10.0,
+      "all_trainable_parameters_used": true
+    }
+  ],
+  "reference_compatibility": {
+    "v1_forward_loss_gradient_bitwise_identical": true,
+    "scope": "Identical tiny-model parameters and inputs, FP32; sampler/selection changes documented separately."
+  },
+  "readout": {
+    "trainable_parameters": {
+      "cls_linear": 73570,
+      "cls_mlp": 106467,
+      "residue_mean": 106467
+    },
+    "capacity_matched": true,
+    "zero_residual_preserves_initial_logits": true
+  },
+  "checkpoint_chain_context": {
+    "two_live_graphs_and_decoupled_mlm": true,
+    "gradients_match_no_checkpoint": true
+  },
+  "passed": true,
+  "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+  "code": {
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+  },
+  "device": "NVIDIA GH200 120GB",
+  "torch": "2.8.0a0+34c6371d24.nv25.08"
+}

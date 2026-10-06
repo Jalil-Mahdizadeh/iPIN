@@ -1,0 +1,78 @@
+{
+  "data_unchanged": true,
+  "train_rows": 163085,
+  "val_rows": 59258,
+  "test_data_used": false,
+  "token_ids_verified_by_symbol": {
+    "L": 4,
+    "A": 5,
+    "G": 6,
+    "V": 7,
+    "S": 8,
+    "E": 9,
+    "R": 10,
+    "T": 11,
+    "I": 12,
+    "D": 13,
+    "P": 14,
+    "K": 15,
+    "Q": 16,
+    "N": 17,
+    "F": 18,
+    "Y": 19,
+    "M": 20,
+    "H": 21,
+    "W": 22,
+    "C": 23,
+    "U": 26
+  },
+  "esm2_model_data_checkpoint_code_unchanged": true,
+  "optimization_and_validation_loop_unchanged": true,
+  "attention": [
+    {
+      "mode": "standard",
+      "forward_max_abs_error": 0.0,
+      "cross_chain_gradient_norm": 1.5076754093170166,
+      "forward_and_all_parameter_gradients_match_dense_reference": true,
+      "padding_cannot_influence_valid_queries": true
+    },
+    {
+      "mode": "chain_aware",
+      "forward_max_abs_error": 0.0,
+      "cross_chain_gradient_norm": 1.9428176879882812,
+      "forward_and_all_parameter_gradients_match_dense_reference": true,
+      "padding_cannot_influence_valid_queries": true
+    }
+  ],
+  "tiny_adapter": {
+    "original_sdk_valid_embeddings_and_encoder_gradients_match": true,
+    "max_valid_embedding_error": 0.0
+  },
+  "checkpoint_context": {
+    "two_live_forward_graphs_with_different_chain_metadata": true,
+    "checkpointed_and_direct_encoder_gradients_match": true
+  },
+  "full_sdk": {
+    "full_pretrained_standard_adapter_max_valid_embedding_error": 0.0,
+    "full_pretrained_sdk_equivalence": true,
+    "inference_to_training_cache_transition": true,
+    "fp32_parameters": true,
+    "standard_initial_head_hash": "d25c38cb6f87e1d348665988bfa5eb289fcecde2671c0bc567fadf4a6dceaa8d"
+  },
+  "esmc_initial_heads_identical_between_attention_arms": true,
+  "passed": true,
+  "code": {
+    "train.py": "7f6c8e5c81c39a0978c477c07b19eb4151c851b01c37769acc9783ae61b03e73",
+    "model.py": "8f8e27750e81ddb81b5b553c763f7e2c356a081ee29f00fa70c25ae0226be114",
+    "model_esm2.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "model_esmc.py": "9721571f554b51edcf52228ddb898e1730d52ffb4a67f8e63ee0051780a083a2",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "d4c0344c34346aae8b7f64b7836e88877a6951eb0d910b277fcf2c8e316ee9f1",
+    "release.py": "1fb6118a20c513548a5da0b544cb38a8d179bc3d6e15b4f5937b1c118a9d1ce9"
+  },
+  "source_sha256": {
+    "scripts/qualify_model.py": "69fb9c1e7bc9e8e13559752aea2833b244bf0272cca81f26dd55952d85cc3bb0"
+  },
+  "data_manifest_sha256": "dd56c133ba0357a22e0d4b1449defe216ed90fbbda751114316379b02d473b14"
+}

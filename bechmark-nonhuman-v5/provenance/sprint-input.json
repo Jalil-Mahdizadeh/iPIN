@@ -1,0 +1,28 @@
+{
+  "graph": "v5 TRAIN positives only",
+  "graph_edges": 350382,
+  "train_proteins": 13110,
+  "test_proteins": 56634,
+  "sequence_corpus": 69591,
+  "test_train_exact_sequence_overlap": 153,
+  "HSP_flags": [
+    "-Thit",
+    "15",
+    "-Tsim",
+    "35",
+    "-M",
+    "1"
+  ],
+  "prediction_flags": [
+    "-Thc",
+    "40"
+  ],
+  "scorer": "native serial predict_interactions",
+  "sequence_preprocessing": "full-length TRAIN plus TEST sequences; transductive sequence-only preprocessing",
+  "files": {
+    "data/sprint/empty.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/sprint/proteins.fasta": "1cea24ae6c6eed821414067d02ed6625b464a3bf89d5ac027d505a407cd8c9f0",
+    "data/sprint/train-positive.txt": "ae14e45fad1de669f21661a463d5eb5fb1e0d340c90a6b2905bc443c04a512cb",
+    "data/sprint/pairs.txt": "636b008469307dfbfbdfd5f8f92868aa2f977248346815a06f28d702c43ee7f8"
+  }
+}

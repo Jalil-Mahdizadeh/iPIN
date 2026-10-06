@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "dscript",
+    "test": "worm",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e5f3c2b73a922bebc7b8ef1ce9629fd97516a02861dd899908150353632772d5",
+    "scores": "374cc35bee22cea3f215735049a08ff26de1d3d4bfb28aa79347872e219a9b81",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/worm-dscript.npz",
+    "bytes": 14920,
+    "sha256": "7c9ead32a64a27d021a14f59fd5a5992bda92d2712c4349fcc926c1c0afdb0e5"
+  }
+}

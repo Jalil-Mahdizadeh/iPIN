@@ -1,0 +1,334 @@
+{
+  "at_utc": "2026-10-05T17:39:22.831616+00:00",
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/plot_exposure_subsets.py",
+    "bytes": 9010,
+    "sha256": "5e9f46e33042f8e1587ece9a490ef7ddc972ea7fb58528f1f9dc2158b6d6ae10"
+  },
+  "sources": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/subsets.csv",
+      "bytes": 37142,
+      "sha256": "8147b2ced77a06484c4da86329f8a7e9dfd91a79aedc00cdc574eb6983ef434b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/collection.json",
+      "bytes": 13227,
+      "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/exposure.json",
+      "bytes": 19981,
+      "sha256": "42784de097b9c43c3f1f9d6c6a206cd2b388b8a88592bf63bac162f1a5ac00d7"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/exposure-flags.npz",
+      "bytes": 19343,
+      "sha256": "5ad970a5f4992e681383c68ca633273ff0cdc3aa80491631bc1104cb5d774697"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/pair-mapping.npz",
+      "bytes": 162847,
+      "sha256": "ddbeba9e2f459e7e33073a81ae4cf31e89a97a0caf71557c355b7a252a8620a2"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/original.npy",
+      "bytes": 1665664,
+      "sha256": "402d3c928752fc3d91b1f17005cd68297d6df34a14fa6ae47e26e79a002f1188"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/ilp.npy",
+      "bytes": 1665664,
+      "sha256": "bced44a7b60dcdca586d2a076ed9979ad003f9e988a54c37ca259ea1ea63c21d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/union.npy",
+      "bytes": 2461504,
+      "sha256": "340f13363a78f1cc89705220a21e853b85a447b3d82b4bddb0e055fc20e1e168"
+    }
+  ],
+  "checks": {
+    "all_models": true,
+    "same_rows_within_each_test": true,
+    "no_retained_exposed_endpoints": true,
+    "all_metrics_recomputed_and_match_csv": true
+  },
+  "inference_repeated": false,
+  "confidence_intervals": false,
+  "figures": [
+    {
+      "stem": "xpair-exposed-sequences-removed",
+      "subset": "xpair_default_endpoint_unexposed",
+      "flag": "xpair-default__ankh-normalized__endpoints",
+      "title": "Performance after removing X-PAIR-exposed proteins",
+      "source": "Exposure source: X-PAIR default TRAIN + DEV, interaction and interface tasks",
+      "scope": "This filter removes X-PAIR default exposure; D-SCRIPT exposure can remain.",
+      "data": {
+        "original": {
+          "counts": {
+            "pairs": 3562,
+            "positives": 1838,
+            "negatives": 1724,
+            "prevalence": 0.5160022459292533,
+            "unique_proteins": 938
+          },
+          "models": {
+            "native-plm": {
+              "ap": 0.723939344981368,
+              "auroc": 0.7411104259396246
+            },
+            "ipin-esm2": {
+              "ap": 0.7553320814999871,
+              "auroc": 0.7581621491634455
+            },
+            "ipin-esmc": {
+              "ap": 0.7413069081028406,
+              "auroc": 0.7559049228834933
+            },
+            "tuna": {
+              "ap": 0.718248869030988,
+              "auroc": 0.7502471035550091
+            },
+            "xpair-bernett": {
+              "ap": 0.7292456548094001,
+              "auroc": 0.7485514619189122
+            },
+            "xpair-default": {
+              "ap": 0.661475282609532,
+              "auroc": 0.6488852568488396
+            },
+            "rapppid": {
+              "ap": 0.6055933493826408,
+              "auroc": 0.6311755375685768
+            },
+            "sprint": {
+              "ap": 0.5305310279149242,
+              "auroc": 0.5005948789287256
+            },
+            "dscript": {
+              "ap": 0.5331024451931609,
+              "auroc": 0.4888247969522001
+            },
+            "native-human": {
+              "ap": 0.5783926631358285,
+              "auroc": 0.5374740588605087
+            },
+            "tuna-human": {
+              "ap": 0.6131336135271876,
+              "auroc": 0.6089464741510116
+            }
+          }
+        },
+        "ilp": {
+          "counts": {
+            "pairs": 3413,
+            "positives": 1838,
+            "negatives": 1575,
+            "prevalence": 0.5385291532376209,
+            "unique_proteins": 915
+          },
+          "models": {
+            "native-plm": {
+              "ap": 0.6611418999716936,
+              "auroc": 0.647117639946802
+            },
+            "ipin-esm2": {
+              "ap": 0.7110406023867027,
+              "auroc": 0.6931910116240911
+            },
+            "ipin-esmc": {
+              "ap": 0.6955155353714637,
+              "auroc": 0.6797385011313194
+            },
+            "tuna": {
+              "ap": 0.6471584375411732,
+              "auroc": 0.651920479472166
+            },
+            "xpair-bernett": {
+              "ap": 0.6710891934569609,
+              "auroc": 0.6566177867592449
+            },
+            "xpair-default": {
+              "ap": 0.5740117314464892,
+              "auroc": 0.5450268580410038
+            },
+            "rapppid": {
+              "ap": 0.571218892159391,
+              "auroc": 0.5577245798573329
+            },
+            "sprint": {
+              "ap": 0.5311590709099753,
+              "auroc": 0.4812099072490803
+            },
+            "dscript": {
+              "ap": 0.5126755891428341,
+              "auroc": 0.4551733250427483
+            },
+            "native-human": {
+              "ap": 0.5353493095579682,
+              "auroc": 0.48103062334836
+            },
+            "tuna-human": {
+              "ap": 0.5510742948523422,
+              "auroc": 0.5203077879682886
+            }
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/xpair-exposed-sequences-removed.png",
+          "bytes": 472478,
+          "sha256": "3ec50cdb546f25b7c8f19bc41391f2c74608f99a84847a906169b804d81607fc"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/xpair-exposed-sequences-removed.pdf",
+          "bytes": 33763,
+          "sha256": "0321aa0f5189965650f2b2a2347cc02c0c0392cede6b3db7fe010b38bc608514"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/xpair-exposed-sequences-removed.svg",
+          "bytes": 44729,
+          "sha256": "d19693f0f6fed19eaaff8191bfe75f107a066bf088096844f4994944480cb3f1"
+        }
+      ]
+    },
+    {
+      "stem": "dscript-exposed-sequences-removed",
+      "subset": "dscript_endpoint_unexposed",
+      "flag": "dscript__exact__endpoints",
+      "title": "Performance after removing D-SCRIPT-exposed proteins",
+      "source": "Exposure source: D-SCRIPT original public human training data",
+      "scope": "This also removes both added human releases\u2019 exact TRAIN/validation exposure; X-PAIR exposure can remain.",
+      "data": {
+        "original": {
+          "counts": {
+            "pairs": 4264,
+            "positives": 2287,
+            "negatives": 1977,
+            "prevalence": 0.5363508442776735,
+            "unique_proteins": 707
+          },
+          "models": {
+            "native-plm": {
+              "ap": 0.6810165006637152,
+              "auroc": 0.6726691229860493
+            },
+            "ipin-esm2": {
+              "ap": 0.6917271489880722,
+              "auroc": 0.6829605173089126
+            },
+            "ipin-esmc": {
+              "ap": 0.673413660249192,
+              "auroc": 0.6600237006289424
+            },
+            "tuna": {
+              "ap": 0.6809559966257833,
+              "auroc": 0.6725150777447422
+            },
+            "xpair-bernett": {
+              "ap": 0.6982257480695955,
+              "auroc": 0.690861169297379
+            },
+            "xpair-default": {
+              "ap": 0.7298645226908795,
+              "auroc": 0.6931858922426444
+            },
+            "rapppid": {
+              "ap": 0.6146806685682387,
+              "auroc": 0.6075183809259037
+            },
+            "sprint": {
+              "ap": 0.5808809113667206,
+              "auroc": 0.556001250940251
+            },
+            "dscript": {
+              "ap": 0.5884351877173398,
+              "auroc": 0.5280135639433724
+            },
+            "native-human": {
+              "ap": 0.6663425363956709,
+              "auroc": 0.6284703031075116
+            },
+            "tuna-human": {
+              "ap": 0.6723073916252157,
+              "auroc": 0.6477085963879764
+            }
+          }
+        },
+        "ilp": {
+          "counts": {
+            "pairs": 4441,
+            "positives": 2287,
+            "negatives": 2154,
+            "prevalence": 0.5149741049313218,
+            "unique_proteins": 691
+          },
+          "models": {
+            "native-plm": {
+              "ap": 0.5929427447172244,
+              "auroc": 0.5900791036007891
+            },
+            "ipin-esm2": {
+              "ap": 0.6198094002982125,
+              "auroc": 0.616323582608738
+            },
+            "ipin-esmc": {
+              "ap": 0.6025732887377488,
+              "auroc": 0.60020587885424
+            },
+            "tuna": {
+              "ap": 0.6164833548884701,
+              "auroc": 0.6124711187004663
+            },
+            "xpair-bernett": {
+              "ap": 0.606477413300557,
+              "auroc": 0.6047243736447458
+            },
+            "xpair-default": {
+              "ap": 0.6303900517441923,
+              "auroc": 0.5984655915170279
+            },
+            "rapppid": {
+              "ap": 0.5533624982604797,
+              "auroc": 0.555261989063371
+            },
+            "sprint": {
+              "ap": 0.5446453919650176,
+              "auroc": 0.5364275857365051
+            },
+            "dscript": {
+              "ap": 0.5453337201018983,
+              "auroc": 0.5198856197010351
+            },
+            "native-human": {
+              "ap": 0.5743863645535361,
+              "auroc": 0.5547927631004682
+            },
+            "tuna-human": {
+              "ap": 0.5958280404024452,
+              "auroc": 0.5840272762077368
+            }
+          }
+        }
+      },
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/dscript-exposed-sequences-removed.png",
+          "bytes": 475728,
+          "sha256": "3a4f26a02443a0dee8aa749471c25fce0a40699c1161f208e0b94bc2549f17a7"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/dscript-exposed-sequences-removed.pdf",
+          "bytes": 33291,
+          "sha256": "fc2963246f5bb4a76139b2409ff889debc5228bd711b12d89d062dfa480fc7db"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/dscript-exposed-sequences-removed.svg",
+          "bytes": 44745,
+          "sha256": "75992e84c9e01b9c7542ac441408c51c09c92f2b8be591167de1154892efce04"
+        }
+      ]
+    }
+  ]
+}

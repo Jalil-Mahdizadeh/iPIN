@@ -1,0 +1,49 @@
+{
+  "time_utc": "2026-10-01T10:27:44.113627+00:00",
+  "dry_run": true,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production",
+  "release_sha256": "106e705f3ff7d757bb0e1655fd7bb1e2046419c7df8620bb9d6be903a7b3b909",
+  "runs": [
+    "esm2-chain-aware-official-seed2",
+    "esmc-standard-official-seed2",
+    "esmc-chain-aware-official-seed2"
+  ],
+  "commands": [
+    [
+      "sbatch",
+      "--parsable",
+      "--job-name=plmi-v4-S1",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production/slurm/train.sbatch",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production",
+      "esm2-chain-aware-official-seed2"
+    ],
+    [
+      "sbatch",
+      "--parsable",
+      "--job-name=plmi-v4-C0",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production/slurm/train.sbatch",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production",
+      "esmc-standard-official-seed2"
+    ],
+    [
+      "sbatch",
+      "--parsable",
+      "--job-name=plmi-v4-C1",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production/slurm/train.sbatch",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production",
+      "esmc-chain-aware-official-seed2"
+    ]
+  ],
+  "shell_commands": [
+    "sbatch --parsable --job-name=plmi-v4-S1 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production esm2-chain-aware-official-seed2",
+    "sbatch --parsable --job-name=plmi-v4-C0 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production esmc-standard-official-seed2",
+    "sbatch --parsable --job-name=plmi-v4-C1 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production esmc-chain-aware-official-seed2"
+  ],
+  "gpus_per_run": 4,
+  "maximum_concurrent_runs": 3,
+  "production_jobs_submitted_by_this_call": 0,
+  "automatic_benchmark": false,
+  "reused_control_retrained": false,
+  "qualification_passed": true,
+  "slurm_job_ids": []
+}

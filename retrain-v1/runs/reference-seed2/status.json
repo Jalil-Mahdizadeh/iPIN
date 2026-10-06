@@ -1,0 +1,18 @@
+{
+  "state": {
+    "update": 10050,
+    "epoch": 3,
+    "next_chunk": 2403,
+    "examples_seen": 642996,
+    "best_ap": 0.648935984074678,
+    "best_update": 4000,
+    "total_steps": 12745,
+    "pending_validation": false,
+    "last_validation_update": 10000
+  },
+  "last_committed_update": 10000,
+  "attempt": "20260928T195235-3112402",
+  "seconds_since_launch": 57253.78979494001,
+  "world_size": 4,
+  "phase": "training"
+}

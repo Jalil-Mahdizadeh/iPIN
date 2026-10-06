@@ -1,0 +1,22 @@
+{
+  "time_utc": "2026-10-01T08:06:54.558944+00:00",
+  "dry_run": true,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final",
+  "release_sha256": "0a971553d69a40eae580aeb518dbefa38b4e042396312f1da8c6967d16b50403",
+  "runs": [
+    "clean-residue-mean-official-seed2"
+  ],
+  "command": [
+    "sbatch",
+    "--parsable",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final/slurm/train.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final"
+  ],
+  "shell_command": "sbatch --parsable /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final",
+  "gpus": 4,
+  "training_models": 1,
+  "automatic_final_benchmark": true,
+  "resume_completed_phases": true,
+  "additional_experiments_after_report": false,
+  "qualified": true
+}

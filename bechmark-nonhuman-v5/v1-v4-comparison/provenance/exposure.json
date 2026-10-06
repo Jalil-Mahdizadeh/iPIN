@@ -1,0 +1,125 @@
+{
+  "at_utc": "2026-10-05T14:07:25.985539+00:00",
+  "audits": {
+    "v2-capped": {
+      "parts": {
+        "train": {
+          "pairs": 130461,
+          "positives": 64942,
+          "proteins": 4082
+        },
+        "val": {
+          "pairs": 59258,
+          "positives": 29628,
+          "proteins": 3710
+        }
+      },
+      "exact_shared_test_sequences": 94,
+      "tests": {
+        "mouse": {
+          "exact_pair_rows": 18,
+          "positive_pair_rows": 18,
+          "rows_with_exposed_endpoint": 977,
+          "common_parent_mask_is_conservative": true
+        },
+        "fly": {
+          "exact_pair_rows": 0,
+          "positive_pair_rows": 0,
+          "rows_with_exposed_endpoint": 0,
+          "common_parent_mask_is_conservative": true
+        },
+        "worm": {
+          "exact_pair_rows": 0,
+          "positive_pair_rows": 0,
+          "rows_with_exposed_endpoint": 0,
+          "common_parent_mask_is_conservative": true
+        },
+        "yeast": {
+          "exact_pair_rows": 0,
+          "positive_pair_rows": 0,
+          "rows_with_exposed_endpoint": 0,
+          "common_parent_mask_is_conservative": true
+        },
+        "ecoli": {
+          "exact_pair_rows": 0,
+          "positive_pair_rows": 0,
+          "rows_with_exposed_endpoint": 0,
+          "common_parent_mask_is_conservative": true
+        }
+      }
+    },
+    "v2-clean-bce": {
+      "parts": {
+        "train": {
+          "pairs": 163085,
+          "positives": 81550,
+          "proteins": 4285
+        },
+        "val": {
+          "pairs": 59258,
+          "positives": 29628,
+          "proteins": 3710
+        }
+      },
+      "exact_shared_test_sequences": 94,
+      "tests": {
+        "mouse": {
+          "exact_pair_rows": 18,
+          "positive_pair_rows": 18,
+          "rows_with_exposed_endpoint": 977,
+          "common_parent_mask_is_conservative": true
+        },
+        "fly": {
+          "exact_pair_rows": 0,
+          "positive_pair_rows": 0,
+          "rows_with_exposed_endpoint": 0,
+          "common_parent_mask_is_conservative": true
+        },
+        "worm": {
+          "exact_pair_rows": 0,
+          "positive_pair_rows": 0,
+          "rows_with_exposed_endpoint": 0,
+          "common_parent_mask_is_conservative": true
+        },
+        "yeast": {
+          "exact_pair_rows": 0,
+          "positive_pair_rows": 0,
+          "rows_with_exposed_endpoint": 0,
+          "common_parent_mask_is_conservative": true
+        },
+        "ecoli": {
+          "exact_pair_rows": 0,
+          "positive_pair_rows": 0,
+          "rows_with_exposed_endpoint": 0,
+          "common_parent_mask_is_conservative": true
+        }
+      }
+    }
+  },
+  "prepared_manifest": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/data/prepared/manifest.json",
+    "bytes": 4050,
+    "sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12"
+  },
+  "source_files": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/data/raw/pairs_uniprot_seqs_train.csv",
+      "bytes": 270001117,
+      "sha256": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/data/raw/pairs_uniprot_seqs_val.csv",
+      "bytes": 72666471,
+      "sha256": "0df36cbb69047e21ba01051641eede26a6e054e9c3e827c3bbe62e391854d9f2"
+    }
+  ],
+  "every_retained_source_row_and_tokenized_sequence_verified": true,
+  "existing_common_human_source_mask_covers_both_models": true,
+  "homology_exclusion": false,
+  "test_predictions_used": false,
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/historical_exposure.py",
+    "bytes": 3786,
+    "sha256": "cac0401f285e7f54630e0f36c4c600e773ff1c8a09b9d40f3a814e3b9146b8e6"
+  }
+}

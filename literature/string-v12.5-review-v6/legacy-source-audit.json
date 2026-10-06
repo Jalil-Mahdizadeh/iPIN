@@ -1,0 +1,163 @@
+{
+  "identity_unit": "exact amino-acid sequence SHA256, unordered pairs; row multiplicity preserved",
+  "sources": {
+    "train": {
+      "native_tuna_dscript_unordered_sequence_pair_label_multisets_identical": true,
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_train_dictionary.tsv",
+          "sha256": "83b49176590a94ed72fb8176a75d4bc35b90ebdcc9537677bfc0049ec423dded",
+          "bytes": 6414663
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_train_interaction.tsv",
+          "sha256": "1311d05d166653a57e6e39e2a55ad3e1da93eb9500294fab2e06f00510392cda",
+          "bytes": 18980640
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/raw/xspecies/pairs/human_train.tsv",
+          "sha256": "a51caf0b590decf96911b09d1e2cc6afc9a9d669d4e67d8bb3c2f1c94e16cd0b",
+          "bytes": 18558848
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v12.5-review-v6/dscript-human-train.tsv",
+          "sha256": "a51caf0b590decf96911b09d1e2cc6afc9a9d669d4e67d8bb3c2f1c94e16cd0b",
+          "bytes": 18558848
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.train.csv",
+          "sha256": "86c5134846df36df17455500154eab6049cd07250c79d6d263afcb5dcb6bf5fd",
+          "bytes": 318980144
+        }
+      ]
+    },
+    "test": {
+      "native_tuna_dscript_unordered_sequence_pair_label_multisets_identical": true,
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_test_dictionary.tsv",
+          "sha256": "756fe5bc557ea596784b6f5d316780036fcde4408ed1ef886c39754c38e682ce",
+          "bytes": 6297772
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/xspecies/human_test_interaction.tsv",
+          "sha256": "6afd73e10f74048364f6676934a3b638bc9dadd349b8d5ae3e00c1836724af48",
+          "bytes": 2372625
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/raw/xspecies/pairs/human_test.tsv",
+          "sha256": "19498f9761e9cb5645799f9e4e36f18b3abe7d2b015bf50b4a78d53283fe8f53",
+          "bytes": 2319900
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/string-v12.5-review-v6/dscript-human-test.tsv",
+          "sha256": "19498f9761e9cb5645799f9e4e36f18b3abe7d2b015bf50b4a78d53283fe8f53",
+          "bytes": 2319900
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.test.csv",
+          "sha256": "abb126f34f617fdc4c956e1f056df5cb0921ab3c12d6f0d87948411d34a7b9f3",
+          "bytes": 39851844
+        }
+      ]
+    }
+  },
+  "train": {
+    "rows": 421792,
+    "label_counts": {
+      "0": 383448,
+      "1": 38344
+    },
+    "unique_unordered_pairs_by_label": {
+      "0": 383092,
+      "1": 38314
+    },
+    "duplicate_rows_by_label": {
+      "0": 356,
+      "1": 30
+    },
+    "opposite_label_pairs": 47,
+    "self_pair_rows_by_label": {
+      "0": 16,
+      "1": 1
+    },
+    "unique_sequences": 15631,
+    "positive_sequences": 7492,
+    "negative_sequences": 15631,
+    "negative_sequences_not_in_positives": 8139,
+    "negative_rows_with_endpoint_absent_from_same_split_positives": 296944,
+    "sequence_length_range": [
+      50,
+      800
+    ],
+    "max_pair_length": 1600
+  },
+  "validation_named_test": {
+    "rows": 52725,
+    "label_counts": {
+      "0": 47931,
+      "1": 4794
+    },
+    "unique_unordered_pairs_by_label": {
+      "0": 47928,
+      "1": 4794
+    },
+    "duplicate_rows_by_label": {
+      "0": 3,
+      "1": 0
+    },
+    "opposite_label_pairs": 0,
+    "self_pair_rows_by_label": {
+      "0": 1,
+      "1": 0
+    },
+    "unique_sequences": 15351,
+    "positive_sequences": 3356,
+    "negative_sequences": 15257,
+    "negative_sequences_not_in_positives": 11995,
+    "negative_rows_with_endpoint_absent_from_same_split_positives": 45832,
+    "sequence_length_range": [
+      50,
+      800
+    ],
+    "max_pair_length": 1591
+  },
+  "combined": {
+    "rows": 474517,
+    "label_counts": {
+      "0": 431379,
+      "1": 43138
+    },
+    "unique_unordered_pairs_by_label": {
+      "0": 430945,
+      "1": 43101
+    },
+    "duplicate_rows_by_label": {
+      "0": 434,
+      "1": 37
+    },
+    "opposite_label_pairs": 54,
+    "self_pair_rows_by_label": {
+      "0": 17,
+      "1": 1
+    },
+    "unique_sequences": 15631,
+    "positive_sequences": 7668,
+    "negative_sequences": 15631,
+    "negative_sequences_not_in_positives": 7963,
+    "negative_rows_with_endpoint_absent_from_same_split_positives": 329320,
+    "sequence_length_range": [
+      50,
+      800
+    ],
+    "max_pair_length": 1600
+  },
+  "cross_split": {
+    "shared_sequences": 15351,
+    "dev_only_sequences": 0,
+    "dev_rows_with_both_endpoints_seen_in_train": 52725,
+    "shared_unordered_pairs": 89,
+    "dev_rows_with_same_labeled_pair_in_train": 82,
+    "dev_rows_with_opposite_labeled_pair_in_train": 7
+  }
+}

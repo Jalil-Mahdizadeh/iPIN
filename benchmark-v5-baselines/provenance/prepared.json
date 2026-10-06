@@ -1,0 +1,267 @@
+{
+  "at_utc": "2026-10-06T08:05:00.883747+00:00",
+  "counts": {
+    "train": {
+      "rows": 700764,
+      "positives": 350382,
+      "negatives": 350382,
+      "sequences": 13110
+    },
+    "validation": {
+      "rows": 165742,
+      "positives": 82871,
+      "negatives": 82871,
+      "sequences": 6023
+    },
+    "original": {
+      "rows": 52048,
+      "positives": 26024,
+      "negatives": 26024,
+      "sequences": 3022
+    },
+    "ilp": {
+      "rows": 52048,
+      "positives": 26024,
+      "negatives": 26024,
+      "sequences": 2948
+    }
+  },
+  "sources": [
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/prepared/train.csv",
+        "bytes": 33423643,
+        "sha256": "64c866b46f1a4e32bbe61ac0b10f052fc56a0a98246a93da254f042e0e29b997"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/train.csv.gz",
+        "bytes": 6887346,
+        "sha256": "e0595c82843bbe96463102332927dcbaa4407c94a96a6c584a64fae4bff219c0"
+      },
+      "uncompressed_sha256": "64c866b46f1a4e32bbe61ac0b10f052fc56a0a98246a93da254f042e0e29b997"
+    },
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/prepared/val.csv",
+        "bytes": 7447428,
+        "sha256": "a3a173f7f34eee67a2525d8bb61560c7ef8dfbf9cb95af1b44869e2d4df20e60"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/validation.csv.gz",
+        "bytes": 1675131,
+        "sha256": "2e3ab2f77388c9c226fd0190f7b91c61d2787922436f6e2dbf64e0161ffc16ca"
+      },
+      "uncompressed_sha256": "a3a173f7f34eee67a2525d8bb61560c7ef8dfbf9cb95af1b44869e2d4df20e60"
+    },
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/prepared/sequences.fasta",
+        "bytes": 12146261,
+        "sha256": "c5c097298fe4ee6357b50833974b2e818b51d3c18c21a968922b242272d23eb1"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/development-sequences.fasta.gz",
+        "bytes": 7260700,
+        "sha256": "f8922f2ab92f4618ebf5a95f4411595d1206dbb3af03d2fb0d56bc69a2869364"
+      },
+      "uncompressed_sha256": "c5c097298fe4ee6357b50833974b2e818b51d3c18c21a968922b242272d23eb1"
+    },
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/prepared/proteins.tsv",
+        "bytes": 3043736,
+        "sha256": "98074836933a8a1fc12254199ffc8e4f673f2cb91878873eeae525ac16e256d3"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/development-proteins.tsv.gz",
+        "bytes": 1473180,
+        "sha256": "668495f340583c4ec9a282d8d60f4302bde19ba70c6705f3528381bcb959004d"
+      },
+      "uncompressed_sha256": "98074836933a8a1fc12254199ffc8e4f673f2cb91878873eeae525ac16e256d3"
+    },
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/frozen-tests/original-test.csv",
+        "bytes": 57001326,
+        "sha256": "89f164f9bd391fd3a2cb400cb3b402d87b73af8142143c58cac56d55d3d7abcc"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/original-test.csv.gz",
+        "bytes": 32864129,
+        "sha256": "b970830ad36ebffbddd84442b92fab94e5c37b77a689ea0eec39ce18a8c264d0"
+      },
+      "uncompressed_sha256": "89f164f9bd391fd3a2cb400cb3b402d87b73af8142143c58cac56d55d3d7abcc"
+    },
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/frozen-tests/test-ilp.csv",
+        "bytes": 2340693,
+        "sha256": "85de70eedb2e039726edb784e02edd23248f871dd83f680a66ae11fb21a35bf0"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/ilp-test.csv.gz",
+        "bytes": 568757,
+        "sha256": "d44fe768b473bbbdbd6a61441c58506e65042b77b78261c174ae353465f4ff57"
+      },
+      "uncompressed_sha256": "85de70eedb2e039726edb784e02edd23248f871dd83f680a66ae11fb21a35bf0"
+    },
+    {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/frozen-tests/original-sequences.fasta",
+        "bytes": 1552485,
+        "sha256": "947a52bf70bca3c7af4661fbc6dfd816a925450c35ec4bf23cdad406477f8355"
+      },
+      "archive": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/test-sequences.fasta.gz",
+        "bytes": 934560,
+        "sha256": "bc240b8e607154f2dd8e4e6f657bb36ca8a0bdcacdcea67759a190ae5f98a146"
+      },
+      "uncompressed_sha256": "947a52bf70bca3c7af4661fbc6dfd816a925450c35ec4bf23cdad406477f8355"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/development-proteins.tsv.gz",
+      "bytes": 1473180,
+      "sha256": "668495f340583c4ec9a282d8d60f4302bde19ba70c6705f3528381bcb959004d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/development-sequences.fasta.gz",
+      "bytes": 7260700,
+      "sha256": "f8922f2ab92f4618ebf5a95f4411595d1206dbb3af03d2fb0d56bc69a2869364"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/ilp-test.csv.gz",
+      "bytes": 568757,
+      "sha256": "d44fe768b473bbbdbd6a61441c58506e65042b77b78261c174ae353465f4ff57"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/original-test.csv.gz",
+      "bytes": 32864129,
+      "sha256": "b970830ad36ebffbddd84442b92fab94e5c37b77a689ea0eec39ce18a8c264d0"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/test-sequences.fasta.gz",
+      "bytes": 934560,
+      "sha256": "bc240b8e607154f2dd8e4e6f657bb36ca8a0bdcacdcea67759a190ae5f98a146"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/train.csv.gz",
+      "bytes": 6887346,
+      "sha256": "e0595c82843bbe96463102332927dcbaa4407c94a96a6c584a64fae4bff219c0"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/inputs/validation.csv.gz",
+      "bytes": 1675131,
+      "sha256": "2e3ab2f77388c9c226fd0190f7b91c61d2787922436f6e2dbf64e0161ffc16ca"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/ilp-labels.npy",
+      "bytes": 52176,
+      "sha256": "d4951dd1b635bed6bb779620ad3a2543b92e8effe319f8fb5a2449c6d054cee8"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/ilp-neural-reused.npz",
+      "bytes": 357871,
+      "sha256": "18a98d6e63d9d321cf35cec5b42bcf1028dc8f05d133af1fb11c27756932969a"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/ilp-pair-ids.json",
+      "bytes": 1487175,
+      "sha256": "0eadad009261d553f24d783200d9fca5d9aaada1c92b297f85a650c7097b0254"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/ilp-pairs.npy",
+      "bytes": 832896,
+      "sha256": "9fdfff012086e1791e4efa2680756ed1fafc93de6c5a71e0e6c8b18677daad27"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/original-labels.npy",
+      "bytes": 52176,
+      "sha256": "d4951dd1b635bed6bb779620ad3a2543b92e8effe319f8fb5a2449c6d054cee8"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/original-neural-reused.npz",
+      "bytes": 358729,
+      "sha256": "7fe260871edee8ac309fb8c5b848815fa17e00efac6e57d9e02966b0a5be1d25"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/original-pair-ids.json",
+      "bytes": 1029853,
+      "sha256": "daecb6954d772403c06df6f15e0dd72e23a56006ca487727b7080bf647cd2f3b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/original-pairs.npy",
+      "bytes": 832896,
+      "sha256": "3a538ba94028c74c117382a9074b28aec25d504e3abcf0b5e2ff179cdc78876b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/queries.fasta",
+      "bytes": 13704790,
+      "sha256": "c457856090223c45e7124a01fe114fd18116f00d0a90f3b057e6666efcbc9cf2"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/sequences.json",
+      "bytes": 15568545,
+      "sha256": "dcd8fe5afacc1737e7b4de2d4b7367ccd857d803854d2d95adc8d5681e4f88d7"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/train-labels.npy",
+      "bytes": 700892,
+      "sha256": "d2acaec03a3ad0595f05e4cf70ea6ebf77a55c76ef68bcd727a06fe78da2734f"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/train-pair-ids.json",
+      "bytes": 18698411,
+      "sha256": "b975ba55d0c512cbc418d5ee8f9919192d3f2751f360c9f550be36163f919ac3"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/train-pairs.npy",
+      "bytes": 11212352,
+      "sha256": "56915614dbc40fe0843f8b656a9bfa5867a4ea63cc66595a2d6e391951db2671"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/train.fasta",
+      "bytes": 8169279,
+      "sha256": "75f7fcf810d7ec2362bfe425a628eedbcb82834b3a97e65d376ba32aee139d5e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/validation-labels.npy",
+      "bytes": 165870,
+      "sha256": "b514cba043dadb1db96d14516125f54fd7749bff2cb8398ce5d032ebcac69983"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/validation-neural-reused.npz",
+      "bytes": 769971,
+      "sha256": "2a774faac24d88946b9c94799488fe96e752043aca04a43aa6eeb26be92b90ef"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/validation-pair-ids.json",
+      "bytes": 3955591,
+      "sha256": "df911c76408f6108c8cef7d276b29b07ed46d3979ab30cc96de8f91f4e4e1431"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/validation-pairs.npy",
+      "bytes": 2652000,
+      "sha256": "82c8165197467b035d96b1e88937b2840ddef42ecb8f62803fdf0c2a0e6d13b3"
+    }
+  ],
+  "distinct_sequences": 22155,
+  "shared_test_positives": 26024,
+  "shared_test_negatives": 1154,
+  "checks": {
+    "all_source_hashes_verified": true,
+    "both_backbone_train_val_arrays_match": true,
+    "all_neural_pair_mappings_match": true,
+    "train_val_test_sequence_disjoint": true,
+    "unique_nonself_pairs_in_each_split": true,
+    "same_configuration_as_v11": true
+  },
+  "resource_use": {
+    "wall_seconds": 7.460468041012064,
+    "user_seconds": 5.251059,
+    "system_seconds": 0.259065,
+    "max_rss_kib": 294912,
+    "at_utc": "2026-10-06T08:05:00.883775+00:00"
+  }
+}

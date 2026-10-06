@@ -1,0 +1,587 @@
+{
+  "at_utc": "2026-10-05T12:28:22.125724+00:00",
+  "criterion": "maximum full ILP DEV pooled AP; earlier ties retained",
+  "training_current_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v5",
+  "training_original_path": "retraining-v5",
+  "preferred_ipin_before_test": "ipin-esm2",
+  "models": {
+    "ipin-esm2": {
+      "checkpoint": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/ipin-esm2.pt",
+        "bytes": 7818552843,
+        "sha256": "8667e4af34346e4c8bcd2600dd06d21c64fe68ee82b8d99585c67cce102525e3"
+      },
+      "source_checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v5/runs/esm2-native-ilp-seed2/checkpoints/update-000027374.pt",
+      "update": 27374,
+      "source_manifest": {
+        "file": "update-000027374.pt",
+        "sha256": "8667e4af34346e4c8bcd2600dd06d21c64fe68ee82b8d99585c67cce102525e3",
+        "bytes": 7818552843,
+        "update": 27374,
+        "epoch": 2,
+        "next_chunk": 350408,
+        "world_size": 4,
+        "fingerprint": "d72b1cbc823743792301b32c590681f85c54be7c5fac871b88be927b0df06328",
+        "best_update": 27374,
+        "best_ap": 0.6153270385052271
+      },
+      "configuration": {
+        "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5",
+        "seed": 2,
+        "partition": "v5_ilp",
+        "world_size": 4,
+        "total_updates": 54748,
+        "global_pairs_per_update": 64,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_updates": 2000,
+        "clip_grad_norm": 1.0,
+        "classification_weight": 10.0,
+        "positive_weight": 1.0,
+        "classification_corruption": true,
+        "mlm_weight": 1.0,
+        "readout": "cls_linear",
+        "attention_mode": "standard",
+        "attention_backend": "efficient",
+        "train_cap_residues": null,
+        "train_token_budget": 8192,
+        "train_max_pairs": 4,
+        "eval_token_budget": 16384,
+        "eval_max_pairs": 8,
+        "checkpoint_every_updates": 100,
+        "checkpoint_minutes": 15,
+        "health_checkpoint_update": 10,
+        "log_every_updates": 10,
+        "validate_every_updates": 2738,
+        "validation_updates": [
+          2738,
+          5475,
+          8213,
+          10950,
+          13687,
+          16425,
+          19162,
+          21899,
+          24637,
+          27374,
+          30111,
+          32849,
+          35586,
+          38324,
+          41061,
+          43798,
+          46536,
+          49273,
+          52010,
+          54748
+        ],
+        "selection_metric": "pooled_ap",
+        "loss_normalization": "global_pair_mean_bce_plus_global_masked_token_mean_mlm",
+        "masking_probability": 0.15,
+        "mask_replacement": "80_percent_mask_10_percent_canonical_random_10_percent_unchanged",
+        "minimum_one_mask_per_protein": true,
+        "shared_corruption_across_orientations": true,
+        "planned_epochs": 5.0,
+        "physical_pair_presentations": 3503872,
+        "name": "esm2-native-ilp-seed2",
+        "backbone": "esm2",
+        "initialization": "esm2_pretrained"
+      },
+      "base": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/assets/esm2",
+      "contract": {
+        "fingerprint": "d72b1cbc823743792301b32c590681f85c54be7c5fac871b88be927b0df06328",
+        "configuration": {
+          "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5",
+          "seed": 2,
+          "partition": "v5_ilp",
+          "world_size": 4,
+          "total_updates": 54748,
+          "global_pairs_per_update": 64,
+          "learning_rate": 2e-05,
+          "weight_decay": 0.01,
+          "warmup_updates": 2000,
+          "clip_grad_norm": 1.0,
+          "classification_weight": 10.0,
+          "positive_weight": 1.0,
+          "classification_corruption": true,
+          "mlm_weight": 1.0,
+          "readout": "cls_linear",
+          "attention_mode": "standard",
+          "attention_backend": "efficient",
+          "train_cap_residues": null,
+          "train_token_budget": 8192,
+          "train_max_pairs": 4,
+          "eval_token_budget": 16384,
+          "eval_max_pairs": 8,
+          "checkpoint_every_updates": 100,
+          "checkpoint_minutes": 15,
+          "health_checkpoint_update": 10,
+          "log_every_updates": 10,
+          "validate_every_updates": 2738,
+          "validation_updates": [
+            2738,
+            5475,
+            8213,
+            10950,
+            13687,
+            16425,
+            19162,
+            21899,
+            24637,
+            27374,
+            30111,
+            32849,
+            35586,
+            38324,
+            41061,
+            43798,
+            46536,
+            49273,
+            52010,
+            54748
+          ],
+          "selection_metric": "pooled_ap",
+          "loss_normalization": "global_pair_mean_bce_plus_global_masked_token_mean_mlm",
+          "masking_probability": 0.15,
+          "mask_replacement": "80_percent_mask_10_percent_canonical_random_10_percent_unchanged",
+          "minimum_one_mask_per_protein": true,
+          "shared_corruption_across_orientations": true,
+          "planned_epochs": 5.0,
+          "physical_pair_presentations": 3503872,
+          "name": "esm2-native-ilp-seed2",
+          "backbone": "esm2",
+          "initialization": "esm2_pretrained"
+        },
+        "qualification": false,
+        "tiny": false,
+        "train_limit": null,
+        "val_limit": null,
+        "qualification_max_tokens": null,
+        "total_steps": 54748,
+        "world_size": 4,
+        "data_manifest_sha256": "70bc1aa7f71845eeb921aa34819f0fbde403e3127563bbcd0b252253880b53ab",
+        "initialization_manifest_sha256": "0d84f5222e2705346caa2c6e489db8128243d05f9888903813bbc1c51fa006d2",
+        "code": {
+          "train.py": "4add811c2218c39dde7ab79cd4b62f6143b7d4cc8419a9eb2a9f91a4e86662e2",
+          "model.py": "7680c5aba9d350dfece2eb7394eb0995518b6e474e5ca54bfdac5346ad402c6e",
+          "native_head.py": "278c7180b249f46d130acd36561035d13af47458836a91a7a4ab89694fab896c",
+          "model_esm2.py": "e944e891ce2ffdf5f961d977e6c8dd25334f735569419fef366ce6d76e79552c",
+          "model_esmc.py": "ea568585e29f7d0211c5c717527c210dd40ce0f53ff476f4acc1577f3c280149",
+          "data.py": "a940d7906b2449a1e4b3f37fcd62e4a9ab4fac5a3e537ff0d3c26916edf39d59",
+          "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+          "contracts.py": "043e9794b825e4d08ce6794eba24afe50e6a96a90addcbc847c91d6cc822dddd",
+          "release.py": "3ff0cb6f5254c303b80c8c9b81c38efea21621c2cd70cf9dfdbf04feb9a9f5e8"
+        },
+        "torch": "2.8.0a0+34c6371d24.nv25.08",
+        "cuda": "13.0",
+        "image_sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2",
+        "packages": {
+          "transformers": "4.40.1",
+          "tokenizers": "0.19.1",
+          "numpy": "1.26.4"
+        },
+        "selection": "maximum pooled validation AP; strict greater-than keeps earlier update on exact ties",
+        "test_evaluation": "forbidden in this trainer"
+      },
+      "validation_audit": [
+        {
+          "update": 2738,
+          "ap": 0.571891046154672,
+          "sha256": "c1f41792d12c7bf8fa96f8dafededb1668ad21a677c4455b4b87cf39e72a815d"
+        },
+        {
+          "update": 5475,
+          "ap": 0.5831866341220295,
+          "sha256": "f81b6d261a7961261f0a21ea062c023440109527a8a15318a5fc1543e1de67ce"
+        },
+        {
+          "update": 8213,
+          "ap": 0.5908964707613076,
+          "sha256": "b15cdd6b69ddb3b523fab3054542ac5907d5b49064fdc3f8de07dc2f4c5331ea"
+        },
+        {
+          "update": 10950,
+          "ap": 0.5897330895005135,
+          "sha256": "148424e36ab27dfa3de4b8228e68b48a9a9b614fd0bdf2128fbaab114648886b"
+        },
+        {
+          "update": 13687,
+          "ap": 0.5963158931567838,
+          "sha256": "3eebbe956b0552f8d14955b67748d7d0f6fdaaafe80d005beea73b2345913d02"
+        },
+        {
+          "update": 16425,
+          "ap": 0.6102342066819576,
+          "sha256": "c4705e8215ccb120b4c370eabbc456a921938db6eb43fa8d096eaf54673b34a7"
+        },
+        {
+          "update": 19162,
+          "ap": 0.6139460564233279,
+          "sha256": "ff986339fc139d330623e4d2e77626bd62126d63935d97b4fa1634ad104e31b3"
+        },
+        {
+          "update": 21899,
+          "ap": 0.6097262371444974,
+          "sha256": "bb3791f87ba600c9d0ead0b973c1cea6151e6271829df3672391a49e4f3d775d"
+        },
+        {
+          "update": 24637,
+          "ap": 0.6089626351958268,
+          "sha256": "8e02bf451c24e5bbfb471d7dc3bb222d29e5b1af69a5cbfffd30fb2bedc27a5a"
+        },
+        {
+          "update": 27374,
+          "ap": 0.6153270385052271,
+          "sha256": "0e065ace2bcdc2733ee853d4b7bf4d9922ad217dbe62d0083670479e2034b91c"
+        },
+        {
+          "update": 30111,
+          "ap": 0.6140632608073257,
+          "sha256": "0de87ff757989f9b37d9626b65e428bcec50e7df2c3a8d6ebd9203f331ec51b7"
+        },
+        {
+          "update": 32849,
+          "ap": 0.6121552455026977,
+          "sha256": "327ae1b247d17ec89636dd61d9a54d8afbef94bdba3346ffd6d77a138b2ffe75"
+        },
+        {
+          "update": 35586,
+          "ap": 0.6115668772692685,
+          "sha256": "1203fa3741a187657b9e1f1f0998220126a3365daabedd4316fca1321851185e"
+        },
+        {
+          "update": 38324,
+          "ap": 0.6124107237966498,
+          "sha256": "9a7b7738fab80abebc9ce76bccd75ab2de0b08d5d6242ac288ab70a237d5656b"
+        },
+        {
+          "update": 41061,
+          "ap": 0.6093835974850221,
+          "sha256": "7c35d494d8bb02cb6e78413a4086345b7baf6aa4a756f0d9c2122782db9b59df"
+        },
+        {
+          "update": 43798,
+          "ap": 0.6118596271368353,
+          "sha256": "d98fa07aad8d9d16c1cff01d29b7b81161ab47b9c5b3a065d1743b435119400d"
+        }
+      ],
+      "validation_ap": 0.6153270385052271,
+      "operating_point": {
+        "logit": -1.427734375,
+        "validation_f1": 0.6694018427176975,
+        "rows": 165742,
+        "selection": "maximum DEV F1, highest threshold on ties"
+      }
+    },
+    "ipin-esmc": {
+      "checkpoint": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/ipin-esmc.pt",
+        "bytes": 6900990095,
+        "sha256": "3417a51ff381c4e5e9682c95e094a40b2411538a21e0a3199ec3506faea46a23"
+      },
+      "source_checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v5/runs/esmc-native-ilp-seed2/checkpoints/update-000021899.pt",
+      "update": 21899,
+      "source_manifest": {
+        "file": "update-000021899.pt",
+        "sha256": "3417a51ff381c4e5e9682c95e094a40b2411538a21e0a3199ec3506faea46a23",
+        "bytes": 6900990095,
+        "update": 21899,
+        "epoch": 2,
+        "next_chunk": 8,
+        "world_size": 4,
+        "fingerprint": "31a5cf349a0eca57e245c3a4d745e9ef7d6e2427aa912187bc17f18812e83c25",
+        "best_update": 21899,
+        "best_ap": 0.5924616586439035
+      },
+      "configuration": {
+        "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5",
+        "seed": 2,
+        "partition": "v5_ilp",
+        "world_size": 4,
+        "total_updates": 54748,
+        "global_pairs_per_update": 64,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_updates": 2000,
+        "clip_grad_norm": 1.0,
+        "classification_weight": 10.0,
+        "positive_weight": 1.0,
+        "classification_corruption": true,
+        "mlm_weight": 1.0,
+        "readout": "cls_linear",
+        "attention_mode": "standard",
+        "attention_backend": "efficient",
+        "train_cap_residues": null,
+        "train_token_budget": 8192,
+        "train_max_pairs": 4,
+        "eval_token_budget": 16384,
+        "eval_max_pairs": 8,
+        "checkpoint_every_updates": 100,
+        "checkpoint_minutes": 15,
+        "health_checkpoint_update": 10,
+        "log_every_updates": 10,
+        "validate_every_updates": 2738,
+        "validation_updates": [
+          2738,
+          5475,
+          8213,
+          10950,
+          13687,
+          16425,
+          19162,
+          21899,
+          24637,
+          27374,
+          30111,
+          32849,
+          35586,
+          38324,
+          41061,
+          43798,
+          46536,
+          49273,
+          52010,
+          54748
+        ],
+        "selection_metric": "pooled_ap",
+        "loss_normalization": "global_pair_mean_bce_plus_global_masked_token_mean_mlm",
+        "masking_probability": 0.15,
+        "mask_replacement": "80_percent_mask_10_percent_canonical_random_10_percent_unchanged",
+        "minimum_one_mask_per_protein": true,
+        "shared_corruption_across_orientations": true,
+        "planned_epochs": 5.0,
+        "physical_pair_presentations": 3503872,
+        "name": "esmc-native-ilp-seed2",
+        "backbone": "esmc",
+        "initialization": "esmc_pretrained"
+      },
+      "base": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact-esmc/assets/esmc-600m",
+      "contract": {
+        "fingerprint": "31a5cf349a0eca57e245c3a4d745e9ef7d6e2427aa912187bc17f18812e83c25",
+        "configuration": {
+          "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5",
+          "seed": 2,
+          "partition": "v5_ilp",
+          "world_size": 4,
+          "total_updates": 54748,
+          "global_pairs_per_update": 64,
+          "learning_rate": 2e-05,
+          "weight_decay": 0.01,
+          "warmup_updates": 2000,
+          "clip_grad_norm": 1.0,
+          "classification_weight": 10.0,
+          "positive_weight": 1.0,
+          "classification_corruption": true,
+          "mlm_weight": 1.0,
+          "readout": "cls_linear",
+          "attention_mode": "standard",
+          "attention_backend": "efficient",
+          "train_cap_residues": null,
+          "train_token_budget": 8192,
+          "train_max_pairs": 4,
+          "eval_token_budget": 16384,
+          "eval_max_pairs": 8,
+          "checkpoint_every_updates": 100,
+          "checkpoint_minutes": 15,
+          "health_checkpoint_update": 10,
+          "log_every_updates": 10,
+          "validate_every_updates": 2738,
+          "validation_updates": [
+            2738,
+            5475,
+            8213,
+            10950,
+            13687,
+            16425,
+            19162,
+            21899,
+            24637,
+            27374,
+            30111,
+            32849,
+            35586,
+            38324,
+            41061,
+            43798,
+            46536,
+            49273,
+            52010,
+            54748
+          ],
+          "selection_metric": "pooled_ap",
+          "loss_normalization": "global_pair_mean_bce_plus_global_masked_token_mean_mlm",
+          "masking_probability": 0.15,
+          "mask_replacement": "80_percent_mask_10_percent_canonical_random_10_percent_unchanged",
+          "minimum_one_mask_per_protein": true,
+          "shared_corruption_across_orientations": true,
+          "planned_epochs": 5.0,
+          "physical_pair_presentations": 3503872,
+          "name": "esmc-native-ilp-seed2",
+          "backbone": "esmc",
+          "initialization": "esmc_pretrained"
+        },
+        "qualification": false,
+        "tiny": false,
+        "train_limit": null,
+        "val_limit": null,
+        "qualification_max_tokens": null,
+        "total_steps": 54748,
+        "world_size": 4,
+        "data_manifest_sha256": "70bc1aa7f71845eeb921aa34819f0fbde403e3127563bbcd0b252253880b53ab",
+        "initialization_manifest_sha256": "0d84f5222e2705346caa2c6e489db8128243d05f9888903813bbc1c51fa006d2",
+        "code": {
+          "train.py": "4add811c2218c39dde7ab79cd4b62f6143b7d4cc8419a9eb2a9f91a4e86662e2",
+          "model.py": "7680c5aba9d350dfece2eb7394eb0995518b6e474e5ca54bfdac5346ad402c6e",
+          "native_head.py": "278c7180b249f46d130acd36561035d13af47458836a91a7a4ab89694fab896c",
+          "model_esm2.py": "e944e891ce2ffdf5f961d977e6c8dd25334f735569419fef366ce6d76e79552c",
+          "model_esmc.py": "ea568585e29f7d0211c5c717527c210dd40ce0f53ff476f4acc1577f3c280149",
+          "data.py": "a940d7906b2449a1e4b3f37fcd62e4a9ab4fac5a3e537ff0d3c26916edf39d59",
+          "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+          "contracts.py": "043e9794b825e4d08ce6794eba24afe50e6a96a90addcbc847c91d6cc822dddd",
+          "release.py": "3ff0cb6f5254c303b80c8c9b81c38efea21621c2cd70cf9dfdbf04feb9a9f5e8"
+        },
+        "torch": "2.8.0a0+34c6371d24.nv25.08",
+        "cuda": "13.0",
+        "image_sha256": "ed6aeac781502090632bc2a705300b161b6a65ccfbcf6c7cf64d8d61d8e5b5ef",
+        "packages": {
+          "transformers": "4.48.1",
+          "tokenizers": "0.21.4",
+          "numpy": "1.26.4",
+          "esm": "3.2.3"
+        },
+        "selection": "maximum pooled validation AP; strict greater-than keeps earlier update on exact ties",
+        "test_evaluation": "forbidden in this trainer"
+      },
+      "validation_audit": [
+        {
+          "update": 2738,
+          "ap": 0.5140790743170467,
+          "sha256": "5b4523986260017cb1f325b48b83089ca5d7b09e655556ded7ab33443f228607"
+        },
+        {
+          "update": 5475,
+          "ap": 0.5435702366853126,
+          "sha256": "60d4b7924fa0489a09b56c736af360f5796893f9269118b6fde8aa142470bdb9"
+        },
+        {
+          "update": 8213,
+          "ap": 0.5709816907782663,
+          "sha256": "02965ceda5fd7383fb5714829d4c6971f5184fb2d417c98f0e650071fadfb64c"
+        },
+        {
+          "update": 10950,
+          "ap": 0.5748935822238992,
+          "sha256": "537eb12dd9966d5b18d712ad690377f97782f61e9be262831c4960c9fe27fe3a"
+        },
+        {
+          "update": 13687,
+          "ap": 0.5835659333010608,
+          "sha256": "2f046a70b4047e0849d4ee5a8ab52c4439271b8a3329b41e2a03c1c9728de2d1"
+        },
+        {
+          "update": 16425,
+          "ap": 0.5867910488585409,
+          "sha256": "6deb688de2115cb3125454089c3d80709814ab5548c783b5dcf7583a0c64ca9f"
+        },
+        {
+          "update": 19162,
+          "ap": 0.5891866493930138,
+          "sha256": "3252b066d94c2b8e6b98137d7230ad22e2fd187250b09cf0e6a076df61de268d"
+        },
+        {
+          "update": 21899,
+          "ap": 0.5924616586439035,
+          "sha256": "bd57aa218dcdfce048f37a65ac05cd8e7f2633e6d17f28bdfc10a180d3c32a33"
+        },
+        {
+          "update": 24637,
+          "ap": 0.5870251555932392,
+          "sha256": "4340c3d16b00c7374742df97f875bd11fb8e004906f0f8386fd28b068a79fe78"
+        },
+        {
+          "update": 27374,
+          "ap": 0.5882731390553854,
+          "sha256": "eb7c9e0ef54e1448e57ac1eddc14cf04eb6b49b588194fa9abe37b1afff4c094"
+        },
+        {
+          "update": 30111,
+          "ap": 0.5867765414700437,
+          "sha256": "71cd6366fa0eaaa13aa3d23fa0be4cedd7c6c41b1472443fc0a32ad27a39408f"
+        },
+        {
+          "update": 32849,
+          "ap": 0.5871235017424465,
+          "sha256": "bf843efff63480b81f796fa6824ceb3133654013ff12e76a7f88839a49e8151c"
+        },
+        {
+          "update": 35586,
+          "ap": 0.5862103267666577,
+          "sha256": "54e10b651ec0670d9500cff98f13dbd3bb72c19cec4bbab2c314d0a755f81462"
+        },
+        {
+          "update": 38324,
+          "ap": 0.5875246166191073,
+          "sha256": "2277dac93328183baed971cfb3001032a0178bb51fac74a9a50261284c32ff52"
+        },
+        {
+          "update": 41061,
+          "ap": 0.5845443474320113,
+          "sha256": "d9e834d80ba353edf8bb94145aaf72ca67ec433ffba3faa4db8f150aafb826de"
+        },
+        {
+          "update": 43798,
+          "ap": 0.5877642317165179,
+          "sha256": "6af1aa2eff35d178d8169c00dceb3655489ad264b558875e8b316572d2b938d9"
+        }
+      ],
+      "validation_ap": 0.5924616586439035,
+      "operating_point": {
+        "logit": -1.24609375,
+        "validation_f1": 0.668212541319256,
+        "rows": 165742,
+        "selection": "maximum DEV F1, highest threshold on ties"
+      }
+    },
+    "native-plm": {
+      "checkpoint": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/native-plm.bin",
+        "bytes": 2609670405,
+        "sha256": "207f1bf02e9bebc393fe510a98c0f9af04039d0a9258047ac107c6d24221c7e2"
+      },
+      "release": {
+        "kind": "released_state_dict",
+        "path": "checkpoints/native-bernett.bin",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/checkpoints/PLM-interact-650M-Leakage-Free-Dataset/pytorch_model.bin",
+        "repository": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+        "revision": "d995319a6e53510bfbb4eff6ab0292fedf2ec4db",
+        "sha256": "207f1bf02e9bebc393fe510a98c0f9af04039d0a9258047ac107c6d24221c7e2",
+        "update": null,
+        "selected_epoch": null
+      },
+      "base": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/assets/esm2",
+      "operating_point": {
+        "logit": -1.87890625,
+        "validation_f1": 0.6718142124611852,
+        "rows": 59258,
+        "selection": "maximum DEV F1, highest threshold on ties"
+      }
+    },
+    "native-human": {
+      "checkpoint": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/native-human.bin",
+        "bytes": 2609670405,
+        "sha256": "68c50e1dc84ee3cb6c08a7c83eefb382a29a3c1237fd577986854f746c63d665"
+      },
+      "base": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/assets/esm2",
+      "release": "danliu1226/PLM-interact-650M-humanV11",
+      "revision": "e86e392dec13dd0c23252c94947b04a7a9821b0e",
+      "source": "Verified existing SIF asset and prior reproduction"
+    }
+  },
+  "selection_source": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/selection.json",
+    "bytes": 21563,
+    "sha256": "4df51a2c905f5f939eb40f28e08189cf698bd4e0e6fa1f65519acf65654d3ddb"
+  },
+  "frozen_for": "nonhuman inference only; no training, recalibration, or re-selection"
+}

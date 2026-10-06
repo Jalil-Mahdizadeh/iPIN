@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-09-28T17:55:43.208864+00:00",
+  "slurm_job_id": 3110591,
+  "interactive_job_id": 3085063,
+  "no_retraining": true,
+  "publication_doi": "10.1038/s41467-025-64512-w",
+  "sif": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact/plm-interact-native-arm64-v1.sif",
+  "sif_sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2",
+  "slurm_status": "JobId=3110591 JobName=plmi-reproduce UserId=jalil(4001991) GroupId=jalil(4001991) MCS_label=N/A Priority=714132 Nice=0 Account=naiss2025-3-10-gpu QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:05:20 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-09-28T19:44:33 EligibleTime=2026-09-28T19:44:33 AccrueTime=2026-09-28T19:44:33 StartTime=2026-09-28T19:50:23 EndTime=2026-09-28T22:50:26 Deadline=N/A PreemptEligibleTime=2026-09-28T19:50:23 PreemptTime=None SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-28T19:50:23 Scheduler=Main Partition=gpu AllocNode:Sid=n423:979663 ReqNodeList=(null) ExcNodeList=(null) NodeList=n[173,506] BatchHost=n173 NumNodes=2 NumCPUs=576 NumTasks=8 CPUs/Task=18 ReqB:S:C:T=0:0:*:* ReqTRES=cpu=144,mem=360G,node=2,billing=3,gres/gpu=8 AllocTRES=cpu=576,mem=360G,node=2,billing=8,gres/gpu=8,gres/gpu:nvidia_gh200_120gb=8 Socks/Node=* NtasksPerN:B:S:C=4:0:*:1 CoreSpec=* MinCPUsNode=72 MinMemoryNode=180G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null) Command=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/slurm/evaluate.sbatch WorkDir=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability StdErr=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/logs/slurm-3110591.log StdIn=/dev/null StdOut=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/logs/slurm-3110591.log TresBind=gres/gpu:per_task:1 TresPerJob=gres/gpu:8 TresPerNode=gres/gpu:4 TresPerTask=cpu=18,gres/gpu=1 \n"
+}

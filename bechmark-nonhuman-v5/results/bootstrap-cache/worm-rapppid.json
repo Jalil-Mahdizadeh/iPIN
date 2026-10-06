@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "rapppid",
+    "test": "worm",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e5f3c2b73a922bebc7b8ef1ce9629fd97516a02861dd899908150353632772d5",
+    "scores": "d874c5f0f056f62aeb34f8d3318617e364dbf760d248a97cf8784e3f1e745308",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/worm-rapppid.npz",
+    "bytes": 14933,
+    "sha256": "1efeb94b0a96acd24773e929725803f85916dde54e3dd1e6ce9e0b86b4a0bd1e"
+  }
+}

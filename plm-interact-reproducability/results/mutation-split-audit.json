@@ -1,0 +1,42 @@
+{
+  "purpose": "Read-only audit; no training, tuning, or additional inference.",
+  "splits": {
+    "train": {
+      "n": 5103,
+      "positive": 926,
+      "min_combined_residues": 182,
+      "max_combined_residues": 2201,
+      "median_combined_residues": 1037,
+      "combined_residues_over2200": 13,
+      "duplicate_sequence_triplets": 0,
+      "identical_wild_mutant": 0
+    },
+    "validation": {
+      "n": 841,
+      "positive": 156,
+      "min_combined_residues": 189,
+      "max_combined_residues": 3811,
+      "median_combined_residues": 1229,
+      "combined_residues_over2200": 371,
+      "duplicate_sequence_triplets": 0,
+      "identical_wild_mutant": 0
+    },
+    "test": {
+      "n": 841,
+      "positive": 180,
+      "min_combined_residues": 189,
+      "max_combined_residues": 3830,
+      "median_combined_residues": 1303,
+      "combined_residues_over2200": 391,
+      "duplicate_sequence_triplets": 0,
+      "identical_wild_mutant": 0
+    }
+  },
+  "overlap": {
+    "test_exact_triplets_in_training": 0,
+    "test_exact_triplets_in_validation": 0,
+    "test_wild_partner_sequence_pairs_seen_in_training": 0,
+    "test_both_wild_and_partner_sequences_seen_in_training": 271,
+    "test_at_least_one_wild_or_partner_sequence_seen_in_training": 643
+  }
+}

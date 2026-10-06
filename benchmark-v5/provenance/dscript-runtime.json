@@ -1,0 +1,9 @@
+{
+  "image": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/containers/images/dscript-native-arm64-v1.sif",
+    "bytes": 11045695488,
+    "sha256": "bfcee514eeb908a05bde701f230066baca9fb45fab2a811732f8e16a14a3912c"
+  },
+  "addendum_sha256": "3b4d627d5bc59be7dca7166520107e5bf374215a345e213231bed5a694397cf5",
+  "original_checkpoint_sha256": "9fc07ac14bb218a8b65288a9114b0c934e8f9c426a53274b0119ea2336b2a32a"
+}

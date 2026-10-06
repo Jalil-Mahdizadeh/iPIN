@@ -1,0 +1,48 @@
+{
+  "repository": "biohub/esmc-600m-2024-12",
+  "revision": "e4d83bc7e10fd55c92e598e545f4a76bf04a6e5c",
+  "tree": [
+    {
+      "type": "directory",
+      "oid": "0ec7d9c07fd599ef46f5fc2a4f4237b64c2b13c2",
+      "size": 0,
+      "path": "data"
+    },
+    {
+      "type": "directory",
+      "oid": "f80bc21fc3d47e74afe33ef28cb621dbca2da14f",
+      "size": 0,
+      "path": "data/weights"
+    },
+    {
+      "type": "file",
+      "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519,
+      "path": ".gitattributes"
+    },
+    {
+      "type": "file",
+      "oid": "b6d6bf2d08751b00e83f18864990222ad0e6ac37",
+      "size": 608,
+      "path": "README.md"
+    },
+    {
+      "type": "file",
+      "oid": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+      "size": 2,
+      "path": "config.json"
+    },
+    {
+      "type": "file",
+      "oid": "5d9bfa8749fa54a6c000b8e2bac9dfa15fd0c997",
+      "size": 2300275866,
+      "lfs": {
+        "oid": "8ef856e1a237ee3f995442df997a962e70057faadecf38fc0c8561bd3c2f4324",
+        "size": 2300275866,
+        "pointerSize": 135
+      },
+      "xetHash": "4bd1f3839bbc9412d9056034a02cfcb8f472c5ce373378095577d026643fd63b",
+      "path": "data/weights/esmc_600m_2024_12_v0.pth"
+    }
+  ]
+}

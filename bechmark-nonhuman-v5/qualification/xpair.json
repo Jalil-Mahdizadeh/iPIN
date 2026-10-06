@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-05T13:17:55.251569+00:00",
+  "signature": {
+    "scripts/xpair_benchmark.py": "139faa9914f024d83007d1c00f2852ddfc78ed59b30f3aea5a173dbca24afe1f",
+    "scripts/xpair/native.py": "b2739aab3fca75e78a8d927edb42da720f4d987994afaf9e97f9f27786bfd1ad",
+    "scripts/xpair/io_utils.py": "ad692593bba01ee6cb11b787c8036b11e41b16f394cdb2c0dce2ada9b9e5ff4a",
+    "scripts/container.sh": "7fc8c90ac5f3b22ea2d470dab8ca4eef7233ae8098046dea92abe2c9bd621d1f",
+    "provenance/prepared.json": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba",
+    "provenance/runtime-inputs.json": "9ac60777c878da594b8ed2255c5923f3d9fbf7e369f395588277f0959ee4853c"
+  },
+  "models": {
+    "xpair-bernett": {
+      "errors": {
+        "cache_logit": 0.0,
+        "swap_logit": 0.0,
+        "padded_cache_logit": 1.5497207641601562e-06,
+        "batch_singleton_logit": 1.7881393432617188e-07,
+        "padded_probability": 3.5762786865234375e-07
+      },
+      "info": {
+        "checkpoint": {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/X-PAIR/pretrained_models/interaction_bernett.ckpt",
+          "bytes": 5686501,
+          "sha256": "17bf35197982c28fe25de1a45cf4cae67b94ae2edacc3db7967cd4f4c6da0fc6"
+        },
+        "epoch": 3,
+        "global_step": 18264,
+        "hyper_parameters": {
+          "train_path_interaction": "/home/sararescalli/XPAIR_DATASET/data_bernett/for_xpair/train_bernett.tsv",
+          "train_path_interface": null,
+          "val_path_interaction": "/home/sararescalli/XPAIR_DATASET/data_bernett/for_xpair/val_bernett.tsv",
+          "val_path_interface": null,
+          "interaction_fasta_path": "/home/sararescalli/XPAIR_DATASET/data_bernett/for_xpair/sequences_bernett.fasta",
+          "interface_fasta_path": null,
+          "emb_dir_interaction": "/home/sararescalli/XPAIR_experiments/embeddings/emb_ankh_bernett",
+          "emb_dir_interface": "./embeddings_interface",
+          "batch_size_interaction": 32,
+          "batch_size_interface": null,
+          "min_len": 0,
+          "max_len": 2000,
+          "plm": "ankh_large",
+          "seed": 123,
+          "num_workers": 4,
+          "use_wandb": true,
+          "reduced_dim": 128,
+          "num_cross_layers": 2,
+          "num_heads": 2,
+          "dropout": 0.3,
+          "lr": 0.0001,
+          "warmup": 1000.0,
+          "interface_positive_weight": 5,
+          "num_nodes": 1,
+          "devices": 1,
+          "max_epochs": 6,
+          "early_stop": 3.0,
+          "run_name": "BERNETT",
+          "model_task": "interaction"
+        }
+      },
+      "state_unchanged": true
+    },
+    "xpair-default": {
+      "errors": {
+        "cache_logit": 0.0,
+        "swap_logit": 0.0,
+        "padded_cache_logit": 7.152557373046875e-07,
+        "batch_singleton_logit": 4.76837158203125e-07,
+        "padded_probability": 3.725290298461914e-08
+      },
+      "info": {
+        "checkpoint": {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/X-PAIR/pretrained_models/multitask_xfair.ckpt",
+          "bytes": 5691097,
+          "sha256": "d8c50d03cd6107d2b411d7095a34243ec1b31e6b7cc1d590329c9328c1e8df72"
+        },
+        "epoch": 7,
+        "global_step": 766576,
+        "hyper_parameters": {
+          "train_path_interaction": "/home/sararescalli/XPAIR_DATASET/experiments_data/fair_split/interaction/interaction_train.tsv",
+          "train_path_interface": "/home/sararescalli/XPAIR_DATASET/experiments_data/fair_split/interface/interface_train.tsv",
+          "val_path_interaction": "/home/sararescalli/XPAIR_DATASET/experiments_data/fair_split/interaction/interaction_val.tsv",
+          "val_path_interface": "/home/sararescalli/XPAIR_DATASET/experiments_data/fair_split/interface/interface_val.tsv",
+          "interaction_fasta_path": "/home/sararescalli/XPAIR_DATASET/experiments_data/fair_split/interaction/sequences.fasta",
+          "interface_fasta_path": "/home/sararescalli/XPAIR_DATASET/experiments_data/fair_split/interface/sequences.fasta",
+          "emb_dir_interaction": "/home/sararescalli/XPAIR_experiments/embeddings/emb_ankh_multitask_fairsplit_interaction",
+          "emb_dir_interface": "/home/sararescalli/XPAIR_experiments/embeddings/emb_ankh_multitask_fairsplit_interface",
+          "batch_size_interaction": 32,
+          "batch_size_interface": 1,
+          "min_len": 50,
+          "max_len": 2000,
+          "plm": "ankh_large",
+          "seed": 123,
+          "num_workers": 4,
+          "use_wandb": true,
+          "reduced_dim": 128,
+          "num_cross_layers": 2,
+          "num_heads": 2,
+          "dropout": 0.3,
+          "lr": 0.0001,
+          "warmup": 20000.0,
+          "interface_positive_weight": 5,
+          "interaction_loss_weight": 2.0,
+          "num_nodes": 1,
+          "devices": 1,
+          "max_epochs": 10,
+          "early_stop": 3.0,
+          "run_name": "multitask_fair_split_iface2_FINAL",
+          "model_task": "multitask"
+        }
+      },
+      "state_unchanged": true
+    }
+  },
+  "pairs": [
+    [
+      231,
+      273
+    ],
+    [
+      231,
+      52326
+    ],
+    [
+      52326,
+      30887
+    ],
+    [
+      30887,
+      28042
+    ],
+    [
+      28042,
+      1255
+    ],
+    [
+      52326,
+      52326
+    ]
+  ],
+  "test_metrics_read": false
+}

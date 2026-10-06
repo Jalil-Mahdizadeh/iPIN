@@ -1,0 +1,1142 @@
+{
+  "audit_started_utc": "2026-09-30T08:26:01.064695+00:00",
+  "audit_finished_utc": "2026-09-30T08:26:25.653292+00:00",
+  "audit_script_sha256": "73f37dde30af6e8cfb93c3a7711d09000b08062a7ddb16eae4261d3d7aafe3bd",
+  "runs": {
+    "reference-official-seed2": {
+      "summary": {
+        "model": "reference-official-seed2",
+        "job_id": "3130215_0",
+        "state": "COMPLETED",
+        "train_pairs": 163085,
+        "validation_pairs": 59258,
+        "final_update": 12745,
+        "examples_seen": 815680,
+        "effective_epochs": 5.001563601802741,
+        "best_update": 4000,
+        "best_ap": 0.653895015278456,
+        "best_auroc": 0.6482926925898238,
+        "best_brier": 0.2340507489436298,
+        "final_ap": 0.6413928438323766,
+        "final_auroc": 0.6399197404093809,
+        "final_brier": 0.27037729193630883,
+        "ap_change_best_to_final": -0.012502171446079346,
+        "elapsed": "20:15:44",
+        "elapsed_seconds": 72944,
+        "gpu_hours": 81.04888888888888
+      },
+      "contract": {
+        "fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9",
+        "configuration": {
+          "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2",
+          "seed": 2,
+          "partition": "official",
+          "initialization": "esm2_pretrained",
+          "world_size": 4,
+          "total_updates": 12745,
+          "global_pairs_per_update": 64,
+          "learning_rate": 2e-05,
+          "weight_decay": 0.01,
+          "warmup_updates": 2000,
+          "clip_grad_norm": 1.0,
+          "classification_weight": 10.0,
+          "positive_weight": 1.0,
+          "classification_corruption": true,
+          "mlm_weight": 1.0,
+          "readout": "cls_linear",
+          "readout_width": 128,
+          "attention_mode": "standard",
+          "attention_backend": "efficient",
+          "train_cap_residues": null,
+          "train_token_budget": 8192,
+          "train_max_pairs": 4,
+          "eval_token_budget": 16384,
+          "eval_max_pairs": 8,
+          "checkpoint_every_updates": 100,
+          "checkpoint_minutes": 15,
+          "validate_every_updates": 1000,
+          "log_every_updates": 10,
+          "selection_metric": "pooled_ap",
+          "name": "reference-official-seed2",
+          "arm": "reference"
+        },
+        "qualification": false,
+        "tiny": false,
+        "train_limit": null,
+        "val_limit": null,
+        "qualification_max_tokens": null,
+        "total_steps": 12745,
+        "world_size": 4,
+        "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+        "initialization_manifest_sha256": "eff778c6c70f8c91fec17a7aeca089cf4d5faa8f6a806738cf12f46c8b680ef7",
+        "code": {
+          "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+          "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+          "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+          "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+          "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+        },
+        "torch": "2.8.0a0+34c6371d24.nv25.08",
+        "cuda": "13.0",
+        "selection": "maximum pooled validation AP; strict greater-than keeps earlier update on exact ties",
+        "test_evaluation": "forbidden in this trainer"
+      },
+      "completion": {
+        "state": {
+          "update": 12745,
+          "cursor": {
+            "cycle": 5,
+            "offset": 255
+          },
+          "epoch": 5,
+          "next_chunk": 255,
+          "examples_seen": 815680,
+          "best_ap": 0.653895015278456,
+          "best_update": 4000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 12745
+        },
+        "fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9",
+        "qualification": false,
+        "test_evaluated": false,
+        "model_hashes_by_rank": [
+          "2f5427218fcc3f39747134dbe2aa4194328481017efc7be038afa4b4c38a36fb",
+          "2f5427218fcc3f39747134dbe2aa4194328481017efc7be038afa4b4c38a36fb",
+          "2f5427218fcc3f39747134dbe2aa4194328481017efc7be038afa4b4c38a36fb",
+          "2f5427218fcc3f39747134dbe2aa4194328481017efc7be038afa4b4c38a36fb"
+        ]
+      },
+      "job_accounting": {
+        "JobID": "3130215_0",
+        "State": "COMPLETED",
+        "ExitCode": "0:0",
+        "Elapsed": "20:15:44",
+        "ElapsedRaw": "72944",
+        "Start": "2026-09-29T13:48:09",
+        "End": "2026-09-30T10:03:53",
+        "NodeList": "n537",
+        "AllocTRES": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "best_checkpoint": {
+        "file": "update-000004000.pt",
+        "sha256": "d2ce1a7fa6bc9533509378c7ee89cd3a0da6983c7a8022a2585e9af6f4990385",
+        "bytes": 7818552843,
+        "update": 4000,
+        "epoch": 1,
+        "next_chunk": 92915,
+        "world_size": 4,
+        "fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9",
+        "best_update": 4000,
+        "best_ap": 0.653895015278456
+      },
+      "final_checkpoint": {
+        "file": "update-000012745.pt",
+        "sha256": "15b8ad90eb637881f754289c784e2602a3b2bf802b74ab53c283865b797b9f2d",
+        "bytes": 7818552843,
+        "update": 12745,
+        "epoch": 5,
+        "next_chunk": 255,
+        "world_size": 4,
+        "fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9",
+        "best_update": 4000,
+        "best_ap": 0.653895015278456
+      },
+      "best_validation": {
+        "model": "reference-official-seed2",
+        "update": 4000,
+        "validation_utc": "2026-09-29T18:00:23.944114+00:00",
+        "ap": 0.653895015278456,
+        "auroc": 0.6482926925898238,
+        "brier": 0.2340507489436298
+      },
+      "final_validation": {
+        "model": "reference-official-seed2",
+        "update": 12745,
+        "validation_utc": "2026-09-30T08:03:36.492179+00:00",
+        "ap": 0.6413928438323766,
+        "auroc": 0.6399197404093809,
+        "brier": 0.27037729193630883
+      },
+      "selected_length_strata": {
+        "up_to_2193_residues": {
+          "pairs": 54324,
+          "prevalence": 0.500257712981371,
+          "ap": 0.6591673030114037,
+          "auroc": 0.6531092809596903,
+          "brier": 0.23280616451667652
+        },
+        "over_2193_residues": {
+          "pairs": 4934,
+          "prevalence": 0.4969598702877989,
+          "ap": 0.5827413059793309,
+          "auroc": 0.5925244961109877,
+          "brier": 0.24775378996710118
+        }
+      },
+      "selected_probability_mean": 0.4550105622704816,
+      "selected_positive_fraction_at_half": 0.31133349083668027,
+      "all_logged_losses_gradients_finite": true,
+      "fatal_log_matches": [],
+      "peak_logged_rank0_allocated_gib": 21.470365047454834,
+      "event_counts": {
+        "checkpoint_committed": 128,
+        "complete": 1,
+        "initialized": 1,
+        "update": 1277,
+        "validation": 13
+      }
+    },
+    "capped-official-seed2": {
+      "summary": {
+        "model": "capped-official-seed2",
+        "job_id": "3130215_1",
+        "state": "COMPLETED",
+        "train_pairs": 130461,
+        "validation_pairs": 59258,
+        "final_update": 12745,
+        "examples_seen": 815680,
+        "effective_epochs": 6.252289956385433,
+        "best_update": 8000,
+        "best_ap": 0.6515787053852181,
+        "best_auroc": 0.6447443358962873,
+        "best_brier": 0.2525408704764571,
+        "final_ap": 0.6343173686472413,
+        "final_auroc": 0.6324455951515067,
+        "final_brier": 0.29426107761811926,
+        "ap_change_best_to_final": -0.017261336737976807,
+        "elapsed": "11:10:50",
+        "elapsed_seconds": 40250,
+        "gpu_hours": 44.72222222222222
+      },
+      "contract": {
+        "fingerprint": "31cde71e5f1db2c99b31c639cdf3f1611dbde2bb663258bab6dc609dd6b9f8b5",
+        "configuration": {
+          "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2",
+          "seed": 2,
+          "partition": "official",
+          "initialization": "esm2_pretrained",
+          "world_size": 4,
+          "total_updates": 12745,
+          "global_pairs_per_update": 64,
+          "learning_rate": 2e-05,
+          "weight_decay": 0.01,
+          "warmup_updates": 2000,
+          "clip_grad_norm": 1.0,
+          "classification_weight": 10.0,
+          "positive_weight": 1.0,
+          "classification_corruption": true,
+          "mlm_weight": 1.0,
+          "readout": "cls_linear",
+          "readout_width": 128,
+          "attention_mode": "standard",
+          "attention_backend": "efficient",
+          "train_cap_residues": 2193,
+          "train_token_budget": 8192,
+          "train_max_pairs": 4,
+          "eval_token_budget": 16384,
+          "eval_max_pairs": 8,
+          "checkpoint_every_updates": 100,
+          "checkpoint_minutes": 15,
+          "validate_every_updates": 1000,
+          "log_every_updates": 10,
+          "selection_metric": "pooled_ap",
+          "name": "capped-official-seed2",
+          "arm": "capped"
+        },
+        "qualification": false,
+        "tiny": false,
+        "train_limit": null,
+        "val_limit": null,
+        "qualification_max_tokens": null,
+        "total_steps": 12745,
+        "world_size": 4,
+        "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+        "initialization_manifest_sha256": "eff778c6c70f8c91fec17a7aeca089cf4d5faa8f6a806738cf12f46c8b680ef7",
+        "code": {
+          "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+          "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+          "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+          "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+          "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+        },
+        "torch": "2.8.0a0+34c6371d24.nv25.08",
+        "cuda": "13.0",
+        "selection": "maximum pooled validation AP; strict greater-than keeps earlier update on exact ties",
+        "test_evaluation": "forbidden in this trainer"
+      },
+      "completion": {
+        "state": {
+          "update": 12745,
+          "cursor": {
+            "cycle": 6,
+            "offset": 32914
+          },
+          "epoch": 6,
+          "next_chunk": 32914,
+          "examples_seen": 815680,
+          "best_ap": 0.6515787053852181,
+          "best_update": 8000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 12745
+        },
+        "fingerprint": "31cde71e5f1db2c99b31c639cdf3f1611dbde2bb663258bab6dc609dd6b9f8b5",
+        "qualification": false,
+        "test_evaluated": false,
+        "model_hashes_by_rank": [
+          "80bc5501a3a3894f0638f207681a5c6f3d1933a905b14ff809b249d414713d54",
+          "80bc5501a3a3894f0638f207681a5c6f3d1933a905b14ff809b249d414713d54",
+          "80bc5501a3a3894f0638f207681a5c6f3d1933a905b14ff809b249d414713d54",
+          "80bc5501a3a3894f0638f207681a5c6f3d1933a905b14ff809b249d414713d54"
+        ]
+      },
+      "job_accounting": {
+        "JobID": "3130215_1",
+        "State": "COMPLETED",
+        "ExitCode": "0:0",
+        "Elapsed": "11:10:50",
+        "ElapsedRaw": "40250",
+        "Start": "2026-09-29T13:48:09",
+        "End": "2026-09-30T00:58:59",
+        "NodeList": "n584",
+        "AllocTRES": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "best_checkpoint": {
+        "file": "update-000008000.pt",
+        "sha256": "84c561bcf040d6b06086328722f0faea4d3fa1e9ed84d94d4f7466c7f970c37c",
+        "bytes": 7818552843,
+        "update": 8000,
+        "epoch": 3,
+        "next_chunk": 120617,
+        "world_size": 4,
+        "fingerprint": "31cde71e5f1db2c99b31c639cdf3f1611dbde2bb663258bab6dc609dd6b9f8b5",
+        "best_update": 8000,
+        "best_ap": 0.6515787053852181
+      },
+      "final_checkpoint": {
+        "file": "update-000012745.pt",
+        "sha256": "d26322f8056a8fd3f51ba87473b62bb55a867f0cededf39735a05568d990108d",
+        "bytes": 7818552843,
+        "update": 12745,
+        "epoch": 6,
+        "next_chunk": 32914,
+        "world_size": 4,
+        "fingerprint": "31cde71e5f1db2c99b31c639cdf3f1611dbde2bb663258bab6dc609dd6b9f8b5",
+        "best_update": 8000,
+        "best_ap": 0.6515787053852181
+      },
+      "best_validation": {
+        "model": "capped-official-seed2",
+        "update": 8000,
+        "validation_utc": "2026-09-29T18:46:42.345525+00:00",
+        "ap": 0.6515787053852181,
+        "auroc": 0.6447443358962873,
+        "brier": 0.2525408704764571
+      },
+      "final_validation": {
+        "model": "capped-official-seed2",
+        "update": 12745,
+        "validation_utc": "2026-09-29T22:58:43.298029+00:00",
+        "ap": 0.6343173686472413,
+        "auroc": 0.6324455951515067,
+        "brier": 0.29426107761811926
+      },
+      "selected_length_strata": {
+        "up_to_2193_residues": {
+          "pairs": 54324,
+          "prevalence": 0.500257712981371,
+          "ap": 0.6574499415114055,
+          "auroc": 0.6498393834801846,
+          "brier": 0.2518394740552805
+        },
+        "over_2193_residues": {
+          "pairs": 4934,
+          "prevalence": 0.4969598702877989,
+          "ap": 0.5667387002695956,
+          "auroc": 0.5863153530870884,
+          "brier": 0.26026333889639974
+        }
+      },
+      "selected_probability_mean": 0.4601811069519001,
+      "selected_positive_fraction_at_half": 0.4327010698977353,
+      "all_logged_losses_gradients_finite": true,
+      "fatal_log_matches": [],
+      "peak_logged_rank0_allocated_gib": 20.345324993133545,
+      "event_counts": {
+        "checkpoint_committed": 128,
+        "complete": 1,
+        "initialized": 1,
+        "update": 1277,
+        "validation": 13
+      }
+    },
+    "positive10-official-seed2": {
+      "summary": {
+        "model": "positive10-official-seed2",
+        "job_id": "3130215_2",
+        "state": "COMPLETED",
+        "train_pairs": 163085,
+        "validation_pairs": 59258,
+        "final_update": 12745,
+        "examples_seen": 815680,
+        "effective_epochs": 5.001563601802741,
+        "best_update": 4000,
+        "best_ap": 0.6547945921810688,
+        "best_auroc": 0.6549877486343085,
+        "best_brier": 0.3889230219671309,
+        "final_ap": 0.6432771501043939,
+        "final_auroc": 0.641925687958062,
+        "final_brier": 0.3426635538182332,
+        "ap_change_best_to_final": -0.011517442076674933,
+        "elapsed": "20:07:42",
+        "elapsed_seconds": 72462,
+        "gpu_hours": 80.51333333333334
+      },
+      "contract": {
+        "fingerprint": "35286e6343ad16aea219b7e99873cf8652f6a57496e833f717122fbbe962a672",
+        "configuration": {
+          "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2",
+          "seed": 2,
+          "partition": "official",
+          "initialization": "esm2_pretrained",
+          "world_size": 4,
+          "total_updates": 12745,
+          "global_pairs_per_update": 64,
+          "learning_rate": 2e-05,
+          "weight_decay": 0.01,
+          "warmup_updates": 2000,
+          "clip_grad_norm": 1.0,
+          "classification_weight": 10.0,
+          "positive_weight": 10.0,
+          "classification_corruption": true,
+          "mlm_weight": 1.0,
+          "readout": "cls_linear",
+          "readout_width": 128,
+          "attention_mode": "standard",
+          "attention_backend": "efficient",
+          "train_cap_residues": null,
+          "train_token_budget": 8192,
+          "train_max_pairs": 4,
+          "eval_token_budget": 16384,
+          "eval_max_pairs": 8,
+          "checkpoint_every_updates": 100,
+          "checkpoint_minutes": 15,
+          "validate_every_updates": 1000,
+          "log_every_updates": 10,
+          "selection_metric": "pooled_ap",
+          "name": "positive10-official-seed2",
+          "arm": "positive10"
+        },
+        "qualification": false,
+        "tiny": false,
+        "train_limit": null,
+        "val_limit": null,
+        "qualification_max_tokens": null,
+        "total_steps": 12745,
+        "world_size": 4,
+        "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+        "initialization_manifest_sha256": "eff778c6c70f8c91fec17a7aeca089cf4d5faa8f6a806738cf12f46c8b680ef7",
+        "code": {
+          "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+          "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+          "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+          "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+          "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+        },
+        "torch": "2.8.0a0+34c6371d24.nv25.08",
+        "cuda": "13.0",
+        "selection": "maximum pooled validation AP; strict greater-than keeps earlier update on exact ties",
+        "test_evaluation": "forbidden in this trainer"
+      },
+      "completion": {
+        "state": {
+          "update": 12745,
+          "cursor": {
+            "cycle": 5,
+            "offset": 255
+          },
+          "epoch": 5,
+          "next_chunk": 255,
+          "examples_seen": 815680,
+          "best_ap": 0.6547945921810688,
+          "best_update": 4000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 12745
+        },
+        "fingerprint": "35286e6343ad16aea219b7e99873cf8652f6a57496e833f717122fbbe962a672",
+        "qualification": false,
+        "test_evaluated": false,
+        "model_hashes_by_rank": [
+          "8b8008d6413c6659f3db3863caac869dc1b501b01b81b4c4682c2184ffe7d3a2",
+          "8b8008d6413c6659f3db3863caac869dc1b501b01b81b4c4682c2184ffe7d3a2",
+          "8b8008d6413c6659f3db3863caac869dc1b501b01b81b4c4682c2184ffe7d3a2",
+          "8b8008d6413c6659f3db3863caac869dc1b501b01b81b4c4682c2184ffe7d3a2"
+        ]
+      },
+      "job_accounting": {
+        "JobID": "3130215_2",
+        "State": "COMPLETED",
+        "ExitCode": "0:0",
+        "Elapsed": "20:07:42",
+        "ElapsedRaw": "72462",
+        "Start": "2026-09-29T13:48:25",
+        "End": "2026-09-30T09:56:07",
+        "NodeList": "n472",
+        "AllocTRES": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "best_checkpoint": {
+        "file": "update-000004000.pt",
+        "sha256": "31508b72411291660871f34e2e8212329345b3c2ff9b6340799f15ba972981e8",
+        "bytes": 7818552843,
+        "update": 4000,
+        "epoch": 1,
+        "next_chunk": 92915,
+        "world_size": 4,
+        "fingerprint": "35286e6343ad16aea219b7e99873cf8652f6a57496e833f717122fbbe962a672",
+        "best_update": 4000,
+        "best_ap": 0.6547945921810688
+      },
+      "final_checkpoint": {
+        "file": "update-000012745.pt",
+        "sha256": "661b59cd34e43278617b6a82628d02ba434f360d58c40d63dc3941ee2a1eee23",
+        "bytes": 7818552843,
+        "update": 12745,
+        "epoch": 5,
+        "next_chunk": 255,
+        "world_size": 4,
+        "fingerprint": "35286e6343ad16aea219b7e99873cf8652f6a57496e833f717122fbbe962a672",
+        "best_update": 4000,
+        "best_ap": 0.6547945921810688
+      },
+      "best_validation": {
+        "model": "positive10-official-seed2",
+        "update": 4000,
+        "validation_utc": "2026-09-29T17:58:14.344484+00:00",
+        "ap": 0.6547945921810688,
+        "auroc": 0.6549877486343085,
+        "brier": 0.3889230219671309
+      },
+      "final_validation": {
+        "model": "positive10-official-seed2",
+        "update": 12745,
+        "validation_utc": "2026-09-30T07:55:51.228350+00:00",
+        "ap": 0.6432771501043939,
+        "auroc": 0.641925687958062,
+        "brier": 0.3426635538182332
+      },
+      "selected_length_strata": {
+        "up_to_2193_residues": {
+          "pairs": 54324,
+          "prevalence": 0.500257712981371,
+          "ap": 0.6599688559435284,
+          "auroc": 0.660015565497365,
+          "brier": 0.38890021516658274
+        },
+        "over_2193_residues": {
+          "pairs": 4934,
+          "prevalence": 0.4969598702877989,
+          "ap": 0.5875356868360645,
+          "auroc": 0.5987567254214028,
+          "brier": 0.38917412789193434
+        }
+      },
+      "selected_probability_mean": 0.8880392880207516,
+      "selected_positive_fraction_at_half": 1.0,
+      "all_logged_losses_gradients_finite": true,
+      "fatal_log_matches": [],
+      "peak_logged_rank0_allocated_gib": 21.432512760162354,
+      "event_counts": {
+        "checkpoint_committed": 128,
+        "complete": 1,
+        "initialized": 1,
+        "update": 1277,
+        "validation": 13
+      }
+    },
+    "clean-bce-official-seed2": {
+      "summary": {
+        "model": "clean-bce-official-seed2",
+        "job_id": "3130215_3",
+        "state": "COMPLETED",
+        "train_pairs": 163085,
+        "validation_pairs": 59258,
+        "final_update": 12745,
+        "examples_seen": 815680,
+        "effective_epochs": 5.001563601802741,
+        "best_update": 4000,
+        "best_ap": 0.6521558958966235,
+        "best_auroc": 0.6477777626276027,
+        "best_brier": 0.2349063168120803,
+        "final_ap": 0.6111955929186139,
+        "final_auroc": 0.6245979724463651,
+        "final_brier": 0.31740170340600343,
+        "ap_change_best_to_final": -0.040960302978009566,
+        "elapsed": "20:04:49",
+        "elapsed_seconds": 72289,
+        "gpu_hours": 80.32111111111111
+      },
+      "contract": {
+        "fingerprint": "2a7e859f30704a56c15f6bb4156ec3e8e857c2d0f57d22e920651ea8c40bc94b",
+        "configuration": {
+          "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2",
+          "seed": 2,
+          "partition": "official",
+          "initialization": "esm2_pretrained",
+          "world_size": 4,
+          "total_updates": 12745,
+          "global_pairs_per_update": 64,
+          "learning_rate": 2e-05,
+          "weight_decay": 0.01,
+          "warmup_updates": 2000,
+          "clip_grad_norm": 1.0,
+          "classification_weight": 10.0,
+          "positive_weight": 1.0,
+          "classification_corruption": false,
+          "mlm_weight": 0.0,
+          "readout": "cls_linear",
+          "readout_width": 128,
+          "attention_mode": "standard",
+          "attention_backend": "efficient",
+          "train_cap_residues": null,
+          "train_token_budget": 8192,
+          "train_max_pairs": 4,
+          "eval_token_budget": 16384,
+          "eval_max_pairs": 8,
+          "checkpoint_every_updates": 100,
+          "checkpoint_minutes": 15,
+          "validate_every_updates": 1000,
+          "log_every_updates": 10,
+          "selection_metric": "pooled_ap",
+          "name": "clean-bce-official-seed2",
+          "arm": "clean-bce"
+        },
+        "qualification": false,
+        "tiny": false,
+        "train_limit": null,
+        "val_limit": null,
+        "qualification_max_tokens": null,
+        "total_steps": 12745,
+        "world_size": 4,
+        "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+        "initialization_manifest_sha256": "eff778c6c70f8c91fec17a7aeca089cf4d5faa8f6a806738cf12f46c8b680ef7",
+        "code": {
+          "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+          "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+          "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+          "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+          "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+        },
+        "torch": "2.8.0a0+34c6371d24.nv25.08",
+        "cuda": "13.0",
+        "selection": "maximum pooled validation AP; strict greater-than keeps earlier update on exact ties",
+        "test_evaluation": "forbidden in this trainer"
+      },
+      "completion": {
+        "state": {
+          "update": 12745,
+          "cursor": {
+            "cycle": 5,
+            "offset": 255
+          },
+          "epoch": 5,
+          "next_chunk": 255,
+          "examples_seen": 815680,
+          "best_ap": 0.6521558958966235,
+          "best_update": 4000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 12745
+        },
+        "fingerprint": "2a7e859f30704a56c15f6bb4156ec3e8e857c2d0f57d22e920651ea8c40bc94b",
+        "qualification": false,
+        "test_evaluated": false,
+        "model_hashes_by_rank": [
+          "0f1633891f14c2b6b15b4b8201fed8ea899f2111af3d14ff739c82bf2b2fa61f",
+          "0f1633891f14c2b6b15b4b8201fed8ea899f2111af3d14ff739c82bf2b2fa61f",
+          "0f1633891f14c2b6b15b4b8201fed8ea899f2111af3d14ff739c82bf2b2fa61f",
+          "0f1633891f14c2b6b15b4b8201fed8ea899f2111af3d14ff739c82bf2b2fa61f"
+        ]
+      },
+      "job_accounting": {
+        "JobID": "3130215_3",
+        "State": "COMPLETED",
+        "ExitCode": "0:0",
+        "Elapsed": "20:04:49",
+        "ElapsedRaw": "72289",
+        "Start": "2026-09-29T13:49:15",
+        "End": "2026-09-30T09:54:04",
+        "NodeList": "n524",
+        "AllocTRES": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+      },
+      "best_checkpoint": {
+        "file": "update-000004000.pt",
+        "sha256": "5924e751616ab2283b27511fc6afa7d88ae6a9b2170fd64186a9454f15a82173",
+        "bytes": 7805410278,
+        "update": 4000,
+        "epoch": 1,
+        "next_chunk": 92915,
+        "world_size": 4,
+        "fingerprint": "2a7e859f30704a56c15f6bb4156ec3e8e857c2d0f57d22e920651ea8c40bc94b",
+        "best_update": 4000,
+        "best_ap": 0.6521558958966235
+      },
+      "final_checkpoint": {
+        "file": "update-000012745.pt",
+        "sha256": "a3151cb51487565cf4ad42596c99eb228c0195bd93662e3bf2ad346cb9920f6b",
+        "bytes": 7805410278,
+        "update": 12745,
+        "epoch": 5,
+        "next_chunk": 255,
+        "world_size": 4,
+        "fingerprint": "2a7e859f30704a56c15f6bb4156ec3e8e857c2d0f57d22e920651ea8c40bc94b",
+        "best_update": 4000,
+        "best_ap": 0.6521558958966235
+      },
+      "best_validation": {
+        "model": "clean-bce-official-seed2",
+        "update": 4000,
+        "validation_utc": "2026-09-29T17:58:52.273974+00:00",
+        "ap": 0.6521558958966235,
+        "auroc": 0.6477777626276027,
+        "brier": 0.2349063168120803
+      },
+      "final_validation": {
+        "model": "clean-bce-official-seed2",
+        "update": 12745,
+        "validation_utc": "2026-09-30T07:53:46.416973+00:00",
+        "ap": 0.6111955929186139,
+        "auroc": 0.6245979724463651,
+        "brier": 0.31740170340600343
+      },
+      "selected_length_strata": {
+        "up_to_2193_residues": {
+          "pairs": 54324,
+          "prevalence": 0.500257712981371,
+          "ap": 0.6570589035649077,
+          "auroc": 0.6524999663582636,
+          "brier": 0.23354535760631936
+        },
+        "over_2193_residues": {
+          "pairs": 4934,
+          "prevalence": 0.4969598702877989,
+          "ap": 0.5915138019165549,
+          "auroc": 0.5959059387459199,
+          "brier": 0.24989065971717875
+        }
+      },
+      "selected_probability_mean": 0.4705739896867812,
+      "selected_positive_fraction_at_half": 0.3894495258024233,
+      "all_logged_losses_gradients_finite": true,
+      "fatal_log_matches": [],
+      "peak_logged_rank0_allocated_gib": 21.494799613952637,
+      "event_counts": {
+        "checkpoint_committed": 128,
+        "complete": 1,
+        "initialized": 1,
+        "update": 1277,
+        "validation": 13
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "model": "reference-official-seed2",
+      "best_update": 4000,
+      "delta_ap_vs_reference": 0.0,
+      "delta_auroc_vs_reference": 0.0,
+      "delta_brier_vs_reference": 0.0,
+      "protein_bootstrap_ap_delta_ci_low": 0.0,
+      "protein_bootstrap_ap_delta_ci_high": 0.0,
+      "delta_ap_vs_historical_native_validation": 0.011752963463942168
+    },
+    {
+      "model": "capped-official-seed2",
+      "best_update": 8000,
+      "delta_ap_vs_reference": -0.0023163098932378334,
+      "delta_auroc_vs_reference": -0.0035483566935364808,
+      "delta_brier_vs_reference": 0.018490121532827336,
+      "protein_bootstrap_ap_delta_ci_low": -0.010315377498415445,
+      "protein_bootstrap_ap_delta_ci_high": 0.004935660769502882,
+      "delta_ap_vs_historical_native_validation": 0.009436653570704334
+    },
+    {
+      "model": "positive10-official-seed2",
+      "best_update": 4000,
+      "delta_ap_vs_reference": 0.0008995769026128864,
+      "delta_auroc_vs_reference": 0.006695056044484726,
+      "delta_brier_vs_reference": 0.15487227302350112,
+      "protein_bootstrap_ap_delta_ci_low": -0.004972508714862078,
+      "protein_bootstrap_ap_delta_ci_high": 0.007141368892413309,
+      "delta_ap_vs_historical_native_validation": 0.012652540366555054
+    },
+    {
+      "model": "clean-bce-official-seed2",
+      "best_update": 4000,
+      "delta_ap_vs_reference": -0.0017391193818324657,
+      "delta_auroc_vs_reference": -0.0005149299622211334,
+      "delta_brier_vs_reference": 0.0008555678684505075,
+      "protein_bootstrap_ap_delta_ci_low": -0.009707221285793391,
+      "protein_bootstrap_ap_delta_ci_high": 0.006268983276566971,
+      "delta_ap_vs_historical_native_validation": 0.010013844082109702
+    }
+  ],
+  "validation_predictions_verified": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000001000.npz",
+      "sha256": "b8ee18ee033231c6051f54500cb6b0d587395a22678edbf52d19d0201e81f21b",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000002000.npz",
+      "sha256": "3bdf2daa3830fbbcabda8d48ec7693322ab0aa4ca5124e7bd2df19e16d1cc7c1",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000003000.npz",
+      "sha256": "03e32a50804fd3eb71338749cf4bfae823ce3504dc991596a318de20ec217ece",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000004000.npz",
+      "sha256": "22e135ca688975901974ee81f41b6427dcaf82c86f67ef647f255da97f6f7609",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000005000.npz",
+      "sha256": "efc4b345521d0691af7ccef464f945c0b75e31d9e6370a7bb57dfac5756b9c9c",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000006000.npz",
+      "sha256": "b86050aa75b6d8350c73563b5a3a505945b10f7b583aac4ecab9d35598194e7d",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000007000.npz",
+      "sha256": "23c7d27403e2b38afd75b5d6b8f19e269500b089c573226b8c43b9a11d4ab556",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000008000.npz",
+      "sha256": "2c98a42e755b486e08916ff31ad9b36ef5d53d460f399eda6e9d3f0f106eec8a",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000009000.npz",
+      "sha256": "d3d339f7a7632094485417bc87b19ee6f0e05e75c20c5fe9ab3f5ded9239afb0",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000010000.npz",
+      "sha256": "464e2d33840cccfab956ee6f37da2d3a0ed78aa86c1b03d939bde3155b1a27e0",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000011000.npz",
+      "sha256": "2632ddcb4f90d13b49efa6af0f48b65b012f6f044284025ea1f4c6ce9195c5aa",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000012000.npz",
+      "sha256": "d7cec25f414d6c4948f37b6ca0d944503f4512725df90f56438812db9b317977",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000012745.npz",
+      "sha256": "ee77ff79d19bcb0d400ff0a3461ac3f2ad41fc335b853159070f56c165be168d",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000001000.npz",
+      "sha256": "da99a918c874474b01cbc80f96b3b78c49ef27f9aa60d40a94d52e2536416a5d",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000002000.npz",
+      "sha256": "a3d43382ad97d2a06373a80ca6b6ec1f0637b343994ee875749a159eb004d13d",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000003000.npz",
+      "sha256": "4e06b23fbe56da5176a08c8e99216c354be1b6b96360f3ff9038f92223617aad",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000004000.npz",
+      "sha256": "39a0d7c251243b5ea8c55a6eff166bbf2d6c69529babf8b5cb9387d34b5dfe7f",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000005000.npz",
+      "sha256": "bc1f5108709590e4c9c00dba30884fe80c5b5b63fe72ac8fdde5fd2cebe103b7",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000006000.npz",
+      "sha256": "c3b204c1332bfa37e7fa30a04d923c85d78ef9913efa1849e85f6e4a2b5cd4ae",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000007000.npz",
+      "sha256": "eef6c038f15c9dd1de25cc092522dc17c9c43196319dc8329d2a18eba23c5c0f",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000008000.npz",
+      "sha256": "52590ff91b4af00653fdc678e23269f5cd2261688d64a5500b20eb1d90ca8213",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000009000.npz",
+      "sha256": "db14d67465bb25250d279433652892c96ca5bc3f2a68c715c220d1f45f88dbeb",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000010000.npz",
+      "sha256": "bc15b053fb4d1beb30d8780d4b6d7dae751a1de49272c42b94f53e4079e88a80",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000011000.npz",
+      "sha256": "546cad1a5900a07ef4605879023b3eba448c8eb6e4eadf966fb54bf57ed614e1",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000012000.npz",
+      "sha256": "3631d06486dc896cae5f1fa08e9b804bf31cd956ae8696beb9deb97ccf480558",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000012745.npz",
+      "sha256": "1416c6f0d45102bf434005d46ac2117726e8ada44afa288e8ed3869920ac2ddd",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000001000.npz",
+      "sha256": "4653bace2f776facaf091e4b7231cdb7fd83f4b2dc09504b0d0756417c99256b",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000002000.npz",
+      "sha256": "2d8952d119263b454a9803a4b428865bcfa298e73b800b1d7f8b495d0788bf39",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000003000.npz",
+      "sha256": "8f711edd6f2617cc7869093925ed1dff69a29f54f7627ca71be5b975185d64a9",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000004000.npz",
+      "sha256": "f391268469a3b1d275bb24752b4ccfbb2aa3cba39dcb6e0d63a4165d6c56f6eb",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000005000.npz",
+      "sha256": "7208a1cb3b18f7ed32e39940283109a18b177f11f0bb2cf79c057dd096c54504",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000006000.npz",
+      "sha256": "e92d586de4011673e7cf940bd0c4b17d7373792e0953dbd0bbea02346c3a3f47",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000007000.npz",
+      "sha256": "fc4d2576d506340246e9b1175b5ec0225de2dc02f0bddae70c9df75bee4fa9e5",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000008000.npz",
+      "sha256": "6e6e7ce2d860d2656b4226644cb487c2e967b642311d5be9551f2f24699b2a5a",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000009000.npz",
+      "sha256": "1ffb48b53d0f5c31bf9f42b1e813468e1f596aa8d4b5f829c176f4d72aa018cc",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000010000.npz",
+      "sha256": "670de98ec1185155648e28ebf4e8c3f7214c90187306ea9c2942a4881da11446",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000011000.npz",
+      "sha256": "2d8c1dbe6aa59b6c10eb30da66b2a055581feed43d5aba284a735d19da8cf8ef",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000012000.npz",
+      "sha256": "b7559863705832c10b3d233ce5adf56ca71baf5913b6a25a38122a96d8ab3be2",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000012745.npz",
+      "sha256": "171457809d7682eedac786fe040136dae21f31f37b67608ab4c05445af50ed45",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000001000.npz",
+      "sha256": "a616b8ed5f620d5d6e896a434fbd21684e14abfad02008c41e7f76fb766834bc",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000002000.npz",
+      "sha256": "d6ff7479c6f5ed008e8b7b5c79a10810880e7a6a6373d867d8efe0926f9816e4",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000003000.npz",
+      "sha256": "3fbe07033cca13a7fe42e9bfcce3f130b508285f88d41ebe6f62a98074147570",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000004000.npz",
+      "sha256": "4bf41d08a421d215be348384c8faa25707252a555710c8570f05b3128db68d51",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000005000.npz",
+      "sha256": "12f58704fba80231b0736ec9710fd1889d0fc99593e49dfc0abb16a1bdf38c7e",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000006000.npz",
+      "sha256": "8e29ca293daee3d56aa5d5532f006bfa04172c0c4f986849218a9383b56cc630",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000007000.npz",
+      "sha256": "de3b0470610fd383cf71ec15f93b209e18b935192a02c79a6fec40a5a73bd26a",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000008000.npz",
+      "sha256": "374833e185d865602a9b5406433553d8207408ea240194ad3ddf07b11378f230",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000009000.npz",
+      "sha256": "233b7db30e9b1bc0c424af60bc5da41cff42c395c96d976b17821faa2d946b6f",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000010000.npz",
+      "sha256": "f0966d99afe452384be38c4ed23a7432fb3e1df638148f0caae5782a89fb424c",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000011000.npz",
+      "sha256": "7a5c44950b2cbf4016a38025f50663be5db9a913289095207cad0660b4ef4470",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000012000.npz",
+      "sha256": "58399f7700b47a8a473bda5a0a5f18d145f64e5b6435f7dccf90734beca83766",
+      "rows": 59258
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000012745.npz",
+      "sha256": "0f96954bda0cb6793e405d5dc2daefdcdbd73ffd75dc845ed5c2498ac773fcfc",
+      "rows": 59258
+    }
+  ],
+  "checkpoint_payloads_verified": [
+    {
+      "model": "reference-official-seed2",
+      "selection": "best",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/checkpoints/update-000004000.pt",
+      "bytes": 7818552843,
+      "sha256": "d2ce1a7fa6bc9533509378c7ee89cd3a0da6983c7a8022a2585e9af6f4990385"
+    },
+    {
+      "model": "reference-official-seed2",
+      "selection": "final",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/checkpoints/update-000012745.pt",
+      "bytes": 7818552843,
+      "sha256": "15b8ad90eb637881f754289c784e2602a3b2bf802b74ab53c283865b797b9f2d"
+    },
+    {
+      "model": "capped-official-seed2",
+      "selection": "best",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/checkpoints/update-000008000.pt",
+      "bytes": 7818552843,
+      "sha256": "84c561bcf040d6b06086328722f0faea4d3fa1e9ed84d94d4f7466c7f970c37c"
+    },
+    {
+      "model": "capped-official-seed2",
+      "selection": "final",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/checkpoints/update-000012745.pt",
+      "bytes": 7818552843,
+      "sha256": "d26322f8056a8fd3f51ba87473b62bb55a867f0cededf39735a05568d990108d"
+    },
+    {
+      "model": "positive10-official-seed2",
+      "selection": "best",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/checkpoints/update-000004000.pt",
+      "bytes": 7818552843,
+      "sha256": "31508b72411291660871f34e2e8212329345b3c2ff9b6340799f15ba972981e8"
+    },
+    {
+      "model": "positive10-official-seed2",
+      "selection": "final",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/checkpoints/update-000012745.pt",
+      "bytes": 7818552843,
+      "sha256": "661b59cd34e43278617b6a82628d02ba434f360d58c40d63dc3941ee2a1eee23"
+    },
+    {
+      "model": "clean-bce-official-seed2",
+      "selection": "best",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/checkpoints/update-000004000.pt",
+      "bytes": 7805410278,
+      "sha256": "5924e751616ab2283b27511fc6afa7d88ae6a9b2170fd64186a9454f15a82173"
+    },
+    {
+      "model": "clean-bce-official-seed2",
+      "selection": "final",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/checkpoints/update-000012745.pt",
+      "bytes": 7805410278,
+      "sha256": "a3151cb51487565cf4ad42596c99eb228c0195bd93662e3bf2ad346cb9920f6b"
+    }
+  ],
+  "historical_validation_baselines": {
+    "native-bernett": {
+      "ap": 0.6421420518145138,
+      "auroc": 0.638944655772301,
+      "brier": 0.261641840210981
+    },
+    "reference-seed2": {
+      "ap": 0.6502750559286536,
+      "auroc": 0.6447700291124854,
+      "brier": 0.23396096096264254
+    },
+    "symmetric-seed2": {
+      "ap": 0.6474107570134193,
+      "auroc": 0.6419356859345455,
+      "brier": 0.2467093509427551
+    }
+  },
+  "baseline_csv_sha256": "04bf3ca41e2323d83080acf98fbe9d3f13506197688408133849a01c15d91c7c",
+  "scheduler_accounting_sha256": "f381acd4db417614fce9e732b49161fd766313d55f0ee9b5c4d3324f2adc4d42",
+  "scheduler_times_timezone": "Europe/Stockholm",
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 20260930,
+    "proteins": 3710,
+    "self_pairs": 0,
+    "self_pair_weight": "one multiplicity per distinct protein",
+    "algorithm": "paired Poisson(1) protein resampling with endpoint-product pair weights",
+    "interval": "2.5 and 97.5 percentiles of candidate-minus-reference AP",
+    "limitations": "Conditions on this validation graph and fixed selected predictions; excludes training-seed and checkpoint/model-selection uncertainty and does not establish independent generalization.",
+    "sklearn_cross_checks": 80
+  },
+  "total_allocated_gpu_hours": 286.60555555555555,
+  "inference": "stored BF16 clean-sequence predictions, mean AB/BA logits",
+  "same_logged_batches_reference_positive10_clean": true,
+  "test_predictions_read": false,
+  "gpu_inference_launched": false,
+  "training_or_selection_modified": false
+}

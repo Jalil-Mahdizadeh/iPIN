@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen",
+  "enabled_runs": [
+    "reference-official-seed2",
+    "capped-official-seed2",
+    "positive10-official-seed2",
+    "clean-bce-official-seed2"
+  ],
+  "frozen_runtime_verifier_passed": true,
+  "mutable_configuration_rejected": true
+}

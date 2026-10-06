@@ -1,0 +1,19 @@
+{
+  "verified_utc": "2026-09-30T10:15:03.015015+00:00",
+  "proposal_sha256": "3e26b374d2f3d870f047fe19f472e01f55461e4f94d91827ed4fe6510bda8e86",
+  "benchmark_table_models_verified": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric",
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce"
+  ],
+  "macro_csv_aggregation_verified": true,
+  "saved_score_inputs_unchanged": true,
+  "local_links_valid": true,
+  "production_jobs_submitted": 0,
+  "new_inference": false,
+  "note": "Verification covers numerical table, macro aggregation, source hashes and local links; recommendations and compute ranges are prospective."
+}

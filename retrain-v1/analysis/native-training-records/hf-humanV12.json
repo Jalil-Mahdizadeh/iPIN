@@ -1,0 +1,77 @@
+{
+  "_id": "672bfc4579e7951062d24255",
+  "id": "danliu1226/PLM-interact-650M-humanV12",
+  "private": false,
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "protein-protein interactions",
+    "paired proteins encoding",
+    "protein language model",
+    "region:us"
+  ],
+  "downloads": 30,
+  "likes": 0,
+  "modelId": "danliu1226/PLM-interact-650M-humanV12",
+  "author": "danliu1226",
+  "sha": "2d0e7fb3deef94efa3f217daccc79092a6a42ceb",
+  "lastModified": "2024-11-26T23:36:53.000Z",
+  "gated": false,
+  "disabled": false,
+  "mask_token": "<mask>",
+  "model-index": null,
+  "config": {
+    "tokenizer_config": {
+      "cls_token": "<cls>",
+      "eos_token": "<eos>",
+      "mask_token": "<mask>",
+      "pad_token": "<pad>",
+      "unk_token": "<unk>"
+    }
+  },
+  "cardData": {
+    "tags": [
+      "protein-protein interactions",
+      "paired proteins encoding",
+      "protein language model"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "Figure1_PLM_interact.png"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "config.json"
+    },
+    {
+      "rfilename": "model.safetensors"
+    },
+    {
+      "rfilename": "pytorch_model.bin"
+    },
+    {
+      "rfilename": "special_tokens_map.json"
+    },
+    {
+      "rfilename": "tokenizer_config.json"
+    },
+    {
+      "rfilename": "vocab.txt"
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2024-11-06T23:31:17.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 652358871
+    },
+    "total": 652358871
+  },
+  "usedStorage": 5226483623
+}

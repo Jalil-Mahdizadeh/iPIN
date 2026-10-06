@@ -1,0 +1,20 @@
+{
+  "last_committed_update": 12745,
+  "latest": {
+    "file": "update-000012745.pt",
+    "sha256": "15b8ad90eb637881f754289c784e2602a3b2bf802b74ab53c283865b797b9f2d",
+    "bytes": 7818552843,
+    "update": 12745,
+    "epoch": 5,
+    "next_chunk": 255,
+    "world_size": 4,
+    "fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9",
+    "best_update": 4000,
+    "best_ap": 0.653895015278456
+  },
+  "retained": [
+    "update-000004000.pt",
+    "update-000012700.pt",
+    "update-000012745.pt"
+  ]
+}

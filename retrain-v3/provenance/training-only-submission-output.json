@@ -1,0 +1,23 @@
+{
+  "time_utc": "2026-10-01T08:13:27.483581+00:00",
+  "dry_run": false,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final-training",
+  "release_sha256": "1d81dea045bc964e3a3019ba2b5abbf81fcda86fa38d42348625e57c26dd4e61",
+  "runs": [
+    "clean-residue-mean-official-seed2"
+  ],
+  "command": [
+    "sbatch",
+    "--parsable",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final-training/slurm/train.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final-training"
+  ],
+  "shell_command": "sbatch --parsable /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final-training/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final-training",
+  "gpus": 4,
+  "training_models": 1,
+  "automatic_final_benchmark": false,
+  "resume_from_complete_checkpoint": true,
+  "benchmark_deferred_at_user_request": true,
+  "qualified": true,
+  "slurm_job_id": "3206610"
+}

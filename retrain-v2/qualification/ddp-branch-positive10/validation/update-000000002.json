@@ -1,0 +1,14 @@
+{
+  "sha256": "1287a91ee4fb63f05c035ba7266bfd60edc567cfb992dd1cbb6efb6cfebaf6a2",
+  "rows": 8,
+  "update": 2,
+  "fingerprint": "f1773eadbe356c081cc0a37897af832de4fd73b271e4217fa7509250ee3ab526",
+  "metrics": {
+    "rows": 8,
+    "pooled_ap": 0.4125,
+    "auroc": 0.1875,
+    "brier": 0.2723175498778751,
+    "ab_ap": 0.4125,
+    "order_logit_gap_mean": 0.0009765625
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+  "architecture": "aarch64",
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "cuda": "13.0",
+  "transformers": "4.40.1",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "sklearn": "1.6.1",
+  "matplotlib": "3.10.5",
+  "qualification_device": "NVIDIA GH200 120GB",
+  "inference_device_details": "See per-rank .done.json manifests from the Slurm job."
+}

@@ -1,0 +1,26 @@
+{
+  "architecture": "aarch64",
+  "versions": {
+    "esm": "3.2.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.8",
+    "transformers": "4.48.1",
+    "tokenizers": "0.21.4",
+    "numpy": "1.26.4",
+    "biotite": "1.7.1",
+    "biotraj": "1.2.2"
+  },
+  "cuda_runtime": "13.0",
+  "pair_layout": "[CLS] A [EOS] B [EOS]",
+  "synthetic_pair_lengths_with_specials": [
+    63,
+    42
+  ],
+  "cpu_imports_and_tokenization": "passed",
+  "production_trainer_qualified": false,
+  "chain_aware_adapter_qualified": false,
+  "long_context_qualified": false,
+  "four_gpu_resume_qualified": false,
+  "tiny_cpu_forward": "passed",
+  "elapsed_seconds": 0.961,
+  "status": "passed"
+}

@@ -1,0 +1,461 @@
+{
+  "at_utc": "2026-10-05T07:53:42.922670+00:00",
+  "audits": {
+    "v5-ipin__exact": {
+      "sequence_matching": "exact",
+      "source_sequence_length_bounds": null,
+      "sources": [
+        {
+          "split": "train",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/prepared/sequences.fasta",
+            "bytes": 12146261,
+            "sha256": "c5c097298fe4ee6357b50833974b2e818b51d3c18c21a968922b242272d23eb1"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/prepared/train.csv",
+            "bytes": 33423643,
+            "sha256": "64c866b46f1a4e32bbe61ac0b10f052fc56a0a98246a93da254f042e0e29b997"
+          },
+          "source_rows": 700764,
+          "positive_rows": 350382,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 0,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "val",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/prepared/sequences.fasta",
+            "bytes": 12146261,
+            "sha256": "c5c097298fe4ee6357b50833974b2e818b51d3c18c21a968922b242272d23eb1"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/prepared/val.csv",
+            "bytes": 7447428,
+            "sha256": "a3a173f7f34eee67a2525d8bb61560c7ef8dfbf9cb95af1b44869e2d4df20e60"
+          },
+          "source_rows": 165742,
+          "positive_rows": 82871,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 0,
+          "excluded_by_length": 0
+        }
+      ],
+      "test_endpoints_exposed": 0,
+      "union_pairs_exposed": 0,
+      "tests": {
+        "original": {
+          "pairs_exposed": 0,
+          "positives_exposed": 0,
+          "negatives_exposed": 0,
+          "pairs_with_at_least_one_exposed_endpoint": 0
+        },
+        "ilp": {
+          "pairs_exposed": 0,
+          "positives_exposed": 0,
+          "negatives_exposed": 0,
+          "pairs_with_at_least_one_exposed_endpoint": 0
+        }
+      }
+    },
+    "tuna__exact": {
+      "sequence_matching": "exact",
+      "source_sequence_length_bounds": null,
+      "sources": [
+        {
+          "split": "train",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/raw/bernett/human_swissprot_oneliner.fasta",
+            "bytes": 11561571,
+            "sha256": "578b02750acb75416b897ee7de07f9f5a4f3a57ec7fbce4b4a62ec84a1851d0d"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/bernett/Intra1_interaction_1500_or_less.tsv",
+            "bytes": 2203064,
+            "sha256": "bec107f8e07cc603ff247a8626aa9a06369b73256848fb5ccbf42dc31f998a58"
+          },
+          "source_rows": 129592,
+          "positive_rows": 64811,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 0,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "val",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/raw/bernett/human_swissprot_oneliner.fasta",
+            "bytes": 11561571,
+            "sha256": "578b02750acb75416b897ee7de07f9f5a4f3a57ec7fbce4b4a62ec84a1851d0d"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/upstream/TUnA/data/processed/bernett/Intra0_interaction_1500_or_less.tsv",
+            "bytes": 912321,
+            "sha256": "105f30b038800f5cf7e598fc9dc6e34ddaabfa9451e32a6edd69d6cc52687a1f"
+          },
+          "source_rows": 53665,
+          "positive_rows": 26893,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 0,
+          "excluded_by_length": 0
+        }
+      ],
+      "test_endpoints_exposed": 0,
+      "union_pairs_exposed": 0,
+      "tests": {
+        "original": {
+          "pairs_exposed": 0,
+          "positives_exposed": 0,
+          "negatives_exposed": 0,
+          "pairs_with_at_least_one_exposed_endpoint": 0
+        },
+        "ilp": {
+          "pairs_exposed": 0,
+          "positives_exposed": 0,
+          "negatives_exposed": 0,
+          "pairs_with_at_least_one_exposed_endpoint": 0
+        }
+      }
+    },
+    "dscript__exact": {
+      "sequence_matching": "exact",
+      "source_sequence_length_bounds": null,
+      "sources": [
+        {
+          "split": "public-human-train",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/dscript/upstream/original-exposure/human.fasta",
+            "bytes": 30928643,
+            "sha256": "ff027c405225204c9c3469ee2aa6dee807253a00af96936f4776e3580319cb14"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/dscript/upstream/original-exposure/human_train.tsv",
+            "bytes": 18558848,
+            "sha256": "a51caf0b590decf96911b09d1e2cc6afc9a9d669d4e67d8bb3c2f1c94e16cd0b"
+          },
+          "source_rows": 421792,
+          "positive_rows": 38344,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 1358,
+          "excluded_by_length": 0
+        }
+      ],
+      "test_endpoints_exposed": 2233,
+      "union_pairs_exposed": 1354,
+      "tests": {
+        "original": {
+          "pairs_exposed": 1167,
+          "positives_exposed": 1091,
+          "negatives_exposed": 76,
+          "pairs_with_at_least_one_exposed_endpoint": 47784
+        },
+        "ilp": {
+          "pairs_exposed": 1292,
+          "positives_exposed": 1091,
+          "negatives_exposed": 201,
+          "pairs_with_at_least_one_exposed_endpoint": 47607
+        }
+      }
+    },
+    "xpair-default__exact": {
+      "sequence_matching": "exact",
+      "source_sequence_length_bounds": null,
+      "sources": [
+        {
+          "split": "interaction-train",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/sequences.fasta",
+            "bytes": 16311350,
+            "sha256": "0cefd1ff7f5de6926c60e1be174a640716cd2d1703fead0df01ae55fd274effa"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/interaction_train.tsv",
+            "bytes": 72751699,
+            "sha256": "a6e7dd0b7c9cc0b33d65affc7b0eb4d7591a7de6481b691150f9f424f1281312"
+          },
+          "source_rows": 1724263,
+          "positive_rows": 156964,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 2209,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "interaction-val",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/sequences.fasta",
+            "bytes": 16311350,
+            "sha256": "0cefd1ff7f5de6926c60e1be174a640716cd2d1703fead0df01ae55fd274effa"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/interaction_val.tsv",
+            "bytes": 9093943,
+            "sha256": "7bcb6125fa71a12c42be887d8485d7b40ce1e2dd450d5f223f0c6cce77c8e4b4"
+          },
+          "source_rows": 215533,
+          "positive_rows": 19582,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 273,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "interface-train",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/sequences.fasta",
+            "bytes": 15553015,
+            "sha256": "a3a091a1178deffa69206a18082abbf26765463859459c854cbc0f7e8d2dfc44"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/interface_train.tsv",
+            "bytes": 25735900,
+            "sha256": "c0ee97ee471bdbcea85c4a9f3a0b65a6b48458a16cb9ff7b029eab375e4341c0"
+          },
+          "source_rows": 41938,
+          "positive_rows": 41938,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 44,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "interface-val",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/sequences.fasta",
+            "bytes": 15553015,
+            "sha256": "a3a091a1178deffa69206a18082abbf26765463859459c854cbc0f7e8d2dfc44"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/interface_val.tsv",
+            "bytes": 3248393,
+            "sha256": "8bd62cbe001608d8c998f662a22d26d93e8241d77b6d14e4331d600dbd2bf59a"
+          },
+          "source_rows": 5242,
+          "positive_rows": 5242,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 9,
+          "excluded_by_length": 0
+        }
+      ],
+      "test_endpoints_exposed": 1873,
+      "union_pairs_exposed": 2488,
+      "tests": {
+        "original": {
+          "pairs_exposed": 2127,
+          "positives_exposed": 1927,
+          "negatives_exposed": 200,
+          "pairs_with_at_least_one_exposed_endpoint": 48486
+        },
+        "ilp": {
+          "pairs_exposed": 2310,
+          "positives_exposed": 1927,
+          "negatives_exposed": 383,
+          "pairs_with_at_least_one_exposed_endpoint": 48635
+        }
+      }
+    },
+    "xpair-default__ankh-normalized": {
+      "sequence_matching": "ankh-normalized",
+      "source_sequence_length_bounds": null,
+      "sources": [
+        {
+          "split": "interaction-train",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/sequences.fasta",
+            "bytes": 16311350,
+            "sha256": "0cefd1ff7f5de6926c60e1be174a640716cd2d1703fead0df01ae55fd274effa"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/interaction_train.tsv",
+            "bytes": 72751699,
+            "sha256": "a6e7dd0b7c9cc0b33d65affc7b0eb4d7591a7de6481b691150f9f424f1281312"
+          },
+          "source_rows": 1724263,
+          "positive_rows": 156964,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 2209,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "interaction-val",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/sequences.fasta",
+            "bytes": 16311350,
+            "sha256": "0cefd1ff7f5de6926c60e1be174a640716cd2d1703fead0df01ae55fd274effa"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/interaction_val.tsv",
+            "bytes": 9093943,
+            "sha256": "7bcb6125fa71a12c42be887d8485d7b40ce1e2dd450d5f223f0c6cce77c8e4b4"
+          },
+          "source_rows": 215533,
+          "positive_rows": 19582,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 273,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "interface-train",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/sequences.fasta",
+            "bytes": 15553015,
+            "sha256": "a3a091a1178deffa69206a18082abbf26765463859459c854cbc0f7e8d2dfc44"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/interface_train.tsv",
+            "bytes": 25735900,
+            "sha256": "c0ee97ee471bdbcea85c4a9f3a0b65a6b48458a16cb9ff7b029eab375e4341c0"
+          },
+          "source_rows": 41938,
+          "positive_rows": 41938,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 44,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "interface-val",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/sequences.fasta",
+            "bytes": 15553015,
+            "sha256": "a3a091a1178deffa69206a18082abbf26765463859459c854cbc0f7e8d2dfc44"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/interface_val.tsv",
+            "bytes": 3248393,
+            "sha256": "8bd62cbe001608d8c998f662a22d26d93e8241d77b6d14e4331d600dbd2bf59a"
+          },
+          "source_rows": 5242,
+          "positive_rows": 5242,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 9,
+          "excluded_by_length": 0
+        }
+      ],
+      "test_endpoints_exposed": 1873,
+      "union_pairs_exposed": 2488,
+      "tests": {
+        "original": {
+          "pairs_exposed": 2127,
+          "positives_exposed": 1927,
+          "negatives_exposed": 200,
+          "pairs_with_at_least_one_exposed_endpoint": 48486
+        },
+        "ilp": {
+          "pairs_exposed": 2310,
+          "positives_exposed": 1927,
+          "negatives_exposed": 383,
+          "pairs_with_at_least_one_exposed_endpoint": 48635
+        }
+      }
+    },
+    "xpair-default-length-eligible__exact": {
+      "sequence_matching": "exact",
+      "source_sequence_length_bounds": [
+        50,
+        2000
+      ],
+      "sources": [
+        {
+          "split": "interaction-train",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/sequences.fasta",
+            "bytes": 16311350,
+            "sha256": "0cefd1ff7f5de6926c60e1be174a640716cd2d1703fead0df01ae55fd274effa"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/interaction_train.tsv",
+            "bytes": 72751699,
+            "sha256": "a6e7dd0b7c9cc0b33d65affc7b0eb4d7591a7de6481b691150f9f424f1281312"
+          },
+          "source_rows": 1724263,
+          "positive_rows": 156964,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 2209,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "interaction-val",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/sequences.fasta",
+            "bytes": 16311350,
+            "sha256": "0cefd1ff7f5de6926c60e1be174a640716cd2d1703fead0df01ae55fd274effa"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interaction/interaction_val.tsv",
+            "bytes": 9093943,
+            "sha256": "7bcb6125fa71a12c42be887d8485d7b40ce1e2dd450d5f223f0c6cce77c8e4b4"
+          },
+          "source_rows": 215533,
+          "positive_rows": 19582,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 273,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "interface-train",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/sequences.fasta",
+            "bytes": 15553015,
+            "sha256": "a3a091a1178deffa69206a18082abbf26765463859459c854cbc0f7e8d2dfc44"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/interface_train.tsv",
+            "bytes": 25735900,
+            "sha256": "c0ee97ee471bdbcea85c4a9f3a0b65a6b48458a16cb9ff7b029eab375e4341c0"
+          },
+          "source_rows": 41938,
+          "positive_rows": 41938,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 44,
+          "excluded_by_length": 0
+        },
+        {
+          "split": "interface-val",
+          "sequence_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/sequences.fasta",
+            "bytes": 15553015,
+            "sha256": "a3a091a1178deffa69206a18082abbf26765463859459c854cbc0f7e8d2dfc44"
+          },
+          "pairs_file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/datasets/xpair_datasets/X-fair/interface/interface_val.tsv",
+            "bytes": 3248393,
+            "sha256": "8bd62cbe001608d8c998f662a22d26d93e8241d77b6d14e4331d600dbd2bf59a"
+          },
+          "source_rows": 5242,
+          "positive_rows": 5242,
+          "missing_source_fasta_ids": 0,
+          "test_pair_matches": 9,
+          "excluded_by_length": 0
+        }
+      ],
+      "test_endpoints_exposed": 1873,
+      "union_pairs_exposed": 2488,
+      "tests": {
+        "original": {
+          "pairs_exposed": 2127,
+          "positives_exposed": 1927,
+          "negatives_exposed": 200,
+          "pairs_with_at_least_one_exposed_endpoint": 48486
+        },
+        "ilp": {
+          "pairs_exposed": 2310,
+          "positives_exposed": 1927,
+          "negatives_exposed": 383,
+          "pairs_with_at_least_one_exposed_endpoint": 48635
+        }
+      }
+    }
+  },
+  "flags": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/exposure-flags.npz",
+    "bytes": 19343,
+    "sha256": "5ad970a5f4992e681383c68ca633273ff0cdc3aa80491631bc1104cb5d774697"
+  },
+  "native_plm_historical_audit": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/reports/historical-exposure.json",
+    "bytes": 3697,
+    "sha256": "8ab46c2eb1ab69034629cb991958c2ae6c23703bf9dd74fa069b254b94aeeb89"
+  },
+  "unknown": [
+    "RAPPPID exact released-checkpoint training membership unavailable in bundled assets",
+    "X-PAIR Bernett exact processed training files not available locally; nominal Bernett source is not proof of exact checkpoint membership"
+  ],
+  "limits": "Known public train/validation files, not cryptographic proof of complete checkpoint history. No guarantee about homologs, fragments or PLM pretraining. v5 homology protection is documented separately."
+}

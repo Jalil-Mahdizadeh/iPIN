@@ -1,0 +1,233 @@
+{
+  "requested_at_utc": "2026-10-01T19:01:27.313079+00:00",
+  "user_authorized": true,
+  "reason": "User requested stopping both chain-aware jobs after the attention investigation.",
+  "method": "REQUEST_STOP: checkpoint at a safe boundary and exit without requeue",
+  "standard_jobs_untouched": [
+    "3206610",
+    "3210886"
+  ],
+  "runs": [
+    {
+      "run": "esm2-chain-aware-official-seed2",
+      "job_id": "3210885",
+      "status_before_request": {
+        "state": {
+          "update": 3060,
+          "cursor": {
+            "cycle": 1,
+            "offset": 32755
+          },
+          "epoch": 1,
+          "next_chunk": 32755,
+          "examples_seen": 195840,
+          "best_ap": 0.5303839349383939,
+          "best_update": 1000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 3000
+        },
+        "last_committed_update": 3000,
+        "attempt": "20261001T103933-3210885",
+        "phase": "training",
+        "seconds_since_launch": 30024.353870778985
+      },
+      "latest_checkpoint_before_request": {
+        "file": "update-000003000.pt",
+        "sha256": "7ba49559c8e18bf96f26bf73a5f83a95877c13a16c2e82a4e385260392555ed7",
+        "bytes": 7813279814,
+        "update": 3000,
+        "epoch": 1,
+        "next_chunk": 28915,
+        "world_size": 4,
+        "fingerprint": "dcc40e093a1ef7fdbfdcdfb0528110b161595bb0537dbbd3f3f82e7061e347c3",
+        "best_update": 1000,
+        "best_ap": 0.5303839349383939
+      },
+      "best_checkpoint_before_request": {
+        "file": "update-000001000.pt",
+        "sha256": "ab1d40240fa0b5322e41e74874e0c245f2751b7d252843eebe81ba86c59f937d",
+        "bytes": 7813279814,
+        "update": 1000,
+        "epoch": 0,
+        "next_chunk": 64000,
+        "world_size": 4,
+        "fingerprint": "dcc40e093a1ef7fdbfdcdfb0528110b161595bb0537dbbd3f3f82e7061e347c3",
+        "best_update": 1000,
+        "best_ap": 0.5303839349383939
+      },
+      "stopped": {
+        "state": {
+          "update": 3070,
+          "cursor": {
+            "cycle": 1,
+            "offset": 33395
+          },
+          "epoch": 1,
+          "next_chunk": 33395,
+          "examples_seen": 196480,
+          "best_ap": 0.5303839349383939,
+          "best_update": 1000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 3000
+        },
+        "reason": "signal_or_REQUEST_STOP",
+        "attempt": "20261001T103933-3210885",
+        "checkpoint_committed": true
+      },
+      "final_checkpoint": {
+        "file": "update-000003070.pt",
+        "sha256": "cad73b506dbbe6d9bf4b89f1aa45b4287a0392350d2d81a83b65502c4404cae8",
+        "bytes": 7813279814,
+        "update": 3070,
+        "epoch": 1,
+        "next_chunk": 33395,
+        "world_size": 4,
+        "fingerprint": "dcc40e093a1ef7fdbfdcdfb0528110b161595bb0537dbbd3f3f82e7061e347c3",
+        "best_update": 1000,
+        "best_ap": 0.5303839349383939
+      },
+      "best_checkpoint_retained": {
+        "file": "update-000001000.pt",
+        "sha256": "ab1d40240fa0b5322e41e74874e0c245f2751b7d252843eebe81ba86c59f937d",
+        "bytes": 7813279814,
+        "update": 1000,
+        "epoch": 0,
+        "next_chunk": 64000,
+        "world_size": 4,
+        "fingerprint": "dcc40e093a1ef7fdbfdcdfb0528110b161595bb0537dbbd3f3f82e7061e347c3",
+        "best_update": 1000,
+        "best_ap": 0.5303839349383939
+      },
+      "slurm_accounting": [
+        "plmi-v4-S1",
+        "COMPLETED",
+        "0:0",
+        "2026-10-01T21:01:46"
+      ],
+      "no_active_allocation": true,
+      "restart_blocked_by_REQUEST_STOP": true,
+      "full_horizon_completed": false
+    },
+    {
+      "run": "esmc-chain-aware-official-seed2",
+      "job_id": "3210887",
+      "status_before_request": {
+        "state": {
+          "update": 3010,
+          "cursor": {
+            "cycle": 1,
+            "offset": 29555
+          },
+          "epoch": 1,
+          "next_chunk": 29555,
+          "examples_seen": 192640,
+          "best_ap": 0.5190570718484526,
+          "best_update": 1000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 3000
+        },
+        "last_committed_update": 3000,
+        "attempt": "20261001T103935-3210887",
+        "phase": "training",
+        "seconds_since_launch": 29999.932841481
+      },
+      "latest_checkpoint_before_request": {
+        "file": "update-000003000.pt",
+        "sha256": "b69e722e2bfa5938350d123570560c06468fa6355ef1e576eb38aac02956991c",
+        "bytes": 6896833065,
+        "update": 3000,
+        "epoch": 1,
+        "next_chunk": 28915,
+        "world_size": 4,
+        "fingerprint": "6757d048644dead6bd4d38e3e0dd2f0833d568b9c2690837c762dcb9007c7dd3",
+        "best_update": 1000,
+        "best_ap": 0.5190570718484526
+      },
+      "best_checkpoint_before_request": {
+        "file": "update-000001000.pt",
+        "sha256": "a9e92121fe641175d2835d1ddb96077186e9ada9a57aaa65144469a69168a20a",
+        "bytes": 6896833065,
+        "update": 1000,
+        "epoch": 0,
+        "next_chunk": 64000,
+        "world_size": 4,
+        "fingerprint": "6757d048644dead6bd4d38e3e0dd2f0833d568b9c2690837c762dcb9007c7dd3",
+        "best_update": 1000,
+        "best_ap": 0.5190570718484526
+      },
+      "stopped": {
+        "state": {
+          "update": 3015,
+          "cursor": {
+            "cycle": 1,
+            "offset": 29875
+          },
+          "epoch": 1,
+          "next_chunk": 29875,
+          "examples_seen": 192960,
+          "best_ap": 0.5190570718484526,
+          "best_update": 1000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 3000
+        },
+        "reason": "signal_or_REQUEST_STOP",
+        "attempt": "20261001T103935-3210887",
+        "checkpoint_committed": true
+      },
+      "final_checkpoint": {
+        "file": "update-000003015.pt",
+        "sha256": "bc70a3d16e096bbfa8cd594dae546dea44ff73644d453b6da8bfd1ca3e610b51",
+        "bytes": 6896833065,
+        "update": 3015,
+        "epoch": 1,
+        "next_chunk": 29875,
+        "world_size": 4,
+        "fingerprint": "6757d048644dead6bd4d38e3e0dd2f0833d568b9c2690837c762dcb9007c7dd3",
+        "best_update": 1000,
+        "best_ap": 0.5190570718484526
+      },
+      "best_checkpoint_retained": {
+        "file": "update-000001000.pt",
+        "sha256": "a9e92121fe641175d2835d1ddb96077186e9ada9a57aaa65144469a69168a20a",
+        "bytes": 6896833065,
+        "update": 1000,
+        "epoch": 0,
+        "next_chunk": 64000,
+        "world_size": 4,
+        "fingerprint": "6757d048644dead6bd4d38e3e0dd2f0833d568b9c2690837c762dcb9007c7dd3",
+        "best_update": 1000,
+        "best_ap": 0.5190570718484526
+      },
+      "slurm_accounting": [
+        "plmi-v4-C1",
+        "COMPLETED",
+        "0:0",
+        "2026-10-01T21:01:53"
+      ],
+      "no_active_allocation": true,
+      "restart_blocked_by_REQUEST_STOP": true,
+      "full_horizon_completed": false
+    }
+  ],
+  "verification_pending": false,
+  "verified_at_utc": "2026-10-01T19:03:44.687195+00:00",
+  "standard_jobs_still_running": {
+    "3206610": [
+      "plmi-v3-final",
+      "RUNNING",
+      "n183"
+    ],
+    "3210886": [
+      "plmi-v4-C0",
+      "RUNNING",
+      "n154"
+    ]
+  },
+  "gpu_allocations_released": 8,
+  "automatic_requeue": false,
+  "protocol_deviation": "User-authorized early termination of S1/C1 after poor learning and pretrained-attention incompatibility diagnosis; preserve negative results and original primary-arm designation."
+}

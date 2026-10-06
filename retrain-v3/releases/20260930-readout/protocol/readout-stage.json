@@ -1,0 +1,65 @@
+{
+  "stage": "readout",
+  "created_utc": "2026-09-30T19:26:32.387247+00:00",
+  "authorization": "User explicitly ended the LR screen and requested the next step.",
+  "adaptation_decision_sha256": "3bf8d7266b7888aa1df89167112e16978aa393840a2bb8b7ecea1e072f8329e1",
+  "learning_rate": 2e-05,
+  "enabled_runs": [
+    "clean-cls-mlp-lr2e-5-fold0-seed2",
+    "clean-cls-mlp-lr2e-5-fold1-seed2",
+    "clean-cls-mlp-lr2e-5-fold2-seed2",
+    "clean-residue-mean-lr2e-5-fold0-seed2",
+    "clean-residue-mean-lr2e-5-fold1-seed2",
+    "clean-residue-mean-lr2e-5-fold2-seed2"
+  ],
+  "control_runs": [
+    "clean-cls-linear-lr2e-5-fold0-seed2",
+    "clean-cls-linear-lr2e-5-fold1-seed2",
+    "clean-cls-linear-lr2e-5-fold2-seed2"
+  ],
+  "optimizer_schedule_updates": 6000,
+  "screen_stop_update": 5000,
+  "allowed_stop_overshoot_updates": 5,
+  "common_validation_updates": [
+    1000,
+    2000,
+    3000,
+    4000,
+    5000
+  ],
+  "pair_exposures_at_comparison_window": 320000,
+  "global_pairs_per_update": 64,
+  "checkpoint_selection": "Maximum pooled AP among exactly these five validations; earliest exact tie.",
+  "development_promotion": {
+    "minimum_mean_ap_delta": 0.005,
+    "minimum_positive_folds": 2,
+    "maximum_single_fold_ap_drop": 0.01,
+    "maximum_mean_auroc_drop": 0.005,
+    "maximum_mean_macro_ap_drop": 0.005,
+    "macro_minimum_positives_per_protein": 2,
+    "macro_minimum_negatives_per_protein": 2
+  },
+  "residue_promotion_requires_capacity_control": true,
+  "initialization": "esm2_pretrained",
+  "maximum_concurrent_runs": 6,
+  "gpus_per_run": 4,
+  "estimated_gpu_hours": [
+    125,
+    225
+  ],
+  "future_confirmation_authorized": false,
+  "external_confirmation_ready": false,
+  "deviation": "Stage-1 stopped at user request before 6000. Stage-2 will preserve the original LR schedule through a shared 5000-update comparison window and stop after its validation. Window adopted after LR outcomes and before readout production.",
+  "engine_amendment": {
+    "gradient_as_bucket_view": false,
+    "reason": "Full-size residue-head resume qualification exposed a gradient-layout-dependent numerical mismatch. Independent per-parameter gradient storage is qualified before launch.",
+    "source_core_directory": "readout-code",
+    "unchanged_components": [
+      "model.py",
+      "data.py",
+      "state.py",
+      "release.py"
+    ],
+    "historical_failure_job": "3196205"
+  }
+}

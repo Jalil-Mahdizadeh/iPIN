@@ -1,0 +1,6 @@
+{
+  "job_id": "3196606",
+  "purpose": "Four-GPU qualification only: independent gradient storage for exact head resume",
+  "production": false,
+  "script": "slurm/qualify-readout-aligned.sbatch"
+}

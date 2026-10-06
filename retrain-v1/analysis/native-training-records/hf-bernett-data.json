@@ -1,0 +1,50 @@
+{
+  "_id": "688a679d9de6fc3c67d26f9f",
+  "id": "danliu1226/Bernett_benchmarking",
+  "author": "danliu1226",
+  "sha": "5d2ad03baa165c27df32a2eadf066462a2a83073",
+  "lastModified": "2025-08-08T20:07:40.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "size_categories:100K<n<1M",
+    "format:csv",
+    "modality:text",
+    "library:datasets",
+    "library:dask",
+    "library:mlcroissant",
+    "library:polars",
+    "region:us"
+  ],
+  "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for Dataset Name\n\t\n\n\n\nThis dataset card aims to be a base template for new datasets. It has been generated using this raw template.\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Details\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Description\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Sources [optional]\n\t\n\n\n\n\n**Repository:  https://doi.org/10.6084/m9.figshare.21591618.v3\n\n**Reference:\n\nBernett, J., Blumenthal, D. B. & List, M. Cracking the black box of deep sequence-based protein\u2013protein interaction prediction. Briefings in\u2026 See the full description on the dataset page: https://huggingface.co/datasets/danliu1226/Bernett_benchmarking.",
+  "downloads": 71,
+  "likes": 0,
+  "cardData": {
+    "size_categories": [
+      "100K<n<1M"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "pairs_uniprot_seqs_test.csv"
+    },
+    {
+      "rfilename": "pairs_uniprot_seqs_train.csv"
+    },
+    {
+      "rfilename": "pairs_uniprot_seqs_train_cut_0.8.csv"
+    },
+    {
+      "rfilename": "pairs_uniprot_seqs_val.csv"
+    }
+  ],
+  "createdAt": "2025-07-30T18:42:37.000Z",
+  "usedStorage": 979331460
+}

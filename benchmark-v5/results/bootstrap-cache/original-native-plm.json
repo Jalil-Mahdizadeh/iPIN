@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "native-plm",
+    "test": "original",
+    "replicates": 1000,
+    "seed": 20260929,
+    "rows": "402d3c928752fc3d91b1f17005cd68297d6df34a14fa6ae47e26e79a002f1188",
+    "scores": "e5c4f6224655d2d272e734f55262c705c93430a977169406d79c4229c7693e17",
+    "analysis_code": "7316f52fadd7e2564b511b70c3d0aa01d0eb099f2b27aec827e05ff0d5cdc86b"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/bootstrap-cache/original-native-plm.npz",
+    "bytes": 14505,
+    "sha256": "d821ebaf2fdd65669a11313ee9a314424327c43bb94dbc7107229fc0a8f7d989"
+  }
+}

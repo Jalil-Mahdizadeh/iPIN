@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "sprint",
+    "test": "original",
+    "replicates": 1000,
+    "seed": 20260929,
+    "rows": "402d3c928752fc3d91b1f17005cd68297d6df34a14fa6ae47e26e79a002f1188",
+    "scores": "ff73defd2b84034e0fd00913ffd46a233417a798a6cfd4f478154b80276a2b7c",
+    "analysis_code": "7316f52fadd7e2564b511b70c3d0aa01d0eb099f2b27aec827e05ff0d5cdc86b"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/bootstrap-cache/original-sprint.npz",
+    "bytes": 14412,
+    "sha256": "47a105772da534563698e882461685873a6873758e930fd4ea9927e13f5a184b"
+  }
+}

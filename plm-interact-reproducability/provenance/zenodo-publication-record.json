@@ -1,0 +1,121 @@
+{
+  "created": "2025-08-26T12:50:14.323536+00:00",
+  "modified": "2025-08-26T12:50:14.579372+00:00",
+  "id": 16949302,
+  "conceptrecid": "16643324",
+  "doi": "10.5281/zenodo.16949302",
+  "conceptdoi": "10.5281/zenodo.16643324",
+  "doi_url": "https://doi.org/10.5281/zenodo.16949302",
+  "metadata": {
+    "title": "liudan111/PLM-interact: v0.1.1",
+    "doi": "10.5281/zenodo.16949302",
+    "publication_date": "2025-08-26",
+    "description": "PLM-interact: extending protein language models to predict protein-protein interactions.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Dan Liu",
+        "affiliation": null
+      }
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/liudan111/PLM-interact/tree/v0.1.1",
+        "relation": "isSupplementTo",
+        "resource_type": "software",
+        "scheme": "url"
+      }
+    ],
+    "version": "v0.1.1",
+    "custom": {
+      "code:codeRepository": "https://github.com/liudan111/PLM-interact"
+    },
+    "resource_type": {
+      "title": "Software",
+      "type": "software"
+    },
+    "license": {
+      "id": "mit-license"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 2,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "16643324"
+          }
+        }
+      ]
+    }
+  },
+  "title": "liudan111/PLM-interact: v0.1.1",
+  "links": {
+    "self": "https://zenodo.org/api/records/16949302",
+    "self_html": "https://zenodo.org/records/16949302",
+    "preview_html": "https://zenodo.org/records/16949302?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.16949302",
+    "self_doi": "https://doi.org/10.5281/zenodo.16949302",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16949302",
+    "reserve_doi": "https://zenodo.org/api/records/16949302/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/16643324",
+    "parent_html": "https://zenodo.org/records/16643324",
+    "parent_doi": "https://doi.org/10.5281/zenodo.16643324",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.16643324",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:16949302/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:16949302/sequence/default",
+    "files": "https://zenodo.org/api/records/16949302/files",
+    "media_files": "https://zenodo.org/api/records/16949302/media-files",
+    "archive": "https://zenodo.org/api/records/16949302/files-archive",
+    "archive_media": "https://zenodo.org/api/records/16949302/media-files-archive",
+    "latest": "https://zenodo.org/api/records/16949302/versions/latest",
+    "latest_html": "https://zenodo.org/records/16949302/latest",
+    "versions": "https://zenodo.org/api/records/16949302/versions",
+    "draft": "https://zenodo.org/api/records/16949302/draft",
+    "access_links": "https://zenodo.org/api/records/16949302/access/links",
+    "access_grants": "https://zenodo.org/api/records/16949302/access/grants",
+    "access_users": "https://zenodo.org/api/records/16949302/access/users",
+    "access_request": "https://zenodo.org/api/records/16949302/access/request",
+    "access": "https://zenodo.org/api/records/16949302/access",
+    "communities": "https://zenodo.org/api/records/16949302/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/16949302/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/16949302/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/16949302/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/16949302/quota-increase",
+    "requests": "https://zenodo.org/api/records/16949302/requests"
+  },
+  "updated": "2025-08-26T12:50:14.579372+00:00",
+  "recid": "16949302",
+  "revision": 3,
+  "files": [
+    {
+      "id": "123a47cd-e01d-4d16-8548-8195662bcdae",
+      "key": "liudan111/PLM-interact-v0.1.1.zip",
+      "size": 128543528,
+      "checksum": "md5:a77958f3173afa234bfb8aaa9747e1ed",
+      "links": {
+        "self": "https://zenodo.org/api/records/16949302/files/liudan111/PLM-interact-v0.1.1.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1367965"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 44,
+    "unique_downloads": 30,
+    "views": 307,
+    "unique_views": 276,
+    "version_downloads": 34,
+    "version_unique_downloads": 20,
+    "version_unique_views": 229,
+    "version_views": 250
+  },
+  "state": "done",
+  "submitted": true
+}

@@ -1,0 +1,42 @@
+{
+  "time_utc": "2026-10-02T20:17:50.761683+00:00",
+  "dry_run": false,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/releases/20261002-native-ilp",
+  "release_sha256": "f3a4308f53d5332fa1b347088ec9eb817e11abb95bd36e5d7dc7ba44bcc1ab38",
+  "runs": [
+    "esm2-native-ilp-seed2",
+    "esmc-native-ilp-seed2"
+  ],
+  "commands": [
+    [
+      "sbatch",
+      "--parsable",
+      "--job-name=plmi-v5-esm2",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/releases/20261002-native-ilp/slurm/train.sbatch",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/releases/20261002-native-ilp",
+      "esm2-native-ilp-seed2"
+    ],
+    [
+      "sbatch",
+      "--parsable",
+      "--job-name=plmi-v5-esmc",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/releases/20261002-native-ilp/slurm/train.sbatch",
+      "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/releases/20261002-native-ilp",
+      "esmc-native-ilp-seed2"
+    ]
+  ],
+  "shell_commands": [
+    "sbatch --parsable --job-name=plmi-v5-esm2 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/releases/20261002-native-ilp/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/releases/20261002-native-ilp esm2-native-ilp-seed2",
+    "sbatch --parsable --job-name=plmi-v5-esmc /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/releases/20261002-native-ilp/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retraining-v5/releases/20261002-native-ilp esmc-native-ilp-seed2"
+  ],
+  "gpus_per_run": 4,
+  "maximum_concurrent_runs": 2,
+  "production_jobs_submitted_by_this_call": 2,
+  "automatic_benchmark": false,
+  "reused_control_retrained": false,
+  "qualification_passed": true,
+  "slurm_job_ids": [
+    "3301121",
+    "3301122"
+  ]
+}

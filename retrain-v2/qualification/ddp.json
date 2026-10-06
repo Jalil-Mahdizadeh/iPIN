@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "job_id": "3128847",
+  "world_size": 4,
+  "production_training": false,
+  "full_650m_resume_comparisons": [
+    "qualification/ddp-reference-comparison.json",
+    "qualification/ddp-experimental-comparison.json"
+  ],
+  "dummy_rank_exercised": true,
+  "uneven_accumulation_exercised": true,
+  "interrupted_final_validation_recovered": true,
+  "additional_tiny_ddp_branches": [
+    "masked-bce",
+    "clean-bce",
+    "positive10",
+    "cls-mlp"
+  ],
+  "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+  "code": {
+    "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+  }
+}

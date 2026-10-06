@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-10-02T19:06:46.703293+00:00",
+  "pid": 725839,
+  "host": "n505",
+  "slurm_job_id": "3266861",
+  "contract": "e7dfb998724e9abde245812d5b04914b952c9f759a898b869acfea2b94f77593",
+  "options": {
+    "threads": 8,
+    "parallel": "on",
+    "random_seed": 2,
+    "time_limit": 1800.0,
+    "mip_rel_gap": 0.01,
+    "mip_abs_gap": 0.5,
+    "mip_lp_solver": "ipm",
+    "mip_ipm_solver": "ipx",
+    "mip_heuristic_effort": 0.2,
+    "mip_max_start_nodes": 0,
+    "mip_min_logging_interval": 10.0,
+    "log_file": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/partition-attempt-v1/highs.log",
+    "log_to_console": true,
+    "presolve": "on"
+  },
+  "model_rows": 14852,
+  "model_columns": 5050
+}

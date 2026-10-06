@@ -1,0 +1,10 @@
+{
+  "file": "update-000004000.pt",
+  "sha256": "85d64e2745060b2c917b5c85af0a0e6ec0010391e4350c26a98560592fe3c675",
+  "bytes": 7818552779,
+  "update": 4000,
+  "epoch": 1,
+  "next_chunk": 1451,
+  "world_size": 4,
+  "fingerprint": "13cb972a87f5715622752b94712e2c2541d3292eaeb2666bfcaee2e2a1491e2d"
+}

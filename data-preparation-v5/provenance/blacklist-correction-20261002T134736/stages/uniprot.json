@@ -1,0 +1,12 @@
+{
+  "adopted_verified_prelaunch_stage": true,
+  "command": [
+    "python",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/scripts/fetch_uniprot.py"
+  ],
+  "completed_utc": "2026-10-02T13:42:32.771531+00:00",
+  "fingerprint": "82b653e8cede47cbba94579b537a3444a21d56aae9ab510542f9091c3cf34d72",
+  "outputs": {
+    "provenance/uniprot-downloads.json": "b0003fba6d11357c419f902af4150a07f416c046c15e7ba38e973e853124dddb"
+  }
+}

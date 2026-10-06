@@ -1,0 +1,530 @@
+{
+  "created_at_utc": "2026-10-02T09:32:47.156927+00:00",
+  "run_name": "esmc-standard-official-seed2",
+  "run_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/runs/esmc-standard-official-seed2",
+  "training_configuration": {
+    "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4",
+    "seed": 2,
+    "partition": "official",
+    "initialization": "esmc_pretrained",
+    "world_size": 4,
+    "total_updates": 12745,
+    "global_pairs_per_update": 64,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_updates": 2000,
+    "clip_grad_norm": 1.0,
+    "classification_weight": 10.0,
+    "positive_weight": 1.0,
+    "classification_corruption": false,
+    "mlm_weight": 0.0,
+    "readout": "residue_mean",
+    "readout_width": 128,
+    "attention_mode": "standard",
+    "attention_backend": "efficient",
+    "train_cap_residues": null,
+    "train_token_budget": 8192,
+    "train_max_pairs": 4,
+    "eval_token_budget": 16384,
+    "eval_max_pairs": 8,
+    "checkpoint_every_updates": 100,
+    "checkpoint_minutes": 15,
+    "validate_every_updates": 1000,
+    "log_every_updates": 10,
+    "selection_metric": "pooled_ap",
+    "name": "esmc-standard-official-seed2",
+    "arm": "C0",
+    "backbone": "esmc"
+  },
+  "training_contract_sha256": "40ca0b9efb1de15ce923261c9da29e5b5fe0a470f4b34154c655fe9fd2b680a9",
+  "training_completed_sha256": "1bd0a3a140d2c73caa87c99360654a0bbe1f82025c1acf2dbe2cad12fafeae7e",
+  "best_manifest_sha256": "61f4b97643bf553e233057c3ce3fb691a7b78ac3fd2cea10bb027654c211964b",
+  "frozen_training_release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/releases/20261001-production",
+  "models": {
+    "native-bernett": {
+      "kind": "released_state_dict",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/checkpoints/PLM-interact-650M-Leakage-Free-Dataset/pytorch_model.bin",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/checkpoints/PLM-interact-650M-Leakage-Free-Dataset/pytorch_model.bin",
+      "repository": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+      "revision": "d995319a6e53510bfbb4eff6ab0292fedf2ec4db",
+      "sha256": "207f1bf02e9bebc393fe510a98c0f9af04039d0a9258047ac107c6d24221c7e2",
+      "update": null,
+      "selected_epoch": null,
+      "reused_from_model": "native-bernett",
+      "test_predictions_reused": true,
+      "checkpoint_identity_source": "provenance/benchmark-v2-selection.json"
+    },
+    "v1-reference": {
+      "kind": "local_training_checkpoint",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/runs/reference-seed2/checkpoints/update-000004000.pt",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/runs/reference-seed2/checkpoints/update-000004000.pt",
+      "snapshot_method": "hard link to immutable atomically committed checkpoint",
+      "source_manifest": {
+        "file": "update-000004000.pt",
+        "sha256": "85d64e2745060b2c917b5c85af0a0e6ec0010391e4350c26a98560592fe3c675",
+        "bytes": 7818552779,
+        "update": 4000,
+        "epoch": 1,
+        "next_chunk": 1451,
+        "world_size": 4,
+        "fingerprint": "13cb972a87f5715622752b94712e2c2541d3292eaeb2666bfcaee2e2a1491e2d"
+      },
+      "sha256": "85d64e2745060b2c917b5c85af0a0e6ec0010391e4350c26a98560592fe3c675",
+      "update": 4000,
+      "epoch_equivalent": 1.569242840329541,
+      "validation_primary_ap": 0.648935984074678,
+      "reused_from_model": "reference-seed2",
+      "test_predictions_reused": true,
+      "checkpoint_identity_source": "provenance/benchmark-v2-selection.json"
+    },
+    "v1-symmetric": {
+      "kind": "local_training_checkpoint",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/runs/symmetric-seed2/checkpoints/update-000007000.pt",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/runs/symmetric-seed2/checkpoints/update-000007000.pt",
+      "snapshot_method": "hard link to immutable atomically committed checkpoint",
+      "source_manifest": {
+        "file": "update-000007000.pt",
+        "sha256": "bb99dbdee7af654d362e4738c1fb9da98ab232cead4eacb52a439c10aeadf7c0",
+        "bytes": 7818552779,
+        "update": 7000,
+        "epoch": 2,
+        "next_chunk": 1902,
+        "world_size": 4,
+        "fingerprint": "c2563b1fd7b9e188549843483b8daee67496f8765c091aa59e2763d10327610f"
+      },
+      "sha256": "bb99dbdee7af654d362e4738c1fb9da98ab232cead4eacb52a439c10aeadf7c0",
+      "update": 7000,
+      "epoch_equivalent": 2.7461749705766967,
+      "validation_primary_ap": 0.6474107570134193,
+      "reused_from_model": "symmetric-seed2",
+      "test_predictions_reused": true,
+      "checkpoint_identity_source": "provenance/benchmark-v2-selection.json"
+    },
+    "v2-reference": {
+      "kind": "local_training_checkpoint",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/checkpoints/update-000004000.pt",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/checkpoints/update-000004000.pt",
+      "source_manifest": {
+        "file": "update-000004000.pt",
+        "sha256": "d2ce1a7fa6bc9533509378c7ee89cd3a0da6983c7a8022a2585e9af6f4990385",
+        "bytes": 7818552843,
+        "update": 4000,
+        "epoch": 1,
+        "next_chunk": 92915,
+        "world_size": 4,
+        "fingerprint": "5e0cfafa9abf34a385168c1e57f297f83397c7ed6ba71d0063b9d8f3fd0519a9",
+        "best_update": 4000,
+        "best_ap": 0.653895015278456
+      },
+      "sha256": "d2ce1a7fa6bc9533509378c7ee89cd3a0da6983c7a8022a2585e9af6f4990385",
+      "update": 4000,
+      "validation_primary_ap": 0.653895015278456,
+      "source_run": "reference-official-seed2",
+      "configuration": {
+        "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2",
+        "seed": 2,
+        "partition": "official",
+        "initialization": "esm2_pretrained",
+        "world_size": 4,
+        "total_updates": 12745,
+        "global_pairs_per_update": 64,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_updates": 2000,
+        "clip_grad_norm": 1.0,
+        "classification_weight": 10.0,
+        "positive_weight": 1.0,
+        "classification_corruption": true,
+        "mlm_weight": 1.0,
+        "readout": "cls_linear",
+        "readout_width": 128,
+        "attention_mode": "standard",
+        "attention_backend": "efficient",
+        "train_cap_residues": null,
+        "train_token_budget": 8192,
+        "train_max_pairs": 4,
+        "eval_token_budget": 16384,
+        "eval_max_pairs": 8,
+        "checkpoint_every_updates": 100,
+        "checkpoint_minutes": 15,
+        "validate_every_updates": 1000,
+        "log_every_updates": 10,
+        "selection_metric": "pooled_ap",
+        "name": "reference-official-seed2",
+        "arm": "reference"
+      },
+      "snapshot_method": "hard link to immutable atomically committed checkpoint",
+      "test_predictions_reused": true,
+      "selected_validation": {
+        "path": "predictions/v2-reference-selected-validation.npz",
+        "sha256": "22e135ca688975901974ee81f41b6427dcaf82c86f67ef647f255da97f6f7609",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/reference-official-seed2/validation/update-000004000.npz"
+      },
+      "checkpoint_identity_source": "provenance/benchmark-v2-selection.json"
+    },
+    "v2-capped": {
+      "kind": "local_training_checkpoint",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/checkpoints/update-000008000.pt",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/checkpoints/update-000008000.pt",
+      "source_manifest": {
+        "file": "update-000008000.pt",
+        "sha256": "84c561bcf040d6b06086328722f0faea4d3fa1e9ed84d94d4f7466c7f970c37c",
+        "bytes": 7818552843,
+        "update": 8000,
+        "epoch": 3,
+        "next_chunk": 120617,
+        "world_size": 4,
+        "fingerprint": "31cde71e5f1db2c99b31c639cdf3f1611dbde2bb663258bab6dc609dd6b9f8b5",
+        "best_update": 8000,
+        "best_ap": 0.6515787053852181
+      },
+      "sha256": "84c561bcf040d6b06086328722f0faea4d3fa1e9ed84d94d4f7466c7f970c37c",
+      "update": 8000,
+      "validation_primary_ap": 0.6515787053852181,
+      "source_run": "capped-official-seed2",
+      "configuration": {
+        "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2",
+        "seed": 2,
+        "partition": "official",
+        "initialization": "esm2_pretrained",
+        "world_size": 4,
+        "total_updates": 12745,
+        "global_pairs_per_update": 64,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_updates": 2000,
+        "clip_grad_norm": 1.0,
+        "classification_weight": 10.0,
+        "positive_weight": 1.0,
+        "classification_corruption": true,
+        "mlm_weight": 1.0,
+        "readout": "cls_linear",
+        "readout_width": 128,
+        "attention_mode": "standard",
+        "attention_backend": "efficient",
+        "train_cap_residues": 2193,
+        "train_token_budget": 8192,
+        "train_max_pairs": 4,
+        "eval_token_budget": 16384,
+        "eval_max_pairs": 8,
+        "checkpoint_every_updates": 100,
+        "checkpoint_minutes": 15,
+        "validate_every_updates": 1000,
+        "log_every_updates": 10,
+        "selection_metric": "pooled_ap",
+        "name": "capped-official-seed2",
+        "arm": "capped"
+      },
+      "snapshot_method": "hard link to immutable atomically committed checkpoint",
+      "test_predictions_reused": true,
+      "selected_validation": {
+        "path": "predictions/v2-capped-selected-validation.npz",
+        "sha256": "52590ff91b4af00653fdc678e23269f5cd2261688d64a5500b20eb1d90ca8213",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/capped-official-seed2/validation/update-000008000.npz"
+      },
+      "checkpoint_identity_source": "provenance/benchmark-v2-selection.json"
+    },
+    "v2-positive10": {
+      "kind": "local_training_checkpoint",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/checkpoints/update-000004000.pt",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/checkpoints/update-000004000.pt",
+      "source_manifest": {
+        "file": "update-000004000.pt",
+        "sha256": "31508b72411291660871f34e2e8212329345b3c2ff9b6340799f15ba972981e8",
+        "bytes": 7818552843,
+        "update": 4000,
+        "epoch": 1,
+        "next_chunk": 92915,
+        "world_size": 4,
+        "fingerprint": "35286e6343ad16aea219b7e99873cf8652f6a57496e833f717122fbbe962a672",
+        "best_update": 4000,
+        "best_ap": 0.6547945921810688
+      },
+      "sha256": "31508b72411291660871f34e2e8212329345b3c2ff9b6340799f15ba972981e8",
+      "update": 4000,
+      "validation_primary_ap": 0.6547945921810688,
+      "source_run": "positive10-official-seed2",
+      "configuration": {
+        "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2",
+        "seed": 2,
+        "partition": "official",
+        "initialization": "esm2_pretrained",
+        "world_size": 4,
+        "total_updates": 12745,
+        "global_pairs_per_update": 64,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_updates": 2000,
+        "clip_grad_norm": 1.0,
+        "classification_weight": 10.0,
+        "positive_weight": 10.0,
+        "classification_corruption": true,
+        "mlm_weight": 1.0,
+        "readout": "cls_linear",
+        "readout_width": 128,
+        "attention_mode": "standard",
+        "attention_backend": "efficient",
+        "train_cap_residues": null,
+        "train_token_budget": 8192,
+        "train_max_pairs": 4,
+        "eval_token_budget": 16384,
+        "eval_max_pairs": 8,
+        "checkpoint_every_updates": 100,
+        "checkpoint_minutes": 15,
+        "validate_every_updates": 1000,
+        "log_every_updates": 10,
+        "selection_metric": "pooled_ap",
+        "name": "positive10-official-seed2",
+        "arm": "positive10"
+      },
+      "snapshot_method": "hard link to immutable atomically committed checkpoint",
+      "test_predictions_reused": true,
+      "selected_validation": {
+        "path": "predictions/v2-positive10-selected-validation.npz",
+        "sha256": "f391268469a3b1d275bb24752b4ccfbb2aa3cba39dcb6e0d63a4165d6c56f6eb",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/positive10-official-seed2/validation/update-000004000.npz"
+      },
+      "checkpoint_identity_source": "provenance/benchmark-v2-selection.json"
+    },
+    "v2-clean-bce": {
+      "kind": "local_training_checkpoint",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/checkpoints/update-000004000.pt",
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/checkpoints/update-000004000.pt",
+      "source_manifest": {
+        "file": "update-000004000.pt",
+        "sha256": "5924e751616ab2283b27511fc6afa7d88ae6a9b2170fd64186a9454f15a82173",
+        "bytes": 7805410278,
+        "update": 4000,
+        "epoch": 1,
+        "next_chunk": 92915,
+        "world_size": 4,
+        "fingerprint": "2a7e859f30704a56c15f6bb4156ec3e8e857c2d0f57d22e920651ea8c40bc94b",
+        "best_update": 4000,
+        "best_ap": 0.6521558958966235
+      },
+      "sha256": "5924e751616ab2283b27511fc6afa7d88ae6a9b2170fd64186a9454f15a82173",
+      "update": 4000,
+      "validation_primary_ap": 0.6521558958966235,
+      "source_run": "clean-bce-official-seed2",
+      "configuration": {
+        "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2",
+        "seed": 2,
+        "partition": "official",
+        "initialization": "esm2_pretrained",
+        "world_size": 4,
+        "total_updates": 12745,
+        "global_pairs_per_update": 64,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_updates": 2000,
+        "clip_grad_norm": 1.0,
+        "classification_weight": 10.0,
+        "positive_weight": 1.0,
+        "classification_corruption": false,
+        "mlm_weight": 0.0,
+        "readout": "cls_linear",
+        "readout_width": 128,
+        "attention_mode": "standard",
+        "attention_backend": "efficient",
+        "train_cap_residues": null,
+        "train_token_budget": 8192,
+        "train_max_pairs": 4,
+        "eval_token_budget": 16384,
+        "eval_max_pairs": 8,
+        "checkpoint_every_updates": 100,
+        "checkpoint_minutes": 15,
+        "validate_every_updates": 1000,
+        "log_every_updates": 10,
+        "selection_metric": "pooled_ap",
+        "name": "clean-bce-official-seed2",
+        "arm": "clean-bce"
+      },
+      "snapshot_method": "hard link to immutable atomically committed checkpoint",
+      "test_predictions_reused": true,
+      "selected_validation": {
+        "path": "predictions/v2-clean-bce-selected-validation.npz",
+        "sha256": "4bf41d08a421d215be348384c8faa25707252a555710c8570f05b3128db68d51",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/runs/clean-bce-official-seed2/validation/update-000004000.npz"
+      },
+      "checkpoint_identity_source": "provenance/benchmark-v2-selection.json"
+    },
+    "v3-residue-mlp": {
+      "kind": "local_training_checkpoint",
+      "path": "checkpoints/v3-residue-mlp-update-000004000.pt",
+      "sha256": "355ce9f9110c8ed6d8d10b7b7588a6273e549d21def01dcd5fa409087d67b5b9",
+      "update": 4000,
+      "source_manifest": {
+        "file": "update-000004000.pt",
+        "sha256": "355ce9f9110c8ed6d8d10b7b7588a6273e549d21def01dcd5fa409087d67b5b9",
+        "bytes": 7813279814,
+        "update": 4000,
+        "epoch": 1,
+        "next_chunk": 92915,
+        "world_size": 4,
+        "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+        "best_update": 4000,
+        "best_ap": 0.6571396551693898
+      },
+      "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-residue-mean-official-seed2/checkpoints/update-000004000.pt",
+      "source_run": "clean-residue-mean-official-seed2",
+      "configuration": {
+        "root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3",
+        "seed": 2,
+        "partition": "official",
+        "initialization": "esm2_pretrained",
+        "world_size": 4,
+        "total_updates": 12745,
+        "global_pairs_per_update": 64,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_updates": 2000,
+        "clip_grad_norm": 1.0,
+        "classification_weight": 10.0,
+        "positive_weight": 1.0,
+        "classification_corruption": false,
+        "mlm_weight": 0.0,
+        "readout": "residue_mean",
+        "readout_width": 128,
+        "attention_mode": "standard",
+        "attention_backend": "efficient",
+        "train_cap_residues": null,
+        "train_token_budget": 8192,
+        "train_max_pairs": 4,
+        "eval_token_budget": 16384,
+        "eval_max_pairs": 8,
+        "checkpoint_every_updates": 100,
+        "checkpoint_minutes": 15,
+        "validate_every_updates": 1000,
+        "log_every_updates": 10,
+        "selection_metric": "pooled_ap",
+        "name": "clean-residue-mean-official-seed2",
+        "arm": "clean-residue-mean-final"
+      },
+      "validation_primary_ap": 0.6571396551693898,
+      "test_predictions_reused": false,
+      "snapshot_method": "hard link to immutable atomically committed checkpoint",
+      "selected_validation": {
+        "path": "predictions/v3-residue-mlp-selected-validation.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-residue-mean-official-seed2/validation/update-000004000.npz",
+        "sha256": "f8bf27ae8d231ed9c7b88b5cf3d3d06b420c34959f3961028cf5db9b192dc782"
+      }
+    }
+  },
+  "reused_predictions": {
+    "native-bernett": {
+      "test": {
+        "path": "reused/native-bernett-test.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/native-bernett-test.npz",
+        "sha256": "52a2b76dc9b30cfec5ba5fe414ca2abd4f9f41777415a205bc19ca2f5ba2d0cb"
+      },
+      "val": {
+        "path": "reused/native-bernett-val.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/native-bernett-val.npz",
+        "sha256": "0154f6f960373e3fc673c4120dfad987d8cb001b39657c42e4d33f44c97f9a5a"
+      }
+    },
+    "v1-reference": {
+      "test": {
+        "path": "reused/v1-reference-test.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v1-reference-test.npz",
+        "sha256": "3a745003a2b4adadf7043a871cd9c3aaf77a88607fe7da6abcec0968dffdb870"
+      },
+      "val": {
+        "path": "reused/v1-reference-val.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v1-reference-val.npz",
+        "sha256": "163ab3436e7fe5a08223efd2cbfff4bc4be5aee4b93dcd2ef75037fa97ecb046"
+      }
+    },
+    "v1-symmetric": {
+      "test": {
+        "path": "reused/v1-symmetric-test.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v1-symmetric-test.npz",
+        "sha256": "aa229856365165d30697bc427bd079267e3115ae0cd1f1ec3dea7802b46eb19c"
+      },
+      "val": {
+        "path": "reused/v1-symmetric-val.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v1-symmetric-val.npz",
+        "sha256": "4ad6014ca54d9a351b8684b0ba171363ff08e28098c2c7880d4ff3ef9f0c13f7"
+      }
+    },
+    "v2-reference": {
+      "test": {
+        "path": "reused/v2-reference-test.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-reference-test.npz",
+        "sha256": "f7b9ba05fe1d7ba09f214fef560382b47b2a22e898391f87e86114f548701061"
+      },
+      "val": {
+        "path": "reused/v2-reference-val.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-reference-val.npz",
+        "sha256": "22e135ca688975901974ee81f41b6427dcaf82c86f67ef647f255da97f6f7609"
+      }
+    },
+    "v2-capped": {
+      "test": {
+        "path": "reused/v2-capped-test.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-capped-test.npz",
+        "sha256": "f49ea95c73218ea08579798d6ed04625c50e0f022f83c76b2b8c3029a0f66eaf"
+      },
+      "val": {
+        "path": "reused/v2-capped-val.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-capped-val.npz",
+        "sha256": "52590ff91b4af00653fdc678e23269f5cd2261688d64a5500b20eb1d90ca8213"
+      }
+    },
+    "v2-positive10": {
+      "test": {
+        "path": "reused/v2-positive10-test.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-positive10-test.npz",
+        "sha256": "3cc4986ebecad76e48791a025f52dc693b62955d04d7228bd309d676c8f02d1e"
+      },
+      "val": {
+        "path": "reused/v2-positive10-val.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-positive10-val.npz",
+        "sha256": "f391268469a3b1d275bb24752b4ccfbb2aa3cba39dcb6e0d63a4165d6c56f6eb"
+      }
+    },
+    "v2-clean-bce": {
+      "test": {
+        "path": "reused/v2-clean-bce-test.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-clean-bce-test.npz",
+        "sha256": "d055d03cdd31a405e0982fdd80f51e8545c7b9ca9d11ebc361b5ac29a496c302"
+      },
+      "val": {
+        "path": "reused/v2-clean-bce-val.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v2-clean-bce-val.npz",
+        "sha256": "4bf41d08a421d215be348384c8faa25707252a555710c8570f05b3128db68d51"
+      }
+    },
+    "v3-residue-mlp": {
+      "test": {
+        "path": "reused/v3-residue-mlp-test.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v3-residue-mlp-test.npz",
+        "sha256": "1dc16e3d906711c6f63f026bd331cf5d2eaf7de34309c124d7fd6839df9b3774"
+      },
+      "val": {
+        "path": "reused/v3-residue-mlp-val.npz",
+        "source_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/results/v3-residue-mlp-val.npz",
+        "sha256": "f8bf27ae8d231ed9c7b88b5cf3d3d06b420c34959f3961028cf5db9b192dc782"
+      }
+    }
+  },
+  "data": {
+    "path": "data",
+    "sha256": {
+      "test.npy": "84b0b7ae068b2beba19103f8bed3e1c4feae117a0a6ffd271798537868a51c0d",
+      "val.npy": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0",
+      "tokens.npy": "bf82ee25023396948d4d96417cc396de2668afcba8e15f824883caa5e7a599af",
+      "offsets.npy": "61a71e45a1ca7137af32e148510f7c5de01d30c10704451d1a91dd3e3f464a1d",
+      "prepared-manifest.json": "c184eb9dd87ce4a082a3fe580f8d220eecd129e75bdbaeb6ea66e3b322d02405"
+    },
+    "source": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3/data"
+  },
+  "container": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact-esmc/plm-interact-esmc-arm64-v1.sif",
+    "sha256": "ed6aeac781502090632bc2a705300b161b6a65ccfbcf6c7cf64d8d61d8e5b5ef"
+  },
+  "base_model_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/assets/esmc",
+  "training_prepared_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/data/prepared",
+  "new_model": "v4-esmc-standard",
+  "historical_test_interpretation": "User-requested exploratory C0 standard-attention ESMC comparison. The originally nominated C1 primary was stopped, is not replaced by C0, and has no test claim. Historical test reuse and single-seed uncertainty remain."
+}

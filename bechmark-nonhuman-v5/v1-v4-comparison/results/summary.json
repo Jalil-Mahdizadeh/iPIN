@@ -1,0 +1,693 @@
+{
+  "at_utc": "2026-10-05T14:37:07.872730+00:00",
+  "complete": true,
+  "models": {
+    "native-human": "Native PLM-interact humanV11",
+    "native-plm": "Native PLM-interact Bernett",
+    "v2-capped": "V2 length-capped, update 8000",
+    "v2-clean-bce": "V2 clean BCE, update 4000",
+    "ipin-esm2": "iPIN v5 ESM2",
+    "ipin-esmc": "iPIN v5 ESMC"
+  },
+  "counts": {
+    "mouse": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000
+    },
+    "fly": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000
+    },
+    "worm": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000
+    },
+    "yeast": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000
+    },
+    "ecoli": {
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000
+    }
+  },
+  "metrics": [
+    {
+      "test": "mouse",
+      "model": "native-human",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.908412121613771,
+      "auroc": 0.9829699979999998,
+      "brier": 0.02566417741863947,
+      "score_min": -11.294849395751953,
+      "score_max": 9.508479118347168,
+      "unique_scores": 54375,
+      "zero_scores": 0
+    },
+    {
+      "test": "mouse",
+      "model": "native-plm",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.27512105363526546,
+      "auroc": 0.698272728,
+      "brier": 0.2858742352098387,
+      "score_min": -2.859375,
+      "score_max": 3.5546875,
+      "unique_scores": 8405,
+      "zero_scores": 6
+    },
+    {
+      "test": "mouse",
+      "model": "v2-capped",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.32858597338206785,
+      "auroc": 0.7192855,
+      "brier": 0.23389130078468806,
+      "score_min": -2.8515625,
+      "score_max": 3.3203125,
+      "unique_scores": 8674,
+      "zero_scores": 25
+    },
+    {
+      "test": "mouse",
+      "model": "v2-clean-bce",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.32124400216294646,
+      "auroc": 0.755036252,
+      "brier": 0.20558752854798248,
+      "score_min": -1.78515625,
+      "score_max": 2.6484375,
+      "unique_scores": 7974,
+      "zero_scores": 19
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esm2",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.20912298817740094,
+      "auroc": 0.6253576080000001,
+      "brier": 0.31641321144398166,
+      "score_min": -3.546875,
+      "score_max": 3.8984375,
+      "unique_scores": 9035,
+      "zero_scores": 5
+    },
+    {
+      "test": "mouse",
+      "model": "ipin-esmc",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.17682615390896061,
+      "auroc": 0.633061788,
+      "brier": 0.3226073062133331,
+      "score_min": -1.9765625,
+      "score_max": 2.3515625,
+      "unique_scores": 7110,
+      "zero_scores": 12
+    },
+    {
+      "test": "fly",
+      "model": "native-human",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.9167559419559641,
+      "auroc": 0.98339589,
+      "brier": 0.02572551378459999,
+      "score_min": -11.263481616973877,
+      "score_max": 9.501873970031738,
+      "unique_scores": 54537,
+      "zero_scores": 0
+    },
+    {
+      "test": "fly",
+      "model": "native-plm",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.30171363366366266,
+      "auroc": 0.693957654,
+      "brier": 0.2529791399186642,
+      "score_min": -2.859375,
+      "score_max": 3.5078125,
+      "unique_scores": 8485,
+      "zero_scores": 7
+    },
+    {
+      "test": "fly",
+      "model": "v2-capped",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.3794728365888692,
+      "auroc": 0.723718608,
+      "brier": 0.23271641105315366,
+      "score_min": -2.796875,
+      "score_max": 3.2890625,
+      "unique_scores": 8649,
+      "zero_scores": 22
+    },
+    {
+      "test": "fly",
+      "model": "v2-clean-bce",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.37978863718753564,
+      "auroc": 0.786114224,
+      "brier": 0.19643084887983478,
+      "score_min": -1.765625,
+      "score_max": 2.625,
+      "unique_scores": 7975,
+      "zero_scores": 5
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esm2",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.18638236105749517,
+      "auroc": 0.611377646,
+      "brier": 0.3211098256132187,
+      "score_min": -3.265625,
+      "score_max": 3.828125,
+      "unique_scores": 9101,
+      "zero_scores": 13
+    },
+    {
+      "test": "fly",
+      "model": "ipin-esmc",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.15307742376976546,
+      "auroc": 0.572639952,
+      "brier": 0.34227654177566885,
+      "score_min": -1.97265625,
+      "score_max": 2.34375,
+      "unique_scores": 7214,
+      "zero_scores": 8
+    },
+    {
+      "test": "worm",
+      "model": "native-human",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.8908832296816632,
+      "auroc": 0.975250198,
+      "brier": 0.02897112689160947,
+      "score_min": -11.255032539367676,
+      "score_max": 9.504017353057861,
+      "unique_scores": 54600,
+      "zero_scores": 0
+    },
+    {
+      "test": "worm",
+      "model": "native-plm",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.1856029866264684,
+      "auroc": 0.6175741680000001,
+      "brier": 0.2812468432766022,
+      "score_min": -2.828125,
+      "score_max": 3.5078125,
+      "unique_scores": 8693,
+      "zero_scores": 14
+    },
+    {
+      "test": "worm",
+      "model": "v2-capped",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.27585128155491856,
+      "auroc": 0.644876438,
+      "brier": 0.2722861405632053,
+      "score_min": -2.8125,
+      "score_max": 3.25,
+      "unique_scores": 8916,
+      "zero_scores": 14
+    },
+    {
+      "test": "worm",
+      "model": "v2-clean-bce",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.27121222076642726,
+      "auroc": 0.7206724999999999,
+      "brier": 0.21343912264943157,
+      "score_min": -1.73828125,
+      "score_max": 2.6328125,
+      "unique_scores": 8298,
+      "zero_scores": 15
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esm2",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.1359112815683476,
+      "auroc": 0.555289526,
+      "brier": 0.35818150604582544,
+      "score_min": -3.2734375,
+      "score_max": 3.828125,
+      "unique_scores": 8836,
+      "zero_scores": 8
+    },
+    {
+      "test": "worm",
+      "model": "ipin-esmc",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.10276658408213246,
+      "auroc": 0.523885826,
+      "brier": 0.3686594664862274,
+      "score_min": -1.94140625,
+      "score_max": 2.34375,
+      "unique_scores": 6884,
+      "zero_scores": 13
+    },
+    {
+      "test": "yeast",
+      "model": "native-human",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.7147095360032375,
+      "auroc": 0.9143984339999999,
+      "brier": 0.058528365452916675,
+      "score_min": -11.247010231018066,
+      "score_max": 9.522801399230957,
+      "unique_scores": 54623,
+      "zero_scores": 0
+    },
+    {
+      "test": "yeast",
+      "model": "native-plm",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.19738019910966093,
+      "auroc": 0.619594402,
+      "brier": 0.26696355761759966,
+      "score_min": -2.7890625,
+      "score_max": 3.484375,
+      "unique_scores": 9319,
+      "zero_scores": 14
+    },
+    {
+      "test": "yeast",
+      "model": "v2-capped",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.28663543957912707,
+      "auroc": 0.688068808,
+      "brier": 0.2616821977694654,
+      "score_min": -2.75,
+      "score_max": 3.2109375,
+      "unique_scores": 9249,
+      "zero_scores": 12
+    },
+    {
+      "test": "yeast",
+      "model": "v2-clean-bce",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.23652136325884096,
+      "auroc": 0.727943078,
+      "brier": 0.22190833067433768,
+      "score_min": -1.73828125,
+      "score_max": 2.625,
+      "unique_scores": 8805,
+      "zero_scores": 19
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esm2",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.13664177118869217,
+      "auroc": 0.568010722,
+      "brier": 0.30842399133327186,
+      "score_min": -3.34375,
+      "score_max": 3.828125,
+      "unique_scores": 9385,
+      "zero_scores": 18
+    },
+    {
+      "test": "yeast",
+      "model": "ipin-esmc",
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "ap": 0.11652308455342869,
+      "auroc": 0.517971628,
+      "brier": 0.33441654826904904,
+      "score_min": -1.9609375,
+      "score_max": 2.3359375,
+      "unique_scores": 6911,
+      "zero_scores": 13
+    },
+    {
+      "test": "ecoli",
+      "model": "native-human",
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "ap": 0.7328962829098185,
+      "auroc": 0.9066258125,
+      "brier": 0.2580908324604111,
+      "score_min": -11.246706485748291,
+      "score_max": 9.505672931671143,
+      "unique_scores": 18222,
+      "zero_scores": 0
+    },
+    {
+      "test": "ecoli",
+      "model": "native-plm",
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "ap": 0.1572177151327937,
+      "auroc": 0.4838996,
+      "brier": 0.24972621469053172,
+      "score_min": -2.421875,
+      "score_max": 2.5234375,
+      "unique_scores": 6443,
+      "zero_scores": 19
+    },
+    {
+      "test": "ecoli",
+      "model": "v2-capped",
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "ap": 0.3130062071340064,
+      "auroc": 0.6346900125,
+      "brier": 0.39519424990462115,
+      "score_min": -1.9140625,
+      "score_max": 2.78125,
+      "unique_scores": 3747,
+      "zero_scores": 3
+    },
+    {
+      "test": "ecoli",
+      "model": "v2-clean-bce",
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "ap": 0.5240911932088441,
+      "auroc": 0.7936764374999999,
+      "brier": 0.28960244369066324,
+      "score_min": -1.484375,
+      "score_max": 1.89453125,
+      "unique_scores": 4646,
+      "zero_scores": 11
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esm2",
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "ap": 0.08069036805938111,
+      "auroc": 0.3757119375,
+      "brier": 0.32425550848136275,
+      "score_min": -3.1171875,
+      "score_max": 3.8125,
+      "unique_scores": 6142,
+      "zero_scores": 14
+    },
+    {
+      "test": "ecoli",
+      "model": "ipin-esmc",
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "ap": 0.06630287022278158,
+      "auroc": 0.2748716,
+      "brier": 0.3037956016623588,
+      "score_min": -1.79296875,
+      "score_max": 2.3359375,
+      "unique_scores": 5366,
+      "zero_scores": 7
+    }
+  ],
+  "selection": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/provenance/selection.json",
+    "bytes": 15921,
+    "sha256": "517b815e350008240d3d4e72441ec0763af82b03ba33b96a7ac612417b6da9f9"
+  },
+  "prediction_provenance": {
+    "native-human": {
+      "rows": 238025,
+      "file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/native-human-union.npz",
+        "bytes": 4612502,
+        "sha256": "a7db33773e2e40e0eb9d18f3661dd3ac430ac1a64cc2ac3ba462a7ec98086d53"
+      },
+      "sources": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/native-human/rank-00.done.json",
+          "bytes": 30322,
+          "sha256": "94034a6ef03b06d531c52ca9a05d629ade5d047987cc53edf3374fcf09aac9b5"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/native-human/rank-01.done.json",
+          "bytes": 30324,
+          "sha256": "f641198a8de433fb749446dc164368c73abe41c76e5ddfcfaeb57f9116697195"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/native-human/rank-02.done.json",
+          "bytes": 30323,
+          "sha256": "44927727ab3db3ef015c9972962078e9a53b82deaac938fdc13328464f1eec31"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/native-human/rank-03.done.json",
+          "bytes": 30323,
+          "sha256": "6441c87fabfb366535c897cee6afb84a03583e2b8168392401ebae521a948a9e"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/native-human.json",
+          "bytes": 4603,
+          "sha256": "df43e8fc1e0998a08f4a0a5755ae8b93968f8aea66b85a6d1f2d471e6a0c0d3a"
+        }
+      ],
+      "score_kind": "logit",
+      "probability_available": true
+    },
+    "native-plm": {
+      "rows": 238025,
+      "file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/native-plm-union.npz",
+        "bytes": 2534214,
+        "sha256": "63fb5648f87b6cee90b7b87e76b78205d68b2fd28a5ee08556fb575e3baac537"
+      },
+      "sources": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/native-plm/rank-00.done.json",
+          "bytes": 30087,
+          "sha256": "e32755e5460959364228a5c4fea94e7a5c745018e40f79bf640f8b2752714d2c"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/native-plm/rank-01.done.json",
+          "bytes": 30085,
+          "sha256": "45c64e8c7d8ae41f8d572a7430a911283f48c24ac00e7b403fe504368ff9ec9b"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/native-plm/rank-02.done.json",
+          "bytes": 30087,
+          "sha256": "0a76edef78a7d9594882d91fd3f132755a765bd0e29782a9cd479ae5638a63fa"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/native-plm/rank-03.done.json",
+          "bytes": 30087,
+          "sha256": "2c4d51fdc846dcb9913a635ff3b8bb58dd431955d102c61c8aa9ef5d8bcbdaa3"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/native-plm.json",
+          "bytes": 1005,
+          "sha256": "f5ba216db937355bada39ceeb20b272f83e1c9904bdeab1dee377cc418e40124"
+        }
+      ],
+      "score_kind": "logit",
+      "probability_available": true
+    },
+    "v2-capped": {
+      "file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/v2-capped-union.npz",
+        "bytes": 2546721,
+        "sha256": "d1be2c601cd64efc6037657a7d7d134dd15efe27e16ee98c3899c2b1dfd26565"
+      },
+      "shards": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/predictions/v2-capped/rank-00.done.json",
+          "bytes": 31981,
+          "sha256": "768f9a5268b9598bd973d2c23d0be2ec9bec14e88917be3d5ec9093c4f12a389"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/predictions/v2-capped/rank-01.done.json",
+          "bytes": 31979,
+          "sha256": "eaee71be1dc7a4eee4e9b0261efaacfe9b98d1977016e6a17131db8e2334c4eb"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/predictions/v2-capped/rank-02.done.json",
+          "bytes": 31981,
+          "sha256": "d0c0133e49381a9a1d1d0dab7e4ff704926ab8abe265056515b9db73374fe9fc"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/predictions/v2-capped/rank-03.done.json",
+          "bytes": 31981,
+          "sha256": "7a5fc011b7d9f0c4a6fb6a7c210a9b5e5a8e6c6c94661d31617cf066d97d5b95"
+        }
+      ],
+      "qualification": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/qualification/v2-capped.json",
+        "bytes": 7029,
+        "sha256": "8d9db8ec18362b218297f4a0469d6d9db96c7c9747c82eb26c926702754e91e3"
+      }
+    },
+    "v2-clean-bce": {
+      "file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/v2-clean-bce-union.npz",
+        "bytes": 2486054,
+        "sha256": "3cd0e04b072be6e3746f9960cac0982517e77a9a3741cee4c2a728fd6083c590"
+      },
+      "shards": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/predictions/v2-clean-bce/rank-00.done.json",
+          "bytes": 32335,
+          "sha256": "a2af9990dee1877ecc80b3f01fc45cb9a6dfcd8191b084f91cb8d3439190983e"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/predictions/v2-clean-bce/rank-01.done.json",
+          "bytes": 32333,
+          "sha256": "ce2b58a58d5befeb47a048fcd7f508325b9bdf9719b6dace4d78afda3e7c481b"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/predictions/v2-clean-bce/rank-02.done.json",
+          "bytes": 32335,
+          "sha256": "ba25c41f90e35e8882ed21e6b5822355f6d67641917e31beaa6b8eacdba30d5e"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/predictions/v2-clean-bce/rank-03.done.json",
+          "bytes": 32335,
+          "sha256": "cec1f5f000d18626fc69c391d8f32a30dba8a3cd7847d960dbbb669a06f43e65"
+        }
+      ],
+      "qualification": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/qualification/v2-clean-bce.json",
+        "bytes": 7076,
+        "sha256": "a2a17c43c6a17a3a85d2938157c65b2d4ab43f6e9b4976846a49a134420670e3"
+      }
+    },
+    "ipin-esm2": {
+      "rows": 238025,
+      "file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/ipin-esm2-union.npz",
+        "bytes": 2587499,
+        "sha256": "ff7461b860eae492b84233313b67208795e4a3cd6797a073fbe939f2db4178ea"
+      },
+      "sources": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/ipin-esm2/rank-00.done.json",
+          "bytes": 29969,
+          "sha256": "9b5c12527491eaf38f3cd47322c59dc6920d5c9c1c7df37c4d4e1f7cbaa23ff1"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/ipin-esm2/rank-01.done.json",
+          "bytes": 29967,
+          "sha256": "d682f1f8b4a47be7947c603b838c61807b2a05ebb1cc34a63c05699ccadffe7b"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/ipin-esm2/rank-02.done.json",
+          "bytes": 29969,
+          "sha256": "5fd5c01ae0f49cafeefefa4c16d79bbd726054a4e681b28894860f5bc3ca15c8"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/ipin-esm2/rank-03.done.json",
+          "bytes": 29969,
+          "sha256": "3999f4cb2f6ecef0797b39186577a8e536ad704fb93e70f8a564f56b9a288763"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/ipin-esm2.json",
+          "bytes": 991,
+          "sha256": "585704e210a58a4eda8361d569bff19df93f7d5877352ef661d66ad2ad30bcca"
+        }
+      ],
+      "score_kind": "logit",
+      "probability_available": true
+    },
+    "ipin-esmc": {
+      "rows": 238025,
+      "file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/ipin-esmc-union.npz",
+        "bytes": 2390095,
+        "sha256": "4648be99aac9c8cd3f5d826b34f3742d87c4539c48023f79a743d961c69ee510"
+      },
+      "sources": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/ipin-esmc/rank-00.done.json",
+          "bytes": 29968,
+          "sha256": "9762220789feeb8f33d543d389dc1d7302eae51c3178f71dc7d5415d615a8beb"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/ipin-esmc/rank-01.done.json",
+          "bytes": 29968,
+          "sha256": "5c9965710689480cfd8baaf44f4e3c5944bfb9651a0d18241175e5e414b2622b"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/ipin-esmc/rank-02.done.json",
+          "bytes": 29967,
+          "sha256": "467825f691e3fcc06f44b35bb6f30e51cdcdbf46dc0851d3525e50f53ce73d05"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/predictions/ipin-esmc/rank-03.done.json",
+          "bytes": 29968,
+          "sha256": "55dcc0b7308c8d15413f1803d16cec8b6980e4a090dae41c9e2929bb57cc4904"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/qualification/ipin-esmc.json",
+          "bytes": 991,
+          "sha256": "0013b7b7a29f8a7badcc985af3452ad8523e3d9a9a90ef08ba7d13c4f143310c"
+        }
+      ],
+      "score_kind": "logit",
+      "probability_available": true
+    }
+  },
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 20261005,
+    "paired_protein_endpoints": true,
+    "self_pairs_counted_once": true,
+    "sklearn_weighted_metrics_verified": true
+  },
+  "raw_source_rows_verified": 242000,
+  "no_training_or_target_selection": true
+}

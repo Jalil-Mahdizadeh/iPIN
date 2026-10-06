@@ -1,0 +1,19 @@
+{
+  "state": {
+    "update": 5,
+    "epoch": 1,
+    "next_chunk": 0,
+    "examples_seen": 35,
+    "best_ap": 0.3946428571428572,
+    "best_update": 4,
+    "total_steps": 5
+  },
+  "fingerprint": "26071b032485d86d418f2f2cb10dd584ed689477e113ee789d1ebefef234e837",
+  "test_evaluated": false,
+  "model_hashes_by_rank": [
+    "31d4ee633efe62daffd8fbbb64ca225544b9acd865dcfb9c084175b2cfc4f6bc",
+    "31d4ee633efe62daffd8fbbb64ca225544b9acd865dcfb9c084175b2cfc4f6bc",
+    "31d4ee633efe62daffd8fbbb64ca225544b9acd865dcfb9c084175b2cfc4f6bc",
+    "31d4ee633efe62daffd8fbbb64ca225544b9acd865dcfb9c084175b2cfc4f6bc"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "adopted_verified_prelaunch_stage": false,
+  "command": [
+    "bash",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/scripts/python.sh",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/scripts/bootstrap.py"
+  ],
+  "completed_utc": "2026-10-02T13:42:32.645994+00:00",
+  "fingerprint": "82b653e8cede47cbba94579b537a3444a21d56aae9ab510542f9091c3cf34d72",
+  "outputs": {
+    "frozen-tests/original-manifest.json": "539f76766d9b8dca1caa99dcd6dc38f4383b9f107c0465b4b3e9d5cec8a8d980",
+    "frozen-tests/original-test.csv": "89f164f9bd391fd3a2cb400cb3b402d87b73af8142143c58cac56d55d3d7abcc",
+    "work/hippie-positive-evidence.csv": "70deb661214ad8f0ae9e7aa5c9b16394be434a5d44eeaab787e057ef6c7e7c3e",
+    "work/requested-accessions.json": "df76b944fe95414994b14e3c3b00c23f56dfae0679906a34fb0fafc100fbb979"
+  }
+}

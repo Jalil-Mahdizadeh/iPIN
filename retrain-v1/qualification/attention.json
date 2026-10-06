@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "precision": "fp32",
+      "backend": "math",
+      "loss_abs_diff": 0.0,
+      "logit_max_abs_diff": 0.0,
+      "gradient_relative_l2_diff": 0.0,
+      "gradient_tensors": 538
+    },
+    {
+      "precision": "bf16",
+      "backend": "efficient",
+      "loss_abs_diff": 0.0010433197021484375,
+      "logit_max_abs_diff": 0.00048828125,
+      "gradient_relative_l2_diff": 0.06692323481362061,
+      "gradient_tensors": 538
+    },
+    {
+      "split": "train",
+      "paired_tokens": 16322,
+      "orientation_batch": 2,
+      "backward": true,
+      "seconds": 16.15431842795806,
+      "peak_allocated_gib": 11.438601016998291
+    },
+    {
+      "split": "val",
+      "paired_tokens": 39391,
+      "orientation_batch": 2,
+      "backward": false,
+      "seconds": 12.334744200052228,
+      "peak_allocated_gib": 8.915143966674805
+    }
+  ],
+  "passed": true
+}

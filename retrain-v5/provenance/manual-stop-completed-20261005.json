@@ -1,0 +1,113 @@
+{
+  "verified_at_utc": "2026-10-05T06:37:12.372357+00:00",
+  "reason": "User-authorized early termination after validation plateau; requested 2026-10-05",
+  "both_jobs_stopped": true,
+  "active_production_jobs": 0,
+  "automatic_requeue_prevented": true,
+  "runs": {
+    "esm2-native-ilp-seed2": {
+      "job_id": "3301121",
+      "stopped": {
+        "state": {
+          "update": 45494,
+          "cursor": {
+            "cycle": 4,
+            "offset": 108560
+          },
+          "epoch": 4,
+          "next_chunk": 108560,
+          "examples_seen": 2911616,
+          "best_ap": 0.6153270385052271,
+          "best_update": 27374,
+          "total_steps": 54748,
+          "pending_validation": false,
+          "last_validation_update": 43798
+        },
+        "reason": "signal_or_REQUEST_STOP",
+        "attempt": "20261004T203742-3301121",
+        "checkpoint_committed": true
+      },
+      "best": {
+        "file": "update-000027374.pt",
+        "sha256": "8667e4af34346e4c8bcd2600dd06d21c64fe68ee82b8d99585c67cce102525e3",
+        "bytes": 7818552843,
+        "update": 27374,
+        "epoch": 2,
+        "next_chunk": 350408,
+        "world_size": 4,
+        "fingerprint": "d72b1cbc823743792301b32c590681f85c54be7c5fac871b88be927b0df06328",
+        "best_update": 27374,
+        "best_ap": 0.6153270385052271
+      },
+      "latest": {
+        "file": "update-000045494.pt",
+        "sha256": "e6ee8686308d4d6bbd60f3e226f21b329b7062dd7bb1cf6e4ca5d5ce1430df22",
+        "bytes": 7818552843,
+        "update": 45494,
+        "epoch": 4,
+        "next_chunk": 108560,
+        "world_size": 4,
+        "fingerprint": "d72b1cbc823743792301b32c590681f85c54be7c5fac871b88be927b0df06328",
+        "best_update": 27374,
+        "best_ap": 0.6153270385052271
+      },
+      "best_and_latest_hash_verified": true,
+      "training_locks_released": true,
+      "restart_prevented_by_stop_marker": true,
+      "completed_full_planned_budget": false,
+      "test_evaluated": false
+    },
+    "esmc-native-ilp-seed2": {
+      "job_id": "3301122",
+      "stopped": {
+        "state": {
+          "update": 45227,
+          "cursor": {
+            "cycle": 4,
+            "offset": 91472
+          },
+          "epoch": 4,
+          "next_chunk": 91472,
+          "examples_seen": 2894528,
+          "best_ap": 0.5924616586439035,
+          "best_update": 21899,
+          "total_steps": 54748,
+          "pending_validation": false,
+          "last_validation_update": 43798
+        },
+        "reason": "signal_or_REQUEST_STOP",
+        "attempt": "20261004T210848-3301122",
+        "checkpoint_committed": true
+      },
+      "best": {
+        "file": "update-000021899.pt",
+        "sha256": "3417a51ff381c4e5e9682c95e094a40b2411538a21e0a3199ec3506faea46a23",
+        "bytes": 6900990095,
+        "update": 21899,
+        "epoch": 2,
+        "next_chunk": 8,
+        "world_size": 4,
+        "fingerprint": "31a5cf349a0eca57e245c3a4d745e9ef7d6e2427aa912187bc17f18812e83c25",
+        "best_update": 21899,
+        "best_ap": 0.5924616586439035
+      },
+      "latest": {
+        "file": "update-000045227.pt",
+        "sha256": "e3ee1934a1f22813832ac87b48896fb428fc2c099c174d8499a3ee1fa04cd56a",
+        "bytes": 6900990095,
+        "update": 45227,
+        "epoch": 4,
+        "next_chunk": 91472,
+        "world_size": 4,
+        "fingerprint": "31a5cf349a0eca57e245c3a4d745e9ef7d6e2427aa912187bc17f18812e83c25",
+        "best_update": 21899,
+        "best_ap": 0.5924616586439035
+      },
+      "best_and_latest_hash_verified": true,
+      "training_locks_released": true,
+      "restart_prevented_by_stop_marker": true,
+      "completed_full_planned_budget": false,
+      "test_evaluated": false
+    }
+  }
+}

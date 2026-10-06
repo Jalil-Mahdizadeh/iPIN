@@ -1,0 +1,30 @@
+{
+  "version": "3.2.3",
+  "url": "https://files.pythonhosted.org/packages/b9/e6/d2ac74ec2ad695073ca49f0e9887ce9c47302578af05dbe39b099a7c0af5/esm-3.2.3-py3-none-any.whl",
+  "sha256": "61847d25b80efe0121931609b5ea885cc142ceb8caaa22ead6e3e97c527bc2af",
+  "requires_dist": [
+    "torch>=2.2.0",
+    "torchvision",
+    "torchtext",
+    "transformers<4.48.2",
+    "ipython",
+    "einops",
+    "biotite>=1.0.0",
+    "msgpack-numpy",
+    "biopython",
+    "scikit-learn",
+    "brotli",
+    "attrs",
+    "pandas",
+    "cloudpathlib",
+    "httpx",
+    "tenacity",
+    "zstd",
+    "ipywidgets",
+    "py3dmol",
+    "pydssp",
+    "boto3",
+    "pygtrie",
+    "dna_features_viewer"
+  ]
+}

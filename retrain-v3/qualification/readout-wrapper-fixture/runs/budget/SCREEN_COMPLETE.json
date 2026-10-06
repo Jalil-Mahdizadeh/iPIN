@@ -1,0 +1,14 @@
+{
+  "time_utc": "2026-09-30T19:23:27.071888+00:00",
+  "screen_completed": true,
+  "comparison_window_end": 2,
+  "actual_stopped_update": 2,
+  "declared_schedule_updates": 6,
+  "fingerprint": "fixture",
+  "checkpoint_committed": true,
+  "completed_full_schedule": false,
+  "best_update": 2,
+  "best_ap": 0.6,
+  "best_checkpoint_sha256": "b3193e6ec1c2f69f572dfdec9ad1f1bddc3e7ad50f986377ed413db27f59af3a",
+  "latest_checkpoint_sha256": "b3193e6ec1c2f69f572dfdec9ad1f1bddc3e7ad50f986377ed413db27f59af3a"
+}

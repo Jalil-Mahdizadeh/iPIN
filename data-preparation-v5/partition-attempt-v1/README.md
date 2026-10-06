@@ -1,0 +1,13 @@
+# One bounded positive-partition improvement attempt
+
+**Complete: no retention improvement.** The attempt stopped at the 30-minute budget, retaining the original 433,253 positives. The gap narrowed to 47.18%. The original completed dataset and both tests remain unchanged; no second attempt was launched. See [outcome and verification](REPORT.md).
+
+Authorized on 2026-10-02: one CPU attempt, at most 30 minutes of production solver time. The existing completed dataset and both frozen test sets are preserved while the candidate is assessed. No model scores or training runs are used.
+
+The eligible positives, 100 protein groups, exclusions and original balance constraints remain fixed. The existing partition retains 433,253 positives (350,382 TRAIN / 82,871 DEV). A change is eligible for adoption only if it retains at least **437,586 positives** (a 1% increase, rounded up), has at least **350,382 training positives**, and passes the same independent data checks. These criteria are fixed before the attempt starts. A reduced solver gap alone is not grounds to change datasets.
+
+The compact equivalent model uses one binary assignment per group and one continuous product per interacting group pair. For binary assignments, three McCormick inequalities force that product to the exact AND. DEV's product equals `1 - y_i - y_j + z_ij`, so its separate product variables are removed. Both split sizes are computed exactly; TRAIN must retain at least 76% and DEV at least 19% of total retained positives, exactly as before. The minimized solver objective is minus retained positives, including its constant offset, so relative gaps remain comparable to the original solver log. Bounds from both equivalent attempts are reported explicitly.
+
+The existing complete partition is independently reconstructed from frozen positive rows and passed as a full feasible MIP start. Every improved integer partition is verified and saved atomically. An exhaustive tiny-instance check precedes the production run. The solver uses the interior-point LP relaxation, eight requested CPU threads, seed 2 and a 1% gap target. It stops at 30 minutes, or after five minutes without improvement once an adoptable partition has been found. An external watchdog bounds termination overhead. There is no automatic second attempt.
+
+All attempt artifacts are written here. `contract.json` freezes the inputs, code, baseline and acceptance criterion; `best.json` points to the checked assignment; `result.json` records the outcome. Adoption of an improved partition would require fresh TRAIN/DEV negatives, boundary checks, token exports and a new completion manifest. The original and ILP tests stay unchanged.

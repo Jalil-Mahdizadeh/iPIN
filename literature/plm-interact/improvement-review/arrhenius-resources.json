@@ -1,0 +1,85 @@
+{
+  "timestamp_utc": "2026-09-28T18:57:37.997225+00:00",
+  "commands": {
+    "gpu": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,memory.total,driver_version",
+        "--format=csv"
+      ],
+      "returncode": 0,
+      "output": "name, memory.total [MiB], driver_version\nNVIDIA GH200 120GB, 97871 MiB, 580.159.04\n"
+    },
+    "partition": {
+      "command": [
+        "scontrol",
+        "show",
+        "partition",
+        "gpu"
+      ],
+      "returncode": 0,
+      "output": "PartitionName=gpu\n   AllowGroups=ALL AllowAccounts=ALL AllowQos=ALL\n   AllocNodes=ALL Default=NO QoS=N/A\n   DefaultTime=02:00:00 DisableRootJobs=YES ExclusiveUser=NO ExclusiveTopo=NO GraceTime=0 Hidden=NO\n   MaxNodes=UNLIMITED MaxTime=3-00:00:00 MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED\n   Nodes=n[21-212,405-594]\n   PriorityJobFactor=1 PriorityTier=1 RootOnly=NO ReqResv=NO OverSubscribe=NO\n   OverTimeLimit=NONE PreemptMode=REQUEUE\n   State=UP TotalCPUs=110016 TotalNodes=382 SelectTypeParameters=NONE\n   JobDefaults=DefCpuPerGPU=72\n   DefMemPerCPU=1459 MaxMemPerNode=UNLIMITED\n   TRES=cpu=110016,mem=185596228M,node=382,billing=1766,gres/gpu=1528,gres/gpu:nvidia_gh200_120gb=1528\n   TRESBillingWeights=CPU=0.013888888888888888,Mem=0.009745002593274616G,GRES/gpu:nvidia_gh200_120gb=1.0\n\n"
+    },
+    "node": {
+      "command": [
+        "scontrol",
+        "show",
+        "node",
+        "n423"
+      ],
+      "returncode": 0,
+      "output": "NodeName=n423 Arch=aarch64 CoresPerSocket=72 \n   CPUAlloc=160 CPUEfctv=288 CPUTot=288 CPULoad=2.58\n   AvailableFeatures=(null)\n   ActiveFeatures=(null)\n   Gres=gpu:nvidia_gh200_120gb:4(S:0-3)\n   NodeAddr=n423 NodeHostName=n423 Version=25.05.10-0pre1\n   OS=Linux 5.14.0-687.49.1.el9_8.aarch64+64k #1 SMP PREEMPT_DYNAMIC Mon Sep 21 10:34:58 EDT 2026 \n   RealMemory=485854 AllocMem=233440 FreeMem=728324 Sockets=4 Boards=1\n   MemSpecLimit=65536\n   State=MIXED ThreadsPerCore=1 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A\n   Partitions=gpu \n   BootTime=2026-09-25T19:49:08 SlurmdStartTime=2026-09-25T19:53:22\n   LastBusyTime=2026-09-25T20:15:00 ResumeAfterTime=None\n   CfgTRES=cpu=288,mem=485854M,billing=4,gres/gpu=4,gres/gpu:nvidia_gh200_120gb=4\n   AllocTRES=cpu=160,mem=233440M,gres/gpu=3,gres/gpu:nvidia_gh200_120gb=3\n   CurrentWatts=0 AveWatts=0\n\n"
+    },
+    "interactive_allocation": {
+      "command": [
+        "scontrol",
+        "show",
+        "job",
+        "3085063"
+      ],
+      "returncode": 0,
+      "output": "JobId=3085063 JobName=interactive\n   UserId=jalil(4001991) GroupId=jalil(4001991) MCS_label=N/A\n   Priority=715235 Nice=0 Account=naiss2025-3-10-gpu QOS=normal\n   JobState=RUNNING Reason=None Dependency=(null)\n   Requeue=0 Restarts=0 BatchFlag=0 Reboot=0 ExitCode=0:0\n   RunTime=11:23:41 TimeLimit=1-00:00:00 TimeMin=N/A\n   SubmitTime=2026-09-28T09:33:57 EligibleTime=2026-09-28T09:33:57\n   AccrueTime=Unknown\n   StartTime=2026-09-28T09:33:57 EndTime=2026-09-29T09:34:00 Deadline=N/A\n   PreemptEligibleTime=2026-09-28T09:33:57 PreemptTime=None\n   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-28T09:33:57 Scheduler=Main\n   Partition=gpu AllocNode:Sid=arrhenius3:461150\n   ReqNodeList=(null) ExcNodeList=(null)\n   NodeList=n423\n   BatchHost=n423\n   NumNodes=1 NumCPUs=72 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*\n   ReqTRES=cpu=1,mem=1459M,node=1,gres/gpu=1\n   AllocTRES=cpu=72,mem=105048M,node=1,billing=1,gres/gpu=1,gres/gpu:nvidia_gh200_120gb=1\n   Socks/Node=* NtasksPerN:B:S:C=0:0:*:1 CoreSpec=*\n   MinCPUsNode=1 MinMemoryCPU=1459M MinTmpDiskNode=0\n   Features=(null) DelayBoot=00:00:00\n   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)\n   Command=/bin/bash\n   WorkDir=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI\n   CpusPerTres=gpu:72\n   TresPerJob=gres/gpu:1\n   \n\n"
+    },
+    "association": {
+      "command": [
+        "sacctmgr",
+        "-n",
+        "-P",
+        "show",
+        "assoc",
+        "where",
+        "user=jalil",
+        "account=naiss2025-3-10-gpu",
+        "format=Cluster,Account,User,DefaultQOS,QOS,GrpTRESMins,MaxTRESMins,MaxJobs,MaxSubmitJobs"
+      ],
+      "returncode": 0,
+      "output": "arrhenius|naiss2025-3-10-gpu|jalil|normal|normal||||\n"
+    },
+    "storage_quota": {
+      "command": [
+        "storagequota",
+        "--directory",
+        "/nobackup/proj/disk/theo-storage",
+        "--json"
+      ],
+      "returncode": 0,
+      "output": "[\n  {\n    \"path\": \"/nobackup/proj/disk/theo-storage\",\n    \"block_used_kib\": 8819574324,\n    \"block_quota_kib\": 16777216000,\n    \"block_limit_kib\": 52009369600,\n    \"files_used\": 697174,\n    \"files_quota\": 5000000,\n    \"files_limit\": 350000000,\n    \"grace_block\": \"-\",\n    \"grace_files\": \"-\"\n  }\n]\n"
+    },
+    "apptainer": {
+      "command": [
+        "apptainer",
+        "--version"
+      ],
+      "returncode": 0,
+      "output": "apptainer version 1.5.3-1.el9\n"
+    },
+    "project_usage": {
+      "command": [
+        "projinfo",
+        "naiss2025-3-10-gpu"
+      ],
+      "returncode": 0,
+      "output": "  Total:                                   1918.23\nNOTE: projinfo calculates Arrhenius GPU hours in a way that may not be fully reliable yet.\nIf the precise values are important to you, please cross-check against other sources of accounting info.\n(This will eventually be fixed, and this note removed)."
+    }
+  }
+}

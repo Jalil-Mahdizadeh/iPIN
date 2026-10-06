@@ -1,0 +1,61 @@
+{
+  "requested_at_utc": "2026-10-05T06:35:59.477809+00:00",
+  "user_instruction": "ok stop the jobs",
+  "method": "REQUEST_STOP: checkpoint at optimizer boundary, exit without requeue",
+  "runs": {
+    "esm2-native-ilp-seed2": {
+      "job_id": "3301121",
+      "best_at_request": {
+        "file": "update-000027374.pt",
+        "sha256": "8667e4af34346e4c8bcd2600dd06d21c64fe68ee82b8d99585c67cce102525e3",
+        "bytes": 7818552843,
+        "update": 27374,
+        "epoch": 2,
+        "next_chunk": 350408,
+        "world_size": 4,
+        "fingerprint": "d72b1cbc823743792301b32c590681f85c54be7c5fac871b88be927b0df06328",
+        "best_update": 27374,
+        "best_ap": 0.6153270385052271
+      },
+      "latest_at_request": {
+        "file": "update-000045400.pt",
+        "sha256": "c42ea30d58a46459bcee7a7a131a08e54087522312bb5c499aa9b74d26c5ed10",
+        "bytes": 7818552843,
+        "update": 45400,
+        "epoch": 4,
+        "next_chunk": 102544,
+        "world_size": 4,
+        "fingerprint": "d72b1cbc823743792301b32c590681f85c54be7c5fac871b88be927b0df06328",
+        "best_update": 27374,
+        "best_ap": 0.6153270385052271
+      }
+    },
+    "esmc-native-ilp-seed2": {
+      "job_id": "3301122",
+      "best_at_request": {
+        "file": "update-000021899.pt",
+        "sha256": "3417a51ff381c4e5e9682c95e094a40b2411538a21e0a3199ec3506faea46a23",
+        "bytes": 6900990095,
+        "update": 21899,
+        "epoch": 2,
+        "next_chunk": 8,
+        "world_size": 4,
+        "fingerprint": "31a5cf349a0eca57e245c3a4d745e9ef7d6e2427aa912187bc17f18812e83c25",
+        "best_update": 21899,
+        "best_ap": 0.5924616586439035
+      },
+      "latest_at_request": {
+        "file": "update-000045200.pt",
+        "sha256": "a630c41b5d7f805a6a08b686889accdad76203917898a158497dc0379b0d59d2",
+        "bytes": 6900990095,
+        "update": 45200,
+        "epoch": 4,
+        "next_chunk": 89744,
+        "world_size": 4,
+        "fingerprint": "31a5cf349a0eca57e245c3a4d745e9ef7d6e2427aa912187bc17f18812e83c25",
+        "best_update": 21899,
+        "best_ap": 0.5924616586439035
+      }
+    }
+  }
+}

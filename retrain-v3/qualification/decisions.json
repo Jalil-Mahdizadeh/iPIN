@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Synthetic scores and mocked completed loaders; real bootstrap, metric, promotion and stage orchestration code.",
+  "incomplete_production_runs_rejected": true,
+  "zero_gain_not_promoted": true,
+  "all_failed_arms_stop_confirmation": true,
+  "confounded_lr_and_readout_comparison_rejected": true,
+  "source_sha256": {
+    "scripts/compare_development.py": "9e3c406e9930056aae8f64327613d518e018a9a75670d3b3f04b3f79a0ea5201",
+    "scripts/metrics.py": "4e0ccc96e4d38d718550deb32bbd225ed5f6ca6bbf44f4070bd05814a47b41f2",
+    "scripts/qualify_decisions.py": "74fa331d3ed5f242d5cb9b7f2d41c8d7da4b981212566db0d6f4a3af69f3a501"
+  }
+}

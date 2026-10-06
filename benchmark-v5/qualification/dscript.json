@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-05T07:51:34.884637+00:00",
+  "signature": {
+    "scripts/dscript_benchmark.py": "1f5b26733388c53a629c8eadae8d75494fa4acb92e279076580a91bd4b1f507f",
+    "scripts/dscript/native_adapter.py": "0266c81f593870267ddadb8897499926176bde691aa8d3ee1d3467c93b296d7d",
+    "scripts/dscript/common.py": "20c67e528d2f6e50a7248c52db0bc92fab399e8feb159831e36fbb00172573b2",
+    "scripts/container_dscript.sh": "1affc4e130a3cd5169180fedc067a67c2ffac6754694215b745000e7a1f14279",
+    "provenance/dscript-runtime.json": "334b64c495d558fb8f6166221613e958520ab6154e6d2717c493d1bee01f375c",
+    "provenance/prepared.json": "a72b0d84c4577b0682d297b577dd0ecaddb9c042631a605125b8554fe898a3c1"
+  },
+  "fixture_ids": [
+    122,
+    2228,
+    1982,
+    2157
+  ],
+  "native_pairs": [
+    [
+      122,
+      2228
+    ],
+    [
+      2228,
+      1982
+    ],
+    [
+      1982,
+      1982
+    ]
+  ],
+  "native_probability_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "projection_cache_errors": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "long_pair": [
+    2157,
+    2228
+  ],
+  "long_pair_lengths": [
+    3703,
+    381
+  ],
+  "tiled_fullmap_error": 0.0,
+  "swap_error": 0.0,
+  "learned_state_sha256": "edc1e0725873828186cc53fd714be2b49e832c9ab532b818355afa4dc878fa3c",
+  "cache": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/dscript/runs/original-v1/projection_cache/CACHE.json",
+    "bytes": 1402,
+    "sha256": "4ff2e994aa21f3c0bdb20ff1d7f782404f573a9837611d57f5ec32f12758ec83"
+  },
+  "reference": "Unmodified human_v1 for supported lengths; same formula full-map vs tiled for long lengths",
+  "checkpoint": {
+    "path": "/opt/dscript/weights/dscript_human_v1.pt",
+    "bytes": 2539686,
+    "sha256": "9fc07ac14bb218a8b65288a9114b0c934e8f9c426a53274b0119ea2336b2a32a"
+  },
+  "encoder": {
+    "path": "/opt/dscript/weights/dscript_lm_v1.pt",
+    "bytes": 238235733,
+    "sha256": "b91f32fcd7d68460ca3c3e3bd2396c1f5826a333ad4ad4962b7f4ab3a410b17c"
+  }
+}

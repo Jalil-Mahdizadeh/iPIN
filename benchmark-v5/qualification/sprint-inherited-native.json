@@ -1,0 +1,35 @@
+{
+  "at_utc": "2026-09-17T18:53:53.117937+00:00",
+  "canonical_order_native_score_relative_errors": {
+    "canonical": 0.0,
+    "omp1": 0.0,
+    "reverse": 0.0,
+    "routing": 0.0,
+    "serial": 0.0
+  },
+  "cpu_affinity_count": 72,
+  "hsp_census": {
+    "canonical_sha256": "ebd1e5d5bbd0408c3d7571a5a587c8e3467c4fcebff0791056bc07641423f697",
+    "hsp_records": 2099,
+    "protein_pair_blocks": 1183,
+    "proteins_with_full_self_hsp": 150
+  },
+  "native_binaries_manifest": "0e4f4ebee1425853902d9adbdd4fd6d1ef011f6a2f6aa118a9eeaaca4a472944  bin/compute_HSPs\nd1d86fcf0d333aa5ac4d04a697982c30f99cc5551d91f6bf8d16de5991b8fdb4  bin/compute_HSPs_serial\n9cede113170ee9877d8ddd11323dedf10b399bd45366866ebc0de9847b5b19e9  bin/predict_interactions\n5c00d2d2b8525092dea95fcb482470dee1b9aeb65954324b511a6b4d1b388ea6  bin/predict_interactions_parallel\n",
+  "native_empty_graph_all_zero": true,
+  "pair_orientation_and_row_permutation_checked": true,
+  "passed": true,
+  "relative_tolerance": 1e-05,
+  "route_marker_is_not_ground_truth": true,
+  "serial_parallel_hsp_records_equal": true,
+  "toy_pairs": 300,
+  "unmodified_native_sources": true,
+  "wall_seconds": {
+    "parallel": 1.7363185750000412,
+    "prediction_canonical": 0.04540885599999456,
+    "prediction_omp1": 0.045714255997154396,
+    "prediction_reverse": 0.04699505100143142,
+    "prediction_routing": 0.0452817879995564,
+    "prediction_serial": 0.047265827997762244,
+    "serial": 110.0585106350045
+  }
+}

@@ -1,0 +1,1483 @@
+{
+  "checked_at_utc": "2026-10-01T18:54:30.864078+00:00",
+  "runs": {
+    "S0": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/runs/clean-residue-mean-official-seed2",
+      "status": {
+        "state": {
+          "update": 6910,
+          "cursor": {
+            "cycle": 2,
+            "offset": 116070
+          },
+          "epoch": 2,
+          "next_chunk": 116070,
+          "examples_seen": 442240,
+          "best_ap": 0.6571396551693898,
+          "best_update": 4000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 6000
+        },
+        "last_committed_update": 6900,
+        "attempt": "20261001T081404-3206610",
+        "phase": "training",
+        "seconds_since_launch": 38419.58770468901
+      },
+      "validations": [
+        {
+          "update": 1000,
+          "sha256": "792924844e24689230318da635b6d8f03750d27c5c315985dcb15613e566f04e",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.5929519969103879,
+            "auroc": 0.5722452721315467,
+            "bce": 0.6798118828853358,
+            "probability_mean": 0.5031654111852074,
+            "probability_std": 0.07257681972248894,
+            "probability_q01_q50_q99": [
+              0.42536651124863334,
+              0.4848679037272457,
+              0.8006920020959544
+            ],
+            "positive_mean_probability": 0.5147315768416739,
+            "negative_mean_probability": 0.49160002623516386,
+            "logit_std": 0.3144831774981755,
+            "distinct_pooled_logits": 10505
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.6604272648166875,
+              "auroc": 0.6161562219350316,
+              "bce": 0.6664356241237808,
+              "probability_mean": 0.5326502961395465,
+              "probability_std": 0.09123741143009192,
+              "probability_q01_q50_q99": [
+                0.4363818365677061,
+                0.5004882810947796,
+                0.8092759746879663
+              ],
+              "positive_mean_probability": 0.5514659963530253,
+              "negative_mean_probability": 0.5113501284683021,
+              "logit_std": 0.40196491360867154,
+              "distinct_pooled_logits": 3574
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.5862791311152898,
+              "auroc": 0.5688052547981661,
+              "bce": 0.6805562483326427,
+              "probability_mean": 0.49993208375603837,
+              "probability_std": 0.07062211700097425,
+              "probability_q01_q50_q99": [
+                0.4248891789445497,
+                0.4828672752107302,
+                0.800067893575815
+              ],
+              "positive_mean_probability": 0.5109235605723083,
+              "negative_mean_probability": 0.4890975117634993,
+              "logit_std": 0.3059919484459574,
+              "distinct_pooled_logits": 9582
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5474646156295279,
+              "auroc": 0.5452376195064497,
+              "bce": 0.6889451360319025,
+              "probability_mean": 0.49861302028128257,
+              "probability_std": 0.05535779882134693,
+              "probability_q01_q50_q99": [
+                0.4252065932348388,
+                0.4876581471466127,
+                0.6891675307805222
+              ],
+              "positive_mean_probability": 0.5037783627720488,
+              "negative_mean_probability": 0.49351011142255635,
+              "logit_std": 0.22778355545623563,
+              "distinct_pooled_logits": 2688
+            }
+          },
+          "ab_ba_logit_correlation": 0.843598549867386,
+          "absolute_orientation_logit_gap_mean": 0.0995880624518835
+        },
+        {
+          "update": 2000,
+          "sha256": "bcf4b498bd68e657ef3506e7164c2f836a8e67e118e5958a62b946406520041c",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.6332630211516306,
+            "auroc": 0.6259437767431917,
+            "bce": 0.6653576272296274,
+            "probability_mean": 0.48320842402963166,
+            "probability_std": 0.1166717106989518,
+            "probability_q01_q50_q99": [
+              0.2849738130736883,
+              0.47793487280082075,
+              0.8906213385928241
+            ],
+            "positive_mean_probability": 0.5102407038529871,
+            "negative_mean_probability": 0.45617796886235595,
+            "logit_std": 0.5322215758645646,
+            "distinct_pooled_logits": 8617
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.7009127485505267,
+              "auroc": 0.6612641556962303,
+              "bce": 0.6466567853580574,
+              "probability_mean": 0.531936295976987,
+              "probability_std": 0.134169569464406,
+              "probability_q01_q50_q99": [
+                0.2995148064537437,
+                0.5157418659712667,
+                0.8955226768697631
+              ],
+              "positive_mean_probability": 0.5683119057732864,
+              "negative_mean_probability": 0.490757568689979,
+              "logit_std": 0.6403724525471939,
+              "distinct_pooled_logits": 3324
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.6278595920120138,
+              "auroc": 0.6258607797665172,
+              "bce": 0.6656606073183322,
+              "probability_mean": 0.4798888488184451,
+              "probability_std": 0.1156002118265617,
+              "probability_q01_q50_q99": [
+                0.2833845866753151,
+                0.4756281553192718,
+                0.8902942261220291
+              ],
+              "positive_mean_probability": 0.5067297079077089,
+              "negative_mean_probability": 0.453431146636536,
+              "logit_std": 0.525700028522753,
+              "distinct_pooled_logits": 7903
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5742129961490932,
+              "auroc": 0.5835038377459634,
+              "bce": 0.6853432477465845,
+              "probability_mean": 0.4558848146310743,
+              "probability_std": 0.08302048298758165,
+              "probability_q01_q50_q99": [
+                0.29299972695009596,
+                0.4605315033125118,
+                0.6717591429596828
+              ],
+              "positive_mean_probability": 0.4684087542897928,
+              "negative_mean_probability": 0.4435122521640406,
+              "logit_std": 0.3438490161602995,
+              "distinct_pooled_logits": 2560
+            }
+          },
+          "ab_ba_logit_correlation": 0.8977889399976455,
+          "absolute_orientation_logit_gap_mean": 0.16456112247984483
+        },
+        {
+          "update": 3000,
+          "sha256": "bdceaadec4d1c3ccd01f1ef752891725c6228bfc60963c40c882c0481d5396ec",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.6203969711147949,
+            "auroc": 0.6252123473608463,
+            "bce": 0.6963557763912481,
+            "probability_mean": 0.5393052162832924,
+            "probability_std": 0.20325733413671856,
+            "probability_q01_q50_q99": [
+              0.17106119167858438,
+              0.5306013537760454,
+              0.9155072460249908
+            ],
+            "positive_mean_probability": 0.5838026566347773,
+            "negative_mean_probability": 0.49481077947148705,
+            "logit_std": 0.957950216765138,
+            "distinct_pooled_logits": 7079
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.6887724828696598,
+              "auroc": 0.6565497886228725,
+              "bce": 0.6687193902437384,
+              "probability_mean": 0.5777372045751784,
+              "probability_std": 0.202254107184404,
+              "probability_q01_q50_q99": [
+                0.17957730694413446,
+                0.5753494347494654,
+                0.9169815841888405
+              ],
+              "positive_mean_probability": 0.6298057197787306,
+              "negative_mean_probability": 0.5187934452866502,
+              "logit_std": 0.9687724280402034,
+              "distinct_pooled_logits": 2837
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.6150464835373713,
+              "auroc": 0.6240384508870577,
+              "bce": 0.7005697729574756,
+              "probability_mean": 0.5398249034352257,
+              "probability_std": 0.20671988075161934,
+              "probability_q01_q50_q99": [
+                0.16995623014518763,
+                0.5291341359714953,
+                0.916708077443256
+              ],
+              "positive_mean_probability": 0.5848053681176971,
+              "negative_mean_probability": 0.49548654099254424,
+              "logit_std": 0.9756278596490837,
+              "distinct_pooled_logits": 6602
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5779316008764204,
+              "auroc": 0.6006290971996745,
+              "bce": 0.6890458691897738,
+              "probability_mean": 0.4870574521478973,
+              "probability_std": 0.1529058972769561,
+              "probability_q01_q50_q99": [
+                0.18068421416480296,
+                0.4978027485193523,
+                0.8019405744314446
+              ],
+              "positive_mean_probability": 0.5136860914430734,
+              "negative_mean_probability": 0.46075067392397623,
+              "logit_std": 0.6675660683044431,
+              "distinct_pooled_logits": 2587
+            }
+          },
+          "ab_ba_logit_correlation": 0.895668900167992,
+          "absolute_orientation_logit_gap_mean": 0.31291303107095475
+        },
+        {
+          "update": 4000,
+          "sha256": "f8bf27ae8d231ed9c7b88b5cf3d3d06b420c34959f3961028cf5db9b192dc782",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.6571396551693898,
+            "auroc": 0.6566023973454888,
+            "bce": 0.6603487189590148,
+            "probability_mean": 0.44968637205627915,
+            "probability_std": 0.16798627460021892,
+            "probability_q01_q50_q99": [
+              0.1571368534705856,
+              0.4338465348259443,
+              0.9230391643039738
+            ],
+            "positive_mean_probability": 0.49641226286821427,
+            "negative_mean_probability": 0.40296363520254946,
+            "logit_std": 0.7844501972991239,
+            "distinct_pooled_logits": 6805
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.737671036161341,
+              "auroc": 0.7083259041026877,
+              "bce": 0.6218214849131072,
+              "probability_mean": 0.49813049246287583,
+              "probability_std": 0.18717063945744036,
+              "probability_q01_q50_q99": [
+                0.17106119167858438,
+                0.4670886703572909,
+                0.9429286027746023
+              ],
+              "positive_mean_probability": 0.562201586319252,
+              "negative_mean_probability": 0.42559930698814014,
+              "logit_std": 0.9193478679217704,
+              "distinct_pooled_logits": 2998
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.6497591566738439,
+              "auroc": 0.6548806792731459,
+              "bce": 0.6612228045596014,
+              "probability_mean": 0.4486084316979984,
+              "probability_std": 0.1666361082789385,
+              "probability_q01_q50_q99": [
+                0.15559099407709326,
+                0.4338615265080101,
+                0.9163011220226474
+              ],
+              "positive_mean_probability": 0.49461443227981033,
+              "negative_mean_probability": 0.4032591730201641,
+              "logit_std": 0.7735577816806836,
+              "distinct_pooled_logits": 6424
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.6004537781200683,
+              "auroc": 0.610052409978271,
+              "bce": 0.6990781807128176,
+              "probability_mean": 0.4007812147988642,
+              "probability_std": 0.1378212394609851,
+              "probability_q01_q50_q99": [
+                0.15834622743631607,
+                0.39105706431519904,
+                0.7268135846252497
+              ],
+              "positive_mean_probability": 0.42771941777590716,
+              "negative_mean_probability": 0.3741686145975308,
+              "logit_std": 0.6119741073926301,
+              "distinct_pooled_logits": 2259
+            }
+          },
+          "ab_ba_logit_correlation": 0.8994643659418957,
+          "absolute_orientation_logit_gap_mean": 0.2539293619489536
+        },
+        {
+          "update": 5000,
+          "sha256": "23896f7e932c7f7c2d471079c0bcc4e5be092f4dc9033249cf35b4aa356950a3",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.6455065657341943,
+            "auroc": 0.6448081842020716,
+            "bce": 0.6928346637497556,
+            "probability_mean": 0.5711372294738234,
+            "probability_std": 0.21007131142136984,
+            "probability_q01_q50_q99": [
+              0.14854056798294435,
+              0.570450988059561,
+              0.9585377272885904
+            ],
+            "positive_mean_probability": 0.624536592735439,
+            "negative_mean_probability": 0.5177414706241725,
+            "logit_std": 1.0490002993379035,
+            "distinct_pooled_logits": 6530
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.7261386066113741,
+              "auroc": 0.6923225198782117,
+              "bce": 0.6453821224655096,
+              "probability_mean": 0.5898555671400235,
+              "probability_std": 0.2112159390017354,
+              "probability_q01_q50_q99": [
+                0.15662018336345096,
+                0.5877064971521543,
+                0.9606574967357419
+              ],
+              "positive_mean_probability": 0.6564604420756215,
+              "negative_mean_probability": 0.5144560344224365,
+              "logit_std": 1.0979417227206074,
+              "distinct_pooled_logits": 2833
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.6384740004880634,
+              "auroc": 0.6417363930280623,
+              "bce": 0.698033557716979,
+              "probability_mean": 0.570033887372529,
+              "probability_std": 0.21236471406811466,
+              "probability_q01_q50_q99": [
+                0.14657520915950845,
+                0.5691343781572562,
+                0.9585377272885904
+              ],
+              "positive_mean_probability": 0.6232061202371478,
+              "negative_mean_probability": 0.5176206953505966,
+              "logit_std": 1.060841521928259,
+              "distinct_pooled_logits": 6155
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5949068940909668,
+              "auroc": 0.6144004368155449,
+              "bce": 0.7002079358559979,
+              "probability_mean": 0.5589600274710947,
+              "probability_std": 0.18294846815593022,
+              "probability_q01_q50_q99": [
+                0.1576549093940152,
+                0.5663783268311219,
+                0.8813450208718989
+              ],
+              "positive_mean_probability": 0.5956802615375895,
+              "negative_mean_probability": 0.5226836318502064,
+              "logit_std": 0.8377359912159301,
+              "distinct_pooled_logits": 2476
+            }
+          },
+          "ab_ba_logit_correlation": 0.9130699215322254,
+          "absolute_orientation_logit_gap_mean": 0.3214906480520035
+        },
+        {
+          "update": 6000,
+          "sha256": "762e6e40fd4d928ae2f772c240d8f5d1bc1dd976b6b43041a1ece3ca1927dbf4",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.6434715033414529,
+            "auroc": 0.6405244465504327,
+            "bce": 0.7310789570777807,
+            "probability_mean": 0.4707631039827381,
+            "probability_std": 0.2682574769636121,
+            "probability_q01_q50_q99": [
+              0.06954174450582809,
+              0.43542132363588604,
+              0.9704646607088951
+            ],
+            "positive_mean_probability": 0.536135077612786,
+            "negative_mean_probability": 0.40539554290575314,
+            "logit_std": 1.430070888320481,
+            "distinct_pooled_logits": 6778
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.7169888567101763,
+              "auroc": 0.6790681882899263,
+              "bce": 0.6813747977801456,
+              "probability_mean": 0.5279110323259095,
+              "probability_std": 0.27051208179044317,
+              "probability_q01_q50_q99": [
+                0.07838284180609222,
+                0.5048826572854919,
+                0.9724147177732099
+              ],
+              "positive_mean_probability": 0.6066895593526322,
+              "negative_mean_probability": 0.4387304110615031,
+              "logit_std": 1.4869437248590518,
+              "distinct_pooled_logits": 2846
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.6370749907472916,
+              "auroc": 0.6386340294751227,
+              "bce": 0.7353285162801643,
+              "probability_mean": 0.47098597438937995,
+              "probability_std": 0.2700331821807783,
+              "probability_q01_q50_q99": [
+                0.06954174450582809,
+                0.43518127083048463,
+                0.9706877692486436
+              ],
+              "positive_mean_probability": 0.5361888003452828,
+              "negative_mean_probability": 0.40671392762578823,
+              "logit_std": 1.439315747797108,
+              "distinct_pooled_logits": 6362
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5998367395765081,
+              "auroc": 0.6128533269885754,
+              "bce": 0.7505026926690518,
+              "probability_mean": 0.3984508952725437,
+              "probability_std": 0.22777834033403396,
+              "probability_q01_q50_q99": [
+                0.06656918897050167,
+                0.36534346268836193,
+                0.8816149031928324
+              ],
+              "positive_mean_probability": 0.4431008569003241,
+              "negative_mean_probability": 0.35434061891826574,
+              "logit_std": 1.129799188524407,
+              "distinct_pooled_logits": 2347
+            }
+          },
+          "ab_ba_logit_correlation": 0.864122980553074,
+          "absolute_orientation_logit_gap_mean": 0.5699395488069648
+        }
+      ],
+      "training_bce_last_500_update_windows": {
+        "1000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6874386654235423,
+          "median_preclip_gradient_norm": 3.41192364692688
+        },
+        "2000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6704099701205268,
+          "median_preclip_gradient_norm": 5.491050958633423
+        },
+        "3000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6340356124099344,
+          "median_preclip_gradient_norm": 8.01856541633606
+        },
+        "4000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6167536727711558,
+          "median_preclip_gradient_norm": 9.59402084350586
+        },
+        "5000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6054387392580974,
+          "median_preclip_gradient_norm": 10.439626693725586
+        },
+        "6000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.5490885240444914,
+          "median_preclip_gradient_norm": 19.687108993530273
+        }
+      }
+    },
+    "S1": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/runs/esm2-chain-aware-official-seed2",
+      "status": {
+        "state": {
+          "update": 3020,
+          "cursor": {
+            "cycle": 1,
+            "offset": 30195
+          },
+          "epoch": 1,
+          "next_chunk": 30195,
+          "examples_seen": 193280,
+          "best_ap": 0.5303839349383939,
+          "best_update": 1000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 3000
+        },
+        "last_committed_update": 3000,
+        "attempt": "20261001T103933-3210885",
+        "phase": "training",
+        "seconds_since_launch": 29690.065249975014
+      },
+      "validations": [
+        {
+          "update": 1000,
+          "sha256": "ba462c61c43de511c8a0d1f1ac93b106d441f101a6af3ef0f6e5e558f1956fe0",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.5303839349383939,
+            "auroc": 0.5376723115991427,
+            "bce": 0.6915036436001123,
+            "probability_mean": 0.4934938844106062,
+            "probability_std": 0.016660734584109715,
+            "probability_q01_q50_q99": [
+              0.4477017491908229,
+              0.491532181777627,
+              0.5337273914162699
+            ],
+            "positive_mean_probability": 0.4946341303483008,
+            "negative_mean_probability": 0.4923537154385504,
+            "logit_std": 0.06674511056234805,
+            "distinct_pooled_logits": 8063
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.5657062434647945,
+              "auroc": 0.5526753444461481,
+              "bce": 0.6907620583135952,
+              "probability_mean": 0.5021350618090503,
+              "probability_std": 0.015905100356251554,
+              "probability_q01_q50_q99": [
+                0.4662707858627157,
+                0.49888611024118856,
+                0.5360700445712753
+              ],
+              "positive_mean_probability": 0.5033752785981748,
+              "negative_mean_probability": 0.500731084000235,
+              "logit_std": 0.06367971187105123,
+              "distinct_pooled_logits": 3017
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.5256953607971899,
+              "auroc": 0.5376636731633669,
+              "bce": 0.6914366266791081,
+              "probability_mean": 0.4924947467641735,
+              "probability_std": 0.016777292934292694,
+              "probability_q01_q50_q99": [
+                0.4463740424127674,
+                0.4905406795678021,
+                0.5333974639511686
+              ],
+              "positive_mean_probability": 0.4936406837853698,
+              "negative_mean_probability": 0.4913651681495245,
+              "logit_std": 0.06721829325388118,
+              "distinct_pooled_logits": 7360
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5132929770380172,
+              "auroc": 0.5012721283288618,
+              "bce": 0.6930693385068446,
+              "probability_mean": 0.4926639383036106,
+              "probability_std": 0.012944506433085765,
+              "probability_q01_q50_q99": [
+                0.453985569904732,
+                0.4919745662581062,
+                0.5251460032880366
+              ],
+              "positive_mean_probability": 0.4928809417149587,
+              "negative_mean_probability": 0.49244955781826594,
+              "logit_std": 0.05184596303569098,
+              "distinct_pooled_logits": 2644
+            }
+          },
+          "ab_ba_logit_correlation": 0.8469142863238859,
+          "absolute_orientation_logit_gap_mean": 0.030078630184418337
+        },
+        {
+          "update": 2000,
+          "sha256": "4daf1a43e3aa80712b573cf10518cfaaddbdee05f5982ea9cd099ffb85b87650",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.5246110025281387,
+            "auroc": 0.5337863509087668,
+            "bce": 0.6928739065115473,
+            "probability_mean": 0.474050894882048,
+            "probability_std": 0.021623757073290926,
+            "probability_q01_q50_q99": [
+              0.43758314841204154,
+              0.47657965106367606,
+              0.5099997345657401
+            ],
+            "positive_mean_probability": 0.4753275972847111,
+            "negative_mean_probability": 0.47277427865571986,
+            "logit_std": 0.08684501214157665,
+            "distinct_pooled_logits": 5795
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.5434645763539669,
+              "auroc": 0.5283244255580137,
+              "bce": 0.6947254647158638,
+              "probability_mean": 0.48241141232508217,
+              "probability_std": 0.01385245555226016,
+              "probability_q01_q50_q99": [
+                0.4514474219793086,
+                0.48590461464718054,
+                0.5053156566418926
+              ],
+              "positive_mean_probability": 0.4831662083949386,
+              "negative_mean_probability": 0.48155695128121295,
+              "logit_std": 0.05554720839600203,
+              "distinct_pooled_logits": 1967
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.5205952892816635,
+              "auroc": 0.532947438544082,
+              "bce": 0.6925725144682878,
+              "probability_mean": 0.4743724217864553,
+              "probability_std": 0.021550416817566465,
+              "probability_q01_q50_q99": [
+                0.43986764756854496,
+                0.47657965106367606,
+                0.510008428595943
+              ],
+              "positive_mean_probability": 0.47560498145201596,
+              "negative_mean_probability": 0.47315745707745,
+              "logit_std": 0.08653482264060626,
+              "distinct_pooled_logits": 5127
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5335731828115254,
+              "auroc": 0.5352775711057625,
+              "bce": 0.6935501747744083,
+              "probability_mean": 0.4606453992869102,
+              "probability_std": 0.02388305163149141,
+              "probability_q01_q50_q99": [
+                0.4355413614003171,
+                0.4512660502645216,
+                0.5115845353272296
+              ],
+              "positive_mean_probability": 0.462339205460822,
+              "negative_mean_probability": 0.45897206619326303,
+              "logit_std": 0.09601925207721843,
+              "distinct_pooled_logits": 1433
+            }
+          },
+          "ab_ba_logit_correlation": 0.952214061392615,
+          "absolute_orientation_logit_gap_mean": 0.02226014516915998
+        },
+        {
+          "update": 3000,
+          "sha256": "b3785c6aa14a5f12173d7daff2743788fd8bae9e2873c9d4e51c0cd9eeac46c0",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.5246448016748989,
+            "auroc": 0.5332498063169715,
+            "bce": 0.6911668235472579,
+            "probability_mean": 0.49743595812558,
+            "probability_std": 0.019739756803521757,
+            "probability_q01_q50_q99": [
+              0.4407099530229373,
+              0.5054395436873066,
+              0.5249426576519528
+            ],
+            "positive_mean_probability": 0.49881994706646055,
+            "negative_mean_probability": 0.4960520626027853,
+            "logit_std": 0.07914547231746125,
+            "distinct_pooled_logits": 8259
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.5613142415606435,
+              "auroc": 0.5306569119225462,
+              "bce": 0.6903422387631005,
+              "probability_mean": 0.5087794867883442,
+              "probability_std": 0.012893187719531506,
+              "probability_q01_q50_q99": [
+                0.45859115650038557,
+                0.5095050803359518,
+                0.5340937405037557
+              ],
+              "positive_mean_probability": 0.5098158416219138,
+              "negative_mean_probability": 0.5076062893271025,
+              "logit_std": 0.05164147226342451,
+              "distinct_pooled_logits": 2412
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.5175171555884595,
+              "auroc": 0.5319143460709908,
+              "bce": 0.6911197857616369,
+              "probability_mean": 0.49723332857952696,
+              "probability_std": 0.019312263906080783,
+              "probability_q01_q50_q99": [
+                0.4409506746470935,
+                0.5053251160310107,
+                0.5226285746005912
+              ],
+              "positive_mean_probability": 0.49861505807788103,
+              "negative_mean_probability": 0.4958713234573424,
+              "logit_std": 0.07743101316915706,
+              "distinct_pooled_logits": 7604
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5182333379034842,
+              "auroc": 0.5230370741114162,
+              "bce": 0.6926389207791627,
+              "probability_mean": 0.48549750241123063,
+              "probability_std": 0.022941777638741372,
+              "probability_q01_q50_q99": [
+                0.4364611035960605,
+                0.4936908256107668,
+                0.5203135197470904
+              ],
+              "positive_mean_probability": 0.48640458983137624,
+              "negative_mean_probability": 0.4846013789808531,
+              "logit_std": 0.09204673465741887,
+              "distinct_pooled_logits": 2525
+            }
+          },
+          "ab_ba_logit_correlation": 0.9313008533962756,
+          "absolute_orientation_logit_gap_mean": 0.024319945025779582
+        }
+      ],
+      "training_bce_last_500_update_windows": {
+        "1000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6936900257878006,
+          "median_preclip_gradient_norm": 5.732203006744385
+        },
+        "2000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6923899561539293,
+          "median_preclip_gradient_norm": 4.601526498794556
+        },
+        "3000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.691031277757138,
+          "median_preclip_gradient_norm": 2.3189175128936768
+        }
+      }
+    },
+    "C0": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/runs/esmc-standard-official-seed2",
+      "status": {
+        "state": {
+          "update": 5300,
+          "cursor": {
+            "cycle": 2,
+            "offset": 13030
+          },
+          "epoch": 2,
+          "next_chunk": 13030,
+          "examples_seen": 339200,
+          "best_ap": 0.6502166885652778,
+          "best_update": 4000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 5000
+        },
+        "last_committed_update": 5200,
+        "attempt": "20261001T103935-3210886",
+        "phase": "training",
+        "seconds_since_launch": 29671.10505063302
+      },
+      "validations": [
+        {
+          "update": 1000,
+          "sha256": "4744724bbf010ece8f64de7b83033c083faf0c00ed946d895c911b263bf7e22d",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.5698884464781765,
+            "auroc": 0.5467864376862361,
+            "bce": 0.6895180566637711,
+            "probability_mean": 0.4913484042016502,
+            "probability_std": 0.019251608118421724,
+            "probability_q01_q50_q99": [
+              0.47852883753932274,
+              0.4858131351447827,
+              0.5736784074525096
+            ],
+            "positive_mean_probability": 0.49359863986984426,
+            "negative_mean_probability": 0.489098320422465,
+            "logit_std": 0.07734859951490633,
+            "distinct_pooled_logits": 3398
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.6456773877815565,
+              "auroc": 0.5925391540534029,
+              "bce": 0.6837332518475157,
+              "probability_mean": 0.5030744808859672,
+              "probability_std": 0.028058041830524138,
+              "probability_q01_q50_q99": [
+                0.4813648369994583,
+                0.48800889147282334,
+                0.5727227762392935
+              ],
+              "positive_mean_probability": 0.5080575315992489,
+              "negative_mean_probability": 0.4974334569270936,
+              "logit_std": 0.11268643173903846,
+              "distinct_pooled_logits": 1514
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.5621119552623514,
+              "auroc": 0.5447815473030515,
+              "bce": 0.6898757941830415,
+              "probability_mean": 0.49037663449561925,
+              "probability_std": 0.018242541704312956,
+              "probability_q01_q50_q99": [
+                0.47846791525419796,
+                0.48556919446874724,
+                0.5736784074525096
+              ],
+              "positive_mean_probability": 0.4923738370516629,
+              "negative_mean_probability": 0.4884079422771989,
+              "logit_std": 0.0733118157714327,
+              "distinct_pooled_logits": 2920
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5280875121619388,
+              "auroc": 0.5092472490348124,
+              "bce": 0.6931174407020281,
+              "probability_mean": 0.4864649339172693,
+              "probability_std": 0.005257200099245294,
+              "probability_q01_q50_q99": [
+                0.4782851522491421,
+                0.4851728055857058,
+                0.4960710189835092
+              ],
+              "positive_mean_probability": 0.4866093101049206,
+              "negative_mean_probability": 0.4863223028084373,
+              "logit_std": 0.02104396270073382,
+              "distinct_pooled_logits": 824
+            }
+          },
+          "ab_ba_logit_correlation": 0.878948468257705,
+          "absolute_orientation_logit_gap_mean": 0.019346309672197325
+        },
+        {
+          "update": 2000,
+          "sha256": "31de43b504d5dbbb072921b3a16357b699b8d3d574801e37e23f931971efc6d7",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.6046307117672349,
+            "auroc": 0.5859754919831425,
+            "bce": 0.6799234232217521,
+            "probability_mean": 0.49978589363609965,
+            "probability_std": 0.06504874518935558,
+            "probability_q01_q50_q99": [
+              0.4029957962201487,
+              0.48239863356060897,
+              0.6482437057879583
+            ],
+            "positive_mean_probability": 0.5105201756916569,
+            "negative_mean_probability": 0.4890523361355244,
+            "logit_std": 0.2640802299608629,
+            "distinct_pooled_logits": 6647
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.6898316262176893,
+              "auroc": 0.6428049635292314,
+              "bce": 0.6649136325218802,
+              "probability_mean": 0.5343371623762015,
+              "probability_std": 0.0775761511936379,
+              "probability_q01_q50_q99": [
+                0.4087486931744131,
+                0.5231767384159393,
+                0.6513548646660542
+              ],
+              "positive_mean_probability": 0.5521359719173212,
+              "negative_mean_probability": 0.5141881579132791,
+              "logit_std": 0.316460274439852,
+              "distinct_pooled_logits": 2360
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.5969558059938207,
+              "auroc": 0.5830809382480913,
+              "bce": 0.6806540266461593,
+              "probability_mean": 0.4959815893568874,
+              "probability_std": 0.06349960010410989,
+              "probability_q01_q50_q99": [
+                0.4016878051229205,
+                0.4787116082197373,
+                0.6469064710963125
+              ],
+              "positive_mean_probability": 0.5062242716766131,
+              "negative_mean_probability": 0.4858851227177996,
+              "logit_std": 0.2576142688969359,
+              "distinct_pooled_logits": 6128
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5442456398904854,
+              "auroc": 0.5377536369527811,
+              "bce": 0.6911959781457504,
+              "probability_mean": 0.49460187074027046,
+              "probability_std": 0.04851158831163054,
+              "probability_q01_q50_q99": [
+                0.41727148033425965,
+                0.48438770623304717,
+                0.5945512642417856
+              ],
+              "positive_mean_probability": 0.4979342748918811,
+              "negative_mean_probability": 0.49130974544625383,
+              "logit_std": 0.19530705685545333,
+              "distinct_pooled_logits": 2238
+            }
+          },
+          "ab_ba_logit_correlation": 0.8789300701237137,
+          "absolute_orientation_logit_gap_mean": 0.08308462163351016
+        },
+        {
+          "update": 3000,
+          "sha256": "708ffa93225f742ab21421316ada69130eb2424607cdfffaa603d1047d71066c",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.6276152405852478,
+            "auroc": 0.6223558706883114,
+            "bce": 0.6689945130392393,
+            "probability_mean": 0.5062602257585586,
+            "probability_std": 0.1254018450520138,
+            "probability_q01_q50_q99": [
+              0.27357439102480946,
+              0.4992752080273676,
+              0.7759445507683053
+            ],
+            "positive_mean_probability": 0.5336982275833021,
+            "negative_mean_probability": 0.47882407597578786,
+            "logit_std": 0.5305630747582387,
+            "distinct_pooled_logits": 6799
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.6985032358474854,
+              "auroc": 0.6561154798151271,
+              "bce": 0.6532383177465362,
+              "probability_mean": 0.5605531722289039,
+              "probability_std": 0.13266846168308163,
+              "probability_q01_q50_q99": [
+                0.2798284924581987,
+                0.5542292090130277,
+                0.7779753192320792
+              ],
+              "positive_mean_probability": 0.5948513263182178,
+              "negative_mean_probability": 0.5217262125820223,
+              "logit_std": 0.5706671138324048,
+              "distinct_pooled_logits": 2736
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.6227274243324908,
+              "auroc": 0.6231528575757228,
+              "bce": 0.6690188276295577,
+              "probability_mean": 0.5036531575811344,
+              "probability_std": 0.12543833067091878,
+              "probability_q01_q50_q99": [
+                0.2720245510940225,
+                0.49731447894950087,
+                0.775264699264738
+              ],
+              "positive_mean_probability": 0.5313234666593584,
+              "negative_mean_probability": 0.47637784592146143,
+              "logit_std": 0.5299174122575193,
+              "distinct_pooled_logits": 6280
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5559150717244705,
+              "auroc": 0.5729913616209629,
+              "bce": 0.6880926325238854,
+              "probability_mean": 0.4651367525072723,
+              "probability_std": 0.08921685977967604,
+              "probability_q01_q50_q99": [
+                0.2823268023975346,
+                0.4670886703572909,
+                0.6569532133732655
+              ],
+              "positive_mean_probability": 0.4767220587683993,
+              "negative_mean_probability": 0.45369147815099364,
+              "logit_std": 0.3682423207797455,
+              "distinct_pooled_logits": 2443
+            }
+          },
+          "ab_ba_logit_correlation": 0.9101756579918711,
+          "absolute_orientation_logit_gap_mean": 0.15255144390858222
+        },
+        {
+          "update": 4000,
+          "sha256": "079e0265334e538612b2f0e0bb7be3ba292e5ea6ae3d7cdeff8b2182fcdcb5a6",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.6502166885652778,
+            "auroc": 0.6561094146332284,
+            "bce": 0.655655927961944,
+            "probability_mean": 0.48642188580635315,
+            "probability_std": 0.15399211739551336,
+            "probability_q01_q50_q99": [
+              0.223377061783443,
+              0.47925995426377577,
+              0.8140528050985784
+            ],
+            "positive_mean_probability": 0.528447276837874,
+            "negative_mean_probability": 0.4443993314532686,
+            "logit_std": 0.6686292609371575,
+            "distinct_pooled_logits": 6442
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.7182783869850186,
+              "auroc": 0.6954671653560554,
+              "bce": 0.6303974502678938,
+              "probability_mean": 0.5294619321073395,
+              "probability_std": 0.171859661455351,
+              "probability_q01_q50_q99": [
+                0.23129477281882718,
+                0.5158638143448011,
+                0.8300437698548124
+              ],
+              "positive_mean_probability": 0.5842857878098029,
+              "negative_mean_probability": 0.4673990109512059,
+              "logit_std": 0.7587506751721353,
+              "distinct_pooled_logits": 2731
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.6453493392937071,
+              "auroc": 0.6560305589419183,
+              "bce": 0.6559976907760655,
+              "probability_mean": 0.4824789193151432,
+              "probability_std": 0.1534898986812382,
+              "probability_q01_q50_q99": [
+                0.22270013882530884,
+                0.4737180931002261,
+                0.8104789086703224
+              ],
+              "positive_mean_probability": 0.5245260777296692,
+              "negative_mean_probability": 0.4410319897952133,
+              "logit_std": 0.665327921410831,
+              "distinct_pooled_logits": 6026
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5750823334102892,
+              "auroc": 0.5978207860050767,
+              "bce": 0.6833096639089746,
+              "probability_mean": 0.4721769667167176,
+              "probability_std": 0.12430200982541578,
+              "probability_q01_q50_q99": [
+                0.22815650216092537,
+                0.4876733966387142,
+                0.7384200055832784
+              ],
+              "positive_mean_probability": 0.4935512895038367,
+              "negative_mean_probability": 0.4510609959375008,
+              "logit_std": 0.5281329041496582,
+              "distinct_pooled_logits": 2519
+            }
+          },
+          "ab_ba_logit_correlation": 0.9215868173838576,
+          "absolute_orientation_logit_gap_mean": 0.17302622108391236
+        },
+        {
+          "update": 5000,
+          "sha256": "c921fa858b85e9643cdb63c98576613d8ab854236840e96a3d457e728bb17425",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.6485286959444327,
+            "auroc": 0.6531062928086424,
+            "bce": 0.6782285564119367,
+            "probability_mean": 0.5658655138185201,
+            "probability_std": 0.19378520051903597,
+            "probability_q01_q50_q99": [
+              0.19930799790404563,
+              0.5642185404153346,
+              0.8933094060543487
+            ],
+            "positive_mean_probability": 0.6172934026820575,
+            "negative_mean_probability": 0.5144410962940895,
+            "logit_std": 0.9000919254654268,
+            "distinct_pooled_logits": 5822
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.7112892007810689,
+              "auroc": 0.6854233566249754,
+              "bce": 0.6562258502975151,
+              "probability_mean": 0.6040539712831102,
+              "probability_std": 0.2003554332318131,
+              "probability_q01_q50_q99": [
+                0.19559408410649906,
+                0.6036982180667488,
+                0.8947894632969136
+              ],
+              "positive_mean_probability": 0.6643013904682586,
+              "negative_mean_probability": 0.535851347099923,
+              "logit_std": 0.957136642260327,
+              "distinct_pooled_logits": 2502
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.6452589444390047,
+              "auroc": 0.6536068649402902,
+              "bce": 0.6790198419609976,
+              "probability_mean": 0.5623380010456107,
+              "probability_std": 0.19600952294455476,
+              "probability_q01_q50_q99": [
+                0.1986853537904252,
+                0.559169689642383,
+                0.8933094060543487
+              ],
+              "positive_mean_probability": 0.6147853132509571,
+              "negative_mean_probability": 0.510639381342126,
+              "logit_std": 0.9099152985170518,
+              "distinct_pooled_logits": 5494
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5635361129627307,
+              "auroc": 0.5978976033641238,
+              "bce": 0.6974891610643902,
+              "probability_mean": 0.5535101032160624,
+              "probability_std": 0.154365088707325,
+              "probability_q01_q50_q99": [
+                0.22360092964136608,
+                0.5660785043440457,
+                0.8244619263765707
+              ],
+              "positive_mean_probability": 0.5801668325866068,
+              "negative_mean_probability": 0.5271755744422609,
+              "logit_std": 0.6724009200017733,
+              "distinct_pooled_logits": 2260
+            }
+          },
+          "ab_ba_logit_correlation": 0.9433517180345539,
+          "absolute_orientation_logit_gap_mean": 0.19309333034699364
+        }
+      ],
+      "training_bce_last_500_update_windows": {
+        "1000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6927877468243241,
+          "median_preclip_gradient_norm": 1.2679141163825989
+        },
+        "2000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6814027604274452,
+          "median_preclip_gradient_norm": 2.623196244239807
+        },
+        "3000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6578776863217354,
+          "median_preclip_gradient_norm": 4.4743006229400635
+        },
+        "4000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6414960503112525,
+          "median_preclip_gradient_norm": 5.77140736579895
+        },
+        "5000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6251232096832245,
+          "median_preclip_gradient_norm": 6.272716522216797
+        }
+      }
+    },
+    "C1": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v4/runs/esmc-chain-aware-official-seed2",
+      "status": {
+        "state": {
+          "update": 3000,
+          "cursor": {
+            "cycle": 1,
+            "offset": 28915
+          },
+          "epoch": 1,
+          "next_chunk": 28915,
+          "examples_seen": 192000,
+          "best_ap": 0.5190570718484526,
+          "best_update": 1000,
+          "total_steps": 12745,
+          "pending_validation": false,
+          "last_validation_update": 2000
+        },
+        "last_committed_update": 2995,
+        "attempt": "20261001T103935-3210887",
+        "phase": "training",
+        "seconds_since_launch": 29128.038256305037
+      },
+      "validations": [
+        {
+          "update": 1000,
+          "sha256": "ccdd02943d366a29d514387c834201f2555215cd3cd2e24d928152cd4d6c3e4d",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.5190570718484526,
+            "auroc": 0.5238757858099677,
+            "bce": 0.6928878245754102,
+            "probability_mean": 0.4964891529220888,
+            "probability_std": 0.003845421732448584,
+            "probability_q01_q50_q99": [
+              0.49122053746120414,
+              0.4954682637433628,
+              0.5075525261059537
+            ],
+            "positive_mean_probability": 0.49664582277399305,
+            "negative_mean_probability": 0.49633249364526744,
+            "logit_std": 0.01538273343970068,
+            "distinct_pooled_logits": 7300
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.5296690356812237,
+              "auroc": 0.5076202549668148,
+              "bce": 0.6932187648593993,
+              "probability_mean": 0.4990122656160799,
+              "probability_std": 0.0029761301951939175,
+              "probability_q01_q50_q99": [
+                0.4926305385894396,
+                0.4987983726747222,
+                0.5073307124599339
+              ],
+              "positive_mean_probability": 0.49904542561674786,
+              "negative_mean_probability": 0.49897472709419705,
+              "logit_std": 0.011905077224979079,
+              "distinct_pooled_logits": 3108
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.5168215491966807,
+              "auroc": 0.5231661460638168,
+              "bce": 0.6928263384480764,
+              "probability_mean": 0.49618446192305765,
+              "probability_std": 0.003895313087486341,
+              "probability_q01_q50_q99": [
+                0.4912118426336716,
+                0.4946596269156558,
+                0.5077508439056161
+              ],
+              "positive_mean_probability": 0.4963483536734025,
+              "negative_mean_probability": 0.4960229097496985,
+              "logit_std": 0.015582326490420951,
+              "distinct_pooled_logits": 6402
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.501941094157262,
+              "auroc": 0.503754109523315,
+              "bce": 0.693083209751883,
+              "probability_mean": 0.496373563637557,
+              "probability_std": 0.0030906771288067435,
+              "probability_q01_q50_q99": [
+                0.4909880671279444,
+                0.4967041492992282,
+                0.5051879546699826
+              ],
+              "positive_mean_probability": 0.4964063994378563,
+              "negative_mean_probability": 0.4963411247244491,
+              "logit_std": 0.012363652826023204,
+              "distinct_pooled_logits": 1834
+            }
+          },
+          "ab_ba_logit_correlation": 0.7292049973233169,
+          "absolute_orientation_logit_gap_mean": 0.008760409364980667
+        },
+        {
+          "update": 2000,
+          "sha256": "5080f0672daf655d30d0f64a53f31a27a5f665a678fd8c6dfbd5dbf49b41627e",
+          "all": {
+            "n": 59258,
+            "positives": 29628,
+            "ap": 0.5107885119266652,
+            "auroc": 0.5055786664073139,
+            "bce": 0.6932040674543459,
+            "probability_mean": 0.49216487399849995,
+            "probability_std": 0.0015042428644053078,
+            "probability_q01_q50_q99": [
+              0.4903881471760504,
+              0.49188303738052036,
+              0.4994997407675406
+            ],
+            "positive_mean_probability": 0.49219982310255034,
+            "negative_mean_probability": 0.4921299272534847,
+            "logit_std": 0.006017763714162617,
+            "distinct_pooled_logits": 1802
+          },
+          "length_groups": {
+            "up_to_512": {
+              "n": 6055,
+              "positives": 3215,
+              "ap": 0.5568436093326876,
+              "auroc": 0.5315719667929819,
+              "bce": 0.6937392429554696,
+              "probability_mean": 0.49330983076567403,
+              "probability_std": 0.003422701948543066,
+              "probability_q01_q50_q99": [
+                0.48955047195248447,
+                0.49163896305052746,
+                0.5058238637991166
+              ],
+              "positive_mean_probability": 0.49347443637028926,
+              "negative_mean_probability": 0.49312349026608304,
+              "logit_std": 0.013692380570067364,
+              "distinct_pooled_logits": 1464
+            },
+            "513_to_2196": {
+              "n": 48269,
+              "positives": 23961,
+              "ap": 0.49837207460442234,
+              "auroc": 0.5005211857384646,
+              "bce": 0.693146021188063,
+              "probability_mean": 0.4920123991845511,
+              "probability_std": 0.0010324147338887488,
+              "probability_q01_q50_q99": [
+                0.4905101729476391,
+                0.49188303738052036,
+                0.4950142033467281
+              ],
+              "positive_mean_probability": 0.49202048511958213,
+              "negative_mean_probability": 0.4920044286773405,
+              "logit_std": 0.004130316137734191,
+              "distinct_pooled_logits": 826
+            },
+            "above_2196": {
+              "n": 4934,
+              "positives": 2452,
+              "ap": 0.5256692377671125,
+              "auroc": 0.5182265821253975,
+              "bce": 0.69311516343487,
+              "probability_mean": 0.4922514353218193,
+              "probability_std": 0.0007268107627464598,
+              "probability_q01_q50_q99": [
+                0.4910287949175102,
+                0.49223390097926545,
+                0.4944409944488691
+              ],
+              "positive_mean_probability": 0.49228107748840677,
+              "negative_mean_probability": 0.49222215144088755,
+              "logit_std": 0.002907903287062197,
+              "distinct_pooled_logits": 249
+            }
+          },
+          "ab_ba_logit_correlation": 0.47441992599334243,
+          "absolute_orientation_logit_gap_mean": 0.003281419262465522
+        }
+      ],
+      "training_bce_last_500_update_windows": {
+        "1000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6933609045110642,
+          "median_preclip_gradient_norm": 1.7963877320289612
+        },
+        "2000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6932805191166699,
+          "median_preclip_gradient_norm": 2.0197696685791016
+        },
+        "3000": {
+          "n_logged_batches": 50,
+          "mean_bce": 0.6929971782304346,
+          "median_preclip_gradient_norm": 1.6227105259895325
+        }
+      }
+    }
+  },
+  "test_data_used": false
+}

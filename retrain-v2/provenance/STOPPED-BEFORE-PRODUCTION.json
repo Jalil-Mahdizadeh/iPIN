@@ -1,0 +1,34 @@
+{
+  "time_utc": "2026-09-29T11:27:08.532273+00:00",
+  "status": "initial_screen_qualified_and_frozen; stopped_before_production_submission",
+  "production_submitted": false,
+  "production_runs_initialized": 0,
+  "production_jobs_in_queue": 0,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen",
+  "release_manifest_sha256": "ba83e5c92e2b4b8cf6eb14877871d8ad53db0c18580232ce5b20036b5181c0f2",
+  "dry_run_plan_sha256": "6202289e104308c0d97291964823b7f70a1698080d111e27c413edda6d9a6e70",
+  "enabled_runs": [
+    "reference-official-seed2",
+    "capped-official-seed2",
+    "positive10-official-seed2",
+    "clean-bce-official-seed2"
+  ],
+  "future_gpus_per_run": 4,
+  "future_max_concurrent_runs": 2,
+  "completed_qualification_jobs": [
+    "3128847",
+    "3129099_0"
+  ],
+  "real_requeue_resume_bitwise_identical": true,
+  "full_profile_max_tokens": 39391,
+  "historical_test_evaluated": false,
+  "existing_v1_source_unchanged": true,
+  "later_conditional_stages": [
+    "remaining objective/architecture ablations",
+    "three-fold confirmation",
+    "evidence-aware corpus and independent holdout curation",
+    "chosen candidate/control seed confirmation",
+    "interface supervision if independent data qualify"
+  ],
+  "next_boundary": "Actual production submission remains for a subsequent user instruction."
+}

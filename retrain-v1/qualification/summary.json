@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-09-28T19:53:12.062388+00:00",
+  "four_gpu_qualification_job": 3112184,
+  "four_gpu_nodes": [
+    "n506",
+    "n172"
+  ],
+  "four_gpu_requeues": 1,
+  "full_model_parameters": 652357815,
+  "trainable_parameters": 651043874,
+  "qualification_metrics_are_not_performance_estimates": true,
+  "reports": {
+    "attention.json": {
+      "passed": true,
+      "sha256": "df07f0695c9f085ae482e293b0660ca126d414238960af9dfd542495b2fb9117"
+    },
+    "data-invariants.json": {
+      "passed": true,
+      "sha256": "becc9b7c7c5c14bea9145f11a87f84f2205055dda22b35d8f1815a4327a8df0f"
+    },
+    "single-v3-resume-comparison.json": {
+      "passed": true,
+      "sha256": "4dd976b2ad1ae02f291942fa7e897802e852891766dd508550cb05812b7467a4"
+    },
+    "ddp-v3-resume-comparison.json": {
+      "passed": true,
+      "sha256": "fec04e3ab9db411f5048420a78ed0fd23b0f4f2ed9e76c189d56686a8973336e"
+    },
+    "checkpoint-faults.json": {
+      "passed": true,
+      "sha256": "7110552eb23c0016181a8f24892b7afb0c394905d95a396fc0ccdf0d7a62170a"
+    }
+  },
+  "development_findings": [
+    "Fixed Apptainer parsing of comma-separated CUDA_VISIBLE_DEVICES before a training step in job 3111900.",
+    "Fixed qualification subset sampling to include both classes and report undefined AUROC as null.",
+    "Default NCCL/DDP reduction was not bitwise identical after requeue (job 3111945); fixed-rank gradient summation passed final job 3112184.",
+    "Pending-validation state now survives interruption even immediately before final validation."
+  ]
+}

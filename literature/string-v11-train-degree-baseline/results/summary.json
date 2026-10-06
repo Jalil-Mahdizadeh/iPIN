@@ -1,0 +1,144 @@
+{
+  "created_at_utc": "2026-10-05T21:13:05.449077+00:00",
+  "study": "Exact released V11 TRAIN-degree baseline, human validation",
+  "formula": "log((d_train_positive(A)+1)/(d_train_negative(A)+1)) + log((d_train_positive(B)+1)/(d_train_negative(B)+1))",
+  "identity": "exact amino-acid sequence SHA256; no sequence normalization or truncation",
+  "counting": "TRAIN row occurrence counts, not distinct-neighbor degrees; identical-sequence pairs contribute once to their endpoint",
+  "smoothing": 1,
+  "source_row_multiplicity_preserved": true,
+  "validation_used_for_degree_counts_or_tuning": false,
+  "validation_role": "Released human_test file is human validation for the two releases, not the five-species tests",
+  "checks": {
+    "pinned_input_hashes_verified": true,
+    "source_pair_label_multisets_identical": true,
+    "independent_source_degrees_and_all_scores_identical": true,
+    "independent_AP_and_AUROC_agree_to_1e_minus_12": true,
+    "reproduces_previous_V11_result_to_1e_minus_12": true
+  },
+  "environment": {
+    "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "sklearn": "1.6.1",
+    "architecture": "aarch64",
+    "hostname": "n581",
+    "device": "CPU"
+  },
+  "sources": {
+    "native": {
+      "train": {
+        "rows": 421792,
+        "positives": 38344,
+        "negatives": 383448,
+        "sequences": 15631,
+        "positive_sequences": 7492,
+        "duplicate_labeled_unordered_sequence_rows": 386,
+        "opposite_label_pairs": 47,
+        "negative_rows_with_endpoint_absent_from_split_positives": 296944,
+        "canonical_labeled_sequence_pair_multiset_sha256": "c7b3aa946e983555d80d1635c493bb04304191c929e6f388caca4b9378388118"
+      },
+      "validation": {
+        "rows": 52725,
+        "positives": 4794,
+        "negatives": 47931,
+        "sequences": 15351,
+        "positive_sequences": 3356,
+        "duplicate_labeled_unordered_sequence_rows": 3,
+        "opposite_label_pairs": 0,
+        "negative_rows_with_endpoint_absent_from_split_positives": 45832,
+        "canonical_labeled_sequence_pair_multiset_sha256": "edf53ade5aedbee939ec1e5e2d3708559d1de6ab47529f97465e4ffb6f956506"
+      },
+      "validation_sequences_seen_in_train": 15351,
+      "validation_sequences_unseen_in_train": 0,
+      "validation_rows_with_both_endpoints_seen_in_train": 52725,
+      "overlap_validation_rows": 89,
+      "same_label_overlap_rows": 82,
+      "opposite_label_overlap_rows": 7,
+      "metrics": {
+        "all_validation": {
+          "rows": 52725,
+          "positives": 4794,
+          "negatives": 47931,
+          "degree_ratio": {
+            "ap": 0.8360138743588236,
+            "auroc": 0.963460067714674
+          },
+          "positive_endpoint_count": {
+            "ap": 0.29413804357701895,
+            "auroc": 0.8738536954548426
+          }
+        },
+        "excluding_train_pair_overlap": {
+          "rows": 52636,
+          "positives": 4783,
+          "negatives": 47853,
+          "degree_ratio": {
+            "ap": 0.836077900902309,
+            "auroc": 0.9635093774251559
+          },
+          "positive_endpoint_count": {
+            "ap": 0.2940713346652009,
+            "auroc": 0.8738775947397865
+          }
+        }
+      }
+    },
+    "tuna": {
+      "train": {
+        "rows": 421792,
+        "positives": 38344,
+        "negatives": 383448,
+        "sequences": 15631,
+        "positive_sequences": 7492,
+        "duplicate_labeled_unordered_sequence_rows": 386,
+        "opposite_label_pairs": 47,
+        "negative_rows_with_endpoint_absent_from_split_positives": 296944,
+        "canonical_labeled_sequence_pair_multiset_sha256": "c7b3aa946e983555d80d1635c493bb04304191c929e6f388caca4b9378388118"
+      },
+      "validation": {
+        "rows": 52725,
+        "positives": 4794,
+        "negatives": 47931,
+        "sequences": 15351,
+        "positive_sequences": 3356,
+        "duplicate_labeled_unordered_sequence_rows": 3,
+        "opposite_label_pairs": 0,
+        "negative_rows_with_endpoint_absent_from_split_positives": 45832,
+        "canonical_labeled_sequence_pair_multiset_sha256": "edf53ade5aedbee939ec1e5e2d3708559d1de6ab47529f97465e4ffb6f956506"
+      },
+      "validation_sequences_seen_in_train": 15351,
+      "validation_sequences_unseen_in_train": 0,
+      "validation_rows_with_both_endpoints_seen_in_train": 52725,
+      "overlap_validation_rows": 89,
+      "same_label_overlap_rows": 82,
+      "opposite_label_overlap_rows": 7,
+      "metrics": {
+        "all_validation": {
+          "rows": 52725,
+          "positives": 4794,
+          "negatives": 47931,
+          "degree_ratio": {
+            "ap": 0.8360138743588236,
+            "auroc": 0.963460067714674
+          },
+          "positive_endpoint_count": {
+            "ap": 0.29413804357701895,
+            "auroc": 0.8738536954548426
+          }
+        },
+        "excluding_train_pair_overlap": {
+          "rows": 52636,
+          "positives": 4783,
+          "negatives": 47853,
+          "degree_ratio": {
+            "ap": 0.836077900902309,
+            "auroc": 0.9635093774251559
+          },
+          "positive_endpoint_count": {
+            "ap": 0.2940713346652009,
+            "auroc": 0.8738775947397865
+          }
+        }
+      }
+    }
+  }
+}

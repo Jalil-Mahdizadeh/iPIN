@@ -1,0 +1,51 @@
+{
+  "prepared_utc": "2026-09-30T11:04:54.563259+00:00",
+  "status": "ready for Stage-1 submission; stopped before production as requested",
+  "release": "releases/20260930-adaptation",
+  "release_manifest_sha256": "65d70ae4861c8ff247bcbf6d7f77e37b1582e66d3b791760e6ac6d306b292dc2",
+  "enabled_production_runs": [
+    "clean-cls-linear-lr2e-5-fold0-seed2",
+    "clean-cls-linear-lr2e-5-fold1-seed2",
+    "clean-cls-linear-lr2e-5-fold2-seed2",
+    "clean-cls-linear-lr5e-6-fold0-seed2",
+    "clean-cls-linear-lr5e-6-fold1-seed2",
+    "clean-cls-linear-lr5e-6-fold2-seed2"
+  ],
+  "production_jobs_submitted": 0,
+  "production_updates": 0,
+  "production_run_directories": 0,
+  "production_history_query_empty": true,
+  "qualification_job": {
+    "job_id": "3176832",
+    "state": "COMPLETED",
+    "allocated_gpus": 4,
+    "elapsed_seconds": 192,
+    "allocated_gpu_hours": 0.21333333333333335
+  },
+  "qualification_reports_verified": [
+    "qualification/v3-contract.json",
+    "qualification/checkpoint-faults.json",
+    "qualification/signal-resume.json",
+    "qualification/signal-comparison.json",
+    "qualification/full-model-profile.json",
+    "qualification/ddp.json",
+    "qualification/ddp-clean-comparison.json",
+    "qualification/launcher-checks.json",
+    "qualification/decisions.json",
+    "qualification/production-guard.json",
+    "diagnostics/cheap-baselines.json"
+  ],
+  "frozen_release_files_verified": 21,
+  "full_650m_four_gpu_resume_bitwise_identical": true,
+  "maximum_qualified_internal_fold_pair_tokens": 16322,
+  "stage1_estimated_gpu_hours": [
+    150,
+    270
+  ],
+  "default_maximum_concurrent_runs": 2,
+  "next_stage_policy": "Readout templates require completed three-fold adaptation decision and separate release; no automatic submission.",
+  "external_confirmation_ready": false,
+  "native_adaptation_ready": false,
+  "outperformance_claim": "None; no production results yet. Historical test stays exploratory.",
+  "launch_plan_sha256": "d5982c5bb481aa03795df3590866672ec1cfad9f2dd423022ae8cbb6da845505"
+}

@@ -1,0 +1,27 @@
+{
+  "recorded_at_utc": "2026-10-05T06:58:52.209303+00:00",
+  "production_benchmark_authorized": true,
+  "user_request": "Benchmark both frozen v5 test sets using the best iPIN ESM2/ESMC checkpoints and released native PLM-interact, TUnA, X-PAIR, RAPPPID, SPRINT.",
+  "clarifications": {
+    "sprint_graph": "v5 TRAIN positives only, 350382 edges",
+    "xpair_models": [
+      "interaction_bernett",
+      "multitask_xfair"
+    ]
+  },
+  "no_new_training": true,
+  "models": [
+    "ipin-esm2",
+    "ipin-esmc",
+    "native-plm",
+    "tuna",
+    "xpair-bernett",
+    "xpair-default",
+    "rapppid",
+    "sprint"
+  ],
+  "test_sets": [
+    "original",
+    "ilp"
+  ]
+}

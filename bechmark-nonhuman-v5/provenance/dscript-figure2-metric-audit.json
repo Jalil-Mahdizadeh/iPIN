@@ -1,0 +1,94 @@
+{
+  "at_utc": "2026-10-05T14:12:59.847233+00:00",
+  "figure2_bar_metric": "AUPR, not AUROC",
+  "results": [
+    {
+      "species": "mouse",
+      "rows": 55000,
+      "figure2_bar_aupr": 0.58,
+      "deposited_curve_ap": 0.5797881677192571,
+      "fresh_ap": 0.5799094687628724,
+      "deposited_scores_auroc": 0.8328985579999999,
+      "fresh_auroc": 0.8329019900000001,
+      "auroc_difference": 3.432000000191948e-06
+    },
+    {
+      "species": "fly",
+      "rows": 55000,
+      "figure2_bar_aupr": 0.552,
+      "deposited_curve_ap": 0.5522859692200858,
+      "fresh_ap": 0.5523648257327713,
+      "deposited_scores_auroc": 0.8236194959999998,
+      "fresh_auroc": 0.8236331640000001,
+      "auroc_difference": 1.3668000000244263e-05
+    },
+    {
+      "species": "worm",
+      "rows": 55000,
+      "figure2_bar_aupr": 0.548,
+      "deposited_curve_ap": 0.548092131048893,
+      "fresh_ap": 0.5482272922280689,
+      "deposited_scores_auroc": 0.81305481,
+      "fresh_auroc": 0.8130340300000001,
+      "auroc_difference": -2.077999999994251e-05
+    },
+    {
+      "species": "yeast",
+      "rows": 55000,
+      "figure2_bar_aupr": 0.405,
+      "deposited_curve_ap": 0.404675162126782,
+      "fresh_ap": 0.4048090455221949,
+      "deposited_scores_auroc": 0.788972494,
+      "fresh_auroc": 0.7889609120000001,
+      "auroc_difference": -1.1581999999954462e-05
+    },
+    {
+      "species": "ecoli",
+      "rows": 22000,
+      "figure2_bar_aupr": 0.571,
+      "deposited_curve_ap": 0.5348917653696004,
+      "fresh_ap": 0.5349686551606798,
+      "deposited_scores_auroc": 0.8603378875,
+      "fresh_auroc": 0.8603347000000001,
+      "auroc_difference": -3.1874999998349196e-06
+    }
+  ],
+  "source_files": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/published/figure2_D-SCRIPT_mouse.csv",
+      "bytes": 4357973,
+      "sha256": "ccddceb49bed4970bf9d3f2501641eeaf7ec3058dfd103f504193f5272500344"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/published/figure2_D-SCRIPT_fly.csv",
+      "bytes": 3471659,
+      "sha256": "0a1b746efac28c5d04d66aef41d8dff4de9c8abce3389083e0af94394b3451f3"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/published/figure2_D-SCRIPT_worm.csv",
+      "bytes": 3185161,
+      "sha256": "41b5701caceec44300cea43a6fdc74eaa846da8369deb4a339c103b4881fdc58"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/published/figure2_D-SCRIPT_yeast.csv",
+      "bytes": 3052282,
+      "sha256": "b9b03e772d99ccd6209682125299540d0ec7bdebba75c9f27758ac821c85d676"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/published/figure2_D-SCRIPT_ecoli.csv",
+      "bytes": 1358463,
+      "sha256": "3aeb249d2f8a542d39c28d5b1ba84495a23a76c3ce8c1b8a1dd91de1747dfef6"
+    }
+  ],
+  "fresh_scores": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/dscript-union.npz",
+    "bytes": 1554510,
+    "sha256": "a317b8f41c3d400799c217e5a2360a4f5623edff5f2f88bef368e0c1a2f8ea40"
+  },
+  "source_notes": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/plm-interact/source-data-small-tables.json",
+    "bytes": 65746,
+    "sha256": "263b8c67ef7a51f7a8264c82bfaae11933cabcfc1d7419768adb3d749a55d45f"
+  },
+  "maximum_absolute_auroc_difference": 2.077999999994251e-05
+}

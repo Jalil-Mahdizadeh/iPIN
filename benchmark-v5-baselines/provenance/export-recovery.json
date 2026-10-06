@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-06T08:12:40.069510+00:00",
+  "reason": "CSV export repeatedly decompressed the same support-count array; cache it once per dataset.",
+  "action": "The first evaluation finished successfully before interruption was attempted; no process was killed. A second evaluation from identical frozen scores checked the export optimization.",
+  "scientific_method_or_scores_changed": false,
+  "earlier_resource_file": "logs/export-recovery-evaluate.resources.txt",
+  "first_run_completed": true,
+  "all_first_run_point_metrics_match_optimized_run": true,
+  "verification_source": "logs/export-recovery-evaluate.log",
+  "pre_export_summary_copies_were_created_after_second_run": "Removed redundant copies to avoid representing them as first-run snapshots."
+}

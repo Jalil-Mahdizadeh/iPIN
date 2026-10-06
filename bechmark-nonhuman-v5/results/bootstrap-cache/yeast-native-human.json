@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "native-human",
+    "test": "yeast",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "12bd80ca34e8dcbbc42c64c69bd597d0e46449eca7c67ce37ae6e25204772db2",
+    "scores": "9193c549b52e810ecbe8c43b3125c591c6851a6698fcb86779ff7ef22d5e33c6",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/yeast-native-human.npz",
+    "bytes": 14829,
+    "sha256": "8ebb388e484cb77881724c6a4a88464a893e7ea9b740a91331b8e7226c73aedb"
+  }
+}

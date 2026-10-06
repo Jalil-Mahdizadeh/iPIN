@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-05T12:33:09.095204+00:00",
+  "models": {
+    "ipin-esm2": "iPIN v5 ESM2",
+    "ipin-esmc": "iPIN v5 ESMC",
+    "native-human": "Native PLM-interact (humanV11)",
+    "native-plm": "Native PLM-interact (Bernett)",
+    "tuna-human": "TUnA (human, seed 47)",
+    "tuna": "TUnA (Bernett)",
+    "xpair-bernett": "X-PAIR (Bernett)",
+    "xpair-default": "X-PAIR (default)",
+    "rapppid": "RAPPPID (released mult)",
+    "sprint": "SPRINT (v5 human TRAIN graph)",
+    "dscript": "D-SCRIPT (human_v1)"
+  },
+  "user_choice": "Human cross-species releases and prior Bernett checkpoints separately labeled",
+  "primary_native_reference": "native-human",
+  "secondary_native_reference": "native-plm",
+  "tuna_human_seed": 47,
+  "selection_uses_target_test_metrics": false
+}

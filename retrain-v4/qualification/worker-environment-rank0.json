@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "rank": 0,
+  "world_size": 2,
+  "python": "/opt/esmc/venv/bin/python",
+  "prefix": "/opt/esmc/venv",
+  "esm": "3.2.3",
+  "model_adapter_imported": true,
+  "gpu_training_performed": false
+}

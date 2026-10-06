@@ -1,0 +1,14 @@
+{
+  "phase": "complete",
+  "complete": true,
+  "finished_shards": {
+    "v2-capped": 4,
+    "v2-clean-bce": 4,
+    "native-human": 4,
+    "native-plm": 4,
+    "ipin-esm2": 4,
+    "ipin-esmc": 4
+  },
+  "at_utc": "2026-10-05T14:37:08.673358+00:00",
+  "report": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/REPORT.md"
+}

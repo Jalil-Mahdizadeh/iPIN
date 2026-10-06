@@ -1,0 +1,155 @@
+[
+  {
+    "species": "mouse",
+    "sequence_indices": [
+      35690,
+      39485
+    ],
+    "source_rows_and_labels": [
+      [
+        9770,
+        1
+      ],
+      [
+        26099,
+        0
+      ]
+    ]
+  },
+  {
+    "species": "fly",
+    "sequence_indices": [
+      8340,
+      30950
+    ],
+    "source_rows_and_labels": [
+      [
+        7898,
+        0
+      ],
+      [
+        9809,
+        1
+      ]
+    ]
+  },
+  {
+    "species": "worm",
+    "sequence_indices": [
+      4205,
+      20406
+    ],
+    "source_rows_and_labels": [
+      [
+        2116,
+        1
+      ],
+      [
+        36127,
+        0
+      ]
+    ]
+  },
+  {
+    "species": "yeast",
+    "sequence_indices": [
+      16531,
+      54953
+    ],
+    "source_rows_and_labels": [
+      [
+        4062,
+        1
+      ],
+      [
+        33788,
+        0
+      ]
+    ]
+  },
+  {
+    "species": "yeast",
+    "sequence_indices": [
+      24082,
+      37436
+    ],
+    "source_rows_and_labels": [
+      [
+        5982,
+        1
+      ],
+      [
+        10421,
+        0
+      ]
+    ]
+  },
+  {
+    "species": "yeast",
+    "sequence_indices": [
+      14366,
+      32229
+    ],
+    "source_rows_and_labels": [
+      [
+        7503,
+        1
+      ],
+      [
+        14724,
+        0
+      ]
+    ]
+  },
+  {
+    "species": "yeast",
+    "sequence_indices": [
+      32190,
+      54953
+    ],
+    "source_rows_and_labels": [
+      [
+        11934,
+        1
+      ],
+      [
+        16367,
+        0
+      ]
+    ]
+  },
+  {
+    "species": "yeast",
+    "sequence_indices": [
+      1371,
+      39600
+    ],
+    "source_rows_and_labels": [
+      [
+        12377,
+        1
+      ],
+      [
+        48171,
+        0
+      ]
+    ]
+  },
+  {
+    "species": "ecoli",
+    "sequence_indices": [
+      40635,
+      51037
+    ],
+    "source_rows_and_labels": [
+      [
+        2017,
+        1
+      ],
+      [
+        4611,
+        0
+      ]
+    ]
+  }
+]

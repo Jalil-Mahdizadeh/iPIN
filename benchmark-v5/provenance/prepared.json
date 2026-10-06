@@ -1,0 +1,57 @@
+{
+  "prepared_at_utc": "2026-10-05T06:59:31.531110+00:00",
+  "source_completion": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/completed.json",
+    "bytes": 16030,
+    "sha256": "8805825a1cca647c21dccd247f148b587b69c1e458083615e45f8fe446aa00c9"
+  },
+  "tests": {
+    "original": 52048,
+    "ilp": 52048
+  },
+  "positives_per_test": 26024,
+  "shared_positive_pairs": 26024,
+  "shared_negative_pairs": 1154,
+  "union_pairs": 76918,
+  "proteins": 3022,
+  "max_protein_length": 5183,
+  "max_combined_residues": 7423,
+  "cache_candidates": {
+    "tuna": {
+      "sequence_catalog": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/data/sequences.json",
+        "bytes": 12312031,
+        "sha256": "bc7a91661ea05cbfdcf3551b9a4d18c149ac077549ebbcf0be7e7ef5d94ace77"
+      },
+      "matching_cached_sequences": 2784,
+      "missing_sequences": 238
+    },
+    "xpair": {
+      "sequence_catalog": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/data/sequences.json",
+        "bytes": 14492406,
+        "sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6"
+      },
+      "matching_cached_sequences": 1215,
+      "missing_sequences": 1807
+    }
+  },
+  "preferred_ipin_before_test": "ipin-esm2",
+  "data_files": {
+    "data/ilp.npy": "bced44a7b60dcdca586d2a076ed9979ad003f9e988a54c37ca259ea1ea63c21d",
+    "data/ipin-esm2-selected-dev.npz": "0e065ace2bcdc2733ee853d4b7bf4d9922ad217dbe62d0083670479e2034b91c",
+    "data/ipin-esmc-selected-dev.npz": "bd57aa218dcdfce048f37a65ac05cd8e7f2633e6d17f28bdfc10a180d3c32a33",
+    "data/native-original-reused.npz": "52a2b76dc9b30cfec5ba5fe414ca2abd4f9f41777415a205bc19ca2f5ba2d0cb",
+    "data/offsets.npy": "ccba3ed0988be45c426209e36a52e117875084a50e54fcc6cda64e79696d1a1f",
+    "data/original.npy": "402d3c928752fc3d91b1f17005cd68297d6df34a14fa6ae47e26e79a002f1188",
+    "data/pair-mapping.npz": "ddbeba9e2f459e7e33073a81ae4cf31e89a97a0caf71557c355b7a252a8620a2",
+    "data/sequences.json": "3b4ac0a9026070ef518f216cdf88ad51b776e4db007c3edd10f0c6ac9d7d7cab",
+    "data/test-sequences.fasta": "947a52bf70bca3c7af4661fbc6dfd816a925450c35ec4bf23cdad406477f8355",
+    "data/tokens.npy": "dc7e4ce3d13a44ca3baf3d63bc5faecf7075b055eb692a0703a05d4cf1577e3f",
+    "data/tuna-cache-indices.npy": "f16301772830dfa8caec3c0ca2d8767ff58bd8d2342ab297c47ebe3438ceeafe",
+    "data/union.npy": "340f13363a78f1cc89705220a21e853b85a447b3d82b4bddb0e055fc20e1e168",
+    "data/xpair-cache-indices.npy": "68c74500485ee8700205755f1011064d12d00def8a0cef2c3f62d1ae767d18df"
+  },
+  "selection_sha256": "4df51a2c905f5f939eb40f28e08189cf698bd4e0e6fa1f65519acf65654d3ddb",
+  "historical_training_folder_renamed_to": "retrain-v5"
+}

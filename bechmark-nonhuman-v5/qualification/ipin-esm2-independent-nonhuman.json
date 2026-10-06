@@ -1,0 +1,503 @@
+{
+  "at_utc": "2026-10-05T13:34:05.905088+00:00",
+  "passed": true,
+  "model": "ipin-esm2",
+  "independent_raw_string_pair_tokenization_matches": true,
+  "official_backbone_fp32_forward_matches": true,
+  "source_selection": [
+    {
+      "species": "mouse",
+      "source_row": 0,
+      "union_id": 0
+    },
+    {
+      "species": "mouse",
+      "source_row": 1,
+      "union_id": 1
+    },
+    {
+      "species": "mouse",
+      "source_row": 21292,
+      "union_id": 21285
+    },
+    {
+      "species": "mouse",
+      "source_row": 27500,
+      "union_id": 27486
+    },
+    {
+      "species": "fly",
+      "source_row": 0,
+      "union_id": 54966
+    },
+    {
+      "species": "fly",
+      "source_row": 1,
+      "union_id": 54967
+    },
+    {
+      "species": "fly",
+      "source_row": 9507,
+      "union_id": 64471
+    },
+    {
+      "species": "fly",
+      "source_row": 27500,
+      "union_id": 82453
+    },
+    {
+      "species": "worm",
+      "source_row": 0,
+      "union_id": 109890
+    },
+    {
+      "species": "worm",
+      "source_row": 1,
+      "union_id": 109891
+    },
+    {
+      "species": "worm",
+      "source_row": 27500,
+      "union_id": 137378
+    },
+    {
+      "species": "worm",
+      "source_row": 38481,
+      "union_id": 148353
+    },
+    {
+      "species": "yeast",
+      "source_row": 0,
+      "union_id": 164851
+    },
+    {
+      "species": "yeast",
+      "source_row": 1,
+      "union_id": 164852
+    },
+    {
+      "species": "yeast",
+      "source_row": 13959,
+      "union_id": 178794
+    },
+    {
+      "species": "yeast",
+      "source_row": 27500,
+      "union_id": 192328
+    },
+    {
+      "species": "ecoli",
+      "source_row": 0,
+      "union_id": 219796
+    },
+    {
+      "species": "ecoli",
+      "source_row": 1,
+      "union_id": 219797
+    },
+    {
+      "species": "ecoli",
+      "source_row": 427,
+      "union_id": 220223
+    },
+    {
+      "species": "ecoli",
+      "source_row": 11000,
+      "union_id": 229977
+    }
+  ],
+  "cases": [
+    {
+      "union_id": 0,
+      "tokens": 1033,
+      "saved_bf16_logits": [
+        0.283203125,
+        0.474609375
+      ],
+      "fresh_fp32_optimized_logits": [
+        0.29090720415115356,
+        0.47537878155708313
+      ],
+      "official_fp32_logits": [
+        0.2909095287322998,
+        0.4753807783126831
+      ],
+      "optimized_official_max_logit_error": 2.3245811462402344e-06,
+      "optimized_official_max_probability_error": 5.690214057718634e-07,
+      "saved_bf16_official_max_probability_error": 0.0018874488887105079
+    },
+    {
+      "union_id": 1,
+      "tokens": 898,
+      "saved_bf16_logits": [
+        2.15625,
+        1.6640625
+      ],
+      "fresh_fp32_optimized_logits": [
+        2.1590993404388428,
+        1.6476502418518066
+      ],
+      "official_fp32_logits": [
+        2.159100294113159,
+        1.647650122642517
+      ],
+      "optimized_official_max_logit_error": 9.5367431640625e-07,
+      "optimized_official_max_probability_error": 8.847714538795515e-08,
+      "saved_bf16_official_max_probability_error": 0.0022093870373647295
+    },
+    {
+      "union_id": 21285,
+      "tokens": 1595,
+      "saved_bf16_logits": [
+        -1.0390625,
+        -2.078125
+      ],
+      "fresh_fp32_optimized_logits": [
+        -1.0404373407363892,
+        -2.0653579235076904
+      ],
+      "official_fp32_logits": [
+        -1.0404326915740967,
+        -2.0653529167175293
+      ],
+      "optimized_official_max_logit_error": 5.0067901611328125e-06,
+      "optimized_official_max_probability_error": 8.96872571876095e-07,
+      "saved_bf16_official_max_probability_error": 0.00126901619943251
+    },
+    {
+      "union_id": 27486,
+      "tokens": 1102,
+      "saved_bf16_logits": [
+        0.17578125,
+        0.3515625
+      ],
+      "fresh_fp32_optimized_logits": [
+        0.16441437602043152,
+        0.35287800431251526
+      ],
+      "official_fp32_logits": [
+        0.1644148826599121,
+        0.3528805673122406
+      ],
+      "optimized_official_max_logit_error": 2.562999725341797e-06,
+      "optimized_official_max_probability_error": 6.21209575002446e-07,
+      "saved_bf16_official_max_probability_error": 0.0028211289236950154
+    },
+    {
+      "union_id": 54966,
+      "tokens": 958,
+      "saved_bf16_logits": [
+        1.25,
+        0.59765625
+      ],
+      "fresh_fp32_optimized_logits": [
+        1.1843719482421875,
+        0.5961965322494507
+      ],
+      "official_fp32_logits": [
+        1.1843781471252441,
+        0.5961959958076477
+      ],
+      "optimized_official_max_logit_error": 6.198883056640625e-06,
+      "optimized_official_max_probability_error": 1.1119908978063364e-06,
+      "saved_bf16_official_max_probability_error": 0.011565768242381314
+    },
+    {
+      "union_id": 54967,
+      "tokens": 1098,
+      "saved_bf16_logits": [
+        0.58984375,
+        0.79296875
+      ],
+      "fresh_fp32_optimized_logits": [
+        0.5828977823257446,
+        0.791865348815918
+      ],
+      "official_fp32_logits": [
+        0.5828965306282043,
+        0.791863739490509
+      ],
+      "optimized_official_max_logit_error": 1.6093254089355469e-06,
+      "optimized_official_max_probability_error": 3.453111598883396e-07,
+      "saved_bf16_official_max_probability_error": 0.0015956685784648261
+    },
+    {
+      "union_id": 64471,
+      "tokens": 1601,
+      "saved_bf16_logits": [
+        1.5625,
+        1.3828125
+      ],
+      "fresh_fp32_optimized_logits": [
+        1.5601403713226318,
+        1.4008138179779053
+      ],
+      "official_fp32_logits": [
+        1.5601381063461304,
+        1.4008128643035889
+      ],
+      "optimized_official_max_logit_error": 2.2649765014648438e-06,
+      "optimized_official_max_probability_error": 3.249798434801221e-07,
+      "saved_bf16_official_max_probability_error": 0.002870525908533761
+    },
+    {
+      "union_id": 82453,
+      "tokens": 961,
+      "saved_bf16_logits": [
+        2.546875,
+        1.7265625
+      ],
+      "fresh_fp32_optimized_logits": [
+        2.5401806831359863,
+        1.7387781143188477
+      ],
+      "official_fp32_logits": [
+        2.540182590484619,
+        1.7387760877609253
+      ],
+      "optimized_official_max_logit_error": 2.0265579223632812e-06,
+      "optimized_official_max_probability_error": 2.576313432589572e-07,
+      "saved_bf16_official_max_probability_error": 0.0015593411303973514
+    },
+    {
+      "union_id": 109890,
+      "tokens": 382,
+      "saved_bf16_logits": [
+        0.6328125,
+        0.494140625
+      ],
+      "fresh_fp32_optimized_logits": [
+        0.6183600425720215,
+        0.5019934177398682
+      ],
+      "official_fp32_logits": [
+        0.6183598637580872,
+        0.5019944906234741
+      ],
+      "optimized_official_max_logit_error": 1.0728836059570312e-06,
+      "optimized_official_max_probability_error": 2.520082946766422e-07,
+      "saved_bf16_official_max_probability_error": 0.0032814808724190847
+    },
+    {
+      "union_id": 109891,
+      "tokens": 303,
+      "saved_bf16_logits": [
+        2.25,
+        1.875
+      ],
+      "fresh_fp32_optimized_logits": [
+        2.261491298675537,
+        1.867431640625
+      ],
+      "official_fp32_logits": [
+        2.261486291885376,
+        1.867424726486206
+      ],
+      "optimized_official_max_logit_error": 6.9141387939453125e-06,
+      "optimized_official_max_probability_error": 8.015322534582481e-07,
+      "saved_bf16_official_max_probability_error": 0.0009861893414645495
+    },
+    {
+      "union_id": 137378,
+      "tokens": 538,
+      "saved_bf16_logits": [
+        0.03369140625,
+        0.5078125
+      ],
+      "fresh_fp32_optimized_logits": [
+        0.04866744205355644,
+        0.50216144323349
+      ],
+      "official_fp32_logits": [
+        0.04866449534893036,
+        0.5021612048149109
+      ],
+      "optimized_official_max_logit_error": 2.946704626083374e-06,
+      "optimized_official_max_probability_error": 7.362401469590552e-07,
+      "saved_bf16_official_max_probability_error": 0.0037416684738665884
+    },
+    {
+      "union_id": 148353,
+      "tokens": 1591,
+      "saved_bf16_logits": [
+        0.99609375,
+        1.171875
+      ],
+      "fresh_fp32_optimized_logits": [
+        0.9832407236099243,
+        1.194704294204712
+      ],
+      "official_fp32_logits": [
+        0.9832462072372437,
+        1.1947089433670044
+      ],
+      "optimized_official_max_logit_error": 5.4836273193359375e-06,
+      "optimized_official_max_probability_error": 1.086467449673556e-06,
+      "saved_bf16_official_max_probability_error": 0.0040984333755729185
+    },
+    {
+      "union_id": 164851,
+      "tokens": 566,
+      "saved_bf16_logits": [
+        1.453125,
+        1.515625
+      ],
+      "fresh_fp32_optimized_logits": [
+        1.4432463645935059,
+        1.4961916208267212
+      ],
+      "official_fp32_logits": [
+        1.4432417154312134,
+        1.4961899518966675
+      ],
+      "optimized_official_max_logit_error": 4.649162292480469e-06,
+      "optimized_official_max_probability_error": 7.18508862851408e-07,
+      "saved_bf16_official_max_probability_error": 0.0028878025945718866
+    },
+    {
+      "union_id": 164852,
+      "tokens": 241,
+      "saved_bf16_logits": [
+        -2.046875,
+        -1.15625
+      ],
+      "fresh_fp32_optimized_logits": [
+        -2.0661277770996094,
+        -1.1223962306976318
+      ],
+      "official_fp32_logits": [
+        -2.066132068634033,
+        -1.1223981380462646
+      ],
+      "optimized_official_max_logit_error": 4.291534423828125e-06,
+      "optimized_official_max_probability_error": 4.2825890426978486e-07,
+      "saved_bf16_official_max_probability_error": 0.006217377238979277
+    },
+    {
+      "union_id": 178794,
+      "tokens": 1586,
+      "saved_bf16_logits": [
+        -0.421875,
+        -1.4921875
+      ],
+      "fresh_fp32_optimized_logits": [
+        -0.438608318567276,
+        -1.484865665435791
+      ],
+      "official_fp32_logits": [
+        -0.4386122524738312,
+        -1.4848673343658447
+      ],
+      "optimized_official_max_logit_error": 3.933906555175781e-06,
+      "optimized_official_max_probability_error": 9.376528484206226e-07,
+      "saved_bf16_official_max_probability_error": 0.003996474931282634
+    },
+    {
+      "union_id": 192328,
+      "tokens": 941,
+      "saved_bf16_logits": [
+        0.6953125,
+        0.875
+      ],
+      "fresh_fp32_optimized_logits": [
+        0.701257050037384,
+        0.8833805918693542
+      ],
+      "official_fp32_logits": [
+        0.7012576460838318,
+        0.8833792805671692
+      ],
+      "optimized_official_max_logit_error": 1.3113021850585938e-06,
+      "optimized_official_max_probability_error": 2.713537441412228e-07,
+      "saved_bf16_official_max_probability_error": 0.0017369734656164093
+    },
+    {
+      "union_id": 219796,
+      "tokens": 337,
+      "saved_bf16_logits": [
+        -0.90625,
+        -0.90625
+      ],
+      "fresh_fp32_optimized_logits": [
+        -0.9278597235679626,
+        -0.9089915156364441
+      ],
+      "official_fp32_logits": [
+        -0.9278565645217896,
+        -0.9089871048927307
+      ],
+      "optimized_official_max_logit_error": 4.410743713378906e-06,
+      "optimized_official_max_probability_error": 9.029630931300936e-07,
+      "saved_bf16_official_max_probability_error": 0.004408042403656609
+    },
+    {
+      "union_id": 219797,
+      "tokens": 492,
+      "saved_bf16_logits": [
+        -1.8046875,
+        -2.109375
+      ],
+      "fresh_fp32_optimized_logits": [
+        -1.798140048980713,
+        -2.082695245742798
+      ],
+      "official_fp32_logits": [
+        -1.798142671585083,
+        -2.082693576812744
+      ],
+      "optimized_official_max_logit_error": 2.6226043701171875e-06,
+      "optimized_official_max_probability_error": 3.1967307576041826e-07,
+      "saved_bf16_official_max_probability_error": 0.0026013738641995354
+    },
+    {
+      "union_id": 220223,
+      "tokens": 1554,
+      "saved_bf16_logits": [
+        0.6328125,
+        0.333984375
+      ],
+      "fresh_fp32_optimized_logits": [
+        0.6331467628479004,
+        0.34283447265625
+      ],
+      "official_fp32_logits": [
+        0.6331444978713989,
+        0.34283575415611267
+      ],
+      "optimized_official_max_logit_error": 2.2649765014648438e-06,
+      "optimized_official_max_probability_error": 5.130829304755835e-07,
+      "saved_bf16_official_max_probability_error": 0.002150676980076205
+    },
+    {
+      "union_id": 229977,
+      "tokens": 918,
+      "saved_bf16_logits": [
+        0.8046875,
+        0.43359375
+      ],
+      "fresh_fp32_optimized_logits": [
+        0.8128203749656677,
+        0.41176173090934753
+      ],
+      "official_fp32_logits": [
+        0.812821626663208,
+        0.4117623269557953
+      ],
+      "optimized_official_max_logit_error": 1.2516975402832031e-06,
+      "optimized_official_max_probability_error": 2.6643976047679985e-07,
+      "saved_bf16_official_max_probability_error": 0.00522111902082123
+    }
+  ],
+  "checkpoint": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/ipin-esm2.pt",
+    "bytes": 7818552843,
+    "sha256": "8667e4af34346e4c8bcd2600dd06d21c64fe68ee82b8d99585c67cce102525e3"
+  },
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/audit_native_forwards.py",
+    "bytes": 4520,
+    "sha256": "ab96839c3386519301eba2602a1aae97527c628ed91318c98046d64d97c0cd82"
+  },
+  "test_scores_not_used_for_fixture_selection": true,
+  "production_weights_or_workers_modified": false
+}

@@ -1,0 +1,160 @@
+{
+  "at_utc": "2026-10-05T21:59:38.988311+00:00",
+  "protocol_sha256": "475078e430dbad53afd9346c52240b55f43a14d7bb1a9d3672ea775ac6df5cda",
+  "scripts": {
+    "common.py": "e13147c10f3ad3f25607e11e23423b6ec0f27bfb9ea87006a132c59d54fe85f5",
+    "fit_predict.py": "65fda9d0b49092868af577942733087a057c767e7960cec3192ba97496bb4f76"
+  },
+  "artifacts": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/models/homologs.csv.gz",
+      "bytes": 9513894,
+      "sha256": "bf6c25f25c807e95c4c939c4f1dfec27d45030be60f61e28a1c67b43bac77d77"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/models/protein-values.npz",
+      "bytes": 2082912,
+      "sha256": "994259783d6b0b4498a42bdbf9305a264ac03f809214278c9ac2066c5061bee4"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/models/sequence-propensity.joblib",
+      "bytes": 404447,
+      "sha256": "681fcb1a5116965a5650023f6b1f5748a6cd5e3398db6be2d31b643a0c927c4d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/models/train-positive-graph.npy",
+      "bytes": 306640,
+      "sha256": "f14cb96219712afab9ce031c5719b93ed345bc5ba8086feb4cf8e0886a7d425b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/results/human-validation-baseline-scores.npz",
+      "bytes": 1002856,
+      "sha256": "f96d69b10bddd354d7066065b9533d1c6b64ef4d6be37d7b4228129ec80a4aa3"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/results/mouse-baseline-scores.npz",
+      "bytes": 868887,
+      "sha256": "047f27d373e9912e09a6826b573a3e9fa938861ba94765d6472641f410fbb4d1"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/results/fly-baseline-scores.npz",
+      "bytes": 731126,
+      "sha256": "ef5cdf0d711546482084d43ddce92c5a91d01fdbad02f9cfc274b9a5d8b2f118"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/results/worm-baseline-scores.npz",
+      "bytes": 653072,
+      "sha256": "0760f7a6d07eab0c8f4eab272513b1c2157e7663276f96809a304e01a4b6b84e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/results/yeast-baseline-scores.npz",
+      "bytes": 603628,
+      "sha256": "de87f41d5015afc647f8bd5c5744b4621c705dfc8f39346d47502a9f2c51b26c"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/results/ecoli-baseline-scores.npz",
+      "bytes": 192514,
+      "sha256": "65a0baae6fe21fe40739dcc980c55ae7fc475ee2a5d5aa3b08d05c5986817d3d"
+    }
+  ],
+  "training_pairs": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/human-train-pairs.npy",
+    "bytes": 6748800,
+    "sha256": "dda3dd38818efb09ce7cacf4d5ff55337376656cd6d5b432e021a5ed5894cbcb"
+  },
+  "training_labels": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/human-train-labels.npy",
+    "bytes": 421920,
+    "sha256": "0a71a6f805625df891f8cd775965fce5080758476a15d71b54e86b43caaa5040"
+  },
+  "all_query_sequences": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/literature/V11-baselines/data/sequences.json",
+    "bytes": 31981225,
+    "sha256": "2335006dfe942e26dabe9db4d1ac366cc425410e1563cb19ae4959bf09d182a1"
+  },
+  "regressor_parameters": {
+    "categorical_features": "from_dtype",
+    "early_stopping": false,
+    "interaction_cst": null,
+    "l2_regularization": 10.0,
+    "learning_rate": 0.05,
+    "loss": "squared_error",
+    "max_bins": 255,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 300,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "quantile": null,
+    "random_state": 47,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "feature_count": 422,
+  "train_protein_target_r2": 0.4329656357634313,
+  "feature_seconds": 1.0646842500427738,
+  "regressor_fit_seconds": 1.3591667329892516,
+  "regressor_prediction_seconds": 0.12456540897255763,
+  "homolog_parse_and_all_pair_scoring_seconds": 4.833576547040138,
+  "homology_no_hit_value": -2.9147211631867176,
+  "homologs": {
+    "raw_hits": 1069454,
+    "exact_matches_inserted_missing_from_search": 6,
+    "query_proteins_with_hit": 44870,
+    "query_proteins_without_hit": 27121
+  },
+  "unique_positive_train_edges": 38314,
+  "datasets": {
+    "human-validation": {
+      "rows": 52725,
+      "scoring_and_symmetry_audit_seconds": 0.12199539702851325
+    },
+    "mouse": {
+      "rows": 55000,
+      "scoring_and_symmetry_audit_seconds": 0.11001897801179439
+    },
+    "fly": {
+      "rows": 55000,
+      "scoring_and_symmetry_audit_seconds": 0.07170187798328698
+    },
+    "worm": {
+      "rows": 55000,
+      "scoring_and_symmetry_audit_seconds": 0.0631739140371792
+    },
+    "yeast": {
+      "rows": 55000,
+      "scoring_and_symmetry_audit_seconds": 0.053267551003955305
+    },
+    "ecoli": {
+      "rows": 22000,
+      "scoring_and_symmetry_audit_seconds": 0.019305186986457556
+    }
+  },
+  "resource_use": {
+    "wall_seconds": 7.986235864984337,
+    "user_seconds": 28.016551,
+    "system_seconds": 0.304417,
+    "max_rss_kib": 649344,
+    "at_utc": "2026-10-05T21:59:39.012444+00:00"
+  },
+  "checks": {
+    "no_evaluation_label_files_read_by_fit_predict": true,
+    "all_scores_finite": true,
+    "all_scores_symmetric": true,
+    "vectorized_interolog_matches_independent_scalar_lookup": true,
+    "train_degree_counts_match_independent_loop": true
+  },
+  "environment": {
+    "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "sklearn": "1.6.1",
+    "machine": "aarch64",
+    "hostname": "n581",
+    "gpu_used": false
+  }
+}

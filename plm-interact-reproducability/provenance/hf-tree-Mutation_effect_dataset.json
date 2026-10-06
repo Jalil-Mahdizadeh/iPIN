@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "oid": "1ef325f1b111266a6b26e0196871bd78baa8c2f3",
+    "size": 2461,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "acbda9114f9061bc7dbc516567a8bc03a15fa9ce",
+    "size": 240,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "2cf1ba5b67f781aec565f6304b2419d861099e32",
+    "size": 2408115,
+    "path": "test_mutation_data.csv"
+  },
+  {
+    "type": "file",
+    "oid": "46074046018150374582658560b2429601ab54f5",
+    "size": 9061550,
+    "path": "training_mutation_data.csv"
+  },
+  {
+    "type": "file",
+    "oid": "b3fe42809b8f641738d9f6b02288144ae116b063",
+    "size": 2298832,
+    "path": "val_mutation_data.csv"
+  }
+]

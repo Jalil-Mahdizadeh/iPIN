@@ -1,0 +1,147 @@
+[
+  {
+    "member": "data/",
+    "bytes": 0,
+    "crc32": 0
+  },
+  {
+    "member": "data/high_conf_neg.csv",
+    "bytes": 964628365,
+    "crc32": 1486435729
+  },
+  {
+    "member": "data/pdb_interactions.csv",
+    "bytes": 1078294,
+    "crc32": 230871678
+  },
+  {
+    "member": "__MACOSX/data/._pdb_interactions.csv",
+    "bytes": 459,
+    "crc32": 3135979964
+  },
+  {
+    "member": "data/pdb_dimers_sequences.fasta",
+    "bytes": 13789205,
+    "crc32": 1293531979
+  },
+  {
+    "member": "data/string_database.csv",
+    "bytes": 6133325,
+    "crc32": 1073050024
+  },
+  {
+    "member": "__MACOSX/data/._string_database.csv",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/pinder_go_annotations.tsv",
+    "bytes": 54202791,
+    "crc32": 4163803272
+  },
+  {
+    "member": "__MACOSX/data/._pinder_go_annotations.tsv",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/pinder_sequences.fasta",
+    "bytes": 27745642,
+    "crc32": 1132042437
+  },
+  {
+    "member": "__MACOSX/data/._pinder_sequences.fasta",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/pinder.csv",
+    "bytes": 5883114,
+    "crc32": 3106426369
+  },
+  {
+    "member": "__MACOSX/data/._pinder.csv",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/pdb_dimers_go_annotations.tsv",
+    "bytes": 24808684,
+    "crc32": 1244495450
+  },
+  {
+    "member": "data/string.csv",
+    "bytes": 41942555,
+    "crc32": 3936934113
+  },
+  {
+    "member": "__MACOSX/data/._string.csv",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/string_900.csv",
+    "bytes": 2670009,
+    "crc32": 740921216
+  },
+  {
+    "member": "__MACOSX/data/._string_900.csv",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/pinder_species.tsv",
+    "bytes": 1515783,
+    "crc32": 9916914
+  },
+  {
+    "member": "__MACOSX/data/._pinder_species.tsv",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/pdb_dimers_species.tsv",
+    "bytes": 594547,
+    "crc32": 3839803375
+  },
+  {
+    "member": "data/string_experimental.csv",
+    "bytes": 27066187,
+    "crc32": 3844829923
+  },
+  {
+    "member": "__MACOSX/data/._string_experimental.csv",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/intact.csv",
+    "bytes": 231342783,
+    "crc32": 3006925860
+  },
+  {
+    "member": "__MACOSX/data/._intact.csv",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/HIPPIE-current.csv",
+    "bytes": 22556188,
+    "crc32": 1835535063
+  },
+  {
+    "member": "__MACOSX/data/._HIPPIE-current.csv",
+    "bytes": 163,
+    "crc32": 2405288430
+  },
+  {
+    "member": "data/string_textmining.csv",
+    "bytes": 7081759,
+    "crc32": 2830362902
+  },
+  {
+    "member": "__MACOSX/data/._string_textmining.csv",
+    "bytes": 163,
+    "crc32": 2405288430
+  }
+]

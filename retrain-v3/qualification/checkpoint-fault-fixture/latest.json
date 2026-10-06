@@ -1,0 +1,12 @@
+{
+  "file": "update-000000002.pt",
+  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "bytes": 17413,
+  "update": 2,
+  "epoch": 0,
+  "next_chunk": 2,
+  "world_size": 1,
+  "fingerprint": "synthetic-checkpoint-fault-test-v1",
+  "best_update": null,
+  "best_ap": null
+}

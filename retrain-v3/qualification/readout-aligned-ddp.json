@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "job_id": "3196606",
+  "production_training": false,
+  "full_650m_heads": [
+    "cls_mlp",
+    "residue_mean"
+  ],
+  "world_size": 4,
+  "updates": 4,
+  "stop_at": 2,
+  "pending_validation_recovered": true,
+  "global_pairs_per_update": 9,
+  "short_input_maximum_tokens": 384,
+  "scope": "Both actual-size clean residual heads: four-GPU uneven accumulation and bitwise interrupted/resumed state. Disposable short-input qualification.",
+  "comparison_reports": [
+    "qualification/readout-aligned-cls-mlp-comparison.json",
+    "qualification/readout-aligned-residue-mean-comparison.json"
+  ],
+  "code": {
+    "train.py": "17a9674accce46ed9908fbd1bec925d438079b61975b1f9b4a90d24d0ec1e16c",
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+  },
+  "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+  "source_sha256": {
+    "scripts/qualify_readout_aligned_ddp.py": "5a3a8a37ed3e3e35aad290ec4b19f4048305a1ed8440891465e4e008b52edd53"
+  }
+}

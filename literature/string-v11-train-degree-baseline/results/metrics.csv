@@ -1,0 +1,9 @@
+source,subset,baseline,rows,positives,negatives,ap,auroc
+native,all_validation,degree_ratio,52725,4794,47931,0.8360138743588236,0.963460067714674
+native,all_validation,positive_endpoint_count,52725,4794,47931,0.29413804357701895,0.8738536954548426
+native,excluding_train_pair_overlap,degree_ratio,52636,4783,47853,0.836077900902309,0.9635093774251559
+native,excluding_train_pair_overlap,positive_endpoint_count,52636,4783,47853,0.2940713346652009,0.8738775947397865
+tuna,all_validation,degree_ratio,52725,4794,47931,0.8360138743588236,0.963460067714674
+tuna,all_validation,positive_endpoint_count,52725,4794,47931,0.29413804357701895,0.8738536954548426
+tuna,excluding_train_pair_overlap,degree_ratio,52636,4783,47853,0.836077900902309,0.9635093774251559
+tuna,excluding_train_pair_overlap,positive_endpoint_count,52636,4783,47853,0.2940713346652009,0.8738775947397865

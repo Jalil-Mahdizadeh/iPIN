@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-09-30T09:35:21.561960+00:00",
+  "results": [
+    {
+      "command": [
+        "hostname"
+      ],
+      "exit": 0,
+      "stdout": "n519\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "scontrol",
+        "show",
+        "partition",
+        "gpu"
+      ],
+      "exit": 0,
+      "stdout": "PartitionName=gpu\n   AllowGroups=ALL AllowAccounts=ALL AllowQos=ALL\n   AllocNodes=ALL Default=NO QoS=N/A\n   DefaultTime=02:00:00 DisableRootJobs=YES ExclusiveUser=NO ExclusiveTopo=NO GraceTime=0 Hidden=NO\n   MaxNodes=UNLIMITED MaxTime=3-00:00:00 MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED\n   Nodes=n[21-212,405-594]\n   PriorityJobFactor=1 PriorityTier=1 RootOnly=NO ReqResv=NO OverSubscribe=NO\n   OverTimeLimit=NONE PreemptMode=REQUEUE\n   State=UP TotalCPUs=110016 TotalNodes=382 SelectTypeParameters=NONE\n   JobDefaults=DefCpuPerGPU=72\n   DefMemPerCPU=1459 MaxMemPerNode=UNLIMITED\n   TRES=cpu=110016,mem=185596228M,node=382,billing=1766,gres/gpu=1528,gres/gpu:nvidia_gh200_120gb=1528\n   TRESBillingWeights=CPU=0.013888888888888888,Mem=0.009745002593274616G,GRES/gpu:nvidia_gh200_120gb=1.0\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "squeue",
+        "-u",
+        "jalil",
+        "-o",
+        "%.18i %.9P %.30j %.8T %.10M %.6D %R"
+      ],
+      "exit": 0,
+      "stdout": "             JOBID PARTITION                           NAME    STATE       TIME  NODES NODELIST(REASON)\n           3169315       gpu                    interactive  RUNNING    1:19:16      1 n519\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,memory.total,driver_version",
+        "--format=csv,noheader"
+      ],
+      "exit": 0,
+      "stdout": "NVIDIA GH200 120GB, 97871 MiB, 580.159.04\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "df",
+        "-h",
+        "."
+      ],
+      "exit": 0,
+      "stdout": "Filesystem                                                       Size  Used Avail Use% Mounted on\n2124@kfi,2188@kfi:2125@kfi,2189@kfi:/arrhpc1/nobackup/proj/disk   16T  8.6T  7.1T  55% /nobackup/proj/disk\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "projinfo"
+      ],
+      "exit": 0,
+      "stdout": "You are a member of 2 active projects.\n\nnaiss2025-3-10-cpu\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nPrincipal Investigator (PI):  N/A\nConsumed compute resource time during the last 30 days:\n  User      Name                           Hours\n  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  asma      Asma Gholami                    0.00\n  brunam    Bruna Marchi                    0.00\n  carlesso  Antonio Carlesso                0.00\n  fconder   Ferah C\u00f6mert \u00d6nder              0.00\n  jalil     Sayyed Jalil Mahdizadeh         0.00\n  joelax    Joel Ax                         0.00\n  leifer    Leif Eriksson                   0.00\n  narons    \u00c1ron Soma N\u00e9meth                0.00\n  psaenz    Patricia Saenz-Mendez           0.00\n  rebwed    Rebecca Wedenmark Johansson     0.00\n  sabrinna  Sabrinna Crowley                0.00\n  tanael    Elif S\u0131la Tanayd\u0131n              0.00\n  thogus    Thomas Gustafsson               0.00\n  vibhu     Vibhu Jha                       0.00\n  xsunsi    Sunniva Samson Sigurdardottir   0.00\n  zahli     Zahra Liyaghatdar               0.00\n  zahrair   Zahra Iranmanesh                0.00\n  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  Total:                                    0.00\n\nnaiss2025-3-10-gpu\n\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\nPrincipal Investigator (PI):  N/A\nConsumed compute resource time during the last 30 days:\n  User      Name                             Hours\n  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  jalil     Sayyed Jalil Mahdizadeh        2250.28\n  rebwed    Rebecca Wedenmark Johansson      68.96\n  joelax    Joel Ax                          16.30\n  asma      Asma Gholami                      0.00\n  brunam    Bruna Marchi                      0.00\n  carlesso  Antonio Carlesso                  0.00\n  fconder   Ferah C\u00f6mert \u00d6nder                0.00\n  leifer    Leif Eriksson                     0.00\n  narons    \u00c1ron Soma N\u00e9meth                  0.00\n  psaenz    Patricia Saenz-Mendez             0.00\n  sabrinna  Sabrinna Crowley                  0.00\n  tanael    Elif S\u0131la Tanayd\u0131n                0.00\n  thogus    Thomas Gustafsson                 0.00\n  vibhu     Vibhu Jha                         0.00\n  xsunsi    Sunniva Samson Sigurdardottir     0.00\n  zahli     Zahra Liyaghatdar                 0.00\n  zahrair   Zahra Iranmanesh                  0.00\n  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  Total:                                   2335.54\n\n********************************************************************************************************\nNOTE: projinfo calculates Arrhenius GPU hours in a way that may not be fully reliable yet.\nIf the precise values are important to you, please cross-check against other sources of accounting info.\n(This will eventually be fixed, and this note removed).\n********************************************************************************************************\n",
+      "stderr": ""
+    }
+  ],
+  "note": "Read-only snapshot; storage and availability shared; remaining GPU allocation not inferred."
+}

@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-29T10:45:51.394952+00:00",
+  "user_stop_boundary": "before production submission",
+  "source_root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1",
+  "proposal_sha256": "0347494776a148a2faf4cf29926a5da957880533093ad5b2b0c40acd381714d6",
+  "production_submitted": false,
+  "source_code": {
+    "model.py": "7d7dfa0c86947bf47a9fe7ec4a20ee31a85693eea2ee3e26c125de7a5285fc9a",
+    "data.py": "004b2c4652f1671b81e594f158d73fbf2ae3882b4a88d8b9a8c6bd24eac7ce09",
+    "state.py": "6cabfbd32b67e2ea88c864de9e218859f31d772ff96e6fff7a4ed8100f4307b4",
+    "train.py": "ae32505828bed10deaad356dc4153c98eaefcb84028de5cd43868cee8e88f23e"
+  }
+}

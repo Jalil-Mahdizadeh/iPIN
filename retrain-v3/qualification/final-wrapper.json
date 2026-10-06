@@ -1,0 +1,81 @@
+{
+  "passed": true,
+  "wrapper_sha256": "758059cbb9a398e9f7b403a082d9406147f4aa8aa80202c3be74eb2aacb6245f",
+  "scheduler_commands_mocked": true,
+  "production_training_executed": false,
+  "cases": [
+    {
+      "scenario": "normal",
+      "exit_code": 0,
+      "phases": [
+        "train",
+        "benchmark"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "resume_benchmark",
+      "exit_code": 0,
+      "phases": [
+        "benchmark"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "manual_stop",
+      "exit_code": 0,
+      "phases": [],
+      "passed": true
+    },
+    {
+      "scenario": "train_failure",
+      "exit_code": 31,
+      "phases": [
+        "train"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "incomplete_train",
+      "exit_code": 79,
+      "phases": [
+        "train"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "training_requeue",
+      "exit_code": 0,
+      "phases": [
+        "train"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "benchmark_requeue",
+      "exit_code": 0,
+      "phases": [
+        "train",
+        "benchmark"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "benchmark_failure",
+      "exit_code": 32,
+      "phases": [
+        "train",
+        "benchmark"
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "requeue_limit",
+      "exit_code": 78,
+      "phases": [
+        "train"
+      ],
+      "passed": true
+    }
+  ]
+}

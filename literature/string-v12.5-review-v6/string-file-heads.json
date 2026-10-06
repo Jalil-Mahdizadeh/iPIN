@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://stringdb-downloads.org/download/protein.physical.links.full.v12.5/9606.protein.physical.links.full.v12.5.txt.gz",
+    "status": 200,
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Date": "Mon, 05 Oct 2026 20:34:26 GMT",
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "9617451",
+      "Last-Modified": "Sat, 01 Aug 2026 12:17:40 GMT",
+      "Connection": "close",
+      "ETag": "\"6a6de3e4-92c02b\"",
+      "Accept-Ranges": "bytes"
+    }
+  },
+  {
+    "url": "https://stringdb-downloads.org/download/protein.sequences.v12.5/9606.protein.sequences.v12.5.fa.gz",
+    "status": 200,
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Date": "Mon, 05 Oct 2026 20:34:26 GMT",
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "6760990",
+      "Last-Modified": "Tue, 30 May 2023 11:30:54 GMT",
+      "Connection": "close",
+      "ETag": "\"6475de6e-672a1e\"",
+      "Accept-Ranges": "bytes"
+    }
+  },
+  {
+    "url": "https://stringdb-downloads.org/download/protein.physical.links.full.v12.0/9606.protein.physical.links.full.v12.0.txt.gz",
+    "status": 200,
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Date": "Mon, 05 Oct 2026 20:34:26 GMT",
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "11766797",
+      "Last-Modified": "Wed, 17 May 2023 12:19:02 GMT",
+      "Connection": "close",
+      "ETag": "\"6464c636-b38c0d\"",
+      "Accept-Ranges": "bytes"
+    }
+  },
+  {
+    "url": "https://stringdb-downloads.org/download/protein.sequences.v12.0/9606.protein.sequences.v12.0.fa.gz",
+    "status": 200,
+    "headers": {
+      "Server": "nginx/1.24.0 (Ubuntu)",
+      "Date": "Mon, 05 Oct 2026 20:34:26 GMT",
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "6760990",
+      "Last-Modified": "Tue, 30 May 2023 11:30:54 GMT",
+      "Connection": "close",
+      "ETag": "\"6475de6e-672a1e\"",
+      "Accept-Ranges": "bytes"
+    }
+  }
+]

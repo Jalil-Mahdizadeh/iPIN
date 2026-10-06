@@ -1,0 +1,20 @@
+{
+  "benchmark_v4_rows_sequences_labels_verified": true,
+  "hippie": {
+    "accessions": 29080,
+    "isoform_accessions": 7636,
+    "matches_author_released_pairs": true,
+    "matches_author_released_scores": true,
+    "raw_rows": 1179347,
+    "self_rows": 5220,
+    "unique_unordered_pairs": 1179347
+  },
+  "new_test_additional_proteins": 0,
+  "new_test_target_negatives": 26024,
+  "new_test_target_pairs": 52048,
+  "original_test_rows": 52048,
+  "original_test_sha256": "89f164f9bd391fd3a2cb400cb3b402d87b73af8142143c58cac56d55d3d7abcc",
+  "positive_endpoint_proteins": 2948,
+  "positives": 26024,
+  "protected_proteins": 3022
+}

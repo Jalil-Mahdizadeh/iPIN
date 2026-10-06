@@ -1,0 +1,12 @@
+{
+  "verified_utc": "2026-10-02T18:47:31.584082+00:00",
+  "passed": true,
+  "export_hashes_checked": 23,
+  "recovery_contract_identities_checked": 21,
+  "split_completion_receipts_checked": 2,
+  "completion_manifest_sha256": "8805825a1cca647c21dccd247f148b587b69c1e458083615e45f8fe446aa00c9",
+  "recovery_contract_sha256": "251ac71c04440ca52c41e567df4bc893dff4093049445984143fdb6ef08c95db",
+  "proposal_snapshot_sha256": "13b85fc90b3b9757cedd156529431ef1a321a230f957665afefd049cb6d56844",
+  "final_audit_passed": true,
+  "pipeline_status": "complete"
+}

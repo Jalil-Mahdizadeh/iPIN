@@ -1,0 +1,144 @@
+{
+  "timestamp_utc": "2026-09-28T18:48:26.697982+00:00",
+  "purpose": "synthetic no-update forward/backward feasibility profile",
+  "optimizer_created": false,
+  "optimizer_steps": 0,
+  "biological_sequences_used": false,
+  "python": "3.12.3",
+  "machine": "aarch64",
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "transformers": "4.40.1",
+  "cuda": "13.0",
+  "nccl": [
+    2,
+    27,
+    7
+  ],
+  "device": "NVIDIA GH200 120GB",
+  "cuda_total_memory_bytes": 102005473280,
+  "bf16_supported": true,
+  "native_esm_supports_sdpa": false,
+  "parameters": 652357815,
+  "parameter_dtype": "float32",
+  "checkpoint_used_for_architecture_profile": "/opt/plm_interact/assets/humanV11/pytorch_model.bin",
+  "extra_fp32_adam_moments_bytes": 5218862520,
+  "possible_extra_fp32_ddp_bucket_bytes": 2609431260,
+  "measurements": [
+    {
+      "mode": "shared_pass",
+      "gradient_checkpointing": false,
+      "batch": 4,
+      "tokens": 1603,
+      "autocast": "bfloat16",
+      "attention": "native eager",
+      "warmup_passes": 1,
+      "measured_passes": 3,
+      "status": "ok",
+      "seconds": [
+        0.3565825830446556,
+        0.35815024899784476,
+        0.3566329180030152
+      ],
+      "median_seconds": 0.3566329180030152,
+      "examples_per_second": 11.216014557484515,
+      "peak_allocated_bytes": 61749023232,
+      "peak_reserved_bytes": 63382224896,
+      "losses": [
+        238.69769287109375,
+        238.69769287109375,
+        238.69769287109375
+      ]
+    },
+    {
+      "mode": "shared_pass",
+      "gradient_checkpointing": true,
+      "batch": 4,
+      "tokens": 2204,
+      "autocast": "bfloat16",
+      "attention": "native eager",
+      "warmup_passes": 1,
+      "measured_passes": 3,
+      "status": "ok",
+      "seconds": [
+        0.7929167490219697,
+        0.7932422440499067,
+        0.7948047270183451
+      ],
+      "median_seconds": 0.7932422440499067,
+      "examples_per_second": 5.0425957896265805,
+      "peak_allocated_bytes": 11826039808,
+      "peak_reserved_bytes": 13392412672,
+      "losses": [
+        66.78132629394531,
+        66.78132629394531,
+        66.78132629394531
+      ]
+    },
+    {
+      "mode": "shared_pass",
+      "gradient_checkpointing": true,
+      "batch": 2,
+      "tokens": 3833,
+      "autocast": "bfloat16",
+      "attention": "native eager",
+      "warmup_passes": 1,
+      "measured_passes": 3,
+      "status": "ok",
+      "seconds": [
+        1.121994857036043,
+        1.1203265229705721,
+        1.1205450770212337
+      ],
+      "median_seconds": 1.1205450770212337,
+      "examples_per_second": 1.7848456443328795,
+      "peak_allocated_bytes": 15009412096,
+      "peak_reserved_bytes": 17358127104,
+      "losses": [
+        72.03317260742188,
+        72.03317260742188,
+        72.03317260742188
+      ]
+    },
+    {
+      "mode": "shared_pass",
+      "gradient_checkpointing": true,
+      "batch": 1,
+      "tokens": 7426,
+      "autocast": "bfloat16",
+      "attention": "native eager",
+      "warmup_passes": 1,
+      "measured_passes": 3,
+      "status": "ok",
+      "seconds": [
+        1.731796936946921,
+        1.7338644610135816,
+        1.7336283079930581
+      ],
+      "median_seconds": 1.7336283079930581,
+      "examples_per_second": 0.5768249141926242,
+      "peak_allocated_bytes": 23347481600,
+      "peak_reserved_bytes": 27514634240,
+      "losses": [
+        4.7707719802856445,
+        4.7707719802856445,
+        4.7707719802856445
+      ]
+    }
+  ],
+  "shared_pass_fp32_qualification": {
+    "batch": 2,
+    "tokens": 65,
+    "native_loss": 429.51397705078125,
+    "shared_loss": 429.51397705078125,
+    "loss_abs_diff": 0.0,
+    "gradient_max_abs_diff": 0.00128173828125,
+    "gradient_relative_l2_diff": 1.735438180937761e-06,
+    "gradient_tensors_compared": 538,
+    "dropout_probabilities": [
+      0.0,
+      0.0
+    ]
+  },
+  "all_state_tensors_unchanged": true,
+  "finished_utc": "2026-09-28T18:48:46.550773+00:00"
+}

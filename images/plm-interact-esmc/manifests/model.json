@@ -1,0 +1,9 @@
+{
+  "repository": "biohub/esmc-600m-2024-12",
+  "revision": "e4d83bc7e10fd55c92e598e545f4a76bf04a6e5c",
+  "file": "esmc_600m_2024_12_v0.pth",
+  "bytes": 2300275866,
+  "sha256": "8ef856e1a237ee3f995442df997a962e70057faadecf38fc0c8561bd3c2f4324",
+  "verified_against_upstream_lfs_sha256": true,
+  "download_complete": true
+}

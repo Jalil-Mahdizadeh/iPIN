@@ -1,0 +1,212 @@
+{
+  "passed": true,
+  "production_neural_training": false,
+  "test_used": false,
+  "official_validation_used": false,
+  "fixed_C": 1.0,
+  "tuned_hyperparameters": false,
+  "scaler_fit": "Each fold training rows only",
+  "results": [
+    {
+      "fold": 0,
+      "baseline": "constant-train-prevalence",
+      "metrics": {
+        "rows": 17490,
+        "prevalence": 0.4992567181246427,
+        "ap": 0.4992567181246427,
+        "auroc": 0.5,
+        "brier": 0.2500015273172874,
+        "macro_ap": 0.4921612184387197,
+        "macro_eligible_proteins": 1093,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      }
+    },
+    {
+      "fold": 0,
+      "baseline": "length-only",
+      "metrics": {
+        "rows": 17490,
+        "prevalence": 0.4992567181246427,
+        "ap": 0.5298181139871352,
+        "auroc": 0.5291239384615514,
+        "brier": 0.2492393906767406,
+        "macro_ap": 0.5917025663978197,
+        "macro_eligible_proteins": 1093,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      },
+      "training_rows": 73691,
+      "feature_dimensions": 3,
+      "solver_iterations": 12
+    },
+    {
+      "fold": 0,
+      "baseline": "additive-unary-composition",
+      "metrics": {
+        "rows": 17490,
+        "prevalence": 0.4992567181246427,
+        "ap": 0.503363039115496,
+        "auroc": 0.5058753951756378,
+        "brier": 0.25003655845542716,
+        "macro_ap": 0.5690925088761783,
+        "macro_eligible_proteins": 1093,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      },
+      "training_rows": 73691,
+      "feature_dimensions": 29,
+      "solver_iterations": 6
+    },
+    {
+      "fold": 0,
+      "baseline": "pair-composition",
+      "metrics": {
+        "rows": 17490,
+        "prevalence": 0.4992567181246427,
+        "ap": 0.5570114358432321,
+        "auroc": 0.554776984477094,
+        "brier": 0.24741109683088916,
+        "macro_ap": 0.6225608108297125,
+        "macro_eligible_proteins": 1093,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      },
+      "training_rows": 73691,
+      "feature_dimensions": 87,
+      "solver_iterations": 71
+    },
+    {
+      "fold": 1,
+      "baseline": "constant-train-prevalence",
+      "metrics": {
+        "rows": 18285,
+        "prevalence": 0.4948318293683347,
+        "ap": 0.4948318293683347,
+        "auroc": 0.5,
+        "brier": 0.2500117334537025,
+        "macro_ap": 0.47976051758786026,
+        "macro_eligible_proteins": 1099,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      }
+    },
+    {
+      "fold": 1,
+      "baseline": "length-only",
+      "metrics": {
+        "rows": 18285,
+        "prevalence": 0.4948318293683347,
+        "ap": 0.5164207488000409,
+        "auroc": 0.5242435852925712,
+        "brier": 0.24953766957557114,
+        "macro_ap": 0.5692151136018413,
+        "macro_eligible_proteins": 1099,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      },
+      "training_rows": 71698,
+      "feature_dimensions": 3,
+      "solver_iterations": 11
+    },
+    {
+      "fold": 1,
+      "baseline": "additive-unary-composition",
+      "metrics": {
+        "rows": 18285,
+        "prevalence": 0.4948318293683347,
+        "ap": 0.5030867497715246,
+        "auroc": 0.5014288607105912,
+        "brier": 0.25011484289123836,
+        "macro_ap": 0.5603738257645418,
+        "macro_eligible_proteins": 1099,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      },
+      "training_rows": 71698,
+      "feature_dimensions": 29,
+      "solver_iterations": 7
+    },
+    {
+      "fold": 1,
+      "baseline": "pair-composition",
+      "metrics": {
+        "rows": 18285,
+        "prevalence": 0.4948318293683347,
+        "ap": 0.5595144640452918,
+        "auroc": 0.5580182969407528,
+        "brier": 0.24696622892907735,
+        "macro_ap": 0.60276847227415,
+        "macro_eligible_proteins": 1099,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      },
+      "training_rows": 71698,
+      "feature_dimensions": 87,
+      "solver_iterations": 78
+    },
+    {
+      "fold": 2,
+      "baseline": "constant-train-prevalence",
+      "metrics": {
+        "rows": 18515,
+        "prevalence": 0.49986497434512556,
+        "ap": 0.49986497434512556,
+        "auroc": 0.5,
+        "brier": 0.250009176349812,
+        "macro_ap": 0.4911820849434154,
+        "macro_eligible_proteins": 1075,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      }
+    },
+    {
+      "fold": 2,
+      "baseline": "length-only",
+      "metrics": {
+        "rows": 18515,
+        "prevalence": 0.49986497434512556,
+        "ap": 0.5244379105228283,
+        "auroc": 0.5267990275526743,
+        "brier": 0.24971212886715025,
+        "macro_ap": 0.5887353758391698,
+        "macro_eligible_proteins": 1075,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      },
+      "training_rows": 71986,
+      "feature_dimensions": 3,
+      "solver_iterations": 13
+    },
+    {
+      "fold": 2,
+      "baseline": "additive-unary-composition",
+      "metrics": {
+        "rows": 18515,
+        "prevalence": 0.49986497434512556,
+        "ap": 0.5064213418422793,
+        "auroc": 0.5040243263521089,
+        "brier": 0.2502027455584176,
+        "macro_ap": 0.5642327680022219,
+        "macro_eligible_proteins": 1075,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      },
+      "training_rows": 71986,
+      "feature_dimensions": 29,
+      "solver_iterations": 7
+    },
+    {
+      "fold": 2,
+      "baseline": "pair-composition",
+      "metrics": {
+        "rows": 18515,
+        "prevalence": 0.49986497434512556,
+        "ap": 0.5494485860382874,
+        "auroc": 0.5480963182588829,
+        "brier": 0.24849160139680976,
+        "macro_ap": 0.6146926340419075,
+        "macro_eligible_proteins": 1075,
+        "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+      },
+      "training_rows": 71986,
+      "feature_dimensions": 87,
+      "solver_iterations": 73
+    }
+  ],
+  "purpose": "Measure composition and additive endpoint shortcuts; these baselines do not demonstrate a neural ceiling.",
+  "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+  "source_sha256": {
+    "scripts/diagnose_data.py": "908374ba242599067420a5e9e52f8bc64c73db26980685ab12bf5eabec8c4897",
+    "scripts/metrics.py": "4e0ccc96e4d38d718550deb32bbd225ed5f6ca6bbf44f4070bd05814a47b41f2"
+  }
+}

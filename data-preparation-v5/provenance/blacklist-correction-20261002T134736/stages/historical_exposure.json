@@ -1,0 +1,13 @@
+{
+  "adopted_verified_prelaunch_stage": false,
+  "command": [
+    "bash",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/scripts/python.sh",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/scripts/audit_history.py"
+  ],
+  "completed_utc": "2026-10-02T13:42:44.731616+00:00",
+  "fingerprint": "82b653e8cede47cbba94579b537a3444a21d56aae9ab510542f9091c3cf34d72",
+  "outputs": {
+    "reports/historical-exposure.json": "8ab46c2eb1ab69034629cb991958c2ae6c23703bf9dd74fa069b254b94aeeb89"
+  }
+}

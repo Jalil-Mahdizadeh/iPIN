@@ -1,0 +1,170 @@
+[
+  {
+    "job_id": "3382639",
+    "name": "ipin-esm2",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--job-name=nhv5-ipin-esm2",
+      "bechmark-nonhuman-v5/slurm/pair.sbatch",
+      "ipin-esm2",
+      "esm2"
+    ],
+    "submitted_at": "2026-10-05T12:33:57.467407+00:00"
+  },
+  {
+    "job_id": "3382640",
+    "name": "ipin-esmc",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--job-name=nhv5-ipin-esmc",
+      "bechmark-nonhuman-v5/slurm/pair.sbatch",
+      "ipin-esmc",
+      "esmc"
+    ],
+    "submitted_at": "2026-10-05T12:33:57.505563+00:00"
+  },
+  {
+    "job_id": "3382641",
+    "name": "native-human",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--job-name=nhv5-native-human",
+      "bechmark-nonhuman-v5/slurm/pair.sbatch",
+      "native-human",
+      "native"
+    ],
+    "submitted_at": "2026-10-05T12:33:57.518141+00:00"
+  },
+  {
+    "job_id": "3382642",
+    "name": "native-plm",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--job-name=nhv5-native-plm",
+      "bechmark-nonhuman-v5/slurm/pair.sbatch",
+      "native-plm",
+      "native"
+    ],
+    "submitted_at": "2026-10-05T12:33:57.526504+00:00"
+  },
+  {
+    "job_id": "3382643",
+    "name": "xpair-both",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "bechmark-nonhuman-v5/slurm/xpair.sbatch"
+    ],
+    "submitted_at": "2026-10-05T12:33:57.534132+00:00",
+    "pending_time_limit_adjustment": "01:30:00"
+  },
+  {
+    "job_id": "3383330",
+    "name": "tuna",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "bechmark-nonhuman-v5/slurm/tuna.sbatch"
+    ],
+    "submitted_at": "2026-10-05T12:37:27.112663+00:00",
+    "pending_time_limit_adjustment": "00:30:00"
+  },
+  {
+    "job_id": "3383331",
+    "name": "dscript",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "bechmark-nonhuman-v5/slurm/dscript.sbatch"
+    ],
+    "submitted_at": "2026-10-05T12:37:27.126047+00:00",
+    "pending_time_limit_adjustment": "01:00:00"
+  },
+  {
+    "job_id": "3383464",
+    "name": "native-human-fp32",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "bechmark-nonhuman-v5/slurm/native-human.sbatch"
+    ],
+    "submitted_at": "2026-10-05T12:47:20.403971+00:00",
+    "replaces_failed_job": "3382641",
+    "pending_time_limit_adjustment": "01:00:00"
+  },
+  {
+    "job_id": "3383515",
+    "name": "sprint-hsp-cpu",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "bechmark-nonhuman-v5/slurm/sprint-hsp.sbatch"
+    ],
+    "submitted_at": "2026-10-05T12:50:40.966919+00:00"
+  },
+  {
+    "job_id": "3383542",
+    "name": "sprint-hsp-cpu",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "bechmark-nonhuman-v5/slurm/sprint-hsp.sbatch"
+    ],
+    "submitted_at": "2026-10-05T12:51:34.238556+00:00",
+    "replaces_failed_job": "3383515"
+  },
+  {
+    "job_id": "3383717",
+    "name": "sprint-hsp-full-cpu-node",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "bechmark-nonhuman-v5/slurm/sprint-hsp.sbatch"
+    ],
+    "submitted_at": "2026-10-05T13:01:09.896280+00:00",
+    "replaces_cancelled_job": "3383542",
+    "reason": "Full native sequence similarity corpus 69591 proteins; pilot too slow on 64 of 256 CPU cores. Same native computation with 256 threads."
+  },
+  {
+    "job_id": "3383718",
+    "name": "sprint-sparse-qualification",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "bechmark-nonhuman-v5/slurm/sprint-qualify.sbatch"
+    ],
+    "submitted_at": "2026-10-05T13:01:09.946848+00:00"
+  },
+  {
+    "job_id": "3383829",
+    "name": "sprint-score-cpu",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--dependency=afterok:3383717:3383718",
+      "bechmark-nonhuman-v5/slurm/sprint-score.sbatch"
+    ],
+    "submitted_at": "2026-10-05T13:06:51.917400+00:00",
+    "final_state": "CANCELLED",
+    "cancel_reason": "Replace buffered random copying with qualified byte-identical memory-mapped copying; no score inference had started.",
+    "replaced_by": "3402258"
+  },
+  {
+    "job_id": "3402258",
+    "name": "sprint-score-cpu-mmap",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "bechmark-nonhuman-v5/slurm/sprint-score-mmap.sbatch"
+    ],
+    "submitted_at": "2026-10-05T19:19:41.558055+00:00",
+    "replaces_cancelled_job": "3383829",
+    "hsp_generation_reused": true,
+    "copy_qualification": "qualification/sprint-copy/qualification.json",
+    "reason": "Eliminate 4 MiB buffer refill per small random HSP block; preserve exact block bytes/order and qualified scorer."
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "attention.json": "df07f0695c9f085ae482e293b0660ca126d414238960af9dfd542495b2fb9117",
+  "single-v3-resume-comparison.json": "4dd976b2ad1ae02f291942fa7e897802e852891766dd508550cb05812b7467a4",
+  "ddp-v3-resume-comparison.json": "fec04e3ab9db411f5048420a78ed0fd23b0f4f2ed9e76c189d56686a8973336e",
+  "checkpoint-faults.json": "7110552eb23c0016181a8f24892b7afb0c394905d95a396fc0ccdf0d7a62170a",
+  "data-invariants.json": "becc9b7c7c5c14bea9145f11a87f84f2205055dda22b35d8f1815a4327a8df0f"
+}

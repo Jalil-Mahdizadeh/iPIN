@@ -1,0 +1,11 @@
+{
+  "source": "retrain-v4/scripts",
+  "source_sha256": {
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "train.py": "7f6c8e5c81c39a0978c477c07b19eb4151c851b01c37769acc9783ae61b03e73",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "model.py": "8f8e27750e81ddb81b5b553c763f7e2c356a081ee29f00fa70c25ae0226be114",
+    "compare_resume.py": "353e1af3831b3a74cc3f15885e59bfcdb2c6f407c2984fea16eb62f5353c99ff",
+    "qualify_faults.py": "cbb4d690acd3b7240e2df360ea414de0e4fc25f41b43a494f7be1c7cab74849f"
+  }
+}

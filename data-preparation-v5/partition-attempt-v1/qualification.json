@@ -1,0 +1,11 @@
+{
+  "enumerated_assignments": 64,
+  "exhaustive_optimum": 49,
+  "feasible_assignments": 5,
+  "full_warm_start_accepted": true,
+  "objective_offset_verified": true,
+  "passed": true,
+  "production_data_optimized": false,
+  "solver_optimum": 49,
+  "unchanged_balance_constraints_verified": true
+}

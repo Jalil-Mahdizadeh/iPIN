@@ -1,0 +1,23 @@
+{
+  "job_id": "3172100",
+  "submitted_at_utc": "2026-09-30T08:51:34.203392+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "benchmark-v2/slurm/benchmark.sbatch"
+  ],
+  "stdout": "3172100\n",
+  "stderr": "",
+  "fresh_inference_models": [
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce"
+  ],
+  "reused_models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric"
+  ],
+  "gpus": 4
+}

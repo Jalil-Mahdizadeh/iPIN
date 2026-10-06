@@ -1,0 +1,287 @@
+{
+  "mouse": {
+    "n": 55000,
+    "positives": 5000,
+    "source_label_order_equal": true,
+    "max_tokens": 1595,
+    "over1603": 0,
+    "exact_ordered_sequence_duplicates": 17,
+    "baseline_sample_id_comparison": {
+      "PLM-interact": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 55000,
+        "same_ids_and_labels_in_same_order": true
+      },
+      "TUnA": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 18856,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "TT3D": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 18856,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "Topsy-Turvy": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 18856,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "D-SCRIPT": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 18856,
+        "same_ids_and_labels_in_same_order": false
+      }
+    },
+    "published_reverse_concordance": {
+      "spearman": 0.8833086030341536,
+      "mae": 0.011326502921070038,
+      "max_abs": 0.9996185185128552,
+      "classification_flips_at_0_5": 612
+    }
+  },
+  "fly": {
+    "n": 55000,
+    "positives": 5000,
+    "source_label_order_equal": true,
+    "max_tokens": 1601,
+    "over1603": 0,
+    "exact_ordered_sequence_duplicates": 36,
+    "baseline_sample_id_comparison": {
+      "PLM-interact": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 55000,
+        "same_ids_and_labels_in_same_order": true
+      },
+      "TUnA": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 23892,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "TT3D": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 23892,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "Topsy-Turvy": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 23892,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "D-SCRIPT": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 23892,
+        "same_ids_and_labels_in_same_order": false
+      }
+    },
+    "published_reverse_concordance": {
+      "spearman": 0.8868827116450698,
+      "mae": 0.010948975436184932,
+      "max_abs": 0.9996678210508295,
+      "classification_flips_at_0_5": 590
+    }
+  },
+  "worm": {
+    "n": 55000,
+    "positives": 5000,
+    "source_label_order_equal": true,
+    "max_tokens": 1591,
+    "over1603": 0,
+    "exact_ordered_sequence_duplicates": 18,
+    "baseline_sample_id_comparison": {
+      "PLM-interact": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 55000,
+        "same_ids_and_labels_in_same_order": true
+      },
+      "TUnA": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 32304,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "TT3D": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 32304,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "Topsy-Turvy": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 32304,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "D-SCRIPT": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 32304,
+        "same_ids_and_labels_in_same_order": false
+      }
+    },
+    "published_reverse_concordance": {
+      "spearman": 0.8810394551126259,
+      "mae": 0.012179051791141255,
+      "max_abs": 0.9986930301761704,
+      "classification_flips_at_0_5": 639
+    }
+  },
+  "yeast": {
+    "n": 55000,
+    "positives": 5000,
+    "source_label_order_equal": true,
+    "max_tokens": 1586,
+    "over1603": 0,
+    "exact_ordered_sequence_duplicates": 4,
+    "baseline_sample_id_comparison": {
+      "PLM-interact": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 55000,
+        "same_ids_and_labels_in_same_order": true
+      },
+      "TUnA": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 53566,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "TT3D": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 53566,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "Topsy-Turvy": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 53566,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "D-SCRIPT": {
+        "n": 55000,
+        "unordered_id_pair_and_label_multiset_overlap": 53566,
+        "same_ids_and_labels_in_same_order": false
+      }
+    },
+    "published_reverse_concordance": {
+      "spearman": 0.8987667312967323,
+      "mae": 0.018701325214993396,
+      "max_abs": 0.9994138591436843,
+      "classification_flips_at_0_5": 1012
+    }
+  },
+  "ecoli": {
+    "n": 22000,
+    "positives": 2000,
+    "source_label_order_equal": true,
+    "max_tokens": 1554,
+    "over1603": 0,
+    "exact_ordered_sequence_duplicates": 3764,
+    "baseline_sample_id_comparison": {
+      "PLM-interact": {
+        "n": 22000,
+        "unordered_id_pair_and_label_multiset_overlap": 22000,
+        "same_ids_and_labels_in_same_order": true
+      },
+      "TUnA": {
+        "n": 22000,
+        "unordered_id_pair_and_label_multiset_overlap": 16040,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "TT3D": {
+        "n": 22000,
+        "unordered_id_pair_and_label_multiset_overlap": 16040,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "Topsy-Turvy": {
+        "n": 22000,
+        "unordered_id_pair_and_label_multiset_overlap": 16040,
+        "same_ids_and_labels_in_same_order": false
+      },
+      "D-SCRIPT": {
+        "n": 22000,
+        "unordered_id_pair_and_label_multiset_overlap": 16040,
+        "same_ids_and_labels_in_same_order": false
+      }
+    },
+    "published_reverse_concordance": {
+      "spearman": 0.9127606941954372,
+      "mae": 0.11379538080818398,
+      "max_abs": 0.9988152320025565,
+      "classification_flips_at_0_5": 2513
+    }
+  },
+  "bernett": {
+    "n": 52048,
+    "positives": 26024,
+    "source_ids_labels_order_equal": true,
+    "max_tokens": 7426,
+    "over1603": 8200,
+    "over2196": 3392,
+    "exact_ordered_sequence_duplicates": 0
+  },
+  "mutation": {
+    "full_n": 841,
+    "published_n": 598,
+    "full_positive": 180,
+    "published_positive": 123,
+    "published_subset_matched_by_11_metadata_fields_after_verified_excel_date_repair": true,
+    "excel_date_repairs": [
+      {
+        "source_row": 90,
+        "original_serial": 45877,
+        "decoded_date": "2025-08-08",
+        "released_range": "8-8"
+      },
+      {
+        "source_row": 94,
+        "original_serial": 45690,
+        "decoded_date": "2025-02-02",
+        "released_range": "2-2"
+      },
+      {
+        "source_row": 96,
+        "original_serial": 45690,
+        "decoded_date": "2025-02-02",
+        "released_range": "2-2"
+      },
+      {
+        "source_row": 219,
+        "original_serial": 45844,
+        "decoded_date": "2025-07-06",
+        "released_range": "6-7"
+      },
+      {
+        "source_row": 400,
+        "original_serial": 45877,
+        "decoded_date": "2025-08-08",
+        "released_range": "8-8"
+      },
+      {
+        "source_row": 491,
+        "original_serial": 45782,
+        "decoded_date": "2025-05-05",
+        "released_range": "5-5"
+      },
+      {
+        "source_row": 519,
+        "original_serial": 45972,
+        "decoded_date": "2025-11-11",
+        "released_range": "11-11"
+      },
+      {
+        "source_row": 566,
+        "original_serial": 46003,
+        "decoded_date": "2025-12-12",
+        "released_range": "12-12"
+      },
+      {
+        "source_row": 575,
+        "original_serial": 45940,
+        "decoded_date": "2025-10-10",
+        "released_range": "10-10"
+      }
+    ],
+    "subset_equals_each_protein_at_most2000_residues": true,
+    "all_released_cases_human": true,
+    "rows_with_literal_gap_dot": [
+      17,
+      219,
+      244
+    ],
+    "duplicate_sequence_triplets": 0
+  }
+}

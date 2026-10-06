@@ -1,0 +1,18 @@
+{
+  "adopted_verified_prelaunch_stage": true,
+  "command": [
+    "bash",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/scripts/python.sh",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/scripts/normalize.py"
+  ],
+  "completed_utc": "2026-10-02T13:42:32.820013+00:00",
+  "fingerprint": "82b653e8cede47cbba94579b537a3444a21d56aae9ab510542f9091c3cf34d72",
+  "outputs": {
+    "reports/normalization-audit.json": "27cdbd125b93c25eda1160cd1566c9d659e6c89a1568efd30c7b4154c5cfb66c",
+    "work/eligible-before-homology.csv": "2068713000e3bc3d4a79cd17353dc3be113c9f5a628b5be5bdc9a78e7b03e120",
+    "work/eligible-before-homology.fasta": "26b96588da2f81c70d240e30567549331e71a389c853303dd4cdff96f74638d3",
+    "work/known-positive-families.tsv": "f4d07af19b77f4de2d82e8245a66efadd8708f3b02792eb094a08ec6f854e0d3",
+    "work/protein-registry.json": "08ca8dcd392ada31e79e82c1f4794f715fc0d81355e911576a5de587aa481fc8",
+    "work/test-protein-metadata.json": "f2dd3a3e16fd682e845b3beac193e22fcf51fe6edfc53e2ac9609b7fcbd26f67"
+  }
+}

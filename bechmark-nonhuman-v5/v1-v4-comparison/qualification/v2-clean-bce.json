@@ -1,0 +1,293 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-05T14:02:09.793496+00:00",
+  "model": "v2-clean-bce",
+  "fingerprint": "4839f3252b65b091aba4a1b12944e93d5af7cb1b8e714cea655327175e14dd5b",
+  "dev_cases": [
+    {
+      "indices": [
+        13440,
+        13288,
+        2144,
+        22584,
+        16384,
+        47092,
+        5196,
+        51772
+      ],
+      "max_tokens": 205,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0
+    },
+    {
+      "indices": [
+        26240,
+        33436,
+        35560,
+        44540,
+        45688,
+        54144
+      ],
+      "max_tokens": 1257,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0
+    },
+    {
+      "indices": [
+        16728
+      ],
+      "max_tokens": 39391,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0
+    }
+  ],
+  "native_cases": [
+    {
+      "union_id": 0,
+      "tokens": 1033,
+      "native_fp32_logits": [
+        0.2944386601448059,
+        0.004020988941192627
+      ],
+      "optimized_fp32_logits": [
+        0.2944393455982208,
+        0.0040212105959653854
+      ],
+      "optimized_bf16_logits": [
+        0.291015625,
+        0.004547119140625
+      ],
+      "fp32_max_logit_error": 6.854534149169922e-07,
+      "fp32_max_probability_error": 1.6770230903961902e-07,
+      "bf16_max_probability_error": 0.0008376849479103665
+    },
+    {
+      "union_id": 21285,
+      "tokens": 1595,
+      "native_fp32_logits": [
+        -1.3689627647399902,
+        -1.5317281484603882
+      ],
+      "optimized_fp32_logits": [
+        -1.3689627647399902,
+        -1.531727910041809
+      ],
+      "optimized_bf16_logits": [
+        -1.3671875,
+        -1.53125
+      ],
+      "fp32_max_logit_error": 2.384185791015625e-07,
+      "fp32_max_probability_error": 3.484466881698012e-08,
+      "bf16_max_probability_error": 0.0002871491058489828
+    },
+    {
+      "union_id": 54966,
+      "tokens": 958,
+      "native_fp32_logits": [
+        -0.02574068307876587,
+        0.020870845764875412
+      ],
+      "optimized_fp32_logits": [
+        -0.025739401578903198,
+        0.02087109535932541
+      ],
+      "optimized_bf16_logits": [
+        -0.033447265625,
+        0.03955078125
+      ],
+      "fp32_max_logit_error": 1.2814998626708984e-06,
+      "fp32_max_probability_error": 3.203219054448425e-07,
+      "bf16_max_probability_error": 0.00466888455009129
+    },
+    {
+      "union_id": 64471,
+      "tokens": 1601,
+      "native_fp32_logits": [
+        -0.034252118319272995,
+        -0.47216254472732544
+      ],
+      "optimized_fp32_logits": [
+        -0.03425455838441849,
+        -0.4721650779247284
+      ],
+      "optimized_bf16_logits": [
+        -0.037841796875,
+        -0.470703125
+      ],
+      "fp32_max_logit_error": 2.5331974029541016e-06,
+      "fp32_max_probability_error": 6.098373895868647e-07,
+      "bf16_max_probability_error": 0.0008971279384606401
+    },
+    {
+      "union_id": 109890,
+      "tokens": 382,
+      "native_fp32_logits": [
+        -0.4472455084323883,
+        -0.19046619534492493
+      ],
+      "optimized_fp32_logits": [
+        -0.44724664092063904,
+        -0.1904691457748413
+      ],
+      "optimized_bf16_logits": [
+        -0.451171875,
+        -0.1962890625
+      ],
+      "fp32_max_logit_error": 2.950429916381836e-06,
+      "fp32_max_probability_error": 7.309580015713024e-07,
+      "bf16_max_probability_error": 0.0014421910711645558
+    },
+    {
+      "union_id": 148353,
+      "tokens": 1591,
+      "native_fp32_logits": [
+        1.0218442678451538,
+        1.2817715406417847
+      ],
+      "optimized_fp32_logits": [
+        1.0218435525894165,
+        1.2817723751068115
+      ],
+      "optimized_bf16_logits": [
+        1.015625,
+        1.2734375
+      ],
+      "fp32_max_logit_error": 8.344650268554688e-07,
+      "fp32_max_probability_error": 1.4190222108467765e-07,
+      "bf16_max_probability_error": 0.0014205576244706863
+    },
+    {
+      "union_id": 164851,
+      "tokens": 566,
+      "native_fp32_logits": [
+        -0.4403112530708313,
+        -0.12108805775642395
+      ],
+      "optimized_fp32_logits": [
+        -0.44031190872192383,
+        -0.121087446808815
+      ],
+      "optimized_bf16_logits": [
+        -0.455078125,
+        -0.123046875
+      ],
+      "fp32_max_logit_error": 6.556510925292969e-07,
+      "fp32_max_probability_error": 1.562179878233927e-07,
+      "bf16_max_probability_error": 0.003512729485220467
+    },
+    {
+      "union_id": 178794,
+      "tokens": 1586,
+      "native_fp32_logits": [
+        -1.1421663761138916,
+        -0.8742682933807373
+      ],
+      "optimized_fp32_logits": [
+        -1.1421648263931274,
+        -0.8742688894271851
+      ],
+      "optimized_bf16_logits": [
+        -1.171875,
+        -0.8671875
+      ],
+      "fp32_max_logit_error": 1.5497207641601562e-06,
+      "fp32_max_probability_error": 2.842129760982637e-07,
+      "bf16_max_probability_error": 0.00540659735601548
+    },
+    {
+      "union_id": 219796,
+      "tokens": 337,
+      "native_fp32_logits": [
+        0.8639538288116455,
+        0.557382345199585
+      ],
+      "optimized_fp32_logits": [
+        0.8639538288116455,
+        0.5573818683624268
+      ],
+      "optimized_bf16_logits": [
+        0.875,
+        0.55859375
+      ],
+      "fp32_max_logit_error": 4.76837158203125e-07,
+      "fp32_max_probability_error": 1.1040959491115387e-07,
+      "bf16_max_probability_error": 0.002298967800954066
+    },
+    {
+      "union_id": 220223,
+      "tokens": 1554,
+      "native_fp32_logits": [
+        0.5418003797531128,
+        0.5369317531585693
+      ],
+      "optimized_fp32_logits": [
+        0.5418001413345337,
+        0.5369317531585693
+      ],
+      "optimized_bf16_logits": [
+        0.5390625,
+        0.53515625
+      ],
+      "fp32_max_logit_error": 2.384185791015625e-07,
+      "fp32_max_probability_error": 5.543588044165659e-08,
+      "bf16_max_probability_error": 0.0006368280675194127
+    }
+  ],
+  "fixture_selection": [
+    {
+      "species": "mouse",
+      "source_row": 0,
+      "union_id": 0
+    },
+    {
+      "species": "mouse",
+      "source_row": 21292,
+      "union_id": 21285
+    },
+    {
+      "species": "fly",
+      "source_row": 0,
+      "union_id": 54966
+    },
+    {
+      "species": "fly",
+      "source_row": 9507,
+      "union_id": 64471
+    },
+    {
+      "species": "worm",
+      "source_row": 0,
+      "union_id": 109890
+    },
+    {
+      "species": "worm",
+      "source_row": 38481,
+      "union_id": 148353
+    },
+    {
+      "species": "yeast",
+      "source_row": 0,
+      "union_id": 164851
+    },
+    {
+      "species": "yeast",
+      "source_row": 13959,
+      "union_id": 178794
+    },
+    {
+      "species": "ecoli",
+      "source_row": 0,
+      "union_id": 219796
+    },
+    {
+      "species": "ecoli",
+      "source_row": 427,
+      "union_id": 220223
+    }
+  ],
+  "fixture_selection_uses_scores": false,
+  "original_backbone_fp32_and_raw_string_tokenization_verified": true,
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "gpu": "NVIDIA GH200 120GB",
+  "production_precision": "FP32 weights, BF16 autocast, TF32 disabled"
+}

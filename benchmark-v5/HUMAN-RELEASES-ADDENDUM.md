@@ -1,0 +1,13 @@
+# Adding the released human STRING-trained models
+
+Authorized 2026-10-05: evaluate native PLM-interact humanV11 and TUnA human seed 47 on the existing original Bernett and custom ILP-negative tests. These are the exact releases already used in the five-species benchmark, not newly trained or test-selected checkpoints.
+
+The original nine predictors, their scores, and the two frozen tests are preserved. The preceding sealed analysis is archived in `archive/before-human-releases/`. Each new model scores the 76,918-pair union once; all 52,048 observations in each test remain in the primary comparison. The tests share all 26,024 positives and are not independent replications.
+
+Native humanV11 uses full sequences, its original ESM2-650M CLS/ReLU/linear head, FP32 computation with TF32 disabled, and mean AB/BA logits. FP32 was established in the earlier cross-species qualification, before this extension. Full-length raw-tokenizer/original-attention forward checks, including the longest test pair, precede production inference. No crop, inversion, threshold fitting or calibration is permitted. Original-order scores are also retained.
+
+TUnA uses the released seed-47 weights, frozen ESM2-150M, hidden dimension 256, feed-forward dimension 1024, and its native uncertainty-adjusted prediction. Its qualified factorized endpoint cache preserves the original singleton predictor. Exact-sequence cached features may be reused only from this same checkpoint, with hashes and a direct numeric check. Full sequences are retained, including proteins longer than its original 50–800-residue training range. The long-sequence and cache/padding paths must be qualified before scoring.
+
+Both releases use the same public human STRING-v11/Sledzieski TRAIN and human validation data. Their exact sequence and unordered-pair overlaps with both tests are recorded separately for TRAIN and validation. Full-test scores are exposed external comparisons, not unseen-protein evaluations. A common sensitivity subset removes any pair containing a protein occurring in either release's documented TRAIN or validation set, and evaluates every model on those same rows. Existing X-PAIR, D-SCRIPT and combined-exclusion analyses retain their definitions. Homology and PLM pretraining exposure are not ruled out by exact exclusions.
+
+AP and AUROC use the existing definitions. The existing 1,000 paired protein-endpoint bootstrap replicates and seed 20260929 are retained. No checkpoint or setting is chosen from test performance. These additions were requested after the original nine-model results and five-species results were known. They extend the comparison and do not change the original research protocol retrospectively.

@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_mouse.csv",
+      "bytes": 3158473,
+      "sha256": "96a8c21610bcab10580b2791841d904ac3011c78408e77fd46eb2c0fa465b4a5"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_fly.csv",
+      "bytes": 3141777,
+      "sha256": "c58b07bd77cd56a054a7fbfb772ee8e910165e10ea5eaf9e4a952bb7c7a587c1"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_worm.csv",
+      "bytes": 3130354,
+      "sha256": "616a76bcbe4999a9191586d0ad499bafd0d25abfd9b2a0d3babe9b68bdfe6d87"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_yeast.csv",
+      "bytes": 3121285,
+      "sha256": "2272412c8bdd35996dea923b6d6bbfeba735c477aed6c380ddaff389f4b9585b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/results/cross_ecoli.csv",
+      "bytes": 1180401,
+      "sha256": "937c362920267a74edac2642b5a2029cfc39f9052905612d4158d9914efdabe5"
+    }
+  ],
+  "qualification_rows": 15,
+  "description": "Prior independently reproduced original-order FP32 logits; every source row retained."
+}

@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "ipin-esmc",
+    "test": "ecoli__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e4241b56546efc75cc1bde57ccb67ddf3da9e8c4d38de416dc8e3396069d36fd",
+    "scores": "d6b5732900259d270ba1d382a1741911df7eff2af19bf2f192b15dcd3e31575a",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/ecoli__common_unexposed-ipin-esmc.npz",
+    "bytes": 15212,
+    "sha256": "f54cbcfc6744bcf26b1eecb204c29d87dafb6b2ff9e15ed928fa89f8515efdd6"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://huggingface.co/datasets/yk0/TUnA_models/resolve/eaec69cafc574d984119079220e75b11ffcb7c09/x-species/TUnA_seed47/model",
+  "revision": "eaec69cafc574d984119079220e75b11ffcb7c09",
+  "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/tuna-human-seed47.pt",
+  "sha256": "f63876dfdfb8a8a2c855bbb814a74b20ccf333dc8c75be00bf281365fcac6c07",
+  "bytes": 143364769,
+  "seed_selection": "seed47 fixed before new test metrics; not chosen among seeds by target species"
+}

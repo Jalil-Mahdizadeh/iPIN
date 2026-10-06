@@ -1,0 +1,15 @@
+{
+  "source_files": {
+    "tokens.npy": "bf82ee25023396948d4d96417cc396de2668afcba8e15f824883caa5e7a599af",
+    "offsets.npy": "61a71e45a1ca7137af32e148510f7c5de01d30c10704451d1a91dd3e3f464a1d"
+  },
+  "files": {
+    "tokens.npy": "a27e75e87cc036db93e736297bc8c03417af0a58235abf995d18c2dbdec99031",
+    "offsets.npy": "ba254b9c05ad9cfbd660a4db2ce6d8dcb0152e6d83e2a6923d74cdc7eb35b8c1"
+  },
+  "active_proteins": 7995,
+  "previous_token_count": 6942694,
+  "retained_token_count": 5416846,
+  "test_sequences_retained": false,
+  "method": "Retain tokens only for IDs appearing in the unchanged official train/validation arrays; unused IDs have zero length."
+}

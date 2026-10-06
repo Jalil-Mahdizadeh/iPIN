@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-bernett",
+    "test": "ilp",
+    "replicates": 1000,
+    "seed": 20260929,
+    "rows": "bced44a7b60dcdca586d2a076ed9979ad003f9e988a54c37ca259ea1ea63c21d",
+    "scores": "d7a95e6e6ad16e47972d2c2de6abc341c346c6c6facadc0d31def77d6a5b0637",
+    "analysis_code": "117ff451095bb3cf5025a57bc9b24f3a99c2bd9f62444b9c65a13dc66aa0d054"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/bootstrap-cache/ilp-xpair-bernett.npz",
+    "bytes": 14565,
+    "sha256": "01b4d214d2951bc9774a738266281726ed073c5a443464e27e2830c858dcb768"
+  }
+}

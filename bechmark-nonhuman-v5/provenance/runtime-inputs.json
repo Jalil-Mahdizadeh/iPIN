@@ -1,0 +1,68 @@
+{
+  "verified": true,
+  "items": {
+    "native-runtime": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact/plm-interact-native-arm64-v1.sif",
+      "bytes": 13101785088,
+      "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+    },
+    "esmc-runtime": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact-esmc/plm-interact-esmc-arm64-v1.sif",
+      "bytes": 13578153984,
+      "sha256": "ed6aeac781502090632bc2a705300b161b6a65ccfbcf6c7cf64d8d61d8e5b5ef"
+    },
+    "tuna-runtime": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/containers/images/tuna-arm64-v1.sif",
+      "bytes": 10666606592,
+      "sha256": "98070c7c2d206d8421817849e11ffce308016dc982938a7d9a3ef3141ab1dec1"
+    },
+    "rapppid-runtime": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/containers/images/rapppid-native-arm64-v1.sif",
+      "bytes": 10677870592,
+      "sha256": "e853a89768c5351927f90fd0ccfb2ad899a15a6fc239a9014726af0c34442d48"
+    },
+    "sprint-runtime": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/containers/images/sprint-native-arm64-v1.sif",
+      "bytes": 180064256,
+      "sha256": "699112807a7829b1b4268fa83d358a206d62de5a5a0f7c7d199beb18f9f47f09"
+    },
+    "xpair-runtime": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/containers/images/plm-interact-native-arm64-v1.sif",
+      "bytes": 13101785088,
+      "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+    },
+    "tuna-released": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/weights/bernett_original.pt",
+      "bytes": 135352865,
+      "sha256": "bf2dd42af75d98324798b76837ca738e4ed230b096ee538ccdbaa001dcc88500"
+    },
+    "tuna-encoder": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/.private/frozen_pair_models_v1/bundle/encoder/model.safetensors",
+      "bytes": 595257706,
+      "sha256": "c3f1da8aea53bddd32c246c86168c23b9fd72341fb9db9a94436f855f5053566"
+    },
+    "xpair-bernett": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/X-PAIR/pretrained_models/interaction_bernett.ckpt",
+      "bytes": 5686501,
+      "sha256": "17bf35197982c28fe25de1a45cf4cae67b94ae2edacc3db7967cd4f4c6da0fc6"
+    },
+    "xpair-default": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/X-PAIR/pretrained_models/multitask_xfair.ckpt",
+      "bytes": 5691097,
+      "sha256": "d8c50d03cd6107d2b411d7095a34243ec1b31e6b7cc1d590329c9328c1e8df72"
+    },
+    "xpair-encoder": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/ankh-large/pytorch_model.bin",
+      "bytes": 7515077421,
+      "sha256": "517b6e8b279dedcb477af240b35c46bd6eb3307723eb281e60d4b2c8a87b889b"
+    },
+    "tuna-human": {
+      "url": "https://huggingface.co/datasets/yk0/TUnA_models/resolve/eaec69cafc574d984119079220e75b11ffcb7c09/x-species/TUnA_seed47/model",
+      "revision": "eaec69cafc574d984119079220e75b11ffcb7c09",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/tuna-human-seed47.pt",
+      "sha256": "f63876dfdfb8a8a2c855bbb814a74b20ccf333dc8c75be00bf281365fcac6c07",
+      "bytes": 143364769,
+      "seed_selection": "seed47 fixed before new test metrics; not chosen among seeds by target species"
+    }
+  }
+}

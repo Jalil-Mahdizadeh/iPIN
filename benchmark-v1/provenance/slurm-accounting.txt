@@ -1,0 +1,5 @@
+JobID|JobName|State|ExitCode|Elapsed|AllocTRES
+3125767|plmi-benchmark-v1|COMPLETED|0:0|00:22:47|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3125767.batch|batch|COMPLETED|0:0|00:22:47|cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3125767.extern|extern|COMPLETED|0:0|00:22:47|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3125767.0|bash|COMPLETED|0:0|00:22:44|cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1

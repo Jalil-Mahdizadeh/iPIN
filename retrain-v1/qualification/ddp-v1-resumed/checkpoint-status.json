@@ -1,0 +1,17 @@
+{
+  "last_committed_update": 5,
+  "latest": {
+    "file": "update-000000005.pt",
+    "sha256": "edacb6e8c3bac863f4bcc443b30a8ea60f320baccd64c64f594da14df43f6df9",
+    "bytes": 7818552715,
+    "update": 5,
+    "epoch": 1,
+    "next_chunk": 0,
+    "world_size": 4,
+    "fingerprint": "26071b032485d86d418f2f2cb10dd584ed689477e113ee789d1ebefef234e837"
+  },
+  "retained": [
+    "update-000000004.pt",
+    "update-000000005.pt"
+  ]
+}

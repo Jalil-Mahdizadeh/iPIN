@@ -1,0 +1,46 @@
+[
+  {
+    "file": "predict_ddp.py",
+    "archived_path": "provenance/publication-code/PLMinteract/predict_ddp.py",
+    "archived_sha256": "898f87f90cddb90410dd1b582c56c4b24cd56e6dd6535cc338fb681da4026230",
+    "current_sha256": "898f87f90cddb90410dd1b582c56c4b24cd56e6dd6535cc338fb681da4026230",
+    "same_file": true,
+    "shared_classes_identical": {
+      "CrossEncoder": true,
+      "PredictionArguments": true,
+      "PLMinteract": true
+    }
+  },
+  {
+    "file": "mutation_predict.py",
+    "archived_path": "provenance/publication-code/PLMinteract/mutation_predict.py",
+    "archived_sha256": "b19e3f5aa9dda473de1828f9c00113a24d614cdb5d0b31264e56e49ec54d54b9",
+    "current_sha256": "d09cdbb86f99f3d18527e2e65aeabf06e875627d5628d35e1bf23a3850e695f1",
+    "same_file": false,
+    "shared_classes_identical": {
+      "CrossEncoder": false,
+      "ESM2_MLM_classification": true,
+      "PLM_mutation_classification": true,
+      "MutationTestArguments": true
+    }
+  },
+  {
+    "file": "inference_PPI_singleGPU.py",
+    "archived_path": "provenance/publication-code/PLMinteract/inference/inference_PPI_singleGPU.py",
+    "archived_sha256": "b95146f5a13b682360af1adc7f2d97f5ede9c080226d5474938797bc1419e3a6",
+    "current_sha256": "1820c69e64d18b82113cd39ecb82b604f303db58c9b65347450474ecc1259622",
+    "same_file": false,
+    "shared_classes_identical": {
+      "CrossEncoder": false,
+      "PLMinteract": true
+    }
+  },
+  {
+    "file": "metrics.py",
+    "archived_path": "provenance/publication-code/PLMinteract/utils/metrics.py",
+    "archived_sha256": "e1a3b9fa505129c76952a06e7248d949b4af186106218964ee12a7e4730d3650",
+    "current_sha256": "e1a3b9fa505129c76952a06e7248d949b4af186106218964ee12a7e4730d3650",
+    "same_file": true,
+    "shared_classes_identical": {}
+  }
+]

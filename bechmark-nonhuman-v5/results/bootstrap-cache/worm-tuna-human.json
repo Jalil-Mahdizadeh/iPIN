@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "tuna-human",
+    "test": "worm",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e5f3c2b73a922bebc7b8ef1ce9629fd97516a02861dd899908150353632772d5",
+    "scores": "8d2165517899f753db537d2c6071743707e7bf2e6f1df42c8bccc18dc1e3e548",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/worm-tuna-human.npz",
+    "bytes": 14739,
+    "sha256": "27bc1f4cc980a5a37fadf03f9eddb91628422d5f1d07a0dee19cc5b7acad3054"
+  }
+}

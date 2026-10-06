@@ -1,0 +1,158 @@
+{
+  "time_utc": "2026-09-30T11:16:17.394095+00:00",
+  "array_job_id": "3177489",
+  "submitted_runs": 6,
+  "maximum_concurrent_runs": 6,
+  "maximum_total_gpus": 24,
+  "running": 3,
+  "pending": 3,
+  "runs": [
+    {
+      "array_task": "3177489_0",
+      "run": "clean-cls-linear-lr2e-5-fold0-seed2",
+      "slurm_state": "RUNNING",
+      "elapsed": "2:23",
+      "node": "n577",
+      "reason_or_node": "n577",
+      "gpus_requested": 4,
+      "initialized": true,
+      "train_rows": 73691,
+      "validation_rows": 17490,
+      "gpu_devices": [
+        {
+          "rank": 0,
+          "uuid": "abe1a7d8-8810-16b0-1796-979c099098ba",
+          "device": "NVIDIA GH200 120GB"
+        },
+        {
+          "rank": 1,
+          "uuid": "67693e58-ec39-1474-f84f-dabb024b727c",
+          "device": "NVIDIA GH200 120GB"
+        },
+        {
+          "rank": 2,
+          "uuid": "2fce23ea-0d72-1032-464b-9c9742184c93",
+          "device": "NVIDIA GH200 120GB"
+        },
+        {
+          "rank": 3,
+          "uuid": "50503f20-a427-eb07-da8d-2d5275c4c1b6",
+          "device": "NVIDIA GH200 120GB"
+        }
+      ],
+      "last_logged_update": 10,
+      "mean_bce": 0.6948978397995234,
+      "mean_loss": 6.94897834956646,
+      "startup_error_lines": []
+    },
+    {
+      "array_task": "3177489_1",
+      "run": "clean-cls-linear-lr2e-5-fold1-seed2",
+      "slurm_state": "RUNNING",
+      "elapsed": "2:23",
+      "node": "n71",
+      "reason_or_node": "n71",
+      "gpus_requested": 4,
+      "initialized": true,
+      "train_rows": 71698,
+      "validation_rows": 18285,
+      "gpu_devices": [
+        {
+          "rank": 0,
+          "uuid": "01859cf7-a09f-7479-7d66-71c34cd8e407",
+          "device": "NVIDIA GH200 120GB"
+        },
+        {
+          "rank": 1,
+          "uuid": "9a15cd59-09fb-1bda-d2cc-5f0cdd5722f0",
+          "device": "NVIDIA GH200 120GB"
+        },
+        {
+          "rank": 2,
+          "uuid": "18ff20fc-3c46-657c-9495-256f3dc1a63c",
+          "device": "NVIDIA GH200 120GB"
+        },
+        {
+          "rank": 3,
+          "uuid": "af153bc2-fa01-6755-a4b0-f8a8ec553f20",
+          "device": "NVIDIA GH200 120GB"
+        }
+      ],
+      "last_logged_update": 20,
+      "mean_bce": 0.6950047379359603,
+      "mean_loss": 6.950047314167023,
+      "startup_error_lines": []
+    },
+    {
+      "array_task": "3177489_2",
+      "run": "clean-cls-linear-lr2e-5-fold2-seed2",
+      "slurm_state": "RUNNING",
+      "elapsed": "2:23",
+      "node": "n102",
+      "reason_or_node": "n102",
+      "gpus_requested": 4,
+      "initialized": true,
+      "train_rows": 71986,
+      "validation_rows": 18515,
+      "gpu_devices": [
+        {
+          "rank": 0,
+          "uuid": "9c16719f-d4b2-b66a-be3a-fcbbddb071a2",
+          "device": "NVIDIA GH200 120GB"
+        },
+        {
+          "rank": 1,
+          "uuid": "ace01cdb-ec9a-64c6-05b5-9fb4e4965d6c",
+          "device": "NVIDIA GH200 120GB"
+        },
+        {
+          "rank": 2,
+          "uuid": "4fbaf6a4-f734-4ff2-75a1-8745c0a65f0e",
+          "device": "NVIDIA GH200 120GB"
+        },
+        {
+          "rank": 3,
+          "uuid": "dbafc168-1889-a4fd-650c-c34d599405cc",
+          "device": "NVIDIA GH200 120GB"
+        }
+      ],
+      "last_logged_update": 10,
+      "mean_bce": 0.6955591421574354,
+      "mean_loss": 6.955591410398483,
+      "startup_error_lines": []
+    },
+    {
+      "array_task": "3177489_3",
+      "run": "clean-cls-linear-lr5e-6-fold0-seed2",
+      "slurm_state": "PENDING",
+      "elapsed": "0:00",
+      "node": "",
+      "reason_or_node": "(Resources)",
+      "gpus_requested": 4,
+      "startup_error_lines": []
+    },
+    {
+      "array_task": "3177489_4",
+      "run": "clean-cls-linear-lr5e-6-fold1-seed2",
+      "slurm_state": "PENDING",
+      "elapsed": "0:00",
+      "node": "",
+      "reason_or_node": "(Resources)",
+      "gpus_requested": 4,
+      "startup_error_lines": []
+    },
+    {
+      "array_task": "3177489_5",
+      "run": "clean-cls-linear-lr5e-6-fold2-seed2",
+      "slurm_state": "PENDING",
+      "elapsed": "0:00",
+      "node": "",
+      "reason_or_node": "(Resources)",
+      "gpus_requested": 4,
+      "startup_error_lines": []
+    }
+  ],
+  "running_jobs_completed_optimizer_updates": true,
+  "startup_errors_detected": false,
+  "automatic_checkpoint_and_requeue_enabled": true
+}

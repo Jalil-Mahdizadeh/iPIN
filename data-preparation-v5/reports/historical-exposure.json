@@ -1,0 +1,113 @@
+{
+  "historical_homology": "Existing v1 manifest records 107 training and 2 validation rows removed by the 40%-identity/80%-both-coverage rule; native was not retroactively retrained.",
+  "identical_v1_to_v4_official_pair_arrays": {
+    "retrain-v2/data/prepared/official/train.npy": "9c290cf84301a697bea1a37677973e1d710a75083fec1265113b56ea7a11c519",
+    "retrain-v2/data/prepared/official/val.npy": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0",
+    "retrain-v3/data/prepared/official/train.npy": "9c290cf84301a697bea1a37677973e1d710a75083fec1265113b56ea7a11c519",
+    "retrain-v3/data/prepared/official/val.npy": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0",
+    "retrain-v4/data/prepared/official/train.npy": "9c290cf84301a697bea1a37677973e1d710a75083fec1265113b56ea7a11c519",
+    "retrain-v4/data/prepared/official/val.npy": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0"
+  },
+  "ilp_test_new_proteins": 0,
+  "limitations": [
+    "Current alias coverage is reported, not assumed complete.",
+    "No assertion about unsupervised pretraining exposure or independence from previous benchmark-guided research."
+  ],
+  "native_scope": "Historical source dataset checked; native checkpoint training membership cannot be proven from weights.",
+  "original_test_proteins": 3022,
+  "passed": true,
+  "source_hashes": {
+    "retrain-v1/data/raw/pairs_uniprot_seqs_train.csv": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a",
+    "retrain-v1/data/raw/pairs_uniprot_seqs_val.csv": "0df36cbb69047e21ba01051641eede26a6e054e9c3e827c3bbe62e391854d9f2"
+  },
+  "splits": {
+    "train": {
+      "historical_source": {
+        "exact_test_sequence_overlap": 0,
+        "proteins": 4286,
+        "rows": 163192,
+        "shared_test_accessions": [],
+        "shared_test_entry_families": [],
+        "unresolved_current_alias_bases": [
+          "A2A2Z9",
+          "A9Z1Z3",
+          "O60397",
+          "Q3SXR2",
+          "Q52M75",
+          "Q5YKI7",
+          "Q8N1T3",
+          "Q8NFI4"
+        ]
+      },
+      "v1_to_v4_used": {
+        "exact_test_sequence_overlap": 0,
+        "proteins": 4285,
+        "rows": 163085,
+        "shared_test_accessions": [],
+        "shared_test_entry_families": [],
+        "unresolved_current_alias_bases": [
+          "A2A2Z9",
+          "A9Z1Z3",
+          "O60397",
+          "Q3SXR2",
+          "Q52M75",
+          "Q5YKI7",
+          "Q8N1T3",
+          "Q8NFI4"
+        ]
+      }
+    },
+    "val": {
+      "historical_source": {
+        "exact_test_sequence_overlap": 0,
+        "proteins": 3711,
+        "rows": 59260,
+        "shared_test_accessions": [],
+        "shared_test_entry_families": [],
+        "unresolved_current_alias_bases": [
+          "A0A1B0GX68",
+          "A6NM62",
+          "P01854",
+          "P07202",
+          "P20800",
+          "P55103",
+          "P58512",
+          "Q5SWW7",
+          "Q6NVV9",
+          "Q6ZSB3",
+          "Q7Z4U5",
+          "Q86Y30",
+          "Q8IUK8",
+          "Q8N1L1",
+          "Q8N268",
+          "Q8WV35"
+        ]
+      },
+      "v1_to_v4_used": {
+        "exact_test_sequence_overlap": 0,
+        "proteins": 3710,
+        "rows": 59258,
+        "shared_test_accessions": [],
+        "shared_test_entry_families": [],
+        "unresolved_current_alias_bases": [
+          "A0A1B0GX68",
+          "A6NM62",
+          "P01854",
+          "P07202",
+          "P20800",
+          "P55103",
+          "P58512",
+          "Q5SWW7",
+          "Q6NVV9",
+          "Q6ZSB3",
+          "Q7Z4U5",
+          "Q86Y30",
+          "Q8IUK8",
+          "Q8N1L1",
+          "Q8N268",
+          "Q8WV35"
+        ]
+      }
+    }
+  }
+}

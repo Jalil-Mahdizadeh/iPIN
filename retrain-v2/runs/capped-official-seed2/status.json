@@ -1,0 +1,19 @@
+{
+  "state": {
+    "update": 12745,
+    "cursor": {
+      "cycle": 6,
+      "offset": 32914
+    },
+    "epoch": 6,
+    "next_chunk": 32914,
+    "examples_seen": 815680,
+    "best_ap": 0.6515787053852181,
+    "best_update": 8000,
+    "total_steps": 12745,
+    "pending_validation": false,
+    "last_validation_update": 12745
+  },
+  "phase": "complete",
+  "last_committed_update": 12745
+}

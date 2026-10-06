@@ -1,0 +1,27 @@
+{
+  "time_utc": "2026-09-30T11:03:15.408933+00:00",
+  "dry_run": true,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation",
+  "runs": [
+    "clean-cls-linear-lr2e-5-fold0-seed2",
+    "clean-cls-linear-lr2e-5-fold1-seed2",
+    "clean-cls-linear-lr2e-5-fold2-seed2",
+    "clean-cls-linear-lr5e-6-fold0-seed2",
+    "clean-cls-linear-lr5e-6-fold1-seed2",
+    "clean-cls-linear-lr5e-6-fold2-seed2"
+  ],
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-5%2",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation/slurm/train.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation"
+  ],
+  "shell_command": "sbatch --parsable --array=0-5%2 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-adaptation",
+  "gpus_per_run": 4,
+  "maximum_concurrent_runs": 2,
+  "launcher_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/scripts/launch.py",
+  "launcher_sha256": "6ad21826aa498e9294169013e540aabff5a9c2763736fbb2b94c5f52b8c6279e",
+  "production_jobs_submitted_by_this_call": 0,
+  "qualified": true
+}

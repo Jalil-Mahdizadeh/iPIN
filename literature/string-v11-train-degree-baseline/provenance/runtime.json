@@ -1,0 +1,10 @@
+{
+  "verified_at_utc": "2026-10-05T21:12:56.900053+00:00",
+  "image": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact/plm-interact-native-arm64-v1.sif",
+  "bytes": 13101785088,
+  "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2",
+  "full_hash_verified": true,
+  "verification_seconds": 7.431214048992842,
+  "gpu_passthrough": false,
+  "slurm_jobs_submitted": 0
+}

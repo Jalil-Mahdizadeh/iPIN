@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "native-plm",
+    "test": "worm",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e5f3c2b73a922bebc7b8ef1ce9629fd97516a02861dd899908150353632772d5",
+    "scores": "764ec08271f0813cbca72e3de05c9962bf3c63b28452f4f1b709ae1dfa16119a",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/worm-native-plm.npz",
+    "bytes": 15029,
+    "sha256": "e058229b0f5477db0cea5c80465551705f93ffdb4fcb13b682fadbf1943b9d2a"
+  }
+}

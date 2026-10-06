@@ -1,0 +1,23 @@
+{
+  "state": {
+    "update": 3,
+    "cursor": {
+      "cycle": 1,
+      "offset": 10
+    },
+    "epoch": 1,
+    "next_chunk": 10,
+    "examples_seen": 21,
+    "best_ap": 0.48214285714285715,
+    "best_update": 2,
+    "total_steps": 3,
+    "pending_validation": false,
+    "last_validation_update": 3
+  },
+  "fingerprint": "b6176ae679b03dc152e3aad7a2ae480331b15bf8919cc7c4057da2f3af86b643",
+  "qualification": true,
+  "test_evaluated": false,
+  "model_hashes_by_rank": [
+    "45bfffebcab9d872a1492e4a69e59a5ddc2156c2dbc346993b5dfbe1242f9dce"
+  ]
+}

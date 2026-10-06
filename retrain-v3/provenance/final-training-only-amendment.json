@@ -1,0 +1,29 @@
+{
+  "time_utc": "2026-10-01T08:09:55.336841+00:00",
+  "old_job_id": "3206387",
+  "request": "Training only; benchmarking later in a separate benchmark-v3 folder",
+  "action": "Safe stop current wrapper, retain full checkpoint, resume identical training contract using a training-only release",
+  "benchmark_authorized_now": false,
+  "test_inference_started": false,
+  "old_job_state": "COMPLETED",
+  "old_job_exit_code": "0:0",
+  "safe_stop_update": 26,
+  "retained_checkpoint": {
+    "file": "update-000000026.pt",
+    "sha256": "acffc13df23265c11ec46ed4d7587f6c648865c3787e7bbf383d549ce51189eb",
+    "bytes": 7813279814,
+    "update": 26,
+    "epoch": 0,
+    "next_chunk": 1664,
+    "world_size": 4,
+    "fingerprint": "e88b62a2ebf16f901ebd59fa6d486220f7d7173ebb8fbe77eccf62fed7b4cc21",
+    "best_update": null,
+    "best_ap": null
+  },
+  "checkpoint_sha256_verified": true,
+  "new_release": "20261001-final-training",
+  "no_test_inference_artifacts": true,
+  "replacement_job_id": "3206610",
+  "replacement_submitted_at_utc": "2026-10-01T08:14:19.610119+00:00",
+  "automatic_final_benchmark": false
+}

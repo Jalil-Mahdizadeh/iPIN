@@ -1,0 +1,11 @@
+{
+  "driver_pid": 725800,
+  "ended_utc": "2026-10-02T19:36:47.984208+00:00",
+  "exit_code": 0,
+  "maximum_solver_seconds": 1800,
+  "slurm_job_id": "3266861",
+  "started_utc": "2026-10-02T19:06:44.128190+00:00",
+  "status": "complete",
+  "watchdog_grace_seconds": 60,
+  "worker_pid": 725801
+}

@@ -1,0 +1,133 @@
+{
+  "at_utc": "2026-10-06T08:08:45.588053+00:00",
+  "protocol_sha256": "b85d8ce66e05d1e0ada7acb47a959a3c98f6598b5abc35bced3ba1e16f325f06",
+  "scripts": {
+    "common.py": "f904374da2b9a8135ea98cf9f7bf39865f6a0a5d9c9ebea973237c8068034de1",
+    "fit_predict.py": "5b6579ae1519077194e1d6dd73be4db843bfb20e487250d2ae70fc3f4b45b024"
+  },
+  "artifacts": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/homologs.csv.gz",
+      "bytes": 2612418,
+      "sha256": "c55583f6c0c5eec59f5864e133ee39c93dfba03996234c963032a8ff596bc4b1"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/protein-values.npz",
+      "bytes": 549082,
+      "sha256": "b38a9be2cc889c84a7b1bd3aa1dfc08ddf9175950ae90b5d1229465674039410"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/sequence-propensity.joblib",
+      "bytes": 426052,
+      "sha256": "48447a12e958d093a1ac65d6f72455c5f050d4249b64c7d09f9cc32ae66ca6d6"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/train-positive-graph.npy",
+      "bytes": 2803184,
+      "sha256": "021878eb29c57e482349a7289e6f20b0e58eb8105b461876dfa6c56f693e57f0"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/validation-baseline-scores.npz",
+      "bytes": 1293108,
+      "sha256": "462968d3f160ffe92e615fd75ab999d4cdba8421dbdd2a2dcaae11f67e851d99"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/original-baseline-scores.npz",
+      "bytes": 423815,
+      "sha256": "cede2a4cf300efdb91dc2af8e1cf3de319f95a6d9a9b31970aad4173f98d13a8"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/ilp-baseline-scores.npz",
+      "bytes": 422604,
+      "sha256": "9fc9418777983367e1dbac22145114bfe18fddcc59932ca863ed982f22cac571"
+    }
+  ],
+  "training_pairs": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/train-pairs.npy",
+    "bytes": 11212352,
+    "sha256": "56915614dbc40fe0843f8b656a9bfa5867a4ea63cc66595a2d6e391951db2671"
+  },
+  "training_labels": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/train-labels.npy",
+    "bytes": 700892,
+    "sha256": "d2acaec03a3ad0595f05e4cf70ea6ebf77a55c76ef68bcd727a06fe78da2734f"
+  },
+  "all_query_sequences": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/sequences.json",
+    "bytes": 15568545,
+    "sha256": "dcd8fe5afacc1737e7b4de2d4b7367ccd857d803854d2d95adc8d5681e4f88d7"
+  },
+  "regressor_parameters": {
+    "categorical_features": "from_dtype",
+    "early_stopping": false,
+    "interaction_cst": null,
+    "l2_regularization": 10.0,
+    "learning_rate": 0.05,
+    "loss": "squared_error",
+    "max_bins": 255,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 300,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "quantile": null,
+    "random_state": 47,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "feature_count": 422,
+  "train_protein_target_r2": 0.6259389457091774,
+  "feature_seconds": 0.36342689295997843,
+  "regressor_fit_seconds": 1.1669188779778779,
+  "regressor_prediction_seconds": 0.02799366699764505,
+  "homolog_parse_and_all_pair_scoring_seconds": 1.0330633000121452,
+  "homology_no_hit_value": 0.00010136396017853736,
+  "homologs": {
+    "raw_hits": 106024,
+    "exact_matches_inserted_missing_from_search": 3,
+    "query_proteins_with_hit": 14092,
+    "query_proteins_without_hit": 8063
+  },
+  "unique_positive_train_edges": 350382,
+  "datasets": {
+    "validation": {
+      "rows": 165742,
+      "scoring_and_symmetry_audit_seconds": 0.10999465797794983
+    },
+    "original": {
+      "rows": 52048,
+      "scoring_and_symmetry_audit_seconds": 0.04873202001908794
+    },
+    "ilp": {
+      "rows": 52048,
+      "scoring_and_symmetry_audit_seconds": 0.04732981900451705
+    }
+  },
+  "resource_use": {
+    "wall_seconds": 3.458519053994678,
+    "user_seconds": 18.775417,
+    "system_seconds": 0.227881,
+    "max_rss_kib": 294912,
+    "at_utc": "2026-10-06T08:08:45.605605+00:00"
+  },
+  "checks": {
+    "no_evaluation_label_files_read_by_fit_predict": true,
+    "all_scores_finite": true,
+    "all_scores_symmetric": true,
+    "vectorized_interolog_matches_independent_scalar_lookup": true,
+    "train_degree_counts_match_independent_loop": true
+  },
+  "environment": {
+    "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "sklearn": "1.6.1",
+    "machine": "aarch64",
+    "hostname": "n450",
+    "gpu_used": false
+  }
+}

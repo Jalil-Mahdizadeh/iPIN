@@ -1,0 +1,23 @@
+{
+  "active_stages": {},
+  "error": null,
+  "finished_stages": [
+    "bootstrap",
+    "uniprot",
+    "normalize",
+    "historical_exposure",
+    "homology",
+    "negative_test-ilp",
+    "positive_split",
+    "boundary_verification",
+    "negative_val",
+    "negative_train",
+    "finalize"
+  ],
+  "host": "n505",
+  "pid": 725019,
+  "recovery": "v1",
+  "slurm_job_id": "3266861",
+  "status": "complete",
+  "updated_utc": "2026-10-02T18:40:34.646173+00:00"
+}

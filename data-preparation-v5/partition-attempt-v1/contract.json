@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "discarded": 287829,
+    "feasible": true,
+    "retained": 433253,
+    "train": 350382,
+    "train_fraction": 0.8087237710991038,
+    "val": 82871,
+    "val_fraction": 0.19127622890089624
+  },
+  "created_utc": "2026-10-02T19:06:46.464999+00:00",
+  "fingerprint": "e7dfb998724e9abde245812d5b04914b952c9f759a898b869acfea2b94f77593",
+  "formulation": "one group assignment and one McCormick product per group pair; equivalent integer partitions",
+  "identities": {
+    "completed.json": "8805825a1cca647c21dccd247f148b587b69c1e458083615e45f8fe446aa00c9",
+    "configuration.json": "910603ef9af3c60ef15b3af5660e1b822d33d195a44201732c143d8070047609",
+    "environment/requirements.lock": "510ed58122822bed69538dd8a8b0b2c2980425b8cde67396061287d16c12cccd",
+    "environment/runtime.json": "9ae804303e088159dc781c24b9a751a1288829619dad215e27b3642d2f7b1297",
+    "partition-attempt-v1/attempt.py": "882373f38e25f43e179bd2d3b6d35497666ca257f4797647199a2b8068fa0330",
+    "partition-attempt-v1/launch.py": "081676ccbed9b8852fc270368f506b2b381f1a46767fb8057289c4cdb6c0034a",
+    "partition-attempt-v1/qualification.json": "d00e6eafe994f4a1f0f08c5a284cdf1c6f5ed98597a66aea3ca039f3d0c06e09",
+    "reports/positive-split.json": "3cecac995c5e02018c70395ff6fdc8e3befaec18db1a6d840ed58ff92efcf5c7",
+    "scripts/python.sh": "c94518918c79f8fa02e3a6ce97b13da2b5a2a6d8168846d9026112a36a24d233",
+    "work/eligible-positives.csv": "eb445c94f07e19111d71ed4f3166648211fa649cc2902a229f47eecebcd56773",
+    "work/protein-groups.json": "1ccb8616c2ed76c983f448f77b459b1e16d47f85116d39420e3264e5d01276cd",
+    "work/protein-to-development-split.json": "6e573baac10e69e55b2a84b902e194de3c6f61016047b847bf13fd7c814d4fc3"
+  },
+  "minimum_adoptable_retained": 437586,
+  "old_gap": 0.49406136724522637,
+  "old_retained_upper_bound": 647306.5695430962,
+  "original_completed_manifest_sha256": "8805825a1cca647c21dccd247f148b587b69c1e458083615e45f8fe446aa00c9",
+  "output_scope": "This attempt writes only its own directory; existing completed dataset is preserved.",
+  "policy": {
+    "group_assignment_inputs_unchanged": true,
+    "maximum_production_attempts": 1,
+    "minimum_retention_increase_fraction": 0.01,
+    "original_and_ilp_tests_unchanged": true,
+    "solver_seconds": 1800,
+    "stop_after_seconds_without_improvement_once_adoptable": 300,
+    "target_relative_gap": 0.01,
+    "threads": 8,
+    "training_positives_must_not_decrease": true
+  }
+}

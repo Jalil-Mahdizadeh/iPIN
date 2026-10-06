@@ -1,0 +1,88 @@
+{
+  "actual_mip_gap": 0.00043762305663604264,
+  "admissible_pairs": 17985588,
+  "candidate_adaptations": [
+    "known-positive family blacklist",
+    "hard exclusion of all self pairs",
+    "random excess selection within GO strata instead of sorted-key truncation"
+  ],
+  "candidate_fingerprint": "52535ee2c514550bd72fba6796e97b24836701b27fec99f32958c8c881ac04fb",
+  "candidates": 331484,
+  "configured_mip_gap": 0.01,
+  "configured_time_limit": 1800.0,
+  "degree_absolute_residual_sum": 330,
+  "dual_bound": 0.00035183125892147143,
+  "formulation": "equivalent equality/deviation form of pinned author degree and mean GO objectives",
+  "highs_run_status": "HighsStatus.kOk",
+  "initial_diagnostic": {
+    "degree_absolute_residual_sum": 46406,
+    "max_negative_positive_degree_ratio": 6.0,
+    "negative_go_jaccard_mean": 0.010840384006404013,
+    "objective": 0.10219640443841098,
+    "objective_terms": {
+      "degree": 0.09430678060151781,
+      "jaccard": 0.00788962383689316
+    },
+    "positive_go_jaccard_mean": 0.018583391871814976
+  },
+  "initial_objective": 0.10219640443841098,
+  "mathematically_proven_optimal": false,
+  "max_negative_positive_degree_ratio": 1.2347083926031295,
+  "negative_go_jaccard_mean": 0.018583543046168292,
+  "negative_go_jaccard_quantiles": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "negatives": 82871,
+  "nodes": 1,
+  "normalized_objective_reduction_fraction": 0.9965557956981291,
+  "objective": 0.00035198529580251147,
+  "objective_scale": 1000000.0,
+  "objective_terms": {
+    "degree": 0.0003518312589214716,
+    "jaccard": 1.540368810399008e-07
+  },
+  "options": {
+    "log_file": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/data-preparation-v5/work/recovery-v1/val/highs-001.log",
+    "log_to_console": true,
+    "mip_abs_gap": 0.0001,
+    "mip_ipm_solver": "ipx",
+    "mip_lp_solver": "ipm",
+    "mip_max_start_nodes": 0,
+    "mip_min_logging_interval": 5.0,
+    "mip_rel_gap": 0.01,
+    "parallel": "on",
+    "presolve": "on",
+    "random_seed": 2,
+    "threads": 8,
+    "time_limit": 1800.0
+  },
+  "output_sha256": "a3a173f7f34eee67a2525d8bb61560c7ef8dfbf9cb95af1b44869e2d4df20e60",
+  "peak_rss_gib": 1.04840087890625,
+  "positive_go_jaccard_mean": 0.018583391871814976,
+  "positive_go_jaccard_quantiles": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "positive_negative_degree_spearman": 0.9999896842740041,
+  "positives": 82871,
+  "proteins": 6023,
+  "proteins_absent_from_negatives": 2,
+  "proteins_without_go": 727,
+  "recovery_contract": "122ac3b3c3bc9a4473a45e5ecb592961e9d31d729ce14f1c26f0af942aa858b5",
+  "returned_solution_feasible": true,
+  "solver": "HIGHS",
+  "solver_observed_feasible_incumbent": true,
+  "solver_reported_gap": 0.0004376230528222774,
+  "solver_seconds": 17.449268615993788,
+  "split": "val",
+  "stall_limit_seconds": 300,
+  "status": "kOptimal",
+  "stop_reason": null
+}

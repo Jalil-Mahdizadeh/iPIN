@@ -1,0 +1,109 @@
+"""Write the final report from verified machine-readable results, not hand-transcribed scores."""
+import csv,json
+from pathlib import Path
+from bench_utils import ROOT,atomic,now,read,record
+from collect import NAMES,LABELS
+
+def main():
+ s=read(ROOT/'results/summary.json');assert s['complete'];t=s['tests'];d=s['paired_differences'];selection=read(ROOT/'provenance/selection.json')
+ human=read(ROOT/'provenance/human-releases-exposure.json');exposure=read(ROOT/'provenance/exposure.json')['audits'];sprint=read(ROOT/'predictions/sprint/done.json');hsp=read(ROOT/'predictions/sprint/hsp-complete.json')
+ def diff(test,name,metric='ap'):return next(r for r in d if r['test']==test and r['model']==name and r['reference']=='native-plm' and r['metric']==metric)
+ def interval(item):return f"[{item['low']:+.4f}, {item['high']:+.4f}]"
+ original=diff('original','ipin-esm2');ilp=diff('ilp','ipin-esm2')
+ conclusion='V5 does not establish a meaningful improvement over native PLM-interact (Bernett) on the original Bernett test.'
+ if original['difference']>=.01 and original['low']>0:conclusion='V5 ESM2 meets the stated practical AP-improvement target on the original Bernett test.'
+ ilp_conclusion=('V5 ESM2 improves on the custom ILP-negative test, meeting the descriptive +0.010 AP / positive paired interval target.'
+  if ilp['difference']>=.01 and ilp['low']>0 else 'The custom ILP-test result does not meet both parts of the descriptive practical improvement target.')
+ text=['# v5 benchmark report','',f'Completed: {now()}. Eleven frozen predictors, two 52,048-pair tests; all requested predictions are present.','',
+  conclusion+' '+ilp_conclusion,
+  '',f"ESM2 was the preferred iPIN checkpoint based on DEV before testing. Its AP differences versus native Bernett are **{original['difference']:+.4f}** on the original test (95% paired protein-bootstrap interval {interval(original)}) and **{ilp['difference']:+.4f}** on the ILP test ({interval(ilp)}). These tests share all positives, so this is evidence about sensitivity to the negative distribution, not two independent replications.",
+  '', '## Main results','', '| Frozen predictor | Original AP | Original AUROC | ILP AP | ILP AUROC |','|---|---:|---:|---:|---:|']
+ for n in NAMES:
+  a=t['original']['models'][n];b=t['ilp']['models'][n];text.append(f"| {LABELS[n]} | {a['ap']:.4f} | {a['auroc']:.4f} | {b['ap']:.4f} | {b['auroc']:.4f} |")
+ text+=['','*X-PAIR default, D-SCRIPT, PLM-interact humanV11 and TUnA human seed 47 have known supervised training/validation-data overlap with these tests; their full-test results are descriptive external baselines, without an unseen-protein guarantee. X-PAIR Bernett is separately reported and was not chosen by its test score. RAPPPID is the released multiplicative-head STRING-C3 model, with its native 1,500-residue cap. SPRINT uses the user-approved v5 TRAIN-positive graph.*',
+  '', '![Average precision and paired protein-bootstrap intervals](results/average-precision.png)',
+  '', '## iPIN versus native Bernett: uncertainty','', '| Test | iPIN backbone | AP difference | 95% interval | AUROC difference | 95% interval |','|---|---|---:|---|---:|---|']
+ for test in ['original','ilp']:
+  for n in ['ipin-esm2','ipin-esmc']:
+   a=diff(test,n);b=diff(test,n,'auroc');text.append(f"| {test} | {n} | {a['difference']:+.4f} | {interval(a)} | {b['difference']:+.4f} | {interval(b)} |")
+ text+=['','Intervals use 1,000 paired protein-endpoint bootstrap replicates (seed 20260929). A non-self pair receives the product of its endpoint multiplicities; a self-pair receives one multiplicity. Every model uses the same resampling weights within a test. Weighted AP/AUROC were independently checked against sklearn. These descriptive percentile intervals do not measure training-seed, protein-family or dataset-construction uncertainty; no multiplicity-adjusted significance claim is made.',
+  '', '## Frozen data and model choice','', '| Item | Original Bernett | Custom ILP negatives |','|---|---:|---:|']
+ for key,label in [('pairs','Pairs'),('positives','Positives'),('negatives','Negatives'),('unique_proteins','Unique sequences'),('combined_over_2193','Pairs above 2,193 combined residues'),('rapppid_capped_pairs','Pairs affected by RAPPPID cap')]:
+  text.append(f"| {label} | {t['original']['counts'][key]:,} | {t['ilp']['counts'][key]:,} |")
+ text+=['','The tests share 26,024 positives and 1,154 negatives. Their union has 76,918 pairs over 3,022 unique sequences; each predictor scored that union once. Maximum test protein length is 5,183 residues and maximum paired length is 7,423 residues. No test rows were dropped, imputed or selected by outcome. The ILP test is this project’s custom negative reconstruction, not the published Bernett-2026 test.',
+  '', '| iPIN | Selected update | Selection DEV AP | DEV pairs | Training seed |','|---|---:|---:|---:|---:|']
+ for n in ['ipin-esm2','ipin-esmc']:
+  m=selection['models'][n];text.append(f"| {LABELS[n]} | {m['update']:,} | {m['validation_ap']:.6f} | 165,742 | 2 |")
+ text+=['','Both iPIN models were selected independently using maximum full ILP DEV pooled AP; the selection audit rechecked all 16 saved full DEV evaluations for each model. Their training evidence contains 700,764 balanced pairs, including 350,382 positives. Neither model was fitted, recalibrated or selected using these benchmark scores. The folder was renamed from `retraining-v5` to `retrain-v5`; frozen checkpoint manifests and bytes were preserved.',
+  '', '## Exposure and fair interpretation','', '| Predictor / source | Exact test-sequence overlap | Original test pair overlap | ILP test pair overlap |','|---|---:|---:|---:|']
+ for name,key in [('v5 iPIN TRAIN + DEV','v5-ipin__exact'),('TUnA documented TRAIN + DEV','tuna__exact'),('D-SCRIPT documented human TRAIN','dscript__exact'),('X-PAIR default published TRAIN + DEV','xpair-default__exact')]:
+  v=exposure[key];text.append(f"| {name} | {v['test_endpoints_exposed']:,} / 3,022 | {v['tests']['original']['pairs_exposed']:,} | {v['tests']['ilp']['pairs_exposed']:,} |")
+ text+=['| Native PLM-interact Bernett documented source | 0 / 3,022 | 0 | 0 |',
+ f"| PLM-interact humanV11 TRAIN + validation | {human['exact_union_sequences_exposed']:,} / 3,022 | {human['tests']['original']['train_or_validation']['pairs_exposed']:,} | {human['tests']['ilp']['train_or_validation']['pairs_exposed']:,} |",
+ f"| TUnA human seed 47 TRAIN + validation | {human['exact_union_sequences_exposed']:,} / 3,022 | {human['tests']['original']['train_or_validation']['pairs_exposed']:,} | {human['tests']['ilp']['train_or_validation']['pairs_exposed']:,} |",
+ '| SPRINT v5 TRAIN graph | 0 / 3,022 | 0 | 0 |',
+ '| X-PAIR Bernett | Expected 0 under documented split; not independently verified | Expected 0 under documented split; not independently verified | Expected 0 under documented split; not independently verified |',
+ '| RAPPPID released checkpoint | Not independently established | Not independently established | Not independently established |','',
+ 'D-SCRIPT has 2,233 exact test proteins and 1,167 / 1,292 original / ILP pairs in its documented public human training files. Its 1,091 shared positive pairs are common to both tests. X-PAIR default has 1,927 shared positive test pairs in its published interaction/interface training or validation data, plus 200 original-test negatives and 383 ILP-test negatives. Counts are unchanged by its checkpoint’s 50–2,000-residue training filters and by Ankh residue normalization. Removing only exact shared pairs leaves many familiar endpoints; the endpoint-unexposed sensitivity analysis is stricter but much smaller and has a different prevalence. Neither analysis proves absence of homologous or pretraining exposure.',
+ '', 'The native Bernett audit concerns its documented historical source data; checkpoint membership cannot be proven from weights. X-PAIR Bernett names Bernett TRAIN/DEV in its checkpoint metadata. If the released checkpoint follows the original split, exact protein and pair exposure is zero on both tests, because the custom ILP test uses only original-test proteins. The exact processed author files were not available locally for independent verification. RAPPPID names STRING-C3 source files that are not bundled, so its overlap with these Bernett tests remains unknown.',
+ '', '### Common-subset sensitivity analyses','', '| Test / subset | Pairs | Positive fraction | Native Bernett AP | v5 ESM2 AP | v5 ESMC AP | X-PAIR default AP |','|---|---:|---:|---:|---:|---:|---:|']
+ with (ROOT/'results/subsets.csv').open() as f:subsets=list(csv.DictReader(f))
+ for test in ['original','ilp']:
+  for group in ['xpair_default_pair_unexposed','xpair_default_endpoint_unexposed','combined_over_2193','rapppid_uncapped']:
+   rr={r['model']:r for r in subsets if r['test']==test and r['subset']==group};first=rr['native-plm']
+   text.append(f"| {test} / {group} | {int(first['rows']):,} | {float(first['prevalence']):.3f} | "+' | '.join(f"{float(rr[n]['ap']):.4f}" for n in ['native-plm','ipin-esm2','ipin-esmc','xpair-default'])+' |')
+ text+=['','| Test / D-SCRIPT exposure subset | Pairs | Positive fraction | Native Bernett AP | v5 ESM2 AP | D-SCRIPT AP |','|---|---:|---:|---:|---:|---:|']
+ for test in ['original','ilp']:
+  for group in ['dscript_pair_unexposed','dscript_endpoint_unexposed']:
+   rr={r['model']:r for r in subsets if r['test']==test and r['subset']==group};first=rr['native-plm']
+   text.append(f"| {test} / {group} | {int(first['rows']):,} | {float(first['prevalence']):.3f} | "+' | '.join(f"{float(rr[n]['ap']):.4f}" for n in ['native-plm','ipin-esm2','dscript'])+' |')
+ text+=['','All eleven predictors are evaluated on identical rows within each subset in [subsets.csv](results/subsets.csv). These are descriptive analyses. Do not compare their AP directly across different prevalences or use them to select a checkpoint.']
+ if (ROOT/'provenance/exposure-subset-figures.json').exists():
+  text+=['','### Performance after removing exposed proteins','',
+   'Each figure removes every pair containing either protein from its named exposure list, then compares all eleven models on the same remaining rows within each test. The two figures apply separate exclusions. Both display AP and AUROC on identical axes, with the retained sample sizes, positive fractions and reference baselines. These are point estimates without subset-specific confidence intervals; the existing predictions were reused.',
+   '', '![All models after removing X-PAIR default-exposed proteins](results/xpair-exposed-sequences-removed.png)',
+   '', '[X-PAIR exclusion: PDF](results/xpair-exposed-sequences-removed.pdf) · [SVG](results/xpair-exposed-sequences-removed.svg)',
+   '', '![All models after removing D-SCRIPT-exposed proteins](results/dscript-exposed-sequences-removed.png)',
+   '', '[D-SCRIPT exclusion: PDF](results/dscript-exposed-sequences-removed.pdf) · [SVG](results/dscript-exposed-sequences-removed.svg)',
+   '', 'All 88 plotted metrics were recomputed from the frozen predictions and matched the existing subset CSV. [Figure data and verification](provenance/exposure-subset-figures.json).']
+ if (ROOT/'provenance/combined-exposure-subset-figure.json').exists():
+  combined=read(ROOT/'provenance/combined-exposure-subset-figure.json');a=combined['data']['original']['counts'];b=combined['data']['ilp']['counts']
+  text+=['', '### Removing exposure to either D-SCRIPT or X-PAIR default','',
+   f"This additional figure excludes a pair whenever either protein occurs in either documented exposure list. The retained sets contain {a['pairs']:,} original-test pairs ({a['positives']:,} positive, {a['negatives']:,} negative) and {b['pairs']:,} ILP-test pairs ({b['positives']:,} positive, {b['negatives']:,} negative). All eleven models use identical rows within each test. Only about 2% of each full test remains, so this is a descriptive subset comparison with no subset-specific confidence intervals.",
+   '', '![All models after excluding proteins exposed to either D-SCRIPT or X-PAIR default](results/combined-exposed-sequences-removed.png)',
+   '', '[Combined exclusion: PDF](results/combined-exposed-sequences-removed.pdf) · [SVG](results/combined-exposed-sequences-removed.svg) · [Metrics CSV](results/combined-exposure-removed-metrics.csv) · [Data and verification](provenance/combined-exposure-subset-figure.json).']
+ text+=['', '## Added human STRING-trained releases', '',
+ 'The exact humanV11 and TUnA human seed-47 releases from the five-species benchmark were added at the user’s request after earlier results were known. Both remain frozen. Their original human TRAIN and validation files were compared as unordered sequence-pair/label multisets and match exactly. Their overlapping supervision means full-test scores are descriptive external-baseline results, not evidence of prediction on unseen proteins.',
+ '', f"Both share {human['exact_union_sequences_exposed']:,} of the 3,022 union proteins with documented human TRAIN/validation. The original and ILP tests contain {human['tests']['original']['train_or_validation']['pairs_exposed']:,} and {human['tests']['ilp']['train_or_validation']['pairs_exposed']:,} previously seen pairs, respectively. This includes 1,230 test-positive pairs. Public TRAIN/validation also calls {human['tests']['original']['train_or_validation']['test_negative_but_source_positive']} original-test negatives and {human['tests']['ilp']['train_or_validation']['test_negative_but_source_positive']} ILP-test negatives positive. Conversely, 47 test positives occur as source negatives. All frozen test labels are preserved; these are source-label conflicts, not an experimental adjudication.",
+ '', 'The following common subset excludes every pair containing either endpoint in either added release’s public TRAIN or validation. Every model uses the same rows. These endpoint masks happen to equal the existing D-SCRIPT TRAIN exposure mask, verified directly; its updated exclusion figure therefore also shows this comparison. Exact exclusions do not remove homologs or pretraining exposure.',
+ '', '| Predictor | Original AP | Original AUROC | ILP AP | ILP AUROC |', '|---|---:|---:|---:|---:|']
+ for n in NAMES:
+  rr={test:next(r for r in subsets if r['test']==test and r['model']==n and r['subset']=='human_releases_endpoint_unexposed') for test in ['original','ilp']}
+  text.append('| '+LABELS[n]+' | '+' | '.join(f"{float(rr[test][metric]):.4f}" for test in ['original','ilp'] for metric in ['ap','auroc'])+' |')
+ text+=['', 'The common subset retains 4,264 original pairs (2,287 positive) and 4,441 ILP pairs (2,287 positive). These are point estimates without subset-specific intervals; changed prevalence and protein composition limit comparison with the full-test AP.',
+ '', 'Both releases originally trained with proteins of 50–800 residues. Inference here preserves full sequences through 5,183 residues per protein and 7,423 residues per pair. The additional `human_training_length_range` rows in subsets.csv report all eleven models on identical rows within the training length range; this is a descriptive length-restricted sensitivity calculation, not model selection.',
+ '', '[Extension protocol](HUMAN-RELEASES-ADDENDUM.md) · [Frozen releases and runtimes](provenance/human-releases.json) · [Source exposure and label conflicts](provenance/human-releases-exposure.json) · [Archived nine-model report](archive/before-human-releases/REPORT.md).']
+ text+=['', '## Execution and checks',
+ '', '- All ten neural predictors cover 76,918 unique pairs; SPRINT covers the same union. Both test mappings pass pair, sequence, label, duplication and shared-score checks.',
+ '- Native Bernett original-test predictions were reused after identity and hash verification; original AP/AUROC reproduce exactly. Only its 24,870 new ILP-negative scores were inferred.',
+ '- Fresh iPIN ESM2, iPIN ESMC and native model forwards reproduced saved DEV logits exactly across short, middle and long production batches. Weights were loaded strictly from frozen manifests.',
+ '- TUnA reused 2,784 exact sequence features and computed 238. X-PAIR reused 1,215 Ankh features and computed 1,807; both X-PAIR checkpoints share those embeddings. Native singleton / full-forward comparisons passed before production scoring.',
+ '- D-SCRIPT original human_v1 was added at the user’s request after the first seven neural predictors had been analyzed. Its native Bepler–Berger encoder reused 2,784 projected sequence features and computed 238. The existing length-safe adapter extends only a nonlearned positional index and tiles contact computation while preserving full native pooling. Supported-length predictions and the long-sequence tiled/full-map check matched exactly. This adapter covers 2,301 original / 2,237 ILP pairs involving a protein over the upstream 2,000-residue limit; no rows were dropped or cropped.',
+ '- iPIN and native Bernett inference use full sequences, FP32 parameters, BF16 autocast, TF32 disabled and mean raw AB/BA logits. Added native humanV11 uses FP32 computation with TF32 disabled and the same mean AB/BA logit rule. The native comparator matches previous iPIN benchmarks, not every original-paper cap/precision convention. TUnA, X-PAIR and RAPPPID retain native FP32 semantics.',
+ f"- SPRINT uses full TRAIN+TEST sequences for transductive sequence-only preprocessing, the exact 350,382 positive TRAIN edges, native PAM120/Thit=15/Tsim=35/Thc=40 settings, 64-thread HSP generation and native serial arithmetic with qualified filtering of unused destination entries. See `SPRINT-EXECUTION-ADDENDUM.md`; a 304-row full-corpus qualification matched the unmodified native binary byte-for-byte. It produced {sprint['zero_scores']:,} zero scores and {sprint['unique_scores']:,} unique scores on the union. Zeros/ties are retained; SPRINT scores are not probabilities, so no Brier score is reported.",
+ f"- Native HSP output contains {hsp['census']['hsp_records']:,} records. One 12-residue TRAIN protein's native full self-HSP is preserved. The parser was adjusted to accept that legitimate record; the SPRINT algorithm and graph were unchanged.",
+ '- The four successful GPU jobs were 3367739 (ESM2), 3367740 (ESMC), 3367741 (native new pairs), and 3367742 (both X-PAIR models). All completed with exit code 0. D-SCRIPT job 3369152 also completed successfully. TUnA, RAPPPID and SPRINT ran within interactive allocation 3366323. Earlier container/launcher failures occurred before test inference and are retained in the logs and job ledger.',
+ '- HumanV11 passed fresh raw-tokenizer/original eager-attention and padding checks through the longest pair. TUnA human passed native singleton, encoder, longest-pair and padding checks; reused 57 exact-sequence features and computed 2,965. Frozen TUnA parameters and buffers were unchanged. See the two new qualification records and human-releases job ledger.',
+ '', '## What these results support','',
+ conclusion+' '+ilp_conclusion,
+ '', 'Any improvement is specific to these frozen checkpoints and test distributions. The two iPIN models use new HIPPIE/ILP training evidence, whereas most competitors use their released training data. SPRINT alone shares the v5 positive graph. This is a comparison of usable predictors, not an isolated architecture ablation. The original test also informed earlier rounds of this research project, so it is not a fresh blind confirmation. The ILP test shares its positives, and sampled negatives are operational non-edges rather than experimentally verified non-interactions. No broad biological or proteome-wide superiority follows from these balanced tests.',
+ '', '## Artifacts','',
+ '- [Protocol](PROTOCOL.md), [D-SCRIPT addendum](DSCRIPT-ADDENDUM.md), [SPRINT execution addendum](SPRINT-EXECUTION-ADDENDUM.md), [selected checkpoint identities](provenance/selection.json), [runtime/weight hashes](provenance/runtime-inputs.json), [native inference notes](provenance/inference-notes.md).',
+ '- [Main metrics](results/metrics.csv), [confidence intervals](results/confidence-intervals.csv), [paired differences](results/paired-differences.csv), [machine-readable summary](results/summary.json).',
+ '- [Original per-pair predictions](results/original-predictions.csv.gz), [ILP per-pair predictions](results/ilp-predictions.csv.gz), [source exposure audit](provenance/exposure.json).',
+ '- [Protein-macro AP](results/protein-macro.csv), [fixed/DEV operating points](results/operating-points.csv), [length and exposure subsets](results/subsets.csv).',
+ '- [PR/ROC curves](results/curves.pdf), [AP intervals](results/average-precision.pdf), [resuming/re-running instructions](RUNNING.md).','']
+ (ROOT/'REPORT.md').write_text('\n'.join(text))
+ (ROOT/'README.md').write_text('# v5 benchmark — complete\n\n'+conclusion+' '+ilp_conclusion+'\n\nSee [REPORT.md](REPORT.md) for all eleven predictors on both tests, confidence intervals and exposure limitations. Machine-readable metrics and per-pair predictions are in [results/](results/).\n\nThe two X-PAIR releases are separate entries. Original D-SCRIPT is included with documented length-safe execution and training-data exposure. SPRINT uses the v5 TRAIN-positive graph. iPIN checkpoint selection was frozen before test analysis; D-SCRIPT and the two human STRING-trained releases were added later at the user\'s request. No retraining occurred.\n\n[Protocol](PROTOCOL.md) · [Re-running and resuming](RUNNING.md) · [Checkpoint selection](provenance/selection.json)\n')
+ print(conclusion,ilp_conclusion,flush=True)
+if __name__=='__main__':main()

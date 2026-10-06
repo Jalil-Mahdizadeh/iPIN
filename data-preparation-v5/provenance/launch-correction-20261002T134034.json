@@ -1,0 +1,6 @@
+{
+  "reason": "Explicit project bind required inside SIF when pipeline working directory is data-preparation-v5",
+  "affected_stage": "bootstrap",
+  "data_or_scientific_configuration_changed": false,
+  "earlier_contract": "execution-contract-failed-launch-20261002T134034.json"
+}

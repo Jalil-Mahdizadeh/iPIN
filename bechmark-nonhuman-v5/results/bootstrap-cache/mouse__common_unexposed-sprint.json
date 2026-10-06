@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "sprint",
+    "test": "mouse__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "16f775a619f65d71b80be62bda5c785aa3a81f8f8dc1ae4161cb71c56ff6986d",
+    "scores": "eb2b9171a650c25520847ff9226ca65a82d71d9171525ac9f9fc4fad5d268f8d",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/mouse__common_unexposed-sprint.npz",
+    "bytes": 14937,
+    "sha256": "e0a1425a2a8dec6d39a4a241b4f0ea8386fb4104793c4da86952d6afb9ba592c"
+  }
+}

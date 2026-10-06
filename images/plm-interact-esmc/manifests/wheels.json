@@ -1,0 +1,163 @@
+[
+  {
+    "file": "transformers-4.48.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/7b/9f/92d3091c44cb19add044064af1bf1345cd35fbb84d32a3690f912800a295/transformers-4.48.1-py3-none-any.whl",
+    "sha256": "24be0564b0a36d9e433d9a65de248f1545b6f6edce1737669605eb6a8141bbbb",
+    "name": "transformers",
+    "version": "4.48.1"
+  },
+  {
+    "file": "tokenizers-0.21.4-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/aa/8f/24f39d7b5c726b7b0be95dca04f344df278a3fe3a4deb15a975d194cbb32/tokenizers-0.21.4-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "sha256": "39b376f5a1aee67b4d29032ee85511bbd1b99007ec735f7f35c8a2eb104eade5",
+    "name": "tokenizers",
+    "version": "0.21.4"
+  },
+  {
+    "file": "biotite-1.7.1-cp312-cp312-manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/99/b1/d28dbdfef015fc01807e7f34dff35d4a50585a974a761a7bee0ae2ebeea9/biotite-1.7.1-cp312-cp312-manylinux_2_28_aarch64.whl",
+    "sha256": "6d7dbc50b1ea807131775d38078383a9513384fad0119f519a399cf701c34cf0",
+    "name": "biotite",
+    "version": "1.7.1"
+  },
+  {
+    "file": "msgpack_numpy-0.4.8-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/9b/5d/f25ac7d4fb77cbd53ddc6d05d833c6bf52b12770a44fa9a447eed470ca9a/msgpack_numpy-0.4.8-py2.py3-none-any.whl",
+    "sha256": "773c19d4dfbae1b3c7b791083e2caf66983bb19b40901646f61d8731554ae3da",
+    "name": "msgpack-numpy",
+    "version": "0.4.8"
+  },
+  {
+    "file": "brotli-1.2.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/3d/6f/feba03130d5fceadfa3a1bb102cb14650798c848b1df2a808356f939bb16/brotli-1.2.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "acec55bb7c90f1dfc476126f9711a8e81c9af7fb617409a9ee2953115343f08d",
+    "name": "brotli",
+    "version": "1.2.0"
+  },
+  {
+    "file": "cloudpathlib-0.25.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/37/f9/9084c945d0b3ef8f129b4f0dd21baec759761a337902b70f17a3945015dd/cloudpathlib-0.25.0-py3-none-any.whl",
+    "sha256": "8faef3ed3a0dd71d134e8617b4fdc5ce56a12a6b485c080cfe80106e5f1d1f5d",
+    "name": "cloudpathlib",
+    "version": "0.25.0"
+  },
+  {
+    "file": "tenacity-9.1.4-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/d7/c1/eb8f9debc45d3b7918a32ab756658a0904732f75e555402972246b0b8e71/tenacity-9.1.4-py3-none-any.whl",
+    "sha256": "6095a360c919085f28c6527de529e76a06ad89b23659fa881ae0649b867a9d55",
+    "name": "tenacity",
+    "version": "9.1.4"
+  },
+  {
+    "file": "zstd-1.5.6.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/8d/63/037805623850d0f6980ef5c039bfc21cdde0c516a2a97d3548e7856860e1/zstd-1.5.6.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "sha256": "1ebd16e902398161c0de066c65a7ee36eb0a3b91087eafb75e48a120a955de61",
+    "name": "zstd",
+    "version": "1.5.6.1"
+  },
+  {
+    "file": "ipywidgets-8.1.9-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/c3/55/298e9b3b864a198234997e87a1471c1b17d7f3546ace6d18fb5cf1ce24b2/ipywidgets-8.1.9-py3-none-any.whl",
+    "sha256": "f2b8cbcaae10252b809fbe4d7470db75c09b769a32cbf816d20e5ca6d3c5a79d",
+    "name": "ipywidgets",
+    "version": "8.1.9"
+  },
+  {
+    "file": "py3dmol-2.5.5-py2.py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/8e/5a/7fd1b784a87e96e0078f49a0a13a98b4c5f644ba5597a4a3b70a2ba3e613/py3dmol-2.5.5-py2.py3-none-any.whl",
+    "sha256": "9717ea9a899ec641b458f53de538e5bae758281f5053be78bc2db0706ae60bcb",
+    "name": "py3Dmol",
+    "version": "2.5.5"
+  },
+  {
+    "file": "pydssp-0.9.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/00/78/9cbcc1c073b9d4918e925af1a059762265dc65004e020511b2a06fbfd020/pydssp-0.9.1-py3-none-any.whl",
+    "sha256": "74fb8129c07c1625bb687b80f7e94ae7ebf1277725258d7fc75fc1f3d12a67dc",
+    "name": "pydssp",
+    "version": "0.9.1"
+  },
+  {
+    "file": "boto3-1.43.106-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/72/d8/a01764ffd32fbcd66c5575eb85764ae9ea7b7d03dc591592e132c43af1f5/boto3-1.43.106-py3-none-any.whl",
+    "sha256": "fdf2e304f9e8864b8613591b18b36ee995560c9666033622eda1cb9057866880",
+    "name": "boto3",
+    "version": "1.43.106"
+  },
+  {
+    "file": "pygtrie-2.6.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/70/98/c3e488257ffe7f9caa90c56f0e79e6a2860cf5af763da7b4e7eadc008228/pygtrie-2.6.2-py3-none-any.whl",
+    "sha256": "51dcc50ecb8291238e261b4e9f8ecca7313b763da258dd320d208ca2bc86b5f4",
+    "name": "pygtrie",
+    "version": "2.6.2"
+  },
+  {
+    "file": "dna_features_viewer-3.1.5-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/52/f2/9e726e4489f947557290605e3ee33b6ba09fe5dac9213263e0ada75200cf/dna_features_viewer-3.1.5-py3-none-any.whl",
+    "sha256": "a8a383d5340d35979be50224f12f4f426ab004394d9b9a33c99d59404469fb7a",
+    "name": "dna_features_viewer",
+    "version": "3.1.5"
+  },
+  {
+    "file": "biotraj-1.2.2-cp312-cp312-linux_aarch64.whl",
+    "url": "file:///nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact-esmc/wheelhouse/biotraj-1.2.2-cp312-cp312-linux_aarch64.whl",
+    "sha256": "4095712dd8afcd7a4420830383c60a81faeda54f95c23e22870d6b569ef0cefc",
+    "name": "biotraj",
+    "version": "1.2.2"
+  },
+  {
+    "file": "botocore-1.43.106-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/a8/eb/c51d3b54dfaa9267a687359d946dc2a1ca6a27fb4d381773e59b7bd72bf4/botocore-1.43.106-py3-none-any.whl",
+    "sha256": "c1fb8818f9957cb5037f73db34ac1a12ba43562e31d6e7f9cb7e5fc64e1dba78",
+    "name": "botocore",
+    "version": "1.43.106"
+  },
+  {
+    "file": "jmespath-1.1.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/14/2f/967ba146e6d58cf6a652da73885f52fc68001525b4197effc174321d70b4/jmespath-1.1.0-py3-none-any.whl",
+    "sha256": "a5663118de4908c91729bea0acadca56526eb2698e83de10cd116ae0f4e97c64",
+    "name": "jmespath",
+    "version": "1.1.0"
+  },
+  {
+    "file": "jupyterlab_widgets-3.0.17-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/33/ef/6d27fc118f58cb24886da413545a7efb0853d405fddbfd8b2d9ac09fbed4/jupyterlab_widgets-3.0.17-py3-none-any.whl",
+    "sha256": "40ac1e9955acf116c4d995d9bfa082d86ad9ec6d91c4f134827cf5e0a5eb75e0",
+    "name": "jupyterlab_widgets",
+    "version": "3.0.17"
+  },
+  {
+    "file": "s3transfer-0.19.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/bc/e7/5c595c75e9f41a44f30e526eda465ea0b4eec93470e074e4a111b253f13a/s3transfer-0.19.2-py3-none-any.whl",
+    "sha256": "d8168eccca828cbb2cd573675333f3bddd254313a9c42494b84c76b539e8ba25",
+    "name": "s3transfer",
+    "version": "0.19.2"
+  },
+  {
+    "file": "widgetsnbextension-4.0.16-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/34/95/40e17e20046b7bc820d29d09ae84ec157ec8dd6e6f6cd722626292c31b2e/widgetsnbextension-4.0.16-py3-none-any.whl",
+    "sha256": "a31a8774885b96fe825462f5d6496166f0c7cae111195b6465c801d230eb5a4e",
+    "name": "widgetsnbextension",
+    "version": "4.0.16"
+  },
+  {
+    "file": "hf_xet-1.6.0-cp38-abi3-manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/9a/69/1f0cbc2fb22ae6082d094f743d1b8945a3f36f6089cb95f42b7ee348cda7/hf_xet-1.6.0-cp38-abi3-manylinux_2_28_aarch64.whl",
+    "sha256": "0e6e21fa3cdfcdcd76748564bf593870a5e013f47d97cf10aed63aa222cff5b7",
+    "name": "hf-xet",
+    "version": "1.6.0"
+  },
+  {
+    "file": "packaging-25.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl",
+    "sha256": "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484",
+    "name": "packaging",
+    "version": "25.0"
+  },
+  {
+    "file": "esm-3.2.3-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/b9/e6/d2ac74ec2ad695073ca49f0e9887ce9c47302578af05dbe39b099a7c0af5/esm-3.2.3-py3-none-any.whl",
+    "sha256": "61847d25b80efe0121931609b5ea885cc142ceb8caaa22ead6e3e97c527bc2af",
+    "name": "esm",
+    "version": "3.2.3"
+  }
+]

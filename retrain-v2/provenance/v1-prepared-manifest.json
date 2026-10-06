@@ -1,0 +1,88 @@
+{
+  "benchmark": "Bernett human PPI, authors pinned release",
+  "source_revision": "5d2ad03baa165c27df32a2eadf066462a2a83073",
+  "test_use": "sequence-only split audit; no test-model evaluation or tuning",
+  "homology_rule": "MMseqs2 detected identity >=0.40 and coverage >=0.80 of both sequences; train purged against val+test; val purged against test",
+  "new_negative_sampling": false,
+  "negative_interpretation": "original benchmark sampled unreported interactions, not confirmed noninteractions",
+  "excluded_training_protein_ids": [
+    388
+  ],
+  "excluded_validation_protein_ids": [
+    7819
+  ],
+  "initial_audit": {
+    "train": {
+      "raw_rows": 163192,
+      "unique_rows": 163192,
+      "duplicate_rows": [],
+      "conflicting_rows": []
+    },
+    "val": {
+      "raw_rows": 59260,
+      "unique_rows": 59260,
+      "duplicate_rows": [],
+      "conflicting_rows": []
+    },
+    "test": {
+      "raw_rows": 52048,
+      "unique_rows": 52048,
+      "duplicate_rows": [],
+      "conflicting_rows": []
+    },
+    "exact_sequence_overlaps": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "unique_proteins": 11019
+  },
+  "splits": {
+    "train": {
+      "rows": 163085,
+      "positives": 81550,
+      "excluded_for_homology": 107,
+      "sequence_length_exclusions": 0,
+      "max_tokens": 16322,
+      "p50_tokens": 1389.0,
+      "p95_tokens": 3511.0,
+      "p99_tokens": 5449.320000000007,
+      "over2196": 32624,
+      "over8192": 238,
+      "sha256": "9c290cf84301a697bea1a37677973e1d710a75083fec1265113b56ea7a11c519"
+    },
+    "val": {
+      "rows": 59258,
+      "positives": 29628,
+      "excluded_for_homology": 2,
+      "sequence_length_exclusions": 0,
+      "max_tokens": 39391,
+      "p50_tokens": 972.0,
+      "p95_tokens": 2660.149999999994,
+      "p99_tokens": 4460.860000000001,
+      "over2196": 4934,
+      "over8192": 87,
+      "sha256": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0"
+    },
+    "test": {
+      "rows": 52048,
+      "positives": 26024,
+      "excluded_for_homology": 0,
+      "sequence_length_exclusions": 0,
+      "max_tokens": 7426,
+      "p50_tokens": 920.0,
+      "p95_tokens": 2430.0,
+      "p99_tokens": 3569.529999999999,
+      "over2196": 3392,
+      "over8192": 0,
+      "sha256": "84b0b7ae068b2beba19103f8bed3e1c4feae117a0a6ffd271798537868a51c0d"
+    }
+  },
+  "files": {
+    "tokens.npy": "bf82ee25023396948d4d96417cc396de2668afcba8e15f824883caa5e7a599af",
+    "offsets.npy": "61a71e45a1ca7137af32e148510f7c5de01d30c10704451d1a91dd3e3f464a1d",
+    "train.npy": "9c290cf84301a697bea1a37677973e1d710a75083fec1265113b56ea7a11c519",
+    "val.npy": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0",
+    "test.npy": "84b0b7ae068b2beba19103f8bed3e1c4feae117a0a6ffd271798537868a51c0d"
+  }
+}

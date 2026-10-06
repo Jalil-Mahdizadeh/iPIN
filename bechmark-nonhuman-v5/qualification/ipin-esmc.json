@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-05T12:39:28.230878+00:00",
+  "fingerprint": "6c0b063136facb0470b0d36c354d06abbf4b7229c1363be89083ed9f860d3007",
+  "source": "Fresh full-size model forwards against the frozen selected DEV predictions; production batching reproduced",
+  "cases": [
+    {
+      "rows": [
+        17008,
+        125668,
+        81072,
+        74936,
+        17016,
+        53148,
+        122588,
+        59740
+      ],
+      "max_tokens": 173,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0
+    },
+    {
+      "rows": [
+        8352,
+        8428,
+        9628,
+        31936,
+        40848
+      ],
+      "max_tokens": 1601,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0
+    },
+    {
+      "rows": [
+        51104
+      ],
+      "max_tokens": 36574,
+      "max_logit_error": 0.0,
+      "max_probability_error": 0.0
+    }
+  ],
+  "test_metrics_read": false,
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "device": "NVIDIA GH200 120GB"
+}

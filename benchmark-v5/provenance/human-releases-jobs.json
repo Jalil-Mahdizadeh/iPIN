@@ -1,0 +1,59 @@
+{
+  "at_utc": "2026-10-05T17:39:06.361480+00:00",
+  "native-human": {
+    "job_id": "3396514",
+    "script": "slurm/native-human.sbatch",
+    "physical_gpus": 4,
+    "inference_state": "completed",
+    "slurm_state": "COMPLETED",
+    "slurm_exit_code": "0:0",
+    "elapsed": "00:31:40",
+    "start_local": "2026-10-05T19:06:33",
+    "end_local": "2026-10-05T19:38:13",
+    "timezone": "Europe/Stockholm",
+    "node": "n536",
+    "allocated_resources": "billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1",
+    "rows": 76918,
+    "done_records": [
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/native-human/rank-00.done.json",
+        "sha256": "793f243020ad8cb95b3f9e799912c702d23edd9f4714e1ccf831df417a946f68",
+        "rows": 19230
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/native-human/rank-01.done.json",
+        "sha256": "7b30ac8a3f25a8d438c600a8daf636f2c9b35fe8d6760a2e20f07b63a6ffc88d",
+        "rows": 19230
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/native-human/rank-02.done.json",
+        "sha256": "01c7e392003892a58d7a0a8654f9067ba77f9930f00e2af5c3ac186151104d63",
+        "rows": 19229
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/native-human/rank-03.done.json",
+        "sha256": "ce4cc342fab17b0c7cd0bc7607f188975114a8aa59270e646f28c349bcd6dd17",
+        "rows": 19229
+      }
+    ],
+    "sacct_record": "3396514|COMPLETED|0:0|00:31:40|2026-10-05T19:06:33|2026-10-05T19:38:13|n536|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1"
+  },
+  "tuna-human": {
+    "job_id": "3366323",
+    "mode": "interactive single GPU",
+    "script": "scripts/tuna_human_bernett.py",
+    "physical_gpus": 1,
+    "inference_state": "completed",
+    "exit_code": 0,
+    "rows": 76918,
+    "completed_at_utc": "2026-10-05T17:07:03.692294+00:00",
+    "reported_inference_seconds": 49.77448985201772,
+    "features_reused": 57,
+    "features_computed": 2965,
+    "done_record": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/tuna-human/done.json",
+      "sha256": "b1bbc25221492764393cd3c18750015719f9a530bc420ec527c923dd32646ca3"
+    }
+  },
+  "training": false
+}

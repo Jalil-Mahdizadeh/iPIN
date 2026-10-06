@@ -1,0 +1,31 @@
+{
+  "verified_at_utc": "2026-10-01T21:56:57.968618+00:00",
+  "passed": true,
+  "training_job_id": "3206610",
+  "training_stopped_update": 8446,
+  "training_stop_committed": true,
+  "selected_update": 4000,
+  "all_eight_models_test_rows": 52048,
+  "fresh_model": "v3-residue-mlp",
+  "reused_models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric",
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce"
+  ],
+  "new_slurm_job_submitted": false,
+  "interactive_job_id": "3245989",
+  "four_shards_on_one_gpu": true,
+  "inference_wall_seconds_including_worker_startup": 1176.65431,
+  "test_model_fits_performed": 0,
+  "baseline_results_reproduced_to_1e_12": true,
+  "v3_report_sha256": "3eda17a5434e55727b353da9a8b0684257b7c8609b269b330f5ab6fd8a26974e",
+  "summary_sha256": "16c94a66a49d0c10abce5fd1cf135f9092686fe6bd76aeff408072696aeadc76",
+  "training_finalize_receipt_matches": true,
+  "all_frozen_source_checks_passed": true,
+  "benchmark_completed": true,
+  "v4_standard_job_left_running": "3210886"
+}

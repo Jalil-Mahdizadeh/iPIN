@@ -1,0 +1,26 @@
+{
+  "time_utc": "2026-09-29T11:48:08.965783+00:00",
+  "dry_run": false,
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen",
+  "runs": [
+    "reference-official-seed2",
+    "capped-official-seed2",
+    "positive10-official-seed2",
+    "clean-bce-official-seed2"
+  ],
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-3%4",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen/slurm/train.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen"
+  ],
+  "shell_command": "sbatch --parsable --array=0-3%4 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/releases/20260929-initial-screen",
+  "gpus_per_run": 4,
+  "maximum_concurrent_runs": 4,
+  "launcher_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2/scripts/launch.py",
+  "launcher_sha256": "3458072b511d959ce10068548df7aa1119b72bb84d396d2ae487119a2a17e4b7",
+  "production_jobs_submitted_by_this_call": 4,
+  "qualified": true,
+  "slurm_job_id": "3130215"
+}

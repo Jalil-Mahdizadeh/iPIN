@@ -1,0 +1,35 @@
+{
+  "ipin-esm2-validation": {
+    "source": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/ipin-esm2-selected-dev.npz",
+      "bytes": 1138945,
+      "sha256": "0e065ace2bcdc2733ee853d4b7bf4d9922ad217dbe62d0083670479e2034b91c"
+    },
+    "selected_update": 27374,
+    "selection_validation_ap": 0.6153270385052271
+  },
+  "ipin-esmc-validation": {
+    "source": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/ipin-esmc-selected-dev.npz",
+      "bytes": 1126114,
+      "sha256": "bd57aa218dcdfce048f37a65ac05cd8e7f2633e6d17f28bdfc10a180d3c32a33"
+    },
+    "selected_update": 21899,
+    "selection_validation_ap": 0.5924616586439035
+  },
+  "ipin-esm2-tests": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/ipin-esm2-union.npz",
+    "bytes": 829441,
+    "sha256": "d047c1fbf89e3a6b705dd18822ecade5b15cd8659c154c2476b8b858987b3479"
+  },
+  "ipin-esmc-tests": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/ipin-esmc-union.npz",
+    "bytes": 772502,
+    "sha256": "e7d407da9c418eb8aa6099d0176388abd07ab858247ab5176e1b2adba637750c"
+  },
+  "native-plm-tests": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/native-plm-union.npz",
+    "bytes": 784417,
+    "sha256": "64c02545458e06e3fd185d7262587f88468e7beac0f6c1bd09943fceacae2b38"
+  }
+}

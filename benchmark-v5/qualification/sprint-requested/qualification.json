@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "native_output_identical_bytes": true,
+  "max_score_error": 0.0,
+  "pairs": 304,
+  "nonzero_pairs": 293,
+  "training_edges": 1017,
+  "full_corpus_and_full_native_hsp_preprocessing": true,
+  "self_reversed_duplicate_candidates_included": true,
+  "only_change": "Stable filtering of already-preprocessed HSP destinations to candidate endpoints; no graph, formula, thresholds, normalizers, matrix arithmetic or accumulation ordering changed",
+  "native_output": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/qualification/sprint-requested/native.scores",
+    "bytes": 3486,
+    "sha256": "a58ff03ad2bb35f52f0ad26c92bb61729f463cb339833ebf2dab2d34bcb3a0e2"
+  },
+  "requested_output": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/qualification/sprint-requested/requested.scores",
+    "bytes": 3486,
+    "sha256": "a58ff03ad2bb35f52f0ad26c92bb61729f463cb339833ebf2dab2d34bcb3a0e2"
+  },
+  "binary": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/bin/sprint_predict_requested",
+    "bytes": 147968,
+    "sha256": "8c9d89153cd4e6f88cee1c7fe48902a4b04ccb947361a3e468dd87a4f4b8c5fd"
+  },
+  "sources": {
+    "scripts/sprint_requested/global_parameters.h": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/sprint_requested/global_parameters.h",
+      "bytes": 7302,
+      "sha256": "c00ef97113603b34f436ce08ef04c26bd220deef84117dfa2363c819eee46a8f"
+    },
+    "scripts/sprint_requested/PtoHSP.h": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/sprint_requested/PtoHSP.h",
+      "bytes": 6537,
+      "sha256": "90dcd2de0f385ed0e9e62304e750917cbfb1988a3ac6c992b85fa22af262fa4a"
+    },
+    "scripts/sprint_requested/scoreing_matrix.h": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/sprint_requested/scoreing_matrix.h",
+      "bytes": 5905,
+      "sha256": "92cadd42a0cb31129af069a125098e4bb14cb0bd4a2e62d6d0510bc9252bdb6d"
+    },
+    "scripts/sprint_requested/predict_interactions.cpp": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/sprint_requested/predict_interactions.cpp",
+      "bytes": 4029,
+      "sha256": "1bbd4080b3e6f4a3f6b528e7fccf9eaacfb93bcd35b658486be4dc39c9498e64"
+    }
+  },
+  "fixture_files": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/qualification/sprint-requested/train.txt",
+      "bytes": 14238,
+      "sha256": "67f03bf3d29d1e0dc5d93cfded16d023f584d09fbc566c193dd57bf0911f1734"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/qualification/sprint-requested/pairs.txt",
+      "bytes": 4256,
+      "sha256": "2596e959b41b8913aed7aa3b5d952bade1b07a1213410654d9098b3478f6cafc"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/qualification/sprint-requested/empty.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

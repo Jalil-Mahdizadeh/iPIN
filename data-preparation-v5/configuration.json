@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "seed": 2,
+  "positive_source": "HIPPIE v3.0; snapshot matches author release pairs and scores",
+  "test": {
+    "original_rows": 52048,
+    "shared_positives": 26024,
+    "ilp_negative_target": 26024,
+    "protected_accessions": 3022,
+    "negative_protein_universe": "2948 original positive endpoints",
+    "negative_sets_may_overlap": true,
+    "model_scores_for_construction": false
+  },
+  "homology": {
+    "tool_module": "mmseqs2-gpu/18-8cc5c",
+    "minimum_identity": 0.4,
+    "minimum_query_coverage": 0.8,
+    "minimum_target_coverage": 0.8,
+    "identity_denominator": "alignment length (--alignment-mode 3)",
+    "sensitivity": 7.5,
+    "evalue": 0.001,
+    "max_seqs": 100000,
+    "threads": 16,
+    "exclusion_direction": "purge development, preserve original test",
+    "accession_family_policy": "exclude every UniProt entry/isoform family connected to a test accession; keep same family within one development split"
+  },
+  "positive_scope": {
+    "human_only": true,
+    "self_pairs": false,
+    "score_threshold": null,
+    "duplicate_policy": "unordered exact sequence pair; retain evidence mapping"
+  },
+  "annotations": {
+    "uniprot_release": "2026_03",
+    "go_namespace": "biological_process",
+    "isoform_go_policy": "parent UniProt entry terms; explicitly recorded, not isoform-specific evidence",
+    "unresolved_sequence_policy": "exclude and report; never replace missing isoform sequence with an arbitrary canonical sequence"
+  },
+  "positive_split": {
+    "method": "two-way ILP over sequence/family groups",
+    "train_fraction": 0.8,
+    "dev_fraction": 0.2,
+    "fraction_epsilon": 0.05,
+    "solver": "HIGHS",
+    "time_limit_seconds": 7200,
+    "max_kahip_groups": 100,
+    "kahip_version": "3.25",
+    "kahip_seed": 2,
+    "kahip_mode": "STRONG",
+    "must_link": "all detected >=40% identity, >=80% both-coverage edges plus UniProt entry families",
+    "grouping_graph": "MMseqs2 normalized bit scores; group count reduced if largest must-link component prevents 100 balanced groups",
+    "mip_gap_target": 0.01,
+    "threads": 8
+  },
+  "negative_sampling": {
+    "method": "author ILP with explicit known-positive blacklist and no-self adaptation",
+    "author_commit": "8bf9adb183b702c88db62ff878de482e2f20e4b2",
+    "ratio": 1,
+    "candidate_multiplier": 4,
+    "lambda_degree": 1,
+    "lambda_jaccard": 1,
+    "lambda_self_loop": 0,
+    "lambda_taxon_pair": 0,
+    "maximum_degree_multiplier": 6,
+    "solver": "HIGHS",
+    "time_limit_seconds": 7200,
+    "mip_gap_target": 0.01,
+    "threads": 8,
+    "separate_targets_per_split": true,
+    "known_positive_blacklist": "conservative UniProt-family projection of all HIPPIE positives plus historical train/validation/test positives",
+    "candidate_excess_selection": "seeded random within GO priority strata, correcting upstream sorted-key truncation"
+  },
+  "production_model_training_authorized": false
+}

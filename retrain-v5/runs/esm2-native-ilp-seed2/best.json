@@ -1,0 +1,12 @@
+{
+  "file": "update-000027374.pt",
+  "sha256": "8667e4af34346e4c8bcd2600dd06d21c64fe68ee82b8d99585c67cce102525e3",
+  "bytes": 7818552843,
+  "update": 27374,
+  "epoch": 2,
+  "next_chunk": 350408,
+  "world_size": 4,
+  "fingerprint": "d72b1cbc823743792301b32c590681f85c54be7c5fac871b88be927b0df06328",
+  "best_update": 27374,
+  "best_ap": 0.6153270385052271
+}

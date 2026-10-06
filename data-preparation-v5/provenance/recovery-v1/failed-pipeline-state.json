@@ -1,0 +1,19 @@
+{
+  "active_stages": {},
+  "error": "negative_val exited 1; see logs/negative_val.log",
+  "finished_stages": [
+    "bootstrap",
+    "uniprot",
+    "normalize",
+    "historical_exposure",
+    "homology",
+    "negative_test-ilp",
+    "positive_split",
+    "boundary_verification"
+  ],
+  "host": "n505",
+  "pid": 713422,
+  "slurm_job_id": "3266861",
+  "status": "failed",
+  "updated_utc": "2026-10-02T18:03:01.744384+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "primary_tasks": 19,
+  "finalized_shards": 110,
+  "core_inference_code_unchanged": true,
+  "complete_coverage": true,
+  "post_hoc_cap_affected_rows": 520,
+  "post_hoc_unaffected_rows_unchanged": true,
+  "all_local_document_links_resolve": true,
+  "no_partial_prediction_files": true,
+  "reported_mcnemar_pvalues_match_exact_binomial_given_reported_counts": true,
+  "reported_mcnemar_counts_reproduced_at_neutral_threshold": false,
+  "plots_visually_reviewed": true,
+  "independent_metric_and_formula_checks_passed": 3
+}

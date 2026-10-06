@@ -1,0 +1,60 @@
+{
+  "ready_for_submission": true,
+  "production_submitted_at_preparation": false,
+  "frozen_utc": "2026-09-30T11:02:43.796207+00:00",
+  "stage": "adaptation",
+  "enabled_runs": [
+    "clean-cls-linear-lr2e-5-fold0-seed2",
+    "clean-cls-linear-lr2e-5-fold1-seed2",
+    "clean-cls-linear-lr2e-5-fold2-seed2",
+    "clean-cls-linear-lr5e-6-fold0-seed2",
+    "clean-cls-linear-lr5e-6-fold1-seed2",
+    "clean-cls-linear-lr5e-6-fold2-seed2"
+  ],
+  "files": {
+    "code/compare_development.py": "9e3c406e9930056aae8f64327613d518e018a9a75670d3b3f04b3f79a0ea5201",
+    "code/container.sh": "c8bcae9a27e132d98db0574e79c5634d0af73c190181a8af10e2d3c2de745686",
+    "code/data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "code/launch.py": "6ad21826aa498e9294169013e540aabff5a9c2763736fbb2b94c5f52b8c6279e",
+    "code/metrics.py": "4e0ccc96e4d38d718550deb32bbd225ed5f6ca6bbf44f4070bd05814a47b41f2",
+    "code/model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "code/release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280",
+    "code/state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "code/train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+    "configs/clean-cls-linear-lr2e-5-fold0-seed2.json": "0f273acc84b9f05cdbc9d9e1e972d1602cfb248d9e72998ad9f4aa8e4549daed",
+    "configs/clean-cls-linear-lr2e-5-fold1-seed2.json": "c6ce6fba12b9cf4d73ad8b3d0f605b27e319c003cae89f4ec240ec110c8fdb71",
+    "configs/clean-cls-linear-lr2e-5-fold2-seed2.json": "e99e9cf28cd52c25309a1bdc929bd946a753afaf237ff3a1ce072fcb755890de",
+    "configs/clean-cls-linear-lr5e-6-fold0-seed2.json": "b11fa1e4a99fe993332032c17dfb1c3392c35948e7af347a39d508ff3b26e724",
+    "configs/clean-cls-linear-lr5e-6-fold1-seed2.json": "4a34cc8b4b0ef1d7732a8e400a80335ff6d93463c02bb3b3bb707e3255697df2",
+    "configs/clean-cls-linear-lr5e-6-fold2-seed2.json": "b293efe2665215ef19a5e2fdd331d788223e97974a1c858bcf691a1198313c92",
+    "protocol/DATA_CARD.md": "879e4c90ff14f53dc8c62a03fc6e21e286ebaf6ba71493960f13bcc1a353f95f",
+    "protocol/EXPERIMENT_LEDGER.md": "d7209349f1d72a0893bc96835c63d42533258468c8981e40b18928cfae1ebd8b",
+    "protocol/PROTOCOL.md": "2670fe917598858078c393f65b27f13f5e42bb52af48f44afa53d50e8236a7c6",
+    "protocol/QUALIFICATION.md": "1bdf2ec10d591a134218254fc33f613a2a79d70ddcc041032c9719670aded4d7",
+    "protocol/campaign.json": "e4260d123558726c3b323291976aab88bcef3b99e84262eb942177fdf8ce110f",
+    "slurm/train.sbatch": "a6b13196bacbbc8f73bac93ee8c5e31bf1bf259c002883634516e75aa9a704f1"
+  },
+  "qualification_reports": {
+    "qualification/v3-contract.json": "24dae367e22cee88a4aa7d29f997e124a94b8ab3e70bd23c0946a004303b2124",
+    "qualification/checkpoint-faults.json": "178ebe5ce2219f3dfa1c0945b3c7653c12d78a4706b6e5abe0c2ae7a2f0c20df",
+    "qualification/signal-resume.json": "6b2ec0aaf0a27603575e99ef7d5dd824bf557ebdef1b83ba256e1f1b02911537",
+    "qualification/signal-comparison.json": "82d96e94eab30dbc70c6eebee8526e4fd605ccb8ba256ce33cbface3c87d376a",
+    "qualification/full-model-profile.json": "8b324e363bdce17ac472f43718804ebfb2e2ff995fb673d5b261456692c58ef4",
+    "qualification/ddp.json": "35024d4f044359b4b6cbb9891e0ab5d9b452b3188474a6fc71f85d791449c585",
+    "qualification/ddp-clean-comparison.json": "7fbe639855a9cdf31d2beeb6545309bfd589fad2a3c9f14f2febdb0f6c1a3a9a",
+    "qualification/launcher-checks.json": "483a821d45ef63252eb0353588f43d5b26446aac3d1905a53e14d4ab24af48b4",
+    "qualification/decisions.json": "980ed5ca7d52a2d79ad764313f99e6934cddffb01f8db9a19eb3f62ee0c59129",
+    "qualification/production-guard.json": "54db6b851b7ef0489bd251410f1c1fc781e07e763258ab5c4aa5bc4e79c0273a",
+    "diagnostics/cheap-baselines.json": "4bdac64ee0d58a5e221157d26743b21fbf8e0529db73d2bb526a9b08db390e05"
+  },
+  "data_manifest_sha256": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+  "initialization_manifest_sha256": "eff778c6c70f8c91fec17a7aeca089cf4d5faa8f6a806738cf12f46c8b680ef7",
+  "sif_sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2",
+  "scope": "Only Stage 1 (six matched clean-BCE learning-rate/fold runs). Stage 2, optional cap, native adaptation and confirmation are disabled.",
+  "proposal_sha256": "3e26b374d2f3d870f047fe19f472e01f55461e4f94d91827ed4fe6510bda8e86",
+  "budget_gpu_hours": [
+    150,
+    270
+  ],
+  "external_confirmation_ready": false
+}

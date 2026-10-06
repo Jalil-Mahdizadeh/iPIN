@@ -1,0 +1,11 @@
+{
+  "job_id": "3125767",
+  "submitted_at_utc": "2026-09-29T09:17:24.561295+00:00",
+  "command": "sbatch --parsable benchmark-v1/slurm/benchmark.sbatch",
+  "qualification_passed": true,
+  "gpus": 4,
+  "training_jobs_unchanged": [
+    3112401,
+    3112402
+  ]
+}

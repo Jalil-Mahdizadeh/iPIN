@@ -1,0 +1,16 @@
+{
+  "name": "author-pipeline.zip",
+  "url": "https://codeload.github.com/bionetslab/ppi-splitting-pipeline/zip/8bf9adb183b702c88db62ff878de482e2f20e4b2",
+  "retrieved_utc": "2026-10-02T12:46:54.212817+00:00",
+  "bytes": 4042275,
+  "sha256": "3c740b2611dedfe61703b3a3424e538a3f4c671a5df047918a3888789428131b",
+  "md5": "96ef86a5db5778c03bde395ea69e0d93",
+  "expected_md5": null,
+  "expected_bytes": null,
+  "headers": {
+    "Content-Length": null,
+    "Content-Type": "application/zip",
+    "Last-Modified": null,
+    "ETag": "\"cb2b525c4462e81f313731457cd2c6c056befcb65642616102dcb46ee573af1d\""
+  }
+}

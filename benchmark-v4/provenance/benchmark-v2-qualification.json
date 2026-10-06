@@ -1,0 +1,234 @@
+{
+  "passed": true,
+  "completed_at_utc": "2026-09-30T08:48:43.687013+00:00",
+  "prediction_fingerprint": "f2863282917e5c0af6bad67b632c8047a613a9db902382657d839a81113a071d",
+  "reuse": {
+    "native-bernett": {
+      "test_rows": 52048,
+      "val_rows": 59258,
+      "source_chunks_verified": 220,
+      "merged_predictions_match_source_chunks": true
+    },
+    "v1-reference": {
+      "test_rows": 52048,
+      "val_rows": 59258,
+      "source_chunks_verified": 104,
+      "merged_predictions_match_source_chunks": true
+    },
+    "v1-symmetric": {
+      "test_rows": 52048,
+      "val_rows": 59258,
+      "source_chunks_verified": 104,
+      "merged_predictions_match_source_chunks": true
+    }
+  },
+  "checks": {
+    "v2-reference": {
+      "validated_pairs": 160,
+      "batches": 24,
+      "max_gap_from_saved_validation": 0.0,
+      "max_bf16_gap_between_implementations": 0.0,
+      "max_fp32_gap_between_implementations": 0.0,
+      "strict_weight_loading": true
+    },
+    "v2-capped": {
+      "validated_pairs": 160,
+      "batches": 24,
+      "max_gap_from_saved_validation": 0.0,
+      "max_bf16_gap_between_implementations": 0.0,
+      "max_fp32_gap_between_implementations": 0.0,
+      "strict_weight_loading": true
+    },
+    "v2-positive10": {
+      "validated_pairs": 160,
+      "batches": 24,
+      "max_gap_from_saved_validation": 0.0,
+      "max_bf16_gap_between_implementations": 0.0,
+      "max_fp32_gap_between_implementations": 0.0,
+      "strict_weight_loading": true
+    },
+    "v2-clean-bce": {
+      "validated_pairs": 160,
+      "batches": 24,
+      "max_gap_from_saved_validation": 0.0,
+      "max_bf16_gap_between_implementations": 0.0,
+      "max_fp32_gap_between_implementations": 0.0,
+      "strict_weight_loading": true
+    }
+  },
+  "longest_validation": {
+    "row": 16728,
+    "tokens": 39391,
+    "finite": true
+  },
+  "tokenizer_sample_rows": [
+    2511,
+    9639,
+    16429,
+    18263,
+    19090,
+    22717,
+    23911,
+    25886,
+    32385,
+    35816,
+    36150,
+    36180,
+    37580,
+    39589,
+    40531,
+    41340,
+    42358,
+    43591,
+    46382,
+    46820,
+    48572,
+    50760,
+    52686,
+    57365
+  ],
+  "all_validation_sequences_match_training": true,
+  "new_gpu_inference_uses_validation_only": true,
+  "device": "NVIDIA GH200 120GB",
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "cuda": "13.0",
+  "prior_native_precision_qualification": {
+    "passed": true,
+    "prediction_fingerprint": "f55ef2713b8aaa239ad3deaa022fd4774313308d731423438fabbacc2f68eebf",
+    "selection_only_uses_validation": true,
+    "tokenizer_checked_rows": [
+      40531,
+      32385,
+      9639,
+      22717,
+      25886,
+      50760,
+      23911,
+      37580,
+      19090,
+      36180,
+      46382,
+      48572,
+      18263,
+      35816,
+      41340,
+      57365,
+      52686,
+      16429,
+      36150,
+      42358,
+      46820,
+      2511,
+      39589,
+      43591
+    ],
+    "checks": {
+      "reference-seed2": {
+        "sample_rows": [
+          40531,
+          32385,
+          9639,
+          22717,
+          25886,
+          50760,
+          23911,
+          37580,
+          19090,
+          36180,
+          46382,
+          48572,
+          18263,
+          35816,
+          41340,
+          57365,
+          52686,
+          16429,
+          36150,
+          42358,
+          46820,
+          2511,
+          39589,
+          43591
+        ],
+        "finite_predictions": true,
+        "max_logit_difference_from_saved_validation": 0.00390625
+      },
+      "symmetric-seed2": {
+        "sample_rows": [
+          40531,
+          32385,
+          9639,
+          22717,
+          25886,
+          50760,
+          23911,
+          37580,
+          19090,
+          36180,
+          46382,
+          48572,
+          18263,
+          35816,
+          41340,
+          57365,
+          52686,
+          16429,
+          36150,
+          42358,
+          46820,
+          2511,
+          39589,
+          43591
+        ],
+        "finite_predictions": true,
+        "max_logit_difference_from_saved_validation": 0.015625
+      },
+      "native-bernett": {
+        "sample_rows": [
+          40531,
+          32385,
+          9639,
+          22717,
+          25886,
+          50760,
+          23911,
+          37580,
+          19090,
+          36180,
+          46382,
+          48572,
+          18263,
+          35816,
+          41340,
+          57365,
+          52686,
+          16429,
+          36150,
+          42358,
+          46820,
+          2511,
+          39589,
+          43591
+        ],
+        "finite_predictions": true,
+        "bf16_vs_fp32_max_logit_difference": 0.0747087299823761,
+        "bf16_vs_fp32_max_probability_difference": 0.0186303495895202,
+        "efficient_vs_eager_fp32_max_logit_difference": 1.0013580322265625e-05,
+        "longest_validation": {
+          "row": 16728,
+          "tokens": 39391,
+          "logits": [
+            [
+              0.232421875,
+              0.2177734375
+            ]
+          ],
+          "elapsed_seconds": 6.077766821006662
+        }
+      }
+    },
+    "device": "NVIDIA GH200 120GB",
+    "torch": "2.8.0a0+34c6371d24.nv25.08"
+  },
+  "test_metrics_read_for_selection": false
+}

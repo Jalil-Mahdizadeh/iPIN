@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "signature": {
+    "scripts/tuna_nonhuman.py": "e587f7126671c9afc9c677562b818c1dd85780e555dadfbc4e778da3288f2634",
+    "scripts/tuna/adapter.py": "0609d6e38a0885fcd96fa8a15b0e272db5f8e8487ee17dd3b0458ce57233674f",
+    "scripts/tuna/esm_cache.py": "42686a117c5ecd86ea854dde87c77ba162950406b4e5f0ea9b88cd179a58cbc6",
+    "scripts/container.sh": "7fc8c90ac5f3b22ea2d470dab8ca4eef7233ae8098046dea92abe2c9bd621d1f",
+    "provenance/prepared.json": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba",
+    "provenance/runtime-inputs.json": "9ac60777c878da594b8ed2255c5923f3d9fbf7e369f395588277f0959ee4853c"
+  },
+  "models": {
+    "tuna": {
+      "native_probability_error": 1.1920928955078125e-07,
+      "feature_padding_error": 2.384185791015625e-07,
+      "checkpoint": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/weights/bernett_original.pt",
+        "bytes": 135352865,
+        "sha256": "bf2dd42af75d98324798b76837ca738e4ed230b096ee538ccdbaa001dcc88500"
+      },
+      "hid_dim": 64
+    },
+    "tuna-human": {
+      "native_probability_error": 6.752088665962219e-09,
+      "feature_padding_error": 3.5762786865234375e-07,
+      "checkpoint": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/checkpoints/tuna-human-seed47.pt",
+        "bytes": 143364769,
+        "sha256": "f63876dfdfb8a8a2c855bbb814a74b20ccf333dc8c75be00bf281365fcac6c07"
+      },
+      "hid_dim": 256
+    }
+  },
+  "encoder_error": 5.245208740234375e-06,
+  "fixtures": [
+    231,
+    30887,
+    28042,
+    52326
+  ],
+  "reuse_checks": [
+    {
+      "id": 409,
+      "error": 1.4901161193847656e-07
+    },
+    {
+      "id": 56408,
+      "error": 2.384185791015625e-07
+    }
+  ],
+  "at_utc": "2026-10-05T12:54:44.306415+00:00"
+}

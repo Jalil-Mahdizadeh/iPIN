@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "dscript",
+    "test": "original",
+    "replicates": 1000,
+    "seed": 20260929,
+    "rows": "402d3c928752fc3d91b1f17005cd68297d6df34a14fa6ae47e26e79a002f1188",
+    "scores": "07aa742fe47492d609bae2e5c5ea3ef8a4b7fe083c3742f8b7bfd281c30176c9",
+    "analysis_code": "7316f52fadd7e2564b511b70c3d0aa01d0eb099f2b27aec827e05ff0d5cdc86b"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/bootstrap-cache/original-dscript.npz",
+    "bytes": 14701,
+    "sha256": "1c50e01f1e70bfd1f9ab8361ea5883418d1a43c46e4265b42d0455958e23d9ac"
+  }
+}

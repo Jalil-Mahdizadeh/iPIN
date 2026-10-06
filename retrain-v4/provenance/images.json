@@ -1,0 +1,10 @@
+{
+  "esm2": {
+    "relative_path": "images/plm-interact/plm-interact-native-arm64-v1.sif",
+    "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+  },
+  "esmc": {
+    "relative_path": "images/plm-interact-esmc/plm-interact-esmc-arm64-v1.sif",
+    "sha256": "ed6aeac781502090632bc2a705300b161b6a65ccfbcf6c7cf64d8d61d8e5b5ef"
+  }
+}

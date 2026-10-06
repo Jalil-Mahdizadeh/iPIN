@@ -1,0 +1,19 @@
+{
+  "last_committed_update": 2,
+  "latest": {
+    "file": "update-000000002.pt",
+    "sha256": "0de9a062d85932236038e2f38c51067e074fa5b5af316e3619f5053705ad86a1",
+    "bytes": 1652669,
+    "update": 2,
+    "epoch": 1,
+    "next_chunk": 7,
+    "world_size": 4,
+    "fingerprint": "356dc1903c3d99612f6d84f8b56cf6ae33fa6048c65ad203cabe8e77b2f647d7",
+    "best_update": 2,
+    "best_ap": 0.4125
+  },
+  "retained": [
+    "update-000000001.pt",
+    "update-000000002.pt"
+  ]
+}

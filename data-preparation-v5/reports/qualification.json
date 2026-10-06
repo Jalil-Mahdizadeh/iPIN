@@ -1,0 +1,7 @@
+{
+  "candidate_exclusions_and_seed": true,
+  "negative_objective_exhaustive_optimum": 0.49999999999999994,
+  "original_test_full_array_validation": "reports/source-and-test-audit.json",
+  "passed": true,
+  "positive_split_exhaustive_optimum": 0.0
+}

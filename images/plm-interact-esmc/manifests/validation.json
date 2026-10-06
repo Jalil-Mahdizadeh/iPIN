@@ -1,0 +1,18 @@
+{
+  "validated_at_utc": "2026-10-01T09:31:36.702471+00:00",
+  "status": "runtime_checks_passed",
+  "image": "plm-interact-esmc-arm64-v1.sif",
+  "image_sha256": "ed6aeac781502090632bc2a705300b161b6a65ccfbcf6c7cf64d8d61d8e5b5ef",
+  "image_bytes": 13578153984,
+  "cpu_build_test": "passed",
+  "contained_gpu_check": "passed",
+  "source_sif_unchanged": true,
+  "all_added_versions_match_lock": true,
+  "only_dependency_exception": "unused torchtext declared by SDK",
+  "production_trainer_qualified": false,
+  "chain_aware_adapter_qualified": false,
+  "long_context_qualified": false,
+  "four_gpu_resume_qualified": false,
+  "production_jobs_submitted": false,
+  "benchmark_run": false
+}

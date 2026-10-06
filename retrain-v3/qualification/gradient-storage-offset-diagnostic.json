@@ -1,0 +1,293 @@
+{
+  "torch": "2.8.0a0+34c6371d24.nv25.08",
+  "device": "NVIDIA GH200 120GB",
+  "records": [
+    {
+      "shape": [
+        128,
+        5120
+      ],
+      "norms": [
+        {
+          "offset": 0,
+          "foreach_norm": 808.444580078125,
+          "single_norm": 808.444580078125
+        },
+        {
+          "offset": 1,
+          "foreach_norm": 808.444580078125,
+          "single_norm": 808.444580078125
+        },
+        {
+          "offset": 2,
+          "foreach_norm": 808.444580078125,
+          "single_norm": 808.444580078125
+        },
+        {
+          "offset": 3,
+          "foreach_norm": 808.444580078125,
+          "single_norm": 808.444580078125
+        },
+        {
+          "offset": 4,
+          "foreach_norm": 808.444580078125,
+          "single_norm": 808.444580078125
+        },
+        {
+          "offset": 5,
+          "foreach_norm": 808.444580078125,
+          "single_norm": 808.444580078125
+        },
+        {
+          "offset": 6,
+          "foreach_norm": 808.444580078125,
+          "single_norm": 808.444580078125
+        },
+        {
+          "offset": 7,
+          "foreach_norm": 808.444580078125,
+          "single_norm": 808.444580078125
+        }
+      ]
+    },
+    {
+      "shape": [
+        512,
+        1280
+      ],
+      "norms": [
+        {
+          "offset": 0,
+          "foreach_norm": 810.5590209960938,
+          "single_norm": 810.5590209960938
+        },
+        {
+          "offset": 1,
+          "foreach_norm": 810.5590209960938,
+          "single_norm": 810.5590209960938
+        },
+        {
+          "offset": 2,
+          "foreach_norm": 810.5590209960938,
+          "single_norm": 810.55908203125
+        },
+        {
+          "offset": 3,
+          "foreach_norm": 810.5590209960938,
+          "single_norm": 810.5590209960938
+        },
+        {
+          "offset": 4,
+          "foreach_norm": 810.5590209960938,
+          "single_norm": 810.5590209960938
+        },
+        {
+          "offset": 5,
+          "foreach_norm": 810.5590209960938,
+          "single_norm": 810.5590209960938
+        },
+        {
+          "offset": 6,
+          "foreach_norm": 810.5590209960938,
+          "single_norm": 810.55908203125
+        },
+        {
+          "offset": 7,
+          "foreach_norm": 810.5590209960938,
+          "single_norm": 810.5590209960938
+        }
+      ]
+    },
+    {
+      "shape": [
+        1280,
+        1280
+      ],
+      "norms": [
+        {
+          "offset": 0,
+          "foreach_norm": 1278.7176513671875,
+          "single_norm": 1278.7176513671875
+        },
+        {
+          "offset": 1,
+          "foreach_norm": 1278.7176513671875,
+          "single_norm": 1278.7176513671875
+        },
+        {
+          "offset": 2,
+          "foreach_norm": 1278.7176513671875,
+          "single_norm": 1278.7176513671875
+        },
+        {
+          "offset": 3,
+          "foreach_norm": 1278.7176513671875,
+          "single_norm": 1278.7176513671875
+        },
+        {
+          "offset": 4,
+          "foreach_norm": 1278.7176513671875,
+          "single_norm": 1278.7176513671875
+        },
+        {
+          "offset": 5,
+          "foreach_norm": 1278.7176513671875,
+          "single_norm": 1278.7176513671875
+        },
+        {
+          "offset": 6,
+          "foreach_norm": 1278.7176513671875,
+          "single_norm": 1278.7176513671875
+        },
+        {
+          "offset": 7,
+          "foreach_norm": 1278.7176513671875,
+          "single_norm": 1278.7176513671875
+        }
+      ]
+    },
+    {
+      "shape": [
+        5120,
+        1280
+      ],
+      "norms": [
+        {
+          "offset": 0,
+          "foreach_norm": 2559.9150390625,
+          "single_norm": 2559.915283203125
+        },
+        {
+          "offset": 1,
+          "foreach_norm": 2559.9150390625,
+          "single_norm": 2559.915283203125
+        },
+        {
+          "offset": 2,
+          "foreach_norm": 2559.9150390625,
+          "single_norm": 2559.9150390625
+        },
+        {
+          "offset": 3,
+          "foreach_norm": 2559.9150390625,
+          "single_norm": 2559.915283203125
+        },
+        {
+          "offset": 4,
+          "foreach_norm": 2559.9150390625,
+          "single_norm": 2559.915283203125
+        },
+        {
+          "offset": 5,
+          "foreach_norm": 2559.9150390625,
+          "single_norm": 2559.915283203125
+        },
+        {
+          "offset": 6,
+          "foreach_norm": 2559.9150390625,
+          "single_norm": 2559.9150390625
+        },
+        {
+          "offset": 7,
+          "foreach_norm": 2559.9150390625,
+          "single_norm": 2559.915283203125
+        }
+      ]
+    },
+    {
+      "shape": [
+        1,
+        128
+      ],
+      "norms": [
+        {
+          "offset": 0,
+          "foreach_norm": 10.879952430725098,
+          "single_norm": 10.879952430725098
+        },
+        {
+          "offset": 1,
+          "foreach_norm": 10.879953384399414,
+          "single_norm": 10.879952430725098
+        },
+        {
+          "offset": 2,
+          "foreach_norm": 10.879953384399414,
+          "single_norm": 10.879952430725098
+        },
+        {
+          "offset": 3,
+          "foreach_norm": 10.879953384399414,
+          "single_norm": 10.879952430725098
+        },
+        {
+          "offset": 4,
+          "foreach_norm": 10.879952430725098,
+          "single_norm": 10.879952430725098
+        },
+        {
+          "offset": 5,
+          "foreach_norm": 10.879953384399414,
+          "single_norm": 10.879952430725098
+        },
+        {
+          "offset": 6,
+          "foreach_norm": 10.879953384399414,
+          "single_norm": 10.879952430725098
+        },
+        {
+          "offset": 7,
+          "foreach_norm": 10.879953384399414,
+          "single_norm": 10.879952430725098
+        }
+      ]
+    },
+    {
+      "shape": [
+        1280
+      ],
+      "norms": [
+        {
+          "offset": 0,
+          "foreach_norm": 37.251564025878906,
+          "single_norm": 37.251564025878906
+        },
+        {
+          "offset": 1,
+          "foreach_norm": 37.251564025878906,
+          "single_norm": 37.251564025878906
+        },
+        {
+          "offset": 2,
+          "foreach_norm": 37.251564025878906,
+          "single_norm": 37.25156784057617
+        },
+        {
+          "offset": 3,
+          "foreach_norm": 37.251564025878906,
+          "single_norm": 37.251564025878906
+        },
+        {
+          "offset": 4,
+          "foreach_norm": 37.251564025878906,
+          "single_norm": 37.251564025878906
+        },
+        {
+          "offset": 5,
+          "foreach_norm": 37.251564025878906,
+          "single_norm": 37.251564025878906
+        },
+        {
+          "offset": 6,
+          "foreach_norm": 37.251564025878906,
+          "single_norm": 37.25156784057617
+        },
+        {
+          "offset": 7,
+          "foreach_norm": 37.251564025878906,
+          "single_norm": 37.251564025878906
+        }
+      ]
+    }
+  ]
+}

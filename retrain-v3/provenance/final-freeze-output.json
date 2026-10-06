@@ -1,0 +1,7 @@
+{
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20261001-final",
+  "runs": [
+    "clean-residue-mean-official-seed2"
+  ],
+  "benchmark_inputs_pinned": 43
+}

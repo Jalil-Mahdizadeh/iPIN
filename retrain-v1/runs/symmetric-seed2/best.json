@@ -1,0 +1,10 @@
+{
+  "file": "update-000007000.pt",
+  "sha256": "bb99dbdee7af654d362e4738c1fb9da98ab232cead4eacb52a439c10aeadf7c0",
+  "bytes": 7818552779,
+  "update": 7000,
+  "epoch": 2,
+  "next_chunk": 1902,
+  "world_size": 4,
+  "fingerprint": "c2563b1fd7b9e188549843483b8daee67496f8765c091aa59e2763d10327610f"
+}

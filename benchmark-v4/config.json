@@ -1,0 +1,31 @@
+{
+  "world_size": 4,
+  "models": [
+    "v4-esmc-standard"
+  ],
+  "splits_by_model": {
+    "v4-esmc-standard": [
+      "test"
+    ]
+  },
+  "precision": "FP32 parameters; BF16 autocast; TF32 disabled",
+  "attention_backend": "efficient",
+  "scoring": "mean AB/BA logits",
+  "token_budget": 16384,
+  "max_pairs": 8,
+  "commit_rows": 512,
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 20260929,
+  "test_sequence_truncation": null,
+  "comparison_models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric",
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce",
+    "v3-residue-mlp",
+    "v4-esmc-standard"
+  ]
+}

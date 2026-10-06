@@ -1,0 +1,128 @@
+{
+  "complete": true,
+  "created_at_utc": "2026-10-05T21:13:05.594778+00:00",
+  "checks": {
+    "pinned_input_hashes_verified": true,
+    "source_pair_label_multisets_identical": true,
+    "independent_source_degrees_and_all_scores_identical": true,
+    "independent_AP_and_AUROC_agree_to_1e_minus_12": true,
+    "reproduces_previous_V11_result_to_1e_minus_12": true
+  },
+  "artifacts": [
+    {
+      "path": "REPORT.md",
+      "bytes": 5310,
+      "sha256": "18bce67baa426ba77d2c110694e25d900cbe2461dc3ebccddc44abf51e25da85"
+    },
+    {
+      "path": "inputs/native/train.csv.gz",
+      "bytes": 184845032,
+      "sha256": "8900b339e7e4c9b890a837266724af1ad99c25e8fb072567cd8fee037eceb642"
+    },
+    {
+      "path": "inputs/native/validation.csv.gz",
+      "bytes": 23085674,
+      "sha256": "e255f6b684c0ed7eff54b68f75bdb186d0059d2abb99493550e957a7244f6fa1"
+    },
+    {
+      "path": "inputs/tuna/train.dictionary.tsv.gz",
+      "bytes": 3596086,
+      "sha256": "bc32f50f0dc881136c190e5f263cd6b62ad7b3c9781911ca0e138c8bc8affbfb"
+    },
+    {
+      "path": "inputs/tuna/train.interactions.tsv.gz",
+      "bytes": 3333129,
+      "sha256": "1106a0ec8b4bb040f1bdfab912a7a9b814a8fa661df312106c460ffc611aa381"
+    },
+    {
+      "path": "inputs/tuna/validation.dictionary.tsv.gz",
+      "bytes": 3532283,
+      "sha256": "3b04c15d13e3410847a909ee199443e2f4bc2075ba2baa5a1a417ae49616598d"
+    },
+    {
+      "path": "inputs/tuna/validation.interactions.tsv.gz",
+      "bytes": 416698,
+      "sha256": "b093da83e6e529630bef0a20282792e9fd2b3d8888e7821db1697f9d7ab2b4d3"
+    },
+    {
+      "path": "provenance/human-releases-exposure.json",
+      "bytes": 5644,
+      "sha256": "373d70302230fb4a4393d0a55c0b48dc755a5eade9aa5423363b6d0ce5cb39d8"
+    },
+    {
+      "path": "provenance/inputs.json",
+      "bytes": 6292,
+      "sha256": "bb2e5593c2682a71322191f51211dc2ab2eab49e4580a87b4ffb28eed177e7d1"
+    },
+    {
+      "path": "provenance/legacy-degree-baseline.json",
+      "bytes": 1072,
+      "sha256": "682c7f5c8701e1cb462ffcd8f98fdcd963805bd2dc30d5e94e418e3a3358ada1"
+    },
+    {
+      "path": "provenance/native-human-exposure-inputs.json",
+      "bytes": 872,
+      "sha256": "25f920c979ef5d0d328eb084943fcc1942cad0e5b9c5cf1e510a4a1717a618df"
+    },
+    {
+      "path": "provenance/runtime.json",
+      "bytes": 416,
+      "sha256": "9ed7d3090d5dc087b975856e0590cc859135f0405e3aa66a3a21ae05e0294c26"
+    },
+    {
+      "path": "provenance/tuna-seed47-config.yaml",
+      "bytes": 1653,
+      "sha256": "bdd30ca50773da99a799125ed193c3f1ec89cc2eb3d50beb27d0b4ec2a98c487"
+    },
+    {
+      "path": "results/metrics.csv",
+      "bytes": 876,
+      "sha256": "1e3bb8664e31a9568c0fa501cb755b6353b96e001f948f7de65e554d87801db2"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 5272,
+      "sha256": "d723be8da3caf240505bf32d8cf8b9017af18fde85593005e6d2a6621d58b834"
+    },
+    {
+      "path": "results/train-sequence-degrees.csv.gz",
+      "bytes": 684468,
+      "sha256": "cd18c7954767bfef960edc10d24aac7238362de71c8850e90e8387a4d5b8b801"
+    },
+    {
+      "path": "results/validation-scores-native.csv.gz",
+      "bytes": 4832184,
+      "sha256": "23af5a8332398d25909163aabd9c21365a7bc496999c139d730dfb7162c4492a"
+    },
+    {
+      "path": "results/validation-scores-native.npz",
+      "bytes": 5340436,
+      "sha256": "b0f9cc5b7dee60443ccd49d049da7d32d2c92d3b1961bfc54842b47982fa1c45"
+    },
+    {
+      "path": "results/validation-scores-tuna.csv.gz",
+      "bytes": 4852056,
+      "sha256": "c06008910f22a079ff869efaef02bba0b430ae3b172fe3bd9071511255864c7d"
+    },
+    {
+      "path": "results/validation-scores-tuna.npz",
+      "bytes": 5348991,
+      "sha256": "5e953851a484e6954aa9075e7b10eaabdca757b278c2c4080c56596f3885a015"
+    },
+    {
+      "path": "scripts/assess.py",
+      "bytes": 18842,
+      "sha256": "270215e227773a9348f7efc69a61d177e7308e51bfb8c5802d9227109ddb05f6"
+    },
+    {
+      "path": "scripts/run.sh",
+      "bytes": 712,
+      "sha256": "cc378c8fafeb3994918c188e41571a905a14d8a27326e52b1012de53678546ad"
+    },
+    {
+      "path": "scripts/stage_inputs.py",
+      "bytes": 4214,
+      "sha256": "6ef18f0af21381c2312ee061899803119b8957f62f7e8521cd9b169ee96851c3"
+    }
+  ]
+}

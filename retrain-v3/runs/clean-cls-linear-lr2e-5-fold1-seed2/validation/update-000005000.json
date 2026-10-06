@@ -1,0 +1,14 @@
+{
+  "sha256": "33b6b2b102a872010d3776b6b0052f4aa47e0f7a04605fedf17fe3bc1758d60b",
+  "rows": 18285,
+  "update": 5000,
+  "fingerprint": "0f2c3afae40ee4cc6ef7bb3e96e192eca2a67bd56cf512e601cba3a9090d38bd",
+  "metrics": {
+    "rows": 18285,
+    "pooled_ap": 0.5993379915678482,
+    "auroc": 0.6083373129268013,
+    "brier": 0.29090017005083035,
+    "ab_ap": 0.5833206960439752,
+    "order_logit_gap_mean": 1.2914876638229407
+  }
+}

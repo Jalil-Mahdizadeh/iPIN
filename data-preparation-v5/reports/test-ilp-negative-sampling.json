@@ -1,0 +1,54 @@
+{
+  "actual_mip_gap": 0.0298080065271642,
+  "admissible_pairs": 4307165,
+  "candidate_adaptations": [
+    "known-positive family blacklist",
+    "hard exclusion of all self pairs",
+    "random excess selection within GO strata instead of sorted-key truncation"
+  ],
+  "candidate_fingerprint": "2e01016b9395bc48a2e12997ad52444c3a20d14bef889f1a46c1c588667473f0",
+  "candidates": 104096,
+  "configured_mip_gap": 0.01,
+  "degree_absolute_residual_sum": 94,
+  "dual_bound": 0.0003066419427321058,
+  "mathematically_proven_optimal": false,
+  "max_negative_positive_degree_ratio": 1.1097852028639619,
+  "negative_go_jaccard_mean": 0.044095364659130776,
+  "negative_go_jaccard_quantiles": [
+    0.0,
+    0.0,
+    0.0,
+    0.041666666666666664,
+    1.0
+  ],
+  "negatives": 26024,
+  "new_negative_predictions_per_historical_model": 24870,
+  "nodes": 37020,
+  "objective": 0.00031606315532915335,
+  "objective_terms": {
+    "degree": 0.0003159683108979405,
+    "jaccard": 9.484443121285016e-08
+  },
+  "original_negative_overlap": 1154,
+  "output_sha256": "85de70eedb2e039726edb784e02edd23248f871dd83f680a66ae11fb21a35bf0",
+  "peak_rss_gib": 22.324462890625,
+  "positive_go_jaccard_mean": 0.044095273996891025,
+  "positive_go_jaccard_quantiles": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "positive_negative_degree_spearman": 0.9999926502300571,
+  "positives": 26024,
+  "proteins": 2948,
+  "proteins_absent_from_negatives": 1,
+  "proteins_without_go": 352,
+  "reusable_original_prediction_rows": 27178,
+  "solver": "HIGHS",
+  "solver_seconds": 7237.821362257004,
+  "split": "test-ilp",
+  "status": "user_limit",
+  "total_solve_and_check_seconds": 7237.893313523993
+}

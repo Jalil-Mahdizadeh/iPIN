@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "complete",
+      "exit_code": 0,
+      "worker_called": true,
+      "scheduler_requeue_requested": false
+    },
+    {
+      "case": "failure",
+      "exit_code": 42,
+      "worker_called": true,
+      "scheduler_requeue_requested": false
+    },
+    {
+      "case": "signal",
+      "exit_code": 0,
+      "worker_called": true,
+      "scheduler_requeue_requested": true
+    },
+    {
+      "case": "signal-and-failure",
+      "exit_code": 42,
+      "worker_called": true,
+      "scheduler_requeue_requested": false
+    },
+    {
+      "case": "requeue-limit",
+      "exit_code": 78,
+      "worker_called": true,
+      "scheduler_requeue_requested": false
+    },
+    {
+      "case": "manual-stop",
+      "exit_code": 0,
+      "worker_called": false,
+      "scheduler_requeue_requested": false
+    },
+    {
+      "case": "stop-during-worker",
+      "exit_code": 0,
+      "worker_called": true,
+      "scheduler_requeue_requested": false
+    },
+    {
+      "case": "already-completed",
+      "exit_code": 0,
+      "worker_called": false,
+      "scheduler_requeue_requested": false
+    },
+    {
+      "case": "exit-without-completion",
+      "exit_code": 79,
+      "worker_called": true,
+      "scheduler_requeue_requested": false
+    },
+    {
+      "case": "duplicate-lock",
+      "exit_code": 73,
+      "worker_called": false,
+      "scheduler_requeue_requested": false
+    }
+  ],
+  "scope": "Actual wrapper control flow with only its root path relocated; srun/scontrol and release verification replaced by fixtures. No production job or real scheduler requeue was invoked.",
+  "source_sha256": {
+    "slurm/train.sbatch": "426d438586451cc2fe4a4d44f7e63f616296d46ff7cb8ca137043fc243ec8efc",
+    "scripts/qualify_wrapper.py": "662b448b99b532ddffeaaf0c114871e4ff0b01734d3f2bcf423c82e018260edf"
+  }
+}

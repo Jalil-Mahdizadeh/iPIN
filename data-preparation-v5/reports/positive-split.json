@@ -1,0 +1,33 @@
+{
+  "actual_mip_gap": 0.49406136724522637,
+  "configured_mip_gap": 0.01,
+  "configured_time_limit": 7200,
+  "discarded_crossing_positives": 287829,
+  "dual_bound": -647306.5695430962,
+  "eligible_positives": 721082,
+  "formulation": "author retained-PPI objective and relative lower fraction constraints, adapted to two splits; continuous z is exact conditional on binary x",
+  "input_sha256": {
+    "eligible-positives.csv": "eb445c94f07e19111d71ed4f3166648211fa649cc2902a229f47eecebcd56773",
+    "protein-groups.json": "1ccb8616c2ed76c983f448f77b459b1e16d47f85116d39420e3264e5d01276cd"
+  },
+  "mathematically_proven_optimal": false,
+  "nodes": 29913,
+  "objective_discarded_pairs": 287829.00000000006,
+  "peak_rss_gib": 3.19921875,
+  "retained_positives": 433253,
+  "seconds": 7200.0991387760005,
+  "solver": "HIGHS",
+  "splits": {
+    "train": {
+      "positives": 350382,
+      "protein_sequences": 13110,
+      "retained_positive_fraction": 0.8087237710991038
+    },
+    "val": {
+      "positives": 82871,
+      "protein_sequences": 6023,
+      "retained_positive_fraction": 0.19127622890089624
+    }
+  },
+  "status": "user_limit"
+}

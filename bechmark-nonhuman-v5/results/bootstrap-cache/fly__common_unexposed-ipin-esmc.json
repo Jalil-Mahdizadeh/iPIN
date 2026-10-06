@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "ipin-esmc",
+    "test": "fly__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "101e30480e8c99bb67cefef02b2a91d86f15e39277dab92e126906b57e0e90ca",
+    "scores": "d21fec33d02b0a7627889a01dd23f044d2446d2ebf13b9919c67f48f0a3951bd",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/fly__common_unexposed-ipin-esmc.npz",
+    "bytes": 15297,
+    "sha256": "474765a822ecc0784a3409a3d926c5d46623d3a407213bf0b35029c951396015"
+  }
+}

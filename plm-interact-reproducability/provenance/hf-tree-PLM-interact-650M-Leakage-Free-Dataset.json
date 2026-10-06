@@ -1,0 +1,44 @@
+[
+  {
+    "type": "file",
+    "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+    "size": 1519,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "35cd0203e2002de84f00b78018fc15bb2c7729b8",
+    "size": 253,
+    "path": "README.md"
+  },
+  {
+    "type": "file",
+    "oid": "1cc595d0b087f765efcb5f9377e152b9eddbf91d",
+    "size": 2609670405,
+    "lfs": {
+      "oid": "207f1bf02e9bebc393fe510a98c0f9af04039d0a9258047ac107c6d24221c7e2",
+      "size": 2609670405,
+      "pointerSize": 135
+    },
+    "xetHash": "e2951908b6ed5922bed119c4808f6dab82a16e3f74a439049ab3002454b7e2f8",
+    "path": "pytorch_model.bin"
+  },
+  {
+    "type": "file",
+    "oid": "ba0f9b53dbbf27934f7555e5d31e37bdea9317f1",
+    "size": 125,
+    "path": "special_tokens_map.json"
+  },
+  {
+    "type": "file",
+    "oid": "dbcdd9fb2e742627ee310713615e0d7aeed0c34e",
+    "size": 1126,
+    "path": "tokenizer_config.json"
+  },
+  {
+    "type": "file",
+    "oid": "6b946952cc35537226f07fd70957ee2f848880d2",
+    "size": 93,
+    "path": "vocab.txt"
+  }
+]

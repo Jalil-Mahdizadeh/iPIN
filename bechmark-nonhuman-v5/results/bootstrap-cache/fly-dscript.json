@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "dscript",
+    "test": "fly",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "9072984474b1d6117638a5de571d527305b4630e20b751c2254751a35b55ee75",
+    "scores": "a337c6de741f94d95715e763367e432af61d9c41efc3bfb414b8ce8ffdef59e8",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/fly-dscript.npz",
+    "bytes": 14899,
+    "sha256": "467a21e20046e614882aa57363247cfdc12b171630681d2a16a25e4fdd8fbcfb"
+  }
+}

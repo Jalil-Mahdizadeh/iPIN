@@ -1,0 +1,9 @@
+JobID|JobName|State|ExitCode|ElapsedRaw|AllocTRES
+3177489_0|plmi-v3-adaptation|COMPLETED|0:0|28813|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3177489_1|plmi-v3-adaptation|COMPLETED|0:0|28813|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3177489_2|plmi-v3-adaptation|COMPLETED|0:0|28813|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3177489_3|plmi-v3-adaptation|COMPLETED|0:0|28612|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3177489_4|plmi-v3-adaptation|COMPLETED|0:0|28338|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3177489_5|plmi-v3-adaptation|COMPLETED|0:0|28347|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3196205|plmi-v3-head-QUAL|FAILED|1:0|315|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1
+3196606|plmi-v3-aligned-QUAL|COMPLETED|0:0|317|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1

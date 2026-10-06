@@ -1,0 +1,14 @@
+{
+  "state": {
+    "update": 4,
+    "epoch": 1,
+    "next_chunk": 0,
+    "examples_seen": 32,
+    "best_ap": 0.6071428571428572,
+    "best_update": 4,
+    "total_steps": 4
+  },
+  "last_committed_update": 4,
+  "phase": "complete",
+  "attempt": "20260928T194142-3085063"
+}

@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "tuna",
+    "test": "ecoli",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "4ed7233c6f878d2a813e5d77e303227a51e693f797eca0378383ac38b4b69ae1",
+    "scores": "576fde808db1b2e469040b1d7367fda6044f4c0356f17da9163c84aa29886d53",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/ecoli-tuna.npz",
+    "bytes": 15128,
+    "sha256": "57106b3543384a7e43f0b6e73165d147e8fa97aaaba9fb608d49dc52d7e731ff"
+  }
+}

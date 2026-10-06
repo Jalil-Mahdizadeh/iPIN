@@ -1,0 +1,78 @@
+{
+  "fixed_at_utc": "2026-10-02T09:38:43.751713+00:00",
+  "metrics_and_thresholds": {
+    "native-bernett": {
+      "ap": 0.6421420518145138,
+      "auroc": 0.638944655772301,
+      "brier": 0.261641840210981,
+      "max_f1_logit_threshold": -1.87890625,
+      "max_f1_probability_threshold": 0.13251455444044347,
+      "rule": "maximum validation F1, highest threshold on exact ties"
+    },
+    "v1-reference": {
+      "ap": 0.6502750559286536,
+      "auroc": 0.6447700291124854,
+      "brier": 0.23396096096264254,
+      "max_f1_logit_threshold": -0.7763671875,
+      "max_f1_probability_threshold": 0.3151033679588216,
+      "rule": "maximum validation F1, highest threshold on exact ties"
+    },
+    "v1-symmetric": {
+      "ap": 0.6474107570134193,
+      "auroc": 0.6419356859345455,
+      "brier": 0.2467093509427551,
+      "max_f1_logit_threshold": -1.685546875,
+      "max_f1_probability_threshold": 0.15636236748299262,
+      "rule": "maximum validation F1, highest threshold on exact ties"
+    },
+    "v2-reference": {
+      "ap": 0.653895015278456,
+      "auroc": 0.6482926925898238,
+      "brier": 0.2340507489436298,
+      "max_f1_logit_threshold": -0.83984375,
+      "max_f1_probability_threshold": 0.3015676930738543,
+      "rule": "maximum validation F1, highest threshold on exact ties"
+    },
+    "v2-capped": {
+      "ap": 0.6515787053852181,
+      "auroc": 0.6447443358962873,
+      "brier": 0.2525408704764571,
+      "max_f1_logit_threshold": -2.05859375,
+      "max_f1_probability_threshold": 0.11318690654016263,
+      "rule": "maximum validation F1, highest threshold on exact ties"
+    },
+    "v2-positive10": {
+      "ap": 0.6547945921810688,
+      "auroc": 0.6549877486343085,
+      "brier": 0.3889230219671309,
+      "max_f1_logit_threshold": 1.5078125,
+      "max_f1_probability_threshold": 0.8187367931713698,
+      "rule": "maximum validation F1, highest threshold on exact ties"
+    },
+    "v2-clean-bce": {
+      "ap": 0.6521558958966235,
+      "auroc": 0.6477777626276027,
+      "brier": 0.2349063168120803,
+      "max_f1_logit_threshold": -1.078125,
+      "max_f1_probability_threshold": 0.2538610069692489,
+      "rule": "maximum validation F1, highest threshold on exact ties"
+    },
+    "v3-residue-mlp": {
+      "ap": 0.6571396551693898,
+      "auroc": 0.6566023973454888,
+      "brier": 0.23402483771028287,
+      "max_f1_logit_threshold": -1.09765625,
+      "max_f1_probability_threshold": 0.2501793000910688,
+      "rule": "maximum validation F1, highest threshold on exact ties"
+    },
+    "v4-esmc-standard": {
+      "ap": 0.6576301574729071,
+      "auroc": 0.6617097514865511,
+      "brier": 0.24125395399806437,
+      "max_f1_logit_threshold": -1.359375,
+      "max_f1_probability_threshold": 0.20434189993684584,
+      "rule": "maximum validation F1, highest threshold on exact ties"
+    }
+  },
+  "test_used_for_threshold_selection": false
+}

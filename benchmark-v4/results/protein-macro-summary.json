@@ -1,0 +1,20 @@
+{
+  "definition": "Arithmetic mean of within-protein AP over test proteins with at least one positive and one negative incident pair. Self-pairs enter that protein once.",
+  "eligible_proteins": 2795,
+  "total_test_proteins": 3022,
+  "excluded_single_class_proteins": 227,
+  "pooled_AB_BA_logits": true,
+  "descriptive_only": true,
+  "used_for_selection": false,
+  "macro_ap": {
+    "native-bernett": 0.718928270563262,
+    "v1-reference": 0.6972594417325175,
+    "v1-symmetric": 0.7088764369203048,
+    "v2-reference": 0.6965291969021814,
+    "v2-capped": 0.7094438121464606,
+    "v2-positive10": 0.7021225675862925,
+    "v2-clean-bce": 0.7116665437598203,
+    "v3-residue-mlp": 0.7144661072300958,
+    "v4-esmc-standard": 0.7116671363401986
+  }
+}

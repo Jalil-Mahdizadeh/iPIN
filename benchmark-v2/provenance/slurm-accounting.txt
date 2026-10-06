@@ -1,0 +1,2 @@
+JobID|State|ExitCode|Elapsed|ElapsedRaw|NodeList|AllocTRES
+3172100|COMPLETED|0:0|00:20:18|1218|n145|billing=4,cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=400G,node=1

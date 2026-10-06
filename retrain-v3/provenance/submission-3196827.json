@@ -1,0 +1,32 @@
+{
+  "time_utc": "2026-09-30T19:42:05.390114+00:00",
+  "stage": "readout",
+  "release": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-readout",
+  "runs": [
+    "clean-cls-mlp-lr2e-5-fold0-seed2",
+    "clean-cls-mlp-lr2e-5-fold1-seed2",
+    "clean-cls-mlp-lr2e-5-fold2-seed2",
+    "clean-residue-mean-lr2e-5-fold0-seed2",
+    "clean-residue-mean-lr2e-5-fold1-seed2",
+    "clean-residue-mean-lr2e-5-fold2-seed2"
+  ],
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--array=0-5%6",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-readout/slurm/train.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-readout"
+  ],
+  "shell_command": "sbatch --parsable --array=0-5%6 /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-readout/slurm/train.sbatch /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-readout",
+  "dry_run": false,
+  "qualified": true,
+  "gpus_per_run": 4,
+  "maximum_concurrent_runs": 6,
+  "screen_stop_update": 5000,
+  "optimizer_schedule_updates": 6000,
+  "launcher_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v3/releases/20260930-readout/code/launch_readout.py",
+  "launcher_sha256": "7377896d737573ceeb6ca0afb37ecaeba3f8c0851a220ec156dc108647d2ecad",
+  "production_jobs_submitted_by_this_call": 6,
+  "authorization": "User authorized ending the LR screen and moving to the next step; prior six-way concurrency preference retained.",
+  "slurm_job_id": "3196827"
+}

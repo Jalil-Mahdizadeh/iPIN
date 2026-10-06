@@ -1,0 +1,12 @@
+{
+  "file": "update-000005001.pt",
+  "sha256": "483a8a2bb1d7f9548ca544f1adb12c93b3e4261b9d9d419417c52df273cef431",
+  "bytes": 7813279814,
+  "update": 5001,
+  "epoch": 4,
+  "next_chunk": 25300,
+  "world_size": 4,
+  "fingerprint": "e2a7ad12a3c862d6e70d42993a603da0aa85f2232a93495eacc9168c6d6eb0f9",
+  "best_update": 3000,
+  "best_ap": 0.6232240259132884
+}

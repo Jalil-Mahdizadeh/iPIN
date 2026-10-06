@@ -1,0 +1,7 @@
+{
+  "job_id": "3196205",
+  "purpose": "Bounded disposable full-head DDP qualification",
+  "gpus": 4,
+  "time_limit_minutes": 30,
+  "submitted_utc": "2026-09-30T19:20:09.220912+00:00"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "hippie-v3-snapshot.txt.gz",
+    "url": "https://cbdm-01.zdv.uni-mainz.de/hippienew/downloads/HIPPIE-current.txt.gz",
+    "retrieved_utc": "2026-10-02T12:46:54.079807+00:00",
+    "bytes": 18115846,
+    "sha256": "9b26647bc3ade483bf247789a68d0b336d708732fa54c6805cdac385eabdb7e5",
+    "md5": "c300ca19be079f206a32cf1f03254b64",
+    "expected_md5": null,
+    "expected_bytes": null,
+    "headers": {
+      "Content-Length": "18115846",
+      "Content-Type": "application/x-gzip",
+      "Last-Modified": "Mon, 17 Aug 2026 16:47:02 GMT",
+      "ETag": "\"1146d06-65940eb61338e\""
+    }
+  },
+  {
+    "name": "bernett-2026-data-v1.zip",
+    "url": "https://ndownloader.figshare.com/files/68110393",
+    "retrieved_utc": "2026-10-02T12:46:56.959090+00:00",
+    "bytes": 190914297,
+    "sha256": "f380a914e54b4061f3aab586596a47c53d9e116c9be4f34bba46f8264703d912",
+    "md5": "37f2bde59827ec571265cf5f91c3774d",
+    "expected_md5": "37f2bde59827ec571265cf5f91c3774d",
+    "expected_bytes": 190914297,
+    "headers": {
+      "Content-Length": "190914297",
+      "Content-Type": "application/zip",
+      "Last-Modified": "Tue, 01 Sep 2026 14:13:09 GMT",
+      "ETag": "\"37f2bde59827ec571265cf5f91c3774d\""
+    }
+  },
+  {
+    "name": "author-pipeline.zip",
+    "url": "https://codeload.github.com/bionetslab/ppi-splitting-pipeline/zip/8bf9adb183b702c88db62ff878de482e2f20e4b2",
+    "retrieved_utc": "2026-10-02T12:46:54.212817+00:00",
+    "bytes": 4042275,
+    "sha256": "3c740b2611dedfe61703b3a3424e538a3f4c671a5df047918a3888789428131b",
+    "md5": "96ef86a5db5778c03bde395ea69e0d93",
+    "expected_md5": null,
+    "expected_bytes": null,
+    "headers": {
+      "Content-Length": null,
+      "Content-Type": "application/zip",
+      "Last-Modified": null,
+      "ETag": "\"cb2b525c4462e81f313731457cd2c6c056befcb65642616102dcb46ee573af1d\""
+    }
+  }
+]

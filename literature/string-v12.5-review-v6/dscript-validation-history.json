@@ -1,0 +1,11 @@
+{
+  "url": "https://raw.githubusercontent.com/samsledje/D-SCRIPT/054d4388c80a7ae4558da51b5eb4b05cef2d9726/data/pairs/human_test.tsv",
+  "sha256": "a82beacbcf4d11b631b1309477a9dd9acc33e15917c88b4211ab3af8c038ad44",
+  "bytes": 4639800,
+  "rows": 105450,
+  "labels": {
+    "0": 95864,
+    "1": 9586
+  },
+  "current_2022_revision": "65ebd2381e145a3124ec1fb43f86f9343d259ad3"
+}

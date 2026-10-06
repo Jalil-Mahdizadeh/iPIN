@@ -1,0 +1,16 @@
+{
+  "assignment_file": "assignment-0fb3e4a978f7b64ac637.json",
+  "contract": "e7dfb998724e9abde245812d5b04914b952c9f759a898b869acfea2b94f77593",
+  "counts": {
+    "discarded": 287829,
+    "feasible": true,
+    "retained": 433253,
+    "train": 350382,
+    "train_fraction": 0.8087237710991038,
+    "val": 82871,
+    "val_fraction": 0.19127622890089624
+  },
+  "origin": "existing_completed_partition",
+  "saved_utc": "2026-10-02T19:06:46.669518+00:00",
+  "sha256": "3f30d0377493c5c8ec319e4d2b879a3095eecac0787f380ce710e7b4ee0d3ed0"
+}

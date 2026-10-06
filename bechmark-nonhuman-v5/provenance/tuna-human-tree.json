@@ -1,0 +1,14 @@
+[
+  {
+    "type": "file",
+    "oid": "454dc20f58a94a8d18ab2af2c6c7ec8bb60988e9",
+    "size": 143364769,
+    "lfs": {
+      "oid": "f63876dfdfb8a8a2c855bbb814a74b20ccf333dc8c75be00bf281365fcac6c07",
+      "size": 143364769,
+      "pointerSize": 134
+    },
+    "xetHash": "f49efbd394fc417a8b9023a78f0cdf23459037fed98ef2aba0669345152c67d3",
+    "path": "x-species/TUnA_seed47/model"
+  }
+]

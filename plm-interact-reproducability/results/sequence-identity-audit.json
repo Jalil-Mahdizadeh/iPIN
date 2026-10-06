@@ -1,0 +1,47 @@
+{
+  "mouse": {
+    "released_test_equals_publisher_sequences_in_order": true,
+    "released_test_bound_to_workbook_ids_labels_scores": true,
+    "plm_tuna_unordered_sequence_label_multisets_identical": true,
+    "all_baseline_id_label_multisets_identical_to_tuna": true,
+    "n": 55000,
+    "unique_unordered_sequence_label_pairs": 54967,
+    "duplicate_unordered_sequence_label_rows": 33
+  },
+  "fly": {
+    "released_test_equals_publisher_sequences_in_order": true,
+    "released_test_bound_to_workbook_ids_labels_scores": true,
+    "plm_tuna_unordered_sequence_label_multisets_identical": true,
+    "all_baseline_id_label_multisets_identical_to_tuna": true,
+    "n": 55000,
+    "unique_unordered_sequence_label_pairs": 54925,
+    "duplicate_unordered_sequence_label_rows": 75
+  },
+  "worm": {
+    "released_test_equals_publisher_sequences_in_order": true,
+    "released_test_bound_to_workbook_ids_labels_scores": true,
+    "plm_tuna_unordered_sequence_label_multisets_identical": true,
+    "all_baseline_id_label_multisets_identical_to_tuna": true,
+    "n": 55000,
+    "unique_unordered_sequence_label_pairs": 54962,
+    "duplicate_unordered_sequence_label_rows": 38
+  },
+  "yeast": {
+    "released_test_equals_publisher_sequences_in_order": true,
+    "released_test_bound_to_workbook_ids_labels_scores": true,
+    "plm_tuna_unordered_sequence_label_multisets_identical": true,
+    "all_baseline_id_label_multisets_identical_to_tuna": true,
+    "n": 55000,
+    "unique_unordered_sequence_label_pairs": 54950,
+    "duplicate_unordered_sequence_label_rows": 50
+  },
+  "ecoli": {
+    "released_test_equals_publisher_sequences_in_order": true,
+    "released_test_bound_to_workbook_ids_labels_scores": true,
+    "plm_tuna_unordered_sequence_label_multisets_identical": true,
+    "all_baseline_id_label_multisets_identical_to_tuna": true,
+    "n": 22000,
+    "unique_unordered_sequence_label_pairs": 18230,
+    "duplicate_unordered_sequence_label_rows": 3770
+  }
+}

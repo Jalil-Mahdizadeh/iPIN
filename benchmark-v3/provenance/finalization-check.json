@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "selection": {
+    "all_13_validations_required": true,
+    "earlier_tie_selected": true,
+    "selection_idempotent": true,
+    "unfinished_run_rejected": true,
+    "wrong_best_rejected": true
+  },
+  "analysis": {
+    "eight_model_report_completed": true,
+    "all_seven_baselines_reproduced_to_1e_12": true,
+    "bootstrap_replicates": 1000,
+    "finalization_idempotent": true,
+    "new_model_predictions": false,
+    "fixture_only": true
+  },
+  "source_sha256": {
+    "prepare_selected.py": "da74534559db93fafaa8b9b4f31dc83e6ead4278a391a0a923c950ba0d97f79d",
+    "analyze.py": "315cad268450cdf1ce2c7d70083de65e518624bde41ece8759bc7bfd82438dec",
+    "write_report.py": "1ac8ea75798dde14c93a4ebc5ccd5398de6dc0f646578995675c80821e43fad9"
+  }
+}

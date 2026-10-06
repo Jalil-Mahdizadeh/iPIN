@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "tuna-human",
+    "test": "fly__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "101e30480e8c99bb67cefef02b2a91d86f15e39277dab92e126906b57e0e90ca",
+    "scores": "5dec4e2d262299f3a3ec11f03773fb1d8563a1d3fd5388d38eb4204f80e9e2fb",
+    "analysis_code": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/bootstrap-cache/fly__common_unexposed-tuna-human.npz",
+    "bytes": 15219,
+    "sha256": "c7250988c014c22aaad6b457aba4c443eb85a4ff5c566e13fc3885c4f89388a5"
+  }
+}

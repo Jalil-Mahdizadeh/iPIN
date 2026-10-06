@@ -1,0 +1,48 @@
+{
+  "completed_at_utc": "2026-10-01T21:55:48.360830+00:00",
+  "v3_closed": true,
+  "models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric",
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce",
+    "v3-residue-mlp"
+  ],
+  "fresh_test_inference_models": [
+    "v3-residue-mlp"
+  ],
+  "reused_test_inference_models": [
+    "native-bernett",
+    "v1-reference",
+    "v1-symmetric",
+    "v2-reference",
+    "v2-capped",
+    "v2-positive10",
+    "v2-clean-bce"
+  ],
+  "test_rows_per_model": 52048,
+  "selected_update": 4000,
+  "prediction_fingerprint": "24834c21ae3ebe2bc6cf9d7c27e2a0b2027c55b97396f277ffa31c4b670b99a3",
+  "training_endpoint": {
+    "mode": "user_authorized_early_stop",
+    "training_horizon_completed": false,
+    "stopped_update": 8446,
+    "planned_updates": 12745,
+    "validation_opportunities": 8,
+    "planned_validation_opportunities": 13,
+    "amendment_path": "provenance/early-stop-amendment.json",
+    "amendment_sha256": "e7a0461a1b706bd5043d7323cd7b9c22e5162074488acd40392f37a9631c8d3a",
+    "stopped_manifest_sha256": "ddf0f1bb0efb236bda6d81a31e1a8b57f8699f580c2d9fc9b0198f93a18423ea",
+    "budget_comparison_note": "Early stopping changes the planned equal-training-budget comparison. Checkpoint selection remains official-validation-only."
+  },
+  "summary_sha256": "16c94a66a49d0c10abce5fd1cf135f9092686fe6bd76aeff408072696aeadc76",
+  "report_sha256": "3eda17a5434e55727b353da9a8b0684257b7c8609b269b330f5ab6fd8a26974e",
+  "all_coverage_and_numerical_checks_passed": true,
+  "conclusion": "V3 does not outperform native in primary test AP.",
+  "further_v3_experiments_scheduled": false,
+  "benchmark_root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v3",
+  "final_results_sha256": "1cd5aeb2f6750a0c98cab47d3a17a0e81186108d9e19faa14f0c43ff818c19d8"
+}

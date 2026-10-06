@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "tuna",
+    "test": "original",
+    "replicates": 1000,
+    "seed": 20260929,
+    "rows": "402d3c928752fc3d91b1f17005cd68297d6df34a14fa6ae47e26e79a002f1188",
+    "scores": "f64a6b4ed70386d094bd5c7865cc117b3ff0c6b8de2b1219a11ea90d516f5965",
+    "analysis_code": "117ff451095bb3cf5025a57bc9b24f3a99c2bd9f62444b9c65a13dc66aa0d054"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/bootstrap-cache/original-tuna.npz",
+    "bytes": 14522,
+    "sha256": "4a0e26d92b53ff2deb4a241040d7e01846507e7c6b219c404a9c6443dd5aed79"
+  }
+}

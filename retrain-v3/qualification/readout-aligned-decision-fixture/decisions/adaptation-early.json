@@ -1,0 +1,11 @@
+{
+  "selected_learning_rate": 2e-05,
+  "common_validation_updates": [
+    1000,
+    2000,
+    3000,
+    4000,
+    5000
+  ],
+  "evidence_sha256": {}
+}

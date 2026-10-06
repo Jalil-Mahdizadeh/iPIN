@@ -1,0 +1,52 @@
+{
+  "at_utc": "2026-10-05T22:03:48.562913+00:00",
+  "container": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact/plm-interact-native-arm64-v1.sif",
+    "bytes": 13101785088,
+    "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+  },
+  "environment": {
+    "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "sklearn": "1.6.1",
+    "machine": "aarch64",
+    "hostname": "n581",
+    "gpu_used": false
+  },
+  "phase_resources": {
+    "prepare": {
+      "user_seconds": 11.04,
+      "system_seconds": 0.45,
+      "wall_seconds": 12.17,
+      "max_rss_kib": 110592.0,
+      "exit_status": 0.0
+    },
+    "search": {
+      "user_seconds": 2910.83,
+      "system_seconds": 0.8,
+      "wall_seconds": 183.48,
+      "max_rss_kib": 626688.0,
+      "exit_status": 0.0
+    },
+    "fit-predict": {
+      "user_seconds": 28.8,
+      "system_seconds": 0.41,
+      "wall_seconds": 9.5,
+      "max_rss_kib": 649344.0,
+      "exit_status": 0.0
+    },
+    "evaluate": {
+      "user_seconds": 85.2,
+      "system_seconds": 1.51,
+      "wall_seconds": 86.95,
+      "max_rss_kib": 331776.0,
+      "exit_status": 0.0
+    }
+  },
+  "new_gpu_computation": false,
+  "cpu_thread_cap": 16,
+  "model_size_bytes": 404447,
+  "new_inference_not_including_evaluation_wall_seconds": 192.98,
+  "allocation": "CPU portion of existing interactive GH200 allocation; no new SLURM job",
+  "notes": "Shared homology search counted once. Resource files include validation and symmetry checks in the scoring phase. No historical neural cost estimate is inferred."
+}

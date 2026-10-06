@@ -1,0 +1,137 @@
+[
+  {
+    "path": "Source Data/Supplementary Figure7/fly_identity_plminteract.csv",
+    "bytes": 45714265,
+    "compressed_bytes": 26422544,
+    "header_offset": 68893573,
+    "local_path": "data/published-extra/Supplementary Figure7/fly_identity_plminteract.csv",
+    "sha256": "a7f4b11d8b8b3a98005e142bef4c62c2975f0987fb7bacad6ac2cd71193c475d",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/worm_identity_plminteract.csv",
+    "bytes": 41813706,
+    "compressed_bytes": 24727864,
+    "header_offset": 95316460,
+    "local_path": "data/published-extra/Supplementary Figure7/worm_identity_plminteract.csv",
+    "sha256": "0733eb48a3a5daf957bd3acc99171a72789afab6038a6a622f6db4260be1e8d3",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/ecoli_identity_plminteract.csv",
+    "bytes": 13800306,
+    "compressed_bytes": 7788580,
+    "header_offset": 120044669,
+    "local_path": "data/published-extra/Supplementary Figure7/ecoli_identity_plminteract.csv",
+    "sha256": "8e7b2916d75b755f276527112f398202395844b35cf12de5233842447a7e08db",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/fly_identity_TUnA.csv",
+    "bytes": 45164323,
+    "compressed_bytes": 26018477,
+    "header_offset": 127833596,
+    "local_path": "data/published-extra/Supplementary Figure7/fly_identity_TUnA.csv",
+    "sha256": "794e205ceaf7dd95ea9002c7d9687ba9de6217e960d74cbaf25566499981b5e7",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/mouse_identity_plminteract.csv",
+    "bytes": 47280894,
+    "compressed_bytes": 26918578,
+    "header_offset": 153852402,
+    "local_path": "data/published-extra/Supplementary Figure7/mouse_identity_plminteract.csv",
+    "sha256": "051199aaf6c74ddf2bd49fda147a1e46e76debaafdb5d2ad2b64ea8e7e6bf736",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/worm_identity_TUnA.csv",
+    "bytes": 41262276,
+    "compressed_bytes": 24347740,
+    "header_offset": 180771327,
+    "local_path": "data/published-extra/Supplementary Figure7/worm_identity_TUnA.csv",
+    "sha256": "8ed9876e7bd57308ae77dda137bb49c0f5f84ff10e35deafa8b34e482ab00b3c",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/mouse_identity_TUnA.csv",
+    "bytes": 46744692,
+    "compressed_bytes": 26539166,
+    "header_offset": 205119398,
+    "local_path": "data/published-extra/Supplementary Figure7/mouse_identity_TUnA.csv",
+    "sha256": "05421cd437255a6beb97ad2f41ff65a70a621ad9440b14097bc7afc00c665019",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/ecoli_identity_TUnA.csv",
+    "bytes": 13600317,
+    "compressed_bytes": 7664620,
+    "header_offset": 231658897,
+    "local_path": "data/published-extra/Supplementary Figure7/ecoli_identity_TUnA.csv",
+    "sha256": "ef6d9b9d22beabc0121a3193374768befc6a2e1cbf3dc8fa6d1cc314663cc4f2",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/yeast_identity_TUnA.csv",
+    "bytes": 40130792,
+    "compressed_bytes": 23173097,
+    "header_offset": 239323850,
+    "local_path": "data/published-extra/Supplementary Figure7/yeast_identity_TUnA.csv",
+    "sha256": "8f156e93f0d984ceec329e9ec00a8364cb235b9210a5a71c63f8225792e14fa6",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure7/yeast_identity_plminteract.csv",
+    "bytes": 40689995,
+    "compressed_bytes": 23621284,
+    "header_offset": 262497280,
+    "local_path": "data/published-extra/Supplementary Figure7/yeast_identity_plminteract.csv",
+    "sha256": "b128d02e45e62964c493209577dd9bcee1200ee00d58a290dddcfe1b57f7afcd",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/worm_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 3167902,
+    "compressed_bytes": 1264012,
+    "header_offset": 287436842,
+    "local_path": "data/published-extra/Supplementary Figure2/worm_source_data_sfigure2_scores_all_models.csv",
+    "sha256": "b03e6d35478ec66f87e582ae3b17a05a03a75255bb7af22c2c7de51d8f09e99c",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/ecoli_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 1194058,
+    "compressed_bytes": 517863,
+    "header_offset": 288701334,
+    "local_path": "data/published-extra/Supplementary Figure2/ecoli_source_data_sfigure2_scores_all_models.csv",
+    "sha256": "53a53df81d356929dfe8b4ecc730f5880c29691cdd736d71f6868d412714ddd2",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/mouse_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 3183597,
+    "compressed_bytes": 1242401,
+    "header_offset": 289219656,
+    "local_path": "data/published-extra/Supplementary Figure2/mouse_source_data_sfigure2_scores_all_models.csv",
+    "sha256": "e007ae94be76dc2c03160c3d8633d5e7f17201a3969ab33fe29a9fff88ed17ac",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/yeast_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 3157659,
+    "compressed_bytes": 1272270,
+    "header_offset": 290462516,
+    "local_path": "data/published-extra/Supplementary Figure2/yeast_source_data_sfigure2_scores_all_models.csv",
+    "sha256": "0659cc893bfc1ec6fd7a2a012541d9861a362558e0b5bbb1b6aecb0912b08cc8",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  },
+  {
+    "path": "Source Data/Supplementary Figure2/fly_source_data_sfigure2_scores_all_models.csv",
+    "bytes": 3164963,
+    "compressed_bytes": 1259328,
+    "header_offset": 291735268,
+    "local_path": "data/published-extra/Supplementary Figure2/fly_source_data_sfigure2_scores_all_models.csv",
+    "sha256": "d3f3862007694839e4548b8e792a642eb8dfa9b1d64fd791d08c922dd6784a06",
+    "archive_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-64512-w/MediaObjects/41467_2025_64512_MOESM4_ESM.zip"
+  }
+]

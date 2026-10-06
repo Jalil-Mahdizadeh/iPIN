@@ -1,0 +1,54 @@
+[
+  {
+    "path": "sources/esm/layers/attention.py",
+    "sha256": "a6374476dba860687c2d7c11e93d09baf803fe2f900c1c8cb1ca90482e01d03d"
+  },
+  {
+    "path": "sources/esm/layers/blocks.py",
+    "sha256": "9b232658ba8c69447ca701849352373905ae79cc03d199a2055d4154e26751a2"
+  },
+  {
+    "path": "sources/esm/layers/codebook.py",
+    "sha256": "507ce5399a1e85fb524e887b4ebaca382e17a52e5b95fc14704bba924fb815ea"
+  },
+  {
+    "path": "sources/esm/layers/ffn.py",
+    "sha256": "ffc3b6fbdd225ec5785432977c6061caa8c9ce2c5737da21260bfbc9023ece47"
+  },
+  {
+    "path": "sources/esm/layers/geom_attention.py",
+    "sha256": "f6791250ea3e283efaa440e14d7e6f945b3a758619be5d41a6dbb8f161388bb4"
+  },
+  {
+    "path": "sources/esm/layers/regression_head.py",
+    "sha256": "d541b00c29c07a51e63c0791373a7a6bc3b9aea811732a823df2755cf7c11121"
+  },
+  {
+    "path": "sources/esm/layers/rotary.py",
+    "sha256": "6595c71ceaa676d5ccbb07a7e1f0289a57b22ec94bf690024608f03bfa018939"
+  },
+  {
+    "path": "sources/esm/layers/structure_proj.py",
+    "sha256": "c7c21a2c3b69b3e9e3643e7e0692d15f2ecc9620713716ed3b458d13248f17e4"
+  },
+  {
+    "path": "sources/esm/layers/transformer_stack.py",
+    "sha256": "0b90b292c5238b4405f1bd5a1b3a5980a4f9c1873cb6af009866536e73a071f7"
+  },
+  {
+    "path": "sources/esm/models/esmc.py",
+    "sha256": "68ecd6a5ccb66b8cc03e74ce68c34b568c1f9c24e750a519b35dec117cd65ee5"
+  },
+  {
+    "path": "sources/esm/pretrained.py",
+    "sha256": "f2c445065eee257888daf82e457c85633c3170ffa6831f3721fd63faf5e53485"
+  },
+  {
+    "path": "sources/esm/tokenization/sequence_tokenizer.py",
+    "sha256": "40b710d42c04dccfc9c3ca33862dab017e74e89bb2878bda3b6442b177073d26"
+  },
+  {
+    "path": "sources/esm/utils/constants/models.py",
+    "sha256": "2884d9bcc00aa06e2ae9855ab0ca2ed9ddb9223ec4623664f9b142a0e00e436e"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "time_utc": "2026-10-01T08:09:55.336841+00:00",
+  "old_job_id": "3206387",
+  "request": "Training only; benchmarking later in a separate benchmark-v3 folder",
+  "action": "Safe stop current wrapper, retain full checkpoint, resume identical training contract using a training-only release",
+  "benchmark_authorized_now": false,
+  "test_inference_started": false
+}

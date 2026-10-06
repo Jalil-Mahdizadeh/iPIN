@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "profiles": [
+    {
+      "run": "esm2-chain-aware-official-seed2",
+      "stage": "longest-training",
+      "tokens": 16322,
+      "orientations": 2,
+      "source_row": 75064,
+      "seconds": 33.217211290000705,
+      "peak_allocated_gib": 11.906638145446777,
+      "peak_reserved_gib": 14.287109375,
+      "finite_output": 7.392115592956543,
+      "trainable_parameters": 650057090
+    },
+    {
+      "run": "esm2-chain-aware-official-seed2",
+      "stage": "longest-validation",
+      "tokens": 39391,
+      "orientations": 2,
+      "source_row": 16728,
+      "seconds": 12.34889711998403,
+      "peak_allocated_gib": 16.3683819770813,
+      "peak_reserved_gib": 20.68359375,
+      "finite_output": [
+        [
+          0.01287841796875,
+          -0.01007080078125
+        ]
+      ],
+      "trainable_parameters": 650057090
+    }
+  ],
+  "backbone": "esm2",
+  "test_data_used": false,
+  "candidate_checkpoints_saved": false,
+  "disposable_optimizer_steps": 1,
+  "esm2_control_and_chain_initial_head_hash": "34bd01442c89ad78cbbee051b4e654138f24b2e6659c01ac05f1e828ed31ebae",
+  "device": "NVIDIA GH200 120GB",
+  "device_memory_gib": 95.0,
+  "code": {
+    "train.py": "7f6c8e5c81c39a0978c477c07b19eb4151c851b01c37769acc9783ae61b03e73",
+    "model.py": "8f8e27750e81ddb81b5b553c763f7e2c356a081ee29f00fa70c25ae0226be114",
+    "model_esm2.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "model_esmc.py": "9721571f554b51edcf52228ddb898e1730d52ffb4a67f8e63ee0051780a083a2",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "d4c0344c34346aae8b7f64b7836e88877a6951eb0d910b277fcf2c8e316ee9f1",
+    "release.py": "1fb6118a20c513548a5da0b544cb38a8d179bc3d6e15b4f5937b1c118a9d1ce9"
+  },
+  "source_sha256": {
+    "scripts/qualify_profile.py": "1fac36ffda0cc5ae1495d79a44d90c970da3daf72ab968f3bfc1e3ddcff74652"
+  }
+}

@@ -1,0 +1,991 @@
+{
+  "stage": "readout",
+  "learning_rate": 2e-05,
+  "selection_window_end": 5000,
+  "checkpoint_opportunities_per_run": 5,
+  "optimizer_schedule_updates": 6000,
+  "cls_capacity_vs_linear": {
+    "folds": [
+      {
+        "fold": "fold-0",
+        "control": "clean-cls-linear-lr2e-5-fold0-seed2",
+        "candidate": "clean-cls-mlp-lr2e-5-fold0-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 17490,
+          "prevalence": 0.4992567181246427,
+          "ap": 0.6193526625119848,
+          "auroc": 0.6091567142015933,
+          "brier": 0.25744764894623834,
+          "macro_ap": 0.6600387438875577,
+          "macro_eligible_proteins": 1093,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 17490,
+          "prevalence": 0.4992567181246427,
+          "ap": 0.6215494591685585,
+          "auroc": 0.6133181538779229,
+          "brier": 0.2570000156279991,
+          "macro_ap": 0.6661601604311553,
+          "macro_eligible_proteins": 1093,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.002196796656573685,
+          "auroc": 0.004161439676329537,
+          "macro_ap": 0.0061214165435976575,
+          "brier": -0.0004476333182392156
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 14047,
+              "prevalence": 0.5001779739446145,
+              "ap": 0.627973154195544,
+              "auroc": 0.6146398043071387,
+              "brier": 0.25673778743239745,
+              "macro_ap": 0.6717602188691607,
+              "macro_eligible_proteins": 987,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 14047,
+              "prevalence": 0.5001779739446145,
+              "ap": 0.6293399129693285,
+              "auroc": 0.618227461489307,
+              "brier": 0.25705134037653066,
+              "macro_ap": 0.6752921925421503,
+              "macro_eligible_proteins": 987,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          },
+          "over-2193-residues": {
+            "control": {
+              "rows": 3443,
+              "prevalence": 0.49549811211153066,
+              "ap": 0.5767520104865824,
+              "auroc": 0.5842463289510894,
+              "brier": 0.26034379320558276,
+              "macro_ap": 0.6753003275853318,
+              "macro_eligible_proteins": 313,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 3443,
+              "prevalence": 0.49549811211153066,
+              "ap": 0.5841113220182956,
+              "auroc": 0.5914900574422894,
+              "brier": 0.25679061721306395,
+              "macro_ap": 0.6734915062136343,
+              "macro_eligible_proteins": 313,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          -0.006557744444558433,
+          0.010306602663231046
+        ],
+        "bootstrap_replicates": 1000,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.00786111720856264
+      },
+      {
+        "fold": "fold-1",
+        "control": "clean-cls-linear-lr2e-5-fold1-seed2",
+        "candidate": "clean-cls-mlp-lr2e-5-fold1-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 18285,
+          "prevalence": 0.4948318293683347,
+          "ap": 0.6214089469057591,
+          "auroc": 0.622370734285009,
+          "brier": 0.24442976954758763,
+          "macro_ap": 0.651820354949339,
+          "macro_eligible_proteins": 1099,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 18285,
+          "prevalence": 0.4948318293683347,
+          "ap": 0.6204813829975613,
+          "auroc": 0.6213489622952783,
+          "brier": 0.24534886147802962,
+          "macro_ap": 0.6492023018519534,
+          "macro_eligible_proteins": 1099,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": -0.0009275639081978149,
+          "auroc": -0.0010217719897307465,
+          "macro_ap": -0.0026180530973856087,
+          "brier": 0.0009190919304419842
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 14469,
+              "prevalence": 0.48925288547930057,
+              "ap": 0.6286821887799013,
+              "auroc": 0.6297591209663376,
+              "brier": 0.2428050148551075,
+              "macro_ap": 0.6646313714309413,
+              "macro_eligible_proteins": 1000,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 14469,
+              "prevalence": 0.48925288547930057,
+              "ap": 0.6252057956375221,
+              "auroc": 0.6267420591235852,
+              "brier": 0.24489077068430645,
+              "macro_ap": 0.6612513677555182,
+              "macro_eligible_proteins": 1000,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          },
+          "over-2193-residues": {
+            "control": {
+              "rows": 3816,
+              "prevalence": 0.5159853249475891,
+              "ap": 0.5830259875033507,
+              "auroc": 0.5873348762890311,
+              "brier": 0.25059029775657504,
+              "macro_ap": 0.6754521067707334,
+              "macro_eligible_proteins": 358,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 3816,
+              "prevalence": 0.5159853249475891,
+              "ap": 0.596123675423582,
+              "auroc": 0.5980176493087359,
+              "brier": 0.2470857890708966,
+              "macro_ap": 0.6756103419638836,
+              "macro_eligible_proteins": 358,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          -0.011068075708137396,
+          0.008117488050189272
+        ],
+        "bootstrap_replicates": 1000,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.013721454242399456
+      },
+      {
+        "fold": "fold-2",
+        "control": "clean-cls-linear-lr2e-5-fold2-seed2",
+        "candidate": "clean-cls-mlp-lr2e-5-fold2-seed2",
+        "control_best_update": 4000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 18515,
+          "prevalence": 0.49986497434512556,
+          "ap": 0.6087027952127286,
+          "auroc": 0.5973355188311028,
+          "brier": 0.2708010043012466,
+          "macro_ap": 0.6623337447993266,
+          "macro_eligible_proteins": 1075,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 18515,
+          "prevalence": 0.49986497434512556,
+          "ap": 0.6023367377181021,
+          "auroc": 0.5934300704890124,
+          "brier": 0.2513973444649148,
+          "macro_ap": 0.6612256574165782,
+          "macro_eligible_proteins": 1075,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": -0.006366057494626487,
+          "auroc": -0.0039054483420903896,
+          "macro_ap": -0.0011080873827483684,
+          "brier": -0.0194036598363318
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 14993,
+              "prevalence": 0.4972320416194224,
+              "ap": 0.6133281918772128,
+              "auroc": 0.5999596677971785,
+              "brier": 0.2713557885501532,
+              "macro_ap": 0.6721513457512108,
+              "macro_eligible_proteins": 977,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 14993,
+              "prevalence": 0.4972320416194224,
+              "ap": 0.6060276819453518,
+              "auroc": 0.5969095193785869,
+              "brier": 0.2512268675380851,
+              "macro_ap": 0.6703648566595686,
+              "macro_eligible_proteins": 977,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          },
+          "over-2193-residues": {
+            "control": {
+              "rows": 3522,
+              "prevalence": 0.5110732538330494,
+              "ap": 0.583075432252159,
+              "auroc": 0.5831389534133437,
+              "brier": 0.26843931201167914,
+              "macro_ap": 0.6799648146757367,
+              "macro_eligible_proteins": 322,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 3522,
+              "prevalence": 0.5110732538330494,
+              "ap": 0.5847536095147805,
+              "auroc": 0.5762633888243645,
+              "brier": 0.2521230572882984,
+              "macro_ap": 0.6869262162694619,
+              "macro_eligible_proteins": 322,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          -0.018028940648190404,
+          0.005381221376509235
+        ],
+        "bootstrap_replicates": 1000,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.01129265462539375
+      }
+    ],
+    "promoted": false,
+    "checks": {
+      "mean_ap_gain": false,
+      "positive_folds": false,
+      "no_large_fold_ap_drop": true,
+      "mean_auroc_guard": true,
+      "mean_macro_ap_guard": true
+    },
+    "mean_deltas": {
+      "ap": -0.001698941582083539,
+      "auroc": -0.0002552602184971997,
+      "macro_ap": 0.0007984253544878935
+    },
+    "positive_folds": 1,
+    "interpretation": "Prospective development decision rule, not a significance test or proof of native superiority."
+  },
+  "residue_vs_linear": {
+    "folds": [
+      {
+        "fold": "fold-0",
+        "control": "clean-cls-linear-lr2e-5-fold0-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold0-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 17490,
+          "prevalence": 0.4992567181246427,
+          "ap": 0.6193526625119848,
+          "auroc": 0.6091567142015933,
+          "brier": 0.25744764894623834,
+          "macro_ap": 0.6600387438875577,
+          "macro_eligible_proteins": 1093,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 17490,
+          "prevalence": 0.4992567181246427,
+          "ap": 0.6232240259132884,
+          "auroc": 0.611812436756991,
+          "brier": 0.2542678377524068,
+          "macro_ap": 0.669214140680683,
+          "macro_eligible_proteins": 1093,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0038713634013035625,
+          "auroc": 0.0026557225553976993,
+          "macro_ap": 0.00917539679312529,
+          "brier": -0.0031798111938315388
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 14047,
+              "prevalence": 0.5001779739446145,
+              "ap": 0.627973154195544,
+              "auroc": 0.6146398043071387,
+              "brier": 0.25673778743239745,
+              "macro_ap": 0.6717602188691607,
+              "macro_eligible_proteins": 987,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 14047,
+              "prevalence": 0.5001779739446145,
+              "ap": 0.6300807718002848,
+              "auroc": 0.6155986718385773,
+              "brier": 0.25394544066815106,
+              "macro_ap": 0.6763470482178486,
+              "macro_eligible_proteins": 987,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          },
+          "over-2193-residues": {
+            "control": {
+              "rows": 3443,
+              "prevalence": 0.49549811211153066,
+              "ap": 0.5767520104865824,
+              "auroc": 0.5842463289510894,
+              "brier": 0.26034379320558276,
+              "macro_ap": 0.6753003275853318,
+              "macro_eligible_proteins": 313,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 3443,
+              "prevalence": 0.49549811211153066,
+              "ap": 0.5913517265065511,
+              "auroc": 0.5957310747870127,
+              "brier": 0.25558317665526475,
+              "macro_ap": 0.6816093596494145,
+              "macro_eligible_proteins": 313,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          -0.0052018943124861935,
+          0.012766984830588381
+        ],
+        "bootstrap_replicates": 1000,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.008678896972402206
+      },
+      {
+        "fold": "fold-1",
+        "control": "clean-cls-linear-lr2e-5-fold1-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold1-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 18285,
+          "prevalence": 0.4948318293683347,
+          "ap": 0.6214089469057591,
+          "auroc": 0.622370734285009,
+          "brier": 0.24442976954758763,
+          "macro_ap": 0.651820354949339,
+          "macro_eligible_proteins": 1099,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 18285,
+          "prevalence": 0.4948318293683347,
+          "ap": 0.6275596011266071,
+          "auroc": 0.6250835882139709,
+          "brier": 0.24441747580011136,
+          "macro_ap": 0.6527794515379444,
+          "macro_eligible_proteins": 1099,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.00615065422084804,
+          "auroc": 0.0027128539289619225,
+          "macro_ap": 0.0009590965886053793,
+          "brier": -1.2293747476271877e-05
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 14469,
+              "prevalence": 0.48925288547930057,
+              "ap": 0.6286821887799013,
+              "auroc": 0.6297591209663376,
+              "brier": 0.2428050148551075,
+              "macro_ap": 0.6646313714309413,
+              "macro_eligible_proteins": 1000,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 14469,
+              "prevalence": 0.48925288547930057,
+              "ap": 0.6320092719203178,
+              "auroc": 0.6294277457520299,
+              "brier": 0.24387994875208915,
+              "macro_ap": 0.6627328447768859,
+              "macro_eligible_proteins": 1000,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          },
+          "over-2193-residues": {
+            "control": {
+              "rows": 3816,
+              "prevalence": 0.5159853249475891,
+              "ap": 0.5830259875033507,
+              "auroc": 0.5873348762890311,
+              "brier": 0.25059029775657504,
+              "macro_ap": 0.6754521067707334,
+              "macro_eligible_proteins": 358,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 3816,
+              "prevalence": 0.5159853249475891,
+              "ap": 0.6001352062168805,
+              "auroc": 0.6018525367341052,
+              "brier": 0.24645559919052903,
+              "macro_ap": 0.6829690892237772,
+              "macro_eligible_proteins": 358,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          -0.0033597822737401308,
+          0.015757520121354843
+        ],
+        "bootstrap_replicates": 1000,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.015670263508619442
+      },
+      {
+        "fold": "fold-2",
+        "control": "clean-cls-linear-lr2e-5-fold2-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold2-seed2",
+        "control_best_update": 4000,
+        "candidate_best_update": 4000,
+        "control_metrics": {
+          "rows": 18515,
+          "prevalence": 0.49986497434512556,
+          "ap": 0.6087027952127286,
+          "auroc": 0.5973355188311028,
+          "brier": 0.2708010043012466,
+          "macro_ap": 0.6623337447993266,
+          "macro_eligible_proteins": 1075,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 18515,
+          "prevalence": 0.49986497434512556,
+          "ap": 0.6103375802815367,
+          "auroc": 0.6028620219296557,
+          "brier": 0.2769641363831235,
+          "macro_ap": 0.6637791231424711,
+          "macro_eligible_proteins": 1075,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0016347850688080978,
+          "auroc": 0.0055265030985528485,
+          "macro_ap": 0.00144537834314451,
+          "brier": 0.00616313208187691
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 14993,
+              "prevalence": 0.4972320416194224,
+              "ap": 0.6133281918772128,
+              "auroc": 0.5999596677971785,
+              "brier": 0.2713557885501532,
+              "macro_ap": 0.6721513457512108,
+              "macro_eligible_proteins": 977,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 14993,
+              "prevalence": 0.4972320416194224,
+              "ap": 0.6145773911873802,
+              "auroc": 0.6051524322373616,
+              "brier": 0.2782572273548891,
+              "macro_ap": 0.6700958070290038,
+              "macro_eligible_proteins": 977,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          },
+          "over-2193-residues": {
+            "control": {
+              "rows": 3522,
+              "prevalence": 0.5110732538330494,
+              "ap": 0.583075432252159,
+              "auroc": 0.5831389534133437,
+              "brier": 0.26843931201167914,
+              "macro_ap": 0.6799648146757367,
+              "macro_eligible_proteins": 322,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 3522,
+              "prevalence": 0.5110732538330494,
+              "ap": 0.5856895043971113,
+              "auroc": 0.5884781907342883,
+              "brier": 0.27145950465692215,
+              "macro_ap": 0.6889892415475718,
+              "macro_eligible_proteins": 322,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          -0.00845789474917803,
+          0.011441500330829716
+        ],
+        "bootstrap_replicates": 1000,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.012487300833607717
+      }
+    ],
+    "promoted": false,
+    "checks": {
+      "mean_ap_gain": false,
+      "positive_folds": true,
+      "no_large_fold_ap_drop": true,
+      "mean_auroc_guard": true,
+      "mean_macro_ap_guard": true
+    },
+    "mean_deltas": {
+      "ap": 0.0038856008969865665,
+      "auroc": 0.0036316931943041566,
+      "macro_ap": 0.0038599572416250596
+    },
+    "positive_folds": 3,
+    "interpretation": "Prospective development decision rule, not a significance test or proof of native superiority."
+  },
+  "residue_vs_capacity": {
+    "folds": [
+      {
+        "fold": "fold-0",
+        "control": "clean-cls-mlp-lr2e-5-fold0-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold0-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 17490,
+          "prevalence": 0.4992567181246427,
+          "ap": 0.6215494591685585,
+          "auroc": 0.6133181538779229,
+          "brier": 0.2570000156279991,
+          "macro_ap": 0.6661601604311553,
+          "macro_eligible_proteins": 1093,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 17490,
+          "prevalence": 0.4992567181246427,
+          "ap": 0.6232240259132884,
+          "auroc": 0.611812436756991,
+          "brier": 0.2542678377524068,
+          "macro_ap": 0.669214140680683,
+          "macro_eligible_proteins": 1093,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.0016745667447298773,
+          "auroc": -0.0015057171209318376,
+          "macro_ap": 0.0030539802495276325,
+          "brier": -0.002732177875592323
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 14047,
+              "prevalence": 0.5001779739446145,
+              "ap": 0.6293399129693285,
+              "auroc": 0.618227461489307,
+              "brier": 0.25705134037653066,
+              "macro_ap": 0.6752921925421503,
+              "macro_eligible_proteins": 987,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 14047,
+              "prevalence": 0.5001779739446145,
+              "ap": 0.6300807718002848,
+              "auroc": 0.6155986718385773,
+              "brier": 0.25394544066815106,
+              "macro_ap": 0.6763470482178486,
+              "macro_eligible_proteins": 987,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          },
+          "over-2193-residues": {
+            "control": {
+              "rows": 3443,
+              "prevalence": 0.49549811211153066,
+              "ap": 0.5841113220182956,
+              "auroc": 0.5914900574422894,
+              "brier": 0.25679061721306395,
+              "macro_ap": 0.6734915062136343,
+              "macro_eligible_proteins": 313,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 3443,
+              "prevalence": 0.49549811211153066,
+              "ap": 0.5913517265065511,
+              "auroc": 0.5957310747870127,
+              "brier": 0.25558317665526475,
+              "macro_ap": 0.6816093596494145,
+              "macro_eligible_proteins": 313,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          -0.007189913042157742,
+          0.01006335777606026
+        ],
+        "bootstrap_replicates": 1000,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.008678896972402206
+      },
+      {
+        "fold": "fold-1",
+        "control": "clean-cls-mlp-lr2e-5-fold1-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold1-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 3000,
+        "control_metrics": {
+          "rows": 18285,
+          "prevalence": 0.4948318293683347,
+          "ap": 0.6204813829975613,
+          "auroc": 0.6213489622952783,
+          "brier": 0.24534886147802962,
+          "macro_ap": 0.6492023018519534,
+          "macro_eligible_proteins": 1099,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 18285,
+          "prevalence": 0.4948318293683347,
+          "ap": 0.6275596011266071,
+          "auroc": 0.6250835882139709,
+          "brier": 0.24441747580011136,
+          "macro_ap": 0.6527794515379444,
+          "macro_eligible_proteins": 1099,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.007078218129045855,
+          "auroc": 0.003734625918692669,
+          "macro_ap": 0.003577149685990988,
+          "brier": -0.0009313856779182561
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 14469,
+              "prevalence": 0.48925288547930057,
+              "ap": 0.6252057956375221,
+              "auroc": 0.6267420591235852,
+              "brier": 0.24489077068430645,
+              "macro_ap": 0.6612513677555182,
+              "macro_eligible_proteins": 1000,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 14469,
+              "prevalence": 0.48925288547930057,
+              "ap": 0.6320092719203178,
+              "auroc": 0.6294277457520299,
+              "brier": 0.24387994875208915,
+              "macro_ap": 0.6627328447768859,
+              "macro_eligible_proteins": 1000,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          },
+          "over-2193-residues": {
+            "control": {
+              "rows": 3816,
+              "prevalence": 0.5159853249475891,
+              "ap": 0.596123675423582,
+              "auroc": 0.5980176493087359,
+              "brier": 0.2470857890708966,
+              "macro_ap": 0.6756103419638836,
+              "macro_eligible_proteins": 358,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 3816,
+              "prevalence": 0.5159853249475891,
+              "ap": 0.6001352062168805,
+              "auroc": 0.6018525367341052,
+              "brier": 0.24645559919052903,
+              "macro_ap": 0.6829690892237772,
+              "macro_eligible_proteins": 358,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          -0.0020178184086363485,
+          0.01630708199714729
+        ],
+        "bootstrap_replicates": 1000,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.015670263508619442
+      },
+      {
+        "fold": "fold-2",
+        "control": "clean-cls-mlp-lr2e-5-fold2-seed2",
+        "candidate": "clean-residue-mean-lr2e-5-fold2-seed2",
+        "control_best_update": 3000,
+        "candidate_best_update": 4000,
+        "control_metrics": {
+          "rows": 18515,
+          "prevalence": 0.49986497434512556,
+          "ap": 0.6023367377181021,
+          "auroc": 0.5934300704890124,
+          "brier": 0.2513973444649148,
+          "macro_ap": 0.6612256574165782,
+          "macro_eligible_proteins": 1075,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "candidate_metrics": {
+          "rows": 18515,
+          "prevalence": 0.49986497434512556,
+          "ap": 0.6103375802815367,
+          "auroc": 0.6028620219296557,
+          "brier": 0.2769641363831235,
+          "macro_ap": 0.6637791231424711,
+          "macro_eligible_proteins": 1075,
+          "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+        },
+        "deltas": {
+          "ap": 0.008000842563434585,
+          "auroc": 0.009431951440643238,
+          "macro_ap": 0.0025534657258928783,
+          "brier": 0.02556679191820871
+        },
+        "length_strata": {
+          "at-most-2193-residues": {
+            "control": {
+              "rows": 14993,
+              "prevalence": 0.4972320416194224,
+              "ap": 0.6060276819453518,
+              "auroc": 0.5969095193785869,
+              "brier": 0.2512268675380851,
+              "macro_ap": 0.6703648566595686,
+              "macro_eligible_proteins": 977,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 14993,
+              "prevalence": 0.4972320416194224,
+              "ap": 0.6145773911873802,
+              "auroc": 0.6051524322373616,
+              "brier": 0.2782572273548891,
+              "macro_ap": 0.6700958070290038,
+              "macro_eligible_proteins": 977,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          },
+          "over-2193-residues": {
+            "control": {
+              "rows": 3522,
+              "prevalence": 0.5110732538330494,
+              "ap": 0.5847536095147805,
+              "auroc": 0.5762633888243645,
+              "brier": 0.2521230572882984,
+              "macro_ap": 0.6869262162694619,
+              "macro_eligible_proteins": 322,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            },
+            "candidate": {
+              "rows": 3522,
+              "prevalence": 0.5110732538330494,
+              "ap": 0.5856895043971113,
+              "auroc": 0.5884781907342883,
+              "brier": 0.27145950465692215,
+              "macro_ap": 0.6889892415475718,
+              "macro_eligible_proteins": 322,
+              "macro_rule": "At least 2 positive and 2 negative incident pairs; equal protein weight; self-pair counted once."
+            }
+          }
+        },
+        "conditional_node_bootstrap_ap_delta_95_ci": [
+          -0.0036834880963915986,
+          0.019559201921498317
+        ],
+        "bootstrap_replicates": 1000,
+        "best_at_horizon": false,
+        "last_evaluation_ap_gain": -0.012487300833607717
+      }
+    ],
+    "promoted": true,
+    "checks": {
+      "mean_ap_gain": true,
+      "positive_folds": true,
+      "no_large_fold_ap_drop": true,
+      "mean_auroc_guard": true,
+      "mean_macro_ap_guard": true
+    },
+    "mean_deltas": {
+      "ap": 0.005584542479070105,
+      "auroc": 0.0038869534128013563,
+      "macro_ap": 0.0030615318871371664
+    },
+    "positive_folds": 3,
+    "interpretation": "Prospective development decision rule, not a significance test or proof of native superiority."
+  },
+  "selected_candidate": null,
+  "confirmation_recommended": false,
+  "confirmation_blocker": "External provenance/exposure audit and a separate seed-confirmation release are still required.",
+  "evidence_sha256": {
+    "decisions/adaptation-early.json": "3bf8d7266b7888aa1df89167112e16978aa393840a2bb8b7ecea1e072f8329e1",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/contract.json": "5905f0f2adb2a9d4efaa7165df71f9555f1c450673eb6b985160a3afb3546eab",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/stopped.json": "7b1ac08cf0ba4dd356c628f925cd2d1c88a9a4003fb0d9cc50c8961ed2a1e713",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/latest.json": "7c025b9f377a886fffde2199c9a9903b44c17edfaa6448832da1deb227c5f0b7",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/best.json": "877e17abe184dd530c09e8d833aad7d905756b0cc8ef9cf6449ace414cfa2c4d",
+    "releases/20260930-adaptation/release.json": "65d70ae4861c8ff247bcbf6d7f77e37b1582e66d3b791760e6ac6d306b292dc2",
+    "data/prepared/manifest.json": "1f5adc6e656390a298ec93173134914b90896c2198bcaf672fe42ea7c81e8f12",
+    "configs/clean-cls-linear-lr2e-5-fold0-seed2.json": "0f273acc84b9f05cdbc9d9e1e972d1602cfb248d9e72998ad9f4aa8e4549daed",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000001000.npz": "8c42f1b620ebfcab75031b6c00330e8adeef7f6cc41244e2555ee7161fa50b8e",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000001000.json": "f2de6ea9c6889e83d169ee73ba7a6e85109d445674f6eb121f08c87adbae884c",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000002000.npz": "a4e350652ddea1649bf478b8df602a889e458083ce1fbe21b84cc4f85ab4d367",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000002000.json": "98415660556e04078e647d38deaa385e66dde6dc0b950ffaaf221d7b841086d0",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000003000.npz": "52b0e0a44f928c06dbbcf3e1e1dc0288b2e60dd249648c088377c7453e38e34f",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000003000.json": "825a8912e0ed55104f58051ca08ffa830dd13cedc5afbbb6662e5f95e766ad01",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000004000.npz": "c01b854ec868de588bfc1f88efa63883c2fd80f5716778242e5a4500be01d023",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000004000.json": "87fe08ee0f2d60e45f07ac0f48cf4999be96b53139b1ba4ee0feaade8ee6510e",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000005000.npz": "77362a6b55d11328302b67ba504a14567a7962896832e876dca8b46e6d79561f",
+    "runs/clean-cls-linear-lr2e-5-fold0-seed2/validation/update-000005000.json": "8f17b82aeafc85fad797289b4cc3bb556b46d53339e1961f2feb948b8a015aed",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/contract.json": "d18f8ce3f3b1c752880d1648125092ccecd5a3fd1e0f190cc5c5da2469a76281",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/stopped.json": "20b504764937ac4593730088d7edf8266ac37391e765306c2e79b4c8d491a5eb",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/latest.json": "4ebb0431b1b1fb37ef3802bb84b167c7252f89f91dfe2b9ab8f220b813b89e56",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/best.json": "b9f770142cc4abcb17e2c55a9a38ffd8a15b1820ebb92c3695f648fd5d22d2df",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/SCREEN_COMPLETE.json": "ae6d11adfb46b774cfeb966ef50f453406621fda924c79be305eff9a2402437c",
+    "releases/20260930-readout/release.json": "fb32362f661a66d42f4e65ae12c888fd5f6ad836067b32f040eae41d68de4867",
+    "configs/clean-cls-mlp-lr2e-5-fold0-seed2.json": "472837acd7ca4d2600d2208e87e33a712472aeaab838f2cb668756958c168b1c",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000001000.npz": "3e34d0b02a6717bdf0137155d4d2c360d192cf9a3f62a4fc9188fc33a65e6903",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000001000.json": "81c9ddc2fb692e8706c428f11328d0004a427674fd077b3e7a8df1dfd434b137",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000002000.npz": "7adeb24c18ff7614290cf694883e9e94f19c04f3ad3e8e2252aa9747bdaec136",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000002000.json": "7689231d51d062986f40e9ed9dc0a29675e64a908e0abe48a344c29347af8d44",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000003000.npz": "d8ac3015d8b139c0b419b08667dcbd78a1b3f1fe3f03c52b5e8af1793de27786",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000003000.json": "95c6eca974cbe86f92beb909f571badf7e58a359f896b80e413700b95712cf5b",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000004000.npz": "2ea6938dd80504ef48f8e887b9e4eeb53ce02bbf5ec713b6a234ee7536124039",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000004000.json": "4cff0084ac75d364427fc29983042c9f25a9a51c7e2f34a35e9e599b3712945f",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000005000.npz": "675d1a787fda9dd5cf66c82cd896343986d0b83d728f96003b582361a9cc799c",
+    "runs/clean-cls-mlp-lr2e-5-fold0-seed2/validation/update-000005000.json": "845fab46f7cfe13dd041d5efe1424536b6060388b77e3f32400aef10e515a05f",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/contract.json": "c685073ef226fa40cdcd02bf4c00e48a3b3cc0689a9b7c84f98a2db6d64554e4",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/stopped.json": "229960cd213ec617119cfd637c9d7897ce51b44ed8203447bbf4119258b5b40e",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/latest.json": "adc91e964cdaecf371e941f40835217fa135a1234473b191351c28305330ee10",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/best.json": "c9e89ec1b15644994b115bffa0bc91d9862c2b36e3f63f7914fbe0c7cd283dfa",
+    "configs/clean-cls-linear-lr2e-5-fold1-seed2.json": "c6ce6fba12b9cf4d73ad8b3d0f605b27e319c003cae89f4ec240ec110c8fdb71",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000001000.npz": "20b3c9397835afc06a5a4b3e44776f9256e0658fb5ef22a490886a7e456964f4",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000001000.json": "6b3142f6df7f3619a7fde1868dcedc164a24bbacad1df0041c26c4780c3a1c1c",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000002000.npz": "d6b4608c3c36f1c2328f9e07bedbfc1c82bf8a8f2ad80be385d5b6ac4ff5568c",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000002000.json": "67e12a079ff858ff42e1ddd8986b100a312769226028cb711e37917081d7ba08",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000003000.npz": "7232d4b5d472e7782f01cd70ab845a1533da0983a45f27a823fe8dc759cd78c5",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000003000.json": "6ae0cd4f87695c9d4f4b2c573bd07d79f8e3e9c99651cd796b4ecb9526eb417f",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000004000.npz": "f520234fdf1699c45c9cf60c3969725d34d0c2187380ce54bbddd4c98b0dca2b",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000004000.json": "3adf2181cd8b9748e64182fcae33e800a7210f90cf8dd55496f4179649b0a02e",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000005000.npz": "33b6b2b102a872010d3776b6b0052f4aa47e0f7a04605fedf17fe3bc1758d60b",
+    "runs/clean-cls-linear-lr2e-5-fold1-seed2/validation/update-000005000.json": "2da275af61e3c6fce038865d936d6573954f98c200e84bc980e522c873b530be",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/contract.json": "8297b7fef8a7ab879b53a9aef4bcb7ad8541a254ab73668e593bc4af4988dd46",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/stopped.json": "08e8c14f253d451611df17728e95d21857aa8c3afda0e6ebbdfd3aaf93b03edf",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/latest.json": "7a7f8d0734f814e33c87422dbbb8172e8194760361512906245f10f4a176c3cd",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/best.json": "66f8b415ba64ed9d8efa64f407c2079159b798c4145b25b8f801625c9f574711",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/SCREEN_COMPLETE.json": "6e62fb710a02402a35414097941bb2a5616c6d928423f2b7c902ac217203d781",
+    "configs/clean-cls-mlp-lr2e-5-fold1-seed2.json": "d395912b77f20224020f55598864a9a8525cda3da04913b8a5387737523af983",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000001000.npz": "f9ddec4a8b349daa92deb1b029eae6f81ece532fb5f5372d5c1dfc102c3a70cc",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000001000.json": "edee8f1982745823a7f0dfbbfa17e2fe2b9c18ad1a08e9ee47652608d20fe770",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000002000.npz": "1ac93ff60cff1a326b4d196af410cfa10ea04807f30fc886596d8c3bb02de59d",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000002000.json": "ccc3a4da96dfbdf2b29f5c433eb63fc5248546c4cd492994dc13b5aaf7ed7dc0",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000003000.npz": "dd4c7603a081e9cb813f0d961b78ed1633683165be12cbd2f36718bdb2aeea1c",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000003000.json": "811dfbfdfa372b45665620fccc55f05b2a01883baff479e872b6be23fd7d4ecb",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000004000.npz": "5ae5b7f725fabad6204b1f7a06073d01b7c1243a2e0657f06fcba320ebbc06a1",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000004000.json": "44519ae79c5616c1476803b93876eaa7f265838f9e7a1045c757a0e38ba83aef",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000005000.npz": "2b72a7997752eec2db05b089cb7451cda5fecee90db1efd8a613c989d1c9d81f",
+    "runs/clean-cls-mlp-lr2e-5-fold1-seed2/validation/update-000005000.json": "ea4f935f3cfc10eccc2348ea75834b1cc4ecfe71c2593c67cc84d1a4d435e1ba",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/contract.json": "dc2cb05cd1d942d1def07c4a16a31b4154a553105cb704ae096473e57e7b3109",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/stopped.json": "67f34cf13de17ff0df003b5a007437541d48d2903fb16b0885761b27245eaf8d",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/latest.json": "58fec7d82d718aeb3672dc615c75cb976d1f15460bc036b7b483cbe93748472b",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/best.json": "f735da221242b0e858ed4e4f77a8f0236ac31e9abdae8679ebb9b45e0e92fb8f",
+    "configs/clean-cls-linear-lr2e-5-fold2-seed2.json": "e99e9cf28cd52c25309a1bdc929bd946a753afaf237ff3a1ce072fcb755890de",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000001000.npz": "426ce21084994b2f720925ed0701ef67ac471bd20db26e682d377605e384dbf0",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000001000.json": "79a4108c5baa2238e1e8de7884782b2ef2932f23ff664d839c9a939f384a69b3",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000002000.npz": "c18bfd21f35354dff6d0a1826e6e0a63ad619a01092e70c2a7b875e087052022",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000002000.json": "7fe9a98fbe5f90c23f94a4b327b6dc1b7751d1431de0231be27a2493e602c3c3",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000003000.npz": "d407280346143c0cfc2ede88618a166cdd7b2ceaefcf331e6977e45608436a02",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000003000.json": "5b70f06b7e17493b57e4cb60ab88ac3627188990a74312c7fb388d2e93b79a03",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000004000.npz": "12ee6f88ebe7ab3405c5940ed6520b0cac0ca0f7cdc5b1e10aadf1b8bea91f37",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000004000.json": "a160dc1c23bf529c641e371608cc0c8e9c5aca05885bab30ccda04f6169a00a0",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000005000.npz": "249a8418fb74923063f79fd90e5056937cf77d6273620b6dd4ed9f06f8ce5bf7",
+    "runs/clean-cls-linear-lr2e-5-fold2-seed2/validation/update-000005000.json": "6ab70de70928697f1c57ab9c652166a15dc77635befbc70de5ee0f1db2e838b5",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/contract.json": "39adda1442a3c46d07cf96ed8d7d05f1015a1314b3009175640462d1b1d731a4",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/stopped.json": "5a77c596c706ca3ae3cea7f691e6f58cf4ac102f33b8127b317e69d7a2688d9e",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/latest.json": "33807f386c0f81804378962db0b5a4c735a89079c708232b985177ec9e24986c",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/best.json": "71a212d3dffa3caac988eda52d117f35109bde48692b96b7c5bc6edc6f47d14e",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/SCREEN_COMPLETE.json": "eaeec663bf7250167b603c20b7c0bdcdfcd3038f64ce87991b8020b8507354b5",
+    "configs/clean-cls-mlp-lr2e-5-fold2-seed2.json": "e6e0179568c40e1f2643150b6a38fa54a14c59ba19dc1421fe4dcb2e53705ae2",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000001000.npz": "1a632a2d37e0638e506c2295dafac8e3144dbad832ab7dcf6a173f48b65e2ff8",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000001000.json": "f848cc988a40e470c1af60a993b336266ca224ee358234c34cc5c1d1d858d0e7",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000002000.npz": "dff494fa68fbf920bf60cbbd1c3f0ecc1f00afc0b650420293123a601eff3df4",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000002000.json": "385bccc5bcb35d733eb22129d8def3c6ba79a690b092dae0ce8772b1551a4ca6",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000003000.npz": "bc0fb6bb90439199b860edc364c8eb81325b049df57ef9d9213530cf76c49386",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000003000.json": "0dd37e990d8f1831c5f428bebe6d486941de3be9902c3051546136cb149928e6",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000004000.npz": "b0d705207fa1b9a988aab9140e1ed3fa8bbf6eb7c9394129c2b74227bc47d7ad",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000004000.json": "83991c7ce861260f2df18257504b3c5c32f66bc7413df597cbde54a8d12b922d",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000005000.npz": "0a906deac3b1866aed93ce3757c2142db5b295a7b73a57d09929754722aaf574",
+    "runs/clean-cls-mlp-lr2e-5-fold2-seed2/validation/update-000005000.json": "15cd70994b9954fb1538e8c7f09d43da747079c92dbe0af69a502ed3562ab2dd",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/contract.json": "4556a4b364a69f2a5d72e12e5356e5de1b3ae186e5d59c9dbc25501282da9804",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/stopped.json": "83dc4c9e0890adf6f234d4ef9a045eb23000e849214d9ff14dd6053068b15522",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/latest.json": "661b814e9135e5d995814cfc5e93acb354d175a99a20656081a5e6d582dc648d",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/best.json": "0b62960357620a4670f2491020de9ed6e73dfee3f08be0a11460b8990c2c6513",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/SCREEN_COMPLETE.json": "87bb249c55383702592d6d9b4f45069839966ad9fd95e3f44f61a994c3ec05a2",
+    "configs/clean-residue-mean-lr2e-5-fold0-seed2.json": "ba5fde56b2b23234aa13405a58adf61153f1b24682fbbef6f0e1452dbbced5c8",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000001000.npz": "7bf957336a07cf842ce2d09701e072cf0d3debbf15ad048ed98dfdd7fb7daf01",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000001000.json": "6a40c1eac2f3a3f69d5e2375eb77b99c35fb58be3f44fbc455e9f230d2a8a3f4",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000002000.npz": "717d76121a2083564eb39bb05a259418261cf40a9edf01cf188a47057e3e6b2c",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000002000.json": "2a70202c23b78335c44336c7a4bd77f19fb480d5e1f16734ccc21b7722bb3db0",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000003000.npz": "c2ce8b37270fb9f1425127f72ab2f150d0c582582db7f0328829ad3ab53e0ccd",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000003000.json": "4be5a4eee639c19deed689de903695033664b702d03408a9ba46a5539384ec0b",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000004000.npz": "f9490ccb9773ed1002275866a9b9e1e72b6d89b6e0d4bb27a5117cd8e162bcf2",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000004000.json": "ae4ebe5175990d85be0a183ad2ea742075be42cea2164244768b1f8c01f8ad45",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000005000.npz": "fde209935ecb8ee672bac982794a7cb27d5aa5c7fdc4565eeeb6ee7be01a39ee",
+    "runs/clean-residue-mean-lr2e-5-fold0-seed2/validation/update-000005000.json": "3a203d4d5e141cc1e0908ce15de8eb146466ed38717f4e224de3c9cf0427e48a",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/contract.json": "101b25aee3f85783bcdf1d5dd33cf61034aa9dd200c645a1421598e3f4f4c44d",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/stopped.json": "f3bf8dc59e259a40af441255fd7f90afb78a2afcd0d34542ed7b467b3c3d0500",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/latest.json": "883da3e6245f67c7c2c424879be88d7096bbb507f6e679cb8847721d85bd9df5",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/best.json": "2463d783906953559ec76752e00b65c901b1ee6c761c82ba10c4c66aae2b63c9",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/SCREEN_COMPLETE.json": "6c9841bf55436863977f824ad9a1bd64a4a581917980460ff17e907ca069c59c",
+    "configs/clean-residue-mean-lr2e-5-fold1-seed2.json": "891c63a0fd440a3e8cec68e3cac63f80beb6706015f3c2025afa8033bd40903d",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000001000.npz": "26437c8d93d2acfbe452ae2fe6058c56aee9a8d620bcde3c438026011202a416",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000001000.json": "4b9d8809ff673f05e6ec91ece9703981e925c06ed1b92f7142fe823c0eeaf643",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000002000.npz": "1b0d95dff6531b3cb4d09d97f34de4fd8f9e779fa7789bd3d5662e0b31f8828b",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000002000.json": "59db064a4ea6ad2b8dbb069670e1e034e3f0a6912df31da5993b3f4796e5e59c",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000003000.npz": "84aafe6fbd1ea44c36a2c93c23bb2fd74e30dcc40fac3be8abd226644762e49e",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000003000.json": "2ce2916c9e6ce8748a65a00cb77cf7b0b769029eb0d972a709097a8885e647eb",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000004000.npz": "3787b19f849c6e9faa04f19eb415826ce75d1f9343d5ccaa5ac166265a85421f",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000004000.json": "b2e7a045b513ce079f88d46c04f5bf6f38c410cf8f2d135e2c6f83bdd5005df9",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000005000.npz": "e651fb24ac8f3f47527596d2c456542d3327f4cb5bde5172628ed3bfe896c920",
+    "runs/clean-residue-mean-lr2e-5-fold1-seed2/validation/update-000005000.json": "b17fab8d1ea38b708f63a23f2f017f18f62a969507f32790b6f3af535154a3f7",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/contract.json": "1432f615b0db48d916f2818533d89dd3c1086bc6e859f2b871de677468d215fb",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/stopped.json": "8ce1174c377c06caa9e5b00bda2f35ee25d548036235d880925455e689983fca",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/latest.json": "c04a00fd0c9dcf399d4d195b254027ea7ae2f6b3c5cb0b6b5908b78e7076f433",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/best.json": "938549aa2f883472a762e61c25d9dfc5dad8e892888a6205607f575fb89ae65d",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/SCREEN_COMPLETE.json": "948ab88a9907c9fa18115743d30fb9312706d8505797a2fd1c7b0d2632d37850",
+    "configs/clean-residue-mean-lr2e-5-fold2-seed2.json": "befe2ddc4f4af58a52b33aea1309c91e97909ea730f8b75ce9655c4aef1188a3",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000001000.npz": "8ef84a8831e9efc707ff72f8097fbac06e50faf5dd8154cd95a25b0cf9752a0c",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000001000.json": "2e480700d9d523124daa50dda491c230503ea1e5ff45606f4ea2c3fe74984a4e",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000002000.npz": "2d3e21879c778757445a76578feef20d5256c8adca30cf80307d73dd87aa9b62",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000002000.json": "ad7466afb7df954ae01110f317049ebfc31f20e842280147d4728cd84dbab82c",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000003000.npz": "69623efbc252633d80a99f9dbef1f36301b928c313651946086eb1bfed02664f",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000003000.json": "7b59b54d175920990fbbbb5efcb063b2dfe19b990f34dafd4c98fbc01e200b50",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000004000.npz": "810c2378b8024caf5fb414d3cfdfb7d727305218d84fb48d2fe569b366ba7968",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000004000.json": "032ef576ffbd68a7d99c9cc0ba51735a8244a9ac2e10e26cfeb4a90efe1c19ea",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000005000.npz": "e6f4927534eba20f2672aacc835a9fa7b1921bfe187cab756afbb27a8b8f4ac6",
+    "runs/clean-residue-mean-lr2e-5-fold2-seed2/validation/update-000005000.json": "4f393392c4dc951e18dd8d9a0b95a6e25c74e4c9c6b85bbe8273530a4e36cccf"
+  },
+  "test_evaluated": false,
+  "jobs_submitted": 0,
+  "limitation": "Development window chosen after the LR screen and frozen before readout training; conditional bootstrap excludes training-seed/model-selection uncertainty."
+}

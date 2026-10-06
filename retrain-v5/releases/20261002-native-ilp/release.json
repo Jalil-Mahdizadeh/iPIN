@@ -1,0 +1,60 @@
+{
+  "stage": "v5-two-native-models-training-only",
+  "ready_for_submission": true,
+  "created_utc": "2026-10-02T20:16:36.446113+00:00",
+  "enabled_runs": [
+    "esm2-native-ilp-seed2",
+    "esmc-native-ilp-seed2"
+  ],
+  "production_training_authorized": true,
+  "automatic_benchmark": false,
+  "qualification_reports": {
+    "qualification/model-esm2.json": "9ca32ee9122648942ce374f3d687dc0d74b74445939702263662b1f7db11a1a4",
+    "qualification/model-esmc.json": "d63e43669ea5064c61458caf5aa3699a41de8de244f85d4c2d044cb51968aad3",
+    "qualification/full-length-esm2.json": "b4b05c6347d61cbe6a7e95418e84a0497be4d20533de415d68eb4ad31ea67444",
+    "qualification/full-length-esmc.json": "0c2d025b0ede46b1b212fdd3fb2d2916e36027a0beb376ce3ebd2b17728ad55a",
+    "qualification/checkpoint-faults.json": "2496657eb639adb2f5d57df05d6527e7a47aef7aff9b7773e59890e6f172614c",
+    "qualification/wrapper.json": "f9e756a8c996c72382300a59a11cd9a04eb017b22b2078d61889fffdccc0ccfb",
+    "qualification/production-guards.json": "14faf1abc88a15ecf475d156e3870f29114eaf8e1c840029ab0ee0be8cab4438",
+    "qualification/ddp-resume.json": "6aefc30d8c8c56fb219f0803c197a52a2df7ab0a38b114ba234b9f9ba36939d0"
+  },
+  "input_manifests": {
+    "data/prepared/manifest.json": "70bc1aa7f71845eeb921aa34819f0fbde403e3127563bbcd0b252253880b53ab",
+    "provenance/downloads.json": "0d84f5222e2705346caa2c6e489db8128243d05f9888903813bbc1c51fa006d2",
+    "provenance/images.json": "40bf9fba653496a02be50afea2effdc7ffdff38dad7d7e0a17fc6d38a8da2747",
+    "provenance/production-configurations.json": "61b4201a7045816102dde1e24ca3f6204cb0f1b72cf51882a6fb084968da808a",
+    "provenance/authorization.json": "bbd99eb9b9a7db919c30a8068c1e24df7bfa64fa77ed0b3a5d55467cc1f6aef8",
+    "provenance/data-completed.json": "8805825a1cca647c21dccd247f148b587b69c1e458083615e45f8fe446aa00c9",
+    "provenance/inherited-code.json": "84125a439ad27ab78d32d9c1317c34bd1a4f829acddab47906ef5cfd9f4df8d7"
+  },
+  "code": {
+    "train.py": "4add811c2218c39dde7ab79cd4b62f6143b7d4cc8419a9eb2a9f91a4e86662e2",
+    "model.py": "7680c5aba9d350dfece2eb7394eb0995518b6e474e5ca54bfdac5346ad402c6e",
+    "native_head.py": "278c7180b249f46d130acd36561035d13af47458836a91a7a4ab89694fab896c",
+    "model_esm2.py": "e944e891ce2ffdf5f961d977e6c8dd25334f735569419fef366ce6d76e79552c",
+    "model_esmc.py": "ea568585e29f7d0211c5c717527c210dd40ce0f53ff476f4acc1577f3c280149",
+    "data.py": "a940d7906b2449a1e4b3f37fcd62e4a9ab4fac5a3e537ff0d3c26916edf39d59",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "contracts.py": "043e9794b825e4d08ce6794eba24afe50e6a96a90addcbc847c91d6cc822dddd",
+    "release.py": "3ff0cb6f5254c303b80c8c9b81c38efea21621c2cd70cf9dfdbf04feb9a9f5e8"
+  },
+  "files": {
+    "code/container.sh": "975d43ab887506e722f731719a89a5302bdddb6076c7a0fce4b8583590e5c438",
+    "code/contracts.py": "043e9794b825e4d08ce6794eba24afe50e6a96a90addcbc847c91d6cc822dddd",
+    "code/data.py": "a940d7906b2449a1e4b3f37fcd62e4a9ab4fac5a3e537ff0d3c26916edf39d59",
+    "code/launch.py": "11b0412c2f2c778e14d0899a25260fa8b6a42068c87f4cff25180b85a8f52973",
+    "code/model.py": "7680c5aba9d350dfece2eb7394eb0995518b6e474e5ca54bfdac5346ad402c6e",
+    "code/model_esm2.py": "e944e891ce2ffdf5f961d977e6c8dd25334f735569419fef366ce6d76e79552c",
+    "code/model_esmc.py": "ea568585e29f7d0211c5c717527c210dd40ce0f53ff476f4acc1577f3c280149",
+    "code/native_head.py": "278c7180b249f46d130acd36561035d13af47458836a91a7a4ab89694fab896c",
+    "code/release.py": "3ff0cb6f5254c303b80c8c9b81c38efea21621c2cd70cf9dfdbf04feb9a9f5e8",
+    "code/runtime.py": "e305ccb878da9c18a72ed98f3c48f4b70c07d3e4aa2e6ae69d4ef8e0cd116208",
+    "code/state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "code/train.py": "4add811c2218c39dde7ab79cd4b62f6143b7d4cc8419a9eb2a9f91a4e86662e2",
+    "configs/esm2-native-ilp-seed2.json": "c733adc38406c58356b3de9f3c944de80fdbaff730362822cdf053922a19f781",
+    "configs/esmc-native-ilp-seed2.json": "9a4955f5a9deb166d115fb844417d13ebf71bfe3fb331ac078571bcce02717a5",
+    "protocol/PROTOCOL.md": "bb415fd18365bc52c91f0053a396d3175a44431b410fc52548eae6f7e92e20bc",
+    "protocol/improvment-proposal-v5.md": "0fb87cf108a3b321fd7680e1e689aa82ce0261127d7b5b73eaa8a3bcd549ce9b",
+    "slurm/train.sbatch": "426d438586451cc2fe4a4d44f7e63f616296d46ff7cb8ca137043fc243ec8efc"
+  }
+}

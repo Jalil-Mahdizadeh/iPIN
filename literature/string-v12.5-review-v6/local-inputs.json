@@ -1,0 +1,47 @@
+[
+  {
+    "path": "literature/plm-interact/article.txt",
+    "bytes": 93666,
+    "sha256": "0eab733ab705a2f01091afc61e74e42286adae8a994d50c5f1c334355a5b0bf6"
+  },
+  {
+    "path": "literature/plm-interact/supplementary-information.txt",
+    "bytes": 13677,
+    "sha256": "33ebd24740cd257451eb2dd1458af50d27efea17d1681d1327a21d27697bcf13"
+  },
+  {
+    "path": "literature/plm-interact/peer-review.txt",
+    "bytes": 65055,
+    "sha256": "ba96f6993072674809bd327f4430d16a433df5c4e6da396c1502bedba99632d1"
+  },
+  {
+    "path": "retrain-v5/PROTOCOL.md",
+    "bytes": 8006,
+    "sha256": "bb415fd18365bc52c91f0053a396d3175a44431b410fc52548eae6f7e92e20bc"
+  },
+  {
+    "path": "retrain-v5/configs/esm2-native-ilp-seed2.json",
+    "bytes": 1544,
+    "sha256": "c733adc38406c58356b3de9f3c944de80fdbaff730362822cdf053922a19f781"
+  },
+  {
+    "path": "benchmark-v5/provenance/human-releases-exposure.json",
+    "bytes": 5644,
+    "sha256": "373d70302230fb4a4393d0a55c0b48dc755a5eade9aa5423363b6d0ce5cb39d8"
+  },
+  {
+    "path": "bechmark-nonhuman-v5/results/summary.json",
+    "bytes": 165832,
+    "sha256": "e9a735bf6e6b4fa3a2ff5eca8af553d744135307fb9dd458107d6929efcc850d"
+  },
+  {
+    "path": "bechmark-nonhuman-v5/REPORT.md",
+    "bytes": 15408,
+    "sha256": "a88c96aa37d2b3d56c2f1e9e9c446da7fa3dcee665ff947a5fd5340c4efdbfa4"
+  },
+  {
+    "path": "improvment-proposal-vx.md",
+    "bytes": 46775,
+    "sha256": "f0afb8f54e016d83996ba85f22d759fd6c4fe787986f6ce65be3b61b74802337"
+  }
+]

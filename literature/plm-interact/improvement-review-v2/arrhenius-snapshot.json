@@ -1,0 +1,48 @@
+{
+  "captured_utc": "2026-09-29T10:23:16.509970+00:00",
+  "commands": {
+    "project_usage": {
+      "command": [
+        "projinfo",
+        "naiss2025-3-10-gpu"
+      ],
+      "returncode": 0,
+      "stdout": "Principal Investigator (PI):  N/A\nConsumed compute resource time during the last 30 days:\n  User      Name                             Hours\n  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  jalil     Sayyed Jalil Mahdizadeh        1955.57\n  rebwed    Rebecca Wedenmark Johansson      57.63\n  joelax    Joel Ax                          16.25\n  asma      Asma Gholami                      0.00\n  brunam    Bruna Marchi                      0.00\n  carlesso  Antonio Carlesso                  0.00\n  fconder   Ferah C\u00f6mert \u00d6nder                0.00\n  leifer    Leif Eriksson                     0.00\n  narons    \u00c1ron Soma N\u00e9meth                  0.00\n  psaenz    Patricia Saenz-Mendez             0.00\n  sabrinna  Sabrinna Crowley                  0.00\n  tanael    Elif S\u0131la Tanayd\u0131n                0.00\n  thogus    Thomas Gustafsson                 0.00\n  vibhu     Vibhu Jha                         0.00\n  xsunsi    Sunniva Samson Sigurdardottir     0.00\n  zahli     Zahra Liyaghatdar                 0.00\n  zahrair   Zahra Iranmanesh                  0.00\n  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  Total:                                   2029.44\n********************************************************************************************************\nNOTE: projinfo calculates Arrhenius GPU hours in a way that may not be fully reliable yet.\nIf the precise values are important to you, please cross-check against other sources of accounting info.\n(This will eventually be fixed, and this note removed).\n********************************************************************************************************\n",
+      "stderr": ""
+    },
+    "gpu_partition": {
+      "command": [
+        "scontrol",
+        "show",
+        "partition",
+        "gpu"
+      ],
+      "returncode": 0,
+      "stdout": "PartitionName=gpu\n   AllowGroups=ALL AllowAccounts=ALL AllowQos=ALL\n   AllocNodes=ALL Default=NO QoS=N/A\n   DefaultTime=02:00:00 DisableRootJobs=YES ExclusiveUser=NO ExclusiveTopo=NO GraceTime=0 Hidden=NO\n   MaxNodes=UNLIMITED MaxTime=3-00:00:00 MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED\n   Nodes=n[21-212,405-594]\n   PriorityJobFactor=1 PriorityTier=1 RootOnly=NO ReqResv=NO OverSubscribe=NO\n   OverTimeLimit=NONE PreemptMode=REQUEUE\n   State=UP TotalCPUs=110016 TotalNodes=382 SelectTypeParameters=NONE\n   JobDefaults=DefCpuPerGPU=72\n   DefMemPerCPU=1459 MaxMemPerNode=UNLIMITED\n   TRES=cpu=110016,mem=185596228M,node=382,billing=1766,gres/gpu=1528,gres/gpu:nvidia_gh200_120gb=1528\n   TRESBillingWeights=CPU=0.013888888888888888,Mem=0.009745002593274616G,GRES/gpu:nvidia_gh200_120gb=1.0\n\n",
+      "stderr": ""
+    },
+    "training_jobs": {
+      "command": [
+        "squeue",
+        "-j",
+        "3112401,3112402",
+        "-o",
+        "%.12i %.20j %.10T %.12M %.20R"
+      ],
+      "returncode": 0,
+      "stdout": "       JOBID                 NAME      STATE         TIME     NODELIST(REASON)\n     3112402    plmi-v1-reference    RUNNING     14:31:09                 n410\n     3112401    plmi-v1-symmetric    RUNNING     14:31:20                 n472\n",
+      "stderr": ""
+    },
+    "quota": {
+      "command": [
+        "storagequota",
+        "--directory",
+        "/nobackup/proj/disk/theo-storage",
+        "--json"
+      ],
+      "returncode": 0,
+      "stdout": "[\n  {\n    \"path\": \"/nobackup/proj/disk/theo-storage\",\n    \"block_used_kib\": 8996010896,\n    \"block_quota_kib\": 16777216000,\n    \"block_limit_kib\": 52009369600,\n    \"files_used\": 698756,\n    \"files_quota\": 5000000,\n    \"files_limit\": 350000000,\n    \"grace_block\": \"-\",\n    \"grace_files\": \"-\"\n  }\n]\n",
+      "stderr": ""
+    }
+  }
+}

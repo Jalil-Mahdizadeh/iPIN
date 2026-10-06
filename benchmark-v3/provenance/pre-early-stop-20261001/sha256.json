@@ -1,0 +1,19 @@
+{
+  "README.md": "39def39cfdd88ffc2f9acaceb9ce609e6e275462dd2dd883c84ff50ff384b33a",
+  "PROTOCOL.md": "634c5686e139947fc49e089b31d81e4b716054fc0685be0b4d206bb0dc850d68",
+  "DEFERRED.json": "fb77c1e3b34d5a4e5cb1d9cb1fd4dfaee43dcedef59cfbee74ae714520f2ea15",
+  "config.json": "8b1c179d2405ef144a4da62467b963e168d356a7669a8f2ded44a4d690986255",
+  "scripts/analyze.py": "315cad268450cdf1ce2c7d70083de65e518624bde41ece8759bc7bfd82438dec",
+  "scripts/check_finalize.py": "751fccb64e3ba033a68129d59bd61b29ca8a6c6a4baa96df9f5906170499630b",
+  "scripts/common.py": "fa2d73f30b103e73cba307f608a32930aff7f6994222802800193d1c4f5b41f8",
+  "scripts/frozen_data.py": "004b2c4652f1671b81e594f158d73fbf2ae3882b4a88d8b9a8c6bd24eac7ce09",
+  "scripts/frozen_model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+  "scripts/infer.py": "709af290c7c90f75bcdaae8cf04c2c0662ef47aabb7f9925f56ae3a89bbbe19b",
+  "scripts/pipeline.py": "2826d28ff87c98819aaf88c59e09e3a72a32faf8bacb5e305252086e87342814",
+  "scripts/preflight.py": "b2ca9577bb49a09f6b57360b5ced20a32659da90aa21722d276a17d65a4f3228",
+  "scripts/prepare_selected.py": "da74534559db93fafaa8b9b4f31dc83e6ead4278a391a0a923c950ba0d97f79d",
+  "scripts/qualify.py": "3b53aec7562e47d980471df0a68340c5e5923b5422eda8bd8da1f1f02fb33a66",
+  "scripts/training_data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+  "scripts/write_report.py": "1ac8ea75798dde14c93a4ebc5ccd5398de6dc0f646578995675c80821e43fad9",
+  "scripts/container.sh": "c8bcae9a27e132d98db0574e79c5634d0af73c190181a8af10e2d3c2de745686"
+}

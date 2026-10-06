@@ -1,0 +1,25 @@
+{
+  "purpose": "Read-only split overlap audit; never passed to model inference or training.",
+  "files": [
+    {
+      "repository": "danliu1226/Mutation_effect_dataset",
+      "revision": "26dc7d78f419d9443993e5d75e39d99bce7840e8",
+      "source_path": "training_mutation_data.csv",
+      "local_path": "data/Mutation_effect_dataset/training_mutation_data.csv",
+      "url": "https://huggingface.co/datasets/danliu1226/Mutation_effect_dataset/resolve/26dc7d78f419d9443993e5d75e39d99bce7840e8/training_mutation_data.csv",
+      "bytes": 9061550,
+      "sha256": "755ae8544ffbcb5b54b6b7609755e960d1cb7200a268470d34284c071c94a38e",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/Mutation_effect_dataset",
+      "revision": "26dc7d78f419d9443993e5d75e39d99bce7840e8",
+      "source_path": "val_mutation_data.csv",
+      "local_path": "data/Mutation_effect_dataset/val_mutation_data.csv",
+      "url": "https://huggingface.co/datasets/danliu1226/Mutation_effect_dataset/resolve/26dc7d78f419d9443993e5d75e39d99bce7840e8/val_mutation_data.csv",
+      "bytes": 2298832,
+      "sha256": "f81c777c62f0a38b110aadbc5858fda6ea091fd22f5a4c40c187b8e0faa7d87b",
+      "publisher_lfs_sha256": null
+    }
+  ]
+}

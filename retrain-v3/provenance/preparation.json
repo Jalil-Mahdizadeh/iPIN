@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-30T10:45:08.399145+00:00",
+  "source_root": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v2",
+  "data_policy": "Independent byte-identical copies of v2 train/validation-only inputs and pinned ESM2; no test data copied.",
+  "core": {
+    "train.py": "6468ece5231d075a65af48cfac196f003496ab97f11f10bae17f4cfd664f6d51",
+    "model.py": "5ec1f270efa80e3b00777e915ef87aa3490c86613871b6fc2fb2514fd8559abf",
+    "data.py": "07c9d47da75795bc72d2fe37a184273e5ba675aa39c85e45cbc65fc740fe31dd",
+    "state.py": "94a1ff64c7e921a4bdf52a9c728cd331e72b7f6914e5246e391b7654eaa1c024",
+    "release.py": "ecfb49f180bef38528cd5ca3dbf863fd8060df0a618df2f68765513cf1cfc280"
+  },
+  "proposal_sha256": "3e26b374d2f3d870f047fe19f472e01f55461e4f94d91827ed4fe6510bda8e86",
+  "production_submissions": 0
+}

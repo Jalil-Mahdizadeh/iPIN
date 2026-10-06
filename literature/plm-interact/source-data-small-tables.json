@@ -1,0 +1,2613 @@
+{
+  "Figure2": [
+    {
+      "A1": "Figure 2a"
+    },
+    {
+      "A2": "All protein sequence pairs in Figure 2 can be downloaded at https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/tree/main "
+    },
+    {
+      "A14": "Figure 2b",
+      "B14": "AUPR Bar plot"
+    },
+    {
+      "A15": "Models\\ Species",
+      "B15": "mouse",
+      "C15": "fly",
+      "D15": "worm",
+      "E15": "yeast",
+      "F15": "ecoli",
+      "G15": "Metric"
+    },
+    {
+      "A16": "DeepPPI",
+      "B16": "0.51800000000000002",
+      "C16": "0.23100000000000001",
+      "D16": "0.252",
+      "E16": "0.20100000000000001",
+      "F16": "0.27100000000000002",
+      "G16": "AUPR"
+    },
+    {
+      "A17": "PIPR",
+      "B17": "0.52600000000000002",
+      "C17": "0.27800000000000002",
+      "D17": "0.34599999999999997",
+      "E17": "0.23",
+      "F17": "0.308",
+      "G17": "AUPR"
+    },
+    {
+      "A18": "D-SCRIPT",
+      "B18": "0.57999999999999996",
+      "C18": "0.55200000000000005",
+      "D18": "0.54800000000000004",
+      "E18": "0.40500000000000003",
+      "F18": "0.57099999999999995",
+      "G18": "AUPR"
+    },
+    {
+      "A19": "Topsy-Turvy",
+      "B19": "0.73499999999999999",
+      "C19": "0.71299999999999997",
+      "D19": "0.7",
+      "E19": "0.53400000000000003",
+      "F19": "0.55600000000000005",
+      "G19": "AUPR"
+    },
+    {
+      "A20": "TT3D",
+      "B20": "0.77900000000000003",
+      "C20": "0.75700000000000001",
+      "D20": "0.73799999999999999",
+      "E20": "0.55300000000000005",
+      "F20": "0.60499999999999998",
+      "G20": "AUPR"
+    },
+    {
+      "A21": "TUnA",
+      "B21": "0.88500000000000001",
+      "C21": "0.85499999999999998",
+      "D21": "0.83399999999999996",
+      "E21": "0.64100000000000001",
+      "F21": "0.67700000000000005",
+      "G21": "AUPR"
+    },
+    {
+      "A22": "PLM-interact",
+      "B22": "0.90400000000000003",
+      "C22": "0.91300000000000003",
+      "D22": "0.88800000000000001",
+      "E22": "0.70599999999999996",
+      "F22": "0.72199999999999998",
+      "G22": "AUPR"
+    },
+    {
+      "A23": "Note: The AUPR value for TUnA is sourced from the TUnA paper, the AUPR values for DeepPPI and Topsy-Turvy are sourced from the Topsy-Turvy paper, those for D-SCRIPT and PIPR are from the D-SCRIPT paper, and the AUPR value of TT3D is obtained through email communication. "
+    },
+    {
+      "A25": "Figure 2b ",
+      "B25": "Precision-recall cuves "
+    },
+    {
+      "A26": "Figure 2b _1",
+      "B26": "PLM-interact"
+    },
+    {
+      "A27": "Figure 2b _2",
+      "B27": "TUnA"
+    },
+    {
+      "A28": "Figure 2b _3",
+      "B28": "TT3D"
+    },
+    {
+      "A29": "Figure 2b _4",
+      "B29": "Topsy-Turvy"
+    },
+    {
+      "A30": "Figure 2b _5",
+      "B30": "D-SCRIPT"
+    },
+    {
+      "A31": "Note: We recompute the prediction interaction probabilities based on checkpoints of TUnA, TT3D, Topsy-Turvy and D-SCRIPT to generate precision-recall (PR) curves in Figure 2b. Due to the absence of publicly available checkpoints for DeepPPI and PIPR, these methods are excluded from the PR curve comparison. "
+    }
+  ],
+  "Figure3": [
+    {
+      "B1": "uniprot_a",
+      "C1": "uniprot_b",
+      "D1": "label",
+      "E1": "tt3d_prob",
+      "F1": "tuna_prob",
+      "G1": "PLM-interact_prob",
+      "H1": "query",
+      "I1": "text"
+    },
+    {
+      "A2": "Mouse",
+      "B2": "10090.ENSMUSP00000044048",
+      "C2": "10090.ENSMUSP00000106519",
+      "D2": "1",
+      "E2": "0.20395082235336301",
+      "F2": "8.2940324999999995E-2",
+      "G2": "0.72795826290206",
+      "H2": "MFGLRRNAVIGLNLYCGGASLGAGGGSPAGARLVAEEAKARREGGGEAALLPGARVVARPPPVGAEDPDVTASAERRLHKSPGLLAVPPEEMAASAAAAIVSPEEELDGCEPEAIGKRPAVLPLLERVSEAAKSSGADGSLPSTPPPPEEEEDDLYRQSLEIISRYLREQATGSKDSKPLGEAGAAGRRALETLRRVGDGVQRNHETAFQGMLRKLDIKNEGDVKSFSRVMVHVFKDGVTNWGRIVTLISFGAFVAKHLKSVNQESFIEPLAETITDVLVRTKRDWLVKQRGWDGFVEFFHVQDLEGGIRNVLLAFAGVAGVGAGLAYLIR",
+      "I2": "MIIYRDLISHDELFSDIYKIREIADGLCLEVEGKMVSRTEGAIDDSLIGGNASAEGPEGEGTESTVVTGVDIVMNHHLQETSFTKEAYKKYIKDYMKSLKGKLEEQKPERVKPFMTGAAEQIKHILANFNNYQFFIGENMNPDGMVALLDYREDGVTPFMIFFKDGLEMEKC"
+    },
+    {
+      "A3": "Fly",
+      "B3": "7227.FBpp0072579",
+      "C3": "7227.FBpp0087951",
+      "D3": "1",
+      "E3": "7.8493997454643194E-2",
+      "F3": "0.4247301",
+      "G3": "0.914995316903088",
+      "H3": "MSKIYLKAMEDVVQRNTDNTNRITEQAQGFVVSENAGDSLLHTSFDLTTAQSIVKHLHASFLKLAQSCVRDLDTDDKLCFLRVKTRKHEFLVSPEEAFTVTVVL",
+      "I3": "MGDSPEERRSKDVVPETAAKEAETGKGKKEKKEKSAEGTKPRPASSQRGSLTKSHMGVSLPMGAPAAKPTMRFMPTYRLESKNPLNKERVENIIKAVMNRHYNDEYMFHPKHSLHMAAQVSEEIKNRIKLDNYDRYRYIVLVTVGEFLMQGLYSMVNFLWDAEKDGFVTYSVERPSYFAVCTTFYLYYD"
+    },
+    {
+      "A4": "Worm",
+      "B4": "6239.R12B2.5a.2",
+      "C4": "6239.Y71H2B.6",
+      "D4": "1",
+      "E4": "7.9373065382241995E-3",
+      "F4": "5.4046772E-2",
+      "G4": "0.79163179275710405",
+      "H4": "MSEEDWPSPKFREHVIQRLEPELARNRQNAPNLPVPGDARQVEEYVFAKCMSKDEYMRTIAKVINAINCNSKSAAVPSVLQPSQFHSPPCTTAALLGNTPAGGTPGYRAPVPPDPQPTSAQARNPPVTVATTQASTTPSAPNPPGGLPAPSASATAAVAAAVASFPSPDTSIRPGGQITPGSQAPGGGPTPAPNVPFPNGSSQMNGGPAMGQPPPQMGAPNMGGPPNGYGGYGMMNGPPGSGAPMGGNPYNQQIKKDMDQARPWDPSAHMYQQQPQWGAMPPQQPHGYPGRPMNGQGATPTGPSSVLESLINQPQQYPGHHNQMGPPGDRNVAAQRAAAQQQQQQQQQQQQQRPGMVPNQGMMSSEDQTVYSAKLRNMRGSCDSLRTRARQCRHEGNHEAAHKLEVMLSVLEGKRVVSLEYLNHLEMWIARKQDFLNIAPMSQNQNHMGMNDPMMNGEHAMLGNGQVPNPYGGHPGYGHQQYMGPPPPHMQMHQPPMWHQQQHQQQQRMMPQDHMMMQGGGGPVHGMYRGDMGHDPMTSPVNNHRHAPYPNPAAMRNNMRMPNGPGPIGRDRNSMSGSSMSGPSSGAPSMNPMGTPNQKMGTPGSMGGMSGLDDLNYDDFLPNPTPIDALQPTLHVGQNSMNAGPPVQRSNLNETARKELQILDARFEIDPNHQRHDANHIIVVCKIRNQQFPPLRLVVPTTYPAGNVTVDRAVIDLDAYLYDDLQNSVYERLSRPGLSSITDYLNAWEEQVNQYQNQTSGGLDVAFNVGNDFFYDNLNL",
+      "I4": "MNEPSACSGPPVKSKSSKNEPFYTLKALLPPYSEIQGNHDLLMSYELGPVEGGFSGSRRVKEKISSFLPHIIGEFHLDATKEASSLRALIEKPPIHKEISNLTSSSMQGFKLSAGPVDERYRHLFERRKEEPNLAYSEKLNLIRVRQQYDAYGFDDDETEKGFPKKHKKKKKDKKRKKEKEELGDAEKRKRAADEPMEF"
+    },
+    {
+      "A5": "Yeast",
+      "B5": "4932.YMR203W",
+      "C5": "4932.YNL070W",
+      "D5": "1",
+      "E5": "6.0455206781625699E-2",
+      "F5": "0.13084692000000001",
+      "G5": "0.94643193985461804",
+      "H5": "MSAPTPLAEASQIPTIPALSPLTAKQSKGNFFSSNPISSFVVDTYKQLHSHRQSLELVNPGTVENLNKEVSRDVFLSQYFFTGLRADLNKAFSMNPAFQTSHTFSIGSQALPKYAFSALFANDNLFAQGNIDNDLSVSGRLNYGWDKKNISKVNLQISDGQPTMCQLEQDYQASDFSVNVKTLNPSFSEKGEFTGVAVASFLQSVTPQLALGLETLYSRTDGSAPGDAGVSYLTRYVSKKQDWIFSGQLQANGALIASLWRKVAQNVEAGIETTLQAGMVPITDPLMGTPIGIQPTVEGSTTIGAKYEYRQSVYRGTLDSNGKVACFLERKVLPTLSVLFCGEIDHFKNDTKIGCGLQFETAGNQELLMLQQGLDADGNPLQALPQL",
+      "I5": "MSFLPSFILSDESKERISKILTLTHNVAHYGWIPFVLYLGWAHTSNRPNFLNLLSPLPSV"
+    },
+    {
+      "A6": "E. coli",
+      "B6": "362663.ECP_2919",
+      "C6": "362663.ECP_2920",
+      "D6": "1",
+      "E6": "7.9540926963089995E-3",
+      "F6": "6.7511834000000001E-3",
+      "G6": "0.79117215494531201",
+      "H6": "MHPFTSLTLWALAACTTLILPTQTILPVYSAATFFCLIALKATRRRAKYVVWLMFSLGAGLWLVHGGWLTEWLSGTPRSPERWAHAITLWLRILAIVSTSQLWMQYVPVQRFIRALFASRLPPGVAYLFAGPLLVVEQLKRQLAIIHEAQRARGVPLDEGWYQRLRAMPALIIPLTHNALNDLAVRGAALDMRAFRINNRRTTLWAPADSTLQRVARYTMILLMLAEFGAWIWLR",
+      "I6": "MVTLEQFRYCPTHSTHPPFCYDFHYVKPGMVAIFGDNGSGKSTLAQLMAGWYPDFLPGEITGTGTLLGTPIGRLPLNEQSATIQLVQQSPYLQLSGCTFSVEEEVAFGPENLCLAEKEIMARIDAALALTECQPLRHRHPATLSGGETQRVVIACAIAMQPKLLILDEAFSRLTPQAREMLLQRLQHWALERGSLIILFERHHTPFLNHCQQAWQLQNGALQPLC"
+    },
+    {
+      "A8": "Note: Protein-protein structures are predicted by Chai-1. The structure files can be found in the folder: Source Data/Figure3_Chai-1_protein-protein structures"
+    }
+  ],
+  "Figure4": [
+    {
+      "A1": "Figure 4a"
+    },
+    {
+      "A2": "Models",
+      "B2": "AUPR",
+      "C2": "Precision",
+      "D2": "Recall",
+      "E2": "AUROC",
+      "F2": "F1 score"
+    },
+    {
+      "A3": "PLM-interact",
+      "B3": "0.69",
+      "C3": "0.63",
+      "D3": "0.71",
+      "E3": "0.7",
+      "F3": "0.66"
+    },
+    {
+      "A4": "TUnA",
+      "B4": "0.69",
+      "C4": "0.65",
+      "D4": "0.65",
+      "E4": "0.7",
+      "F4": "0.65"
+    },
+    {
+      "A5": "Topsy-Turvy",
+      "B5": "0.59",
+      "C5": "0.65",
+      "D5": "0.26",
+      "E5": "0.59",
+      "F5": "0.37"
+    },
+    {
+      "A6": "D-SCRIPT",
+      "B6": "0.51",
+      "C6": "0.51",
+      "D6": "0.19",
+      "E6": "0.5",
+      "F6": "0.28000000000000003"
+    },
+    {
+      "A7": "PIPR",
+      "B7": "0.53",
+      "C7": "0.52",
+      "D7": "0.46",
+      "E7": "0.53",
+      "F7": "0.49"
+    },
+    {
+      "A8": "DeepPPI",
+      "B8": "0.51",
+      "C8": "0.53",
+      "D8": "0.41",
+      "E8": "0.52",
+      "F8": "0.46"
+    },
+    {
+      "A10": "Figure 4b The distribution of predicted probabilities."
+    },
+    {
+      "A11": "PLM-interact ",
+      "B11": "Figure4b_1"
+    },
+    {
+      "A12": "TUnA",
+      "B12": "Figure4b_2"
+    }
+  ],
+  "Figure6": [
+    {
+      "A1": "affected_uniprot",
+      "B1": "affected_uniprot_id",
+      "C1": "parti_uniprot",
+      "D1": "label",
+      "E1": "Affected_species",
+      "F1": "Participant_species",
+      "G1": "Feature type",
+      "H1": "Feature range(s)",
+      "I1": "Original sequence",
+      "J1": "Resulting sequence",
+      "K1": "PubMedID",
+      "L1": "Interaction AC",
+      "M1": "PLM-interact_log_PIP",
+      "N1": "TUnA_log_PIP",
+      "O1": "TT_log_PIP",
+      "P1": "dscript_log_PIP"
+    },
+    {
+      "A2": "P33993",
+      "B2": "P33993_V2",
+      "C2": "P33992",
+      "D2": "1",
+      "E2": "9606 - Homo sapiens",
+      "F2": "9606 - Homo sapiens",
+      "G2": "mutation increasing(MI:0382)",
+      "H2": "600-600",
+      "I2": "Y",
+      "J2": "E",
+      "K2": "23764002",
+      "L2": "EBI-6878238",
+      "M2": "0.164806292419095",
+      "N2": "2.37207695349836E-4",
+      "O2": "2.8316476789193201E-3",
+      "P2": "-7.3144890217323094E-2"
+    },
+    {
+      "A3": "Q16595",
+      "B3": "Q16595_V1",
+      "C3": "Q9H1K1",
+      "D3": "0",
+      "E3": "9606 - Homo sapiens",
+      "F3": "9606 - Homo sapiens",
+      "G3": "mutation decreasing strength(MI:1133)",
+      "H3": "151-151",
+      "I3": "N",
+      "J3": "A",
+      "K3": "31101807",
+      "L3": "EBI-21926930",
+      "M3": "-0.64905465186267097",
+      "N3": "1.6370865955730798E-2",
+      "O3": "-8.8896601860662602E-2",
+      "P3": "9.9655957945100904E-4"
+    },
+    {
+      "A5": "Note: Protein-protein structures are predicted by Chai-1. The structure files can be found in the folder: Source Data/Figure6_Chai-1_protein-protein structures"
+    }
+  ],
+  "Supplemtrary Figure1b": [
+    {
+      "A1": "Hostname",
+      "B1": "Precision",
+      "C1": "Recall",
+      "D1": "Precision-recall auc",
+      "E1": "Auroc",
+      "F1": "F1",
+      "G1": "F1_threshold",
+      "H1": "Task"
+    },
+    {
+      "A2": "Mouse",
+      "B2": "0.81007281553398003",
+      "C2": "0.80100000000000005",
+      "D2": "0.87069735075360899",
+      "E2": "0.97513092800000001",
+      "F2": "0.80551086082059498",
+      "G2": "2.71186351776123",
+      "H2": "Mask:Class(0:1)"
+    },
+    {
+      "A3": "Fly",
+      "B3": "0.77510204081632605",
+      "C3": "0.75960000000000005",
+      "D3": "0.83804498499855395",
+      "E3": "0.96952254400000004",
+      "F3": "0.767272727272727",
+      "G3": "2.9076037406921298",
+      "H3": "Mask:Class(0:1)"
+    },
+    {
+      "A4": "Worm",
+      "B4": "0.77510729613733897",
+      "C4": "0.72240000000000004",
+      "D4": "0.81787537406920696",
+      "E4": "0.96110165000000003",
+      "F4": "0.74782608695652097",
+      "G4": "2.2494785785675",
+      "H4": "Mask:Class(0:1)"
+    },
+    {
+      "A5": "Yeast",
+      "B5": "0.56842749337140497",
+      "C5": "0.55740000000000001",
+      "D5": "0.60438288688987796",
+      "E5": "0.89334244399999996",
+      "F5": "0.56285973947288703",
+      "G5": "2.1820876598358101",
+      "H5": "Mask:Class(0:1)"
+    },
+    {
+      "A6": "Ecoli",
+      "B6": "0.51920122887864795",
+      "C6": "0.50700000000000001",
+      "D6": "0.54780124952239295",
+      "E6": "0.86220172500000003",
+      "F6": "0.51302807993928601",
+      "G6": "4.9620733261108398",
+      "H6": "Mask:Class(0:1)"
+    },
+    {
+      "A7": "Mouse",
+      "B7": "0.830977130977131",
+      "C7": "0.7994",
+      "D7": "0.86854426284987196",
+      "E7": "0.975132848",
+      "F7": "0.81488277268093701",
+      "G7": "2.3497502803802401",
+      "H7": "Mask:Class(1:1)"
+    },
+    {
+      "A8": "Fly",
+      "B8": "0.78147612156295199",
+      "C8": "0.75600000000000001",
+      "D8": "0.82613162643115101",
+      "E8": "0.96997939799999999",
+      "F8": "0.76852698993595603",
+      "G8": "0.49544915556907598",
+      "H8": "Mask:Class(1:1)"
+    },
+    {
+      "A9": "Worm",
+      "B9": "0.78638446432467801",
+      "C9": "0.7208",
+      "D9": "0.817729963423664",
+      "E9": "0.96052557199999999",
+      "F9": "0.75216529270583299",
+      "G9": "-1.4576069116592401",
+      "H9": "Mask:Class(1:1)"
+    },
+    {
+      "A10": "Yeast",
+      "B10": "0.58001675743611203",
+      "C10": "0.55379999999999996",
+      "D10": "0.59342230105259597",
+      "E10": "0.895825388",
+      "F10": "0.56660527931246096",
+      "G10": "-1.57849669456481",
+      "H10": "Mask:Class(1:1)"
+    },
+    {
+      "A11": "Ecoli",
+      "B11": "0.38403547671840299",
+      "C11": "0.433",
+      "D11": "0.38326775480863901",
+      "E11": "0.82963207500000002",
+      "F11": "0.40705052878965903",
+      "G11": "0.21848697960376701",
+      "H11": "Mask:Class(1:1)"
+    },
+    {
+      "A12": "Mouse",
+      "B12": "0.785519657454262",
+      "C12": "0.80720000000000003",
+      "D12": "0.86281691549281703",
+      "E12": "0.97362058399999896",
+      "F12": "0.79621227066482503",
+      "G12": "2.0755305290222101",
+      "H12": "Mask:Class(1:5)"
+    },
+    {
+      "A13": "Fly",
+      "B13": "0.75167921840016205",
+      "C13": "0.73860000000000003",
+      "D13": "0.81575744720716203",
+      "E13": "0.96343873000000002",
+      "F13": "0.74508221527287399",
+      "G13": "2.3152608871459899",
+      "H13": "Mask:Class(1:5)"
+    },
+    {
+      "A14": "Worm",
+      "B14": "0.76415891800507096",
+      "C14": "0.72319999999999995",
+      "D14": "0.80541468555773699",
+      "E14": "0.95657013999999996",
+      "F14": "0.74311549527332499",
+      "G14": "1.35684537887573",
+      "H14": "Mask:Class(1:5)"
+    },
+    {
+      "A15": "Yeast",
+      "B15": "0.58320543740407804",
+      "C15": "0.53200000000000003",
+      "D15": "0.58816988220740396",
+      "E15": "0.88804282599999995",
+      "F15": "0.55642715197155102",
+      "G15": "1.7930610179901101",
+      "H15": "Mask:Class(1:5)"
+    },
+    {
+      "A16": "Ecoli",
+      "B16": "0.42424242424242398",
+      "C16": "0.434",
+      "D16": "0.43721166819352397",
+      "E16": "0.81639517500000003",
+      "F16": "0.42906574394463598",
+      "G16": "4.0468330383300701",
+      "H16": "Mask:Class(1:5)"
+    },
+    {
+      "A17": "Mouse",
+      "B17": "0.80103461997612402",
+      "C17": "0.80520000000000003",
+      "D17": "0.86852041129356095",
+      "E17": "0.97514100999999997",
+      "F17": "0.80311190903650498",
+      "G17": "1.7227523326873699",
+      "H17": "Mask:Class(1:10)"
+    },
+    {
+      "A18": "Fly",
+      "B18": "0.74606918238993702",
+      "C18": "0.75919999999999999",
+      "D18": "0.82844619589589596",
+      "E18": "0.96885143799999995",
+      "F18": "0.75257731958762797",
+      "G18": "1.6737850904464699",
+      "H18": "Mask:Class(1:10)"
+    },
+    {
+      "A19": "Worm",
+      "B19": "0.753971571906354",
+      "C19": "0.72140000000000004",
+      "D19": "0.80749331412223602",
+      "E19": "0.96162521599999995",
+      "F19": "0.73732624693376903",
+      "G19": "0.69954669475555398",
+      "H19": "Mask:Class(1:10)"
+    },
+    {
+      "A20": "Yeast",
+      "B20": "0.54360790160268302",
+      "C20": "0.58340000000000003",
+      "D20": "0.58420158383089105",
+      "E20": "0.89113192399999996",
+      "F20": "0.56280146633224004",
+      "G20": "-4.8826385289430597E-2",
+      "H20": "Mask:Class(1:10)"
+    },
+    {
+      "A21": "Ecoli",
+      "B21": "0.41855099215505298",
+      "C21": "0.45350000000000001",
+      "D21": "0.430969630729578",
+      "E21": "0.81854622499999996",
+      "F21": "0.435325173986081",
+      "G21": "1.4907802343368499",
+      "H21": "Mask:Class(1:10)"
+    },
+    {
+      "A22": "Mouse",
+      "B22": "0.81148090238999304",
+      "C22": "0.72660000000000002",
+      "D22": "0.83538242461314305",
+      "E22": "0.96612189199999998",
+      "F22": "0.76669832225387702",
+      "G22": "0.69864380000000004",
+      "H22": "Classification"
+    },
+    {
+      "A23": "Fly",
+      "B23": "0.71202600216684697",
+      "C23": "0.65720000000000001",
+      "D23": "0.73733810403009703",
+      "E23": "0.941898138",
+      "F23": "0.68351534061362396",
+      "G23": "0.65671769999999996",
+      "H23": "Classification"
+    },
+    {
+      "A24": "Worm",
+      "B24": "0.66330034336497601",
+      "C24": "0.65680000000000005",
+      "D24": "0.724806064761645",
+      "E24": "0.93996012600000001",
+      "F24": "0.66003416742035903",
+      "G24": "0.35875257999999999",
+      "H24": "Classification"
+    },
+    {
+      "A25": "Yeast",
+      "B25": "0.50104344526655198",
+      "C25": "0.5282",
+      "D25": "0.50936949788274799",
+      "E25": "0.87307695399999996",
+      "F25": "0.51426346022782499",
+      "G25": "0.35699903999999999",
+      "H25": "Classification"
+    },
+    {
+      "A26": "Ecoli",
+      "B26": "0.46073298429319298",
+      "C26": "0.35199999999999998",
+      "D26": "0.38732523628824",
+      "E26": "0.76944705000000002",
+      "F26": "0.39909297052154102",
+      "G26": "0.77258420000000005",
+      "H26": "Classification"
+    }
+  ],
+  "Supplemtrary Figure1c": [
+    {
+      "A1": "Hostname",
+      "B1": "Precision",
+      "C1": "Recall",
+      "D1": "Precision-recall auc",
+      "E1": "Auroc",
+      "F1": "F1",
+      "G1": "F1_threshold",
+      "H1": "Task"
+    },
+    {
+      "A2": "Mouse",
+      "B2": "0.85886610373944505",
+      "C2": "0.85440000000000005",
+      "D2": "0.90667831730096804",
+      "E2": "0.98238186599999999",
+      "F2": "0.85662723080007996",
+      "G2": "3.19448494911193",
+      "H2": "Mask:Class(0:1)"
+    },
+    {
+      "A3": "Fly",
+      "B3": "0.85310163669428096",
+      "C3": "0.84440000000000004",
+      "D3": "0.90267936892487599",
+      "E3": "0.98384996199999997",
+      "F3": "0.84872851542868599",
+      "G3": "3.5951981544494598",
+      "H3": "Mask:Class(0:1)"
+    },
+    {
+      "A4": "Worm",
+      "B4": "0.83473274626254301",
+      "C4": "0.81520000000000004",
+      "D4": "0.88907335865253401",
+      "E4": "0.977425184",
+      "F4": "0.82485075381968997",
+      "G4": "0.33417749404907199",
+      "H4": "Mask:Class(0:1)"
+    },
+    {
+      "A5": "Yeast",
+      "B5": "0.72879754311363099",
+      "C5": "0.61699999999999999",
+      "D5": "0.70522754728747195",
+      "E5": "0.91411896400000003",
+      "F5": "0.668255171666847",
+      "G5": "3.6928114891052202",
+      "H5": "Mask:Class(0:1)"
+    },
+    {
+      "A6": "Ecoli",
+      "B6": "0.62052378407268804",
+      "C6": "0.58050000000000002",
+      "D6": "0.65410794225582003",
+      "E6": "0.89866469999999998",
+      "F6": "0.59984500129165597",
+      "G6": "6.3295803070068297",
+      "H6": "Mask:Class(0:1)"
+    },
+    {
+      "A7": "Fly",
+      "B7": "0.85875251509054296",
+      "C7": "0.85360000000000003",
+      "D7": "0.91191961290076196",
+      "E7": "0.98372461600000005",
+      "F7": "0.85616850551654899",
+      "G7": "3.0960412025451598",
+      "H7": "Mask:Class(1:1)"
+    },
+    {
+      "A8": "Mouse",
+      "B8": "0.83473170731707302",
+      "C8": "0.85560000000000003",
+      "D8": "0.90226578832499404",
+      "E8": "0.98330123399999902",
+      "F8": "0.84503703703703703",
+      "G8": "2.74207186698913",
+      "H8": "Mask:Class(1:1)"
+    },
+    {
+      "A9": "Worm",
+      "B9": "0.84027205276174699",
+      "C9": "0.81540000000000001",
+      "D9": "0.88432672438995497",
+      "E9": "0.97665917800000002",
+      "F9": "0.82764920828258204",
+      "G9": "1.8038041591644201",
+      "H9": "Mask:Class(1:1)"
+    },
+    {
+      "A10": "Yeast",
+      "B10": "0.64739553520320503",
+      "C10": "0.67859999999999998",
+      "D10": "0.70093694554433805",
+      "E10": "0.92405587199999994",
+      "F10": "0.66263060248022598",
+      "G10": "2.8756628036499001",
+      "H10": "Mask:Class(1:1)"
+    },
+    {
+      "A11": "Ecoli",
+      "B11": "0.72830440587449896",
+      "C11": "0.54549999999999998",
+      "D11": "0.65686599932299605",
+      "E11": "0.8996999",
+      "F11": "0.62378502001143499",
+      "G11": "5.4861249923706001",
+      "H11": "Mask:Class(1:1)"
+    },
+    {
+      "A12": "Fly",
+      "B12": "0.84556060905675301",
+      "C12": "0.85519999999999996",
+      "D12": "0.90632508404166201",
+      "E12": "0.98432488600000001",
+      "F12": "0.85035298796857905",
+      "G12": "5.5287094116210902",
+      "H12": "Mask:Class(1:5)"
+    },
+    {
+      "A13": "Mouse",
+      "B13": "0.85454545454545405",
+      "C13": "0.83660000000000001",
+      "D13": "0.90054148201992801",
+      "E13": "0.98170179599999996",
+      "F13": "0.84547751389590697",
+      "G13": "5.4712209701537997",
+      "H13": "Mask:Class(1:5)"
+    },
+    {
+      "A14": "Worm",
+      "B14": "0.83908045977011403",
+      "C14": "0.80300000000000005",
+      "D14": "0.88283790527399197",
+      "E14": "0.97478503400000005",
+      "F14": "0.82064384261624901",
+      "G14": "4.6360607147216797",
+      "H14": "Mask:Class(1:5)"
+    },
+    {
+      "A15": "Yeast",
+      "B15": "0.64057477784080097",
+      "C15": "0.67759999999999998",
+      "D15": "0.70659337032409997",
+      "E15": "0.91908384799999998",
+      "F15": "0.65856740207989095",
+      "G15": "4.4764494895934996",
+      "H15": "Mask:Class(1:5)"
+    },
+    {
+      "A16": "Ecoli",
+      "B16": "0.82413249211356399",
+      "C16": "0.52249999999999996",
+      "D16": "0.66568033748400601",
+      "E16": "0.87516226249999995",
+      "F16": "0.63953488372093004",
+      "G16": "7.8229112625121999",
+      "H16": "Mask:Class(1:5)"
+    },
+    {
+      "A17": "Fly",
+      "B17": "0.84785588408067303",
+      "C17": "0.86599999999999999",
+      "D17": "0.91329919020025696",
+      "E17": "0.98251215000000003",
+      "F17": "0.85683189868408005",
+      "G17": "2.98435282707214",
+      "H17": "Mask:Class(1:10)"
+    },
+    {
+      "A18": "Mouse",
+      "B18": "0.84110501567398099",
+      "C18": "0.85860000000000003",
+      "D18": "0.90396274609274696",
+      "E18": "0.98214732599999999",
+      "F18": "0.84976247030878804",
+      "G18": "2.54000568389892",
+      "H18": "Mask:Class(1:10)"
+    },
+    {
+      "A19": "Worm",
+      "B19": "0.85870277353133795",
+      "C19": "0.78639999999999999",
+      "D19": "0.88759202209577803",
+      "E19": "0.97378283399999999",
+      "F19": "0.82096252218394405",
+      "G19": "2.4807219505310001",
+      "H19": "Mask:Class(1:10)"
+    },
+    {
+      "A20": "Ecoli",
+      "B20": "0.87530364372469605",
+      "C20": "0.54049999999999998",
+      "D20": "0.72157012016703503",
+      "E20": "0.90426532500000001",
+      "F20": "0.66831530139103501",
+      "G20": "9.02498054504394",
+      "H20": "Mask:Class(1:10)"
+    },
+    {
+      "A21": "Yeast",
+      "B21": "0.71787194841086999",
+      "C21": "0.62339999999999995",
+      "D21": "0.70551374447611204",
+      "E21": "0.91231633999999995",
+      "F21": "0.66730892742453396",
+      "G21": "5.1395382881164497",
+      "H21": "Mask:Class(1:10)"
+    },
+    {
+      "A22": "Mouse",
+      "B22": "0.85176424206583801",
+      "C22": "0.86419999999999997",
+      "D22": "0.90784033658935304",
+      "E22": "0.98333836600000002",
+      "F22": "0.85793705946589804",
+      "G22": "0.85156213999999997",
+      "H22": "Classification"
+    },
+    {
+      "A23": "Fly",
+      "B23": "0.84118602761982098",
+      "C23": "0.82840000000000003",
+      "D23": "0.89632090940436904",
+      "E23": "0.98101026999999996",
+      "F23": "0.83474405481660596",
+      "G23": "0.93815636999999996",
+      "H23": "Classification"
+    },
+    {
+      "A24": "Worm",
+      "B24": "0.84625350896134699",
+      "C24": "0.78380000000000005",
+      "D24": "0.88249380896872198",
+      "E24": "0.97440294799999905",
+      "F24": "0.81383033952860495",
+      "G24": "0.82758189999999998",
+      "H24": "Classification"
+    },
+    {
+      "A25": "Yeast",
+      "B25": "0.66598653336053804",
+      "C25": "0.65280000000000005",
+      "D25": "0.70215199549350105",
+      "E25": "0.91574746399999996",
+      "F25": "0.65932734067265897",
+      "G25": "0.83630119999999997",
+      "H25": "Classification"
+    },
+    {
+      "A26": "Ecoli",
+      "B26": "0.83211678832116698",
+      "C26": "0.51300000000000001",
+      "D26": "0.69240579105465605",
+      "E26": "0.89791923750000002",
+      "F26": "0.63470460872254797",
+      "G26": "0.99986319999999995",
+      "H26": "Classification"
+    }
+  ],
+  "Supplemtrary Figure2": [
+    {
+      "A1": "hostname",
+      "B1": "precision-recall auc",
+      "C1": "mask",
+      "D1": "xlable",
+      "E1": "significant ( p-value<0.05 & c>b)",
+      "F1": "pvalue",
+      "G1": "b",
+      "H1": "c",
+      "I1": "n"
+    },
+    {
+      "A2": "mouse",
+      "B2": "0.90784033658935304",
+      "C2": "mask_0% (binary)",
+      "D2": "Mouse",
+      "E2": "-",
+      "F2": "-",
+      "G2": "-",
+      "H2": "-"
+    },
+    {
+      "A3": "fly",
+      "B3": "0.89632090940436904",
+      "C3": "mask_0% (binary)",
+      "D3": "Worm",
+      "E3": "-",
+      "F3": "-",
+      "G3": "-",
+      "H3": "-"
+    },
+    {
+      "A4": "worm",
+      "B4": "0.88249380896872198",
+      "C4": "mask_0% (binary)",
+      "D4": "Fly",
+      "E4": "-",
+      "F4": "-",
+      "G4": "-",
+      "H4": "-"
+    },
+    {
+      "A5": "yeast",
+      "B5": "0.70215199549350105",
+      "C5": "mask_0% (binary)",
+      "D5": "Yeast",
+      "E5": "-",
+      "F5": "-",
+      "G5": "-",
+      "H5": "-"
+    },
+    {
+      "A6": "ecoli",
+      "B6": "0.69240579105465605",
+      "C6": "mask_0% (binary)",
+      "D6": "E. coli",
+      "E6": "-",
+      "F6": "-",
+      "G6": "-",
+      "H6": "-"
+    },
+    {
+      "A7": "mouse",
+      "B7": "0.90464853483702601",
+      "C7": "mask_7%",
+      "D7": "Mouse",
+      "E7": "no",
+      "F7": "3.0535043930472398E-2",
+      "G7": "575",
+      "H7": "503",
+      "I7": "55000"
+    },
+    {
+      "A8": "fly",
+      "B8": "0.90586385449062701",
+      "C8": "mask_7%",
+      "D8": "Worm",
+      "E8": "yes",
+      "F8": "1.39754616919232E-5",
+      "G8": "560",
+      "H8": "716",
+      "I8": "55000"
+    },
+    {
+      "A9": "worm",
+      "B9": "0.88193916524181704",
+      "C9": "mask_7%",
+      "D9": "Fly",
+      "E9": "no",
+      "F9": "0.315624113195348",
+      "G9": "625",
+      "H9": "662",
+      "I9": "55000"
+    },
+    {
+      "A10": "yeast",
+      "B10": "0.71298845571048497",
+      "C10": "mask_7%",
+      "D10": "Yeast",
+      "E10": "yes",
+      "F10": "1.72777816944617E-9",
+      "G10": "852",
+      "H10": "1120",
+      "I10": "55000"
+    },
+    {
+      "A11": "ecoli",
+      "B11": "0.71629827227155796",
+      "C11": "mask_7%",
+      "D11": "E. coli",
+      "E11": "yes",
+      "F11": "3.3918518147443201E-5",
+      "G11": "221",
+      "H11": "318",
+      "I11": "22000"
+    },
+    {
+      "A12": "mouse",
+      "B12": "0.90396274609274696",
+      "C12": "mask_15%",
+      "D12": "Mouse",
+      "E12": "no",
+      "F12": "1.15003742626322E-2",
+      "G12": "623",
+      "H12": "536",
+      "I12": "55000"
+    },
+    {
+      "A13": "fly",
+      "B13": "0.91329919020025696",
+      "C13": "mask_15%",
+      "D13": "Worm",
+      "E13": "yes",
+      "F13": "1.4430351822185701E-7",
+      "G13": "572",
+      "H13": "765",
+      "I13": "55000"
+    },
+    {
+      "A14": "worm",
+      "B14": "0.88759202209577803",
+      "C14": "mask_15%",
+      "D14": "Fly",
+      "E14": "yes",
+      "F14": "2.8598476655250501E-2",
+      "G14": "580",
+      "H14": "658",
+      "I14": "55000"
+    },
+    {
+      "A15": "yeast",
+      "B15": "0.70551374447611204",
+      "C15": "mask_15%",
+      "D15": "Yeast",
+      "E15": "yes",
+      "F15": "3.4809057333325898E-9",
+      "G15": "869",
+      "H15": "1134",
+      "I15": "55000"
+    },
+    {
+      "A16": "ecoli",
+      "B16": "0.72157012016703503",
+      "C16": "mask_15%",
+      "D16": "E. coli",
+      "E16": "yes",
+      "F16": "1.80645280579878E-6",
+      "G16": "199",
+      "H16": "307",
+      "I16": "22000"
+    },
+    {
+      "A17": "mouse",
+      "B17": "0.90673305247686597",
+      "C17": "mask_22%",
+      "D17": "Mouse",
+      "E17": "no",
+      "F17": "0.58180124719197202",
+      "G17": "605",
+      "H17": "585",
+      "I17": "55000"
+    },
+    {
+      "A18": "fly",
+      "B18": "0.90565167055732898",
+      "C18": "mask_22%",
+      "D18": "Worm",
+      "E18": "no",
+      "F18": "0.59039503903873403",
+      "G18": "750",
+      "H18": "772",
+      "I18": "55000"
+    },
+    {
+      "A19": "worm",
+      "B19": "0.88226709948736703",
+      "C19": "mask_22%",
+      "D19": "Fly",
+      "E19": "no",
+      "F19": "0.56808261680473204",
+      "G19": "731",
+      "H19": "754",
+      "I19": "55000"
+    },
+    {
+      "A20": "yeast",
+      "B20": "0.71826195933205095",
+      "C20": "mask_22%",
+      "D20": "Yeast",
+      "E20": "yes",
+      "F20": "5.8262053506128299E-4",
+      "G20": "1082",
+      "H20": "1249",
+      "I20": "55000"
+    },
+    {
+      "A21": "ecoli",
+      "B21": "0.71930691561772497",
+      "C21": "mask_22%",
+      "D21": "E. coli",
+      "E21": "yes",
+      "F21": "5.6202990628118205E-7",
+      "G21": "200",
+      "H21": "314",
+      "I21": "22000"
+    },
+    {
+      "A22": "mouse",
+      "B22": "0.90478126468766495",
+      "C22": "mask_30%",
+      "D22": "Mouse",
+      "E22": "no",
+      "F22": "0.46707500414902098",
+      "G22": "532",
+      "H22": "557",
+      "I22": "55000"
+    },
+    {
+      "A23": "fly",
+      "B23": "0.90923918714961205",
+      "C23": "mask_30%",
+      "D23": "Worm",
+      "E23": "yes",
+      "F23": "1.86006915775542E-10",
+      "G23": "534",
+      "H23": "764",
+      "I23": "55000"
+    },
+    {
+      "A24": "worm",
+      "B24": "0.88848803137013299",
+      "C24": "mask_30%",
+      "D24": "Fly",
+      "E24": "yes",
+      "F24": "6.3702938576749102E-3",
+      "G24": "648",
+      "H24": "751",
+      "I24": "55000"
+    },
+    {
+      "A25": "yeast",
+      "B25": "0.70812388398962101",
+      "C25": "mask_30%",
+      "D25": "Yeast",
+      "E25": "yes",
+      "F25": "4.87355442237783E-5",
+      "G25": "1011",
+      "H25": "1203",
+      "I25": "55000"
+    },
+    {
+      "A26": "ecoli",
+      "B26": "0.70514910494688099",
+      "C26": "mask_30%",
+      "D26": "E. coli",
+      "E26": "no",
+      "F26": "0.27026915036791699",
+      "G26": "361",
+      "H26": "331",
+      "I26": "22000"
+    },
+    {
+      "A28": "Note:",
+      "B28": "b: Model A (binary model) correct, Model B ( masking model) incorrect"
+    },
+    {
+      "B29": "c: Model A (binary model) incorrect, Model B (masking model) correct"
+    }
+  ],
+  "Supplemtrary Figure3": [
+    {
+      "A1": "Supplemtrary Figure3",
+      "B1": "The distribution of predicted interaction probability of positive and negative protein pairs of PLM-interact, TUnA, TT3D, Topsy-Turvy and D-SCRIPT. "
+    },
+    {
+      "A2": "PLM-interact",
+      "B2": "Figure 2b _1"
+    },
+    {
+      "A3": "TUnA",
+      "B3": "Figure 2b _2"
+    },
+    {
+      "A4": "TT3D",
+      "B4": "Figure 2b _3"
+    },
+    {
+      "A5": "Topsy-Turvy",
+      "B5": "Figure 2b _4"
+    },
+    {
+      "A6": "D-SCRIPT",
+      "B6": "Figure 2b _5"
+    }
+  ],
+  "Supplemtrary Figure4": [
+    {
+      "B1": "uniprot_a",
+      "C1": "uniprot_b",
+      "D1": "label",
+      "E1": "tt3d_prob",
+      "F1": "tuna_prob",
+      "G1": "PLM-interact_prob",
+      "H1": "query",
+      "I1": "text"
+    },
+    {
+      "A2": "Mouse",
+      "B2": "10090.ENSMUSP00000044048",
+      "C2": "10090.ENSMUSP00000106519",
+      "D2": "1",
+      "E2": "0.20395082235336301",
+      "F2": "8.2940324999999995E-2",
+      "G2": "0.72795826290206",
+      "H2": "MFGLRRNAVIGLNLYCGGASLGAGGGSPAGARLVAEEAKARREGGGEAALLPGARVVARPPPVGAEDPDVTASAERRLHKSPGLLAVPPEEMAASAAAAIVSPEEELDGCEPEAIGKRPAVLPLLERVSEAAKSSGADGSLPSTPPPPEEEEDDLYRQSLEIISRYLREQATGSKDSKPLGEAGAAGRRALETLRRVGDGVQRNHETAFQGMLRKLDIKNEGDVKSFSRVMVHVFKDGVTNWGRIVTLISFGAFVAKHLKSVNQESFIEPLAETITDVLVRTKRDWLVKQRGWDGFVEFFHVQDLEGGIRNVLLAFAGVAGVGAGLAYLIR",
+      "I2": "MIIYRDLISHDELFSDIYKIREIADGLCLEVEGKMVSRTEGAIDDSLIGGNASAEGPEGEGTESTVVTGVDIVMNHHLQETSFTKEAYKKYIKDYMKSLKGKLEEQKPERVKPFMTGAAEQIKHILANFNNYQFFIGENMNPDGMVALLDYREDGVTPFMIFFKDGLEMEKC"
+    },
+    {
+      "A3": "Fly",
+      "B3": "7227.FBpp0072579",
+      "C3": "7227.FBpp0087951",
+      "D3": "1",
+      "E3": "7.8493997454643194E-2",
+      "F3": "0.4247301",
+      "G3": "0.914995316903088",
+      "H3": "MSKIYLKAMEDVVQRNTDNTNRITEQAQGFVVSENAGDSLLHTSFDLTTAQSIVKHLHASFLKLAQSCVRDLDTDDKLCFLRVKTRKHEFLVSPEEAFTVTVVL",
+      "I3": "MGDSPEERRSKDVVPETAAKEAETGKGKKEKKEKSAEGTKPRPASSQRGSLTKSHMGVSLPMGAPAAKPTMRFMPTYRLESKNPLNKERVENIIKAVMNRHYNDEYMFHPKHSLHMAAQVSEEIKNRIKLDNYDRYRYIVLVTVGEFLMQGLYSMVNFLWDAEKDGFVTYSVERPSYFAVCTTFYLYYD"
+    },
+    {
+      "A4": "Worm",
+      "B4": "6239.R12B2.5a.2",
+      "C4": "6239.Y71H2B.6",
+      "D4": "1",
+      "E4": "7.9373065382241995E-3",
+      "F4": "5.4046772E-2",
+      "G4": "0.79163179275710405",
+      "H4": "MSEEDWPSPKFREHVIQRLEPELARNRQNAPNLPVPGDARQVEEYVFAKCMSKDEYMRTIAKVINAINCNSKSAAVPSVLQPSQFHSPPCTTAALLGNTPAGGTPGYRAPVPPDPQPTSAQARNPPVTVATTQASTTPSAPNPPGGLPAPSASATAAVAAAVASFPSPDTSIRPGGQITPGSQAPGGGPTPAPNVPFPNGSSQMNGGPAMGQPPPQMGAPNMGGPPNGYGGYGMMNGPPGSGAPMGGNPYNQQIKKDMDQARPWDPSAHMYQQQPQWGAMPPQQPHGYPGRPMNGQGATPTGPSSVLESLINQPQQYPGHHNQMGPPGDRNVAAQRAAAQQQQQQQQQQQQQRPGMVPNQGMMSSEDQTVYSAKLRNMRGSCDSLRTRARQCRHEGNHEAAHKLEVMLSVLEGKRVVSLEYLNHLEMWIARKQDFLNIAPMSQNQNHMGMNDPMMNGEHAMLGNGQVPNPYGGHPGYGHQQYMGPPPPHMQMHQPPMWHQQQHQQQQRMMPQDHMMMQGGGGPVHGMYRGDMGHDPMTSPVNNHRHAPYPNPAAMRNNMRMPNGPGPIGRDRNSMSGSSMSGPSSGAPSMNPMGTPNQKMGTPGSMGGMSGLDDLNYDDFLPNPTPIDALQPTLHVGQNSMNAGPPVQRSNLNETARKELQILDARFEIDPNHQRHDANHIIVVCKIRNQQFPPLRLVVPTTYPAGNVTVDRAVIDLDAYLYDDLQNSVYERLSRPGLSSITDYLNAWEEQVNQYQNQTSGGLDVAFNVGNDFFYDNLNL",
+      "I4": "MNEPSACSGPPVKSKSSKNEPFYTLKALLPPYSEIQGNHDLLMSYELGPVEGGFSGSRRVKEKISSFLPHIIGEFHLDATKEASSLRALIEKPPIHKEISNLTSSSMQGFKLSAGPVDERYRHLFERRKEEPNLAYSEKLNLIRVRQQYDAYGFDDDETEKGFPKKHKKKKKDKKRKKEKEELGDAEKRKRAADEPMEF"
+    },
+    {
+      "A5": "Yeast",
+      "B5": "4932.YMR203W",
+      "C5": "4932.YNL070W",
+      "D5": "1",
+      "E5": "6.0455206781625699E-2",
+      "F5": "0.13084692000000001",
+      "G5": "0.94643193985461804",
+      "H5": "MSAPTPLAEASQIPTIPALSPLTAKQSKGNFFSSNPISSFVVDTYKQLHSHRQSLELVNPGTVENLNKEVSRDVFLSQYFFTGLRADLNKAFSMNPAFQTSHTFSIGSQALPKYAFSALFANDNLFAQGNIDNDLSVSGRLNYGWDKKNISKVNLQISDGQPTMCQLEQDYQASDFSVNVKTLNPSFSEKGEFTGVAVASFLQSVTPQLALGLETLYSRTDGSAPGDAGVSYLTRYVSKKQDWIFSGQLQANGALIASLWRKVAQNVEAGIETTLQAGMVPITDPLMGTPIGIQPTVEGSTTIGAKYEYRQSVYRGTLDSNGKVACFLERKVLPTLSVLFCGEIDHFKNDTKIGCGLQFETAGNQELLMLQQGLDADGNPLQALPQL",
+      "I5": "MSFLPSFILSDESKERISKILTLTHNVAHYGWIPFVLYLGWAHTSNRPNFLNLLSPLPSV"
+    },
+    {
+      "A6": "E. coli",
+      "B6": "362663.ECP_2919",
+      "C6": "362663.ECP_2920",
+      "D6": "1",
+      "E6": "7.9540926963089995E-3",
+      "F6": "6.7511834000000001E-3",
+      "G6": "0.79117215494531201",
+      "H6": "MHPFTSLTLWALAACTTLILPTQTILPVYSAATFFCLIALKATRRRAKYVVWLMFSLGAGLWLVHGGWLTEWLSGTPRSPERWAHAITLWLRILAIVSTSQLWMQYVPVQRFIRALFASRLPPGVAYLFAGPLLVVEQLKRQLAIIHEAQRARGVPLDEGWYQRLRAMPALIIPLTHNALNDLAVRGAALDMRAFRINNRRTTLWAPADSTLQRVARYTMILLMLAEFGAWIWLR",
+      "I6": "MVTLEQFRYCPTHSTHPPFCYDFHYVKPGMVAIFGDNGSGKSTLAQLMAGWYPDFLPGEITGTGTLLGTPIGRLPLNEQSATIQLVQQSPYLQLSGCTFSVEEEVAFGPENLCLAEKEIMARIDAALALTECQPLRHRHPATLSGGETQRVVIACAIAMQPKLLILDEAFSRLTPQAREMLLQRLQHWALERGSLIILFERHHTPFLNHCQQAWQLQNGALQPLC"
+    },
+    {
+      "A8": "Note: Protein-protein structures are predicted by AlphaFold3. The structure files can be found in the folder: Source Data/Supplemtrary Figure4_AF3_protein-protein structures"
+    }
+  ],
+  "Supplemtrary Figure5 ": [
+    {
+      "A1": "hostname",
+      "B1": "precision-recall auc",
+      "C1": "Models"
+    },
+    {
+      "A2": "Mouse",
+      "B2": "0.90396274609274696",
+      "C2": "PLM-interact"
+    },
+    {
+      "A3": "Fly",
+      "B3": "0.91329919020025696",
+      "C3": "PLM-interact"
+    },
+    {
+      "A4": "Worm",
+      "B4": "0.88759202209577803",
+      "C4": "PLM-interact"
+    },
+    {
+      "A5": "Yeast",
+      "B5": "0.70551374447611204",
+      "C5": "PLM-interact"
+    },
+    {
+      "A6": "E. coli",
+      "B6": "0.72157012016703503",
+      "C6": "PLM-interact"
+    },
+    {
+      "A7": "Mouse",
+      "B7": "0.90329003581136003",
+      "C7": "PLM-interact (reverse)"
+    },
+    {
+      "A8": "Fly",
+      "B8": "0.91100335889596595",
+      "C8": "PLM-interact (reverse)"
+    },
+    {
+      "A9": "Worm",
+      "B9": "0.88453898489701299",
+      "C9": "PLM-interact (reverse)"
+    },
+    {
+      "A10": "Yeast",
+      "B10": "0.71096255172838096",
+      "C10": "PLM-interact (reverse)"
+    },
+    {
+      "A11": "E. coli",
+      "B11": "0.72046041689593898",
+      "C11": "PLM-interact (reverse)"
+    }
+  ],
+  "Supplemtrary Figure7": [
+    {
+      "A1": "The AUPR performance of PLM-interact and TUnA under different levels of identities between training and test datasets"
+    },
+    {
+      "A2": "hostname",
+      "B2": "identity",
+      "C2": "PLM-interact",
+      "D2": "TUnA"
+    },
+    {
+      "A3": "mouse",
+      "B3": "(20,40]",
+      "C3": "0.61111099999999996",
+      "D3": "0.5"
+    },
+    {
+      "A4": "mouse",
+      "B4": "(40,60]",
+      "C4": "0.62218499999999999",
+      "D4": "0.71407100000000001"
+    },
+    {
+      "A5": "mouse",
+      "B5": "(60,80]",
+      "C5": "0.870703",
+      "D5": "0.84383600000000003"
+    },
+    {
+      "A6": "mouse",
+      "B6": "(80,100]",
+      "C6": "0.90712300000000001",
+      "D6": "0.89002000000000003"
+    },
+    {
+      "A7": "fly",
+      "B7": "0",
+      "C7": "0.42869699999999999",
+      "D7": "0.15740699999999999"
+    },
+    {
+      "A8": "fly",
+      "B8": "(0,20]",
+      "C8": "0.7",
+      "D8": "0.59090900000000002"
+    },
+    {
+      "A9": "fly",
+      "B9": "(20,40]",
+      "C9": "0.81653900000000001",
+      "D9": "0.73357099999999997"
+    },
+    {
+      "A10": "fly",
+      "B10": "(40,60]",
+      "C10": "0.89533700000000005",
+      "D10": "0.80879400000000001"
+    },
+    {
+      "A11": "fly",
+      "B11": "(60,80]",
+      "C11": "0.91788499999999995",
+      "D11": "0.86196200000000001"
+    },
+    {
+      "A12": "fly",
+      "B12": "(80,100]",
+      "C12": "0.94353900000000002",
+      "D12": "0.92731699999999995"
+    },
+    {
+      "A13": "worm",
+      "B13": "0",
+      "C13": "0.27319900000000003",
+      "D13": "0.26725199999999999"
+    },
+    {
+      "A14": "worm",
+      "B14": "(0,20]",
+      "C14": "0.56263200000000002",
+      "D14": "0.43107800000000002"
+    },
+    {
+      "A15": "worm",
+      "B15": "(20,40]",
+      "C15": "0.75088900000000003",
+      "D15": "0.566998"
+    },
+    {
+      "A16": "worm",
+      "B16": "(40,60]",
+      "C16": "0.83552000000000004",
+      "D16": "0.76719800000000005"
+    },
+    {
+      "A17": "worm",
+      "B17": "(60,80]",
+      "C17": "0.93098999999999998",
+      "D17": "0.91084600000000004"
+    },
+    {
+      "A18": "worm",
+      "B18": "(80,100]",
+      "C18": "0.96481700000000004",
+      "D18": "0.94935099999999994"
+    },
+    {
+      "A19": "yeast",
+      "B19": "0",
+      "C19": "0.46949299999999999",
+      "D19": "0.40038699999999999"
+    },
+    {
+      "A20": "yeast",
+      "B20": "(0,20]",
+      "C20": "0.50137200000000004",
+      "D20": "0.36505100000000001"
+    },
+    {
+      "A21": "yeast",
+      "B21": "(20,40]",
+      "C21": "0.56679900000000005",
+      "D21": "0.50075800000000004"
+    },
+    {
+      "A22": "yeast",
+      "B22": "(40,60]",
+      "C22": "0.64961500000000005",
+      "D22": "0.60934900000000003"
+    },
+    {
+      "A23": "yeast",
+      "B23": "(60,80]",
+      "C23": "0.83530400000000005",
+      "D23": "0.78447999999999996"
+    },
+    {
+      "A24": "yeast",
+      "B24": "(80,100]",
+      "C24": "0.82630800000000004",
+      "D24": "0.78497799999999995"
+    },
+    {
+      "A25": "ecoli",
+      "B25": "0",
+      "C25": "0.56683899999999998",
+      "D25": "0.49032100000000001"
+    },
+    {
+      "A26": "ecoli",
+      "B26": "(0,20]",
+      "C26": "7.4417999999999998E-2",
+      "D26": "0.129639"
+    },
+    {
+      "A27": "ecoli",
+      "B27": "(20,40]",
+      "C27": "0.77933699999999995",
+      "D27": "0.72770500000000005"
+    },
+    {
+      "A28": "ecoli",
+      "B28": "(40,60]",
+      "C28": "0.86438999999999999",
+      "D28": "0.87473199999999995"
+    },
+    {
+      "A29": "ecoli",
+      "B29": "(60,80]",
+      "C29": "0.79915999999999998",
+      "D29": "0.81567999999999996"
+    },
+    {
+      "A33": "The proportion of the test protein pairs under the corresponding protein identities"
+    },
+    {
+      "A34": "hostname",
+      "B34": "identity",
+      "C34": "proportion"
+    },
+    {
+      "A35": "mouse",
+      "B35": "0",
+      "C35": "2.1640000000000001E-3"
+    },
+    {
+      "A36": "mouse",
+      "B36": "(0,20]",
+      "C36": "1.8E-5"
+    },
+    {
+      "A37": "mouse",
+      "B37": "(20,40]",
+      "C37": "3.055E-3"
+    },
+    {
+      "A38": "mouse",
+      "B38": "(40, 60]",
+      "C38": "1.8655000000000001E-2"
+    },
+    {
+      "A39": "mouse",
+      "B39": "(60, 80]",
+      "C39": "0.14874499999999999"
+    },
+    {
+      "A40": "mouse",
+      "B40": "(80, 100]",
+      "C40": "0.82736399999999999"
+    },
+    {
+      "A41": "fly",
+      "B41": "0",
+      "C41": "8.6873000000000006E-2"
+    },
+    {
+      "A42": "fly",
+      "B42": "(0,20]",
+      "C42": "4.8180000000000002E-3"
+    },
+    {
+      "A43": "fly",
+      "B43": "(20,40]",
+      "C43": "0.17460000000000001"
+    },
+    {
+      "A44": "fly",
+      "B44": "(40, 60]",
+      "C44": "0.37487300000000001"
+    },
+    {
+      "A45": "fly",
+      "B45": "(60, 80]",
+      "C45": "0.27127299999999999"
+    },
+    {
+      "A46": "fly",
+      "B46": "(80, 100]",
+      "C46": "8.7564000000000003E-2"
+    },
+    {
+      "A47": "worm",
+      "B47": "0",
+      "C47": "0.25101800000000002"
+    },
+    {
+      "A48": "worm",
+      "B48": "(0,20]",
+      "C48": "6.9820000000000004E-3"
+    },
+    {
+      "A49": "worm",
+      "B49": "(20,40]",
+      "C49": "0.23338200000000001"
+    },
+    {
+      "A50": "worm",
+      "B50": "(40, 60]",
+      "C50": "0.30212699999999998"
+    },
+    {
+      "A51": "worm",
+      "B51": "(60, 80]",
+      "C51": "0.16347300000000001"
+    },
+    {
+      "A52": "worm",
+      "B52": "(80, 100]",
+      "C52": "4.3018000000000001E-2"
+    },
+    {
+      "A53": "yeast",
+      "B53": "0",
+      "C53": "0.27939999999999998"
+    },
+    {
+      "A54": "yeast",
+      "B54": "(0,20]",
+      "C54": "1.5181999999999999E-2"
+    },
+    {
+      "A55": "yeast",
+      "B55": "(20,40]",
+      "C55": "0.273891"
+    },
+    {
+      "A56": "yeast",
+      "B56": "(40, 60]",
+      "C56": "0.27229100000000001"
+    },
+    {
+      "A57": "yeast",
+      "B57": "(60, 80]",
+      "C57": "0.14296400000000001"
+    },
+    {
+      "A58": "yeast",
+      "B58": "(80, 100]",
+      "C58": "1.6272999999999999E-2"
+    },
+    {
+      "A59": "ecoli",
+      "B59": "0",
+      "C59": "0.59104500000000004"
+    },
+    {
+      "A60": "ecoli",
+      "B60": "(0,20]",
+      "C60": "1.8182E-2"
+    },
+    {
+      "A61": "ecoli",
+      "B61": "(20,40]",
+      "C61": "0.27640900000000002"
+    },
+    {
+      "A62": "ecoli",
+      "B62": "(40, 60]",
+      "C62": "9.8726999999999995E-2"
+    },
+    {
+      "A63": "ecoli",
+      "B63": "(60, 80]",
+      "C63": "1.5636000000000001E-2"
+    },
+    {
+      "A64": "ecoli",
+      "B64": "(80, 100]",
+      "C64": "0"
+    },
+    {
+      "A66": "Note: The predicted interaction probability of PLM-interact and TUnA on each test protein pair can be found in the folder: Source Data/Supplementary Figure 7"
+    }
+  ],
+  "Supplemtrary Figure8": [
+    {
+      "A1": "affected_uniprot",
+      "B1": "affected_uniprot_id",
+      "C1": "parti_uniprot",
+      "D1": "label",
+      "E1": "Affected_species",
+      "F1": "Participant_species",
+      "G1": "Feature type",
+      "H1": "Feature range(s)",
+      "I1": "Original sequence",
+      "J1": "Resulting sequence",
+      "K1": "PubMedID",
+      "L1": "Interaction AC",
+      "M1": "PLM-interact_log_PIP",
+      "N1": "TUnA_log_PIP",
+      "O1": "TT_log_PIP",
+      "P1": "dscript_log_PIP"
+    },
+    {
+      "A2": "P33993",
+      "B2": "P33993_V2",
+      "C2": "P33992",
+      "D2": "1",
+      "E2": "9606 - Homo sapiens",
+      "F2": "9606 - Homo sapiens",
+      "G2": "mutation increasing(MI:0382)",
+      "H2": "600-600",
+      "I2": "Y",
+      "J2": "E",
+      "K2": "23764002",
+      "L2": "EBI-6878238",
+      "M2": "0.164806292419095",
+      "N2": "2.37207695349836E-4",
+      "O2": "2.8316476789193201E-3",
+      "P2": "-7.3144890217323094E-2"
+    },
+    {
+      "A3": "Q16595",
+      "B3": "Q16595_V1",
+      "C3": "Q9H1K1",
+      "D3": "0",
+      "E3": "9606 - Homo sapiens",
+      "F3": "9606 - Homo sapiens",
+      "G3": "mutation decreasing strength(MI:1133)",
+      "H3": "151-151",
+      "I3": "N",
+      "J3": "A",
+      "K3": "31101807",
+      "L3": "EBI-21926930",
+      "M3": "-0.64905465186267097",
+      "N3": "1.6370865955730798E-2",
+      "O3": "-8.8896601860662602E-2",
+      "P3": "9.9655957945100904E-4"
+    },
+    {
+      "A5": "Note: Protein-protein structures are predicted by AF3. The structure files can be found in the folder: Source Data/Supplemtrary Figure10_AF3_protein-protein structures"
+    }
+  ],
+  "Supplemtrary Figure10_train": [
+    {
+      "A1": "epoch",
+      "B1": "loss",
+      "C1": "precision-recall auc",
+      "D1": "auroc"
+    },
+    {
+      "A2": "1",
+      "B2": "1.1352735759999999",
+      "C2": "0.18986952400000001",
+      "D2": "0.52265439999999996"
+    },
+    {
+      "A3": "2",
+      "B3": "1.1224859949999999",
+      "C3": "0.212703161",
+      "D3": "0.57623590300000005"
+    },
+    {
+      "A4": "3",
+      "B4": "1.089130044",
+      "C4": "0.272272246",
+      "D4": "0.65914402699999997"
+    },
+    {
+      "A5": "4",
+      "B5": "1.050952315",
+      "C5": "0.33736349100000002",
+      "D5": "0.71671671100000001"
+    },
+    {
+      "A6": "5",
+      "B6": "1.0424151420000001",
+      "C6": "0.42635736499999999",
+      "D6": "0.77755020699999999"
+    },
+    {
+      "A7": "6",
+      "B7": "1.0380442139999999",
+      "C7": "0.49325803099999999",
+      "D7": "0.81211274200000005"
+    },
+    {
+      "A8": "7",
+      "B8": "1.0201969150000001",
+      "C8": "0.54793261400000004",
+      "D8": "0.83468079100000003"
+    },
+    {
+      "A9": "8",
+      "B9": "0.97893887800000001",
+      "C9": "0.57682227600000002",
+      "D9": "0.85159267199999999"
+    },
+    {
+      "A10": "9",
+      "B10": "0.91990125199999995",
+      "C10": "0.66631648099999996",
+      "D10": "0.89521360699999997"
+    },
+    {
+      "A11": "10",
+      "B11": "0.72964304700000004",
+      "C11": "0.77563469200000001",
+      "D11": "0.93660413300000001"
+    },
+    {
+      "A12": "11",
+      "B12": "0.58947247300000005",
+      "C12": "0.86066645399999997",
+      "D12": "0.962458072"
+    },
+    {
+      "A13": "12",
+      "B13": "0.49700036600000003",
+      "C13": "0.91317990500000001",
+      "D13": "0.97872438299999998"
+    },
+    {
+      "A14": "13",
+      "B14": "0.407840282",
+      "C14": "0.946131316",
+      "D14": "0.98626438800000005"
+    },
+    {
+      "A15": "14",
+      "B15": "0.34940204000000002",
+      "C15": "0.96065628700000005",
+      "D15": "0.99023979900000003"
+    },
+    {
+      "A16": "15",
+      "B16": "0.29449743",
+      "C16": "0.96953007499999999",
+      "D16": "0.99220636900000003"
+    },
+    {
+      "A17": "16",
+      "B17": "0.24838426699999999",
+      "C17": "0.98121009699999995",
+      "D17": "0.99528581599999999"
+    },
+    {
+      "A18": "17",
+      "B18": "0.212622955",
+      "C18": "0.985980097",
+      "D18": "0.99674086900000003"
+    },
+    {
+      "A19": "18",
+      "B19": "0.18330602300000001",
+      "C19": "0.98802905100000005",
+      "D19": "0.99705615599999997"
+    },
+    {
+      "A20": "19",
+      "B20": "0.156601623",
+      "C20": "0.98926737099999995",
+      "D20": "0.997497093"
+    },
+    {
+      "A21": "20",
+      "B21": "0.12556520099999999",
+      "C21": "0.99489272299999998",
+      "D21": "0.99882778800000005"
+    },
+    {
+      "A22": "21",
+      "B22": "0.11607112",
+      "C22": "0.99508626200000005",
+      "D22": "0.99841748799999996"
+    },
+    {
+      "A23": "22",
+      "B23": "9.2499739999999997E-2",
+      "C23": "0.99693003800000002",
+      "D23": "0.99926937100000002"
+    },
+    {
+      "A24": "23",
+      "B24": "7.8508429000000005E-2",
+      "C24": "0.99739528499999996",
+      "D24": "0.999382353"
+    },
+    {
+      "A25": "24",
+      "B25": "6.8624079000000004E-2",
+      "C25": "0.997917948",
+      "D25": "0.99948835300000005"
+    },
+    {
+      "A26": "25",
+      "B26": "5.3646829E-2",
+      "C26": "0.99891437699999996",
+      "D26": "0.99975102800000004"
+    },
+    {
+      "A27": "26",
+      "B27": "4.6937729999999997E-2",
+      "C27": "0.99877676999999998",
+      "D27": "0.99972543300000005"
+    },
+    {
+      "A28": "27",
+      "B28": "4.2453355999999998E-2",
+      "C28": "0.99934756400000002",
+      "D28": "0.99984616999999998"
+    },
+    {
+      "A29": "28",
+      "B29": "3.1898197000000003E-2",
+      "C29": "0.99965732900000004",
+      "D29": "0.99992166299999996"
+    },
+    {
+      "A30": "29",
+      "B30": "2.6763767000000001E-2",
+      "C30": "0.99963462000000003",
+      "D30": "0.99992373099999998"
+    },
+    {
+      "A31": "30",
+      "B31": "2.4261523E-2",
+      "C31": "0.99983857300000001",
+      "D31": "0.99996380500000004"
+    },
+    {
+      "A32": "31",
+      "B32": "2.6314666E-2",
+      "C32": "0.99979105099999999",
+      "D32": "0.99995061900000004"
+    },
+    {
+      "A33": "32",
+      "B33": "2.4982750000000001E-2",
+      "C33": "0.99975165799999999",
+      "D33": "0.99994208699999998"
+    },
+    {
+      "A34": "33",
+      "B34": "2.1323385E-2",
+      "C34": "0.99968878000000005",
+      "D34": "0.99992890199999995"
+    },
+    {
+      "A35": "34",
+      "B35": "1.558172E-2",
+      "C35": "0.99980948999999997",
+      "D35": "0.99995579000000001"
+    },
+    {
+      "A36": "35",
+      "B36": "1.8492695E-2",
+      "C36": "0.999886787",
+      "D36": "0.99997388799999998"
+    },
+    {
+      "A37": "36",
+      "B37": "1.0646371999999999E-2",
+      "C37": "0.99999300000000002",
+      "D37": "0.99999844900000001"
+    },
+    {
+      "A38": "37",
+      "B38": "6.38428E-3",
+      "C38": "0.99999766899999998",
+      "D38": "0.99999948299999997"
+    },
+    {
+      "A39": "38",
+      "B39": "5.6465939999999996E-3",
+      "C39": "1",
+      "D39": "1"
+    },
+    {
+      "A40": "39",
+      "B40": "3.8235589999999998E-3",
+      "C40": "0.99999883499999997",
+      "D40": "0.999999741"
+    },
+    {
+      "A41": "40",
+      "B41": "3.5238040000000002E-3",
+      "C41": "0.99999883499999997",
+      "D41": "0.999999741"
+    }
+  ],
+  "Supplemtrary Figure10_val": [
+    {
+      "A1": "epoch",
+      "B1": "loss",
+      "C1": "precision-recall auc",
+      "D1": "auroc"
+    },
+    {
+      "A2": "1",
+      "B2": "1.1452567579999999",
+      "C2": "0.18087008600000001",
+      "D2": "0.48846153799999997"
+    },
+    {
+      "A3": "2",
+      "B3": "1.141325712",
+      "C3": "0.17714677100000001",
+      "D3": "0.48204192400000001"
+    },
+    {
+      "A4": "3",
+      "B4": "1.14040637",
+      "C4": "0.17620889000000001",
+      "D4": "0.484680891"
+    },
+    {
+      "A5": "4",
+      "B5": "1.135496616",
+      "C5": "0.19094974200000001",
+      "D5": "0.52796181900000005"
+    },
+    {
+      "A6": "5",
+      "B6": "1.1282144780000001",
+      "C6": "0.21234710900000001",
+      "D6": "0.56214205500000003"
+    },
+    {
+      "A7": "6",
+      "B7": "1.1300245520000001",
+      "C7": "0.22379837299999999",
+      "D7": "0.59555493199999998"
+    },
+    {
+      "A8": "7",
+      "B8": "1.124958634",
+      "C8": "0.26368661799999998",
+      "D8": "0.62560359300000001"
+    },
+    {
+      "A9": "8",
+      "B9": "1.115496397",
+      "C9": "0.28297049400000002",
+      "D9": "0.65457140199999997"
+    },
+    {
+      "A10": "9",
+      "B10": "1.0992302890000001",
+      "C10": "0.33453845799999998",
+      "D10": "0.70270447300000005"
+    },
+    {
+      "A11": "10",
+      "B11": "1.069271088",
+      "C11": "0.41293873399999997",
+      "D11": "0.73187347899999999"
+    },
+    {
+      "A12": "11",
+      "B12": "1.1353633400000001",
+      "C12": "0.42374472000000002",
+      "D12": "0.72639902700000003"
+    },
+    {
+      "A13": "12",
+      "B13": "1.121273041",
+      "C13": "0.42788694399999999",
+      "D13": "0.73833988399999995"
+    },
+    {
+      "A14": "13",
+      "B14": "1.120913029",
+      "C14": "0.42552865499999998",
+      "D14": "0.72309563899999996"
+    },
+    {
+      "A15": "14",
+      "B15": "1.130128622",
+      "C15": "0.437496732",
+      "D15": "0.73857383499999996"
+    },
+    {
+      "A16": "15",
+      "B16": "1.15478766",
+      "C16": "0.41852832800000001",
+      "D16": "0.72143926599999997"
+    },
+    {
+      "A17": "16",
+      "B17": "1.2005313630000001",
+      "C17": "0.47093485299999999",
+      "D17": "0.74204566699999996"
+    },
+    {
+      "A18": "17",
+      "B18": "1.0915845630000001",
+      "C18": "0.47757875300000002",
+      "D18": "0.75388826499999995"
+    },
+    {
+      "A19": "18",
+      "B19": "1.0380930900000001",
+      "C19": "0.49387818500000003",
+      "D19": "0.75246116399999996"
+    },
+    {
+      "A20": "19",
+      "B20": "1.00886023",
+      "C20": "0.50522098000000004",
+      "D20": "0.74705221799999999"
+    },
+    {
+      "A21": "20",
+      "B21": "1.0367485279999999",
+      "C21": "0.51001275400000001",
+      "D21": "0.753780648"
+    },
+    {
+      "A22": "21",
+      "B22": "1.0427185299999999",
+      "C22": "0.52011085400000001",
+      "D22": "0.75745835699999997"
+    },
+    {
+      "A23": "22",
+      "B23": "1.0141229629999999",
+      "C23": "0.53015440999999996",
+      "D23": "0.76266610499999998"
+    },
+    {
+      "A24": "23",
+      "B24": "1.02204597",
+      "C24": "0.52689711800000005",
+      "D24": "0.77098072200000001"
+    },
+    {
+      "A25": "24",
+      "B25": "1.056911707",
+      "C25": "0.52346271499999997",
+      "D25": "0.76170690600000002"
+    },
+    {
+      "A26": "25",
+      "B26": "1.061453223",
+      "C26": "0.51925286800000003",
+      "D26": "0.76217480800000004"
+    },
+    {
+      "A27": "26",
+      "B27": "1.101695418",
+      "C27": "0.51546818599999999",
+      "D27": "0.75010293800000005"
+    },
+    {
+      "A28": "27",
+      "B28": "1.1229462619999999",
+      "C28": "0.50315157799999999",
+      "D28": "0.74364589199999998"
+    },
+    {
+      "A29": "28",
+      "B29": "1.140962362",
+      "C29": "0.51418847099999998",
+      "D29": "0.75680329400000002"
+    },
+    {
+      "A30": "29",
+      "B30": "1.095258474",
+      "C30": "0.51625359500000001",
+      "D30": "0.76590866599999996"
+    },
+    {
+      "A31": "30",
+      "B31": "1.09142077",
+      "C31": "0.50426044299999995",
+      "D31": "0.75420175899999997"
+    },
+    {
+      "A32": "31",
+      "B32": "1.120346785",
+      "C32": "0.509233292",
+      "D32": "0.76154781999999999"
+    },
+    {
+      "A33": "32",
+      "B33": "1.0984295610000001",
+      "C33": "0.51227065299999996",
+      "D33": "0.75752386299999996"
+    },
+    {
+      "A34": "33",
+      "B34": "1.163076043",
+      "C34": "0.50411532299999995",
+      "D34": "0.75435148799999996"
+    },
+    {
+      "A35": "34",
+      "B35": "1.147931099",
+      "C35": "0.50855563800000003",
+      "D35": "0.75797304899999995"
+    },
+    {
+      "A36": "35",
+      "B36": "1.157268763",
+      "C36": "0.50874091200000005",
+      "D36": "0.76159460999999995"
+    },
+    {
+      "A37": "36",
+      "B37": "1.167586684",
+      "C37": "0.50224211799999996",
+      "D37": "0.74991577799999998"
+    },
+    {
+      "A38": "37",
+      "B38": "1.174260855",
+      "C38": "0.49368504099999999",
+      "D38": "0.74670597000000005"
+    },
+    {
+      "A39": "38",
+      "B39": "1.1871495249999999",
+      "C39": "0.49811763199999998",
+      "D39": "0.75534343999999998"
+    },
+    {
+      "A40": "39",
+      "B40": "1.2204444409999999",
+      "C40": "0.48779261800000001",
+      "D40": "0.74583567299999998"
+    },
+    {
+      "A41": "40",
+      "B41": "1.238410711",
+      "C41": "0.490766702",
+      "D41": "0.75006550599999999"
+    }
+  ],
+  "Supplemtrary Figure10_test": [
+    {
+      "A1": "epoch",
+      "B1": "loss",
+      "C1": "precision-recall auc",
+      "D1": "auroc"
+    },
+    {
+      "A2": "1",
+      "B2": "1.2179441449999999",
+      "C2": "0.22030423900000001",
+      "D2": "0.52463019"
+    },
+    {
+      "A3": "2",
+      "B3": "1.2226170300000001",
+      "C3": "0.22342653600000001",
+      "D3": "0.53848966200000004"
+    },
+    {
+      "A4": "3",
+      "B4": "1.2176651949999999",
+      "C4": "0.23099604100000001",
+      "D4": "0.55044965499999998"
+    },
+    {
+      "A5": "4",
+      "B5": "1.203115344",
+      "C5": "0.24971855700000001",
+      "D5": "0.591540595"
+    },
+    {
+      "A6": "5",
+      "B6": "1.2000107769999999",
+      "C6": "0.25889037399999998",
+      "D6": "0.608165238"
+    },
+    {
+      "A7": "6",
+      "B7": "1.193628073",
+      "C7": "0.28140302699999997",
+      "D7": "0.62710539600000004"
+    },
+    {
+      "A8": "7",
+      "B8": "1.1937750579999999",
+      "C8": "0.30149345500000002",
+      "D8": "0.64381828900000004"
+    },
+    {
+      "A9": "8",
+      "B9": "1.1813173290000001",
+      "C9": "0.33242906300000002",
+      "D9": "0.669662969"
+    },
+    {
+      "A10": "9",
+      "B10": "1.1501933339999999",
+      "C10": "0.40689871399999999",
+      "D10": "0.73564464600000001"
+    },
+    {
+      "A11": "10",
+      "B11": "1.085152626",
+      "C11": "0.45755884400000002",
+      "D11": "0.75738779599999995"
+    },
+    {
+      "A12": "11",
+      "B12": "1.0759162900000001",
+      "C12": "0.47788119099999998",
+      "D12": "0.76341822199999998"
+    },
+    {
+      "A13": "12",
+      "B13": "1.1065117120000001",
+      "C13": "0.47385165899999998",
+      "D13": "0.75264750400000002"
+    },
+    {
+      "A14": "13",
+      "B14": "1.1418793199999999",
+      "C14": "0.50123976299999995",
+      "D14": "0.76087577699999998"
+    },
+    {
+      "A15": "14",
+      "B15": "1.1123881339999999",
+      "C15": "0.51121934999999996",
+      "D15": "0.75721129600000003"
+    },
+    {
+      "A16": "15",
+      "B16": "1.135688424",
+      "C16": "0.491245616",
+      "D16": "0.75721129600000003"
+    },
+    {
+      "A17": "16",
+      "B17": "1.092715621",
+      "C17": "0.55777612600000004",
+      "D17": "0.77645822799999997"
+    },
+    {
+      "A18": "17",
+      "B18": "1.085308433",
+      "C18": "0.53184961799999997",
+      "D18": "0.76262397000000004"
+    },
+    {
+      "A19": "18",
+      "B19": "1.0881568189999999",
+      "C19": "0.55398293899999995",
+      "D19": "0.77297024700000005"
+    },
+    {
+      "A20": "19",
+      "B20": "1.127803683",
+      "C20": "0.56329738399999996",
+      "D20": "0.77197007900000003"
+    },
+    {
+      "A21": "20",
+      "B21": "1.125345469",
+      "C21": "0.54615817499999997",
+      "D21": "0.75089931099999996"
+    },
+    {
+      "A22": "21",
+      "B22": "1.1180062289999999",
+      "C22": "0.55117280099999999",
+      "D22": "0.75364767200000005"
+    },
+    {
+      "A23": "22",
+      "B23": "1.148323298",
+      "C23": "0.54068178300000003",
+      "D23": "0.74957976100000001"
+    },
+    {
+      "A24": "23",
+      "B24": "1.1452403069999999",
+      "C24": "0.565620287",
+      "D24": "0.76299377999999995"
+    },
+    {
+      "A25": "24",
+      "B25": "1.1246994729999999",
+      "C25": "0.56519091099999996",
+      "D25": "0.76579257000000001"
+    },
+    {
+      "A26": "25",
+      "B26": "1.159611583",
+      "C26": "0.57191655100000005",
+      "D26": "0.770154648"
+    },
+    {
+      "A27": "26",
+      "B27": "1.1420491930000001",
+      "C27": "0.57176112999999995",
+      "D27": "0.77251638899999997"
+    },
+    {
+      "A28": "27",
+      "B28": "1.1519559619999999",
+      "C28": "0.57931623600000004",
+      "D28": "0.77065052999999994"
+    },
+    {
+      "A29": "28",
+      "B29": "1.2327094080000001",
+      "C29": "0.56834744100000001",
+      "D29": "0.76392671000000001"
+    },
+    {
+      "A30": "29",
+      "B30": "1.277165294",
+      "C30": "0.55780301499999996",
+      "D30": "0.765557237"
+    },
+    {
+      "A31": "30",
+      "B31": "1.2243577240000001",
+      "C31": "0.57342160399999997",
+      "D31": "0.77901328000000003"
+    },
+    {
+      "A32": "31",
+      "B32": "1.245955586",
+      "C32": "0.56672914200000002",
+      "D32": "0.77539082199999998"
+    },
+    {
+      "A33": "32",
+      "B33": "1.199445844",
+      "C33": "0.57420457800000002",
+      "D33": "0.77522272699999994"
+    },
+    {
+      "A34": "33",
+      "B34": "1.2766752240000001",
+      "C34": "0.56420128700000005",
+      "D34": "0.77141536399999999"
+    },
+    {
+      "A35": "34",
+      "B35": "1.2437943220000001",
+      "C35": "0.57647614199999997",
+      "D35": "0.777407968"
+    },
+    {
+      "A36": "35",
+      "B36": "1.2877229450000001",
+      "C36": "0.58257673899999995",
+      "D36": "0.78243402299999998"
+    },
+    {
+      "A37": "36",
+      "B37": "1.266624331",
+      "C37": "0.572960209",
+      "D37": "0.77336106900000001"
+    },
+    {
+      "A38": "37",
+      "B38": "1.3673369879999999",
+      "C38": "0.56632885399999999",
+      "D38": "0.77106236299999997"
+    },
+    {
+      "A39": "38",
+      "B39": "1.358130217",
+      "C39": "0.55126528100000005",
+      "D39": "0.76036308600000002"
+    },
+    {
+      "A40": "39",
+      "B40": "1.371870041",
+      "C40": "0.56290897699999998",
+      "D40": "0.76583459399999998"
+    },
+    {
+      "A41": "40",
+      "B41": "1.3897007699999999",
+      "C41": "0.56178705299999998",
+      "D41": "0.76491006900000003"
+    }
+  ],
+  "Supplementary Table 1": [
+    {
+      "A1": "Models/GPUhs",
+      "B1": "650M",
+      "C1": "35M"
+    },
+    {
+      "A2": "6.9444444444444447E-4",
+      "B2": "522.4",
+      "C2": "238.2"
+    },
+    {
+      "A3": "4.2361111111111113E-2",
+      "B3": "514.29999999999995",
+      "C3": "299.10000000000002"
+    },
+    {
+      "A4": "4.5138888888888888E-2",
+      "B4": "508.4",
+      "C4": "238.1"
+    },
+    {
+      "A5": "4.8611111111111112E-2",
+      "B5": "496.9",
+      "C5": "240.4"
+    },
+    {
+      "A6": "Binary",
+      "B6": "355.8",
+      "C6": "130.9"
+    }
+  ],
+  "Supplementary Table 2": [
+    {
+      "B1": "Chai-1",
+      "D1": "AlphaFold3"
+    },
+    {
+      "B2": "ipTM",
+      "C2": "pTM",
+      "D2": "ipTM",
+      "E2": "pTM"
+    },
+    {
+      "A3": "Mouse",
+      "B3": "0.15",
+      "C3": "0.43",
+      "D3": "0.17",
+      "E3": "0.37"
+    },
+    {
+      "A4": "Fly",
+      "B4": "0.13",
+      "C4": "0.43",
+      "D4": "0.09",
+      "E4": "0.36"
+    },
+    {
+      "A5": "Worm",
+      "B5": "0.11",
+      "C5": "0.24",
+      "D5": "0.11",
+      "E5": "0.21"
+    },
+    {
+      "A6": "Yeast",
+      "B6": "0.74",
+      "C6": "0.78",
+      "D6": "0.66",
+      "E6": "0.65"
+    },
+    {
+      "A7": "E. coli",
+      "B7": "0.79",
+      "C7": "0.88",
+      "D7": "0.82",
+      "E7": "0.78"
+    }
+  ],
+  "Supplementary Table 3": [
+    {
+      "C1": "Increasing (P33993 - P33992)",
+      "E1": "Decreasing (Q16595-Q9H1K1)"
+    },
+    {
+      "C2": "ipTM",
+      "D2": "pTM",
+      "E2": "ipTM",
+      "F2": "pTM"
+    },
+    {
+      "A3": "Chai-1",
+      "B3": "Canonical",
+      "C3": "0.64",
+      "D3": "0.74",
+      "E3": "0.12",
+      "F3": "0.45"
+    },
+    {
+      "B4": "Mutant",
+      "C4": "0.65",
+      "D4": "0.74",
+      "E4": "0.15",
+      "F4": "0.46"
+    },
+    {
+      "A5": "AlphaFold3",
+      "B5": "Canonical",
+      "C5": "0.62",
+      "D5": "0.68",
+      "E5": "0.15",
+      "F5": "0.38"
+    },
+    {
+      "B6": "Mutant",
+      "C6": "0.48",
+      "D6": "0.6",
+      "E6": "0.15",
+      "F6": "0.38"
+    }
+  ],
+  "Supplementary Table 4": [
+    {
+      "B1": "Protein features",
+      "C1": "Model architecture",
+      "D1": "Source",
+      "E1": "Tool"
+    },
+    {
+      "A2": "TUnA",
+      "B2": "Pre-trained PLM Embeddings",
+      "C2": "Spectral-normalized Neural Gaussian Process",
+      "D2": "Young, S. et al. 2024",
+      "E2": "https://github.com/Wang-lab-UCSD/TUnA"
+    },
+    {
+      "A3": "TT3D",
+      "B3": "Pre-trained Bepler & Berger PLM Embeddings and one-hot encoding of the Foldseek 3Di",
+      "C3": "Convolutional neural network",
+      "D3": "Sledzieski, S. et al. 2023",
+      "E3": "https://github.com/samsledje/D-SCRIPT "
+    },
+    {
+      "A4": "D-SCRIPT",
+      "B4": "Pre-trained Bepler & Berger PLM embeddings",
+      "C4": "Convolutional neural network",
+      "D4": "Sledzieski, S. et al. 2021",
+      "E4": "http://dscript.csail.mit.edu"
+    },
+    {
+      "A5": "Topsy-Turvy",
+      "B5": "Pre-trained Bepler & Berger PLM embeddings and network structure",
+      "C5": "Intergrade D-SCRIPT and a network-based model GLIDE",
+      "D5": "Singh, R. et al. 2022",
+      "E5": "https://topsyturvy.csail.mit.edu"
+    },
+    {
+      "A6": "PIPR",
+      "B6": "Pre-trained amino acid embeddings using Skip-Gram model",
+      "C6": "Siamese residual RCNN",
+      "D6": "Chen, M. et al. 2019",
+      "E6": "https://github.com/muhaochen/seq_ppi"
+    },
+    {
+      "A7": "DeepPPI",
+      "B7": "One hot encoding amino acids",
+      "C7": "Fully connected model architecture",
+      "D7": "Richoux et al., 2019",
+      "E7": "https://gitlab.univ-nantes.fr/richoux-f/DeepPPI"
+    },
+    {
+      "A8": "STEP",
+      "B8": "Pre-trained PLM ProtBERT embeddings",
+      "C8": "Siamese neural network",
+      "D8": "Madan, S. et al. 2022",
+      "E8": "https://github.com/SCAI-BIO/STEP/tree/main"
+    },
+    {
+      "A9": "LSTM-PHV",
+      "B9": "word2vec",
+      "C9": "LSTM and Siamese model",
+      "D9": "Tsukiyama et al.2021",
+      "E9": "http://kurata35.bio.kyutech.ac.jp/LSTM-PHV."
+    },
+    {
+      "A10": "InterSPPI",
+      "B10": "doc2vec",
+      "C10": "Random Forest classifier ",
+      "D10": "Yang et al. 2020",
+      "E10": "http://zzdlab.com/InterSPPI/"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "at_utc": "2026-10-05T20:53:13.135599+00:00",
+  "document": {
+    "path": "improvment-proposal-v6.md",
+    "bytes": 43539,
+    "sha256": "90cb690e15f7eb285df8a02de3105f08071d96a34faaca80ed0f57793c10cab8"
+  },
+  "scope": "Research-only proposal and CPU source/validation diagnostics; no production preparation, clustering, training, or test inference.",
+  "prior_inputs_unchanged": true,
+  "local_links_exist": true,
+  "files": [
+    {
+      "path": "literature/string-v12.5-review-v6/9606.protein.physical.links.full.v12.0.txt.gz",
+      "bytes": 11766797,
+      "sha256": "b28f494f58e1ace634ef1fe41734ada5be37f151e3168bb9658bc6ca1dd1a954"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/9606.protein.physical.links.full.v12.5.txt.gz",
+      "bytes": 9617451,
+      "sha256": "6182e76caef148027491cf7f50c7cc41114aa4326d8a7d4fb31681099ff3eaea"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/9606.protein.sequences.v12.0.fa.gz",
+      "bytes": 6760990,
+      "sha256": "afe5ebc2d26777a930f947f350c01dc4261d6fa29dd3f217b22fc0225e066ee1"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/9606.protein.sequences.v12.5.fa.gz",
+      "bytes": 6760990,
+      "sha256": "afe5ebc2d26777a930f947f350c01dc4261d6fa29dd3f217b22fc0225e066ee1"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/audit_degree_baseline.py",
+      "bytes": 2189,
+      "sha256": "554bf2d4e793c05f3ebf932bc2b55fff0ad300d95dd5185be42b1f681eb47736"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/audit_sources.py",
+      "bytes": 9340,
+      "sha256": "24e3ecf87385001ca57f3507e5f5fd336d81759d404e0aea86becadd2434c30c"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/code-sources.json",
+      "bytes": 1975,
+      "sha256": "2773d26f415d4bc9e23e3f7a473bb76c74abf20f20aa9665fd9acae83a622928"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/compute-reference.json",
+      "bytes": 780,
+      "sha256": "9b99e2653c51d4c9e535002362ea07b029dbee28617f531068d74a84a584139e"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/dscript-author-thesis.pdf",
+      "bytes": 25661595,
+      "sha256": "8b81e5e927d1351df95668e79766524f9829e1b107b4b2e948ee0f948393b3ef"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/dscript-human-test-20210812.tsv",
+      "bytes": 4639800,
+      "sha256": "a82beacbcf4d11b631b1309477a9dd9acc33e15917c88b4211ab3af8c038ad44"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/dscript-human-test-history.json",
+      "bytes": 13233,
+      "sha256": "440e3456215b0f10165619e6290494cd1e7047c9b4cc28a8ebeb83398431ed32"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/dscript-human-test.tsv",
+      "bytes": 2319900,
+      "sha256": "19498f9761e9cb5645799f9e4e36f18b3abe7d2b015bf50b4a78d53283fe8f53"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/dscript-human-train.tsv",
+      "bytes": 18558848,
+      "sha256": "a51caf0b590decf96911b09d1e2cc6afc9a9d669d4e67d8bb3c2f1c94e16cd0b"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/dscript-paper.bioc.xml",
+      "bytes": 184745,
+      "sha256": "875f5181f364f885a6458096a7b42d2c85c577f7dabe13c002079795ae8c4fb3"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/dscript-paper.txt",
+      "bytes": 85141,
+      "sha256": "9c63d8e983ab709b126271a6b0cfa7b1bdcebf43a106b175abf3352d8f75bd8f"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/dscript-tree-2021.json",
+      "bytes": 72650,
+      "sha256": "e4969bf9a27ab4046835ba68454ed58e95d44f2dc7c6ec48f99b433a4a891662"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/dscript-validation-history.json",
+      "bytes": 373,
+      "sha256": "1bbd20b38c90857e37a2a8a1250b24c7ad5e7f9dd1816a4204a9c829625e10c0"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/independent-degree-verification.json",
+      "bytes": 224,
+      "sha256": "0d3e7814222ff53900676bd5d6c35eac64cb057670c8d5275c7ce6864fdd86bd"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/legacy-degree-baseline.json",
+      "bytes": 1072,
+      "sha256": "682c7f5c8701e1cb462ffcd8f98fdcd963805bd2dc30d5e94e418e3a3358ada1"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/legacy-protein-universe-audit.json",
+      "bytes": 266,
+      "sha256": "9f364356d0d7778d43a926ebdba8494daaee2258457f1003394b7eebc9d9e22f"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/legacy-source-audit.json",
+      "bytes": 5520,
+      "sha256": "0030cc814045bf3a67ac080933356291908e5c2de2c9c73b2ac3a0e318f28055"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/local-inputs.json",
+      "bytes": 1477,
+      "sha256": "e6b6198bc551759aee891d5370acc2cbbcc3205351cece6da45e32aa797bcc8a"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/native-train_mlm.py",
+      "bytes": 20534,
+      "sha256": "5ae68c4acb324824e7dbeb1e84198919f1da73d73bc70f965a140612adb5a917"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/source-audit.log",
+      "bytes": 4728,
+      "sha256": "3f65a6a7fe338740a874964516a83051f733e5bf2e7029d59ef5260c2fa3aa5e"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/source-downloads.json",
+      "bytes": 2721,
+      "sha256": "fb375511f985609f3c0d1ec39a558faf912b0398a72117d63658da860bcfb6f5"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/string-background-universe.json",
+      "bytes": 368,
+      "sha256": "f4942c3680abd8d5b4de7c12a902542a374dfcf2920120876f292cc6d19dd0c1"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/string-downloads.json",
+      "bytes": 1701,
+      "sha256": "b10d534e2ac005bf593b22bc7b7dd103ebba42e2eafbbc021d48a30a9895a0ba"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/string-file-heads.json",
+      "bytes": 2006,
+      "sha256": "24c224c0bb2325427d982b0240afb5f2880bd5df2cce592113a4b41a2c35b1d4"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/string-source-audit.json",
+      "bytes": 2419,
+      "sha256": "6460486fe621274d83786789149d998c699167834ca1c6bf48c672436efaf5e1"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/string-source-audit.log",
+      "bytes": 2426,
+      "sha256": "7581f41d45e24fe7e04fe2d5b02b146357d8300ee7e31fe4b7c7713bd25f86ad"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/tuna-data_utils.py",
+      "bytes": 5210,
+      "sha256": "1a67654c2add35bcb62f092d3977d89189f32c1d647f2338f8b8f08c5b706cf5"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/tuna-paper.bioc.xml",
+      "bytes": 57323,
+      "sha256": "63aa2af40320ae7b2ad878e3a5465cf57b36c22155041cc48f8e5af26d3a341d"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/tuna-paper.txt",
+      "bytes": 33765,
+      "sha256": "4acb9b1129e48b6dabee7ccfe7703278a1c5e3a2fd8af58af969a360f752f1d0"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/tuna-process_xspecies.py",
+      "bytes": 2071,
+      "sha256": "13b906f55053a61ba9c69971a9eb94a972b7b1e40899371b1cae95ed2fcadf22"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/tuna-seed47-config.yaml",
+      "bytes": 1653,
+      "sha256": "bdd30ca50773da99a799125ed193c3f1ec89cc2eb3d50beb27d0b4ec2a98c487"
+    },
+    {
+      "path": "literature/string-v12.5-review-v6/tuna-seed47-utils.py",
+      "bytes": 14271,
+      "sha256": "0eb9cf12ff01cec8696db4375ebda871a0ec17a2bb4c1cb715514b77788efe9a"
+    }
+  ]
+}

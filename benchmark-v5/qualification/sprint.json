@@ -1,0 +1,17 @@
+{
+  "qualification": "qualification/sprint-inherited-native.json",
+  "qualification_sha256": "c7760197a2523f02efd49e31a4a0ee9ba1d0a295fc186fbb60c982534097b960",
+  "source_scorer_manifest": "../iPIN-OpenPPI/benchmark/sprint/runs/original-v1/scorer_bundle/SCORER_FREEZE.json",
+  "source_scorer_manifest_sha256": "d87959a9210e6809a9ca8c6002944af3a57d0c70a17c6c59ba3a80d2bebf1282",
+  "same_verified_sif": "699112807a7829b1b4268fa83d358a206d62de5a5a0f7c7d199beb18f9f47f09",
+  "retained_native_short_self_hsp": {
+    "protein": "p10937",
+    "length": 12,
+    "partition": "TRAIN",
+    "reason": "Native print_HSP adds full self-HSP for every protein without minimum-length condition",
+    "source": "../iPIN-OpenPPI/benchmark/sprint/upstream/Src/compute_HSPs/PtoHSP.h",
+    "source_sha256": "994e6a617c839cc12f29a229d5790449a203749a28565116971dd15a97d863a3",
+    "native_algorithm_modified": false,
+    "parser_adjustment": "Accept n<20 only for a verified full-length self-HSP; preserve all records and within-block order"
+  }
+}

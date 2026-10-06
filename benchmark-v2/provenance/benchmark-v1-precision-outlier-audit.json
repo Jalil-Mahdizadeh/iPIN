@@ -1,0 +1,63 @@
+{
+  "checked_at_utc": "2026-09-29T09:43:06.505063+00:00",
+  "scope": "Post-hoc numerical diagnostic: five largest native BF16-versus-earlier-FP32 probability differences; selected without labels",
+  "primary_benchmark_unchanged": true,
+  "fp32_agreement_checks_passed": true,
+  "records": [
+    {
+      "row_id": 14719,
+      "tokens": 445,
+      "old_eager_fp32_logit": 0.0370111688971519,
+      "new_efficient_fp32_logit": 0.03703412413597107,
+      "new_bf16_singleton_logit": 0.4921875,
+      "benchmark_bf16_logit": 0.490234375,
+      "benchmark_vs_old_probability_difference": 0.11090990740697859,
+      "fp32_efficient_vs_old_eager_logit_difference": 2.2955238819170887e-05,
+      "bf16_singleton_vs_benchmark_logit_difference": 0.001953125
+    },
+    {
+      "row_id": 29282,
+      "tokens": 2643,
+      "old_eager_fp32_logit": 0.0385255552828311,
+      "new_efficient_fp32_logit": 0.038536831736564636,
+      "new_bf16_singleton_logit": 0.4765625,
+      "benchmark_bf16_logit": 0.4765625,
+      "benchmark_vs_old_probability_difference": 0.10730563357900513,
+      "fp32_efficient_vs_old_eager_logit_difference": 1.127645373353442e-05,
+      "bf16_singleton_vs_benchmark_logit_difference": 0.0
+    },
+    {
+      "row_id": 8932,
+      "tokens": 2542,
+      "old_eager_fp32_logit": -0.0299862343817949,
+      "new_efficient_fp32_logit": -0.029988078400492668,
+      "new_bf16_singleton_logit": -0.39453125,
+      "benchmark_bf16_logit": -0.39453125,
+      "benchmark_vs_old_probability_difference": 0.0898770310111347,
+      "fp32_efficient_vs_old_eager_logit_difference": 1.8440186977698725e-06,
+      "bf16_singleton_vs_benchmark_logit_difference": 0.0
+    },
+    {
+      "row_id": 32435,
+      "tokens": 1116,
+      "old_eager_fp32_logit": 0.112827219069004,
+      "new_efficient_fp32_logit": 0.11283206194639206,
+      "new_bf16_singleton_logit": -0.1728515625,
+      "benchmark_bf16_logit": -0.1728515625,
+      "benchmark_vs_old_probability_difference": 0.07128253956897268,
+      "fp32_efficient_vs_old_eager_logit_difference": 4.8428773880559994e-06,
+      "bf16_singleton_vs_benchmark_logit_difference": 0.0
+    },
+    {
+      "row_id": 29272,
+      "tokens": 574,
+      "old_eager_fp32_logit": 0.4726309776306152,
+      "new_efficient_fp32_logit": 0.47263088822364807,
+      "new_bf16_singleton_logit": 0.2099609375,
+      "benchmark_bf16_logit": 0.2099609375,
+      "benchmark_vs_old_probability_difference": 0.063708033361351,
+      "fp32_efficient_vs_old_eager_logit_difference": 8.940696710757479e-08,
+      "bf16_singleton_vs_benchmark_logit_difference": 0.0
+    }
+  ]
+}

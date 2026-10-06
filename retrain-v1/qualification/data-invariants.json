@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "all_five_epochs_cover_each_training_row_once": true,
+  "epoch_permutation_hashes": [
+    "39cb54e5aa4e019ce3da9073d7797865f6516c0a46f7d92f4e5f95e09efe4649",
+    "31e06b6c5eb6d9eab122c90560d56df4e999acd2f2797df7a8fb8ad3ebde90f0",
+    "a3715c043effb8266b923c392c6f969a20c06d41a4fe4c197d55f7c28730801e",
+    "8839fe9d17c65477d16c228375faba700a592f75432c679ccbcd059c927e334d",
+    "52b7be3c0331d5a1ee43524c84437158022036dbfc74eed0846c063efe7fad2b"
+  ],
+  "label_alignment": true,
+  "mask_determinism": true,
+  "same_chain_masks_in_both_orientations": true,
+  "full_sequences": true,
+  "uneven_microbatch_gradient_relative_l2": 1.1780549418675875e-07,
+  "gradient_test_scope": "small ESM architecture, FP32 math attention; same loss and batching code"
+}

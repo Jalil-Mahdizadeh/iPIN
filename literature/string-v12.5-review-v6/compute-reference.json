@@ -1,0 +1,18 @@
+{
+  "source": "retrain-v5/runs/esm2-native-ilp-seed2/events.jsonl",
+  "sampled_updates": 4552,
+  "short_update_max_tokens": 1603,
+  "short_sampled_updates": 2406,
+  "short_update_seconds_mean": 1.8955985302806577,
+  "short_update_seconds_median": 1.797287941986724,
+  "short_update_seconds_min": 1.2198413910227828,
+  "short_update_seconds_max": 5.254322512017097,
+  "overall_sampled_update_seconds_mean": 4.009372838148697,
+  "validation_count": 16,
+  "validation_seconds_mean": 1491.8900311553775,
+  "first_update": "2026-10-02T20:39:57.017575+00:00",
+  "last_update": "2026-10-05T06:35:44.187681+00:00",
+  "physical_pairs_per_update": 64,
+  "gpus": 4,
+  "note": "Historical sampled timings on different HIPPIE/ILP data; not a forecast or length-representative STRING pilot."
+}

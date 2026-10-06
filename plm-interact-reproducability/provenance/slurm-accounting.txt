@@ -1,0 +1,5 @@
+JobID|State|ExitCode|Start|End|Elapsed|AllocTRES|NodeList
+3110591|COMPLETED|0:0|2026-09-28T19:50:23|2026-09-28T20:16:20|00:25:57|billing=8,cpu=576,gres/gpu:nvidia_gh200_120gb=8,gres/gpu=8,mem=360G,node=2|n[173,506]
+3110591.batch|COMPLETED|0:0|2026-09-28T19:50:23|2026-09-28T20:16:20|00:25:57|cpu=72,gres/gpu:nvidia_gh200_120gb=4,gres/gpu=4,mem=180G,node=1|n173
+3110591.extern|COMPLETED|0:0|2026-09-28T19:50:23|2026-09-28T20:16:20|00:25:57|billing=8,cpu=576,gres/gpu:nvidia_gh200_120gb=8,gres/gpu=8,mem=360G,node=2|n[173,506]
+3110591.0|COMPLETED|0:0|2026-09-28T19:50:27|2026-09-28T20:16:20|00:25:53|cpu=144,gres/gpu:nvidia_gh200_120gb=8,gres/gpu=8,mem=360G,node=2|n[173,506]

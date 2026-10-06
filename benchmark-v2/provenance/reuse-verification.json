@@ -1,0 +1,112 @@
+{
+  "checked_at_utc": "2026-09-30T08:44:17.585014+00:00",
+  "source_artifact_manifest_sha256": "c4ac73ab6372679050d02712fb82cda6cce1e7048df8065947ffa4181f77ce86",
+  "verified_old_files": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/config.json",
+      "sha256": "b8d11794751161286166a9b28742b2297c16cba00b69040f46d5f26913ae4d4f"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/completed.json",
+      "sha256": "62a0711e25912f01d4310d271d2b61065c2a46eb40cd3e458ec742f5c1b36b15"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/PROTOCOL.md",
+      "sha256": "67e48954a24f07240d9dfdde46bac39aa590fc0e8c70810dc07a115f4882f60f"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/provenance/selection.json",
+      "sha256": "4d3a9eaff1bd473c8888abde1b3dc3eeb26acb0d6775d793c1101ff75f9d432e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/provenance/qualification.json",
+      "sha256": "f6ee25500b10837ea6cea9880faceda0922e29de03e49d4542728e17ec83706e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/provenance/input-audit.json",
+      "sha256": "9bc04d221317f70de84a34d8c4fc939816e3dae3d5117f99908ddba5e34ad68d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/provenance/environment.json",
+      "sha256": "fe7417a2049aa3c8d4f6d7b3df5eadc69f78477e10a1cba21dd9845ea70ef339"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/provenance/precision-outlier-audit.json",
+      "sha256": "770b771d165a0cd0ac8d9e6755d5b06cd4113883ac4cea76a182f9cc1e344ff1"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/scripts/common.py",
+      "sha256": "66c5e386530fdc7cc5df7868ed62ab0ac86b4e6b8d70958589098bb4e4a6ba09"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/scripts/infer.py",
+      "sha256": "64faa8ce4bb5b99c3fe620a6b15e40eb26d777ace4fdbeed1bf501b6b8fbbc35"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/scripts/frozen_data.py",
+      "sha256": "004b2c4652f1671b81e594f158d73fbf2ae3882b4a88d8b9a8c6bd24eac7ce09"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/scripts/frozen_model.py",
+      "sha256": "7d7dfa0c86947bf47a9fe7ec4a20ee31a85693eea2ee3e26c125de7a5285fc9a"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/data/test.npy",
+      "sha256": "84b0b7ae068b2beba19103f8bed3e1c4feae117a0a6ffd271798537868a51c0d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/data/val.npy",
+      "sha256": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/data/tokens.npy",
+      "sha256": "bf82ee25023396948d4d96417cc396de2668afcba8e15f824883caa5e7a599af"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/data/offsets.npy",
+      "sha256": "61a71e45a1ca7137af32e148510f7c5de01d30c10704451d1a91dd3e3f464a1d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/data/prepared-manifest.json",
+      "sha256": "c184eb9dd87ce4a082a3fe580f8d220eecd129e75bdbaeb6ea66e3b322d02405"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/checkpoints/native-bernett.bin",
+      "sha256": "207f1bf02e9bebc393fe510a98c0f9af04039d0a9258047ac107c6d24221c7e2"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/results/native-bernett-test.npz",
+      "sha256": "52a2b76dc9b30cfec5ba5fe414ca2abd4f9f41777415a205bc19ca2f5ba2d0cb"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/results/native-bernett-val.npz",
+      "sha256": "0154f6f960373e3fc673c4120dfad987d8cb001b39657c42e4d33f44c97f9a5a"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/checkpoints/reference-seed2-update-000004000.pt",
+      "sha256": "85d64e2745060b2c917b5c85af0a0e6ec0010391e4350c26a98560592fe3c675"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/results/reference-seed2-test.npz",
+      "sha256": "3a745003a2b4adadf7043a871cd9c3aaf77a88607fe7da6abcec0968dffdb870"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/predictions/reference-seed2-selected-validation.npz",
+      "sha256": "163ab3436e7fe5a08223efd2cbfff4bc4be5aee4b93dcd2ef75037fa97ecb046"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/checkpoints/symmetric-seed2-update-000007000.pt",
+      "sha256": "bb99dbdee7af654d362e4738c1fb9da98ab232cead4eacb52a439c10aeadf7c0"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/results/symmetric-seed2-test.npz",
+      "sha256": "aa229856365165d30697bc427bd079267e3115ae0cd1f1ec3dea7802b46eb19c"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v1/predictions/symmetric-seed2-selected-validation.npz",
+      "sha256": "4ad6014ca54d9a351b8684b0ba171363ff08e28098c2c7880d4ff3ef9f0c13f7"
+    }
+  ],
+  "v1_selected_weights_unchanged": true,
+  "reason_for_reuse": "Identical complete input arrays, checkpoint identities, SIF, frozen model/data forward code, BF16/TF32 settings, pooling, shard count and batch settings; prediction coverage rechecked during qualification and analysis"
+}

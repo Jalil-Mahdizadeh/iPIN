@@ -1,0 +1,73 @@
+{
+  "at_utc": "2026-10-05T20:22:12.478080+00:00",
+  "started_at_utc": "2026-10-05T19:41:00.491600+00:00",
+  "phase": "complete",
+  "complete": true,
+  "models": {
+    "ipin-esm2": {
+      "done": true,
+      "finished_shards": 4,
+      "required_shards": 4
+    },
+    "ipin-esmc": {
+      "done": true,
+      "finished_shards": 4,
+      "required_shards": 4
+    },
+    "native-human": {
+      "done": true,
+      "finished_shards": 4,
+      "required_shards": 4
+    },
+    "native-plm": {
+      "done": true,
+      "finished_shards": 4,
+      "required_shards": 4
+    },
+    "tuna-human": {
+      "done": true
+    },
+    "tuna": {
+      "done": true
+    },
+    "xpair-bernett": {
+      "done": true,
+      "finished_shards": 4,
+      "required_shards": 4
+    },
+    "xpair-default": {
+      "done": true,
+      "finished_shards": 4,
+      "required_shards": 4
+    },
+    "rapppid": {
+      "done": true
+    },
+    "sprint": {
+      "done": true
+    },
+    "dscript": {
+      "done": true,
+      "finished_shards": 4,
+      "required_shards": 4
+    }
+  },
+  "report": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/REPORT.md",
+  "figure_models": [
+    "ipin-esm2",
+    "ipin-esmc",
+    "native-human",
+    "native-plm",
+    "tuna-human",
+    "tuna",
+    "xpair-bernett",
+    "xpair-default",
+    "rapppid",
+    "sprint",
+    "dscript",
+    "v2-capped",
+    "v2-clean-bce"
+  ],
+  "figure_models_count": 13,
+  "figure_extension": "provenance/historical-figure-extension.json"
+}

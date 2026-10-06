@@ -1,0 +1,41 @@
+{
+  "additional_retained": 0,
+  "adoption_completed": false,
+  "baseline": {
+    "discarded": 287829,
+    "feasible": true,
+    "retained": 433253,
+    "train": 350382,
+    "train_fraction": 0.8087237710991038,
+    "val": 82871,
+    "val_fraction": 0.19127622890089624
+  },
+  "best": {
+    "discarded": 287829,
+    "feasible": true,
+    "retained": 433253,
+    "train": 350382,
+    "train_fraction": 0.8087237710991038,
+    "val": 82871,
+    "val_fraction": 0.19127622890089624
+  },
+  "best_retained_upper_bound_from_either_attempt": 637657.8385087491,
+  "combined_relative_gap": 0.47179093626298985,
+  "completed_utc": "2026-10-02T19:36:46.896045+00:00",
+  "configured_seconds": 1800,
+  "contract": "e7dfb998724e9abde245812d5b04914b952c9f759a898b869acfea2b94f77593",
+  "highs_run_status": "HighsStatus.kWarning",
+  "meets_adoption_threshold": false,
+  "model_training_started": false,
+  "nodes": 73792,
+  "one_attempt_completed": true,
+  "original_completed_dataset_hashes_preserved": true,
+  "raw_solver_relative_gap": 0.47179093626298985,
+  "relative_retention_increase": 0.0,
+  "returned_solution_feasible": true,
+  "solver_dual_bound": -637657.8385087491,
+  "solver_observed_feasible_incumbent": true,
+  "solver_seconds": 1800.076893474994,
+  "solver_status": "kInterrupt",
+  "stop_reason": "30_minute_budget"
+}

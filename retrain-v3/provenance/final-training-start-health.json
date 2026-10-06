@@ -1,0 +1,11 @@
+{
+  "job": "3206610",
+  "resumed_update": 26,
+  "resume_fallback_failures": [],
+  "gpu_count": 4,
+  "automatic_benchmark": false,
+  "test_inference_started": false,
+  "latest_logged_update": 30,
+  "mean_bce": 0.6917831152677536,
+  "gpu_peak_allocated_gib": 22.15096616744995
+}

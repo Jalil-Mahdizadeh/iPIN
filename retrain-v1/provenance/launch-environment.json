@@ -1,0 +1,50 @@
+{
+  "observed_at_utc": "2026-09-28T19:49:30.052550+00:00",
+  "commands": {
+    "slurm_account": {
+      "argv": [
+        "sacctmgr",
+        "show",
+        "assoc",
+        "where",
+        "user=jalil",
+        "account=naiss2025-3-10-gpu",
+        "format=Account,User,Partition,GrpTRESRunMins,MaxWall,MaxJobs",
+        "-P"
+      ],
+      "returncode": 0,
+      "stdout": "Account|User|Partition|GrpTRESRunMins|MaxWall|MaxJobs\nnaiss2025-3-10-gpu|jalil|gpu|||\n",
+      "stderr": ""
+    },
+    "gpu": {
+      "argv": [
+        "nvidia-smi",
+        "--query-gpu=name,memory.total,driver_version",
+        "--format=csv"
+      ],
+      "returncode": 0,
+      "stdout": "name, memory.total [MiB], driver_version\nNVIDIA GH200 120GB, 97871 MiB, 580.159.04\n",
+      "stderr": ""
+    },
+    "container": {
+      "argv": [
+        "apptainer",
+        "version"
+      ],
+      "returncode": 0,
+      "stdout": "1.5.3-1.el9\n",
+      "stderr": ""
+    },
+    "partition": {
+      "argv": [
+        "scontrol",
+        "show",
+        "partition",
+        "gpu"
+      ],
+      "returncode": 0,
+      "stdout": "PartitionName=gpu\n   AllowGroups=ALL AllowAccounts=ALL AllowQos=ALL\n   AllocNodes=ALL Default=NO QoS=N/A\n   DefaultTime=02:00:00 DisableRootJobs=YES ExclusiveUser=NO ExclusiveTopo=NO GraceTime=0 Hidden=NO\n   MaxNodes=UNLIMITED MaxTime=3-00:00:00 MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED\n   Nodes=n[21-212,405-594]\n   PriorityJobFactor=1 PriorityTier=1 RootOnly=NO ReqResv=NO OverSubscribe=NO\n   OverTimeLimit=NONE PreemptMode=REQUEUE\n   State=UP TotalCPUs=110016 TotalNodes=382 SelectTypeParameters=NONE\n   JobDefaults=DefCpuPerGPU=72\n   DefMemPerCPU=1459 MaxMemPerNode=UNLIMITED\n   TRES=cpu=110016,mem=185596228M,node=382,billing=1766,gres/gpu=1528,gres/gpu:nvidia_gh200_120gb=1528\n   TRESBillingWeights=CPU=0.013888888888888888,Mem=0.009745002593274616G,GRES/gpu:nvidia_gh200_120gb=1.0\n\n",
+      "stderr": ""
+    }
+  }
+}

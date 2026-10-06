@@ -1,0 +1,158 @@
+{
+  "at_utc": "2026-10-05T12:28:42.071336+00:00",
+  "species": [
+    "mouse",
+    "fly",
+    "worm",
+    "yeast",
+    "ecoli"
+  ],
+  "tests": {
+    "mouse": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "unique_sequences": 17250,
+      "unique_unordered_sequence_pairs": 54966,
+      "duplicate_pair_rows": 34,
+      "conflicting_label_pairs": 1,
+      "rows_in_conflicting_label_pairs": 2,
+      "self_sequence_pairs": 3,
+      "max_protein_residues": 800,
+      "max_combined_residues": 1592
+    },
+    "fly": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "unique_sequences": 11306,
+      "unique_unordered_sequence_pairs": 54924,
+      "duplicate_pair_rows": 76,
+      "conflicting_label_pairs": 1,
+      "rows_in_conflicting_label_pairs": 2,
+      "self_sequence_pairs": 12,
+      "max_protein_residues": 800,
+      "max_combined_residues": 1598
+    },
+    "worm": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "unique_sequences": 18077,
+      "unique_unordered_sequence_pairs": 54961,
+      "duplicate_pair_rows": 39,
+      "conflicting_label_pairs": 1,
+      "rows_in_conflicting_label_pairs": 2,
+      "self_sequence_pairs": 5,
+      "max_protein_residues": 800,
+      "max_combined_residues": 1588
+    },
+    "yeast": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "unique_sequences": 5591,
+      "unique_unordered_sequence_pairs": 54945,
+      "duplicate_pair_rows": 55,
+      "conflicting_label_pairs": 5,
+      "rows_in_conflicting_label_pairs": 10,
+      "self_sequence_pairs": 5,
+      "max_protein_residues": 800,
+      "max_combined_residues": 1583
+    },
+    "ecoli": {
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "unique_sequences": 4412,
+      "unique_unordered_sequence_pairs": 18229,
+      "duplicate_pair_rows": 3771,
+      "conflicting_label_pairs": 1,
+      "rows_in_conflicting_label_pairs": 2,
+      "self_sequence_pairs": 6,
+      "max_protein_residues": 799,
+      "max_combined_residues": 1551
+    }
+  },
+  "source_files": {
+    "mouse": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/mouse.ppi.qrels.seq.test.csv",
+      "bytes": 43035414,
+      "sha256": "b78cf5f216896721dfddedb3ba1a4405cec87f3da501056df24024988c1a1658"
+    },
+    "fly": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/fly.ppi.qrels.seq.test.csv",
+      "bytes": 42359686,
+      "sha256": "a7599e8bae38984e243ef3278d645b7ff90aef21646649f4ea36603af4bd3706"
+    },
+    "worm": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/worm.ppi.qrels.seq.test.csv",
+      "bytes": 38758522,
+      "sha256": "4d90948073100cf844d31893df6b4dd9bdc50cf9799a6b555e745c859cf5780d"
+    },
+    "yeast": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/yeast.ppi.qrels.seq.test.csv",
+      "bytes": 37772124,
+      "sha256": "11854f594ac14fcf8dfc73a94fbfefc5e05fc59e38f9d75ac273ca2a68243357"
+    },
+    "ecoli": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/ecoli.ppi.qrels.seq.test.csv",
+      "bytes": 12526313,
+      "sha256": "54b5de269e285c928516ac081bd7e8ef99f330ac09021ae898bc651e81b2a4c0"
+    }
+  },
+  "source_catalog": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/provenance/hf-tree-cross_species_benchmarking.json",
+    "bytes": 3336,
+    "sha256": "74018f18413073bc9d962dfad53c25fb7448e305197eb06f1499d7613b2c0030"
+  },
+  "source_dataset_metadata": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/provenance/hf-cross_species_benchmarking.json",
+    "bytes": 1610,
+    "sha256": "2cac5f22d38e7cefa3da0c40283b181527bf4f985607834682df325c35fb51aa"
+  },
+  "union_pairs": 238025,
+  "proteins": 56634,
+  "residues": 19472345,
+  "source_rows": 242000,
+  "union_label_column": "Dummy zeros; per-species labels remain authoritative, including conflicts.",
+  "cache_candidates": {
+    "tuna": {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/tuna/data/sequences.json",
+        "bytes": 12312031,
+        "sha256": "bc7a91661ea05cbfdcf3551b9a4d18c149ac077549ebbcf0be7e7ef5d94ace77"
+      },
+      "matches": 291,
+      "missing": 56343
+    },
+    "xpair": {
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/data/sequences.json",
+        "bytes": 14492406,
+        "sha256": "258e5144efc210a27205ee08fdb107a3930ceca108b65bd581f94c956a7325c6"
+      },
+      "matches": 163,
+      "missing": 56471
+    }
+  },
+  "data_files": {
+    "data/ecoli.npy": "a67bdac5af8a3e8730aa77f0517dab0fb647f61353708ea915d005f53dc52f49",
+    "data/fly.npy": "13593729e183012893e5030dd199f6e021d561a1d4860b81e601054278654878",
+    "data/ipin-esm2-selected-dev.npz": "0e065ace2bcdc2733ee853d4b7bf4d9922ad217dbe62d0083670479e2034b91c",
+    "data/ipin-esmc-selected-dev.npz": "bd57aa218dcdfce048f37a65ac05cd8e7f2633e6d17f28bdfc10a180d3c32a33",
+    "data/mouse.npy": "197c4ef4dcac3c6f3f0e7ee684c5d431c57eeb9c7ab803d52529ec30cceb7d51",
+    "data/offsets.npy": "11db5ddcb94b13c84d08e25a417e32c85c04262acd6084b2bc7988ae1e013467",
+    "data/pair-mapping.npz": "435328ce29b334dcc18ef2d21d39aa5d12473391c47869849edab6224d756fe2",
+    "data/sequences.json": "67484561e8e664d3cd773632516f5666bd039314d5000b1087e47c8e59b97d11",
+    "data/test-sequences.fasta": "4c81e2c77b17b58d9e966e1daeab030933fb7871a6697bfe7f68a81125ef96ff",
+    "data/tokens.npy": "3852ecdeb35b854c3576a911cc3c5b86ac96b49e1aead58360994003392249df",
+    "data/tuna-cache-indices.npy": "b78da90bb72d8ed6e1ea1cceccc51fa9af84715e1ae1a09cdd694373ae430c3c",
+    "data/union.npy": "7bafd108eee680375f02523aa6d0ce65a4f6f0b690606ddaec0c141e46fbf614",
+    "data/worm.npy": "042b1d9740f8b0deeec8663280f20b3edbac6121a4e222939b40855ba789a652",
+    "data/xpair-cache-indices.npy": "952090b803dda433fcb6bf6d803788b145e1ca353cf7b52af718e659b2ddbb0c",
+    "data/yeast.npy": "cdf305fe455bc2ee8c1d6b8282d7fccc30f53f472b46019fba35579dd0e011ac",
+    "data/native-human-qualification.npz": "59dacfe67d2b14d0c995cf076c6184690593c09b2b3adf5a3514430131cb0241"
+  },
+  "selection_sha256": "8aa3745777f7a3cec2d406c961da9a927aa88277407496ada6bd7e89a1974eda"
+}

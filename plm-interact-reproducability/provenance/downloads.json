@@ -1,0 +1,206 @@
+{
+  "retrieved_utc": "2026-09-28T17:34:35.330191+00:00",
+  "no_retraining": true,
+  "files": [
+    {
+      "repository": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+      "revision": "d995319a6e53510bfbb4eff6ab0292fedf2ec4db",
+      "source_path": "README.md",
+      "local_path": "checkpoints/PLM-interact-650M-Leakage-Free-Dataset/README.md",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Leakage-Free-Dataset/resolve/d995319a6e53510bfbb4eff6ab0292fedf2ec4db/README.md",
+      "bytes": 253,
+      "sha256": "3ba091b6a16c5beb9a0aad2aa6017baa871e21e6777524c596dca05280ab8171",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+      "revision": "d995319a6e53510bfbb4eff6ab0292fedf2ec4db",
+      "source_path": "pytorch_model.bin",
+      "local_path": "checkpoints/PLM-interact-650M-Leakage-Free-Dataset/pytorch_model.bin",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Leakage-Free-Dataset/resolve/d995319a6e53510bfbb4eff6ab0292fedf2ec4db/pytorch_model.bin",
+      "bytes": 2609670405,
+      "sha256": "207f1bf02e9bebc393fe510a98c0f9af04039d0a9258047ac107c6d24221c7e2",
+      "publisher_lfs_sha256": "207f1bf02e9bebc393fe510a98c0f9af04039d0a9258047ac107c6d24221c7e2"
+    },
+    {
+      "repository": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+      "revision": "d995319a6e53510bfbb4eff6ab0292fedf2ec4db",
+      "source_path": "special_tokens_map.json",
+      "local_path": "checkpoints/PLM-interact-650M-Leakage-Free-Dataset/special_tokens_map.json",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Leakage-Free-Dataset/resolve/d995319a6e53510bfbb4eff6ab0292fedf2ec4db/special_tokens_map.json",
+      "bytes": 125,
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+      "revision": "d995319a6e53510bfbb4eff6ab0292fedf2ec4db",
+      "source_path": "tokenizer_config.json",
+      "local_path": "checkpoints/PLM-interact-650M-Leakage-Free-Dataset/tokenizer_config.json",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Leakage-Free-Dataset/resolve/d995319a6e53510bfbb4eff6ab0292fedf2ec4db/tokenizer_config.json",
+      "bytes": 1126,
+      "sha256": "7d849f80e0f87303b55f370737e3475390c61ae55f4326db1de310711bd6c7e6",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/PLM-interact-650M-Leakage-Free-Dataset",
+      "revision": "d995319a6e53510bfbb4eff6ab0292fedf2ec4db",
+      "source_path": "vocab.txt",
+      "local_path": "checkpoints/PLM-interact-650M-Leakage-Free-Dataset/vocab.txt",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Leakage-Free-Dataset/resolve/d995319a6e53510bfbb4eff6ab0292fedf2ec4db/vocab.txt",
+      "bytes": 93,
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/PLM-interact-650M-Mutation",
+      "revision": "cc97135bc142101376f4a884d7cd29a411816470",
+      "source_path": "README.md",
+      "local_path": "checkpoints/PLM-interact-650M-Mutation/README.md",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Mutation/resolve/cc97135bc142101376f4a884d7cd29a411816470/README.md",
+      "bytes": 90,
+      "sha256": "21d425d2049a3a44aa2113517a7d314a22d81efa5c223543fddd47baaf6d4aa1",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/PLM-interact-650M-Mutation",
+      "revision": "cc97135bc142101376f4a884d7cd29a411816470",
+      "source_path": "pytorch_model.bin",
+      "local_path": "checkpoints/PLM-interact-650M-Mutation/pytorch_model.bin",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Mutation/resolve/cc97135bc142101376f4a884d7cd29a411816470/pytorch_model.bin",
+      "bytes": 2609675141,
+      "sha256": "8a2116369bb706a5cde10029db1ee3b0e841d739b8aefe72d215c5a0b9d9931b",
+      "publisher_lfs_sha256": "8a2116369bb706a5cde10029db1ee3b0e841d739b8aefe72d215c5a0b9d9931b"
+    },
+    {
+      "repository": "danliu1226/PLM-interact-650M-Mutation",
+      "revision": "cc97135bc142101376f4a884d7cd29a411816470",
+      "source_path": "special_tokens_map.json",
+      "local_path": "checkpoints/PLM-interact-650M-Mutation/special_tokens_map.json",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Mutation/resolve/cc97135bc142101376f4a884d7cd29a411816470/special_tokens_map.json",
+      "bytes": 125,
+      "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/PLM-interact-650M-Mutation",
+      "revision": "cc97135bc142101376f4a884d7cd29a411816470",
+      "source_path": "tokenizer_config.json",
+      "local_path": "checkpoints/PLM-interact-650M-Mutation/tokenizer_config.json",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Mutation/resolve/cc97135bc142101376f4a884d7cd29a411816470/tokenizer_config.json",
+      "bytes": 1126,
+      "sha256": "7d849f80e0f87303b55f370737e3475390c61ae55f4326db1de310711bd6c7e6",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/PLM-interact-650M-Mutation",
+      "revision": "cc97135bc142101376f4a884d7cd29a411816470",
+      "source_path": "vocab.txt",
+      "local_path": "checkpoints/PLM-interact-650M-Mutation/vocab.txt",
+      "url": "https://huggingface.co/danliu1226/PLM-interact-650M-Mutation/resolve/cc97135bc142101376f4a884d7cd29a411816470/vocab.txt",
+      "bytes": 93,
+      "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/Bernett_benchmarking",
+      "revision": "5d2ad03baa165c27df32a2eadf066462a2a83073",
+      "source_path": "README.md",
+      "local_path": "data/Bernett_benchmarking/README.md",
+      "url": "https://huggingface.co/datasets/danliu1226/Bernett_benchmarking/resolve/5d2ad03baa165c27df32a2eadf066462a2a83073/README.md",
+      "bytes": 825,
+      "sha256": "809ee890e7d6466daa3cc51083b029728c4dfc6a9dc9d906487b4e041086a746",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/Bernett_benchmarking",
+      "revision": "5d2ad03baa165c27df32a2eadf066462a2a83073",
+      "source_path": "pairs_uniprot_seqs_test.csv",
+      "local_path": "data/Bernett_benchmarking/pairs_uniprot_seqs_test.csv",
+      "url": "https://huggingface.co/datasets/danliu1226/Bernett_benchmarking/resolve/5d2ad03baa165c27df32a2eadf066462a2a83073/pairs_uniprot_seqs_test.csv",
+      "bytes": 57001326,
+      "sha256": "89f164f9bd391fd3a2cb400cb3b402d87b73af8142143c58cac56d55d3d7abcc",
+      "publisher_lfs_sha256": "89f164f9bd391fd3a2cb400cb3b402d87b73af8142143c58cac56d55d3d7abcc"
+    },
+    {
+      "repository": "danliu1226/Mutation_effect_dataset",
+      "revision": "26dc7d78f419d9443993e5d75e39d99bce7840e8",
+      "source_path": "README.md",
+      "local_path": "data/Mutation_effect_dataset/README.md",
+      "url": "https://huggingface.co/datasets/danliu1226/Mutation_effect_dataset/resolve/26dc7d78f419d9443993e5d75e39d99bce7840e8/README.md",
+      "bytes": 240,
+      "sha256": "7615a061be0c1884beac4d863bac760b3588c5451589fb2e37b104265dda2d88",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/Mutation_effect_dataset",
+      "revision": "26dc7d78f419d9443993e5d75e39d99bce7840e8",
+      "source_path": "test_mutation_data.csv",
+      "local_path": "data/Mutation_effect_dataset/test_mutation_data.csv",
+      "url": "https://huggingface.co/datasets/danliu1226/Mutation_effect_dataset/resolve/26dc7d78f419d9443993e5d75e39d99bce7840e8/test_mutation_data.csv",
+      "bytes": 2408115,
+      "sha256": "5f541179ea754be365ebdd23bc2ec09685bb7b7ffa27e55a9d144d10181fe169",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/cross_species_benchmarking",
+      "revision": "19dbed25184466fda5341b5ba70c2560ade1bf85",
+      "source_path": "README.md",
+      "local_path": "data/cross_species_benchmarking/README.md",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/README.md",
+      "bytes": 356,
+      "sha256": "d06c83d6476603d4119776233d832a3dd956de0362dafebc02c2fb68d6dac91b",
+      "publisher_lfs_sha256": null
+    },
+    {
+      "repository": "danliu1226/cross_species_benchmarking",
+      "revision": "19dbed25184466fda5341b5ba70c2560ade1bf85",
+      "source_path": "test/ecoli.ppi.qrels.seq.test.csv",
+      "local_path": "data/cross_species_benchmarking/test/ecoli.ppi.qrels.seq.test.csv",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/ecoli.ppi.qrels.seq.test.csv",
+      "bytes": 12526313,
+      "sha256": "54b5de269e285c928516ac081bd7e8ef99f330ac09021ae898bc651e81b2a4c0",
+      "publisher_lfs_sha256": "54b5de269e285c928516ac081bd7e8ef99f330ac09021ae898bc651e81b2a4c0"
+    },
+    {
+      "repository": "danliu1226/cross_species_benchmarking",
+      "revision": "19dbed25184466fda5341b5ba70c2560ade1bf85",
+      "source_path": "test/fly.ppi.qrels.seq.test.csv",
+      "local_path": "data/cross_species_benchmarking/test/fly.ppi.qrels.seq.test.csv",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/fly.ppi.qrels.seq.test.csv",
+      "bytes": 42359686,
+      "sha256": "a7599e8bae38984e243ef3278d645b7ff90aef21646649f4ea36603af4bd3706",
+      "publisher_lfs_sha256": "a7599e8bae38984e243ef3278d645b7ff90aef21646649f4ea36603af4bd3706"
+    },
+    {
+      "repository": "danliu1226/cross_species_benchmarking",
+      "revision": "19dbed25184466fda5341b5ba70c2560ade1bf85",
+      "source_path": "test/mouse.ppi.qrels.seq.test.csv",
+      "local_path": "data/cross_species_benchmarking/test/mouse.ppi.qrels.seq.test.csv",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/mouse.ppi.qrels.seq.test.csv",
+      "bytes": 43035414,
+      "sha256": "b78cf5f216896721dfddedb3ba1a4405cec87f3da501056df24024988c1a1658",
+      "publisher_lfs_sha256": "b78cf5f216896721dfddedb3ba1a4405cec87f3da501056df24024988c1a1658"
+    },
+    {
+      "repository": "danliu1226/cross_species_benchmarking",
+      "revision": "19dbed25184466fda5341b5ba70c2560ade1bf85",
+      "source_path": "test/worm.ppi.qrels.seq.test.csv",
+      "local_path": "data/cross_species_benchmarking/test/worm.ppi.qrels.seq.test.csv",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/worm.ppi.qrels.seq.test.csv",
+      "bytes": 38758522,
+      "sha256": "4d90948073100cf844d31893df6b4dd9bdc50cf9799a6b555e745c859cf5780d",
+      "publisher_lfs_sha256": "4d90948073100cf844d31893df6b4dd9bdc50cf9799a6b555e745c859cf5780d"
+    },
+    {
+      "repository": "danliu1226/cross_species_benchmarking",
+      "revision": "19dbed25184466fda5341b5ba70c2560ade1bf85",
+      "source_path": "test/yeast.ppi.qrels.seq.test.csv",
+      "local_path": "data/cross_species_benchmarking/test/yeast.ppi.qrels.seq.test.csv",
+      "url": "https://huggingface.co/datasets/danliu1226/cross_species_benchmarking/resolve/19dbed25184466fda5341b5ba70c2560ade1bf85/test/yeast.ppi.qrels.seq.test.csv",
+      "bytes": 37772124,
+      "sha256": "11854f594ac14fcf8dfc73a94fbfefc5e05fc59e38f9d75ac273ca2a68243357",
+      "publisher_lfs_sha256": "11854f594ac14fcf8dfc73a94fbfefc5e05fc59e38f9d75ac273ca2a68243357"
+    }
+  ]
+}

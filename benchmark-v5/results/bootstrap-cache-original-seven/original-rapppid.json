@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "rapppid",
+    "test": "original",
+    "replicates": 1000,
+    "seed": 20260929,
+    "rows": "402d3c928752fc3d91b1f17005cd68297d6df34a14fa6ae47e26e79a002f1188",
+    "scores": "88b3bfe0136954a411787dfeb1aacc1fb5c093945a4266e91897df964c834f6c",
+    "analysis_code": "117ff451095bb3cf5025a57bc9b24f3a99c2bd9f62444b9c65a13dc66aa0d054"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/bootstrap-cache/original-rapppid.npz",
+    "bytes": 14561,
+    "sha256": "c18330b0a13c11c8f905c6ea66fa989d10d7c5d9855b43474cf284378a70bfbf"
+  }
+}

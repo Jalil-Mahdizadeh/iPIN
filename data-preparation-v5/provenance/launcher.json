@@ -1,0 +1,9 @@
+{
+  "host": "n505",
+  "log": "logs/pipeline.log",
+  "pid": 713422,
+  "resume_command": "python data-preparation-v5/scripts/launch.py",
+  "slurm_job_id": "3266861",
+  "started_utc": "2026-10-02T13:49:40.883473+00:00",
+  "status": "pipeline-state.json"
+}

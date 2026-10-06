@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "controlled_configurations": 6,
+  "unchanged_schedule_updates": 6000,
+  "common_selection_window_end": 5000,
+  "equal_checkpoint_opportunities": 5,
+  "all_three_preserved_controls_verified": true,
+  "optimizer_differences_only_readout": true,
+  "readout_completion_required": true,
+  "wrong_window_rejected": true,
+  "synthetic_equal_predictions_do_not_promote": true,
+  "scope": "Real stopped controls and all six configs; synthetic end-to-end readout decision plumbing.",
+  "source_sha256": {
+    "scripts/selection_window.py": "b1f80d006e0b919c7d5bfbd5235301be01e80d695e68c408fdc5e00eb1a84fd5",
+    "scripts/record_adaptation_decision.py": "f43dacc575295692eacabf4f9e861c2990a69c6be2437e5d15e19d80c43bd1bd",
+    "scripts/compare_readout.py": "f4a4e1ea030ad2bb7a9a08066be8cbdd4c8488cb3133318449464d7bc6430a1f",
+    "scripts/qualify_readout_protocol.py": "23c9b49292bbe82e72705cc291e6098be92c6e68165739016b74d6ee919d6c21",
+    "configs/readout-stage.json": "2da097772bfd4d16b5f70a430213c320d470826b1c8ab263e258a6bd83ba5fe0",
+    "decisions/adaptation-early.json": "3bf8d7266b7888aa1df89167112e16978aa393840a2bb8b7ecea1e072f8329e1",
+    "configs/clean-cls-mlp-lr2e-5-fold0-seed2.json": "472837acd7ca4d2600d2208e87e33a712472aeaab838f2cb668756958c168b1c",
+    "configs/clean-cls-mlp-lr2e-5-fold1-seed2.json": "d395912b77f20224020f55598864a9a8525cda3da04913b8a5387737523af983",
+    "configs/clean-cls-mlp-lr2e-5-fold2-seed2.json": "e6e0179568c40e1f2643150b6a38fa54a14c59ba19dc1421fe4dcb2e53705ae2",
+    "configs/clean-residue-mean-lr2e-5-fold0-seed2.json": "ba5fde56b2b23234aa13405a58adf61153f1b24682fbbef6f0e1452dbbced5c8",
+    "configs/clean-residue-mean-lr2e-5-fold1-seed2.json": "891c63a0fd440a3e8cec68e3cac63f80beb6706015f3c2025afa8033bd40903d",
+    "configs/clean-residue-mean-lr2e-5-fold2-seed2.json": "befe2ddc4f4af58a52b33aea1309c91e97909ea730f8b75ce9655c4aef1188a3"
+  }
+}

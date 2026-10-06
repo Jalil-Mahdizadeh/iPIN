@@ -1,0 +1,421 @@
+{
+  "at_utc": "2026-10-05T22:01:35.634220+00:00",
+  "complete": true,
+  "config": {
+    "seed": 47,
+    "threads": 16,
+    "smoothing": 1.0,
+    "search": {
+      "sensitivity": 7.5,
+      "evalue": 1e-05,
+      "min_identity": 0.25,
+      "min_coverage": 0.5,
+      "max_prefilter": 1000,
+      "top_k": 5,
+      "gpu": 0,
+      "weight": "fident * sqrt(qcov * tcov)",
+      "no_hit": "mean TRAIN protein log ratio"
+    },
+    "regressor": {
+      "loss": "squared_error",
+      "max_iter": 300,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "l2_regularization": 10.0,
+      "max_bins": 255,
+      "early_stopping": false,
+      "random_state": 47
+    },
+    "features": "log length; 20 AA fractions; 400 ordered dipeptide fractions; unknown fraction",
+    "bootstrap": {
+      "replicates": 500,
+      "seed": 20261006,
+      "unit": "protein endpoints"
+    }
+  },
+  "datasets": {
+    "human-validation": {
+      "rows": 52725,
+      "positives": 4794,
+      "negatives": 47931,
+      "prevalence": 0.09092460881934566,
+      "models": {
+        "exact-degree": {
+          "ap": 0.8360138743588236,
+          "auroc": 0.963460067714674,
+          "unique_scores": 21033,
+          "minimum": -10.751456616187443,
+          "maximum": 4.3211638892701805
+        },
+        "homology-degree": {
+          "ap": 0.8360138743588236,
+          "auroc": 0.963460067714674,
+          "unique_scores": 21033,
+          "minimum": -10.751456616187443,
+          "maximum": 4.3211638892701805
+        },
+        "sequence-propensity": {
+          "ap": 0.6517631669176844,
+          "auroc": 0.917540878689935,
+          "unique_scores": 52722,
+          "minimum": -8.556542786159925,
+          "maximum": 0.22526813483294097
+        },
+        "interolog": {
+          "ap": 0.401344156971162,
+          "auroc": 0.6735086467947724,
+          "unique_scores": 999,
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      },
+      "coverage": {
+        "unique_query_proteins": 15351,
+        "query_proteins_with_homolog": 15351,
+        "pairs_with_exact_train_endpoint": 52725,
+        "pairs_with_both_homologs": 52725,
+        "pairs_with_at_least_one_homolog": 52725,
+        "positive_pairs_with_interolog_support": 1667,
+        "negative_pairs_with_interolog_support": 41
+      }
+    },
+    "mouse": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "prevalence": 0.09090909090909091,
+      "models": {
+        "exact-degree": {
+          "ap": 0.15898075537249912,
+          "auroc": 0.5366741140000001,
+          "unique_scores": 377,
+          "minimum": -5.271288694160118,
+          "maximum": 3.255239815397034
+        },
+        "homology-degree": {
+          "ap": 0.6674886119955261,
+          "auroc": 0.9203453100000001,
+          "unique_scores": 50567,
+          "minimum": -9.319374133000306,
+          "maximum": 3.7776749528970672
+        },
+        "sequence-propensity": {
+          "ap": 0.4853976708251526,
+          "auroc": 0.836986218,
+          "unique_scores": 54964,
+          "minimum": -8.324679179941178,
+          "maximum": 0.32539812130962353
+        },
+        "interolog": {
+          "ap": 0.7224246964512324,
+          "auroc": 0.8484294880000001,
+          "unique_scores": 3129,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "native-human": {
+          "ap": 0.908412121613771,
+          "auroc": 0.9829699979999998,
+          "unique_scores": 54375,
+          "minimum": -11.294849395751953,
+          "maximum": 9.508479118347168
+        },
+        "tuna-human": {
+          "ap": 0.8831988813816839,
+          "auroc": 0.977400784,
+          "unique_scores": 54906,
+          "minimum": -15.563828468322754,
+          "maximum": 8.119729042053223
+        }
+      },
+      "coverage": {
+        "unique_query_proteins": 17250,
+        "query_proteins_with_homolog": 15785,
+        "pairs_with_exact_train_endpoint": 2689,
+        "pairs_with_both_homologs": 48476,
+        "pairs_with_at_least_one_homolog": 54763,
+        "positive_pairs_with_interolog_support": 3487,
+        "negative_pairs_with_interolog_support": 51
+      }
+    },
+    "fly": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "prevalence": 0.09090909090909091,
+      "models": {
+        "exact-degree": {
+          "ap": 0.09108967445450583,
+          "auroc": 0.501090328,
+          "unique_scores": 3,
+          "minimum": -3.044522437723423,
+          "maximum": 0.0
+        },
+        "homology-degree": {
+          "ap": 0.7223426394278644,
+          "auroc": 0.9359505100000001,
+          "unique_scores": 23408,
+          "minimum": -9.076107916435323,
+          "maximum": 3.7065790312133373
+        },
+        "sequence-propensity": {
+          "ap": 0.426248864832136,
+          "auroc": 0.8203471739999999,
+          "unique_scores": 54924,
+          "minimum": -8.003547141283596,
+          "maximum": 0.38738169713197934
+        },
+        "interolog": {
+          "ap": 0.6318700538383701,
+          "auroc": 0.800874142,
+          "unique_scores": 3063,
+          "minimum": 0.0,
+          "maximum": 0.8257882997648661
+        },
+        "native-human": {
+          "ap": 0.9167559419559641,
+          "auroc": 0.98339589,
+          "unique_scores": 54537,
+          "minimum": -11.263481616973877,
+          "maximum": 9.501873970031738
+        },
+        "tuna-human": {
+          "ap": 0.8550181449190795,
+          "auroc": 0.970950582,
+          "unique_scores": 54861,
+          "minimum": -14.774628639221191,
+          "maximum": 7.8344292640686035
+        }
+      },
+      "coverage": {
+        "unique_query_proteins": 11306,
+        "query_proteins_with_homolog": 5782,
+        "pairs_with_exact_train_endpoint": 142,
+        "pairs_with_both_homologs": 19773,
+        "pairs_with_at_least_one_homolog": 45157,
+        "positive_pairs_with_interolog_support": 3013,
+        "negative_pairs_with_interolog_support": 50
+      }
+    },
+    "worm": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "prevalence": 0.09090909090909091,
+      "models": {
+        "exact-degree": {
+          "ap": 0.09090909090909091,
+          "auroc": 0.5,
+          "unique_scores": 1,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "homology-degree": {
+          "ap": 0.6818247737572332,
+          "auroc": 0.903337618,
+          "unique_scores": 13905,
+          "minimum": -8.867568333206442,
+          "maximum": 4.076406861535434
+        },
+        "sequence-propensity": {
+          "ap": 0.48205173244703453,
+          "auroc": 0.8428976499999999,
+          "unique_scores": 54961,
+          "minimum": -7.800441833684066,
+          "maximum": 0.30988589561428653
+        },
+        "interolog": {
+          "ap": 0.5419097447030616,
+          "auroc": 0.750189688,
+          "unique_scores": 2539,
+          "minimum": 0.0,
+          "maximum": 0.8165277498417485
+        },
+        "native-human": {
+          "ap": 0.8908832296816632,
+          "auroc": 0.975250198,
+          "unique_scores": 54600,
+          "minimum": -11.255032539367676,
+          "maximum": 9.504017353057861
+        },
+        "tuna-human": {
+          "ap": 0.8368484305028039,
+          "auroc": 0.960233962,
+          "unique_scores": 54889,
+          "minimum": -14.662236213684082,
+          "maximum": 8.339930534362793
+        }
+      },
+      "coverage": {
+        "unique_query_proteins": 18077,
+        "query_proteins_with_homolog": 5388,
+        "pairs_with_exact_train_endpoint": 0,
+        "pairs_with_both_homologs": 10071,
+        "pairs_with_at_least_one_homolog": 34120,
+        "positive_pairs_with_interolog_support": 2505,
+        "negative_pairs_with_interolog_support": 39
+      }
+    },
+    "yeast": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "prevalence": 0.09090909090909091,
+      "models": {
+        "exact-degree": {
+          "ap": 0.09090909090909091,
+          "auroc": 0.5,
+          "unique_scores": 1,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "homology-degree": {
+          "ap": 0.4521459145872472,
+          "auroc": 0.7914483880000001,
+          "unique_scores": 9470,
+          "minimum": -8.813289762469037,
+          "maximum": 3.481554011799422
+        },
+        "sequence-propensity": {
+          "ap": 0.35990148184014875,
+          "auroc": 0.7960129680000001,
+          "unique_scores": 54942,
+          "minimum": -7.95017446287478,
+          "maximum": -0.5175082641982304
+        },
+        "interolog": {
+          "ap": 0.3387157157428573,
+          "auroc": 0.638647656,
+          "unique_scores": 1422,
+          "minimum": 0.0,
+          "maximum": 0.690562
+        },
+        "native-human": {
+          "ap": 0.7147095360032375,
+          "auroc": 0.9143984339999999,
+          "unique_scores": 54623,
+          "minimum": -11.247010231018066,
+          "maximum": 9.522801399230957
+        },
+        "tuna-human": {
+          "ap": 0.6441457509269812,
+          "auroc": 0.8992044579999999,
+          "unique_scores": 54900,
+          "minimum": -12.671257972717285,
+          "maximum": 8.67768669128418
+        }
+      },
+      "coverage": {
+        "unique_query_proteins": 5591,
+        "query_proteins_with_homolog": 1895,
+        "pairs_with_exact_train_endpoint": 0,
+        "pairs_with_both_homologs": 8111,
+        "pairs_with_at_least_one_homolog": 32309,
+        "positive_pairs_with_interolog_support": 1391,
+        "negative_pairs_with_interolog_support": 50
+      }
+    },
+    "ecoli": {
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "prevalence": 0.09090909090909091,
+      "models": {
+        "exact-degree": {
+          "ap": 0.09090909090909091,
+          "auroc": 0.5,
+          "unique_scores": 1,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "homology-degree": {
+          "ap": 0.4637887566598543,
+          "auroc": 0.7442890625,
+          "unique_scores": 1283,
+          "minimum": -8.763428073953845,
+          "maximum": 3.6180051145272794
+        },
+        "sequence-propensity": {
+          "ap": 0.534176169519313,
+          "auroc": 0.7879492875,
+          "unique_scores": 18229,
+          "minimum": -7.672890283333961,
+          "maximum": -0.6790722932806867
+        },
+        "interolog": {
+          "ap": 0.2140909090909091,
+          "auroc": 0.56775,
+          "unique_scores": 272,
+          "minimum": 0.0,
+          "maximum": 0.3633551509070181
+        },
+        "native-human": {
+          "ap": 0.7328962829098185,
+          "auroc": 0.9066258125,
+          "unique_scores": 18222,
+          "minimum": -11.246706485748291,
+          "maximum": 9.505672931671143
+        },
+        "tuna-human": {
+          "ap": 0.6730014709038996,
+          "auroc": 0.8774775625,
+          "unique_scores": 18219,
+          "minimum": -10.674373626708984,
+          "maximum": 7.240675926208496
+        }
+      },
+      "coverage": {
+        "unique_query_proteins": 4412,
+        "query_proteins_with_homolog": 665,
+        "pairs_with_exact_train_endpoint": 0,
+        "pairs_with_both_homologs": 888,
+        "pairs_with_at_least_one_homolog": 6617,
+        "positive_pairs_with_interolog_support": 271,
+        "negative_pairs_with_interolog_support": 0
+      }
+    }
+  },
+  "species_macro": {
+    "exact-degree": {
+      "ap": 0.10455954051085554,
+      "auroc": 0.5075528884
+    },
+    "homology-degree": {
+      "ap": 0.5975181392855451,
+      "auroc": 0.8590741777000002
+    },
+    "sequence-propensity": {
+      "ap": 0.457555183892757,
+      "auroc": 0.8168386594999999
+    },
+    "interolog": {
+      "ap": 0.48980222396528605,
+      "auroc": 0.7211781947999999
+    },
+    "native-human": {
+      "ap": 0.8327314224328909,
+      "auroc": 0.9525280664999999
+    },
+    "tuna-human": {
+      "ap": 0.7784425357268897,
+      "auroc": 0.9370534697
+    }
+  },
+  "checks": {
+    "all_frozen_prediction_hashes_verified": true,
+    "all_independent_metrics_agree": true,
+    "prior_human_degree_results_reproduced": true,
+    "prior_neural_species_metrics_reproduced": true,
+    "no_gpu_computation": true,
+    "no_configuration_search": true
+  },
+  "resource_use": {
+    "wall_seconds": 83.96118996595033,
+    "user_seconds": 83.134437,
+    "system_seconds": 1.33007,
+    "max_rss_kib": 258048,
+    "at_utc": "2026-10-05T22:01:35.634247+00:00"
+  },
+  "neural_human_validation": "unavailable; no inference rerun"
+}

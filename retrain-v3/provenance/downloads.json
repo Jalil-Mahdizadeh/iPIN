@@ -1,0 +1,82 @@
+[
+  {
+    "repository": "facebook/esm2_t33_650M_UR50D",
+    "revision": "08e4846e537177426273712802403f7ba8261b6c",
+    "file": "config.json",
+    "local_path": "assets/esm2/config.json",
+    "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/config.json",
+    "bytes": 724,
+    "sha256": "539095c22efc52a09d6147074ba4ca119f76a890df5901213b2b55f7d2f96b2b",
+    "publisher_lfs_sha256": null
+  },
+  {
+    "repository": "facebook/esm2_t33_650M_UR50D",
+    "revision": "08e4846e537177426273712802403f7ba8261b6c",
+    "file": "model.safetensors",
+    "local_path": "assets/esm2/model.safetensors",
+    "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/model.safetensors",
+    "bytes": 2609506392,
+    "sha256": "a08adabb949fa67ad3c14b509d04fd60368b35007b0095e3358f81200c4f4db0",
+    "publisher_lfs_sha256": "a08adabb949fa67ad3c14b509d04fd60368b35007b0095e3358f81200c4f4db0"
+  },
+  {
+    "repository": "facebook/esm2_t33_650M_UR50D",
+    "revision": "08e4846e537177426273712802403f7ba8261b6c",
+    "file": "special_tokens_map.json",
+    "local_path": "assets/esm2/special_tokens_map.json",
+    "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/special_tokens_map.json",
+    "bytes": 125,
+    "sha256": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+    "publisher_lfs_sha256": null
+  },
+  {
+    "repository": "facebook/esm2_t33_650M_UR50D",
+    "revision": "08e4846e537177426273712802403f7ba8261b6c",
+    "file": "tokenizer_config.json",
+    "local_path": "assets/esm2/tokenizer_config.json",
+    "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/tokenizer_config.json",
+    "bytes": 95,
+    "sha256": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad",
+    "publisher_lfs_sha256": null
+  },
+  {
+    "repository": "facebook/esm2_t33_650M_UR50D",
+    "revision": "08e4846e537177426273712802403f7ba8261b6c",
+    "file": "vocab.txt",
+    "local_path": "assets/esm2/vocab.txt",
+    "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/vocab.txt",
+    "bytes": 93,
+    "sha256": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03",
+    "publisher_lfs_sha256": null
+  },
+  {
+    "repository": "facebook/esm2_t33_650M_UR50D",
+    "revision": "08e4846e537177426273712802403f7ba8261b6c",
+    "file": "README.md",
+    "local_path": "assets/esm2/README.md",
+    "url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/resolve/08e4846e537177426273712802403f7ba8261b6c/README.md",
+    "bytes": 1705,
+    "sha256": "462a2f24724e19c6be0efab926315c294a863c9a9770e2c8b3d859b2d81a07de",
+    "publisher_lfs_sha256": null
+  },
+  {
+    "repository": "danliu1226/Bernett_benchmarking",
+    "revision": "5d2ad03baa165c27df32a2eadf066462a2a83073",
+    "file": "pairs_uniprot_seqs_train.csv",
+    "local_path": "data/raw/pairs_uniprot_seqs_train.csv",
+    "url": "https://huggingface.co/datasets/danliu1226/Bernett_benchmarking/resolve/5d2ad03baa165c27df32a2eadf066462a2a83073/pairs_uniprot_seqs_train.csv",
+    "bytes": 270001117,
+    "sha256": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a",
+    "publisher_lfs_sha256": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a"
+  },
+  {
+    "repository": "danliu1226/Bernett_benchmarking",
+    "revision": "5d2ad03baa165c27df32a2eadf066462a2a83073",
+    "file": "pairs_uniprot_seqs_val.csv",
+    "local_path": "data/raw/pairs_uniprot_seqs_val.csv",
+    "url": "https://huggingface.co/datasets/danliu1226/Bernett_benchmarking/resolve/5d2ad03baa165c27df32a2eadf066462a2a83073/pairs_uniprot_seqs_val.csv",
+    "bytes": 72666471,
+    "sha256": "0df36cbb69047e21ba01051641eede26a6e054e9c3e827c3bbe62e391854d9f2",
+    "publisher_lfs_sha256": "0df36cbb69047e21ba01051641eede26a6e054e9c3e827c3bbe62e391854d9f2"
+  }
+]

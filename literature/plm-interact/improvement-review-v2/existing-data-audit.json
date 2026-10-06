@@ -1,0 +1,404 @@
+{
+  "created_utc": "2026-09-29T10:22:51.801977+00:00",
+  "purpose": "Exploratory description of already observed data and predictions; no new holdout claim",
+  "splits": {
+    "train": {
+      "rows": 163085,
+      "positives": 81550,
+      "unique_sequences": 4285,
+      "self_pairs": 0,
+      "combined_residues": {
+        "p0": 117.0,
+        "p25": 981.0,
+        "p50": 1386.0,
+        "p75": 1999.0,
+        "p95": 3508.0,
+        "p99": 5446.320000000007,
+        "p100": 16319.0
+      },
+      "by_label": {
+        "0": {
+          "rows": 81535,
+          "combined_residues": {
+            "p0": 128.0,
+            "p25": 992.0,
+            "p50": 1392.0,
+            "p75": 1994.0,
+            "p95": 3454.0,
+            "p99": 5408.6600000000035,
+            "p100": 15029.0
+          },
+          "over_2193_fraction": 0.1964309805604955
+        },
+        "1": {
+          "rows": 81550,
+          "combined_residues": {
+            "p0": 117.0,
+            "p25": 972.0,
+            "p50": 1379.0,
+            "p75": 2006.0,
+            "p95": 3560.0,
+            "p99": 5481.0,
+            "p100": 16319.0
+          },
+          "over_2193_fraction": 0.20365419987737585
+        }
+      },
+      "over_2193_rows": 32624,
+      "over_2193_fraction": 0.20004292240242819,
+      "degree_positive_negative_spearman": 0.9718138371901182,
+      "positive_only_proteins": 88,
+      "negative_only_proteins": 43,
+      "top_1pct_proteins_endpoint_fraction": 0.09840880522426955,
+      "degree_note": "Each pair contributes two endpoints, including self-pairs. Within-split label descriptions are not available deployment features."
+    },
+    "val": {
+      "rows": 59258,
+      "positives": 29628,
+      "unique_sequences": 3710,
+      "self_pairs": 0,
+      "combined_residues": {
+        "p0": 151.0,
+        "p25": 688.0,
+        "p50": 969.0,
+        "p75": 1376.0,
+        "p95": 2657.149999999994,
+        "p99": 4457.860000000001,
+        "p100": 39388.0
+      },
+      "by_label": {
+        "0": {
+          "rows": 29630,
+          "combined_residues": {
+            "p0": 151.0,
+            "p25": 695.0,
+            "p50": 981.0,
+            "p75": 1391.0,
+            "p95": 2648.5499999999993,
+            "p99": 4413.129999999997,
+            "p100": 38358.0
+          },
+          "over_2193_fraction": 0.08376645291933851
+        },
+        "1": {
+          "rows": 29628,
+          "combined_residues": {
+            "p0": 159.0,
+            "p25": 681.0,
+            "p50": 957.0,
+            "p75": 1361.0,
+            "p95": 2668.2999999999956,
+            "p99": 4500.919999999998,
+            "p100": 39388.0
+          },
+          "over_2193_fraction": 0.08275955177534765
+        }
+      },
+      "over_2193_rows": 4934,
+      "over_2193_fraction": 0.08326301933916096,
+      "degree_positive_negative_spearman": 0.941621524082464,
+      "positive_only_proteins": 189,
+      "negative_only_proteins": 83,
+      "top_1pct_proteins_endpoint_fraction": 0.09673799318235513,
+      "degree_note": "Each pair contributes two endpoints, including self-pairs. Within-split label descriptions are not available deployment features."
+    },
+    "test": {
+      "rows": 52048,
+      "positives": 26024,
+      "unique_sequences": 3022,
+      "self_pairs": 0,
+      "combined_residues": {
+        "p0": 114.0,
+        "p25": 617.0,
+        "p50": 917.0,
+        "p75": 1338.0,
+        "p95": 2427.0,
+        "p99": 3566.529999999999,
+        "p100": 7423.0
+      },
+      "by_label": {
+        "0": {
+          "rows": 26024,
+          "combined_residues": {
+            "p0": 132.0,
+            "p25": 637.0,
+            "p50": 920.0,
+            "p75": 1340.0,
+            "p95": 2427.0,
+            "p99": 3516.7700000000004,
+            "p100": 7423.0
+          },
+          "over_2193_fraction": 0.06551644635720873
+        },
+        "1": {
+          "rows": 26024,
+          "combined_residues": {
+            "p0": 114.0,
+            "p25": 595.0,
+            "p50": 914.0,
+            "p75": 1336.0,
+            "p95": 2425.8499999999985,
+            "p99": 3646.0,
+            "p100": 7319.0
+          },
+          "over_2193_fraction": 0.06482477712880418
+        }
+      },
+      "over_2193_rows": 3392,
+      "over_2193_fraction": 0.06517061174300645,
+      "degree_positive_negative_spearman": 0.9424953145821391,
+      "positive_only_proteins": 153,
+      "negative_only_proteins": 74,
+      "top_1pct_proteins_endpoint_fraction": 0.09207846603135567,
+      "degree_note": "Each pair contributes two endpoints, including self-pairs. Within-split label descriptions are not available deployment features."
+    }
+  },
+  "existing_prediction_strata": {
+    "val": {
+      "all": {
+        "native": {
+          "rows": 59258,
+          "prevalence": 0.49998312464139866,
+          "ap": 0.6421420518145138,
+          "auroc": 0.638944655772301,
+          "brier": 0.261641840210981
+        },
+        "reference": {
+          "rows": 59258,
+          "prevalence": 0.49998312464139866,
+          "ap": 0.6502750559286536,
+          "auroc": 0.6447700291124854,
+          "brier": 0.23396096096264254
+        },
+        "symmetric": {
+          "rows": 59258,
+          "prevalence": 0.49998312464139866,
+          "ap": 0.6474107570134193,
+          "auroc": 0.6419356859345455,
+          "brier": 0.2467093509427551
+        }
+      },
+      "le_2193": {
+        "native": {
+          "rows": 54324,
+          "prevalence": 0.500257712981371,
+          "ap": 0.6474089338208483,
+          "auroc": 0.6436407580170129,
+          "brier": 0.26082595008785975
+        },
+        "reference": {
+          "rows": 54324,
+          "prevalence": 0.500257712981371,
+          "ap": 0.6556863039976493,
+          "auroc": 0.6499085428659589,
+          "brier": 0.2326118790725475
+        },
+        "symmetric": {
+          "rows": 54324,
+          "prevalence": 0.500257712981371,
+          "ap": 0.6513283879484395,
+          "auroc": 0.6448889362397306,
+          "brier": 0.24608016941123775
+        }
+      },
+      "gt_2193": {
+        "native": {
+          "rows": 4934,
+          "prevalence": 0.4969598702877989,
+          "ap": 0.5635774582367994,
+          "auroc": 0.5809424923067621,
+          "brier": 0.27062489960466596
+        },
+        "reference": {
+          "rows": 4934,
+          "prevalence": 0.4969598702877989,
+          "ap": 0.5797563407105863,
+          "auroc": 0.5883072641781019,
+          "brier": 0.2488145330334826
+        },
+        "symmetric": {
+          "rows": 4934,
+          "prevalence": 0.4969598702877989,
+          "ap": 0.597908422424526,
+          "auroc": 0.6102955964839175,
+          "brier": 0.25363672376767327
+        }
+      }
+    },
+    "test": {
+      "all": {
+        "native": {
+          "rows": 52048,
+          "prevalence": 0.5,
+          "ap": 0.6903188517540065,
+          "auroc": 0.699466898546864,
+          "brier": 0.23487542824797847
+        },
+        "reference": {
+          "rows": 52048,
+          "prevalence": 0.5,
+          "ap": 0.6756692281121284,
+          "auroc": 0.6857609871150177,
+          "brier": 0.22479244374958382
+        },
+        "symmetric": {
+          "rows": 52048,
+          "prevalence": 0.5,
+          "ap": 0.6781642972188495,
+          "auroc": 0.6872800925608739,
+          "brier": 0.22809540977014464
+        }
+      },
+      "le_2193": {
+        "native": {
+          "rows": 48656,
+          "prevalence": 0.5001849720486682,
+          "ap": 0.6932258137961803,
+          "auroc": 0.7019636486417776,
+          "brier": 0.23402622677257204
+        },
+        "reference": {
+          "rows": 48656,
+          "prevalence": 0.5001849720486682,
+          "ap": 0.680836191521394,
+          "auroc": 0.6885700085820344,
+          "brier": 0.22439414810173292
+        },
+        "symmetric": {
+          "rows": 48656,
+          "prevalence": 0.5001849720486682,
+          "ap": 0.6811837262290281,
+          "auroc": 0.6894745640275919,
+          "brier": 0.2273093963023363
+        }
+      },
+      "gt_2193": {
+        "native": {
+          "rows": 3392,
+          "prevalence": 0.49734669811320753,
+          "ap": 0.6441940772287567,
+          "auroc": 0.6680875141456055,
+          "brier": 0.2470566626192563
+        },
+        "reference": {
+          "rows": 3392,
+          "prevalence": 0.49734669811320753,
+          "ap": 0.6204704971060792,
+          "auroc": 0.656179652231051,
+          "brier": 0.23050573179257658
+        },
+        "symmetric": {
+          "rows": 3392,
+          "prevalence": 0.49734669811320753,
+          "ap": 0.6417428747488622,
+          "auroc": 0.6680645682787296,
+          "brier": 0.2393702539003574
+        }
+      }
+    }
+  },
+  "training_snapshot": {
+    "reference-seed2": {
+      "latest_logged_update": 9090,
+      "latest_log_time_utc": "2026-09-29T10:22:08.421222+00:00",
+      "elapsed_hours": 14.49151311,
+      "world_size": 4,
+      "best_selected_update": 4000,
+      "latest_validation": {
+        "time_utc": "2026-09-29T10:13:55.603923+00:00",
+        "attempt": "20260928T195235-3112402",
+        "event": "validation",
+        "update": 9000,
+        "metrics": {
+          "rows": 59258,
+          "ap": 0.633399590690123,
+          "auroc": 0.632199536942301,
+          "pooled_ap": 0.6413736920500083,
+          "brier": 0.26119403563899307,
+          "order_logit_gap_mean": 0.6601843125603942
+        },
+        "best": false
+      },
+      "latest_training_bce": 0.56710324017331,
+      "max_logged_rank0_peak_allocated_gib": 21.355429649353027,
+      "projected_five_epoch_wall_hours_linear": 20.31840864542904,
+      "projection_caveat": "Estimate only: linear scaling includes validations and checkpoints so far, but length mix and remaining overhead may differ. Rank-zero allocated memory is not all-rank reserved memory."
+    },
+    "symmetric-seed2": {
+      "latest_logged_update": 9160,
+      "latest_log_time_utc": "2026-09-29T10:22:52.294009+00:00",
+      "elapsed_hours": 14.507038617500001,
+      "world_size": 4,
+      "best_selected_update": 7000,
+      "latest_validation": {
+        "time_utc": "2026-09-29T10:09:18.047347+00:00",
+        "attempt": "20260928T195223-3112401",
+        "event": "validation",
+        "update": 9000,
+        "metrics": {
+          "rows": 59258,
+          "ap": 0.6413527072618979,
+          "auroc": 0.6339948241533979,
+          "pooled_ap": 0.6413527072618979,
+          "brier": 0.2660972628334937,
+          "order_logit_gap_mean": 1.3139110253766415
+        },
+        "best": false
+      },
+      "latest_training_bce": 0.5399666971061379,
+      "max_logged_rank0_peak_allocated_gib": 21.277009963989258,
+      "projected_five_epoch_wall_hours_linear": 20.184738775113267,
+      "projection_caveat": "Estimate only: linear scaling includes validations and checkpoints so far, but length mix and remaining overhead may differ. Rank-zero allocated memory is not all-rank reserved memory."
+    }
+  },
+  "inputs": [
+    {
+      "path": "retrain-v1/data/prepared/offsets.npy",
+      "sha256": "61a71e45a1ca7137af32e148510f7c5de01d30c10704451d1a91dd3e3f464a1d"
+    },
+    {
+      "path": "retrain-v1/data/prepared/train.npy",
+      "sha256": "9c290cf84301a697bea1a37677973e1d710a75083fec1265113b56ea7a11c519"
+    },
+    {
+      "path": "retrain-v1/data/prepared/val.npy",
+      "sha256": "e98adf7e6f6820d82739a5f7a6c0ed60b0f35d32e6abf46a5e64a079a1df6bb0"
+    },
+    {
+      "path": "benchmark-v1/results/native-bernett-val.npz",
+      "sha256": "0154f6f960373e3fc673c4120dfad987d8cb001b39657c42e4d33f44c97f9a5a"
+    },
+    {
+      "path": "benchmark-v1/predictions/reference-seed2-selected-validation.npz",
+      "sha256": "163ab3436e7fe5a08223efd2cbfff4bc4be5aee4b93dcd2ef75037fa97ecb046"
+    },
+    {
+      "path": "benchmark-v1/predictions/symmetric-seed2-selected-validation.npz",
+      "sha256": "4ad6014ca54d9a351b8684b0ba171363ff08e28098c2c7880d4ff3ef9f0c13f7"
+    },
+    {
+      "path": "retrain-v1/data/prepared/test.npy",
+      "sha256": "84b0b7ae068b2beba19103f8bed3e1c4feae117a0a6ffd271798537868a51c0d"
+    },
+    {
+      "path": "benchmark-v1/results/native-bernett-test.npz",
+      "sha256": "52a2b76dc9b30cfec5ba5fe414ca2abd4f9f41777415a205bc19ca2f5ba2d0cb"
+    },
+    {
+      "path": "benchmark-v1/results/reference-seed2-test.npz",
+      "sha256": "3a745003a2b4adadf7043a871cd9c3aaf77a88607fe7da6abcec0968dffdb870"
+    },
+    {
+      "path": "benchmark-v1/results/symmetric-seed2-test.npz",
+      "sha256": "aa229856365165d30697bc427bd079267e3115ae0cd1f1ec3dea7802b46eb19c"
+    },
+    {
+      "path": "literature/plm-interact/improvement-review-v2/reference-seed2-events-snapshot.jsonl",
+      "sha256": "5d934ba1e303e17a4580808524a762a1a4c97488b1c6b6008e8627164b2cf2a1"
+    },
+    {
+      "path": "literature/plm-interact/improvement-review-v2/symmetric-seed2-events-snapshot.jsonl",
+      "sha256": "1e1735a706205f39e36ffba7faec0cdc0f7e620624b0b98689ff2b4e03330291"
+    }
+  ]
+}
