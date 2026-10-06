@@ -2,13 +2,13 @@
 
 This benchmark is stored in `benchmark-v5-nonhuman`. The models are the existing human-trained v5 checkpoints; this folder does not train or select a model on nonhuman data.
 
-This folder was renamed from `bechmark-nonhuman-v5`. Frozen results and provenance retain the original paths and hashes; a local compatibility symlink preserves access to those paths on the HPC. The symlink is excluded from Git. Completion manifests describe the original run, before the rename-related documentation and launcher edits.
+This folder was renamed from `bechmark-nonhuman-v5`. Historical provenance retains the original paths and hashes; a local compatibility symlink preserves access to those paths on the HPC and is excluded from Git. The pre-extension completion manifest and original sealed bytes, including rename-related documentation and launcher edits, are preserved in `archive/before-xpair-v11/`. Current completion verification covers the added X-PAIR humanV11 release.
 
-Read [PROTOCOL.md](PROTOCOL.md) for the frozen evaluation design, [provenance/roster.json](provenance/roster.json) for the 11 separately labeled predictors, and [provenance/prepared.json](provenance/prepared.json) for the five source datasets and checksums. The final comparison is [REPORT.md](REPORT.md), published only after complete coverage and analysis. Until `results/COMPLETE.json` exists, this benchmark is still in progress.
+Read [PROTOCOL.md](PROTOCOL.md) for the original frozen evaluation design, [the X-PAIR V11 addendum](XPAIR-V11-ADDENDUM.md) for the requested extension, [the current roster](provenance/current-roster.json) for the 12 primary predictors, and [provenance/prepared.json](provenance/prepared.json) for the five source datasets and checksums. The final comparison is [REPORT.md](REPORT.md). The original eleven-model roster is retained in [provenance/roster.json](provenance/roster.json); the extension's completion is recorded in `xpair-v11-status.json` and `results/COMPLETE.json`.
 
 - Input pairs: 55,000 each for mouse, fly, worm and yeast; 22,000 for E. coli. Positive prevalence is 1/11.
 - Frozen iPIN checkpoints: ESM2 update 27,374; ESMC update 21,899. Both were selected on the earlier v5 ILP DEV set.
-- Reference variants: native PLM-interact humanV11 and Bernett; TUnA human seed 47 and Bernett. Both X-PAIR releases, RAPPPID mult, D-SCRIPT human_v1 and SPRINT are also included.
+- Reference variants: native PLM-interact humanV11 and Bernett; TUnA human seed 47 and Bernett. X-PAIR Bernett, default/X-fair and humanV11, RAPPPID mult, D-SCRIPT human_v1 and SPRINT are also included.
 - SPRINT uses only the previously authorized v5 human TRAIN-positive graph (350,382 edges), with the complete TRAIN plus nonhuman sequence corpus for sequence-only preprocessing.
 - Primary results retain every source row. Secondary results count unique, nonconflicting sequence pairs and use identical rows after removing any endpoint exposed in known public supervised training/validation sources.
 
@@ -21,6 +21,7 @@ After every model completes, run from the project directory:
 ```bash
 bash benchmark-v5-nonhuman/scripts/container.sh analysis python scripts/collect.py
 bash benchmark-v5-nonhuman/scripts/container.sh analysis python scripts/analyze.py
+bash benchmark-v5-nonhuman/scripts/container.sh analysis python scripts/plot_with_historical.py
 bash benchmark-v5-nonhuman/scripts/container.sh analysis python scripts/report_nonhuman.py
 bash benchmark-v5-nonhuman/scripts/container.sh analysis python scripts/verify_complete.py
 ```
@@ -29,6 +30,8 @@ Inference uses the existing ARM64 SIF images. CPU-only SPRINT uses the same upst
 
 SPRINT copying recovery (2026-10-05): job 3383829 was stopped before prediction because Python's 4 MiB input buffer refilled on each small random HSP-block read. Its completed 6.34 GB raw similarity file and 2.51 GB canonical prefix were preserved. Job 3402258 resumes validation and scoring with `slurm/sprint-score-mmap.sbatch`, using qualified memory-mapped copying and the unchanged scorer. The new canonical file must match the preserved prefix exactly before scoring. See [recovery provenance](provenance/sprint-copy-recovery.json) and [byte-equivalence checks](qualification/sprint-copy/qualification.json). This does not repeat HSP generation or change the training graph, sequences, HSP records, their ordering, or SPRINT parameters.
 
-All four main figure groups now include 13 models: the original eleven plus the two completed historical v2 controls (length-capped update 8,000 and clean BCE update 4,000). The saved predictions and full-test bootstrap samples were reused. [Combined figure metrics](results/combined-figure-metrics.csv), [intervals](results/combined-figure-confidence-intervals.csv), and [verification](provenance/historical-figure-extension.json) accompany the figures. The prior eleven-model figures are preserved in `archive/figures-before-v1-v4-inclusion/`. Rebuild these combined figures with `bash benchmark-v5-nonhuman/scripts/container.sh analysis python scripts/plot_with_historical.py` from the project root.
+All four main figure groups include 14 models: the original eleven, X-PAIR humanV11 and the two completed historical v2 controls (length-capped update 8,000 and clean BCE update 4,000). All thirteen prior models' predictions and bootstrap samples were reused. X-PAIR humanV11 reuses all 56,634 existing Ankh features and the same frozen release used in the human benchmark; only its interaction head and new bootstrap samples require computation. [Combined figure metrics](results/combined-figure-metrics.csv), [intervals](results/combined-figure-confidence-intervals.csv), and [verification](provenance/historical-figure-extension.json) accompany the figures. The prior thirteen-model results are preserved in `archive/before-xpair-v11/`. Rebuild the combined figures with `bash benchmark-v5-nonhuman/scripts/container.sh analysis python scripts/plot_with_historical.py` from the project root.
+
+To resume only the added X-PAIR V11 inference, run `bash benchmark-v5-nonhuman/scripts/run_xpair_v11.sh` on one allocated GPU. To update all comparisons afterward, run `bash benchmark-v5-nonhuman/scripts/finish_xpair_v11.sh`. Both exact and Ankh-normalized source audits confirm that the existing common exposure masks cover this release, so the earlier subset rows are retained.
 
 Exact matching is not a homology audit. The nonhuman tests were not protected during v5 human data construction. Known supervised membership of the precise RAPPPID and X-PAIR Bernett releases is not fully established. X-PAIR default includes substantial nonhuman supervised exposure and is not a clean human-only transfer baseline.

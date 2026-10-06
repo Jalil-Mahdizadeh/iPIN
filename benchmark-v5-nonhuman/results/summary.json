@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T20:07:29.376192+00:00",
+  "at_utc": "2026-10-06T20:56:10.525667+00:00",
   "complete": true,
   "names": [
     "ipin-esm2",
@@ -12,7 +12,8 @@
     "xpair-default",
     "rapppid",
     "sprint",
-    "dscript"
+    "dscript",
+    "xpair-v11"
   ],
   "tests": {
     "mouse": {
@@ -120,6 +121,15 @@
           "score_min": 0.004171624779701233,
           "score_max": 0.9921308159828186,
           "unique_scores": 23194,
+          "zero_scores": 0
+        },
+        "xpair-v11": {
+          "ap": 0.8923521463847401,
+          "auroc": 0.9785127019999998,
+          "brier": 0.02531097602421843,
+          "score_min": -14.050597190856934,
+          "score_max": 10.287044525146484,
+          "unique_scores": 54841,
           "zero_scores": 0
         }
       },
@@ -246,6 +256,15 @@
           "score_max": 0.9922298789024353,
           "unique_scores": 26560,
           "zero_scores": 0
+        },
+        "xpair-v11": {
+          "ap": 0.8767278451481719,
+          "auroc": 0.975943158,
+          "brier": 0.027666735401661147,
+          "score_min": -13.541038513183594,
+          "score_max": 9.796298027038574,
+          "unique_scores": 54792,
+          "zero_scores": 0
         }
       },
       "bootstrap": {
@@ -370,6 +389,15 @@
           "score_min": 0.0041716028936207294,
           "score_max": 0.9929861426353455,
           "unique_scores": 22419,
+          "zero_scores": 0
+        },
+        "xpair-v11": {
+          "ap": 0.854117784513583,
+          "auroc": 0.9684836560000002,
+          "brier": 0.03525846056281309,
+          "score_min": -13.691143035888672,
+          "score_max": 9.922801971435547,
+          "unique_scores": 54801,
           "zero_scores": 0
         }
       },
@@ -496,6 +524,15 @@
           "score_max": 0.9915598034858704,
           "unique_scores": 22500,
           "zero_scores": 0
+        },
+        "xpair-v11": {
+          "ap": 0.6820754408462523,
+          "auroc": 0.9184603239999999,
+          "brier": 0.050469301938888135,
+          "score_min": -14.077309608459473,
+          "score_max": 9.996458053588867,
+          "unique_scores": 54841,
+          "zero_scores": 0
         }
       },
       "bootstrap": {
@@ -620,6 +657,15 @@
           "score_min": 0.004171587526798248,
           "score_max": 0.991572380065918,
           "unique_scores": 14449,
+          "zero_scores": 0
+        },
+        "xpair-v11": {
+          "ap": 0.7151415703759985,
+          "auroc": 0.8958578875000001,
+          "brier": 0.044622098415113776,
+          "score_min": -13.61410903930664,
+          "score_max": 9.499403953552246,
+          "unique_scores": 18215,
           "zero_scores": 0
         }
       },
@@ -851,6 +897,22 @@
       "high": 0.8508108396026753
     },
     {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.8923521463847403,
+      "low": 0.8744829591196912,
+      "high": 0.908439959760841
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.978512702,
+      "low": 0.974570883439085,
+      "high": 0.9822809759098756
+    },
+    {
       "test": "mouse__common_unexposed",
       "model": "ipin-esm2",
       "metric": "ap",
@@ -1025,6 +1087,22 @@
       "estimate": 0.7845342239755084,
       "low": 0.7634091465844715,
       "high": 0.8049484064505541
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.8353114702618397,
+      "low": 0.8086838202400864,
+      "high": 0.8585835203790508
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.9726653332186367,
+      "low": 0.9670948401436178,
+      "high": 0.9777223185773387
     },
     {
       "test": "fly",
@@ -1203,6 +1281,22 @@
       "high": 0.8453505339769619
     },
     {
+      "test": "fly",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.876727845148173,
+      "low": 0.851776778492184,
+      "high": 0.8981621036771246
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.975943158,
+      "low": 0.9708019977106872,
+      "high": 0.9806056552706149
+    },
+    {
       "test": "fly__common_unexposed",
       "model": "ipin-esm2",
       "metric": "ap",
@@ -1377,6 +1471,22 @@
       "estimate": 0.7388926444517798,
       "low": 0.5921757690853962,
       "high": 0.8594064855514365
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.2518495800673778,
+      "low": 0.07585743289528976,
+      "high": 0.496753671452039
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.9300407182698585,
+      "low": 0.8397091685105919,
+      "high": 0.975631515411553
     },
     {
       "test": "worm",
@@ -1555,6 +1665,22 @@
       "high": 0.8345271560202098
     },
     {
+      "test": "worm",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.8541177845135839,
+      "low": 0.8250772722834826,
+      "high": 0.8796391450893533
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.968483656,
+      "low": 0.9617129438767495,
+      "high": 0.9742559505746404
+    },
+    {
       "test": "worm__common_unexposed",
       "model": "ipin-esm2",
       "metric": "ap",
@@ -1729,6 +1855,22 @@
       "estimate": 0.778636473201971,
       "low": 0.7555363969275353,
       "high": 0.8026977085826985
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.7953086527134253,
+      "low": 0.7637650070798112,
+      "high": 0.8254448705419594
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.9616288605682582,
+      "low": 0.9537142936576765,
+      "high": 0.9684986271823834
     },
     {
       "test": "yeast",
@@ -1907,6 +2049,22 @@
       "high": 0.8098251148369452
     },
     {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.682075440846252,
+      "low": 0.6390627297182947,
+      "high": 0.7230689965078814
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.918460324,
+      "low": 0.9079108098238802,
+      "high": 0.9282277679669193
+    },
+    {
       "test": "yeast__common_unexposed",
       "model": "ipin-esm2",
       "metric": "ap",
@@ -2081,6 +2239,22 @@
       "estimate": 0.8702096699127505,
       "low": 0.6974349552510144,
       "high": 0.9713575696482606
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.04061797992051064,
+      "low": 0.006296400091541587,
+      "high": 0.2188280628053515
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.8319695068426974,
+      "low": 0.6689041366227583,
+      "high": 0.9548036240825637
     },
     {
       "test": "ecoli",
@@ -2259,6 +2433,22 @@
       "high": 0.892493266184766
     },
     {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.7151415703759982,
+      "low": 0.596628142748845,
+      "high": 0.8057216286704914
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.8958578875,
+      "low": 0.8520534014142062,
+      "high": 0.9248338154194681
+    },
+    {
       "test": "ecoli__common_unexposed",
       "model": "ipin-esm2",
       "metric": "ap",
@@ -2433,6 +2623,22 @@
       "estimate": 0.7619745213219594,
       "low": 0.7235197155855928,
       "high": 0.802455486858626
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.30779610904179555,
+      "low": 0.21399496233057294,
+      "high": 0.41911159330514786
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.8022451751065,
+      "low": 0.7515473430591512,
+      "high": 0.8460514127492366
     }
   ],
   "paired_differences": [
@@ -2618,6 +2824,24 @@
     },
     {
       "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.01605997522903091,
+      "low": -0.027381357170167167,
+      "high": -0.005790527108845234
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.0044572959999999995,
+      "low": -0.007458315852905534,
+      "high": -0.001624086722857522
+    },
+    {
+      "test": "mouse",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -2798,6 +3022,24 @@
     },
     {
       "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6172310927494749,
+      "low": 0.5803006232316453,
+      "high": 0.6513923450749587
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.280239974,
+      "low": 0.25887120386867296,
+      "high": 0.30124342669539184
+    },
+    {
+      "test": "mouse",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -2813,6 +3055,114 @@
       "difference": -0.00770418000000006,
       "low": -0.023868229082773716,
       "high": 0.007229209118906496
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.6832291582073394,
+      "low": 0.6524917798231585,
+      "high": 0.7091783705362217
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.353155094,
+      "low": 0.33254445136055955,
+      "high": 0.37297123662827253
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.7155259924757797,
+      "low": 0.6864371116684399,
+      "high": 0.7400308988889
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.34545091399999994,
+      "low": 0.32559442209535056,
+      "high": 0.3663012006114539
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.009153265003056577,
+      "low": -0.0015580742563208376,
+      "high": 0.019931250308431667
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": 0.0011119179999999895,
+      "low": -0.00199218944997257,
+      "high": 0.004203800399591969
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.5395697805066849,
+      "low": 0.5000479451528248,
+      "high": 0.5744362924509854
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.20423424599999995,
+      "low": 0.18713145135075604,
+      "high": 0.22234342402552
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.5500753355929809,
+      "low": 0.5087404037137729,
+      "high": 0.5856272348331696
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.20663153599999995,
+      "low": 0.190689870377524,
+      "high": 0.2252369376299641
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": 0.04698983462709405,
+      "low": 0.031055534721083668,
+      "high": 0.06504008636347831
+    },
+    {
+      "test": "mouse",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.02012012399999996,
+      "low": 0.013895980871232555,
+      "high": 0.027078484919297464
     },
     {
       "test": "mouse__common_unexposed",
@@ -2996,6 +3346,24 @@
     },
     {
       "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.026488140463180043,
+      "low": -0.044095411549057606,
+      "high": -0.008470112179542402
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.0057819006947138485,
+      "low": -0.009822363403092416,
+      "high": -0.0016790856488072803
+    },
+    {
+      "test": "mouse__common_unexposed",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -3176,6 +3544,24 @@
     },
     {
       "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6519989437290188,
+      "low": 0.6175476540142544,
+      "high": 0.6844362921111934
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.2809044521018753,
+      "low": 0.2602068839327415,
+      "high": 0.30199333094277225
+    },
+    {
+      "test": "mouse__common_unexposed",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -3191,6 +3577,114 @@
       "difference": 0.00749895918818777,
       "low": -0.007704393712123542,
       "high": 0.022478719740254147
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.6904197581935376,
+      "low": 0.6596803830934964,
+      "high": 0.717281926651726
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.34873897481310345,
+      "low": 0.3256409107956363,
+      "high": 0.37088301226147613
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.7262516589059622,
+      "low": 0.6990134169577319,
+      "high": 0.7508506653783223
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.3562379340012912,
+      "low": 0.33347234754668575,
+      "high": 0.3775901823450398
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.01099423253036036,
+      "low": -0.005292673367910827,
+      "high": 0.028890275552071073
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": 0.0008672776109613922,
+      "low": -0.0032710394781510694,
+      "high": 0.005215411206163813
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.5820077420597332,
+      "low": 0.5461972759412136,
+      "high": 0.6139082468882204
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.2084940478402767,
+      "low": 0.18868328223725997,
+      "high": 0.2277127317229061
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.6138669973164619,
+      "low": 0.5788856510055727,
+      "high": 0.6455210116915479
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.21464465992854043,
+      "low": 0.1970481364529611,
+      "high": 0.23293688581525113
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": 0.05847520181700494,
+      "low": 0.0332525473400295,
+      "high": 0.08467692232021379
+    },
+    {
+      "test": "mouse__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.022847433448489496,
+      "low": 0.014876479381788352,
+      "high": 0.03123016056591863
     },
     {
       "test": "fly",
@@ -3374,6 +3868,24 @@
     },
     {
       "test": "fly",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.04002809680779085,
+      "low": -0.056461817764863746,
+      "high": -0.02495781531475784
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.007452732000000073,
+      "low": -0.011994754770000355,
+      "high": -0.0027169841060186144
+    },
+    {
+      "test": "fly",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -3554,6 +4066,24 @@
     },
     {
       "test": "fly",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5750142114845103,
+      "low": 0.5292665258432746,
+      "high": 0.6170157339043445
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.281985504,
+      "low": 0.2542136152893426,
+      "high": 0.31194608612091423
+    },
+    {
+      "test": "fly",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -3569,6 +4099,114 @@
       "difference": 0.038737694000000045,
       "low": 0.019004751078588462,
       "high": 0.058682361136664134
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.6903454840906779,
+      "low": 0.6542209036852669,
+      "high": 0.7198610979317357
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.364565512,
+      "low": 0.331517346300102,
+      "high": 0.39358448542059066
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.7236504213784074,
+      "low": 0.6889214570200899,
+      "high": 0.7513462808474477
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.403303206,
+      "low": 0.3664714944036974,
+      "high": 0.43678727873146045
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.021709700229093354,
+      "low": 0.004413611211461963,
+      "high": 0.03833562923866011
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": 0.004992576000000026,
+      "low": 0.00039444862813938777,
+      "high": 0.009612166898769625
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.502693406800737,
+      "low": 0.45400135821539145,
+      "high": 0.543863601383255
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.19041303399999998,
+      "low": 0.17002630316449832,
+      "high": 0.21095282502795842
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.540171077454266,
+      "low": 0.49460305929855425,
+      "high": 0.5800800063261993
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.24863195999999999,
+      "low": 0.2254794600769411,
+      "high": 0.2727878525727047
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": -0.004731017449218555,
+      "low": -0.022552669265077343,
+      "high": 0.012933034081487733
+    },
+    {
+      "test": "fly",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.008756935999999937,
+      "low": 0.0023396419800978123,
+      "high": 0.014898127959613903
     },
     {
       "test": "fly__common_unexposed",
@@ -3752,6 +4390,24 @@
     },
     {
       "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.16766661681938483,
+      "low": -0.36263641607050423,
+      "high": -0.0035919511623928244
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.018696024036539916,
+      "low": -0.06060828606245425,
+      "high": 0.013303133152779971
+    },
+    {
+      "test": "fly__common_unexposed",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -3932,6 +4588,24 @@
     },
     {
       "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.24447603925762984,
+      "low": 0.06741682172504816,
+      "high": 0.48685917878910934
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.27230830722308996,
+      "low": 0.13697962259775665,
+      "high": 0.40901564288036224
+    },
+    {
+      "test": "fly__common_unexposed",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -3947,6 +4621,114 @@
       "difference": -0.022214183794318387,
       "low": -0.14047697930459124,
       "high": 0.08948874530514946
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.22437510385745746,
+      "low": 0.05350750340106407,
+      "high": 0.4580836998124469
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.3162315193788803,
+      "low": 0.16175096638351044,
+      "high": 0.4659710130554622
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.23482806678486554,
+      "low": 0.05505314767598865,
+      "high": 0.45767412900957705
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.2940173355845619,
+      "low": 0.12118624884785516,
+      "high": 0.45073880168493363
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.011784407517584056,
+      "low": -0.21691130902093136,
+      "high": 0.23218466577347593
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": -0.00013077092624835807,
+      "low": -0.047608744187903417,
+      "high": 0.06299844860647062
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.23741454843582782,
+      "low": 0.05766226410778475,
+      "high": 0.4805406439170428
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.14249074321124877,
+      "low": 0.039580749214283284,
+      "high": 0.25887941889497373
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.23357228188896897,
+      "low": 0.0301271091884935,
+      "high": 0.4805759195287784
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.19488031823737662,
+      "low": 0.07708095259526422,
+      "high": 0.3437811568497289
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": 0.10306476526415781,
+      "low": -0.08399621704587178,
+      "high": 0.2766327539632512
+    },
+    {
+      "test": "fly__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.06663516915324774,
+      "low": -0.014274382879779744,
+      "high": 0.17988334134670797
     },
     {
       "test": "worm",
@@ -4130,6 +4912,24 @@
     },
     {
       "test": "worm",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.036765445168079114,
+      "low": -0.05376608015130313,
+      "high": -0.020825862845948447
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.006766542000000042,
+      "low": -0.012149070933802925,
+      "high": -0.00155346836851551
+    },
+    {
+      "test": "worm",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -4310,6 +5110,24 @@
     },
     {
       "test": "worm",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6685147978871155,
+      "low": 0.6314750600223086,
+      "high": 0.6992881859724541
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.350909488,
+      "low": 0.3225051550313533,
+      "high": 0.37775113309933805
+    },
+    {
+      "test": "worm",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -4325,6 +5143,114 @@
       "difference": 0.031403700000000034,
       "low": 0.012572427174273869,
       "high": 0.049996896135176785
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.7182065029452362,
+      "low": 0.6839904632963394,
+      "high": 0.7450526177797522
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.41319412999999994,
+      "low": 0.38028249057131247,
+      "high": 0.44251069139619265
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.7513512004314514,
+      "low": 0.722690863865688,
+      "high": 0.7762876043396195
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.44459782999999997,
+      "low": 0.40666785489771196,
+      "high": 0.4797627514711711
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.01726935401078067,
+      "low": -0.0009215007668337099,
+      "high": 0.03651691052572868
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": 0.008249693999999974,
+      "low": 0.0019411132142657273,
+      "high": 0.015122052943978084
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.4990508810608958,
+      "low": 0.4559625645325065,
+      "high": 0.5370864027223444
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.18956574199999998,
+      "low": 0.16904783596926015,
+      "high": 0.2073462639157776
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.6231218194955779,
+      "low": 0.5882260680227756,
+      "high": 0.6515631800069766
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.28348106399999995,
+      "low": 0.26125631961881135,
+      "high": 0.30430336753169607
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": 0.058611820578445384,
+      "low": 0.03753917632236093,
+      "high": 0.08150515650177212
+    },
+    {
+      "test": "worm",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.030806953999999998,
+      "low": 0.02249877557630819,
+      "high": 0.04026567726733443
     },
     {
       "test": "worm__common_unexposed",
@@ -4508,6 +5434,24 @@
     },
     {
       "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.0483871434727412,
+      "low": -0.07100719574168608,
+      "high": -0.02833319664798181
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.007955679667876914,
+      "low": -0.01431968642555416,
+      "high": -0.0019684253258206927
+    },
+    {
+      "test": "worm__common_unexposed",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -4688,6 +5632,24 @@
     },
     {
       "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.6211037234418673,
+      "low": 0.5860998871006168,
+      "high": 0.6550392900220621
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.32280840736856276,
+      "low": 0.29488181262810764,
+      "high": 0.35096201405007205
+    },
+    {
+      "test": "worm__common_unexposed",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -4703,6 +5665,114 @@
       "difference": 0.02015297840465935,
       "low": 0.0001733322482103869,
       "high": 0.038761454963681996
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.6681814715961851,
+      "low": 0.6328327396320856,
+      "high": 0.6994120587589642
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.3640281130649161,
+      "low": 0.33570517215021545,
+      "high": 0.3926596620737489
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.6993617126508199,
+      "low": 0.6669759690640907,
+      "high": 0.7282173686157065
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.38418109146957546,
+      "low": 0.3536654483335937,
+      "high": 0.41663090580311146
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.020918369917811264,
+      "low": -0.002915086171439304,
+      "high": 0.04655415860756271
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": 0.009824466255779374,
+      "low": 0.002400132178454675,
+      "high": 0.0184467986193858
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.5097585145471906,
+      "low": 0.4693153625621409,
+      "high": 0.5449654444400766
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.1977433352021224,
+      "low": 0.1775894777559423,
+      "high": 0.21750184263676167
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.6059950230224047,
+      "low": 0.574422896355589,
+      "high": 0.6372970728043454
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.2672531623710027,
+      "low": 0.24726413202911726,
+      "high": 0.2887997018589368
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": 0.07206088840824809,
+      "low": 0.04194182547993174,
+      "high": 0.10196418114305808
+    },
+    {
+      "test": "worm__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.03664433174628434,
+      "low": 0.025467340732593453,
+      "high": 0.04777377376025032
     },
     {
       "test": "yeast",
@@ -4886,6 +5956,24 @@
     },
     {
       "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.032634095156985676,
+      "low": -0.053080530505450724,
+      "high": -0.012698062695754398
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": 0.0040618900000000124,
+      "low": -0.004013162552293756,
+      "high": 0.012130671028369452
+    },
+    {
+      "test": "yeast",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -5066,6 +6154,24 @@
     },
     {
       "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.48469524173659106,
+      "low": 0.43776643344631,
+      "high": 0.525585549380324
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.29886592199999995,
+      "low": 0.271062360066086,
+      "high": 0.32915492860490836
+    },
+    {
+      "test": "yeast",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -5081,6 +6187,114 @@
       "difference": 0.05003909400000006,
       "low": 0.03037807321438217,
       "high": 0.0706541844618209
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.5454336696575599,
+      "low": 0.5013372723571098,
+      "high": 0.5842559881115321
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.35044960199999997,
+      "low": 0.32184460713718693,
+      "high": 0.3819941074411134
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.5655523562928234,
+      "low": 0.521210978195964,
+      "high": 0.6054625798666327
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.40048869600000003,
+      "low": 0.3646175956062395,
+      "high": 0.434310937490653
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.03792968991927104,
+      "low": 0.01602798299536356,
+      "high": 0.06094272940040035
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": 0.019255865999999955,
+      "low": 0.01089077821166129,
+      "high": 0.028022865024969326
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.329401189643343,
+      "low": 0.28905379193302366,
+      "high": 0.3653807834277987
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.152825628,
+      "low": 0.1350742531876207,
+      "high": 0.16971139328481039
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.41766405177498617,
+      "low": 0.37981871978840875,
+      "high": 0.4496014786332648
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.22088017400000004,
+      "low": 0.19971879995441696,
+      "high": 0.24160506430695533
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": -0.051856772733635315,
+      "low": -0.08047143437645958,
+      "high": -0.0250419884312988
+    },
+    {
+      "test": "yeast",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.028574328000000038,
+      "low": 0.01694092887715961,
+      "high": 0.0405559367089985
     },
     {
       "test": "yeast__common_unexposed",
@@ -5264,6 +6478,24 @@
     },
     {
       "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.06806220964360789,
+      "low": -0.3382715762754053,
+      "high": 0.04521910908599336
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": 0.12830573278426793,
+      "low": -0.05880897714257252,
+      "high": 0.34776869118218673
+    },
+    {
+      "test": "yeast__common_unexposed",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -5444,6 +6676,24 @@
     },
     {
       "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.03715343501747546,
+      "low": 0.002582541531132213,
+      "high": 0.21499545053669608
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.2639343006780839,
+      "low": 0.04495902489016533,
+      "high": 0.4690577066978091
+    },
+    {
+      "test": "yeast__common_unexposed",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -5459,6 +6709,114 @@
       "difference": 0.041397877968458174,
       "low": -0.1604559523377943,
       "high": 0.2557300839237455
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.03703207177477363,
+      "low": 0.00019887830658043442,
+      "high": 0.2163620775864808
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.3055148076798454,
+      "low": 0.08612630590164909,
+      "high": 0.5465010296120318
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.03251975883953496,
+      "low": -0.046352259524290076,
+      "high": 0.21392285059489616
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.3469126856483036,
+      "low": 0.10221435613459913,
+      "high": 0.600893948449676
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": -0.002916899917900097,
+      "low": -0.15247045520462618,
+      "high": 0.1137261222092808
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": 0.12376946324737981,
+      "low": -0.032271004549524945,
+      "high": 0.31745860738670356
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.02972658735225509,
+      "low": -0.0009784509429899434,
+      "high": 0.1922997685958735
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.18221075390443198,
+      "low": -0.024589488764042478,
+      "high": 0.4227957123264629
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.036479191002328916,
+      "low": 0.00014466077569525463,
+      "high": 0.2138651710122461
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.3210618405471801,
+      "low": 0.07589514499541172,
+      "high": 0.5361087443244587
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": 0.03714430174526328,
+      "low": 0.0035993393242254096,
+      "high": 0.2141785680561019
+    },
+    {
+      "test": "yeast__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.25508562945158264,
+      "low": 0.11972539377262388,
+      "high": 0.44090129649708887
     },
     {
       "test": "ecoli",
@@ -5642,6 +7000,24 @@
     },
     {
       "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": -0.017754712533820438,
+      "low": -0.059283833180594984,
+      "high": 0.023262739428025904
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.010767925000000012,
+      "low": -0.03776395925534072,
+      "high": 0.012365458961392317
+    },
+    {
+      "test": "ecoli",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -5822,6 +7198,24 @@
     },
     {
       "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.5579238552432045,
+      "low": 0.4575951634789329,
+      "high": 0.6325383153430807
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.41195828749999996,
+      "low": 0.3298490397532257,
+      "high": 0.4895841120099898
+    },
+    {
+      "test": "ecoli",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -5837,6 +7231,114 @@
       "difference": 0.10084033749999999,
       "low": 0.05049550576045804,
       "high": 0.1535161019573747
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.6344512023166171,
+      "low": 0.5163959161241063,
+      "high": 0.7164593435122494
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.52014595,
+      "low": 0.42998361372736327,
+      "high": 0.5964673610239405
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.6488387001532167,
+      "low": 0.5299154665537986,
+      "high": 0.7293744998841087
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.6209862875,
+      "low": 0.5179515559740773,
+      "high": 0.7024086381311012
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.0421400994720984,
+      "low": -0.007236345879206937,
+      "high": 0.09257070495144176
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": 0.018380324999999975,
+      "low": -0.0005102231695701425,
+      "high": 0.037829149254456663
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.5012603845120371,
+      "low": 0.4135287805640004,
+      "high": 0.5564566680517854
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.1546296749999999,
+      "low": 0.1087106004378512,
+      "high": 0.1953391419568212
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.4609503181156733,
+      "low": 0.37408999724450814,
+      "high": 0.5280309220338697
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.25112346249999995,
+      "low": 0.19719234110986683,
+      "high": 0.30664231827990257
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": 0.007812794974035642,
+      "low": -0.03574727678556474,
+      "high": 0.044269682934309156
+    },
+    {
+      "test": "ecoli",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.01791216249999994,
+      "low": -0.0009107283975636147,
+      "high": 0.03730095161088135
     },
     {
       "test": "ecoli__common_unexposed",
@@ -6020,6 +7522,24 @@
     },
     {
       "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": 0.008861872858480446,
+      "low": -0.05762823878619769,
+      "high": 0.06883319047432378
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": -0.01485956296387747,
+      "low": -0.07073667646176994,
+      "high": 0.027571269877056267
+    },
+    {
+      "test": "ecoli__common_unexposed",
       "model": "ipin-esm2",
       "reference": "native-plm",
       "metric": "ap",
@@ -6200,6 +7720,24 @@
     },
     {
       "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": 0.2351520274751175,
+      "low": 0.1425419859297313,
+      "high": 0.33306746406571375
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": 0.2541172753352682,
+      "low": 0.1865028766167871,
+      "high": 0.3166771810623749
+    },
+    {
+      "test": "ecoli__common_unexposed",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -6215,22 +7753,130 @@
       "difference": 0.013901534298645823,
       "low": -0.0327997271323077,
       "high": 0.05887465813689466
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": 0.25195767500258537,
+      "low": 0.15604252957617698,
+      "high": 0.3569013790153466
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": 0.31606803202217315,
+      "low": 0.2450294047955774,
+      "high": 0.3831794407699763
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": 0.25444094507714216,
+      "low": 0.1589839382495878,
+      "high": 0.3601843817306961
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": 0.329969566320819,
+      "low": 0.26093867800576254,
+      "high": 0.4064066766469804
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.013619983541922565,
+      "low": -0.04906352824191151,
+      "high": 0.0763943145669871
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": 0.026052676181887002,
+      "low": -0.00895498425921558,
+      "high": 0.060803186620163215
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "ap",
+      "difference": 0.19144797242023115,
+      "low": 0.09784910624346098,
+      "high": 0.2940960641604911
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "tuna",
+      "metric": "auroc",
+      "difference": 0.08317550526752848,
+      "low": 0.036166920896053945,
+      "high": 0.12780304720110056
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": 0.19479190725896528,
+      "low": 0.12402283834188854,
+      "high": 0.2677537868220577
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": 0.15439533651171633,
+      "low": 0.10523704839223628,
+      "high": 0.20123859594446297
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": 0.009036508384935193,
+      "low": -0.04778290754384469,
+      "high": 0.06586692747163722
+    },
+    {
+      "test": "ecoli__common_unexposed",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": 0.0399039310891347,
+      "low": 0.004896034839747892,
+      "high": 0.07408156223810072
     }
   ],
   "collection": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/collection.json",
-    "bytes": 15098,
-    "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/collection.json",
+    "bytes": 19379,
+    "sha256": "63bf9a07eb1b3f55066f65a7dc5809485b41684e4784b9da29f5e2c8aee230f5"
   },
   "protocol": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/PROTOCOL.md",
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/PROTOCOL.md",
     "bytes": 3713,
     "sha256": "7b69443763d80e386036e261ec98cd1503efa68ebb772d3497e21552d08e6cd7"
   },
   "analysis_script": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/analyze.py",
-    "bytes": 16484,
-    "sha256": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/scripts/analyze.py",
+    "bytes": 17128,
+    "sha256": "d55d44f484853989bb7485eaa0ef0f7317eaff2eaa3cae8bc7485b1088cc99ab"
   },
   "no_model_or_threshold_selected_on_tests": true
 }

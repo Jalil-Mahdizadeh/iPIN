@@ -7,5 +7,6 @@ flock -n 9
 bash scripts/container.sh analysis python scripts/sprint_benchmark.py --stage collect
 bash scripts/container.sh analysis python scripts/collect.py
 bash scripts/container.sh analysis python scripts/analyze.py
+bash scripts/container.sh analysis python scripts/plot_with_historical.py
 bash scripts/container.sh analysis python scripts/report_nonhuman.py
 bash scripts/container.sh analysis python scripts/verify_complete.py

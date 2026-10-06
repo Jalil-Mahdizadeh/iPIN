@@ -1,0 +1,200 @@
+{
+  "at_utc": "2026-10-06T20:55:21.112739+00:00",
+  "model": "xpair-v11",
+  "checkpoint": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/X-PAIR/pretrained_models/interaction_dscript.ckpt",
+    "bytes": 5686501,
+    "sha256": "b2629356df2206e6d29058c4f65daf75e30c9b874da27fa282c282affb6738bf"
+  },
+  "audits": {
+    "exact": {
+      "sources": [
+        {
+          "split": "train",
+          "file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.train.csv",
+            "bytes": 318980144,
+            "sha256": "86c5134846df36df17455500154eab6049cd07250c79d6d263afcb5dcb6bf5fd"
+          },
+          "rows": 421792,
+          "positives": 38344,
+          "length_eligible_rows": 421792,
+          "min_length": 50,
+          "max_length": 800
+        },
+        {
+          "split": "validation",
+          "file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.test.csv",
+            "bytes": 39851844,
+            "sha256": "abb126f34f617fdc4c956e1f056df5cb0921ab3c12d6f0d87948411d34a7b9f3"
+          },
+          "rows": 52725,
+          "positives": 4794,
+          "length_eligible_rows": 52725,
+          "min_length": 50,
+          "max_length": 800
+        }
+      ],
+      "union_sequences_exposed": 274,
+      "tests": {
+        "mouse": {
+          "exact_exposed_sequences": 274,
+          "pairs_exposed": 81,
+          "positive_pairs_exposed": 81,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 2689,
+          "endpoint_unexposed_pairs": 52311,
+          "endpoint_unexposed_positives": 4001,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        },
+        "fly": {
+          "exact_exposed_sequences": 2,
+          "pairs_exposed": 0,
+          "positive_pairs_exposed": 0,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 142,
+          "endpoint_unexposed_pairs": 54858,
+          "endpoint_unexposed_positives": 4997,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        },
+        "worm": {
+          "exact_exposed_sequences": 0,
+          "pairs_exposed": 0,
+          "positive_pairs_exposed": 0,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 0,
+          "endpoint_unexposed_pairs": 55000,
+          "endpoint_unexposed_positives": 5000,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        },
+        "yeast": {
+          "exact_exposed_sequences": 0,
+          "pairs_exposed": 0,
+          "positive_pairs_exposed": 0,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 0,
+          "endpoint_unexposed_pairs": 55000,
+          "endpoint_unexposed_positives": 5000,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        },
+        "ecoli": {
+          "exact_exposed_sequences": 0,
+          "pairs_exposed": 0,
+          "positive_pairs_exposed": 0,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 0,
+          "endpoint_unexposed_pairs": 22000,
+          "endpoint_unexposed_positives": 2000,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        }
+      }
+    },
+    "ankh-normalized": {
+      "sources": [
+        {
+          "split": "train",
+          "file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.train.csv",
+            "bytes": 318980144,
+            "sha256": "86c5134846df36df17455500154eab6049cd07250c79d6d263afcb5dcb6bf5fd"
+          },
+          "rows": 421792,
+          "positives": 38344,
+          "length_eligible_rows": 421792,
+          "min_length": 50,
+          "max_length": 800
+        },
+        {
+          "split": "validation",
+          "file": {
+            "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/exposure/human.ppi.qrels.seq.test.csv",
+            "bytes": 39851844,
+            "sha256": "abb126f34f617fdc4c956e1f056df5cb0921ab3c12d6f0d87948411d34a7b9f3"
+          },
+          "rows": 52725,
+          "positives": 4794,
+          "length_eligible_rows": 52725,
+          "min_length": 50,
+          "max_length": 800
+        }
+      ],
+      "union_sequences_exposed": 274,
+      "tests": {
+        "mouse": {
+          "exact_exposed_sequences": 274,
+          "pairs_exposed": 81,
+          "positive_pairs_exposed": 81,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 2689,
+          "endpoint_unexposed_pairs": 52311,
+          "endpoint_unexposed_positives": 4001,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        },
+        "fly": {
+          "exact_exposed_sequences": 2,
+          "pairs_exposed": 0,
+          "positive_pairs_exposed": 0,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 142,
+          "endpoint_unexposed_pairs": 54858,
+          "endpoint_unexposed_positives": 4997,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        },
+        "worm": {
+          "exact_exposed_sequences": 0,
+          "pairs_exposed": 0,
+          "positive_pairs_exposed": 0,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 0,
+          "endpoint_unexposed_pairs": 55000,
+          "endpoint_unexposed_positives": 5000,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        },
+        "yeast": {
+          "exact_exposed_sequences": 0,
+          "pairs_exposed": 0,
+          "positive_pairs_exposed": 0,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 0,
+          "endpoint_unexposed_pairs": 55000,
+          "endpoint_unexposed_positives": 5000,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        },
+        "ecoli": {
+          "exact_exposed_sequences": 0,
+          "pairs_exposed": 0,
+          "positive_pairs_exposed": 0,
+          "negative_pairs_exposed": 0,
+          "pairs_with_exposed_endpoint": 0,
+          "endpoint_unexposed_pairs": 22000,
+          "endpoint_unexposed_positives": 2000,
+          "test_negative_but_source_positive": 0,
+          "test_positive_but_source_negative": 0
+        }
+      }
+    }
+  },
+  "flags": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/xpair-v11-exposure-flags.npz",
+    "bytes": 5852,
+    "sha256": "b7f33140ba4693e37facdb751931aa8d5d8f454058ddd95ec9f0be0e76ab47a1"
+  },
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/scripts/xpair_v11_exposure.py",
+    "bytes": 5602,
+    "sha256": "fd037e5814bb2670510ad3b4f966c54b0a8dfd673336d1a086b15d61baf6ecde"
+  },
+  "exact_flags_match_prior_human_release_audit": true,
+  "existing_human_and_all_source_masks_cover_all_identified_exposure": true,
+  "limits": "Documented public source membership, supported by paper and embedded checkpoint paths; exact processed author TSVs are unavailable locally. No claim of complete checkpoint-history proof or homolog/pretraining exclusion."
+}

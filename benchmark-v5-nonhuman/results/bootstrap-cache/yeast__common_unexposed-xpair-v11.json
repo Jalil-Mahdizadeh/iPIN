@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-v11",
+    "test": "yeast__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "107d0e6cf193be50d92429c6c2f76d588f05912bfa08522a824394fdfa031e53",
+    "scores": "80201c8a7a4f609e8b559fbaf7d9c833dec66cd9a54f7e9000b7088dac4479d2",
+    "analysis_code": "d55d44f484853989bb7485eaa0ef0f7317eaff2eaa3cae8bc7485b1088cc99ab"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/bootstrap-cache/yeast__common_unexposed-xpair-v11.npz",
+    "bytes": 15285,
+    "sha256": "93923db940b23f34dc29bfa7acb0871f7032fa0acdadbe7c7113e8032e0a356d"
+  }
+}

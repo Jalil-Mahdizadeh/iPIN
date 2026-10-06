@@ -6,14 +6,14 @@ from sklearn.metrics import average_precision_score, roc_auc_score
 from threadpoolctl import threadpool_limits
 import analyze
 from bench_utils import ROOT, atomic, load_npz, now, read, record
-from collect import NAMES, LABELS, TESTS, verify
+from collect import BASE_NAMES, NAMES, LABELS, TESTS, verify
 
 EXT = ROOT / 'v1-v4-comparison'
 ADDED = ['v2-capped', 'v2-clean-bce']
 ADDED_LABELS = {'v2-capped': 'V2 length-capped (u8000)',
                 'v2-clean-bce': 'V2 clean BCE (u4000)'}
 FIGURE_NAMES = NAMES + ADDED
-ARCHIVE = ROOT / 'archive/figures-before-v1-v4-inclusion'
+ARCHIVE = ROOT / 'archive/before-xpair-v11'
 
 
 def csvrows(path):
@@ -24,15 +24,14 @@ def csvrows(path):
 def main():
     threadpool_limits(1)
     original = read(ARCHIVE / 'results/COMPLETE.json')
-    assert original['complete'] and original['models'] == NAMES
-    # Every previous numeric result remains unchanged; only figures are replaced.
+    assert original['complete'] and original['models'] == BASE_NAMES
+    # Verify the sealed historical inputs at their preserved archive locations.
     for item in original['artifacts']:
-        path = Path(item['path'])
-        if path.is_relative_to(ROOT / 'results') and path.suffix not in ['.png', '.pdf', '.svg']:
-            verify(item)
+        relative = Path(item['path']).resolve().relative_to(ROOT)
+        verify({**item, 'path': str(ARCHIVE / relative)})
     archived = read(ARCHIVE / 'archive.json')
-    for item in archived['files'].values():
-        verify(item)
+    for relative, item in archived['files'].items():
+        verify({**item, 'path': str(ARCHIVE / relative)})
     historical = read(EXT / 'results/COMPLETE.json')
     assert historical['complete'] and historical['rows_per_model'] == 242000
     for item in list(historical['artifacts'].values()) + [historical['report'], historical['summary'], historical['analysis_code']]:
@@ -58,6 +57,12 @@ def main():
         known |= flags[key + '__endpoints'] > 0
         if not key.startswith('xpair-default'):
             human |= flags[key + '__endpoints'] > 0
+    v11 = read(ROOT / 'provenance/xpair-v11-exposure.json')
+    assert v11['existing_human_and_all_source_masks_cover_all_identified_exposure']
+    v11_flags = load_npz(verify(v11['flags']))
+    for mode in ['exact', 'ankh-normalized']:
+        seen = v11_flags[mode + '__endpoints'] > 0
+        assert not (seen & ~human).any() and not (seen & ~known).any()
     historical_flags = load_npz(EXT / 'provenance/exposure-flags.npz')
     for name in ADDED:
         seen = historical_flags[name + '__endpoints'] > 0
@@ -130,6 +135,8 @@ def main():
     sources += [ROOT / 'results/summary.json', ROOT / 'results/collection.json',
                 ROOT / 'results/subsets.csv', ROOT / 'data/union.npy', ROOT / 'data/pair-mapping.npz',
                 ROOT / 'data/sequences.json', ROOT / 'provenance/exposure.json',
+                ROOT / 'provenance/xpair-v11-exposure.json',
+                ROOT / 'provenance/xpair-v11-exposure-flags.npz',
                 ROOT / 'provenance/exposure-flags.npz', EXT / 'provenance/exposure.json',
                 EXT / 'provenance/exposure-flags.npz', EXT / 'provenance/selection.json',
                 EXT / 'results/summary.json', EXT / 'results/COMPLETE.json',

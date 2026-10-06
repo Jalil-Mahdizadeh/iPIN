@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-v11",
+    "test": "worm",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "e5f3c2b73a922bebc7b8ef1ce9629fd97516a02861dd899908150353632772d5",
+    "scores": "04d4d925957969bfcf98c00b631cfa391ca7da32e7050714b179965161999a8c",
+    "analysis_code": "d55d44f484853989bb7485eaa0ef0f7317eaff2eaa3cae8bc7485b1088cc99ab"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/bootstrap-cache/worm-xpair-v11.npz",
+    "bytes": 14684,
+    "sha256": "ffb4dc9075552e2ade79f041bbcfe908ff05948981b1e0abf4d8b1600b662416"
+  }
+}

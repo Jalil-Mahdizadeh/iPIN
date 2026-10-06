@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-10-06T20:44:52.778610+00:00",
+  "reason": "Serial cached-feature reads sustained about 17 proteins/second. Restart before any pair scoring to use bounded parallel reading, retaining all byte/provenance checks.",
+  "pair_inference_started": false,
+  "checkpoint_unchanged": true,
+  "model_math_unchanged": true,
+  "archived": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/xpair-v11-initial-cache-attempt/provenance/xpair-v11.json",
+      "bytes": 5383,
+      "sha256": "1d5966259cd50f4e21b73fa7041f232e885328590cca55d368a2d41885987cbe"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/xpair-v11-initial-cache-attempt/qualification/xpair-v11.json",
+      "bytes": 2121,
+      "sha256": "3a71d09d13275fc2a6eaec9853974ab19755612d018ad20bb47e2ff78964a430"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/xpair-v11-initial-cache-attempt/xpair-v11-status.json",
+      "bytes": 209,
+      "sha256": "e9f8b02018afa7092ba8b44be87bfbe80d9088e465e24e88580fe18a6f068429"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/xpair-v11-initial-cache-attempt/logs/xpair-v11.log",
+      "bytes": 3022,
+      "sha256": "a5cc8c7af49f9fee4033ed32ae2c965e29936b69b782b97b1c74293f517b9474"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/xpair-v11-initial-cache-attempt/scripts/xpair_v11.py",
+      "bytes": 14418,
+      "sha256": "e680379c789abf21cce080374c493c7ff70d8e0146afea9339b2946aed2d28c5"
+    }
+  ]
+}

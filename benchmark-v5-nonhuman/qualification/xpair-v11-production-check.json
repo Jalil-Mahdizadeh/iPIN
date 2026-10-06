@@ -1,0 +1,185 @@
+{
+  "at_utc": "2026-10-06T20:55:16.904051+00:00",
+  "passed": true,
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/scripts/verify_xpair_v11_predictions.py",
+    "bytes": 3021,
+    "sha256": "161de5d18b40c9879ea2cab7d75b91e0c6b15b3ac13ac2913459dec6fe817f49"
+  },
+  "completed_inference": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/predictions/xpair-v11/done.json",
+    "bytes": 31021,
+    "sha256": "d5d2750b1b8a412fce3f7c50a9cad2681919c59b2cd7aa7204e0f76334b063db"
+  },
+  "signature": {
+    "freeze_sha256": "5cd0f67972df16c4a201563b529e36000cb5bd15a3e9954e9177b362bf8ea113",
+    "code": {
+      "scripts/xpair_v11.py": "1e2ab0393daad4170e48bae9d42c56d9507b33b79da0838a0f5515b1efc10cdc",
+      "scripts/xpair_benchmark.py": "139faa9914f024d83007d1c00f2852ddfc78ed59b30f3aea5a173dbca24afe1f",
+      "scripts/xpair/native.py": "b2739aab3fca75e78a8d927edb42da720f4d987994afaf9e97f9f27786bfd1ad",
+      "scripts/xpair/io_utils.py": "ad692593bba01ee6cb11b787c8036b11e41b16f394cdb2c0dce2ada9b9e5ff4a",
+      "scripts/container.sh": "7fc8c90ac5f3b22ea2d470dab8ca4eef7233ae8098046dea92abe2c9bd621d1f",
+      "scripts/bench_utils.py": "4edfb542692793b64c8c6ce5cf61a6bb38b9f8a7d2a9eeaed74b26e524aa1ae1"
+    },
+    "precision": "fp32_no_tf32",
+    "world_size": 1
+  },
+  "cases": [
+    {
+      "test": "mouse",
+      "source_row_id": 16505,
+      "union_id": 16501,
+      "length_a": 58,
+      "length_b": 68,
+      "native_logit": -8.5855712890625,
+      "saved_logit": -8.585573196411133,
+      "absolute_error": 1.9073486328125e-06
+    },
+    {
+      "test": "mouse",
+      "source_row_id": 20341,
+      "union_id": 20335,
+      "length_a": 201,
+      "length_b": 566,
+      "native_logit": -6.671144962310791,
+      "saved_logit": -6.671144962310791,
+      "absolute_error": 0.0
+    },
+    {
+      "test": "mouse",
+      "source_row_id": 21292,
+      "union_id": 21285,
+      "length_a": 798,
+      "length_b": 794,
+      "native_logit": -6.238723278045654,
+      "saved_logit": -6.238722324371338,
+      "absolute_error": 9.5367431640625e-07
+    },
+    {
+      "test": "fly",
+      "source_row_id": 13322,
+      "union_id": 68285,
+      "length_a": 52,
+      "length_b": 51,
+      "native_logit": -10.529830932617188,
+      "saved_logit": -10.529830932617188,
+      "absolute_error": 0.0
+    },
+    {
+      "test": "fly",
+      "source_row_id": 15944,
+      "union_id": 70906,
+      "length_a": 644,
+      "length_b": 116,
+      "native_logit": -9.497288703918457,
+      "saved_logit": -9.497289657592773,
+      "absolute_error": 9.5367431640625e-07
+    },
+    {
+      "test": "fly",
+      "source_row_id": 9507,
+      "union_id": 64471,
+      "length_a": 799,
+      "length_b": 799,
+      "native_logit": -3.6650142669677734,
+      "saved_logit": -3.6650137901306152,
+      "absolute_error": 4.76837158203125e-07
+    },
+    {
+      "test": "worm",
+      "source_row_id": 37609,
+      "union_id": 147483,
+      "length_a": 50,
+      "length_b": 51,
+      "native_logit": -9.048548698425293,
+      "saved_logit": -9.048547744750977,
+      "absolute_error": 9.5367431640625e-07
+    },
+    {
+      "test": "worm",
+      "source_row_id": 6082,
+      "union_id": 115972,
+      "length_a": 402,
+      "length_b": 284,
+      "native_logit": -7.608616352081299,
+      "saved_logit": -7.608615875244141,
+      "absolute_error": 4.76837158203125e-07
+    },
+    {
+      "test": "worm",
+      "source_row_id": 38481,
+      "union_id": 148353,
+      "length_a": 792,
+      "length_b": 796,
+      "native_logit": -6.577579498291016,
+      "saved_logit": -6.577579021453857,
+      "absolute_error": 4.76837158203125e-07
+    },
+    {
+      "test": "yeast",
+      "source_row_id": 27469,
+      "union_id": 192297,
+      "length_a": 51,
+      "length_b": 51,
+      "native_logit": -9.09859848022461,
+      "saved_logit": -9.09859848022461,
+      "absolute_error": 0.0
+    },
+    {
+      "test": "yeast",
+      "source_row_id": 24038,
+      "union_id": 188867,
+      "length_a": 588,
+      "length_b": 80,
+      "native_logit": -12.634979248046875,
+      "saved_logit": -12.634978294372559,
+      "absolute_error": 9.5367431640625e-07
+    },
+    {
+      "test": "yeast",
+      "source_row_id": 13959,
+      "union_id": 178794,
+      "length_a": 783,
+      "length_b": 800,
+      "native_logit": -7.81248664855957,
+      "saved_logit": -7.8124871253967285,
+      "absolute_error": 4.76837158203125e-07
+    },
+    {
+      "test": "ecoli",
+      "source_row_id": 4845,
+      "union_id": 224542,
+      "length_a": 50,
+      "length_b": 53,
+      "native_logit": -11.029808044433594,
+      "saved_logit": -11.029808044433594,
+      "absolute_error": 0.0
+    },
+    {
+      "test": "ecoli",
+      "source_row_id": 6541,
+      "union_id": 226131,
+      "length_a": 327,
+      "length_b": 218,
+      "native_logit": -6.827111721038818,
+      "saved_logit": -6.827112674713135,
+      "absolute_error": 9.5367431640625e-07
+    },
+    {
+      "test": "ecoli",
+      "source_row_id": 427,
+      "union_id": 220223,
+      "length_a": 792,
+      "length_b": 759,
+      "native_logit": -3.4591143131256104,
+      "saved_logit": -3.4591147899627686,
+      "absolute_error": 4.76837158203125e-07
+    }
+  ],
+  "max_absolute_logit_error": 1.9073486328125e-06,
+  "unmodified_native_full_forward": true,
+  "raw_features_reloaded_independently": true,
+  "state_unchanged": true,
+  "fixture_selection": "Shortest, median and longest combined length per species; labels unused",
+  "test_performance_metrics_read": false
+}

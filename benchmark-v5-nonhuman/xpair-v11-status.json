@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-10-06T21:01:14.188717+00:00",
+  "complete": true,
+  "phase": "complete",
+  "checks": {
+    "all_thirteen_prior_predictors_and_statistics_preserved": true,
+    "xpair_v11_full_length_native_qualification": true,
+    "all_56634_features_verified_and_reused": true,
+    "production_scores_reproduced_by_native_forward_in_all_five_species": true,
+    "existing_common_exposure_masks_cover_xpair_v11": true,
+    "eleven_image_files_include_fourteen_models": true
+  },
+  "completion": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/COMPLETE.json",
+    "bytes": 119327,
+    "sha256": "80c79103e8a3302406a78968b33df182a82ada3d70bf73abaa3ae069e15f07b3"
+  }
+}

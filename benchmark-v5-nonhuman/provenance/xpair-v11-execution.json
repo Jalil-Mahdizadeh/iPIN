@@ -1,0 +1,48 @@
+{
+  "at_utc": "2026-10-06T20:56:21.852333+00:00",
+  "inference_complete": true,
+  "model": "xpair-v11",
+  "inference": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/predictions/xpair-v11/done.json",
+    "bytes": 31021,
+    "sha256": "d5d2750b1b8a412fce3f7c50a9cad2681919c59b2cd7aa7204e0f76334b063db"
+  },
+  "freeze": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/xpair-v11.json",
+    "bytes": 5661,
+    "sha256": "5cd0f67972df16c4a201563b529e36000cb5bd15a3e9954e9177b362bf8ea113"
+  },
+  "features": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/xpair-v11-features.json",
+    "bytes": 942,
+    "sha256": "0891ac2017ac0c9005c299730b9a601fde7a3743cb92dbc2291ea97ce1061558"
+  },
+  "native_production_check": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/qualification/xpair-v11-production-check.json",
+    "bytes": 5575,
+    "sha256": "99e21a77ed09633463b8cf6b8ac905843a1fa2ed561d4ba28385ad628b110559"
+  },
+  "resume_check_log": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/logs/xpair-v11-resume.log",
+    "bytes": 2113,
+    "sha256": "029e76bc55ac3f7656b745f394e9d77b540002bc368c136a1edab118700639e2"
+  },
+  "resume_verified_completed_predictions_without_rescoring": true,
+  "all_56634_existing_encoder_features_reused": true,
+  "encoder_features_computed": 0,
+  "unique_pairs_scored": 238025,
+  "source_rows": 242000,
+  "physical_gpus": 1,
+  "allocated_job_id": "3417519",
+  "host": "n450",
+  "gpu": "NVIDIA GH200 120GB",
+  "cache_loading_seconds": 499.58308802498505,
+  "complete_inference_seconds": 549.5778858140111,
+  "loading_adjustment": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/xpair-v11-cache-loading-adjustment.json",
+    "bytes": 1714,
+    "sha256": "a3623b1f933921f6f1dc0c6544bdac3ce00d5d96f4ea79ab8a5ceab06b5d6f58"
+  },
+  "prior_completed_models_reinferred": false,
+  "retraining": false
+}

@@ -5,7 +5,8 @@ import numpy as np
 from scipy.special import expit
 from bench_utils import ROOT,atomic,load_npz,now,read,record,save_npz,sha
 ROSTER=read(ROOT/'provenance/roster.json')
-LABELS=ROSTER['models'];NAMES=list(LABELS)
+BASE_NAMES=list(ROSTER['models'])
+LABELS={**ROSTER['models'],'xpair-v11':'X-PAIR (humanV11)'};NAMES=list(LABELS)
 TESTS=['mouse','fly','worm','yeast','ecoli']
 PAIR_MODELS=['native-human','native-plm','ipin-esm2','ipin-esmc']
 def verify(item):
@@ -13,7 +14,29 @@ def verify(item):
 
 def collect(name):
  n=len(np.load(ROOT/'data/union.npy'));directory=ROOT/'predictions'/name;sources=[]
- if name in PAIR_MODELS:
+ extension_path=ROOT/'provenance/xpair-v11.json'
+ if extension_path.exists() and name in BASE_NAMES:
+  extension=read(extension_path);previous=read(verify(extension['prior_collection']))
+  item=previous['models'][name];arrays=load_npz(verify(item['file']))
+  assert item['rows']==n and all(len(a)==n and np.isfinite(a).all() for a in arrays.values())
+  return {**item,'reused_from':extension['prior_collection']}
+ if name=='xpair-v11':
+  path=directory/'done.json'
+  if not path.exists():return None
+  extension=read(extension_path);q=read(ROOT/'qualification/xpair-v11.json');m=read(path)
+  assert q['passed'] and m['signature']==q['signature'] and m['signature']['freeze_sha256']==sha(extension_path)
+  assert m['rows']==n and m['state_unchanged'] and m['no_truncation'] and m['features_computed']==0
+  assert m['checkpoint']==extension['checkpoint'];verify(m['checkpoint']);verify(m['qualification'])
+  for rel,h in extension['inference_code'].items():assert sha(ROOT/rel)==h,rel
+  data=load_npz(verify(m['file']));seen=np.zeros(n,np.int8)
+  for item in m['chunks']:
+   p=verify(item);side=read(p.with_suffix('.json'));assert side['signature']==m['signature']
+   assert side['file']['sha256']==item['sha256']
+   a=load_npz(p);ids=a['indices'];assert len(np.unique(ids))==len(ids) and not seen[ids].any()
+   assert np.array_equal(a['scores'],data['scores'][ids]);seen[ids]+=1
+  assert (seen==1).all() and np.array_equal(data['probabilities'],expit(data['scores']))
+  sources.append(record(path))
+ elif name in PAIR_MODELS:
   if not all((directory/f'rank-{r:02d}.done.json').exists() for r in range(4)):return None
   logits=np.full((n,2),np.nan);seen=np.zeros(n,np.int8);q=read(ROOT/'qualification'/(name+'.json'));assert q['passed']
   ranks=[]
@@ -66,7 +89,11 @@ def main():
   assert np.array_equal(np.sort(rows[:,:2],axis=1),union[ids,:2])
   assert set(np.unique(rows[:,2]))=={0,1}
   counts[test]={'rows':len(rows),'positives':int(rows[:,2].sum()),'unique_pairs':len(np.unique(ids))}
+ atomic(ROOT/'provenance/current-roster.json',{'models':LABELS,'original_roster':record(ROOT/'provenance/roster.json'),
+  'extensions':[record(ROOT/'provenance/xpair-v11.json')],'selection_uses_target_test_metrics':False})
  atomic(ROOT/'results/collection.json',{'at_utc':now(),'complete':not missing,'missing':missing,'models':result,'tests':counts,
-  'roster':record(ROOT/'provenance/roster.json'),'prepared':record(ROOT/'provenance/prepared.json')})
+  'roster':record(ROOT/'provenance/roster.json'),'roster_extension':record(ROOT/'provenance/xpair-v11.json'),
+  'effective_roster':record(ROOT/'provenance/current-roster.json'),
+  'prepared':record(ROOT/'provenance/prepared.json')})
  print({'complete':list(result),'missing':missing},flush=True)
 if __name__=='__main__':main()

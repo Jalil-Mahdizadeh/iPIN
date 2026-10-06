@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T20:17:58.316828+00:00",
+  "at_utc": "2026-10-06T20:56:28.280416+00:00",
   "complete": true,
   "models": [
     "ipin-esm2",
@@ -13,6 +13,7 @@
     "rapppid",
     "sprint",
     "dscript",
+    "xpair-v11",
     "v2-capped",
     "v2-clean-bce"
   ],
@@ -28,6 +29,7 @@
     "rapppid": "RAPPPID (released mult)",
     "sprint": "SPRINT (v5 human TRAIN graph)",
     "dscript": "D-SCRIPT (human_v1)",
+    "xpair-v11": "X-PAIR (humanV11)",
     "v2-capped": "V2 length-capped (u8000)",
     "v2-clean-bce": "V2 clean BCE (u4000)"
   },
@@ -40,59 +42,59 @@
   "figure_groups": 4,
   "figure_files": [
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/ap-comparison.pdf",
-      "bytes": 36419,
-      "sha256": "a7093b0374ac1876477423b33c2c91e808cb9a2d6ec013baf4a338e5cc6b8713"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/ap-comparison.pdf",
+      "bytes": 37469,
+      "sha256": "668ece0333aa6e7b3d335f0b4bcbce58f54cf70b852be0335515524cee8f6bdb"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/ap-comparison.png",
-      "bytes": 248897,
-      "sha256": "cd7e11d719c5265add96eab51e03814e247cb5af305f2d8f197dc9c47145ea6f"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/ap-comparison.png",
+      "bytes": 267701,
+      "sha256": "af88e3e3cb57094df4443709e727f21718a64871ec9fdae750771a4653d5eac0"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/ap-comparison.svg",
-      "bytes": 177201,
-      "sha256": "4b5ab6122bb3dfcf0e27eb08eab217629f48c76af485195df7b2c39046a2d8d1"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/ap-comparison.svg",
+      "bytes": 184773,
+      "sha256": "d79507cc352c7a38e9582e708977a44213654c26a91de9037ccd272159bc1a36"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/auroc-comparison.pdf",
-      "bytes": 36746,
-      "sha256": "672b88a3dd3b99a4aa49b13a8a8156d31d221873bbf07da0e0e71abb026dae11"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/auroc-comparison.pdf",
+      "bytes": 37761,
+      "sha256": "653044707a3a552c4f6d8cb608affb764a4e6a5e2ff85da190d5ffd52ec07615"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/auroc-comparison.png",
-      "bytes": 247452,
-      "sha256": "6d9d20031e267aaba847a52d1f3eb27d7c5fca9aee38f9da6b73e44bb86c5313"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/auroc-comparison.png",
+      "bytes": 265990,
+      "sha256": "897ab2a9424230615cff3858d0f25243f4a411ff0026b8f98d4e30dae0f4da38"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/auroc-comparison.svg",
-      "bytes": 173050,
-      "sha256": "01a5ed09a32e17244c4ed41999db68a6d4e9f7fe0b46f88e6f403adf9d9c95e4"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/auroc-comparison.svg",
+      "bytes": 180621,
+      "sha256": "1fc52e38a4147bacfc2a22d113f7236f853fbff87eeb01f90c4938ee8e55e2af"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/common-unexposed-comparison.pdf",
-      "bytes": 53254,
-      "sha256": "6461c4c497e67b2720b18e50e6fb14867a50bf55c203e81871964061a0616464"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/common-unexposed-comparison.pdf",
+      "bytes": 54754,
+      "sha256": "bee28d618620960d7b54a150cc317ec1cc28bb7c00a706d6c93bbdb7c6564ada"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/common-unexposed-comparison.png",
-      "bytes": 428124,
-      "sha256": "53cd1c9e718e2f14ef87b882122044c03c3a09f0b056ecc00aa39f586e5ba3cb"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/common-unexposed-comparison.png",
+      "bytes": 454172,
+      "sha256": "707ca62962d1406baba356a30129ddb931e00ad2c7551d4bb676810f0ae2750d"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/common-unexposed-comparison.svg",
-      "bytes": 182022,
-      "sha256": "24eb7e60c3f718837fb06572e47ff73ec08ac65efd3485b24c8b9a23bfc5d281"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/common-unexposed-comparison.svg",
+      "bytes": 190515,
+      "sha256": "eedbe80378d2498a30dc61d6a7f865ecd7bb9f9ff2126450d27094a5a3bf6df6"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/curves.pdf",
-      "bytes": 1202909,
-      "sha256": "81f2ed7e6a01a8b4dab49a12b08b047104c9c8c931dd690d1970176346f62ab6"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/curves.pdf",
+      "bytes": 1282007,
+      "sha256": "eab9a2edcab270ac1561b40dc90d937f1fecaf187c2c0753bc9f1618e9203c84"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/curves.png",
-      "bytes": 993758,
-      "sha256": "a91342a555b6007f76f73571a3b3ff5b9a60743c5a59e15e57ef8770d50cf9df"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/curves.png",
+      "bytes": 999050,
+      "sha256": "dcbc31d65d351ed13e7bd8a1ed00d577dc7ab18534cae5e60673a170f7b61289"
     }
   ],
   "inference_repeated": false,
@@ -106,24 +108,24 @@
     "same_rows_for_all_models": true
   },
   "metrics": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/combined-figure-metrics.csv",
-    "bytes": 22518,
-    "sha256": "af894f9d893f4a0be2931242a5a418129a39812c129d79591a6bd6730fcafdbf"
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/combined-figure-metrics.csv",
+    "bytes": 24263,
+    "sha256": "7db134f0b57af1082d283badad19857fb354865f3b8c5e2c8de0ee6b9a53d3e9"
   },
   "intervals": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/combined-figure-confidence-intervals.csv",
-    "bytes": 9962,
-    "sha256": "71fec8c5a748266d3aea2e4c813bbe0d107f01168a0c9295d742c7c5debdef21"
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/combined-figure-confidence-intervals.csv",
+    "bytes": 10729,
+    "sha256": "a2230ac192e404362605c80cb7180b9861e9da3626e90b69a49bbafc706fdd12"
   },
   "script": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/plot_with_historical.py",
-    "bytes": 9688,
-    "sha256": "c18939b57d3a0f03582e9891cee54598181440d98112a9ac5eb19351b592c7b2"
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/scripts/plot_with_historical.py",
+    "bytes": 10188,
+    "sha256": "dc765f3d4b6804685413a297bd6a1b604a0b66e4f0ff037319d00e8612ea3857"
   },
   "plot_code": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/scripts/analyze.py",
-    "bytes": 16484,
-    "sha256": "be763a236e89ac0213d3b9834fd5c607bb22bcb55af3ea30fc82664a3423ade6"
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/scripts/analyze.py",
+    "bytes": 17128,
+    "sha256": "d55d44f484853989bb7485eaa0ef0f7317eaff2eaa3cae8bc7485b1088cc99ab"
   },
   "sources": [
     {
@@ -182,6 +184,11 @@
       "sha256": "a317b8f41c3d400799c217e5a2360a4f5623edff5f2f88bef368e0c1a2f8ea40"
     },
     {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/xpair-v11-union.npz",
+      "bytes": 2794057,
+      "sha256": "e4f55af191791572f9c376ba3eb245fd03147d2fbce3b4bdcc4d19fd46888416"
+    },
+    {
       "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/v2-capped-union.npz",
       "bytes": 2546721,
       "sha256": "d1be2c601cd64efc6037657a7d7d134dd15efe27e16ee98c3899c2b1dfd26565"
@@ -192,159 +199,169 @@
       "sha256": "3cd0e04b072be6e3746f9960cac0982517e77a9a3741cee4c2a728fd6083c590"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/mouse.npy",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/mouse.npy",
       "bytes": 1760128,
       "sha256": "197c4ef4dcac3c6f3f0e7ee684c5d431c57eeb9c7ab803d52529ec30cceb7d51"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/mouse-bootstrap.npz",
-      "bytes": 165951,
-      "sha256": "f48a6095ac42c85b3607875b5408f6a9f370e6bed1964fdc7769cdb579891d3c"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/mouse-bootstrap.npz",
+      "bytes": 180832,
+      "sha256": "acb2f457f765aedc5779da840ccd9c3242f553713f2eca96c89cca0581e15b5f"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/mouse-bootstrap.npz",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/mouse-bootstrap.npz",
       "bytes": 90645,
       "sha256": "4bb85e2e2ea9217319472008f985ec82903f5d8b2808e7fac1bf2b42e745c1d2"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/fly.npy",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/fly.npy",
       "bytes": 1760128,
       "sha256": "13593729e183012893e5030dd199f6e021d561a1d4860b81e601054278654878"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/fly-bootstrap.npz",
-      "bytes": 166109,
-      "sha256": "7d616173fce5c91ce7b5502b645784c1e1adeffb158d5aa9955f0e6869be1999"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/fly-bootstrap.npz",
+      "bytes": 181057,
+      "sha256": "a1df8e7e69b8d633f6740d8650bc815f4b80eb4a8258df15f16ca6bb29238af9"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/fly-bootstrap.npz",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/fly-bootstrap.npz",
       "bytes": 90884,
       "sha256": "278d9a0b8cbaddf28d634c7da7f85732fb8cafca5dd69b9485f29c343bf61557"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/worm.npy",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/worm.npy",
       "bytes": 1760128,
       "sha256": "042b1d9740f8b0deeec8663280f20b3edbac6121a4e222939b40855ba789a652"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/worm-bootstrap.npz",
-      "bytes": 166255,
-      "sha256": "832a2b6e01ae29f9c2e716ffbfbc8e432cacb9da0dcdb948d31ba0f78f2b4091"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/worm-bootstrap.npz",
+      "bytes": 181199,
+      "sha256": "9b7b8d9293f7455265b07571d2e001736e81bdb6b31c049bebba39e628af488f"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/worm-bootstrap.npz",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/worm-bootstrap.npz",
       "bytes": 90854,
       "sha256": "68c5c63f0711e06d68c235347420da495af40fb8eeead4226080be5171377e19"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/yeast.npy",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/yeast.npy",
       "bytes": 1760128,
       "sha256": "cdf305fe455bc2ee8c1d6b8282d7fccc30f53f472b46019fba35579dd0e011ac"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/yeast-bootstrap.npz",
-      "bytes": 166166,
-      "sha256": "60e3a3c09c28710905e87992efeefb18fc150b2ce0379e6c11c7aa84d09b1446"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/yeast-bootstrap.npz",
+      "bytes": 181092,
+      "sha256": "c69c8f8f568114a5c6570e5b825ebad5ce16e80241659d93d5afacf9ae698bee"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/yeast-bootstrap.npz",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/yeast-bootstrap.npz",
       "bytes": 90912,
       "sha256": "831778123eaa00a685facc053960fe6a560897d845a9d9c019ff8e4386e75ee0"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/ecoli.npy",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/ecoli.npy",
       "bytes": 704128,
       "sha256": "a67bdac5af8a3e8730aa77f0517dab0fb647f61353708ea915d005f53dc52f49"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/ecoli-bootstrap.npz",
-      "bytes": 166521,
-      "sha256": "893d32f26c4fa2dc3e2c2f7847a9c48d9a2c19f1a2603406b1e64c79fc9d78bf"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/ecoli-bootstrap.npz",
+      "bytes": 181474,
+      "sha256": "6158e706271f1aad993707b5e6c1bfecc76b2053d3146470c754e08c9128fec5"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/ecoli-bootstrap.npz",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/ecoli-bootstrap.npz",
       "bytes": 91261,
       "sha256": "a275f2452cdd873601ca60a73e7a5639095023bd9b13ea1678cf05a0255e6f91"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/summary.json",
-      "bytes": 165832,
-      "sha256": "e9a735bf6e6b4fa3a2ff5eca8af553d744135307fb9dd458107d6929efcc850d"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/summary.json",
+      "bytes": 209283,
+      "sha256": "0b40bd5a0055b321dac34661a7cb50545c228c9ca2d3ae2de6fdbd61bcd42938"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/collection.json",
-      "bytes": 15098,
-      "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/collection.json",
+      "bytes": 19379,
+      "sha256": "63bf9a07eb1b3f55066f65a7dc5809485b41684e4784b9da29f5e2c8aee230f5"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/results/subsets.csv",
-      "bytes": 70993,
-      "sha256": "55488200930669c7666cd786bf2c17db4d5074d49133b6a7e8fd568282e20f3a"
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/subsets.csv",
+      "bytes": 77796,
+      "sha256": "22cfcd965063b69be5a1320e96c5921be6faa04d1b49a68f8f7f756b822ae1b7"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/union.npy",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/union.npy",
       "bytes": 7616928,
       "sha256": "7bafd108eee680375f02523aa6d0ce65a4f6f0b690606ddaec0c141e46fbf614"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/pair-mapping.npz",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/pair-mapping.npz",
       "bytes": 416513,
       "sha256": "435328ce29b334dcc18ef2d21d39aa5d12473391c47869849edab6224d756fe2"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/data/sequences.json",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/sequences.json",
       "bytes": 24509473,
       "sha256": "67484561e8e664d3cd773632516f5666bd039314d5000b1087e47c8e59b97d11"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/provenance/exposure.json",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/exposure.json",
       "bytes": 32906,
       "sha256": "5ed2ae80ecd7459b023719d704711208332d908ed67c3856ec22fc00920984cd"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/provenance/exposure-flags.npz",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/xpair-v11-exposure.json",
+      "bytes": 7611,
+      "sha256": "437202d1acc4ee0cfa959914adaa26ff0cd212c6bcd073f2ebbf116b7fba318b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/xpair-v11-exposure-flags.npz",
+      "bytes": 5852,
+      "sha256": "b7f33140ba4693e37facdb751931aa8d5d8f454058ddd95ec9f0be0e76ab47a1"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/exposure-flags.npz",
       "bytes": 56148,
       "sha256": "9d778647ce4feeea27a67d9c6a5c4673d08e6247638319b4a634f68ea50cf289"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/provenance/exposure.json",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/provenance/exposure.json",
       "bytes": 3863,
       "sha256": "c7d7b8cffd097c8cb757ee66f8e6a232d4b182c6e36b9af43cfe2dc41b7a40d2"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/provenance/exposure-flags.npz",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/provenance/exposure-flags.npz",
       "bytes": 2290,
       "sha256": "d1991c940a1fd973bd50571eeb5d9768afbfc1359da6e9edf0b781cbf81e256b"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/provenance/selection.json",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/provenance/selection.json",
       "bytes": 15921,
       "sha256": "517b815e350008240d3d4e72441ec0763af82b03ba33b96a7ac612417b6da9f9"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/summary.json",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/summary.json",
       "bytes": 22362,
       "sha256": "6a88fb25ff2b6b25bd8e29b32ee95f408b204576ba5c1fee76b77a1764ce68c7"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/COMPLETE.json",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/COMPLETE.json",
       "bytes": 8121,
       "sha256": "d574f17772c5d6fd8a15ff6fcf72112b775616e2a33ad7d0059205f8cf201e58"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/subsets.csv",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/subsets.csv",
       "bytes": 10327,
       "sha256": "b0966568ab829fcf535edf5a83657f2d6e9ba9f4d1878f5b70f603381b802121"
     },
     {
-      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/v1-v4-comparison/results/confidence-intervals.csv",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/confidence-intervals.csv",
       "bytes": 4608,
       "sha256": "9a7833f33329a69fc5e2780fb0732f2fb1b0ea87ec83f49754271bf13496ce6f"
     }
   ],
   "previous_figures": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/archive/figures-before-v1-v4-inclusion/archive.json",
-    "bytes": 5552,
-    "sha256": "12c9df73c2662bb989de413fea74dd1484e5713f43c8e55ecc2db5a448514129"
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/archive.json",
+    "bytes": 70353,
+    "sha256": "5f871c0416aab5e928ed51b7eb203d3f0dd3724284d27f475da0921ed809c563"
   }
 }

@@ -1,0 +1,120 @@
+{
+  "at_utc": "2026-10-06T20:45:05.961607+00:00",
+  "name": "xpair-v11",
+  "checkpoint": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/X-PAIR/pretrained_models/interaction_dscript.ckpt",
+    "bytes": 5686501,
+    "sha256": "b2629356df2206e6d29058c4f65daf75e30c9b874da27fa282c282affb6738bf"
+  },
+  "epoch": 3,
+  "global_step": 52724,
+  "hyper_parameters": {
+    "train_path_interaction": "/home/sararescalli/XPAIR_DATASET/data_dscript/for_xpair/multi/train_human_dscript.tsv",
+    "train_path_interface": null,
+    "val_path_interaction": "/home/sararescalli/XPAIR_DATASET/data_dscript/for_xpair/multi/val_human_dscript.tsv",
+    "val_path_interface": null,
+    "interaction_fasta_path": "/home/sararescalli/XPAIR_DATASET/data_dscript/for_xpair/multi/sequences_dscript.fasta",
+    "interface_fasta_path": null,
+    "emb_dir_interaction": "/home/sararescalli/XPAIR_experiments/embeddings/emb_dscript",
+    "emb_dir_interface": "./embeddings_interface",
+    "batch_size_interaction": 32,
+    "batch_size_interface": null,
+    "min_len": 0,
+    "max_len": 2000,
+    "plm": "ankh_large",
+    "seed": 123,
+    "num_workers": 4,
+    "use_wandb": true,
+    "reduced_dim": 128,
+    "num_cross_layers": 2,
+    "num_heads": 2,
+    "dropout": 0.3,
+    "lr": 0.0001,
+    "warmup": 3000.0,
+    "interface_positive_weight": 5,
+    "num_nodes": 1,
+    "devices": 1,
+    "max_epochs": 8,
+    "early_stop": 3.0,
+    "run_name": "DSCRIPT",
+    "model_task": "interaction"
+  },
+  "addendum": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/XPAIR-V11-ADDENDUM.md",
+    "bytes": 4154,
+    "sha256": "abfd33a88537f438836a152899c01e01a936cb3a17dd72a0b85decb0dca7102c"
+  },
+  "inference_code": {
+    "scripts/xpair_v11.py": "1e2ab0393daad4170e48bae9d42c56d9507b33b79da0838a0f5515b1efc10cdc",
+    "scripts/xpair_benchmark.py": "139faa9914f024d83007d1c00f2852ddfc78ed59b30f3aea5a173dbca24afe1f",
+    "scripts/xpair/native.py": "b2739aab3fca75e78a8d927edb42da720f4d987994afaf9e97f9f27786bfd1ad",
+    "scripts/xpair/io_utils.py": "ad692593bba01ee6cb11b787c8036b11e41b16f394cdb2c0dce2ada9b9e5ff4a",
+    "scripts/container.sh": "7fc8c90ac5f3b22ea2d470dab8ca4eef7233ae8098046dea92abe2c9bd621d1f",
+    "scripts/bench_utils.py": "4edfb542692793b64c8c6ce5cf61a6bb38b9f8a7d2a9eeaed74b26e524aa1ae1"
+  },
+  "prepared": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/prepared.json",
+    "bytes": 6686,
+    "sha256": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba"
+  },
+  "prior_collection": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+    "bytes": 15098,
+    "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+  },
+  "archive_receipt": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/xpair-v11-archive.json",
+    "bytes": 11052,
+    "sha256": "11ebd4881124ffc278178992b99c72f0efc13e5b50fb0bdb2b1b75545b7ba25f"
+  },
+  "image": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/benchmark/containers/images/plm-interact-native-arm64-v1.sif",
+    "bytes": 13101785088,
+    "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+  },
+  "runtime": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/runtime/requirements.freeze.txt",
+    "bytes": 17195,
+    "sha256": "bdf82f59ed32902cce854b90a2b694b925f491aeaa141cfcb83811696b787527"
+  },
+  "encoder_provenance": {
+    "encoder_freeze_sha256": "5a369e2aeb6305279afd32fc356f65adfcf885999620a2270f4389f9f887644c",
+    "runtime_sha256": "bdf82f59ed32902cce854b90a2b694b925f491aeaa141cfcb83811696b787527",
+    "encoder_script_sha256": "b2739aab3fca75e78a8d927edb42da720f4d987994afaf9e97f9f27786bfd1ad"
+  },
+  "existing_feature_runs": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/features/xpair/rank-00.done.json",
+      "bytes": 3300085,
+      "sha256": "da5e08a014c506292217a43bf790e69b28218c2e30980cbc05d139e64e8bc70b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/features/xpair/rank-01.done.json",
+      "bytes": 3300002,
+      "sha256": "e7e7af0a38e7d2ee20d9311afbe57c9c4978217228522ccddd9e6faf0cecfcd3"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/features/xpair/rank-02.done.json",
+      "bytes": 3299969,
+      "sha256": "8e4610c162870f98766f00baf4ab505c7a67da8a38dc26b816c312f552dab691"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/features/xpair/rank-03.done.json",
+      "bytes": 3299771,
+      "sha256": "0ea0986a86bbc1abe56b7811f25df950e0e761fa1c1e26879cf72e6e7be25caa"
+    }
+  ],
+  "same_checkpoint_as_human_benchmark": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/xpair-v11.json",
+    "bytes": 4079,
+    "sha256": "45af18672f23e09169c83785b5762a3184fb98d12b9372d1f20f154c40884fea"
+  },
+  "cache_loading_adjustment": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/xpair-v11-cache-loading-adjustment.json",
+    "bytes": 1714,
+    "sha256": "a3623b1f933921f6f1dc0c6544bdac3ce00d5d96f4ea79ab8a5ceab06b5d6f58"
+  },
+  "selection_uses_test_performance": false,
+  "retraining": false,
+  "training_source": "Human STRING v11 D-SCRIPT/Sledzieski TRAIN and validation"
+}

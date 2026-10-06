@@ -41,6 +41,6 @@ bash benchmark-v5-baselines/scripts/run.sh
 
 The V11 baseline folder was renamed from `literature/V11-baselines` to `literature/string-v11-baselines`; older provenance retains the original absolute paths. Preserve or remap those paths when restoring that archived run.
 
-The nonhuman benchmark folder was renamed from `bechmark-nonhuman-v5` to `benchmark-v5-nonhuman`. Frozen result and provenance records retain their original paths and hashes. The HPC workspace has an ignored compatibility symlink from the old name to the new name; recreate that link when using those archived absolute paths. Completion manifests describe the original run, before documentation and launcher paths were updated for the rename.
+The nonhuman benchmark folder was renamed from `bechmark-nonhuman-v5` to `benchmark-v5-nonhuman`. Historical result and provenance records retain their original paths and hashes. The HPC workspace has an ignored compatibility symlink from the old name to the new name; recreate that link when using those archived absolute paths. Original completion manifests are preserved in the benchmark archives. The current nonhuman comparison includes X-PAIR humanV11 and verifies reuse of the earlier predictions and bootstrap samples.
 
 Method definitions, source attribution, uncertainty estimates and limitations are recorded in the individual protocols and reports.

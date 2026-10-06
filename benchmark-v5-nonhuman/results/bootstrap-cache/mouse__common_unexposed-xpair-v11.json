@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-v11",
+    "test": "mouse__common_unexposed",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "16f775a619f65d71b80be62bda5c785aa3a81f8f8dc1ae4161cb71c56ff6986d",
+    "scores": "3d59158358f03e409d50393ae61e3640d194ef9ff21ac9e0233235724a636c44",
+    "analysis_code": "d55d44f484853989bb7485eaa0ef0f7317eaff2eaa3cae8bc7485b1088cc99ab"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/bootstrap-cache/mouse__common_unexposed-xpair-v11.npz",
+    "bytes": 14642,
+    "sha256": "c88c528dfe146cae368125b17bbab6ebdc2da272ff66d8d3a3e20165e2b33cb3"
+  }
+}

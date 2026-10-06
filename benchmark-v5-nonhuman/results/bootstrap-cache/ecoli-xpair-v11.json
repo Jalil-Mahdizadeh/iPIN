@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-v11",
+    "test": "ecoli",
+    "replicates": 1000,
+    "seed": 20261005,
+    "rows": "4ed7233c6f878d2a813e5d77e303227a51e693f797eca0378383ac38b4b69ae1",
+    "scores": "a565e2fc8d80ce54bfe54d1db7d8430e71b6e3bdff77bce45ab19ca33066471f",
+    "analysis_code": "d55d44f484853989bb7485eaa0ef0f7317eaff2eaa3cae8bc7485b1088cc99ab"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/bootstrap-cache/ecoli-xpair-v11.npz",
+    "bytes": 15056,
+    "sha256": "ead49f570bc94e256d69c5d5ff3724c0a2d734355cc99623c072eb67ba41942a"
+  }
+}

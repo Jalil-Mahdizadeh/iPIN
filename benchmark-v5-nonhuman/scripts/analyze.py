@@ -46,13 +46,20 @@ def bootstrap(test,rows,data):
    'scores':hashlib.sha256(data[name]['scores'].tobytes()).hexdigest(),'analysis_code':sha(__file__)}
   identities[name]=identity;path=cache/f'{test}-{name}.npz';side=path.with_suffix('.json')
   if side.exists():
-   item=read(side);assert item['identity']==identity and sha(path)==item['file']['sha256'];saved=load_npz(path)['samples']
+   item=read(side);previous=item['identity']
+   if previous!=identity:
+    assert previous['analysis_code']==sha(ROOT/'archive/before-xpair-v11/scripts/analyze.py')
+    assert {k:v for k,v in previous.items() if k!='analysis_code'}=={k:v for k,v in identity.items() if k!='analysis_code'}
+   assert sha(path)==item['file']['sha256'];saved=load_npz(path)['samples']
    assert saved.shape==(REPLICATES,2) and np.isfinite(saved).all();samples[:,j]=saved
   else:missing.append(j)
  rng=np.random.default_rng(SEED);started=time.monotonic()
  for rep in range(REPLICATES):
   counts=np.bincount(rng.integers(0,proteins,proteins),minlength=proteins);weights=counts[endpoints[:,0]].astype(float)*counts[endpoints[:,1]];weights[selfpair]=counts[endpoints[selfpair,0]]
   for j in missing:samples[rep,j]=rankings[j].compute(weights)
+  if rep in [0,500,999]:
+   for j in range(len(NAMES)):
+    if j not in missing:assert np.allclose(samples[rep,j],rankings[j].compute(weights),atol=1e-12,rtol=0)
   if rep%200==0:print({'test':test,'bootstrap':rep,'seconds':time.monotonic()-started},flush=True)
  for j in missing:
   name=NAMES[j];path=cache/f'{test}-{name}.npz';save_npz(path,samples=samples[:,j]);atomic(path.with_suffix('.json'),{'identity':identities[name],'file':record(path)})
@@ -62,6 +69,7 @@ def bootstrap(test,rows,data):
   for k,metric in enumerate(['ap','auroc']):
    low,high=np.quantile(samples[:,j,k],[.025,.975]);intervals.append({'test':test,'model':name,'metric':metric,'estimate':float(estimates[j,k]),'low':float(low),'high':float(high)})
  comparisons=[(j,NAMES.index(ref)) for ref in ['native-human','native-plm'] for j,name in enumerate(NAMES) if name!=ref]+[(NAMES.index('ipin-esm2'),NAMES.index('ipin-esmc'))]
+ comparisons += [(NAMES.index('xpair-v11'),NAMES.index(ref)) for ref in ['ipin-esm2','ipin-esmc','tuna-human','tuna','xpair-bernett','xpair-default']]
  for j,other in comparisons:
   for k,metric in enumerate(['ap','auroc']):
    low,high=np.quantile(samples[:,j,k]-samples[:,other,k],[.025,.975]);diffs.append({'test':test,'model':NAMES[j],'reference':NAMES[other],'metric':metric,
@@ -84,15 +92,16 @@ def macro(rows,data):
  return out
 
 SPECIES={'mouse':'Mouse','fly':'Fly','worm':'Worm','yeast':'Yeast','ecoli':'E. coli'}
-COLORS=['#c83d43','#2879b9','#111111','#737373','#218657','#82b78e','#7957ad','#b89bd7','#d09b29','#98644a','#cc75a5']
+COLORS=['#c83d43','#2879b9','#111111','#737373','#218657','#82b78e','#7957ad','#b89bd7','#d09b29','#98644a','#cc75a5','#e17616']
 
 def plots(results,intervals,testdata,subsets):
  os.environ['MPLCONFIGDIR']=str(ROOT/'cache/matplotlib')
  import matplotlib;matplotlib.use('Agg')
  import matplotlib.pyplot as plt
  labels=[LABELS[n]+('*' if n=='xpair-default' else '') for n in NAMES]
+ assert len(COLORS)==len(NAMES)
  for metric in ['ap','auroc']:
-  fig,axes=plt.subplots(1,5,figsize=(19,6.4),sharey=True)
+  fig,axes=plt.subplots(1,5,figsize=(19,max(6.4,.46*len(NAMES)+1.2)),sharey=True)
   for ax,test in zip(axes,TESTS):
    for j,name in enumerate(NAMES):
     it=next(x for x in intervals if x['test']==test and x['model']==name and x['metric']==metric)
@@ -107,7 +116,7 @@ def plots(results,intervals,testdata,subsets):
   for ext in ['png','pdf','svg']:fig.savefig(ROOT/'results'/f'{metric}-comparison.{ext}',dpi=190,bbox_inches='tight')
   plt.close(fig)
  # Identical unexposed rows for every predictor; do not compare model-specific subsets.
- fig,axes=plt.subplots(1,2,figsize=(15,8),sharey=True)
+ fig,axes=plt.subplots(1,2,figsize=(15,max(8,.5*len(NAMES)+1.5)),sharey=True)
  for ax,metric in zip(axes,['ap','auroc']):
   matrix=np.array([[next(r[metric] for r in subsets if r['subset']=='common_known_endpoint_unexposed' and r['test']==t and r['model']==n) for t in TESTS] for n in NAMES])
   im=ax.imshow(matrix,cmap='YlGnBu',vmin=0,vmax=1,aspect='auto')
@@ -133,7 +142,7 @@ def plots(results,intervals,testdata,subsets):
   axes[0,col].set(title=SPECIES[test],xlabel='Recall',ylabel='Precision',xlim=(0,1),ylim=(0,1));axes[0,col].axhline(y.mean(),color='gray',ls=':',lw=1)
   axes[1,col].set(xlabel='False-positive rate',ylabel='True-positive rate',xlim=(0,1),ylim=(0,1));axes[1,col].plot([0,1],[0,1],color='gray',ls=':',lw=1)
  handles,labels_=axes[0,0].get_legend_handles_labels();fig.legend(handles,labels_,loc='lower center',ncol=4,fontsize=9)
- fig.tight_layout(rect=(0,.15,1,.96))
+ fig.tight_layout(rect=(0,.19,1,.96))
  for ext in ['png','pdf']:fig.savefig(ROOT/'results'/f'curves.{ext}',dpi=180,bbox_inches='tight')
  plt.close(fig)
 

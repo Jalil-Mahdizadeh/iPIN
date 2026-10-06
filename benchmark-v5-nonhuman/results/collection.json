@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T20:05:51.129927+00:00",
+  "at_utc": "2026-10-06T20:55:22.614780+00:00",
   "complete": true,
   "missing": [],
   "models": {
@@ -38,7 +38,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "ipin-esmc": {
       "rows": 238025,
@@ -75,7 +80,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "native-human": {
       "rows": 238025,
@@ -112,7 +122,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "native-plm": {
       "rows": 238025,
@@ -149,7 +164,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "tuna-human": {
       "rows": 238025,
@@ -166,7 +186,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "tuna": {
       "rows": 238025,
@@ -183,7 +208,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "xpair-bernett": {
       "rows": 238025,
@@ -215,7 +245,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "xpair-default": {
       "rows": 238025,
@@ -247,7 +282,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "rapppid": {
       "rows": 238025,
@@ -264,7 +304,12 @@
         }
       ],
       "score_kind": "probability",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "sprint": {
       "rows": 238025,
@@ -281,7 +326,12 @@
         }
       ],
       "score_kind": "raw native SPRINT score",
-      "probability_available": false
+      "probability_available": false,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
     },
     "dscript": {
       "rows": 238025,
@@ -313,6 +363,28 @@
         }
       ],
       "score_kind": "probability",
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/archive/before-xpair-v11/results/collection.json",
+        "bytes": 15098,
+        "sha256": "3da3d55ca8792aaf82ed0eb661ab0b5a5d6e1d4940f9451efd00767bebf2af83"
+      }
+    },
+    "xpair-v11": {
+      "rows": 238025,
+      "file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/xpair-v11-union.npz",
+        "bytes": 2794057,
+        "sha256": "e4f55af191791572f9c376ba3eb245fd03147d2fbce3b4bdcc4d19fd46888416"
+      },
+      "sources": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/predictions/xpair-v11/done.json",
+          "bytes": 31021,
+          "sha256": "d5d2750b1b8a412fce3f7c50a9cad2681919c59b2cd7aa7204e0f76334b063db"
+        }
+      ],
+      "score_kind": "logit",
       "probability_available": true
     }
   },
@@ -344,12 +416,22 @@
     }
   },
   "roster": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/provenance/roster.json",
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/roster.json",
     "bytes": 784,
     "sha256": "cecc97b1387d1df3e2d7b0dcb19a2400642441d8d98e2227cdbd0a4dc93692a4"
   },
+  "roster_extension": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/xpair-v11.json",
+    "bytes": 5661,
+    "sha256": "5cd0f67972df16c4a201563b529e36000cb5bd15a3e9954e9177b362bf8ea113"
+  },
+  "effective_roster": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/current-roster.json",
+    "bytes": 1056,
+    "sha256": "e19207a18209f9aee3f2720684825d7646fea88bb486eb39bcbfa564f52776e3"
+  },
   "prepared": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/bechmark-nonhuman-v5/provenance/prepared.json",
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/prepared.json",
     "bytes": 6686,
     "sha256": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba"
   }
