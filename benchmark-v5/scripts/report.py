@@ -23,6 +23,7 @@ def main():
   a=t['original']['models'][n];b=t['ilp']['models'][n];text.append(f"| {LABELS[n]} | {a['ap']:.4f} | {a['auroc']:.4f} | {b['ap']:.4f} | {b['auroc']:.4f} |")
  text+=['','*X-PAIR default, X-PAIR humanV11, D-SCRIPT, PLM-interact humanV11 and TUnA human seed 47 have known supervised training/validation-data overlap with these tests; their full-test results are descriptive external baselines, without an unseen-protein guarantee. X-PAIR Bernett is separately reported and was not chosen by its test score. RAPPPID is the released multiplicative-head STRING-C3 model, with its native 1,500-residue cap. SPRINT uses the user-approved v5 TRAIN-positive graph.*',
   '', '![Average precision and paired protein-bootstrap intervals](results/average-precision.png)',
+  '', '![AUROC and protein-bootstrap intervals](results/auroc.png)',
   '', '## iPIN versus native Bernett: uncertainty','', '| Test | iPIN backbone | AP difference | 95% interval | AUROC difference | 95% interval |','|---|---|---:|---|---:|---|']
  for test in ['original','ilp']:
   for n in ['ipin-esm2','ipin-esmc']:
@@ -117,7 +118,7 @@ def main():
  '- [Main metrics](results/metrics.csv), [confidence intervals](results/confidence-intervals.csv), [paired differences](results/paired-differences.csv), [machine-readable summary](results/summary.json).',
  '- [Original per-pair predictions](results/original-predictions.csv.gz), [ILP per-pair predictions](results/ilp-predictions.csv.gz), [source exposure audit](provenance/exposure.json).',
  '- [Protein-macro AP](results/protein-macro.csv), [fixed/DEV operating points](results/operating-points.csv), [length and exposure subsets](results/subsets.csv).',
- '- [PR/ROC curves](results/curves.pdf), [AP intervals](results/average-precision.pdf), [resuming/re-running instructions](RUNNING.md).','']
+ '- [PR/ROC curves](results/curves.pdf), [AP intervals](results/average-precision.pdf), [AUROC intervals](results/auroc.pdf), [resuming/re-running instructions](RUNNING.md).','']
  (ROOT/'REPORT.md').write_text('\n'.join(text))
  (ROOT/'README.md').write_text('# v5 benchmark — complete\n\n'+conclusion+' '+ilp_conclusion+'\n\nSee [REPORT.md](REPORT.md) for all twelve predictors on both tests, confidence intervals and exposure limitations. Machine-readable metrics and per-pair predictions are in [results/](results/).\n\nThe three X-PAIR releases (Bernett, default/X-fair, and humanV11) are separate entries. Original D-SCRIPT is included with documented length-safe execution and training-data exposure. SPRINT uses the v5 TRAIN-positive graph. iPIN checkpoint selection was frozen before test analysis; D-SCRIPT, the two original human STRING-trained releases, and X-PAIR humanV11 were added later at the user\'s request. No retraining occurred.\n\n[Protocol](PROTOCOL.md) · [Re-running and resuming](RUNNING.md) · [Checkpoint selection](provenance/selection.json) · [X-PAIR V11 extension](XPAIR-V11-ADDENDUM.md)\n')
  print(conclusion,ilp_conclusion,flush=True)

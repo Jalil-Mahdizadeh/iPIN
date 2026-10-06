@@ -1,12 +1,13 @@
 {
-  "completed_at_utc": "2026-10-06T20:18:25.109577+00:00",
+  "completed_at_utc": "2026-10-06T20:31:40.939230+00:00",
   "complete": true,
   "checks": {
     "all_eleven_prior_scores_metrics_tables_and_bootstraps_unchanged": true,
     "xpair_v11_full_length_native_qualification": true,
     "all_3022_features_verified_and_reused": true,
     "exported_row_identity_and_all_metrics_independently_verified": true,
-    "all_13_images_include_twelve_models": true,
+    "all_15_images_include_twelve_models": true,
+    "auroc_figure_matches_saved_estimates_and_intervals": true,
     "xpair_v11_documented_source_exposure_checked": true,
     "predictors": 12,
     "tests": 2,
@@ -25,8 +26,8 @@
   },
   "artifact_manifest": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/artifact-manifest.json",
-    "bytes": 40853,
-    "sha256": "af255b5cde7102b60e90c04f4b762a9423287c6448b1ae7bdac5c58cb5092aa5"
+    "bytes": 41423,
+    "sha256": "910dfaeaec26d40d26b329b569c0192033b26ce1cd88dcc392f354440a395cce"
   },
   "summary": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/summary.json",
@@ -35,7 +36,7 @@
   },
   "report": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/REPORT.md",
-    "bytes": 22771,
-    "sha256": "912b0929240990557527b622e5388431091e920a13c2e1a93024ff6b35b9a0a2"
+    "bytes": 22870,
+    "sha256": "88560feb869214f59b964e529e59e14c22801d3f28dd2b665d58b2d916f75384"
   }
 }

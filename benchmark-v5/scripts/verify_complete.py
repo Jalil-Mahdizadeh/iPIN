@@ -65,9 +65,19 @@ def xpair_v11_checks(summary):
  figures=read(ROOT/'provenance/main-figures.json');assert figures['models']==NAMES and len(figures['figures'])==4
  verify(figures['script']);verify(figures['collection']);verify(figures['confidence_intervals'])
  for item in figures['figures']:verify(item)
+ auroc=read(ROOT/'provenance/auroc-figure.json')
+ assert auroc['models']==NAMES and auroc['metric']=='auroc' and auroc['point_estimate_decimal_places']==4
+ assert all(auroc['checks'].values()) and not auroc['inference_repeated'] and not auroc['bootstrap_recomputed']
+ verify(auroc['script'])
+ assert len(auroc['figures'])==2 and len(auroc['data'])==2*len(NAMES)
+ assert {(r['test'],r['model']) for r in auroc['data']}=={(t,n) for t in ['original','ilp'] for n in NAMES}
+ for item in auroc['sources']+auroc['figures']:verify(item)
+ for row in auroc['data']:
+  assert {k:v for k,v in row.items() if k!='label'} in summary['confidence_intervals']
+  assert row['label']==f"{row['estimate']:.4f}"
  for p in (ROOT/'results').glob('*.svg'):assert 'X-PAIR (humanV11)' in p.read_text(),p
  image_files=[p for p in (ROOT/'results').iterdir() if p.suffix in ['.png','.pdf','.svg']]
- assert len(image_files)==13
+ assert len(image_files)==15
  for filename in ['exposure-subset-figures.json','combined-exposure-subset-figure.json']:
   item=read(ROOT/'provenance'/filename)
   tables=[x['data'] for x in item['figures']] if 'figures' in item else [item['data']]
@@ -75,7 +85,8 @@ def xpair_v11_checks(summary):
    for test in ['original','ilp']:assert set(table[test]['models'])==set(NAMES)
  return {'all_eleven_prior_scores_metrics_tables_and_bootstraps_unchanged':True,
   'xpair_v11_full_length_native_qualification':True,'all_3022_features_verified_and_reused':True,
-  'exported_row_identity_and_all_metrics_independently_verified':True,'all_13_images_include_twelve_models':True,
+  'exported_row_identity_and_all_metrics_independently_verified':True,'all_15_images_include_twelve_models':True,
+  'auroc_figure_matches_saved_estimates_and_intervals':True,
   'xpair_v11_documented_source_exposure_checked':True}
 
 def scientific_checks():

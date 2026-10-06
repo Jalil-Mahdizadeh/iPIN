@@ -60,9 +60,12 @@ After every predictor is complete:
 ```bash
 bash benchmark-v5/scripts/container.sh analysis python scripts/collect.py
 bash benchmark-v5/scripts/container.sh analysis python scripts/analyze.py
+bash benchmark-v5/scripts/container.sh analysis python scripts/plot_auroc.py
 bash benchmark-v5/scripts/container.sh analysis python scripts/report.py
 ```
 
 `collect.py --available` produces an explicitly incomplete collection for monitoring. Final analysis refuses an incomplete roster. Metric and bootstrap results are deterministic for the fixed saved scores and seed. Reanalysis overwrites derived tables/figures only, not inference shards. Use `bash benchmark-v5/scripts/container.sh analysis python scripts/verify_complete.py` to check the final artifact manifest after completion. Add `--inputs` to rehash large external images and checkpoints. After deliberately regenerating analysis, review the results and use `--seal` to refresh the completion manifest.
+
+To recreate only the AUROC figure, run the `plot_auroc.py` command above. It reads the saved estimates and bootstrap samples, checks all 24 point estimates and intervals, and writes `results/auroc.png` and `results/auroc.pdf`. No inference or new bootstrap resampling is needed.
 
 Initial failed launches are preserved in `provenance/jobs.json` and `logs/`. Two container-specific issues were corrected: commas in `CUDA_VISIBLE_DEVICES` must bypass Apptainer's comma-separated `--env` parser, and independent inference workers must not require a `localhost` distributed rendezvous unavailable inside the isolated image. The successful inference jobs and numerical checks use the corrected launcher.

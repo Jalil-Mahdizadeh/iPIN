@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T20:18:25.086798+00:00",
+  "at_utc": "2026-10-06T20:31:40.918684+00:00",
   "files": {
     "scripts/analyze.py": {
       "bytes": 18283,
@@ -46,8 +46,8 @@
       "sha256": "bcadf883f783e24daba60497e3f7f8e4e33250aa0feb31d43f0dcd7831f73898"
     },
     "scripts/finish_xpair_v11.sh": {
-      "bytes": 478,
-      "sha256": "8dcf5ca6fe1f1e6fb8e960e050b174a937060f5a42b4bcff077a0624bb03a685"
+      "bytes": 489,
+      "sha256": "076a87c5ca982e8953d9ef07dbe3806741ba60c03b3ddc38beb4ea05074cbe5d"
     },
     "scripts/human_releases_exposure.py": {
       "bytes": 4356,
@@ -93,6 +93,10 @@
       "bytes": 859,
       "sha256": "52f93b03698977f25f09f162be76107d395f7e45d06c35e8fdc00cfe2c145793"
     },
+    "scripts/plot_auroc.py": {
+      "bytes": 4466,
+      "sha256": "64708313dc9f54bf4f02a633236ee20164867c8dd16d18483217b9d486fe249b"
+    },
     "scripts/plot_combined_exposure.py": {
       "bytes": 5402,
       "sha256": "280fd5d52be1070db42c6ac0a576be623d74415a7422db42a47128b87425c38b"
@@ -122,8 +126,8 @@
       "sha256": "14fadd2253db6c346bcc7ace1ec44a2fee8dd8dc853f83ea77140936b5ab7b4a"
     },
     "scripts/report.py": {
-      "bytes": 25333,
-      "sha256": "4f6fc2fbe78bd678aeca5df3362fa8fdc8d9b108ec6435ef459b197763f4109d"
+      "bytes": 25440,
+      "sha256": "f6397577909c4d4b220e1ef6ca0b1cb406090bb4094a9ec5a448fb3964345388"
     },
     "scripts/run_xpair_v11.sh": {
       "bytes": 505,
@@ -202,8 +206,8 @@
       "sha256": "278c7180b249f46d130acd36561035d13af47458836a91a7a4ab89694fab896c"
     },
     "scripts/verify_complete.py": {
-      "bytes": 15175,
-      "sha256": "e0f49ba68590fe93e2b84dbd3d69154aafebe3e5838f41636f944de7d5769b1d"
+      "bytes": 15928,
+      "sha256": "ffe8c6c3f070cbfa7561d52b3b7b92be8ff0e55aa83e801924418e4b8bae55ce"
     },
     "scripts/verify_inputs.py": {
       "bytes": 2534,
@@ -324,6 +328,10 @@
     "provenance/ap-value-labels.json": {
       "bytes": 4404,
       "sha256": "00a87a1386ad340bdc2859abff63a546e68b2405716e1377adb5cf29c11dc5ec"
+    },
+    "provenance/auroc-figure.json": {
+      "bytes": 7733,
+      "sha256": "077f15f9195ce8d6ee740c01d6f414d5ece2a6d8b1f01a3e4ba39dd54ed18cc9"
     },
     "provenance/authorization.json": {
       "bytes": 663,
@@ -524,6 +532,14 @@
     "qualification/xpair.json": {
       "bytes": 5394,
       "sha256": "d9ec42d367518eb00184d37e865d9dcec13b79569684196ac107a50a1ecaf578"
+    },
+    "results/auroc.pdf": {
+      "bytes": 27265,
+      "sha256": "7dc0826ea918fd7e3f321072414cb85af43092432b556926ecf455ef722ce21e"
+    },
+    "results/auroc.png": {
+      "bytes": 195346,
+      "sha256": "7875e779964e1a27abdd937b619374447a010c7e7176ce0a220d447e79863fe9"
     },
     "results/average-precision.pdf": {
       "bytes": 27230,
@@ -1010,16 +1026,16 @@
       "sha256": "b1554044800ebded6a0bb3cd85232ab637715d2165c46d2ccb33368d8180a9cb"
     },
     "REPORT.md": {
-      "bytes": 22771,
-      "sha256": "912b0929240990557527b622e5388431091e920a13c2e1a93024ff6b35b9a0a2"
+      "bytes": 22870,
+      "sha256": "88560feb869214f59b964e529e59e14c22801d3f28dd2b665d58b2d916f75384"
     },
     "PROTOCOL.md": {
       "bytes": 5525,
       "sha256": "b85997df0a798f21f0a820a87848956c623c7638222a29064089672d9a7fac2b"
     },
     "RUNNING.md": {
-      "bytes": 7204,
-      "sha256": "745edfe3f1cac61b9e636da025ea357320b7bfb7f6aab1ad46115b4ae0be568b"
+      "bytes": 7561,
+      "sha256": "52c07d7c707e134a9358c107232c231d7d6e642222a4135aa685410f62804a36"
     },
     "DSCRIPT-ADDENDUM.md": {
       "bytes": 1992,

@@ -1,0 +1,296 @@
+{
+  "at_utc": "2026-10-06T20:30:56.320175+00:00",
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/plot_auroc.py",
+    "bytes": 4466,
+    "sha256": "64708313dc9f54bf4f02a633236ee20164867c8dd16d18483217b9d486fe249b"
+  },
+  "models": [
+    "native-plm",
+    "ipin-esm2",
+    "ipin-esmc",
+    "tuna",
+    "xpair-bernett",
+    "xpair-default",
+    "rapppid",
+    "sprint",
+    "dscript",
+    "native-human",
+    "tuna-human",
+    "xpair-v11"
+  ],
+  "labels": [
+    "PLM-interact (Bernett)",
+    "iPIN v5 ESM2",
+    "iPIN v5 ESMC",
+    "TUnA (Bernett)",
+    "X-PAIR (Bernett)",
+    "X-PAIR (default)*",
+    "RAPPPID (released mult)",
+    "SPRINT (v5 TRAIN graph)",
+    "D-SCRIPT (original)*",
+    "PLM-interact (humanV11)*",
+    "TUnA (human, seed 47)*",
+    "X-PAIR (humanV11)*"
+  ],
+  "metric": "auroc",
+  "point_estimate_decimal_places": 4,
+  "sources": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/summary.json",
+      "bytes": 47609,
+      "sha256": "609145d76f726540eec17e05981ef050290686d6023b959f36c4f06f2c88672a"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/confidence-intervals.csv",
+      "bytes": 3820,
+      "sha256": "8057455497d30587411b3ffa0e65d6d2d8c7f4ec189bbafaa818dfbf2a110f7f"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/original-bootstrap.npz",
+      "bytes": 177301,
+      "sha256": "bcb78351ac81c8920602f7065e438cf66a24bd0b06d89c9daeef3580610a6933"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/ilp-bootstrap.npz",
+      "bytes": 176863,
+      "sha256": "f0bec8ae7d6225d7995c4f3bb4171e8f1d71e246c969822740f25193f7f20576"
+    }
+  ],
+  "data": [
+    {
+      "test": "original",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.6994668985468638,
+      "low": 0.6843262881958471,
+      "high": 0.7154075665910489,
+      "label": "0.6995"
+    },
+    {
+      "test": "original",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.6963706432363174,
+      "low": 0.6808751335960622,
+      "high": 0.7114721157008714,
+      "label": "0.6964"
+    },
+    {
+      "test": "original",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.698133943363212,
+      "low": 0.6818869438986886,
+      "high": 0.7146423516562689,
+      "label": "0.6981"
+    },
+    {
+      "test": "original",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.7033561839486245,
+      "low": 0.6879324545374379,
+      "high": 0.7182643740683788,
+      "label": "0.7034"
+    },
+    {
+      "test": "original",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.7109657348323462,
+      "low": 0.6965710152398462,
+      "high": 0.724559010965524,
+      "label": "0.7110"
+    },
+    {
+      "test": "original",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.6876885984031954,
+      "low": 0.6733063304720076,
+      "high": 0.7025637631260774,
+      "label": "0.6877"
+    },
+    {
+      "test": "original",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.6069500978913834,
+      "low": 0.5949203852233264,
+      "high": 0.618696790817022,
+      "label": "0.6070"
+    },
+    {
+      "test": "original",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.5240119641093199,
+      "low": 0.5116977661002613,
+      "high": 0.53517619209354,
+      "label": "0.5240"
+    },
+    {
+      "test": "original",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.5513146726793561,
+      "low": 0.5351639532015607,
+      "high": 0.5669685993971694,
+      "label": "0.5513"
+    },
+    {
+      "test": "original",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.6203467484293389,
+      "low": 0.605460311072046,
+      "high": 0.6344521838846636,
+      "label": "0.6203"
+    },
+    {
+      "test": "original",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.6496241477516226,
+      "low": 0.6349746665973397,
+      "high": 0.6645496904525331,
+      "label": "0.6496"
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.6307288049580189,
+      "low": 0.615195100538313,
+      "high": 0.6453793916506653,
+      "label": "0.6307"
+    },
+    {
+      "test": "ilp",
+      "model": "native-plm",
+      "metric": "auroc",
+      "estimate": 0.6503870965688084,
+      "low": 0.6347503490847909,
+      "high": 0.6678863086464354,
+      "label": "0.6504"
+    },
+    {
+      "test": "ilp",
+      "model": "ipin-esm2",
+      "metric": "auroc",
+      "estimate": 0.6669154066999471,
+      "low": 0.6513200632213012,
+      "high": 0.6833924587724648,
+      "label": "0.6669"
+    },
+    {
+      "test": "ilp",
+      "model": "ipin-esmc",
+      "metric": "auroc",
+      "estimate": 0.6636847716310296,
+      "low": 0.6455283434310114,
+      "high": 0.6815632107974275,
+      "label": "0.6637"
+    },
+    {
+      "test": "ilp",
+      "model": "tuna",
+      "metric": "auroc",
+      "estimate": 0.6532531011183699,
+      "low": 0.6374094074208531,
+      "high": 0.6696653271160212,
+      "label": "0.6533"
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-bernett",
+      "metric": "auroc",
+      "estimate": 0.6594351813004034,
+      "low": 0.6420907009417556,
+      "high": 0.6756870618180228,
+      "label": "0.6594"
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-default",
+      "metric": "auroc",
+      "estimate": 0.6267585271378998,
+      "low": 0.6102415914236926,
+      "high": 0.6440824148887908,
+      "label": "0.6268"
+    },
+    {
+      "test": "ilp",
+      "model": "rapppid",
+      "metric": "auroc",
+      "estimate": 0.5811609207429327,
+      "low": 0.5677390717848899,
+      "high": 0.594622849938448,
+      "label": "0.5812"
+    },
+    {
+      "test": "ilp",
+      "model": "sprint",
+      "metric": "auroc",
+      "estimate": 0.5124914134924663,
+      "low": 0.5022131538804596,
+      "high": 0.5221636713256685,
+      "label": "0.5125"
+    },
+    {
+      "test": "ilp",
+      "model": "dscript",
+      "metric": "auroc",
+      "estimate": 0.5240736807396402,
+      "low": 0.5073861357675038,
+      "high": 0.5383566158501987,
+      "label": "0.5241"
+    },
+    {
+      "test": "ilp",
+      "model": "native-human",
+      "metric": "auroc",
+      "estimate": 0.5727388188705471,
+      "low": 0.5583981189181083,
+      "high": 0.5872986969666253,
+      "label": "0.5727"
+    },
+    {
+      "test": "ilp",
+      "model": "tuna-human",
+      "metric": "auroc",
+      "estimate": 0.5937147433736354,
+      "low": 0.5783918550710884,
+      "high": 0.6093218890182407,
+      "label": "0.5937"
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.5829004408272096,
+      "low": 0.5664765006753283,
+      "high": 0.5986794629786111,
+      "label": "0.5829"
+    }
+  ],
+  "figures": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/auroc.png",
+      "bytes": 195346,
+      "sha256": "7875e779964e1a27abdd937b619374447a010c7e7176ce0a220d447e79863fe9"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/auroc.pdf",
+      "bytes": 27265,
+      "sha256": "7dc0826ea918fd7e3f321072414cb85af43092432b556926ecf455ef722ce21e"
+    }
+  ],
+  "checks": {
+    "point_estimates_match_saved_summary": true,
+    "intervals_match_saved_csv_and_bootstrap_quantiles": true
+  },
+  "inference_repeated": false,
+  "bootstrap_recomputed": false
+}

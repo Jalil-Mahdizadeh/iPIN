@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-06T20:18:25.113612+00:00",
+  "at_utc": "2026-10-06T20:31:40.955120+00:00",
   "complete": true,
   "phase": "complete",
   "checks": {
@@ -7,7 +7,8 @@
     "xpair_v11_full_length_native_qualification": true,
     "all_3022_features_verified_and_reused": true,
     "exported_row_identity_and_all_metrics_independently_verified": true,
-    "all_13_images_include_twelve_models": true,
+    "all_15_images_include_twelve_models": true,
+    "auroc_figure_matches_saved_estimates_and_intervals": true,
     "xpair_v11_documented_source_exposure_checked": true,
     "predictors": 12,
     "tests": 2,
@@ -26,7 +27,7 @@
   },
   "completion": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/completed.json",
-    "bytes": 1726,
-    "sha256": "a95c3fe9cccd4dd4fc247b4b9f7d69290120ab51bdabf24eb98b2fd637589552"
+    "bytes": 1790,
+    "sha256": "96079fd1a380aab92332009595d26c6941b530e63dc0fd353c81f3ea9ed1650e"
   }
 }

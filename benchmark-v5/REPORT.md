@@ -27,6 +27,8 @@ ESM2 was the preferred iPIN checkpoint based on DEV before testing. Its AP diffe
 
 ![Average precision and paired protein-bootstrap intervals](results/average-precision.png)
 
+![AUROC and protein-bootstrap intervals](results/auroc.png)
+
 ## iPIN versus native Bernett: uncertainty
 
 | Test | iPIN backbone | AP difference | 95% interval | AUROC difference | 95% interval |
@@ -207,4 +209,4 @@ Any improvement is specific to these frozen checkpoints and test distributions. 
 - [Main metrics](results/metrics.csv), [confidence intervals](results/confidence-intervals.csv), [paired differences](results/paired-differences.csv), [machine-readable summary](results/summary.json).
 - [Original per-pair predictions](results/original-predictions.csv.gz), [ILP per-pair predictions](results/ilp-predictions.csv.gz), [source exposure audit](provenance/exposure.json).
 - [Protein-macro AP](results/protein-macro.csv), [fixed/DEV operating points](results/operating-points.csv), [length and exposure subsets](results/subsets.csv).
-- [PR/ROC curves](results/curves.pdf), [AP intervals](results/average-precision.pdf), [resuming/re-running instructions](RUNNING.md).
+- [PR/ROC curves](results/curves.pdf), [AP intervals](results/average-precision.pdf), [AUROC intervals](results/auroc.pdf), [resuming/re-running instructions](RUNNING.md).
