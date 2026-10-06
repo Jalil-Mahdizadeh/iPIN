@@ -24,9 +24,9 @@ SPECS = [
         'stem': 'xpair-exposed-sequences-removed',
         'subset': 'xpair_default_endpoint_unexposed',
         'flag': 'xpair-default__ankh-normalized__endpoints',
-        'title': 'Performance after removing X-PAIR-exposed proteins',
+        'title': 'Performance after removing X-PAIR default-exposed proteins',
         'source': 'Exposure source: X-PAIR default TRAIN + DEV, interaction and interface tasks',
-        'scope': 'This filter removes X-PAIR default exposure; D-SCRIPT exposure can remain.',
+        'scope': 'This removes X-PAIR default exposure; human V11 source exposure can remain.',
     },
     {
         'stem': 'dscript-exposed-sequences-removed',
@@ -34,7 +34,7 @@ SPECS = [
         'flag': 'dscript__exact__endpoints',
         'title': 'Performance after removing D-SCRIPT-exposed proteins',
         'source': 'Exposure source: D-SCRIPT original public human training data',
-        'scope': 'This also removes both added human releases’ exact TRAIN/validation exposure; X-PAIR exposure can remain.',
+        'scope': 'This also removes identified human V11 source exposure; X-PAIR default exposure can remain.',
     },
 ]
 TESTS = ['original', 'ilp']
@@ -55,6 +55,10 @@ def verified_tables():
         for name in NAMES
     }
     flags = load_npz(verify(read(ROOT / 'provenance/exposure.json')['flags']))
+    v11 = read(ROOT / 'provenance/xpair-v11-exposure.json')
+    assert v11['existing_dscript_endpoint_mask_removes_all_identified_exposure']
+    extra = load_npz(verify(v11['flags']))
+    assert np.array_equal(extra['ankh-normalized__endpoints'] > 0, flags['dscript__exact__endpoints'] > 0)
     mapping = load_npz(ROOT / 'data/pair-mapping.npz')
     union = np.load(ROOT / 'data/union.npy')
     tables = {}
@@ -102,7 +106,7 @@ def plot(spec, data):
         'axes.labelcolor': '#202938', 'xtick.color': '#526071',
         'ytick.color': '#202938', 'savefig.facecolor': 'white',
     })
-    fig, axes = plt.subplots(1, 2, figsize=(14.3, 9.0), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(14.8, 9.6), sharey=True)
     fig.subplots_adjust(left=.205, right=.975, bottom=.205, top=.765, wspace=.15)
     fig.suptitle(spec['title'], x=.025, y=.977, ha='left', fontsize=19, weight='bold')
     fig.text(.025, .928, spec['source'], fontsize=11, color='#526071')
@@ -145,7 +149,7 @@ def plot(spec, data):
     for label in axes[0].get_yticklabels():
         if label.get_text().startswith('iPIN v5'):
             label.set_weight('bold')
-    fig.text(.025, .127, 'Retained pairs have neither protein in the named exposure list; all eleven models use the same rows within each test.', fontsize=10)
+    fig.text(.025, .127, f'Retained pairs have neither protein in the named exposure list; all {len(NAMES)} models use the same rows within each test.', fontsize=10)
     fig.text(.025, .093, 'Dashed lines: AP = subset positive fraction; AUROC = 0.5. Point estimates only; no confidence intervals.', fontsize=10, color='#526071')
     fig.text(.025, .059, spec['scope'] + ' Homology and pretraining exposure are not filtered.', fontsize=9.5, color='#526071')
     files = []
@@ -165,7 +169,8 @@ def main():
         figures.append({**spec, 'data': tables[spec['subset']], 'files': files})
     sources = ['results/subsets.csv', 'results/collection.json', 'provenance/exposure.json',
                'provenance/exposure-flags.npz', 'data/pair-mapping.npz',
-               'data/original.npy', 'data/ilp.npy', 'data/union.npy']
+               'data/original.npy', 'data/ilp.npy', 'data/union.npy',
+               'provenance/xpair-v11-exposure.json', 'provenance/xpair-v11-exposure-flags.npz']
     atomic(ROOT / 'provenance/exposure-subset-figures.json', {
         'at_utc': now(), 'script': record(__file__), 'sources': [record(ROOT / s) for s in sources],
         'checks': {'all_models': True, 'same_rows_within_each_test': True,

@@ -1,0 +1,70 @@
+{
+  "at_utc": "2026-10-06T20:04:41.235196+00:00",
+  "models": [
+    "native-plm",
+    "ipin-esm2",
+    "ipin-esmc",
+    "tuna",
+    "xpair-bernett",
+    "xpair-default",
+    "rapppid",
+    "sprint",
+    "dscript",
+    "native-human",
+    "tuna-human",
+    "xpair-v11"
+  ],
+  "labels": [
+    "PLM-interact (Bernett)",
+    "iPIN v5 ESM2",
+    "iPIN v5 ESMC",
+    "TUnA (Bernett)",
+    "X-PAIR (Bernett)",
+    "X-PAIR (default)*",
+    "RAPPPID (released mult)",
+    "SPRINT (v5 TRAIN graph)",
+    "D-SCRIPT (original)*",
+    "PLM-interact (humanV11)*",
+    "TUnA (human, seed 47)*",
+    "X-PAIR (humanV11)*"
+  ],
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/analyze.py",
+    "bytes": 18283,
+    "sha256": "62be087b705bb5014a5bd26a0ec96e441fe426742ff42899dfd865b59b34c44b"
+  },
+  "collection": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/collection.json",
+    "bytes": 16892,
+    "sha256": "b217f9ac5df87a0b7a6847301f6dc401de91e9ca5f86d71aabe97c167ad378c3"
+  },
+  "confidence_intervals": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/confidence-intervals.csv",
+    "bytes": 3820,
+    "sha256": "8057455497d30587411b3ffa0e65d6d2d8c7f4ec189bbafaa818dfbf2a110f7f"
+  },
+  "figures": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/average-precision.png",
+      "bytes": 195374,
+      "sha256": "750c3ecebb1d318521e01a92b4504d1420180de6b03bce72ed6d25b8d8887e11"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/average-precision.pdf",
+      "bytes": 27230,
+      "sha256": "c8b8096fda1f748a218f497d52c101964085e50671b8cb3ec9ae328d3b084716"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/curves.png",
+      "bytes": 576016,
+      "sha256": "41eab25695529e653dfca21421c07780a564a9bc7ff820de38041e46212788c0"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/curves.pdf",
+      "bytes": 1181594,
+      "sha256": "49af2dac63e27eb9a5f6eb43812618b91a53fa79b3f399d907c07324d896c9f2"
+    }
+  ],
+  "ap_labels_updated_at_utc": "2026-10-06T20:17:43.695163+00:00",
+  "ap_point_estimate_decimal_places": 4
+}

@@ -1,0 +1,78 @@
+{
+  "at_utc": "2026-10-06T19:59:08.110109+00:00",
+  "passed": true,
+  "signature": {
+    "freeze_sha256": "45af18672f23e09169c83785b5762a3184fb98d12b9372d1f20f154c40884fea",
+    "code": {
+      "scripts/xpair_v11.py": "d2560ed67e08c011d2b46da69e5a5a3368c747d9aa77080f646159574255ff99",
+      "scripts/xpair_benchmark.py": "139faa9914f024d83007d1c00f2852ddfc78ed59b30f3aea5a173dbca24afe1f",
+      "scripts/xpair/native.py": "b2739aab3fca75e78a8d927edb42da720f4d987994afaf9e97f9f27786bfd1ad",
+      "scripts/xpair/io_utils.py": "ad692593bba01ee6cb11b787c8036b11e41b16f394cdb2c0dce2ada9b9e5ff4a",
+      "scripts/container.sh": "7fc8c90ac5f3b22ea2d470dab8ca4eef7233ae8098046dea92abe2c9bd621d1f",
+      "scripts/bench_utils.py": "4edfb542692793b64c8c6ce5cf61a6bb38b9f8a7d2a9eeaed74b26e524aa1ae1"
+    },
+    "precision": "fp32_no_tf32",
+    "world_size": 1
+  },
+  "errors": {
+    "cache_logit": 0.0,
+    "swap_logit": 0.0,
+    "padded_cache_logit": 4.76837158203125e-07,
+    "batch_singleton_logit": 4.76837158203125e-07,
+    "padded_probability": 6.984919309616089e-10
+  },
+  "cases": [
+    {
+      "a": 122,
+      "b": 2809,
+      "length_a": 51,
+      "length_b": 51
+    },
+    {
+      "a": 122,
+      "b": 1790,
+      "length_a": 51,
+      "length_b": 5183
+    },
+    {
+      "a": 1790,
+      "b": 1031,
+      "length_a": 5183,
+      "length_b": 227
+    },
+    {
+      "a": 1031,
+      "b": 2230,
+      "length_a": 227,
+      "length_b": 391
+    },
+    {
+      "a": 2230,
+      "b": 210,
+      "length_a": 391,
+      "length_b": 621
+    },
+    {
+      "a": 1790,
+      "b": 1790,
+      "length_a": 5183,
+      "length_b": 5183
+    },
+    {
+      "a": 1790,
+      "b": 15,
+      "length_a": 5183,
+      "length_b": 2240
+    }
+  ],
+  "state_unchanged": true,
+  "no_truncation": true,
+  "test_metrics_read": false,
+  "checkpoint": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/X-PAIR/pretrained_models/interaction_dscript.ckpt",
+    "bytes": 5686501,
+    "sha256": "b2629356df2206e6d29058c4f65daf75e30c9b874da27fa282c282affb6738bf"
+  },
+  "native_forward": true,
+  "padded_batch_size": 64
+}

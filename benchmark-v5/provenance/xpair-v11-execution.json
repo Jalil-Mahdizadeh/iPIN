@@ -1,0 +1,244 @@
+{
+  "at_utc": "2026-10-06T20:07:41.831489+00:00",
+  "execution": {
+    "at_utc": "2026-10-06T20:02:50.795950+00:00",
+    "rows": 76918,
+    "signature": {
+      "freeze_sha256": "45af18672f23e09169c83785b5762a3184fb98d12b9372d1f20f154c40884fea",
+      "code": {
+        "scripts/xpair_v11.py": "d2560ed67e08c011d2b46da69e5a5a3368c747d9aa77080f646159574255ff99",
+        "scripts/xpair_benchmark.py": "139faa9914f024d83007d1c00f2852ddfc78ed59b30f3aea5a173dbca24afe1f",
+        "scripts/xpair/native.py": "b2739aab3fca75e78a8d927edb42da720f4d987994afaf9e97f9f27786bfd1ad",
+        "scripts/xpair/io_utils.py": "ad692593bba01ee6cb11b787c8036b11e41b16f394cdb2c0dce2ada9b9e5ff4a",
+        "scripts/container.sh": "7fc8c90ac5f3b22ea2d470dab8ca4eef7233ae8098046dea92abe2c9bd621d1f",
+        "scripts/bench_utils.py": "4edfb542692793b64c8c6ce5cf61a6bb38b9f8a7d2a9eeaed74b26e524aa1ae1"
+      },
+      "precision": "fp32_no_tf32",
+      "world_size": 1
+    },
+    "file": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/union.npz",
+      "bytes": 910382,
+      "sha256": "3507ef1a765c2a9dca40be0dfa4181c567930a2e0829a3d77025bc51e70a7022"
+    },
+    "chunks": [
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-000000.npz",
+        "bytes": 13948,
+        "sha256": "7cacfd8a8ac0eb793d27be64a07b3c7bc0ac895c973fbf1d16a7c788161aeeb4"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-002048.npz",
+        "bytes": 13923,
+        "sha256": "0a0b222287b7c890beec2b655d507bc7b27d5965063623de70c6527d6aedab0f"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-004096.npz",
+        "bytes": 14653,
+        "sha256": "c44e776632b4ca7a39f35f214170918af9cc1e91de3fb1c9a92ca9518420e904"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-006144.npz",
+        "bytes": 13472,
+        "sha256": "92f5def459310b5b8498afbce5c1730a3916df1c16ce62c96c707ca283621fe9"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-008192.npz",
+        "bytes": 13472,
+        "sha256": "ee2ffbb9ee70396f16908c9075d31dd3ad159686ae69d648a14877b871e1fb60"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-010240.npz",
+        "bytes": 13520,
+        "sha256": "a842dc56c8edaf91b35683ca9f150d677d926f6224bdc508c9c56aeab6210b18"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-012288.npz",
+        "bytes": 13910,
+        "sha256": "f78a32cb7bda87cb298f845fc829cf73162ba92b3030c2ac03a15ed70abf4826"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-014336.npz",
+        "bytes": 14877,
+        "sha256": "8a589fda943a1809949fc9bf86f71ab88f5e2d1a9b30e4f35d7f8dd7eefb279a"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-016384.npz",
+        "bytes": 13717,
+        "sha256": "109eb2400e4cb727077b520dcf2ca40b131fb20155a290c3f1a6d825c1884bed"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-018432.npz",
+        "bytes": 13891,
+        "sha256": "2a32cb09a3259ce2eb3d78e1216603950e24c6654c144e0acbc99d1cd3524232"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-020480.npz",
+        "bytes": 14464,
+        "sha256": "7ae71d684105deda5f9281699bcbbfdcf4cc5b7ca9b8d770d74cfa80fc864cdb"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-022528.npz",
+        "bytes": 14249,
+        "sha256": "1edebd4e384351eecf49daafb40580e19d7813d6d6ee6b99c5d228e7de84a644"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-024576.npz",
+        "bytes": 13848,
+        "sha256": "e30a2d05010fee653b0e5779b06e679f740c2349146dbc5b9994d088e80c2b98"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-026624.npz",
+        "bytes": 14457,
+        "sha256": "6a0f9b52cb8b71e58a6d18b04ba0a9df3f5fd410f84e623eaa8dff0f97701205"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-028672.npz",
+        "bytes": 14070,
+        "sha256": "61eab6e265a18398da073b5d6b51e6618c370d1ae684715a3700d60b6f1d9a65"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-030720.npz",
+        "bytes": 13625,
+        "sha256": "80e37bd6ed1ee7837a94af2eb488d2eaac2ab378c5af4e8be73cbc5c105a605c"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-032768.npz",
+        "bytes": 13857,
+        "sha256": "6799851f4e904d45819d546d66b6e00bc79cf0455884ad88c61156ab8879cd4e"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-034816.npz",
+        "bytes": 14749,
+        "sha256": "1f8304e2b46bb847082df3c46a2bf9948fe16c91ef8a4713bd85cbf745f41f33"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-036864.npz",
+        "bytes": 14157,
+        "sha256": "c9c47b0c1170e3eb69c37551fff90ce56396b80a559202ef15f462d18c0a4e96"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-038912.npz",
+        "bytes": 13970,
+        "sha256": "e28973ef594e2e64ed3d615576e52f392b25a7d377378de2418a99a2c97968de"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-040960.npz",
+        "bytes": 14681,
+        "sha256": "2f2eb070ab2d549954d8bd362d9d69d9aec1183fffa3f3e51e79e152873740a7"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-043008.npz",
+        "bytes": 14262,
+        "sha256": "82d35475b45f1c086aa9020f71f90aeac98816a17feaf1bd6ce71e342d5639e8"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-045056.npz",
+        "bytes": 14202,
+        "sha256": "5636bf050e48d18e245df462b7beadcd5b0ea0ff1989ce53243a58ba3d72eebb"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-047104.npz",
+        "bytes": 14792,
+        "sha256": "b3257f45025b9d667cdf332e554c915b9b4a0f181aec0730699573ed08e5af90"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-049152.npz",
+        "bytes": 14041,
+        "sha256": "ac584f21f7e54abc4533c1709aaae9dab82e9bd5c57b263657db3dee34a0715d"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-051200.npz",
+        "bytes": 14746,
+        "sha256": "ab4eb8272f603392b7452cb070f6c99465be4e5ce9a16ca8464022e674712039"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-053248.npz",
+        "bytes": 14099,
+        "sha256": "91c6cc46a4de87456d5e8197905d4c0cc6dafa6cd65d132e8e8f4388a172d892"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-055296.npz",
+        "bytes": 14720,
+        "sha256": "61bd2fef108ed18004a615ca8b15d25a448c7d4f0aedff52217cc81390748a21"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-057344.npz",
+        "bytes": 14448,
+        "sha256": "dcf806f131548974eba090b43d81de298d9538b4c7ebcf1f64b3a5d5b152a9f5"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-059392.npz",
+        "bytes": 14763,
+        "sha256": "f3356dcc0c164a5a5104d26a1e0ca842fdc7cfa9919d9d05b448b9826b238d77"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-061440.npz",
+        "bytes": 14856,
+        "sha256": "51187196c7ee84d77741fbcf367bf81f30e0d4bb6e04a0f50a0657c2038cff1b"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-063488.npz",
+        "bytes": 14775,
+        "sha256": "39addab4866adfa9e9969886cc5e2f5d8cea7aab95593ab093e10ed1b18adfd9"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-065536.npz",
+        "bytes": 14922,
+        "sha256": "956a77af330c5091560f29ebd947decf6b6736273fc383007ad5723c541bcd82"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-067584.npz",
+        "bytes": 14809,
+        "sha256": "617391c15cad19c48d45d473f2ef40977c39169242cd75524e7fb8027afc7cee"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-069632.npz",
+        "bytes": 14710,
+        "sha256": "c687805c234065baac70d76451020f9f8e0daf45740feffa519e5e2b2edcae28"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-071680.npz",
+        "bytes": 14860,
+        "sha256": "0169d30b2b24b6f5869b37e254c9165de72c4fca344c490a4ee0abc69c148e21"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-073728.npz",
+        "bytes": 15129,
+        "sha256": "2ed3bc7cdf91f9b93718bc269f0f5a37ae858f7bbdbb508902d3e42bf5e4ef54"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/chunk-075776.npz",
+        "bytes": 8624,
+        "sha256": "b5e997fdaa73693387db14ea58f95b45035c6692fc4c8409d3f8a5b46f3b70d5"
+      }
+    ],
+    "qualification": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/qualification/xpair-v11.json",
+      "bytes": 2152,
+      "sha256": "18b2f86f0f5d358f208d583a798751bb65f05444de263c8528181c2095663f64"
+    },
+    "checkpoint": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/x_pair_test2_v1/sources/X-PAIR/pretrained_models/interaction_dscript.ckpt",
+      "bytes": 5686501,
+      "sha256": "b2629356df2206e6d29058c4f65daf75e30c9b874da27fa282c282affb6738bf"
+    },
+    "state_unchanged": true,
+    "no_truncation": true,
+    "features_reused": 3022,
+    "features_computed": 0,
+    "seconds": 214.74863410001853,
+    "hostname": "n450",
+    "slurm_job_id": "3417519",
+    "gpu": "NVIDIA GH200 120GB",
+    "world_size": 1
+  },
+  "resume_check": {
+    "passed": true,
+    "completed_outputs_reused_without_scoring": true,
+    "log_path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/logs/xpair-v11-resume-check.log",
+    "log_sha256": "84c49120e18e9ae9be64de96345c56ca81458c4f20638b043fda033a54311086"
+  },
+  "previous_eleven_predictors_inferred_again": false,
+  "new_embeddings_computed": 0
+}

@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T17:39:01.038723+00:00",
+  "at_utc": "2026-10-06T20:04:20.727014+00:00",
   "complete": true,
   "missing": [],
   "models": {
@@ -38,7 +38,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "ipin-esm2": {
       "rows": 76918,
@@ -70,7 +75,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "ipin-esmc": {
       "rows": 76918,
@@ -102,7 +112,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "tuna": {
       "rows": 76918,
@@ -119,7 +134,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "xpair-bernett": {
       "rows": 76918,
@@ -151,7 +171,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "xpair-default": {
       "rows": 76918,
@@ -183,7 +208,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "rapppid": {
       "rows": 76918,
@@ -200,7 +230,12 @@
         }
       ],
       "score_kind": "probability",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "sprint": {
       "rows": 76918,
@@ -217,7 +252,12 @@
         }
       ],
       "score_kind": "raw native SPRINT score",
-      "probability_available": false
+      "probability_available": false,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "dscript": {
       "rows": 76918,
@@ -249,7 +289,12 @@
         }
       ],
       "score_kind": "probability",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "native-human": {
       "rows": 76918,
@@ -281,7 +326,12 @@
         }
       ],
       "score_kind": "logit",
-      "probability_available": true
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
     },
     "tuna-human": {
       "rows": 76918,
@@ -295,6 +345,28 @@
           "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/tuna-human/done.json",
           "bytes": 13521,
           "sha256": "b1bbc25221492764393cd3c18750015719f9a530bc420ec527c923dd32646ca3"
+        }
+      ],
+      "score_kind": "logit",
+      "probability_available": true,
+      "reused_from": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-xpair-v11/results/collection.json",
+        "bytes": 13227,
+        "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      }
+    },
+    "xpair-v11": {
+      "rows": 76918,
+      "file": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/xpair-v11-union.npz",
+        "bytes": 910382,
+        "sha256": "3507ef1a765c2a9dca40be0dfa4181c567930a2e0829a3d77025bc51e70a7022"
+      },
+      "sources": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/predictions/xpair-v11/done.json",
+          "bytes": 10988,
+          "sha256": "7a686c7b32ca333dbfb65f1cf1f835f07cad1471c89668d3c4ec762ed1f3b51e"
         }
       ],
       "score_kind": "logit",

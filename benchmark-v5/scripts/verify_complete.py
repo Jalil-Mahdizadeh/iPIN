@@ -1,9 +1,82 @@
 """Seal and subsequently verify the final benchmark's scientific artifacts."""
-import argparse,csv
+import argparse,csv,gzip
 from pathlib import Path
 import numpy as np
 from bench_utils import ROOT,atomic,load_npz,now,read,record,sha
 from collect import NAMES,verify
+
+def verify_historical_code(rel,expected):
+ if sha(ROOT/rel)==expected:return
+ receipt=read(ROOT/'provenance/xpair-v11-archive.json')
+ entry=next(x for x in receipt['rename_only_code_differences'] if x['path']==rel)
+ assert sha(ROOT/rel)==entry['current_sha256'] and expected==entry['sealed_sha256'],rel
+ assert sha(ROOT/'archive/before-xpair-v11'/rel)==expected,rel
+
+def xpair_v11_checks(summary):
+ extension=read(ROOT/'provenance/xpair-v11.json')
+ for key in ['checkpoint','addendum','prepared','prior_collection','archive_receipt','runtime']:verify(extension[key])
+ for rel,h in extension['inference_code'].items():assert sha(ROOT/rel)==h,rel
+ q=read(ROOT/'qualification/xpair-v11.json');done=read(ROOT/'predictions/xpair-v11/done.json')
+ assert q['passed'] and q['no_truncation'] and q['state_unchanged'] and not q['test_metrics_read']
+ assert q['signature']==done['signature'] and q['signature']['freeze_sha256']==sha(ROOT/'provenance/xpair-v11.json')
+ assert max(q['errors'].values())<2e-4 and q['errors']['padded_probability']<1e-5
+ assert max(c['length_a']+c['length_b'] for c in q['cases'])>=7423
+ assert done['rows']==76918 and done['features_reused']==3022 and done['features_computed']==0
+ assert done['state_unchanged'] and done['no_truncation'] and done['world_size']==1
+ verify(done['file']);verify(done['qualification'])
+ prior=ROOT/'archive/before-xpair-v11';manifest=read(prior/'artifact-manifest.json')
+ for rel,item in manifest['files'].items():
+  p=prior/rel;assert p.stat().st_size==item['bytes'] and sha(p)==item['sha256'],rel
+ old=read(prior/'results/summary.json');assert len(old['names'])==11 and len(NAMES)==12
+ for name in old['names']:
+  assert sha(prior/'results'/f'{name}-union.npz')==sha(ROOT/'results'/f'{name}-union.npz'),name
+ for test in ['original','ilp']:
+  a=load_npz(prior/'results'/f'{test}-bootstrap.npz');b=load_npz(ROOT/'results'/f'{test}-bootstrap.npz')
+  for j,name in enumerate(a['names']):
+   k=b['names'].tolist().index(name)
+   assert np.array_equal(a['samples'][:,j],b['samples'][:,k]),(test,name)
+   assert summary['tests'][test]['models'][name]==old['tests'][test]['models'][name],(test,name)
+ for filename in ['metrics.csv','subsets.csv','operating-points.csv','protein-macro.csv','confidence-intervals.csv','paired-differences.csv','combined-exposure-removed-metrics.csv']:
+  with (prior/'results'/filename).open() as f:a=list(csv.DictReader(f))
+  with (ROOT/'results'/filename).open() as f:b=[r for r in csv.DictReader(f) if r['model']!='xpair-v11' and r.get('reference')!='xpair-v11']
+  assert a==b,filename
+ exposure=read(ROOT/'provenance/xpair-v11-exposure.json');flags=load_npz(verify(exposure['flags']))
+ assert exposure['exact_flags_match_prior_human_release_audit'] and exposure['existing_dscript_endpoint_mask_removes_all_identified_exposure']
+ oldflags=load_npz(ROOT/'provenance/exposure-flags.npz')
+ assert np.array_equal(flags['ankh-normalized__endpoints']>0,oldflags['dscript__exact__endpoints']>0)
+ # Recompute every predictor's AP/AUROC from the actual exported rows.
+ from sklearn.metrics import average_precision_score,roc_auc_score
+ mapping=load_npz(ROOT/'data/pair-mapping.npz')
+ arrays={name:load_npz(ROOT/'results'/f'{name}-union.npz') for name in NAMES}
+ for test in ['original','ilp']:
+  with gzip.open(ROOT/'results'/f'{test}-predictions.csv.gz','rt') as stream:export=list(csv.DictReader(stream))
+  rows=np.load(ROOT/'data'/f'{test}.npy');ids=mapping[test];y=rows[:,2]
+  assert len(export)==len(rows)==52048
+  assert np.array_equal([int(r['row_id']) for r in export],np.arange(len(rows)))
+  assert np.array_equal([int(r['source_row_id']) for r in export],rows[:,3])
+  assert np.array_equal([int(r['union_id']) for r in export],ids)
+  assert np.array_equal([int(r['label']) for r in export],y)
+  for name in NAMES:
+   scores=np.array([float(r[name+'_score']) for r in export])
+   assert np.array_equal(scores,arrays[name]['scores'][ids])
+   m=summary['tests'][test]['models'][name]
+   assert abs(average_precision_score(y,scores)-m['ap'])<1e-12
+   assert abs(roc_auc_score(y,scores)-m['auroc'])<1e-12
+ figures=read(ROOT/'provenance/main-figures.json');assert figures['models']==NAMES and len(figures['figures'])==4
+ verify(figures['script']);verify(figures['collection']);verify(figures['confidence_intervals'])
+ for item in figures['figures']:verify(item)
+ for p in (ROOT/'results').glob('*.svg'):assert 'X-PAIR (humanV11)' in p.read_text(),p
+ image_files=[p for p in (ROOT/'results').iterdir() if p.suffix in ['.png','.pdf','.svg']]
+ assert len(image_files)==13
+ for filename in ['exposure-subset-figures.json','combined-exposure-subset-figure.json']:
+  item=read(ROOT/'provenance'/filename)
+  tables=[x['data'] for x in item['figures']] if 'figures' in item else [item['data']]
+  for table in tables:
+   for test in ['original','ilp']:assert set(table[test]['models'])==set(NAMES)
+ return {'all_eleven_prior_scores_metrics_tables_and_bootstraps_unchanged':True,
+  'xpair_v11_full_length_native_qualification':True,'all_3022_features_verified_and_reused':True,
+  'exported_row_identity_and_all_metrics_independently_verified':True,'all_13_images_include_twelve_models':True,
+  'xpair_v11_documented_source_exposure_checked':True}
 
 def scientific_checks():
  s=read(ROOT/'results/summary.json');assert s['complete'] and s['names']==NAMES
@@ -70,7 +143,7 @@ def scientific_checks():
    assert int(row['pairs'])==item['counts']['pairs'] and int(row['positives'])==566
    for metric in ['ap','auroc']:assert abs(float(row[metric])-item['models'][row['model']][metric])<1e-15
  extension=read(ROOT/'provenance/human-releases.json');verify(extension['addendum']);verify(extension['prepared'])
- for rel,h in extension['inference_code'].items():assert sha(ROOT/rel)==h,rel
+ for rel,h in extension['inference_code'].items():verify_historical_code(rel,h)
  for item in extension['models'].values():verify(item['checkpoint'])
  for item in extension['images'].values():verify(item)
  exposure=read(ROOT/'provenance/human-releases-exposure.json');flags=load_npz(verify(exposure['flags']))
@@ -95,7 +168,7 @@ def scientific_checks():
   for name in previous_summary['names']:
    for key in ['ap','auroc']:assert s['tests'][test]['models'][name][key]==previous_summary['tests'][test]['models'][name][key]
  assert (ROOT/'REPORT.md').exists() and 'complete' in (ROOT/'README.md').read_text().lower()
- return {'predictors':len(NAMES),'tests':2,'test_rows_per_predictor':104096,'union_rows_per_predictor':76918,
+ return {**xpair_v11_checks(s),'predictors':len(NAMES),'tests':2,'test_rows_per_predictor':104096,'union_rows_per_predictor':76918,
   'finite_full_coverage':True,'neural_intervals_unchanged_after_sprint':True,'frozen_data_unchanged':True,
   'metrics_csv_matches_summary':True,'sprint_graph_and_hsp_hashes_verified':True,'native_original_predictions_reproduced_exactly':s['native_original_predictions_reproduced_exactly'],
   'all_nine_previous_scores_and_bootstraps_unchanged':True,'added_releases_full_length_qualified':True,
@@ -107,10 +180,11 @@ def seal():
   for p in sorted((ROOT/directory).rglob('*')):
    if p.is_file() and '__pycache__' not in p.parts and not p.name.endswith(('.lock','.tmp')):
     files[str(p.relative_to(ROOT))]={'bytes':p.stat().st_size,'sha256':sha(p)}
- for name in ['README.md','REPORT.md','PROTOCOL.md','RUNNING.md','DSCRIPT-ADDENDUM.md','SPRINT-EXECUTION-ADDENDUM.md','HUMAN-RELEASES-ADDENDUM.md']:
+ for name in ['README.md','REPORT.md','PROTOCOL.md','RUNNING.md','DSCRIPT-ADDENDUM.md','SPRINT-EXECUTION-ADDENDUM.md','HUMAN-RELEASES-ADDENDUM.md','XPAIR-V11-ADDENDUM.md']:
   p=ROOT/name;files[name]={'bytes':p.stat().st_size,'sha256':sha(p)}
  path=ROOT/'artifact-manifest.json';atomic(path,{'at_utc':now(),'files':files,'scope':'Code, protocol, data, provenance, qualifications and final/retained provisional analyses. Large raw feature/checkpoint inputs have separate verified identities in their manifests.'})
  atomic(ROOT/'completed.json',{'completed_at_utc':now(),'complete':True,'checks':checks,'artifact_manifest':record(path),'summary':record(ROOT/'results/summary.json'),'report':record(ROOT/'REPORT.md')})
+ atomic(ROOT/'xpair-v11-status.json',{'at_utc':now(),'complete':True,'phase':'complete','checks':checks,'completion':record(ROOT/'completed.json')})
  print({'sealed':True,'files':len(files),'checks':checks},flush=True)
 
 def check(inputs=False):
@@ -124,6 +198,7 @@ def check(inputs=False):
   extension=read(ROOT/'provenance/human-releases.json')
   for item in extension['models'].values():verify(item['checkpoint'])
   for item in extension['images'].values():verify(item)
+  v11=read(ROOT/'provenance/xpair-v11.json');verify(v11['checkpoint']);verify(v11['image'])
  print({'verified':True,'artifacts':len(manifest['files']),'external_inputs_rehashed':inputs},flush=True)
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--seal',action='store_true');p.add_argument('--inputs',action='store_true');a=p.parse_args()

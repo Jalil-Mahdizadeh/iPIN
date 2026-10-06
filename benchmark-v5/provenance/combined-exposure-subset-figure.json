@@ -1,20 +1,20 @@
 {
-  "at_utc": "2026-10-05T17:39:25.448845+00:00",
+  "at_utc": "2026-10-06T20:04:47.368776+00:00",
   "script": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/plot_combined_exposure.py",
-    "bytes": 5127,
-    "sha256": "38ae5701931c04a1d515c1b6d702825c369e4e0a84a2aeb00e8e67969ab236be"
+    "bytes": 5402,
+    "sha256": "280fd5d52be1070db42c6ac0a576be623d74415a7422db42a47128b87425c38b"
   },
   "plot_helper": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/plot_exposure_subsets.py",
-    "bytes": 9010,
-    "sha256": "5e9f46e33042f8e1587ece9a490ef7ddc972ea7fb58528f1f9dc2158b6d6ae10"
+    "bytes": 9397,
+    "sha256": "4967bee179d8cf64608319bf9d0afabc8b2bd0070555a7a8c045ac05dcc74408"
   },
   "sources": [
     {
       "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/collection.json",
-      "bytes": 13227,
-      "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+      "bytes": 16892,
+      "sha256": "b217f9ac5df87a0b7a6847301f6dc401de91e9ca5f86d71aabe97c167ad378c3"
     },
     {
       "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/exposure.json",
@@ -45,6 +45,16 @@
       "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/data/union.npy",
       "bytes": 2461504,
       "sha256": "340f13363a78f1cc89705220a21e853b85a447b3d82b4bddb0e055fc20e1e168"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/xpair-v11-exposure.json",
+      "bytes": 5163,
+      "sha256": "50f1b5de47db2d0355320f5c23f50602029e4b89f31d17f697dd07ed115eddb7"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/provenance/xpair-v11-exposure-flags.npz",
+      "bytes": 13836,
+      "sha256": "f06936640ffcca50e119ad58b525599f1d775c0896bd7b69d3bf8e725b140810"
     }
   ],
   "exclusion_rule": "Remove a pair if either endpoint is exposed to D-SCRIPT OR X-PAIR default.",
@@ -115,6 +125,10 @@
         "tuna-human": {
           "ap": 0.6535792071179463,
           "auroc": 0.6276719565656778
+        },
+        "xpair-v11": {
+          "ap": 0.6644822739286945,
+          "auroc": 0.6274001435730167
         }
       }
     },
@@ -171,14 +185,18 @@
         "tuna-human": {
           "ap": 0.5851739416520964,
           "auroc": 0.5512799291846884
+        },
+        "xpair-v11": {
+          "ap": 0.592250322220879,
+          "auroc": 0.5513878793548898
         }
       }
     }
   },
   "metrics_csv": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposure-removed-metrics.csv",
-    "bytes": 2539,
-    "sha256": "8b82381a796e63601262a030047633380e591d345e18ec9dfc033dd1fac0b59b"
+    "bytes": 2760,
+    "sha256": "eec027f0deee4bb0946009fa2a6781aafcd79f4921056fbd12880c70a85d818d"
   },
   "retained_rows": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposure-removed-rows.npz",
@@ -188,25 +206,25 @@
   "figure": {
     "spec": {
       "stem": "combined-exposed-sequences-removed",
-      "title": "Performance after excluding D-SCRIPT and X-PAIR exposure",
+      "title": "Performance after excluding D-SCRIPT and X-PAIR default exposure",
       "source": "Exclude proteins in D-SCRIPT human TRAIN or X-PAIR default TRAIN + DEV (interaction / interface)",
       "scope": "Both exposure lists are applied together; about 2% of each full test remains."
     },
     "files": [
       {
         "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposed-sequences-removed.png",
-        "bytes": 474750,
-        "sha256": "3286e1864c8f11cd4c74bb73e20b6d2b7d30ad302bc68b826fc9a40d7644132b"
+        "bytes": 500897,
+        "sha256": "436091552fba0e432057821e13cafff436f4e330360486d6d4e02536fa9d3a40"
       },
       {
         "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposed-sequences-removed.pdf",
-        "bytes": 34144,
-        "sha256": "da2ae23adcf934f765aeedd51f7c71f9fcb8bb5586fa250765ff9f2a892e0e3d"
+        "bytes": 34708,
+        "sha256": "f38be9db99289cf37e10ad78202815a65cc03f00941a33705a0c4f85ad060986"
       },
       {
         "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/combined-exposed-sequences-removed.svg",
-        "bytes": 44760,
-        "sha256": "6c580405552c98e128821903096820578fd436b3e73aa62666cfd5c0814a4256"
+        "bytes": 47267,
+        "sha256": "9d34cb0d8ad27708639b13ed73282355dc32a7b246496f599a05ff746c9116f9"
       }
     ]
   },

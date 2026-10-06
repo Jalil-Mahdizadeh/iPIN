@@ -1,5 +1,13 @@
 # Re-running and resuming
 
+## Added X-PAIR humanV11 checkpoint
+
+The current roster has twelve predictors, including `interaction_dscript.ckpt` as **X-PAIR (humanV11)**. Its fixed protocol is [XPAIR-V11-ADDENDUM.md](XPAIR-V11-ADDENDUM.md), and checkpoint/code identities are in `provenance/xpair-v11.json`. The prior eleven-model sealed results are preserved under `archive/before-xpair-v11/`.
+
+On one allocated GPU, run `bash benchmark-v5/scripts/run_xpair_v11.sh` from the project root. The first run freezes the released checkpoint, qualifies native inference, verifies all existing Ankh features and scores atomic resumable chunks. Later runs verify the same frozen identities and reuse completed chunks. No embeddings or prior model predictions are regenerated.
+
+After scoring, run `bash benchmark-v5/scripts/finish_xpair_v11.sh` to audit source exposure, collect the twelve-model results, update all figures and reports, and seal/verify the extension. Collection reuses the eleven prior score arrays against the preserved collection hashes; prior bootstrap samples remain identical. Historical human-release code hashes predate the directory rename, whose four path-only edits are explicitly recorded in `provenance/xpair-v11-archive.json`.
+
 ## Added human STRING-trained releases
 
 The extension is defined in [HUMAN-RELEASES-ADDENDUM.md](HUMAN-RELEASES-ADDENDUM.md), with immutable checkpoint, runtime, inference-code and data identities in `provenance/human-releases.json`. The previous nine-model sealed artifacts are preserved in `archive/before-human-releases/`. The one-time preparation script must not be rerun.

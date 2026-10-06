@@ -1,5 +1,5 @@
 {
-  "at_utc": "2026-10-05T17:39:19.441142+00:00",
+  "at_utc": "2026-10-06T20:04:41.246085+00:00",
   "complete": true,
   "names": [
     "native-plm",
@@ -12,7 +12,8 @@
     "sprint",
     "dscript",
     "native-human",
-    "tuna-human"
+    "tuna-human",
+    "xpair-v11"
   ],
   "tests": {
     "original": {
@@ -135,6 +136,15 @@
           "score_max": 8.107741355895996,
           "unique_scores": 52015,
           "zero_scores": 0
+        },
+        "xpair-v11": {
+          "ap": 0.6578137755164519,
+          "auroc": 0.6307288049580189,
+          "brier": 0.3778943610075863,
+          "score_min": -13.222820281982422,
+          "score_max": 10.297237396240234,
+          "unique_scores": 51990,
+          "zero_scores": 0
         }
       },
       "protein_macro": {
@@ -213,6 +223,13 @@
           "minimum_incident_pairs": 10,
           "requires_both_labels": true,
           "macro_ap": 0.6727388856910308,
+          "mean_local_prevalence": 0.48828498314093904
+        },
+        "xpair-v11": {
+          "eligible_proteins": 2036,
+          "minimum_incident_pairs": 10,
+          "requires_both_labels": true,
+          "macro_ap": 0.6538114351927802,
           "mean_local_prevalence": 0.48828498314093904
         }
       },
@@ -345,6 +362,15 @@
           "score_max": 8.001803398132324,
           "unique_scores": 52005,
           "zero_scores": 0
+        },
+        "xpair-v11": {
+          "ap": 0.5978159404320664,
+          "auroc": 0.5829004408272096,
+          "brier": 0.39821502649315865,
+          "score_min": -13.148544311523438,
+          "score_max": 10.297237396240234,
+          "unique_scores": 51994,
+          "zero_scores": 0
         }
       },
       "protein_macro": {
@@ -423,6 +449,13 @@
           "minimum_incident_pairs": 10,
           "requires_both_labels": true,
           "macro_ap": 0.633611451812267,
+          "mean_local_prevalence": 0.5000070223507458
+        },
+        "xpair-v11": {
+          "eligible_proteins": 2029,
+          "minimum_incident_pairs": 10,
+          "requires_both_labels": true,
+          "macro_ap": 0.6210459306289382,
           "mean_local_prevalence": 0.5000070223507458
         }
       },
@@ -614,6 +647,22 @@
       "high": 0.6645496904525331
     },
     {
+      "test": "original",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.6578137755164507,
+      "low": 0.6390514718702691,
+      "high": 0.6757246680051637
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.6307288049580189,
+      "low": 0.615195100538313,
+      "high": 0.6453793916506653
+    },
+    {
       "test": "ilp",
       "model": "native-plm",
       "metric": "ap",
@@ -788,6 +837,22 @@
       "estimate": 0.5937147433736354,
       "low": 0.5783918550710884,
       "high": 0.6093218890182407
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "metric": "ap",
+      "estimate": 0.5978159404320673,
+      "low": 0.5812959506347715,
+      "high": 0.6165541554271246
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "metric": "auroc",
+      "estimate": 0.5829004408272096,
+      "low": 0.5664765006753283,
+      "high": 0.5986794629786111
     }
   ],
   "paired_differences": [
@@ -973,6 +1038,24 @@
     },
     {
       "test": "original",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.03250507623755616,
+      "low": -0.05206664474610989,
+      "high": -0.013742887119087253
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.06873809358884497,
+      "low": -0.089767521712316,
+      "high": -0.048109565701335906
+    },
+    {
+      "test": "original",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -1078,6 +1161,114 @@
       "difference": -0.05373203619700195,
       "low": -0.07050840282667009,
       "high": -0.03820456586305001
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": -0.03385644922863762,
+      "low": -0.054919614447484,
+      "high": -0.011778115843786404
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": -0.0656418382782985,
+      "low": -0.08827072025474408,
+      "high": -0.043494130200410895
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": -0.029309779168968486,
+      "low": -0.05061206775455955,
+      "high": -0.008897299326782163
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": -0.06740513840519313,
+      "low": -0.0901611225744875,
+      "high": -0.045173163741677506
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": -0.04136241215349934,
+      "low": -0.05891563064960681,
+      "high": -0.024784934159232386
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": -0.08023692987432729,
+      "low": -0.09854709869096621,
+      "high": -0.06292251441288438
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": -0.05434617028105715,
+      "low": -0.06488063681907688,
+      "high": -0.04453851932632397
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": -0.05695979344517654,
+      "low": -0.06720758015583748,
+      "high": -0.04693354445625361
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": 0.010150420772655933,
+      "low": 0.002626786383928351,
+      "high": 0.017105058829853692
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": 0.010382056528679962,
+      "low": 0.0025172457719601442,
+      "high": 0.0176271909212574
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 5.2452214079012904e-05,
+      "low": -0.007557380214370038,
+      "high": 0.007730823907887185
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": -0.01889534279360372,
+      "low": -0.026899708863010435,
+      "high": -0.011150537906589457
     },
     {
       "test": "ilp",
@@ -1261,6 +1452,24 @@
     },
     {
       "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "ap",
+      "difference": -0.039898823828354635,
+      "low": -0.06039686796829982,
+      "high": -0.02095204256151605
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "native-plm",
+      "metric": "auroc",
+      "difference": -0.06748665574159884,
+      "low": -0.0876810720623867,
+      "high": -0.04813148032425183
+    },
+    {
+      "test": "ilp",
       "model": "ipin-esm2",
       "reference": "ipin-esmc",
       "metric": "ap",
@@ -1366,12 +1575,120 @@
       "difference": -0.05953835774473448,
       "low": -0.07642149645180998,
       "high": -0.0451596081601236
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "ap",
+      "difference": -0.059221626179710274,
+      "low": -0.08097115855408168,
+      "high": -0.039213206659638386
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "ipin-esm2",
+      "metric": "auroc",
+      "difference": -0.08401496587273749,
+      "low": -0.10763405128103459,
+      "high": -0.06266148656227714
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "ap",
+      "difference": -0.047376327603622315,
+      "low": -0.06902925144724406,
+      "high": -0.027908698508670025
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "ipin-esmc",
+      "metric": "auroc",
+      "difference": -0.08078433080381997,
+      "low": -0.1057748053384988,
+      "high": -0.05809544362975607
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "ap",
+      "difference": -0.04636617237456375,
+      "low": -0.06503184435739418,
+      "high": -0.030799115520831914
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "xpair-bernett",
+      "metric": "auroc",
+      "difference": -0.07653474047319375,
+      "low": -0.09604880103879286,
+      "high": -0.05912967840537543
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "ap",
+      "difference": -0.038510300501130246,
+      "low": -0.04905616198276316,
+      "high": -0.028241629457435326
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "xpair-default",
+      "metric": "auroc",
+      "difference": -0.043858086310690214,
+      "low": -0.055787341491472874,
+      "high": -0.03286966275832269
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "ap",
+      "difference": 0.011483158801763982,
+      "low": 0.003331696347840407,
+      "high": 0.018561547721620008
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "native-human",
+      "metric": "auroc",
+      "difference": 0.010161621956662481,
+      "low": 0.002342336368995865,
+      "high": 0.017243218751023005
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "ap",
+      "difference": 0.0056481622136765886,
+      "low": -0.0023170026457221466,
+      "high": 0.012594678165613124
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "reference": "tuna-human",
+      "metric": "auroc",
+      "difference": -0.010814302546425791,
+      "low": -0.01976909117656318,
+      "high": -0.002381014379573653
     }
   ],
   "collection": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/collection.json",
-    "bytes": 13227,
-    "sha256": "5265af2a8aca27142e25a39518f063243793135538d941c125a4933ee7c144fe"
+    "bytes": 16892,
+    "sha256": "b217f9ac5df87a0b7a6847301f6dc401de91e9ca5f86d71aabe97c167ad378c3"
   },
   "protocol": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/PROTOCOL.md",
@@ -1380,9 +1697,14 @@
   },
   "analysis_script": {
     "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/analyze.py",
-    "bytes": 15002,
-    "sha256": "348a5f63d6a6ab1a26b073810c51d31cfc34bd4dd4c8be00498cf48c5bcacca9"
+    "bytes": 18283,
+    "sha256": "62be087b705bb5014a5bd26a0ec96e441fe426742ff42899dfd865b59b34c44b"
   },
   "no_model_or_threshold_selected_on_tests": true,
-  "native_original_predictions_reproduced_exactly": true
+  "native_original_predictions_reproduced_exactly": true,
+  "analysis_script_at_metric_computation": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-ap-value-labels/scripts/analyze.py",
+    "bytes": 15649,
+    "sha256": "7255655f6e3bebc32738cc48d51ded32fb550ba563796256325f0bc48ff792cb"
+  }
 }

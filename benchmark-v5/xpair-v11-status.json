@@ -1,6 +1,7 @@
 {
-  "completed_at_utc": "2026-10-06T20:18:25.109577+00:00",
+  "at_utc": "2026-10-06T20:18:25.113612+00:00",
   "complete": true,
+  "phase": "complete",
   "checks": {
     "all_eleven_prior_scores_metrics_tables_and_bootstraps_unchanged": true,
     "xpair_v11_full_length_native_qualification": true,
@@ -23,19 +24,9 @@
     "added_releases_exposure_checked": true,
     "prior_sealed_artifacts_preserved": true
   },
-  "artifact_manifest": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/artifact-manifest.json",
-    "bytes": 40853,
-    "sha256": "af255b5cde7102b60e90c04f4b762a9423287c6448b1ae7bdac5c58cb5092aa5"
-  },
-  "summary": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/summary.json",
-    "bytes": 47609,
-    "sha256": "609145d76f726540eec17e05981ef050290686d6023b959f36c4f06f2c88672a"
-  },
-  "report": {
-    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/REPORT.md",
-    "bytes": 22771,
-    "sha256": "912b0929240990557527b622e5388431091e920a13c2e1a93024ff6b35b9a0a2"
+  "completion": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/completed.json",
+    "bytes": 1726,
+    "sha256": "a95c3fe9cccd4dd4fc247b4b9f7d69290120ab51bdabf24eb98b2fd637589552"
   }
 }

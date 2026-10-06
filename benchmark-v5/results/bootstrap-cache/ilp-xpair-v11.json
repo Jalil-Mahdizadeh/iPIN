@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "model": "xpair-v11",
+    "test": "ilp",
+    "replicates": 1000,
+    "seed": 20260929,
+    "rows": "bced44a7b60dcdca586d2a076ed9979ad003f9e988a54c37ca259ea1ea63c21d",
+    "scores": "659c77a075079f92a4c73a6d864ee0f65d8760efed8cad42c0de0dabb69dcfcd",
+    "analysis_code": "7255655f6e3bebc32738cc48d51ded32fb550ba563796256325f0bc48ff792cb"
+  },
+  "file": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/bootstrap-cache/ilp-xpair-v11.npz",
+    "bytes": 14539,
+    "sha256": "b57af5ed02885b07e0402835867873deb367e9452ca7abad0927c208758c4132"
+  }
+}

@@ -1,4 +1,4 @@
-"""Compare all eleven frozen predictors after excluding either source's proteins."""
+"""Compare all frozen predictors after excluding either source's proteins."""
 import csv
 
 import numpy as np
@@ -22,6 +22,9 @@ def main():
     xpair = flags['xpair-default__ankh-normalized__endpoints'] > 0
     assert np.array_equal(xpair, flags['xpair-default__exact__endpoints'] > 0)
     exposure = dscript | xpair
+    v11 = read(ROOT / 'provenance/xpair-v11-exposure.json')
+    extra = load_npz(verify(v11['flags']))['ankh-normalized__endpoints'] > 0
+    assert not (extra & ~exposure).any()
     mapping = load_npz(ROOT / 'data/pair-mapping.npz')
     union = np.load(ROOT / 'data/union.npy')
     tables, csv_rows, retained, positives = {}, [], {}, {}
@@ -67,13 +70,14 @@ def main():
     save_npz(retained_path, **retained)
     spec = {
         'stem': 'combined-exposed-sequences-removed',
-        'title': 'Performance after excluding D-SCRIPT and X-PAIR exposure',
+        'title': 'Performance after excluding D-SCRIPT and X-PAIR default exposure',
         'source': 'Exclude proteins in D-SCRIPT human TRAIN or X-PAIR default TRAIN + DEV (interaction / interface)',
         'scope': 'Both exposure lists are applied together; about 2% of each full test remains.',
     }
     figure_files = plot(spec, tables)
     sources = ['results/collection.json', 'provenance/exposure.json', 'provenance/exposure-flags.npz',
-               'data/pair-mapping.npz', 'data/original.npy', 'data/ilp.npy', 'data/union.npy']
+               'data/pair-mapping.npz', 'data/original.npy', 'data/ilp.npy', 'data/union.npy',
+               'provenance/xpair-v11-exposure.json', 'provenance/xpair-v11-exposure-flags.npz']
     atomic(ROOT / 'provenance/combined-exposure-subset-figure.json', {
         'at_utc': now(), 'script': record(__file__),
         'plot_helper': record(ROOT / 'scripts/plot_exposure_subsets.py'),

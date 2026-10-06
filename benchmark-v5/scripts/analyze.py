@@ -48,8 +48,8 @@ def bootstrap(test,rows,data):
   if side.exists():
    item=read(side);previous=item['identity']
    if previous!=identity:
-    prior=ROOT/'archive/before-human-releases/scripts/analyze.py'
-    assert previous['analysis_code']==sha(prior)
+    priors=[ROOT/'archive'/version/'scripts/analyze.py' for version in ['before-human-releases','before-xpair-v11','before-ap-value-labels']]
+    assert previous['analysis_code'] in [sha(prior) for prior in priors]
     assert {k:v for k,v in previous.items() if k!='analysis_code'}=={k:v for k,v in identity.items() if k!='analysis_code'}
    assert sha(path)==item['file']['sha256'];saved=load_npz(path)['samples']
    assert saved.shape==(REPLICATES,2) and np.isfinite(saved).all();samples[:,j]=saved
@@ -72,6 +72,7 @@ def bootstrap(test,rows,data):
  comparisons=[(j,0) for j in range(1,len(NAMES))]+[(1,2)]
  comparisons += [(NAMES.index(n),NAMES.index(ref)) for n in ['ipin-esm2','ipin-esmc'] for ref in ['native-human','tuna-human']]
  comparisons += [(NAMES.index('tuna-human'),NAMES.index('tuna'))]
+ comparisons += [(NAMES.index('xpair-v11'),NAMES.index(ref)) for ref in ['ipin-esm2','ipin-esmc','xpair-bernett','xpair-default','native-human','tuna-human']]
  for j,other in comparisons:
   for k,metric in enumerate(['ap','auroc']):
    low,high=np.quantile(samples[:,j,k]-samples[:,other,k],[.025,.975]);diffs.append({'test':test,'model':NAMES[j],'reference':NAMES[other],'metric':metric,
@@ -93,21 +94,29 @@ def macro(rows,data):
   out[name]={'eligible_proteins':len(eligible),'minimum_incident_pairs':10,'requires_both_labels':True,'macro_ap':float(np.mean(values)),'mean_local_prevalence':prevalence}
  return out
 
-def plots(results,intervals,testdata):
+def plot_average_precision(intervals):
  os.environ['MPLCONFIGDIR']=str(ROOT/'cache/matplotlib')
  import matplotlib;matplotlib.use('Agg')
  import matplotlib.pyplot as plt
- colors=['#202020','#c44e52','#4c72b0','#55a868','#8172b3','#ccb974','#64b5cd','#8c6143','#da8bc3','#e17c05','#146b6b'];labels=[LABELS[n] for n in NAMES]
- fig,axes=plt.subplots(1,2,figsize=(13,6),sharey=True)
+ colors=['#202020','#c44e52','#4c72b0','#55a868','#8172b3','#ccb974','#64b5cd','#8c6143','#da8bc3','#e17c05','#146b6b','#b33f88'];labels=[LABELS[n] for n in NAMES]
+ assert len(colors)==len(NAMES)
+ fig,axes=plt.subplots(1,2,figsize=(13,6.5),sharey=True)
  for ax,test in zip(axes,['original','ilp']):
   for j,name in enumerate(NAMES):
    item=next(x for x in intervals if x['test']==test and x['model']==name and x['metric']=='ap');v=item['estimate']
    ax.errorbar(v,j,xerr=[[v-item['low']],[item['high']-v]],fmt='o',color=colors[j],capsize=3)
+   ax.annotate(f'{v:.4f}',xy=(item['high'],j),xytext=(7,0),textcoords='offset points',ha='left',va='center',fontsize=9,color='#202020')
   ax.set_title('Original Bernett test' if test=='original' else 'Custom ILP-negative test');ax.set_xlabel('Average precision (95% protein-bootstrap interval)');ax.grid(axis='x',alpha=.2);ax.axvline(.5,color='gray',linestyle=':',linewidth=1)
+  lower,upper=ax.get_xlim();ax.set_xlim(lower,upper+.075*(upper-lower))
  axes[0].set_yticks(range(len(labels)),labels);axes[0].invert_yaxis();fig.suptitle('Frozen checkpoints | same positives, different negative distributions')
  fig.text(.02,.015,'* Documented supervised-data overlap; common-subset results are reported separately.',fontsize=9,color='#526071');fig.tight_layout(rect=(0,.035,1,1))
  for ext in ['png','pdf']:fig.savefig(ROOT/'results'/('average-precision.'+ext),dpi=180,bbox_inches='tight')
  plt.close(fig)
+ return colors,labels
+
+def plots(results,intervals,testdata):
+ colors,labels=plot_average_precision(intervals)
+ import matplotlib.pyplot as plt
  fig,axes=plt.subplots(2,2,figsize=(12,10))
  for col,test in enumerate(['original','ilp']):
   y=testdata[test]['rows'][:,2]
@@ -121,6 +130,41 @@ def plots(results,intervals,testdata):
  fig.text(.02,.012,'* Documented supervised-data overlap; common-subset results are reported separately.',fontsize=9,color='#526071');fig.tight_layout(rect=(0,.03,1,1))
  for ext in ['png','pdf']:fig.savefig(ROOT/'results'/('curves.'+ext),dpi=180,bbox_inches='tight')
  plt.close(fig)
+ atomic(ROOT/'provenance/main-figures.json',{'at_utc':now(),'models':NAMES,'labels':labels,
+  'script':record(__file__),'collection':record(ROOT/'results/collection.json'),
+  'confidence_intervals':record(ROOT/'results/confidence-intervals.csv'),
+  'figures':[record(ROOT/'results'/(stem+'.'+ext)) for stem in ['average-precision','curves'] for ext in ['png','pdf']]})
+
+def refresh_average_precision():
+ """Redraw only AP from saved estimates; preserve predictions and metric results."""
+ summary_path=ROOT/'results/summary.json';summary=read(summary_path)
+ assert summary['complete'] and summary['names']==NAMES
+ with (ROOT/'results/confidence-intervals.csv').open() as stream:table=list(csv.DictReader(stream))
+ intervals=summary['confidence_intervals'];labels=[]
+ for test in ['original','ilp']:
+  for name in NAMES:
+   item=next(x for x in intervals if x['test']==test and x['model']==name and x['metric']=='ap')
+   row=next(x for x in table if x['test']==test and x['model']==name and x['metric']=='ap')
+   assert all(float(row[k])==item[k] for k in ['estimate','low','high'])
+   assert abs(item['estimate']-summary['tests'][test]['models'][name]['ap'])<1e-12
+   labels.append({'test':test,'model':name,'estimate':item['estimate'],'label':f"{item['estimate']:.4f}"})
+ plot_average_precision(intervals)
+ figure_path=ROOT/'provenance/main-figures.json';figures=read(figure_path)
+ for item in figures['figures']:
+  if item['path'].endswith(('average-precision.png','average-precision.pdf')):item.update(record(item['path']))
+  else:verify(item)
+ figures['script']=record(__file__);figures['ap_labels_updated_at_utc']=now()
+ figures['ap_point_estimate_decimal_places']=4
+ atomic(figure_path,figures)
+ summary.setdefault('analysis_script_at_metric_computation',record(ROOT/'archive/before-ap-value-labels/scripts/analyze.py'))
+ summary['analysis_script']=record(__file__)
+ atomic(summary_path,summary)
+ atomic(ROOT/'provenance/ap-value-labels.json',{'at_utc':now(),'script':record(__file__),
+  'source':record(ROOT/'results/confidence-intervals.csv'),'labels':labels,
+  'metric_computation_script':summary['analysis_script_at_metric_computation'],
+  'inference_repeated':False,'metrics_recomputed':False,'bootstrap_recomputed':False,
+  'figures':[record(ROOT/'results'/('average-precision.'+ext)) for ext in ['png','pdf']]})
+ print({'updated':'average-precision.png and .pdf','point_labels':len(labels),'decimal_places':4},flush=True)
 
 def main():
  threadpool_limits(1);collection=read(ROOT/'results/collection.json');assert collection['complete'] and set(collection['models'])==set(NAMES)
@@ -188,4 +232,8 @@ def main():
   'protocol':record(ROOT/'PROTOCOL.md'),'analysis_script':record(__file__),'no_model_or_threshold_selected_on_tests':True,'native_original_predictions_reproduced_exactly':True}
  atomic(ROOT/'results/summary.json',output)
  print('Analysis complete',flush=True)
-if __name__=='__main__':main()
+if __name__=='__main__':
+ import argparse
+ parser=argparse.ArgumentParser();parser.add_argument('--ap-plot-only',action='store_true');args=parser.parse_args()
+ if args.ap_plot_only:refresh_average_precision()
+ else:main()

@@ -1,0 +1,179 @@
+{
+  "at_utc": "2026-10-06T20:17:43.706207+00:00",
+  "script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/scripts/analyze.py",
+    "bytes": 18283,
+    "sha256": "62be087b705bb5014a5bd26a0ec96e441fe426742ff42899dfd865b59b34c44b"
+  },
+  "source": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/confidence-intervals.csv",
+    "bytes": 3820,
+    "sha256": "8057455497d30587411b3ffa0e65d6d2d8c7f4ec189bbafaa818dfbf2a110f7f"
+  },
+  "labels": [
+    {
+      "test": "original",
+      "model": "native-plm",
+      "estimate": 0.6903188517540069,
+      "label": "0.6903"
+    },
+    {
+      "test": "original",
+      "model": "ipin-esm2",
+      "estimate": 0.6916702247450883,
+      "label": "0.6917"
+    },
+    {
+      "test": "original",
+      "model": "ipin-esmc",
+      "estimate": 0.6871235546854192,
+      "label": "0.6871"
+    },
+    {
+      "test": "original",
+      "model": "tuna",
+      "estimate": 0.6919068861341482,
+      "label": "0.6919"
+    },
+    {
+      "test": "original",
+      "model": "xpair-bernett",
+      "estimate": 0.69917618766995,
+      "label": "0.6992"
+    },
+    {
+      "test": "original",
+      "model": "xpair-default",
+      "estimate": 0.7121599457975079,
+      "label": "0.7122"
+    },
+    {
+      "test": "original",
+      "model": "rapppid",
+      "estimate": 0.5840719506075588,
+      "label": "0.5841"
+    },
+    {
+      "test": "original",
+      "model": "sprint",
+      "estimate": 0.5228457034032897,
+      "label": "0.5228"
+    },
+    {
+      "test": "original",
+      "model": "dscript",
+      "estimate": 0.5915761973218439,
+      "label": "0.5916"
+    },
+    {
+      "test": "original",
+      "model": "native-human",
+      "estimate": 0.6476633547437948,
+      "label": "0.6477"
+    },
+    {
+      "test": "original",
+      "model": "tuna-human",
+      "estimate": 0.6577613233023717,
+      "label": "0.6578"
+    },
+    {
+      "test": "original",
+      "model": "xpair-v11",
+      "estimate": 0.6578137755164507,
+      "label": "0.6578"
+    },
+    {
+      "test": "ilp",
+      "model": "native-plm",
+      "estimate": 0.637714764260422,
+      "label": "0.6377"
+    },
+    {
+      "test": "ilp",
+      "model": "ipin-esm2",
+      "estimate": 0.6570375666117776,
+      "label": "0.6570"
+    },
+    {
+      "test": "ilp",
+      "model": "ipin-esmc",
+      "estimate": 0.6451922680356896,
+      "label": "0.6452"
+    },
+    {
+      "test": "ilp",
+      "model": "tuna",
+      "estimate": 0.6364582730254794,
+      "label": "0.6365"
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-bernett",
+      "estimate": 0.6441821128066311,
+      "label": "0.6442"
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-default",
+      "estimate": 0.6363262409331976,
+      "label": "0.6363"
+    },
+    {
+      "test": "ilp",
+      "model": "rapppid",
+      "estimate": 0.5556689237321051,
+      "label": "0.5557"
+    },
+    {
+      "test": "ilp",
+      "model": "sprint",
+      "estimate": 0.5137440282799273,
+      "label": "0.5137"
+    },
+    {
+      "test": "ilp",
+      "model": "dscript",
+      "estimate": 0.5509487862598786,
+      "label": "0.5509"
+    },
+    {
+      "test": "ilp",
+      "model": "native-human",
+      "estimate": 0.5863327816303033,
+      "label": "0.5863"
+    },
+    {
+      "test": "ilp",
+      "model": "tuna-human",
+      "estimate": 0.5921677782183907,
+      "label": "0.5922"
+    },
+    {
+      "test": "ilp",
+      "model": "xpair-v11",
+      "estimate": 0.5978159404320673,
+      "label": "0.5978"
+    }
+  ],
+  "metric_computation_script": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/archive/before-ap-value-labels/scripts/analyze.py",
+    "bytes": 15649,
+    "sha256": "7255655f6e3bebc32738cc48d51ded32fb550ba563796256325f0bc48ff792cb"
+  },
+  "inference_repeated": false,
+  "metrics_recomputed": false,
+  "bootstrap_recomputed": false,
+  "figures": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/average-precision.png",
+      "bytes": 195374,
+      "sha256": "750c3ecebb1d318521e01a92b4504d1420180de6b03bce72ed6d25b8d8887e11"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5/results/average-precision.pdf",
+      "bytes": 27230,
+      "sha256": "c8b8096fda1f748a218f497d52c101964085e50671b8cb3ec9ae328d3b084716"
+    }
+  ]
+}

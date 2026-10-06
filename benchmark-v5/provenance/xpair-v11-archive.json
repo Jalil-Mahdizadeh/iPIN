@@ -1,0 +1,33 @@
+{
+  "at_utc": "2026-10-06T19:55:23.366753+00:00",
+  "prior_git_commit": "52a4ac51346a054cf625a081ebf971b5e0bbfceb",
+  "files_verified_against_original_manifest": 241,
+  "rename_only_code_differences": [
+    {
+      "path": "scripts/human_releases_exposure.py",
+      "current_sha256": "86d2c79b35c47139b626a7f9c6fc211aba553b53850133909af0557ab778b2c2",
+      "sealed_sha256": "cbb50239189ceba6afb0b3ddc020a9ee0988b00665ad00d566391e31b3966aa4",
+      "change": "Only nonhuman directory-name references changed after sealing."
+    },
+    {
+      "path": "scripts/native_human_bernett.py",
+      "current_sha256": "ae09b67453a03a6c9680490d035f0af31d66d408b8871ece51487138e3676060",
+      "sealed_sha256": "e3016472a8cf4a5729a5123e8220fa8eb5b97c0fe4d2eb3f66035dd114b523d0",
+      "change": "Only nonhuman directory-name references changed after sealing."
+    },
+    {
+      "path": "scripts/prepare_human_releases.py",
+      "current_sha256": "304c2b98da5582c9e3f71de79702538acdea93acb136bbd9cb19af0f72b5403e",
+      "sealed_sha256": "21443a308d6d6f7a841046e1f6464025ffb6c01e2a561962dd1f52b5e1358f81",
+      "change": "Only nonhuman directory-name references changed after sealing."
+    },
+    {
+      "path": "scripts/tuna_human_bernett.py",
+      "current_sha256": "e0769a8b345f3cb69bac64f7af977943b919fc87c9a5738f57b3db53a384b043",
+      "sealed_sha256": "e46a664a8e1b61020409310ef711f09eb58dcb6f029bff53707ccbdf1db4f90f",
+      "change": "Only nonhuman directory-name references changed after sealing."
+    }
+  ],
+  "prior_predictions_results_and_figures_unchanged": true,
+  "archive": "benchmark-v5/archive/before-xpair-v11"
+}
