@@ -1,0 +1,333 @@
+{
+  "at_utc": "2026-10-07T12:45:25.511584+00:00",
+  "identity": {
+    "addendum_sha256": "ea5dce7a8f0d39534c35a04d6c7b21c9fdaf55075443e73906d8fba41774d3fa",
+    "config": {
+      "seed": 47,
+      "threads": 16,
+      "smoothing": 1.0,
+      "search": {
+        "sensitivity": 7.5,
+        "evalue": 1e-05,
+        "min_identity": 0.25,
+        "min_coverage": 0.5,
+        "max_prefilter": 1000,
+        "top_k": 5,
+        "gpu": 0,
+        "weight": "fident * sqrt(qcov * tcov)",
+        "no_hit": "mean TRAIN protein log ratio"
+      },
+      "regressor": {
+        "loss": "squared_error",
+        "max_iter": 300,
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20,
+        "l2_regularization": 10.0,
+        "max_bins": 255,
+        "early_stopping": false,
+        "random_state": 47
+      },
+      "features": "log length; 20 AA fractions; 400 ordered dipeptide fractions; unknown fraction",
+      "bootstrap": {
+        "replicates": 500,
+        "seed": 20261006,
+        "unit": "protein endpoints"
+      }
+    },
+    "training_references": [
+      "v5",
+      "bernett"
+    ],
+    "species": [
+      "mouse",
+      "fly",
+      "worm",
+      "yeast",
+      "ecoli"
+    ],
+    "neural_references": [
+      "ipin-esm2",
+      "ipin-esmc",
+      "v2-capped",
+      "v2-clean-bce",
+      "native-plm"
+    ],
+    "original_scientific_scripts": {
+      "common.py": "f904374da2b9a8135ea98cf9f7bf39865f6a0a5d9c9ebea973237c8068034de1",
+      "fit_predict.py": "5b6579ae1519077194e1d6dd73be4db843bfb20e487250d2ae70fc3f4b45b024",
+      "search.py": "ec57c83e596996a525aaa5dc971d1babeb6c848d617cac4d1afffe7fc85a8ae2",
+      "evaluate.py": "867d3f5ac53e70ed1b243658deb9f093012a14ba679daa525c63fcbea23d6d42"
+    }
+  },
+  "sources": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/sequences.json",
+      "bytes": 15568545,
+      "sha256": "dcd8fe5afacc1737e7b4de2d4b7367ccd857d803854d2d95adc8d5681e4f88d7"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/train-pairs.npy",
+      "bytes": 11212352,
+      "sha256": "56915614dbc40fe0843f8b656a9bfa5867a4ea63cc66595a2d6e391951db2671"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/train-labels.npy",
+      "bytes": 700892,
+      "sha256": "d2acaec03a3ad0595f05e4cf70ea6ebf77a55c76ef68bcd727a06fe78da2734f"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-v1/data/raw/pairs_uniprot_seqs_train.csv",
+      "bytes": 270001117,
+      "sha256": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/provenance/prepared.json",
+      "bytes": 6686,
+      "sha256": "e55da981e90a71e6cea02b715517757e17db0444d8da2b09ee72364394c8eeba"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/sequences.json",
+      "bytes": 24509473,
+      "sha256": "67484561e8e664d3cd773632516f5666bd039314d5000b1087e47c8e59b97d11"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/union.npy",
+      "bytes": 7616928,
+      "sha256": "7bafd108eee680375f02523aa6d0ce65a4f6f0b690606ddaec0c141e46fbf614"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/pair-mapping.npz",
+      "bytes": 416513,
+      "sha256": "435328ce29b334dcc18ef2d21d39aa5d12473391c47869849edab6224d756fe2"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/summary.json",
+      "bytes": 22362,
+      "sha256": "6a88fb25ff2b6b25bd8e29b32ee95f408b204576ba5c1fee76b77a1764ce68c7"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/collection.json",
+      "bytes": 19379,
+      "sha256": "63bf9a07eb1b3f55066f65a7dc5809485b41684e4784b9da29f5e2c8aee230f5"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/combined-figure-metrics.csv",
+      "bytes": 24263,
+      "sha256": "7db134f0b57af1082d283badad19857fb354865f3b8c5e2c8de0ee6b9a53d3e9"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/ipin-esm2-union.npz",
+      "bytes": 2587499,
+      "sha256": "ff7461b860eae492b84233313b67208795e4a3cd6797a073fbe939f2db4178ea"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/ipin-esmc-union.npz",
+      "bytes": 2390095,
+      "sha256": "4648be99aac9c8cd3f5d826b34f3742d87c4539c48023f79a743d961c69ee510"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/v2-capped-union.npz",
+      "bytes": 2546721,
+      "sha256": "d1be2c601cd64efc6037657a7d7d134dd15efe27e16ee98c3899c2b1dfd26565"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/v1-v4-comparison/results/v2-clean-bce-union.npz",
+      "bytes": 2486054,
+      "sha256": "3cd0e04b072be6e3746f9960cac0982517e77a9a3741cee4c2a728fd6083c590"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/results/native-plm-union.npz",
+      "bytes": 2534214,
+      "sha256": "63fb5648f87b6cee90b7b87e76b78205d68b2fd28a5ee08556fb575e3baac537"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/mouse.npy",
+      "bytes": 1760128,
+      "sha256": "197c4ef4dcac3c6f3f0e7ee684c5d431c57eeb9c7ab803d52529ec30cceb7d51"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/mouse.ppi.qrels.seq.test.csv",
+      "bytes": 43035414,
+      "sha256": "b78cf5f216896721dfddedb3ba1a4405cec87f3da501056df24024988c1a1658"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/fly.npy",
+      "bytes": 1760128,
+      "sha256": "13593729e183012893e5030dd199f6e021d561a1d4860b81e601054278654878"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/fly.ppi.qrels.seq.test.csv",
+      "bytes": 42359686,
+      "sha256": "a7599e8bae38984e243ef3278d645b7ff90aef21646649f4ea36603af4bd3706"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/worm.npy",
+      "bytes": 1760128,
+      "sha256": "042b1d9740f8b0deeec8663280f20b3edbac6121a4e222939b40855ba789a652"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/worm.ppi.qrels.seq.test.csv",
+      "bytes": 38758522,
+      "sha256": "4d90948073100cf844d31893df6b4dd9bdc50cf9799a6b555e745c859cf5780d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/yeast.npy",
+      "bytes": 1760128,
+      "sha256": "cdf305fe455bc2ee8c1d6b8282d7fccc30f53f472b46019fba35579dd0e011ac"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/yeast.ppi.qrels.seq.test.csv",
+      "bytes": 37772124,
+      "sha256": "11854f594ac14fcf8dfc73a94fbfefc5e05fc59e38f9d75ac273ca2a68243357"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-nonhuman/data/ecoli.npy",
+      "bytes": 704128,
+      "sha256": "a67bdac5af8a3e8730aa77f0517dab0fb647f61353708ea915d005f53dc52f49"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/plm-interact-reproducability/data/cross_species_benchmarking/test/ecoli.ppi.qrels.seq.test.csv",
+      "bytes": 12526313,
+      "sha256": "54b5de269e285c928516ac081bd7e8ef99f330ac09021ae898bc651e81b2a4c0"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/bernett-train.fasta",
+      "bytes": 3273266,
+      "sha256": "8095f40076a61b032ccb2290e7b00083db65a3fca1dbaf2212e780b96966e4bc"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/bernett-train.npz",
+      "bytes": 726984,
+      "sha256": "22ec19fa1c74f884d460fa3cc92cd4b921f4625d0dd9200cddd0058d07110fc8"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/ecoli-neural.npz",
+      "bytes": 254861,
+      "sha256": "9e861d067484adaf5141484f4d23b4dbedbd1555b51612b275e8a8b8528e2c3b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/ecoli-rows.npz",
+      "bytes": 143370,
+      "sha256": "de6b3a47e5a505f399cac7e0802c58e642351a4aaee016058cbbf906d99156a4"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/fly-neural.npz",
+      "bytes": 638414,
+      "sha256": "e89758796babc931fe6d51eca3979c5add8d0fdd88576b8fc5e453c1055eaace"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/fly-rows.npz",
+      "bytes": 378603,
+      "sha256": "591a85f3565865bde5e7296cb3e762f0f9ee094f9dfb467d863e54b4a8d50bd6"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/mouse-neural.npz",
+      "bytes": 638438,
+      "sha256": "7a70d711e5ffff624abf027635d0db14383323c8348b1bb8a4f2460308a17911"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/mouse-rows.npz",
+      "bytes": 387763,
+      "sha256": "c4b35fae925857b8b90c3d9670929f837501dcf6f269f09c90e46d20c10fc7b6"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/queries.fasta",
+      "bytes": 20095319,
+      "sha256": "0d2bf8e1f5db295e882ed6e46caa99e0ea7f74d091a7053529714baae43ed6b5"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/sequences.json",
+      "bytes": 40808133,
+      "sha256": "dec6a55cd310ceefcc5fb577e1e3f12ada9900826c823fc40a54a82c7e0499ff"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/v5-train.fasta",
+      "bytes": 8169279,
+      "sha256": "75f7fcf810d7ec2362bfe425a628eedbcb82834b3a97e65d376ba32aee139d5e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/v5-train.npz",
+      "bytes": 2097051,
+      "sha256": "ef3a276e1e5a79ed6503f4111396960b94f7d6f2b58f3c880ccc3a7f6ab7508f"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/worm-neural.npz",
+      "bytes": 638844,
+      "sha256": "f8d52bb5848c77fb1685dc392d9d4bb4e6c92accb9a0fc5f67c8458237761574"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/worm-rows.npz",
+      "bytes": 387627,
+      "sha256": "5304c8bbd8cd66cf2b7e62d87e81ca11372dbfc7fb7f03b0f42e3bf31ae46b96"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/yeast-neural.npz",
+      "bytes": 644034,
+      "sha256": "56fbeb7e2649285453671851d8e81fe9ad1270fadc6c5d60f822457b2b5a1efd"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/data/nonhuman/yeast-rows.npz",
+      "bytes": 369020,
+      "sha256": "ebd4a7b90021de0a49650badb32b9269ae42a118b63d4addc6a589787ae52d7c"
+    }
+  ],
+  "counts": {
+    "mouse": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "proteins": 17250
+    },
+    "fly": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "proteins": 11306
+    },
+    "worm": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "proteins": 18077
+    },
+    "yeast": {
+      "rows": 55000,
+      "positives": 5000,
+      "negatives": 50000,
+      "proteins": 5591
+    },
+    "ecoli": {
+      "rows": 22000,
+      "positives": 2000,
+      "negatives": 20000,
+      "proteins": 4412
+    }
+  },
+  "unique_query_sequences": 56634,
+  "unique_all_sequences": 78622,
+  "train_sequences": {
+    "v5": 13110,
+    "bernett": 4286
+  },
+  "bernett_release": {
+    "repository": "danliu1226/Bernett_benchmarking",
+    "revision": "5d2ad03baa165c27df32a2eadf066462a2a83073",
+    "file": "pairs_uniprot_seqs_train.csv",
+    "local_path": "data/raw/pairs_uniprot_seqs_train.csv",
+    "url": "https://huggingface.co/datasets/danliu1226/Bernett_benchmarking/resolve/5d2ad03baa165c27df32a2eadf066462a2a83073/pairs_uniprot_seqs_train.csv",
+    "bytes": 270001117,
+    "sha256": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a",
+    "publisher_lfs_sha256": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a"
+  },
+  "source_rows_verified": 242000,
+  "resource_use": {
+    "wall_seconds": 6.926747029006947,
+    "user_seconds": 6.221149,
+    "system_seconds": 0.20035899999999998,
+    "max_rss_kib": 258048,
+    "at_utc": "2026-10-07T12:45:25.511626+00:00"
+  }
+}

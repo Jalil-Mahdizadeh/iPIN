@@ -1,0 +1,12 @@
+{
+  "timing": "Post-result diagnostic; no primary method or score changed.",
+  "purpose": "Check how often existing predictions equal zero for a matched balanced TRAIN target plus the fixed mean fallback for an unmatched endpoint.",
+  "no_hit_fallback": 0.00010136396017853736,
+  "inversion_performed": false,
+  "alternative_predictor_evaluated": false,
+  "artifact": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/nonhuman-v5-fallback-diagnostic.csv",
+    "bytes": 1360,
+    "sha256": "beccff1c7318f5f5f72632c35ef648425bd08c74cf3b4210fe761f4fe5bcd6d1"
+  }
+}

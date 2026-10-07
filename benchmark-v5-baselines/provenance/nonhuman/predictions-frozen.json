@@ -1,0 +1,293 @@
+{
+  "at_utc": "2026-10-07T12:49:35.258372+00:00",
+  "identity": {
+    "protocol": {
+      "addendum_sha256": "ea5dce7a8f0d39534c35a04d6c7b21c9fdaf55075443e73906d8fba41774d3fa",
+      "config": {
+        "seed": 47,
+        "threads": 16,
+        "smoothing": 1.0,
+        "search": {
+          "sensitivity": 7.5,
+          "evalue": 1e-05,
+          "min_identity": 0.25,
+          "min_coverage": 0.5,
+          "max_prefilter": 1000,
+          "top_k": 5,
+          "gpu": 0,
+          "weight": "fident * sqrt(qcov * tcov)",
+          "no_hit": "mean TRAIN protein log ratio"
+        },
+        "regressor": {
+          "loss": "squared_error",
+          "max_iter": 300,
+          "learning_rate": 0.05,
+          "max_leaf_nodes": 15,
+          "min_samples_leaf": 20,
+          "l2_regularization": 10.0,
+          "max_bins": 255,
+          "early_stopping": false,
+          "random_state": 47
+        },
+        "features": "log length; 20 AA fractions; 400 ordered dipeptide fractions; unknown fraction",
+        "bootstrap": {
+          "replicates": 500,
+          "seed": 20261006,
+          "unit": "protein endpoints"
+        }
+      },
+      "training_references": [
+        "v5",
+        "bernett"
+      ],
+      "species": [
+        "mouse",
+        "fly",
+        "worm",
+        "yeast",
+        "ecoli"
+      ],
+      "neural_references": [
+        "ipin-esm2",
+        "ipin-esmc",
+        "v2-capped",
+        "v2-clean-bce",
+        "native-plm"
+      ],
+      "original_scientific_scripts": {
+        "common.py": "f904374da2b9a8135ea98cf9f7bf39865f6a0a5d9c9ebea973237c8068034de1",
+        "fit_predict.py": "5b6579ae1519077194e1d6dd73be4db843bfb20e487250d2ae70fc3f4b45b024",
+        "search.py": "ec57c83e596996a525aaa5dc971d1babeb6c848d617cac4d1afffe7fc85a8ae2",
+        "evaluate.py": "867d3f5ac53e70ed1b243658deb9f093012a14ba679daa525c63fcbea23d6d42"
+      }
+    },
+    "prepared_sha256": "06595234909301b6186013ef6f9570748625f8d14ce1aacb6d1fd0bd16b58530",
+    "original_predictions_sha256": "3b3e26b9d0c11e576cec5d8e5edaaf94269957857f1482c59a7b7e031072fbc1",
+    "script_sha256": "1a2416e89f824e5b2328bc8cc134ca0b3433f95ec822de7806aedab970adb694",
+    "searches": {
+      "v5": "85bc31ef7f58ee5270a4c1435bceec0ca8948c2bb144e0afd662c940bbfbfdc1",
+      "bernett": "339522932c08e7661d70994f61c9cf8c618e15e27558f198407ff574fe397334"
+    }
+  },
+  "references": {
+    "v5": {
+      "train_rows": 700764,
+      "positive_rows": 350382,
+      "negative_rows": 350382,
+      "train_sequences": 13110,
+      "unique_positive_edges": 350382,
+      "fitted_regressor": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/sequence-propensity.joblib",
+        "bytes": 426052,
+        "sha256": "48447a12e958d093a1ac65d6f72455c5f050d4249b64c7d09f9cc32ae66ca6d6"
+      },
+      "new_regressor_fit_seconds": 0.0,
+      "reused_existing_model": true,
+      "degree_target": {
+        "equal_degrees": 13087,
+        "std": 0.015776517580051042,
+        "min": -0.45685650903950004,
+        "max": 0.6931471805599453,
+        "unique_values": 22
+      },
+      "no_hit_propensity": 0.00010136396017853736,
+      "homologs": {
+        "raw_hits": 143709,
+        "missing_exact_inserted": 12957,
+        "integer_diagnostics_rows": 143709,
+        "integer_below_requested_identity": 143709,
+        "integer_below_requested_bilateral_coverage": 0,
+        "maximum_absolute_weight_rounding_difference": 1.0
+      },
+      "scored": {
+        "mouse": {
+          "rows": 55000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        },
+        "fly": {
+          "rows": 55000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        },
+        "worm": {
+          "rows": 55000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        },
+        "yeast": {
+          "rows": 55000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        },
+        "ecoli": {
+          "rows": 22000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        }
+      },
+      "stage_seconds": 2.9813589270343073
+    },
+    "bernett": {
+      "train_rows": 163192,
+      "positive_rows": 81596,
+      "negative_rows": 81596,
+      "train_sequences": 4286,
+      "unique_positive_edges": 81596,
+      "fitted_regressor": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/nonhuman/bernett-sequence-propensity.joblib",
+        "bytes": 486653,
+        "sha256": "b3ba0d4e3ef1d68e526c0b2925281bf94fdf599b84683ab31a459c8980813ae0"
+      },
+      "new_regressor_fit_seconds": 1.0379007009905763,
+      "reused_existing_model": false,
+      "degree_target": {
+        "equal_degrees": 367,
+        "std": 0.3471013971171915,
+        "min": -1.9459101490553135,
+        "max": 1.6094379124341003,
+        "unique_values": 1221
+      },
+      "no_hit_propensity": -0.03817930121082797,
+      "homologs": {
+        "raw_hits": 31899,
+        "missing_exact_inserted": 4228,
+        "integer_diagnostics_rows": 31899,
+        "integer_below_requested_identity": 31899,
+        "integer_below_requested_bilateral_coverage": 0,
+        "maximum_absolute_weight_rounding_difference": 1.0
+      },
+      "scored": {
+        "mouse": {
+          "rows": 55000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        },
+        "fly": {
+          "rows": 55000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        },
+        "worm": {
+          "rows": 55000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        },
+        "yeast": {
+          "rows": 55000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        },
+        "ecoli": {
+          "rows": 22000,
+          "all_scores_finite_and_symmetric": true,
+          "scalar_interolog_rows_checked": 100
+        }
+      },
+      "stage_seconds": 2.281114667013753
+    }
+  },
+  "artifacts": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/mouse-v5-baseline-scores.npz",
+      "bytes": 468408,
+      "sha256": "5a02e4211fce69b718151bd3dd7e3496fedeb3773ebbc886f3f0a31f5b4784bf"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/fly-v5-baseline-scores.npz",
+      "bytes": 462465,
+      "sha256": "4f67a87c5cfec09ee04ccf34efd0bb626b90effbe83036ec946beb5979c97eee"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/worm-v5-baseline-scores.npz",
+      "bytes": 457061,
+      "sha256": "999b5dc002773842dd0d3a7043da3f5b8bf6d923a5153292763b566a1625525b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/yeast-v5-baseline-scores.npz",
+      "bytes": 451624,
+      "sha256": "461bf4104e16e8bcd1680049bf45dd1cec401ca37e88c4e0a4093c541ebb7d3a"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/ecoli-v5-baseline-scores.npz",
+      "bytes": 168784,
+      "sha256": "e39758efbd998f7077c89cc54be38608412af3ddd48b9867cdaa6ae624442292"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/mouse-bernett-baseline-scores.npz",
+      "bytes": 594232,
+      "sha256": "6dcee13087585ae3dbb2675a5b059c17f53b12eac116ca27df99a4938a2397b7"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/fly-bernett-baseline-scores.npz",
+      "bytes": 533152,
+      "sha256": "193ffdd10722576291e4783dcad447e060defbf431581bc84e4323522d6e3856"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/worm-bernett-baseline-scores.npz",
+      "bytes": 508325,
+      "sha256": "72eb54a526529ee083c48db247fb7ab3f8cace63fc3cf89b7befa8b9505f49cd"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/yeast-bernett-baseline-scores.npz",
+      "bytes": 486072,
+      "sha256": "31cc12771c35d73b57bc58f1b2fb3552fe0e5bb9e626f881698626f36a499730"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/ecoli-bernett-baseline-scores.npz",
+      "bytes": 171434,
+      "sha256": "b3039c2aa9703b38f4573e1bb084abce2538dc40bcba6ecf20be3b3e1ff22c2b"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/nonhuman/bernett-homologs.csv.gz",
+      "bytes": 496457,
+      "sha256": "0134af38f8ca4302ce9c22a51047a3205eee8353b5bfdc1de0d4f780b149e91c"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/nonhuman/bernett-protein-values.npz",
+      "bytes": 985690,
+      "sha256": "c85e2403d7d7b3f2e19f19f475eac367c77ff82d59ee0e949ba54efedda20f2d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/nonhuman/bernett-sequence-propensity.joblib",
+      "bytes": 486653,
+      "sha256": "b3ba0d4e3ef1d68e526c0b2925281bf94fdf599b84683ab31a459c8980813ae0"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/nonhuman/bernett-train-positive-graph.npy",
+      "bytes": 652896,
+      "sha256": "9dadfe3ab840b2c0f99b161b292a19c2ffd5035f5cd0fb9cb66121cc38cdf92d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/nonhuman/v5-homologs.csv.gz",
+      "bytes": 1456700,
+      "sha256": "d788d212bcfbaafc5d22fe53a2f8285b644dccd8f03896c6b04994ea74a53e11"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/nonhuman/v5-protein-values.npz",
+      "bytes": 1292035,
+      "sha256": "e88fe36bf305ba9605d73e679a01e6d8bb55f38c7cc3204aaad75180c6c71ee4"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/models/nonhuman/v5-train-positive-graph.npy",
+      "bytes": 2803184,
+      "sha256": "7724a64dd9e6eda71e025f6a43ec0b891f11d304588ecdc06890cddfa7c37aa4"
+    }
+  ],
+  "checks": {
+    "legacy_v5_parser_replay_exact": true,
+    "legacy_v5_all_protein_predictions_exact": true,
+    "v5_degrees_and_graph_reused_and_independently_reconstructed": true,
+    "no_species_label_arrays_loaded": true,
+    "all_scores_symmetric_and_finite": true,
+    "scalar_interolog_verified": true,
+    "v5_original_artifacts_unchanged": true
+  },
+  "resource_use": {
+    "wall_seconds": 6.893871509004384,
+    "user_seconds": 24.961701,
+    "system_seconds": 0.37076699999999996,
+    "max_rss_kib": 728192,
+    "at_utc": "2026-10-07T12:49:35.258405+00:00"
+  }
+}

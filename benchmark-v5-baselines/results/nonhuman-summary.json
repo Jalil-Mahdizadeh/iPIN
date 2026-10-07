@@ -1,234 +1,7 @@
 {
   "complete": true,
-  "at_utc": "2026-10-07T13:17:51.139714+00:00",
-  "config": {
-    "seed": 47,
-    "threads": 16,
-    "smoothing": 1.0,
-    "search": {
-      "sensitivity": 7.5,
-      "evalue": 1e-05,
-      "min_identity": 0.25,
-      "min_coverage": 0.5,
-      "max_prefilter": 1000,
-      "top_k": 5,
-      "gpu": 0,
-      "weight": "fident * sqrt(qcov * tcov)",
-      "no_hit": "mean TRAIN protein log ratio"
-    },
-    "regressor": {
-      "loss": "squared_error",
-      "max_iter": 300,
-      "learning_rate": 0.05,
-      "max_leaf_nodes": 15,
-      "min_samples_leaf": 20,
-      "l2_regularization": 10.0,
-      "max_bins": 255,
-      "early_stopping": false,
-      "random_state": 47
-    },
-    "features": "log length; 20 AA fractions; 400 ordered dipeptide fractions; unknown fraction",
-    "bootstrap": {
-      "replicates": 500,
-      "seed": 20261006,
-      "unit": "protein endpoints"
-    }
-  },
+  "at_utc": "2026-10-07T12:52:35.991597+00:00",
   "datasets": {
-    "validation": {
-      "rows": 165742,
-      "positives": 82871,
-      "negatives": 82871,
-      "prevalence": 0.5,
-      "coverage": {
-        "proteins": 6023,
-        "proteins_with_homolog": 209,
-        "pairs_with_exact_train_endpoint": 0,
-        "pairs_with_both_homologs": 529,
-        "positive_pairs_with_both_homologs": 318,
-        "negative_pairs_with_both_homologs": 211,
-        "positive_pairs_with_interolog_support": 115,
-        "negative_pairs_with_interolog_support": 41
-      },
-      "models": {
-        "exact-degree": {
-          "ap": 0.5,
-          "auroc": 0.5,
-          "unique_scores": 1,
-          "minimum": 0.0,
-          "maximum": 0.0
-        },
-        "homology-degree": {
-          "ap": 0.5003003559952808,
-          "auroc": 0.50058307268334,
-          "unique_scores": 5,
-          "minimum": 0.0,
-          "maximum": 0.017061751571072783
-        },
-        "sequence-propensity": {
-          "ap": 0.499647373241016,
-          "auroc": 0.49949154513117094,
-          "unique_scores": 164989,
-          "minimum": -0.03303365695376957,
-          "maximum": 0.050236730044276964
-        },
-        "interolog": {
-          "ap": 0.500512479688521,
-          "auroc": 0.5004466113810501,
-          "unique_scores": 156,
-          "minimum": 0.0,
-          "maximum": 0.11664846105831628
-        },
-        "ipin-esm2": {
-          "ap": 0.6153270385052271,
-          "auroc": 0.6132522083261864,
-          "unique_scores": 15339,
-          "minimum": -3.359375,
-          "maximum": 3.921875
-        },
-        "ipin-esmc": {
-          "ap": 0.5924616586439035,
-          "auroc": 0.5951247546851189,
-          "unique_scores": 12822,
-          "minimum": -1.95703125,
-          "maximum": 2.359375
-        }
-      }
-    },
-    "original": {
-      "rows": 52048,
-      "positives": 26024,
-      "negatives": 26024,
-      "prevalence": 0.5,
-      "coverage": {
-        "proteins": 3022,
-        "proteins_with_homolog": 773,
-        "pairs_with_exact_train_endpoint": 0,
-        "pairs_with_both_homologs": 3565,
-        "positive_pairs_with_both_homologs": 1875,
-        "negative_pairs_with_both_homologs": 1690,
-        "positive_pairs_with_interolog_support": 200,
-        "negative_pairs_with_interolog_support": 20
-      },
-      "models": {
-        "exact-degree": {
-          "ap": 0.5,
-          "auroc": 0.5,
-          "unique_scores": 1,
-          "minimum": 0.0,
-          "maximum": 0.0
-        },
-        "homology-degree": {
-          "ap": 0.5032639846478452,
-          "auroc": 0.5057087953183087,
-          "unique_scores": 28,
-          "minimum": 0.0,
-          "maximum": 0.2138555702066829
-        },
-        "sequence-propensity": {
-          "ap": 0.5016395396466858,
-          "auroc": 0.5015946080040189,
-          "unique_scores": 52048,
-          "minimum": -0.03449152866258817,
-          "maximum": 0.044842986135023195
-        },
-        "interolog": {
-          "ap": 0.503425696660081,
-          "auroc": 0.5034592881890386,
-          "unique_scores": 221,
-          "minimum": 0.0,
-          "maximum": 0.5880941991881645
-        },
-        "ipin-esm2": {
-          "ap": 0.6916702247450888,
-          "auroc": 0.6963706432363175,
-          "unique_scores": 8734,
-          "minimum": -3.3046875,
-          "maximum": 3.8671875
-        },
-        "ipin-esmc": {
-          "ap": 0.68712355468542,
-          "auroc": 0.698133943363212,
-          "unique_scores": 6878,
-          "minimum": -1.96484375,
-          "maximum": 2.3359375
-        },
-        "native-plm": {
-          "ap": 0.6903188517540065,
-          "auroc": 0.699466898546864,
-          "unique_scores": 7525,
-          "minimum": -2.859375,
-          "maximum": 3.53125
-        }
-      }
-    },
-    "ilp": {
-      "rows": 52048,
-      "positives": 26024,
-      "negatives": 26024,
-      "prevalence": 0.5,
-      "coverage": {
-        "proteins": 2948,
-        "proteins_with_homolog": 747,
-        "pairs_with_exact_train_endpoint": 0,
-        "pairs_with_both_homologs": 3722,
-        "positive_pairs_with_both_homologs": 1875,
-        "negative_pairs_with_both_homologs": 1847,
-        "positive_pairs_with_interolog_support": 200,
-        "negative_pairs_with_interolog_support": 81
-      },
-      "models": {
-        "exact-degree": {
-          "ap": 0.5,
-          "auroc": 0.5,
-          "unique_scores": 1,
-          "minimum": 0.0,
-          "maximum": 0.0
-        },
-        "homology-degree": {
-          "ap": 0.5006681294588808,
-          "auroc": 0.500863601668171,
-          "unique_scores": 30,
-          "minimum": 0.0,
-          "maximum": 0.2138555702066829
-        },
-        "sequence-propensity": {
-          "ap": 0.5006003176588236,
-          "auroc": 0.5004399344798327,
-          "unique_scores": 52048,
-          "minimum": -0.032484756081128954,
-          "maximum": 0.044842986135023195
-        },
-        "interolog": {
-          "ap": 0.5021624751553334,
-          "auroc": 0.502289277607872,
-          "unique_scores": 282,
-          "minimum": 0.0,
-          "maximum": 0.5880941991881645
-        },
-        "ipin-esm2": {
-          "ap": 0.6570375666117783,
-          "auroc": 0.666915406699947,
-          "unique_scores": 8635,
-          "minimum": -3.3828125,
-          "maximum": 3.8671875
-        },
-        "ipin-esmc": {
-          "ap": 0.6451922680356897,
-          "auroc": 0.6636847716310295,
-          "unique_scores": 6790,
-          "minimum": -1.96875,
-          "maximum": 2.3359375
-        },
-        "native-plm": {
-          "ap": 0.6377147642604218,
-          "auroc": 0.6503870965688084,
-          "unique_scores": 7407,
-          "minimum": -2.859375,
-          "maximum": 3.53125
-        }
-      }
-    },
     "mouse": {
       "rows": 55000,
       "positives": 5000,
@@ -725,23 +498,7 @@
       }
     }
   },
-  "human_checks": {
-    "all_frozen_prediction_hashes_verified": true,
-    "independent_metrics_agree": true,
-    "all_reused_neural_metrics_reproduced": true,
-    "shared_test_pair_scores_identical": true,
-    "exact_degree_control_constant_chance_on_all_evaluations": true,
-    "configuration_identical_to_v11": true,
-    "no_gpu_computation": true
-  },
-  "nonhuman_checks": {
-    "all_neural_primary_metrics_reproduced": true,
-    "independent_weighted_metrics_agree": true,
-    "new_baseline_same_unordered_pair_scores_identical": true,
-    "shared_bootstrap_weights_all_models": true,
-    "no_target_selection_or_inversion": true
-  },
-  "training_references": {
+  "training": {
     "v5": {
       "train_rows": 700764,
       "positive_rows": 350382,
@@ -859,12 +616,66 @@
       "stage_seconds": 2.281114667013753
     }
   },
-  "shared_human_test_pairs": {
-    "positives": 26024,
-    "negatives": 1154,
-    "identical_scores_for_all_models": true
+  "models": {
+    "v5:exact-degree": "v5: Exact TRAIN degree (reference)",
+    "v5:homology-degree": "v5: Homology-transferred degree",
+    "v5:sequence-propensity": "v5: Sequence-only propensity",
+    "v5:interolog": "v5: Interolog lookup",
+    "bernett:exact-degree": "Bernett: Exact TRAIN degree (reference)",
+    "bernett:homology-degree": "Bernett: Homology-transferred degree",
+    "bernett:sequence-propensity": "Bernett: Sequence-only propensity",
+    "bernett:interolog": "Bernett: Interolog lookup",
+    "ipin-esm2": "iPIN v5 ESM2",
+    "ipin-esmc": "iPIN v5 ESMC",
+    "v2-capped": "iPIN v2 length-capped (Bernett)",
+    "v2-clean-bce": "iPIN v2 clean BCE (Bernett)",
+    "native-plm": "PLM-interact (Bernett)"
   },
-  "original_human_summary": "archive/before-nonhuman/results/summary.json",
-  "nonhuman_summary": "results/nonhuman-summary.json",
-  "original_v5_fitted_models_reused_unchanged": true
+  "config": {
+    "seed": 47,
+    "threads": 16,
+    "smoothing": 1.0,
+    "search": {
+      "sensitivity": 7.5,
+      "evalue": 1e-05,
+      "min_identity": 0.25,
+      "min_coverage": 0.5,
+      "max_prefilter": 1000,
+      "top_k": 5,
+      "gpu": 0,
+      "weight": "fident * sqrt(qcov * tcov)",
+      "no_hit": "mean TRAIN protein log ratio"
+    },
+    "regressor": {
+      "loss": "squared_error",
+      "max_iter": 300,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "l2_regularization": 10.0,
+      "max_bins": 255,
+      "early_stopping": false,
+      "random_state": 47
+    },
+    "features": "log length; 20 AA fractions; 400 ordered dipeptide fractions; unknown fraction",
+    "bootstrap": {
+      "replicates": 500,
+      "seed": 20261006,
+      "unit": "protein endpoints"
+    }
+  },
+  "checks": {
+    "all_neural_primary_metrics_reproduced": true,
+    "independent_weighted_metrics_agree": true,
+    "new_baseline_same_unordered_pair_scores_identical": true,
+    "shared_bootstrap_weights_all_models": true,
+    "no_target_selection_or_inversion": true
+  },
+  "resource_use": {
+    "wall_seconds": 25.868969970964827,
+    "user_seconds": 26.180422,
+    "system_seconds": 0.230267,
+    "max_rss_kib": 184320,
+    "at_utc": "2026-10-07T12:52:35.991628+00:00"
+  }
 }

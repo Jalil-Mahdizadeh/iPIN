@@ -1,0 +1,52 @@
+{
+  "at_utc": "2026-10-07T13:17:57.450731+00:00",
+  "environment": {
+    "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "sklearn": "1.6.1",
+    "node": "n32"
+  },
+  "container_identity_reused_from_original_verified_runtime": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/plm-interact/plm-interact-native-arm64-v1.sif",
+    "bytes": 13101785088,
+    "sha256": "e064e38053d6dfcacc65a23467d97f75f79ca6095e6f760def4125ccf452ffc2"
+  },
+  "container_hash_recomputed_this_extension": false,
+  "cpu_threads_per_search": 16,
+  "maximum_parallel_search_threads": 32,
+  "v5_regressor_refitted": false,
+  "new_neural_training_or_inference": false,
+  "new_slurm_jobs": false,
+  "resource_records": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/logs/nonhuman/backtrace-bernett.resources.txt",
+      "bytes": 1561,
+      "sha256": "903d3d1db8e13d82429efa455276f91ac314066486b0cb71f92810d79fe10add"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/logs/nonhuman/backtrace-v5.resources.txt",
+      "bytes": 1545,
+      "sha256": "13aab8ac79f46627e81c511453b5b9a27e95818d42d64a8493ad695861734422"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/logs/nonhuman/evaluate.resources.txt",
+      "bytes": 816,
+      "sha256": "856e77f0e7923b986e55aa1a933a6134d47f754629626d0959c8cef8ecd40d3e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/logs/nonhuman/predict.resources.txt",
+      "bytes": 821,
+      "sha256": "87c32ab435853e01d2015476901da5ce5c4687e4928f92ef3aa52be28643a271"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/logs/nonhuman/search-bernett.resources.txt",
+      "bytes": 1552,
+      "sha256": "8f6caf434735b71b1d0c90b4fc6e14eb1a1d644571219cfeaf93d40b710f0511"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/logs/nonhuman/search-v5.resources.txt",
+      "bytes": 1536,
+      "sha256": "8b9416e56ddf0810e845d466cea596463d768f9f488991142c6e6080c048ca20"
+    }
+  ]
+}

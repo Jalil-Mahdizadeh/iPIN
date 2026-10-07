@@ -1,0 +1,102 @@
+{
+  "complete": true,
+  "at_utc": "2026-10-07T12:52:35.993684+00:00",
+  "identity": {
+    "predictions_sha256": "59735f8f27b448dd9cd755818e237a362a5bd6c733b74cb22be54c7283d1d20d",
+    "script_sha256": "6a54f138f9fd55cc0e633d92cccfac38a2a60deaeb6bb68c113ba7f19073465a"
+  },
+  "artifacts": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/mouse-predictions.csv.gz",
+      "bytes": 7181316,
+      "sha256": "bffa5d88dae5243c43be22eb4fd60676b39d822d8f5706e45f2abb7479a6cd9c"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/mouse-bootstrap.npz",
+      "bytes": 95622,
+      "sha256": "0ba01c98627a58c85a3e74516df2d1385619c9d106e3a2674d60b2e8f5a54369"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/fly-predictions.csv.gz",
+      "bytes": 7020202,
+      "sha256": "b5550a5884916f7d37e119f91fbba2177482ee78ebd97710d49acb350dc5cd01"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/fly-bootstrap.npz",
+      "bytes": 89143,
+      "sha256": "7af9b49abf564103bd176cd47e2f956842981d0d6730a97e5a9cbec65ec1f4ed"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/worm-predictions.csv.gz",
+      "bytes": 6980225,
+      "sha256": "78ce8c2310810da2073c272e823d281eb9bc90749179c3a181699124a38e5389"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/worm-bootstrap.npz",
+      "bytes": 89003,
+      "sha256": "4b46d5df35cc1e508936d62cb687a22fc879fb5c2d5e25108002e8384c9c4a4e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/yeast-predictions.csv.gz",
+      "bytes": 6899501,
+      "sha256": "1869dfafc38ff413b9c30d9f155d795ac41eba61f9a58f882340ed86f06db522"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/yeast-bootstrap.npz",
+      "bytes": 89163,
+      "sha256": "d58717c93ec0fae775fe982fa82be28381a4499c57741a2141eb87ade7a74d58"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/ecoli-predictions.csv.gz",
+      "bytes": 2667660,
+      "sha256": "708a969cb66bbe25666cc6dc176c4aa2f08e5aaf33b370deddca4639bd0369e0"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/ecoli-bootstrap.npz",
+      "bytes": 89122,
+      "sha256": "bdd0edca29ace2228dab050a9be8d3683c64daae790c6a6811d946a3da02147a"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/nonhuman-metrics.csv",
+      "bytes": 6681,
+      "sha256": "d5f7d102ac93289f051073fa934d11d1ad523d11e0f6621228221b9f7bb03edc"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/nonhuman-confidence-intervals.csv",
+      "bytes": 10497,
+      "sha256": "6311cd8edcaac38a403ecab9ec05d58c9d4dca3b3cb5d2c8102611e1ad6146bb"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/nonhuman-paired-differences.csv",
+      "bytes": 25041,
+      "sha256": "9c2be5105617a492be68c7c689216c0d4c34e26f4b8f09dc5350a0d7016a3f59"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/nonhuman-coverage.csv",
+      "bytes": 1402,
+      "sha256": "ec19f45bd6582259e9830e1b38fb36def78e6058beb20122bdb6e10e62e11e52"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/nonhuman-subsets.csv",
+      "bytes": 17507,
+      "sha256": "d9f38cc577134ce0d865d07a111299b04e5b3c65a4af7e718a24d2706bc85f72"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/nonhuman-subset-counts.csv",
+      "bytes": 839,
+      "sha256": "98a248771751a08c129b1ea83e4c27eb46cf541d8a9d12f6f6fefd5203306f51"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-v5-baselines/results/nonhuman-summary.json",
+      "bytes": 20497,
+      "sha256": "2c7c4e22664e7f19401fcaab7b1db822cf7e41b02a9d6180a8da9d01a620efe2"
+    }
+  ],
+  "resource_use": {
+    "wall_seconds": 25.87104152701795,
+    "user_seconds": 26.181627,
+    "system_seconds": 0.23027799999999998,
+    "max_rss_kib": 184320,
+    "at_utc": "2026-10-07T12:52:35.993698+00:00"
+  }
+}

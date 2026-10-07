@@ -1,0 +1,11 @@
+dataset,subset,rows,positives,negatives,prevalence,conflicting_pair_groups_in_full_set
+mouse,common_train_endpoint_unexposed,53312,4348,48964,0.0815576230492197,1
+mouse,unique_nonconflicting_pairs,54965,4997,49968,0.09091239879923588,1
+fly,common_train_endpoint_unexposed,54858,4997,49861,0.0910897225564184,1
+fly,unique_nonconflicting_pairs,54923,4998,49925,0.0910001274511589,1
+worm,common_train_endpoint_unexposed,55000,5000,50000,0.09090909090909091,1
+worm,unique_nonconflicting_pairs,54960,4992,49968,0.09082969432314411,1
+yeast,common_train_endpoint_unexposed,55000,5000,50000,0.09090909090909091,5
+yeast,unique_nonconflicting_pairs,54940,4980,49960,0.09064433927921368,5
+ecoli,common_train_endpoint_unexposed,22000,2000,20000,0.09090909090909091,1
+ecoli,unique_nonconflicting_pairs,18228,1999,16229,0.10966644722405092,1
