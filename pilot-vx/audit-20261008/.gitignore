@@ -1,0 +1,4 @@
+# Downloaded diagnostic inputs stay in the HPC archive, like other raw data.
+# Sources and checksums are recorded in positive-control.json and summary.json.
+*.fas
+*.cif

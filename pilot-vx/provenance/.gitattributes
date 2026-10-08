@@ -1,0 +1,3 @@
+# Preserve captured reference snapshots byte for byte, including source whitespace.
+author-download-page.html -whitespace
+literature-section.txt -whitespace

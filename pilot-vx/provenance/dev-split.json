@@ -1,0 +1,33 @@
+{
+  "at_utc": "2026-10-07T19:40:41.322222+00:00",
+  "hits_sha256": "6840c51aae4de40d69107f0210779dbeade1bbbd6f16add913644d56152e960b",
+  "identity": 0.4,
+  "both_coverage": 0.8,
+  "evalue": 0.001,
+  "component_count": 3626,
+  "largest_component": 6,
+  "protein_counts": [
+    1856,
+    1855
+  ],
+  "sample_counts_negative_positive": {
+    "crossing": [
+      966,
+      1008
+    ],
+    "train": [
+      2000,
+      2000
+    ],
+    "assessment": [
+      494,
+      464
+    ],
+    "calibration": [
+      540,
+      528
+    ]
+  },
+  "label_independent_assignment": true,
+  "sample_sha256": "ee136cf3cfef035ce845f918bf555a0ba3fefc5ac09c0046246e7bd77336702e"
+}

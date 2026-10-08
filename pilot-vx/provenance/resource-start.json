@@ -1,0 +1,7 @@
+{
+  "conservative_start_unix": 1791400486.0,
+  "qualification_deadline_unix": 1791414886.0,
+  "qualification_gpu_hours_reserved": 4,
+  "batch_gpu_hours_max": 20,
+  "note": "Conservative existing one-GPU interactive allocation window, starting 15 minutes before first resource-download log; four hours charged as reserve, including setup failures. Batch is one four-GPU job, at most five hours."
+}

@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-07T20:13:19.549754+00:00",
+  "cases": [
+    {
+      "uid": "val-057993",
+      "length": 478,
+      "depth": 128,
+      "four_forward_seconds": 1.9984077250119299,
+      "peak_gib": 2.84735107421875,
+      "null_changed_fraction": 0.9291338582677166,
+      "finite": true,
+      "real_features_sha256": "a88d171d7e0555fce1663feb6c3a68e2a747e6331993ddbdd0ef06a69ec4084e",
+      "null_features_sha256": "27cceec0bac9853846f7a19c2de2f5fba2dafc2c014d317d688357b03ee986e0",
+      "monomer_files": {
+        "data/monomers/4621.json.gz": "dd14e844d80423dd7b55abd2a56001fae8ab9d566814ebf49b7c38fda582b228",
+        "data/monomers/6444.json.gz": "2487de94bbcaf9d9f15d111bcfb2edcc9265f852bebf0a47693d8d9bd253e53e"
+      }
+    },
+    {
+      "uid": "val-041603",
+      "length": 913,
+      "depth": 128,
+      "four_forward_seconds": 5.230919966008514,
+      "peak_gib": 9.002954006195068,
+      "null_changed_fraction": 0.8976377952755905,
+      "finite": true,
+      "real_features_sha256": "96f325955b889910f138082ed0c4a088efe75df31ff6d67bcda227c3b55e959e",
+      "null_features_sha256": "9a95adfef8760366c297d7bf37b77eb613d4bf07439a62530922e3d0f55145a0",
+      "monomer_files": {
+        "data/monomers/4864.json.gz": "b1a623359ba80f873085534dbb493b3c0c8b7569f23da96bd38f88405d3296fe",
+        "data/monomers/4997.json.gz": "033fad4d95e4c53dab209a201cd32e2ae26be35837671db67806030e5e3b5643"
+      }
+    },
+    {
+      "uid": "train-027500",
+      "length": 1535,
+      "depth": 111,
+      "four_forward_seconds": 14.933065103017725,
+      "peak_gib": 24.344855308532715,
+      "null_changed_fraction": 0.9818181818181818,
+      "finite": true,
+      "real_features_sha256": "b6ab3db3a0b9bf15d5c2775b652606ab253f0cb7c3213592257b7aaa36d0952f",
+      "null_features_sha256": "3ecf3fecb24c3405a63270f41f4e0e5d15ad44a2bf0601963022355407bdc40e",
+      "monomer_files": {
+        "data/monomers/154.json.gz": "2f92bafa1f840e2d006e325498a82f691eaf6aabe7aad9946fa4146444a2b5ec",
+        "data/monomers/786.json.gz": "9f78c94d20bb0183115193d596b0b8a23063c95052c42c4db3d640455737abc5"
+      }
+    }
+  ],
+  "labels_used": false,
+  "selection": "first eligible sampled pair in each available fixed length band",
+  "archive_prefix_qualification": true,
+  "code_sha256": {
+    "config.json": "3dd8115f473ff3702ab13864209f54e46248294fc7a46030aa62ceefbdd9bfc3",
+    "scripts/msa.py": "f989ffcf413ec3096b4c799674ffbff21552f4d1ac86365cf3590b72348fd0b5",
+    "scripts/encoder.py": "b699cd9d65a51c2ae25ed1f05206f53f5c9c8d21a6ce67cccf0f65d98fbdc61c",
+    "scripts/qualify_real.py": "d5509e9574076f312c93eb0475ab65e16484fdba6409cf364265c6a18e413625"
+  },
+  "examined_pairs": 5,
+  "sample_sha256": "ee136cf3cfef035ce845f918bf555a0ba3fefc5ac09c0046246e7bd77336702e"
+}

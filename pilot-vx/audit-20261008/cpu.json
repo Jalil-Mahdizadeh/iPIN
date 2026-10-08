@@ -1,0 +1,63 @@
+{
+  "at_utc": "2026-10-08T07:50:31.813363+00:00",
+  "fingerprint": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086",
+  "script_sha256": "a981b64313b25f258a7e64f04db7abb23c67f4d7de0b4ae04ffdd8181b81bb5c",
+  "verified_records": 8000,
+  "heads_refitted": false,
+  "posthoc_diagnostics_only": true,
+  "frozen_results_changed": false,
+  "pca_train_total_variance_retained": 0.9022280746930884,
+  "pairing_change_energy_retained_by_true_head_pca": {
+    "train": 0.8045342997110894,
+    "dev": 0.8126927574879415
+  },
+  "exactly_identical_true_shuffled_features_eligible": 0,
+  "true_head_score_correlation_true_vs_shuffled_eligible_dev": 0.8651541612533952,
+  "feature_standardized_rms_pairing_change_eligible_dev": 0.5950217136961747,
+  "same_true_head_with_shuffled_input": {
+    "assessment": {
+      "true": {
+        "ap": 0.6643610214625079,
+        "auroc": 0.65865820885104
+      },
+      "shuffled_input": {
+        "ap": 0.6628650894254685,
+        "auroc": 0.6609922518497836
+      }
+    },
+    "calibration": {
+      "true": {
+        "ap": 0.6512062186581613,
+        "auroc": 0.6549102132435466
+      },
+      "shuffled_input": {
+        "ap": 0.6534188306738891,
+        "auroc": 0.6547523849607183
+      }
+    },
+    "all_dev": {
+      "true": {
+        "ap": 0.6574534160836327,
+        "auroc": 0.6534579999999999
+      },
+      "shuffled_input": {
+        "ap": 0.6575101437904034,
+        "auroc": 0.65456125
+      }
+    }
+  },
+  "null_changed_row_fraction": {
+    "train": 0.8793174016163474,
+    "dev": 0.9016296691471323
+  },
+  "fusion_alpha_at_upper_grid_boundary": {
+    "true": true,
+    "shuffled": true,
+    "quality": true
+  },
+  "covered_dev_score_scale": {
+    "baseline_std": 1.5140644046856961,
+    "gated_true_evidence_std": 0.3440811151458836
+  },
+  "seconds": 226.89326533698477
+}

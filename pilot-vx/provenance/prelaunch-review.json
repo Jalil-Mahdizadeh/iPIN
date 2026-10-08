@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-07T20:15:41.564271+00:00",
+  "initial_cache_equivalence_checked": 49,
+  "changed": [],
+  "original_bernett_rows_verified": true,
+  "native_dev_scores_reused": 4000,
+  "test_label_access": false,
+  "runtime_file": "images/msa-pairformer/msa-pairformer-arm64-v1.sif",
+  "test_count": 15,
+  "scheduler_test_only": "accepted four GPUs, 72 CPUs, 400G, five hours; no GPU job created by test-only call",
+  "study_scope": "one original-Bernett TRAIN/DEV pilot; no production continuation"
+}

@@ -1,0 +1,102 @@
+{
+  "_id": "68450d18fc894c220e8ef342",
+  "id": "yoakiyama/MSA-Pairformer",
+  "private": false,
+  "tags": [
+    "custom",
+    "license:other",
+    "region:us"
+  ],
+  "downloads": 249,
+  "likes": 6,
+  "modelId": "yoakiyama/MSA-Pairformer",
+  "author": "yoakiyama",
+  "sha": "7563e77a87536b5572f91683c39073ef348639a4",
+  "lastModified": "2026-05-28T15:40:41.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {
+    "model_type": "custom"
+  },
+  "cardData": {
+    "license": "other",
+    "license_name": "pizza-ware-license",
+    "license_link": "LICENSE"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "LICENSE",
+      "blobId": "96c088c1e0c71911536a88d44547c86535333c07",
+      "size": 1194
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "20b6eaf3ee5335cd6423a916fa7b52f2d43169ad",
+      "size": 83
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "4f62c8ef7a0df7b9a6403e227cc350537cbc62c0",
+      "size": 75
+    },
+    {
+      "rfilename": "confind_contact.bin",
+      "blobId": "a54d3c2b3463e51ebefe1c39e127b44289bd6fdb",
+      "size": 5200,
+      "lfs": {
+        "sha256": "80c09c664a6542d5a326309cc1b1dd7901bcffda0723d4b95d8c94db358bb657",
+        "size": 5200,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "contact.bin",
+      "blobId": "b1a4d0daacb310355afb48df4ed252d428b32c50",
+      "size": 4944,
+      "lfs": {
+        "sha256": "e8afc7d99fa6f4caa20a7b9ad20f998e0038c226270535562ade165d1176ffbb",
+        "size": 4944,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "model.bin",
+      "blobId": "ee718819aa3105ad5bb4c3581b4be05ce900eeac",
+      "size": 223008550,
+      "lfs": {
+        "sha256": "32da04635a2e8c43ef853c0021adc1c2505e6726c3af7acb067db7dfc247e797",
+        "size": 223008550,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "model_cuex.bin",
+      "blobId": "fd5c8e363abc64a96a0722f2f651474447ba6dac",
+      "size": 223018285,
+      "lfs": {
+        "sha256": "a52b49ad10022ea52731d296ca34c41d0970f507c6de491e779f4f616798208c",
+        "size": 223018285,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "mrf_head.bin",
+      "blobId": "14a90b852a1edf4f2257dc7e6c8a4339d43faf07",
+      "size": 1249420,
+      "lfs": {
+        "sha256": "fc580b2891fda62f46454603fc2067d1f3b6814968ee7e5d1c595d64594c0643",
+        "size": 1249420,
+        "pointerSize": 132
+      }
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2025-06-08T04:10:00.000Z",
+  "usedStorage": 2008349077
+}

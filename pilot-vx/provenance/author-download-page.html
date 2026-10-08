@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="license" href="https://conglab.swmed.edu/humanPPI/LICENSE.txt">
+    <title>Supplementary Data and Code for humanPPI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: left;
+            font-size: 1.5em;
+        }
+        .download-section {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+            margin-bottom: 30px;
+        }
+        .download-item {
+            border-bottom: 1px solid #eee;
+            padding: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+	.download-item:not(:first-child) {
+            margin-top: 10px;
+        }
+        .download-item:last-child {
+            border-bottom: none;
+        }
+        .file-info {
+            flex-grow: 1;
+        }
+        .file-name {
+            font-weight: bold;
+            color: #3498db;
+        }
+        .file-description {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        .file-size {
+            font-size: 0.8em;
+            color: #95a5a6;
+            background-color: #ecf0f1;
+            padding: 3px 8px;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+        .download-button {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 10px;
+            flex-shrink: 0;
+        }
+        .download-button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+    <script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Dataset",
+	  "name": "humanPPI",
+	  "url": "https://conglab.swmed.edu/humanPPI/humanPPI_download.html",
+	  "license": "https://conglab.swmed.edu/humanPPI/LICENSE.txt",
+	  "creator": {
+	    "@type": "Organization",
+	    "name": "Cong Lab, UT Southwestern"
+	  }
+	}
+    </script>
+</head>
+<body>
+    <h1>Supplementary Data and Code for humanPPI</h1>
+
+    <h2>Final predictions</h2>
+    <div class="download-section">
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">Final predictions: <span style="color:lightgrey">final_predictions.tar.gz</span></span>
+                <span class="file-size">14 MB</span>
+                <p class="file-description">This folder contains the final set of predicted PPIs generated in our study, along with additional metadata. There are two files in this folder. "final_predictions_80.tsv" includes all predictions obtained at an expected precision of 80%, while "final_predictions_90.tsv" includes predictions obtained at an expected precision of 90%. The latter is a subset of the former.</p>
+            </div>
+            <a href="./downloads/final_predictions.tar.gz" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">Best 3D structure models: <span style="color:lightgrey">best_models.tar.gz</span></span>
+                <span class="file-size">63 GB</span>
+                <p class="file-description">The best 3D structural models for <strong>29,246</strong> out of <strong>29,257</strong> predicted PPIs are provided here (selected based on the presence of consistently predicted inter-protein contacts across multiple models). A 3D model is considered confident only if it contains inter-protein contacts (distance &lt; 6 Å) with AlphaFold2 interaction probabilities above 0.5. We were unable to obtain such 3D models for 11 predicted PPIs.</p>
+                <p class="file-description">Our PPI screening and structural modeling were performed using <strong>segments</strong> rather than full-length protein sequences. Each segment contains one or more domains, and the relative orientation of different segments within a protein is largely flexible. The definition of each segment can be found <a href="./downloads/segment_def">here</a>.</p>
+                <p class="file-description">Each protein pair may be modeled using multiple segment pairs, and the results are organized into folders named after the protein pair. The model files follow the naming format: <strong>segment1__segment2__model</strong>, where the model can be:</p>
+                <ul class="file-description">
+                  <li><strong>AF</strong>: a model built using AlphaFold2 model 3</li>
+                  <li><strong>AF1-5</strong>: five models built by ColabFold using the AlphaFold2 network</li>
+                  <li><strong>AFMM1-5</strong>: five models built by ColabFold using the AlphaFold-Multimer network</li>
+                </ul>
+                <p class="file-description">We provide three files for each segment pair:</p>
+                <ul class="file-description">
+                  <li><strong>*.pdb</strong>: the predicted 3D structure</li>
+                  <li><strong>*.npz</strong>: a matrix of shape <strong>L1 × L2</strong>, where L1 and L2 are the lengths of the first and second segments, respectively</li>
+		  <li><strong>*.contacts</strong>: interacting residue pairs between two proteins. These contacts are residue pairs with distance below 8Å and predicted interaction probability above 0.6. Each file contains three columns: the first residue number (in relation to the entire protein), the second residue number (in relation to the entire protein), and the predicted interaction probability by Alphafold2.
+                </ul>
+            </div>
+            <a href="./downloads/best_models.tar.gz" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">Other 3D structure models: <span style="color:lightgrey">other_models.tar.gz</span></span>
+                <span class="file-size">166 GB</span>
+                <p class="file-description">Similar to the "Best 3D Structure Models" (see above), these are the remaining models excluding the best one. We consider a 3D model to be confident only if it contains inter-protein contacts (distance < 6 Å) with AlphaFold2 interaction probabilities above 0.5. There are 0 to 10 confident models for each segment pair. For these models, we provide only the 3D structures in PDB format and the inter-residue predicted interaction probability matrices in NPZ format (see above). </p>
+            </div>
+            <a href="./downloads/other_models.tar.gz" class="download-button" download>Download</a>
+        </div>
+    </div>
+
+    <h2>Input sequence alignments</h2>
+    <div class="download-section">
+        <div class="download-item">
+            <div class="file-info">
+                    <span class="file-name">omicMSAs for entire human proteins: <span style="color: lightgrey;">protein_omicMSAs.tar.gz</span></span>
+                <span class="file-size">17 GB</span>
+                <p class="file-description">These MSAs are in an A3M-like format. Compared to the standard A3M format, we inserted an additional sequence at the beginning, named "mask," to indicate the alignment quality at each position. In this "mask," an asterisk (*) indicates high-quality positions, and a dash (-) indicates low-quality positions (these are poorly conserved and thus cannot be reliably assembled from genomic data). We recommend using only the high-quality positions (marked with *), as we did in our work. Insertions relative to the human (query) sequence are represented by lowercase letters.</p>
+		<p class="file-description">Each sequence corresponds to one draft genome or genomic dataset, and the NCBI accession number of the genome or dataset is used to name the sequence in the header. We also include the taxonomic information of each sequence in the header, following the format: [genus]:[family]:[order]:[class]:[phylum].</p>
+		<p class="file-description">Please note that because we assemble these sequences by aligning draft genomes or genomic reads to human proteins, insertions present in other species relative to the human sequence are often missed. Similarly, gaps in the MSAs may not represent deletions relative to the human sequence; they could result from alignment failures or incompleteness in the genomic dataset.</p>
+            </div>
+            <a href="./downloads/protein_omicMSAs.tar.gz" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                    <span class="file-name">omicMSAs for human protein segments: <span style="color: lightgrey;">segment_omicMSAs.tar.gz</span></span>
+                <span class="file-size">12 GB</span>
+		<p class="file-description">Building on the omicMSAs for full-length human proteins (see description above), these MSAs correspond to segments of human proteins used in our work. We split larger proteins into multiple segments and excluded the "low-quality" positions from these segments. The definition of each segment can be found in <a href="./downloads/segment_def">segment_def</a>. These MSAs are in an A3M-like format. Insertions relative to the human (query) sequence are represented as lowercase letters.</p> 
+            </div>
+            <a href="./downloads/segment_omicMSAs.tar.gz" class="download-button" download>Download</a>
+        </div>
+    </div>
+
+    <h2>Method development</h2>
+    <div class="download-section">
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">RF2-PPI environment image: <span style="color:lightgrey">SE3nv-20230612.sif</span></span>
+                <span class="file-size">14 GB</span>
+                <p class="file-description">Singularity image for running RoseTTAFold2-PPI, which supports our code deposited at: https://github.com/CongLabCode/RoseTTAFold2-PPI.</p>
+            </div>
+            <a href="./downloads/SE3nv-20230612.sif" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">RF2-PPI weights: <span style="color:lightgrey">RF2-PPI.pt</span></span>
+                <span class="file-size">296 MB</span>
+                <p class="file-description">Trained weights for RoseTTAFold2-PPI, which can be used with our code deposited at: https://github.com/CongLabCode/RoseTTAFold2-PPI.</p>
+            </div>
+            <a href="./downloads/RF2-PPI.pt" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">Benchmark set: <span style="color:lightgrey">benchmarks.tar.gz</span></span>
+                <span class="file-size">280 KB</span>
+                <p class="file-description">There are two files in this folder. The file "positives_and_negatives.tsv" contains the positive and negative controls used to benchmark different methods. The file "pairs_partitioned_by_interface_sizes" contains additional positive controls derived from PDB complexes, partitioned into different categories based on interface size, which correlates with binding affinity.</p>
+            </div>
+            <a href="./downloads/benchmarks.tar.gz" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">PPI training set: <span style="color:lightgrey">PPI_training.tar.gz</span></span>
+                <span class="file-size">226 GB</span>
+                <p class="file-description">This training dataset for RF2-PPI is derived from interacting chains in biological assemblies of PDB entries. It includes 3D structures and paired MSAs for each chain pair. A README file in the folder describes the contents of the dataset.</p>
+            </div>
+            <a href="./downloads/PPI_training.tar.gz" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">DDI training set: <span style="color:lightgrey">DDI_training.tar.gz</span></span>
+                <span class="file-size">330 GB</span>
+                <p class="file-description">This training dataset for RF2-PPI is derived from interacting domain pairs in AlphaFold models from the AlphaFold Protein Structure Database. It includes 3D structures for each domain and the paired MSAs for each domain pair. A README file in the folder describes the contents of the dataset.</p>
+            </div>
+            <a href="./downloads/DDI_training.tar.gz" class="download-button" download>Download</a>
+        </div>
+    </div>
+
+    <h2>Key intermediate results</h2>
+    <div class="download-section">
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">Screened pairs: <span style="color:lightgrey">screened_pairs.gz</span></span>
+                <span class="file-size">321 MB</span>
+                <p class="file-description">Human protein pairs (between the 19,528 proteins included in our PPI screen) from various sources are provided in four files: (1) "PPI_database_pairs" contains candidate PPIs gathered from UniProt, BioGRID, and STRING physical interactions; (2) "STRING_genetic_pairs" includes genetically associated pairs based on STRING genetic interactions; (3) "same_locality_pairs" lists protein pairs that share subcellular locality as annotated by UniProt keywords; and (4) "unknown_locality_pairs" includes pairs involving proteins without known subcellular locality.</p>
+            </div>
+            <a href="./downloads/screened_pairs.tar.gz" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">DCA scores: <span style="color:lightgrey">DCA_scores.gz</span></span>
+                <span class="file-size">741 MB</span>
+                <p class="file-description">Coevolution between 189.4 million protein pairs was evaluated using direct coupling analysis (DCA) on omicMSAs (excluding low-quality positions), followed by Average Product Correction (APC). Each protein pair has one score, representing the maximum DCA score among all residue pairs between the two proteins. We applied DCA to all 190.7 million pairs (all-against-all among the 19,528 proteins included in our pipeline), but were unable to compute DCA scores for 1.3 million pairs due to lack of variation in the sequence alignments of at least one protein.</p>
+            </div>
+            <a href="./downloads/DCA_scores.gz" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">RF2-PPI scores: <span style="color:lightgrey">RF2-PPI_scores.gz</span></span>
+                <span class="file-size">423 MB</span>
+                <p class="file-description" style="margin-bottom:0;">Interaction probabilities for 47 million protein pairs were predicted by RF2-PPI based on omicMSAs (excluding low-quality positions). We applied RF2-PPI only to protein pairs that exhibited high DCA scores or had prior experimental evidence supporting their interactions. Each protein pair has one probability value, representing the maximum interaction probability among all residue pairs between the two proteins. We also indicate the source of each pair, defined as follows:</p>
+                <ul class="file-description">
+                    <li><strong>DNS</strong>: de novo screen of pairs with shared subcellular localization</li>
+                    <li><strong>DNU</strong>: de novo screen of pairs involving proteins with unknown subcellular localization</li>
+                    <li><strong>PPI</strong>: pairs from PPI databases—BioGRID, STRING (physical), and UniProt</li>
+                    <li><strong>STR</strong>: genetically interacting pairs from STRING</li>
+                    <li><strong>NEG</strong>: negative controls used for accuracy estimation</li>
+                </ul>
+            </div>
+            <a href="./downloads/RF2-PPI_scores.gz" class="download-button" download>Download</a>
+        </div>
+        <div class="download-item">
+            <div class="file-info">
+                <span class="file-name">AF2 scores: <span style="color:lightgrey">AF_scores.gz</span></span>
+                <span class="file-size">31 MB</span>
+                <p class="file-description" style="margin-bottom:0;">Interaction probabilities between 3.4 million protein pairs were predicted by AlphaFold2 based on omicMSAs (excluding low-quality positions). We applied AlphaFold2 only to protein pairs that showed high RF2-PPI interaction probabilities or had prior experimental evidence supporting their interactions. Each protein pair has a single probability value, representing the maximum interaction probability among all residue pairs between the two proteins. We also indicate the source of each pair, defined as follows:</p>
+                <ul class="file-description">
+                    <li><strong>DNS</strong>: de novo screen of pairs with shared subcellular localization</li>
+                    <li><strong>DNU</strong>: de novo screen of pairs involving proteins with unknown subcellular localization</li>
+                    <li><strong>PPI</strong>: pairs from PPI databases—BioGRID, STRING (physical), and UniProt</li>
+                    <li><strong>STR</strong>: genetically interacting pairs from STRING</li>
+                    <li><strong>NEG</strong>: negative controls used for accuracy estimation</li>
+                </ul>
+            </div>
+            <a href="./downloads/AF_scores.gz" class="download-button" download>Download</a>
+        </div>
+    </div>
+    <hr>
+	<footer style="font-size:0.9rem; line-height:1.4;">
+  	<p>© Cong Lab. Use of the humanPPI dataset is governed by the Creative Commons Attribution 4.0 International License <a rel="license" href="https://conglab.swmed.edu/humanPPI/LICENSE.txt">License/Terms of Use</a>.</p>
+	</footer>
+</body>
+</html>

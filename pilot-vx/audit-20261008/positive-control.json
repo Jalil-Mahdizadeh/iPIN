@@ -1,0 +1,42 @@
+{
+  "at_utc": "2026-10-08T07:44:21.013635+00:00",
+  "fingerprint": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086",
+  "script_sha256": "8917d493d95ab3c4cfe657f9da32894568660fc235c9c7f66c203711785edbe7",
+  "source_commit": "875363570df1ae484cf725aba382790444223005",
+  "msa_sha256": "7d2aa277143baf7c98e6bc11343dd4bc542c3241d9f572dd7fd547d7bb379901",
+  "structure_url": "https://files.rcsb.org/download/1B70.cif",
+  "structure_sha256": "f26f1b69f5b94f24443c5656f6265fc3834a3e31fcbd7ed3fcb9c4ab88159beb",
+  "query_coordinates_exact": true,
+  "chain_lengths": [
+    265,
+    775
+  ],
+  "msa_depth": 128,
+  "contact_definition": "C-beta distance <8 Angstrom; C-alpha for glycine",
+  "interface_contacts": 255,
+  "interface_residue_pairs": 205375,
+  "results": {
+    "paired": {
+      "interface_contact_ap": 0.3028360573144541,
+      "precision_top_10": 0.9,
+      "precision_top_50": 0.6,
+      "maximum_contact_probability": 0.9543607234954834
+    },
+    "globally_shuffled": {
+      "interface_contact_ap": 0.0015481405635316616,
+      "precision_top_10": 0.0,
+      "precision_top_50": 0.0,
+      "maximum_contact_probability": 0.23228371143341064
+    },
+    "query_only": {
+      "interface_contact_ap": 0.0010392410593834563,
+      "precision_top_10": 0.0,
+      "precision_top_50": 0.0,
+      "maximum_contact_probability": 0.3764120936393738
+    }
+  },
+  "diagnostic_contact_head_used": true,
+  "bernett_data_used": false,
+  "independent_generalization_test": false,
+  "seconds": 10.970126585045364
+}

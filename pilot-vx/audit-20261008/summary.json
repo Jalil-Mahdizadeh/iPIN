@@ -1,0 +1,55 @@
+{
+  "at_utc": "2026-10-08T07:51:45.387005+00:00",
+  "conclusion": "No critical implementation defect identified in the audited paths. The current Bernett readout has not established a pairing-specific benefit; general Vx feasibility remains unresolved.",
+  "fingerprint": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086",
+  "original_results_unchanged": true,
+  "original_decision": "no_go_or_inconclusive",
+  "scope": {
+    "bernett_models_refitted": false,
+    "new_bernett_test_evaluation": false,
+    "new_scheduler_jobs": false,
+    "label_free_runtime_examples": 3,
+    "known_complex": "upstream 1B70 example"
+  },
+  "evidence": {
+    "artifact_integrity": "All 8000 records and frozen source/input fingerprints verified.",
+    "upstream_equivalence": "Pilot pooled features agree exactly with the upstream public forward path on three real MSAs.",
+    "cached_feature_reproducibility": "Three symmetric feature vectors recomputed exactly.",
+    "pairing_sensitivity": "Raw inter-chain representations change by relative L2 0.266 to 0.395 under the pilot null; joint row reorder changes 0.0083 to 0.0097.",
+    "precision": "FP32 versus BF16 relative representation difference 0.0102 on the short real-input case.",
+    "null_strength": "Moved indices change the actual B-chain sequence in all three checked examples; 16.1 to 26.5 percent of unmasked B-chain amino-acid cells change.",
+    "projection": "The retained PCA subspace captures 80.5 percent of TRAIN and 81.3 percent of DEV standardized true-minus-shuffled feature energy.",
+    "fixed_head_control": "Without refitting, the true head evaluated on shuffled features gives assessment AP 0.662865 versus 0.664361 on true features.",
+    "positive_control": "On 1B70, the released contact head finds 9/10 top predicted interface contacts with true pairing and 0/10 with global shuffling."
+  },
+  "limitations": [
+    "The 1B70 contact-head test is a runtime sanity check, not independent biological validation or a test of the new Bernett PPI readout. The diagnostic contact head never contributes to Bernett pilot outputs.",
+    "The random projection and global pooling readout is a prototype; preservation of feature variation does not establish preservation of task-relevant localized interface evidence.",
+    "Only 1825 eligible TRAIN examples fit each head, and assessment contains 958 pairs; wide control-difference intervals leave plausible benefits unresolved.",
+    "All three fusion coefficients selected the upper boundary of the predeclared alpha grid. Optimal fusion outside that grid was not investigated.",
+    "Exact accession pairing is consistent with the source format, but biological ortholog/partner correctness for every queried human pair has not been independently established.",
+    "Long-query, alignment-quality and depth restrictions limit population coverage; this audit does not qualify an expanded policy."
+  ],
+  "resources": {
+    "audit_conservative_additional_gpu_hours_charged": 0.5,
+    "audit_conservative_additional_cpu_core_hours_reserved": 36,
+    "total_gpu_hours_including_original_qualification_reserve_and_audit": 12.893333333333333,
+    "pilot_gpu_hour_ceiling": 24,
+    "note": "The half-hour audit reserve covers use of the existing one-GPU interactive allocation, including idle audit time; timed forward passes alone are not treated as allocated time."
+  },
+  "sources": {
+    "pinned_upstream": "https://github.com/yoakiyama/MSA_Pairformer/tree/875363570df1ae484cf725aba382790444223005",
+    "complex_structure": "https://www.rcsb.org/structure/1B70",
+    "omicmsa_methods": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13281779/"
+  },
+  "artifact_sha256": {
+    "1B70.cif": "f26f1b69f5b94f24443c5656f6265fc3834a3e31fcbd7ed3fcb9c4ab88159beb",
+    "1B70_A_1B70_B.fas": "7d2aa277143baf7c98e6bc11343dd4bc542c3241d9f572dd7fd547d7bb379901",
+    "cpu.json": "71b9e6a671b89300a2ac5326d61e0610885bd572940beacd1ddae1ea952400e7",
+    "cpu_checks.py": "a981b64313b25f258a7e64f04db7abb23c67f4d7de0b4ae04ffdd8181b81bb5c",
+    "gpu.json": "0ef49f2b78b8ecb2c3c3f431052fe848ea6481fd1cf33ff44c432510025a7f77",
+    "gpu_checks.py": "f236b886f661f9925fa9d8400567883b80f0913d74556b9fc521b6af017bafe4",
+    "positive-control.json": "bfae1f03acf4cd715ff64d68160ca275e17f9ad75d581043c388d46eb5a98a7f",
+    "positive_control.py": "8917d493d95ab3c4cfe657f9da32894568660fc235c9c7f66c203711785edbe7"
+  }
+}

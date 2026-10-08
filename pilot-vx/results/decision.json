@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-10-08T01:03:08.785394+00:00",
+  "status": "no_go_or_inconclusive",
+  "assessment_delta_ap": 0.02343112298899208,
+  "pairing_null_adequate": true,
+  "mean_null_changed_fraction": 0.8952337382761809,
+  "production_authorized": false,
+  "metrics_sha256": "48f21ed21a15e3423da2df21b578673883517867acbd778bde3559c45fb8d9ff"
+}

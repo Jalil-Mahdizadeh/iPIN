@@ -1,0 +1,15 @@
+{
+  "at_utc": "2026-10-08T00:59:48.779448+00:00",
+  "complete": 2000,
+  "total": 2000,
+  "budget_stopped": false,
+  "seconds": 7340.20831413602,
+  "reasons": {
+    "low_quality_coverage": 258,
+    "available": 1119,
+    "long_query": 522,
+    "missing_exact_query": 96,
+    "shallow_paired_alignment": 5
+  },
+  "fingerprint": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086"
+}

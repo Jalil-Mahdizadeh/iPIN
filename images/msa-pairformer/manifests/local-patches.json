@@ -1,0 +1,1 @@
+{"pairwise_operations.py": "Initialize CUEQUIVARIANCE_AVAILABLE=False before the CUDA availability branch; upstream leaves it undefined on CPU. No tensor operations or model parameters change."}

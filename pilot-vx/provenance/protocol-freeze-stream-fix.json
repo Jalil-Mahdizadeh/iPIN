@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-10-07T19:54:47.123864+00:00",
+  "stage": "before archive coverage or Vx label analysis",
+  "files": {
+    "config.json": "3dd8115f473ff3702ab13864209f54e46248294fc7a46030aa62ceefbdd9bfc3",
+    "data/sample.json": "ee136cf3cfef035ce845f918bf555a0ba3fefc5ac09c0046246e7bd77336702e",
+    "data/proteins.json": "dde981de94a0c097357b0898a0590d92f22152e9d05cbf308cff2b73d93b5ee8",
+    "data/dev-groups.json": "fe0f98be91e711d0136be7db62ab95ac7631ff1e427ae8e69e90fec46a34afd5",
+    "data/coverage-proteins.json": "3161e07419e3d60b553441d79c3216be5a09490a5536c9bac5617b329c1e34f3",
+    "data/test-sequence-hashes.json": "a2f8225ec2811b8bbfa72abbfa1b6f7063c758e39306c286488768acdce17d95",
+    "scripts/archive.py": "dc261976dd975e52fc46312595bacb19a57585ae23016b4d41d2440dc36685c0",
+    "scripts/msa.py": "06a73a0db4bea4328028cd1ec23929170b936bf5a3d0634101c90625824969f0",
+    "scripts/prepare.py": "8513c3fa8b310d32a9ca009b193f16f9e9c07e10be785eeb1267c27357fc8809"
+  },
+  "amendment": {
+    "at_utc": "2026-10-07T19:55:37.889563+00:00",
+    "reason": "Python tarfile streaming wrapper compatibility fix before any monomer was cached; no selection, parsing semantics, or scientific settings changed."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "at_utc": "2026-10-07T19:37:18.713043+00:00",
+  "source_hashes": {
+    "retrain-v1/data/raw/pairs_uniprot_seqs_train.csv": "623cf62e32ddf8242344adb7d5412b318030d5a2e7732298918d860d52c3e35a",
+    "retrain-v1/data/prepared/train.raw.npy": "c9bbabc17f9bd7c0aa88f2e4306a3a223ee7ec1baf5dbb99ec41edadd9a9bc11",
+    "retrain-v1/data/raw/pairs_uniprot_seqs_val.csv": "0df36cbb69047e21ba01051641eede26a6e054e9c3e827c3bbe62e391854d9f2",
+    "retrain-v1/data/prepared/val.raw.npy": "419eb1341c64b5c4f02fb2db31fa39c65be0089061e01521d22ca3b3a138308c"
+  },
+  "splits": {
+    "train": {
+      "rows": 163192,
+      "positive": 81596,
+      "proteins": 4286,
+      "sample_rows": 4000,
+      "sample_positive": 2000,
+      "sample_over1536": 1687
+    },
+    "val": {
+      "rows": 59260,
+      "positive": 29630,
+      "proteins": 3711,
+      "sample_rows": 4000,
+      "sample_positive": 2000,
+      "sample_over1536": 774
+    }
+  },
+  "test_labels_read": false,
+  "exact_train_dev_overlap": 0,
+  "coverage_proteins": 2000,
+  "sample_sha256": "e4084b42d48831605ce16059b82be24e96043948290d43f2766a9b3a43f24f2f",
+  "proteins_sha256": "dde981de94a0c097357b0898a0590d92f22152e9d05cbf308cff2b73d93b5ee8",
+  "sampling": "balanced classes; proportional within-class combined-length strata; seed fixed before MSA"
+}

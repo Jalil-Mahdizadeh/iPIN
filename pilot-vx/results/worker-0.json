@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-10-08T00:55:10.951770+00:00",
+  "complete": 2000,
+  "total": 2000,
+  "seconds": 7062.380647855985,
+  "reasons": {
+    "available": 1106,
+    "long_query": 545,
+    "low_quality_coverage": 249,
+    "missing_exact_query": 99,
+    "shallow_paired_alignment": 1
+  },
+  "fingerprint": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086"
+}

@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-10-07T19:49:13.658547+00:00",
+  "cases": [
+    {
+      "depth": 16,
+      "length": 128,
+      "two_orientation_seconds": 0.9064994440414011,
+      "peak_gib": 0.6192231178283691,
+      "finite": true,
+      "ab_ba_max_error": 0.0
+    },
+    {
+      "depth": 32,
+      "length": 512,
+      "two_orientation_seconds": 0.6349214860238135,
+      "peak_gib": 3.104923725128174,
+      "finite": true
+    },
+    {
+      "depth": 64,
+      "length": 1024,
+      "two_orientation_seconds": 3.0918069429462776,
+      "peak_gib": 11.066030025482178,
+      "finite": true
+    },
+    {
+      "depth": 128,
+      "length": 1536,
+      "two_orientation_seconds": 6.89632665697718,
+      "peak_gib": 24.41998529434204,
+      "finite": true
+    }
+  ]
+}

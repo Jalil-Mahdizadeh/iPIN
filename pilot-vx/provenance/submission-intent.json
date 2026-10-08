@@ -1,0 +1,17 @@
+{
+  "at_utc": "2026-10-07T20:30:44.123903+00:00",
+  "fingerprint": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/pilot-vx/logs/pilot-%j.log",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/pilot-vx/slurm/pilot.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/pilot-vx"
+  ],
+  "batch_gpu_hours_max": 20,
+  "qualification_gpu_hours_charged": 4,
+  "cpu_core_hours_max_reserved": 648,
+  "additional_bytes_at_launch": 34888463478,
+  "no_automatic_requeue": true,
+  "no_production_continuation": true
+}

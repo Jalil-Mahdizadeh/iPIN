@@ -1,0 +1,47 @@
+{
+  "completed_unix": 1791401437.2163358,
+  "files": [
+    {
+      "url": "https://api.github.com/repos/yoakiyama/MSA_Pairformer/tarball/875363570df1ae484cf725aba382790444223005",
+      "path": "images/msa-pairformer/sources/source.tar.gz",
+      "sha256": "227f1a0c1ce2f27d715717220466ab70a8a374a79e641dc858869b11d74bacf4",
+      "bytes": 7605567
+    },
+    {
+      "url": "https://huggingface.co/yoakiyama/MSA-Pairformer/resolve/7563e77a87536b5572f91683c39073ef348639a4/model_cuex.bin",
+      "path": "images/msa-pairformer/assets/model_cuex.bin",
+      "sha256": "a52b49ad10022ea52731d296ca34c41d0970f507c6de491e779f4f616798208c",
+      "bytes": 223018285
+    },
+    {
+      "url": "https://huggingface.co/yoakiyama/MSA-Pairformer/resolve/7563e77a87536b5572f91683c39073ef348639a4/contact.bin",
+      "path": "images/msa-pairformer/assets/contact.bin",
+      "sha256": "e8afc7d99fa6f4caa20a7b9ad20f998e0038c226270535562ade165d1176ffbb",
+      "bytes": 4944
+    },
+    {
+      "url": "https://huggingface.co/yoakiyama/MSA-Pairformer/resolve/7563e77a87536b5572f91683c39073ef348639a4/confind_contact.bin",
+      "path": "images/msa-pairformer/assets/confind_contact.bin",
+      "sha256": "80c09c664a6542d5a326309cc1b1dd7901bcffda0723d4b95d8c94db358bb657",
+      "bytes": 5200
+    },
+    {
+      "url": "https://huggingface.co/yoakiyama/MSA-Pairformer/resolve/7563e77a87536b5572f91683c39073ef348639a4/LICENSE",
+      "path": "images/msa-pairformer/assets/LICENSE",
+      "sha256": "b90c48e5ddf7a4a5dfec9f7997a44801d49c188ae89b3f933613f7cb5eda2cde",
+      "bytes": 1194
+    },
+    {
+      "url": "https://huggingface.co/yoakiyama/MSA-Pairformer/resolve/7563e77a87536b5572f91683c39073ef348639a4/config.json",
+      "path": "images/msa-pairformer/assets/config.json",
+      "sha256": "cd8aff592a1aa2c7d9ae9ab4911e92dfbb788896d4fdce3b6d075ad772a7a7df",
+      "bytes": 75
+    },
+    {
+      "url": "https://huggingface.co/yoakiyama/MSA-Pairformer/resolve/7563e77a87536b5572f91683c39073ef348639a4/README.md",
+      "path": "images/msa-pairformer/assets/README.md",
+      "sha256": "53263172ce630f373d45ded41f935a04ed7e39cdb1f9377fb67d437690f519d5",
+      "bytes": 83
+    }
+  ]
+}

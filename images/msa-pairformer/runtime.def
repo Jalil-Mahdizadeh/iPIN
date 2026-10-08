@@ -1,0 +1,51 @@
+Bootstrap: localimage
+From: images/plm-interact/plm-interact-native-arm64-v1.sif
+
+%files
+    images/msa-pairformer/wheelhouse /opt/vx/wheels
+    images/msa-pairformer/manifests /opt/vx/provenance
+    images/msa-pairformer/sources/upstream /opt/vx/upstream
+    images/msa-pairformer/assets /opt/vx/weights
+
+%post
+    set -eu
+    python -m venv --system-site-packages /opt/vx/venv
+    /opt/vx/venv/bin/python -m pip install --no-index --no-deps --require-hashes --find-links=/opt/vx/wheels -r /opt/vx/provenance/requirements-hashed.lock
+    /opt/vx/venv/bin/python -m pip list --format=json > /opt/vx/provenance/distributions.json
+
+%environment
+    export PATH=/opt/vx/venv/bin:$PATH
+    export PYTHONPATH=/opt/vx/upstream
+    export PYTHONNOUSERSITE=1
+    export PYTHONDONTWRITEBYTECODE=1
+    export HF_HUB_OFFLINE=1
+    export TRANSFORMERS_OFFLINE=1
+    export HF_HUB_DISABLE_TELEMETRY=1
+    export OMP_NUM_THREADS=8
+    export OPENBLAS_NUM_THREADS=1
+    export MPLBACKEND=Agg
+    export MPLCONFIGDIR=/tmp/ipin-vx-mpl
+    export CUBLAS_WORKSPACE_CONFIG=:4096:8
+
+%labels
+    runtime.name msa-pairformer-arm64-v1
+    runtime.scope frozen-trunk-feature-extraction
+    runtime.encoder.commit 875363570df1ae484cf725aba382790444223005
+    runtime.weights.revision 7563e77a87536b5572f91683c39073ef348639a4
+    runtime.triangle.backend pytorch
+
+%test
+    PYTHONPATH=/opt/vx/upstream /opt/vx/venv/bin/python -B - <<'PY'
+import torch
+from MSA_Pairformer.model import MSAPairformer
+model = MSAPairformer()
+state = {}
+for name in ['model_cuex.bin', 'contact.bin', 'confind_contact.bin']:
+    state.update(torch.load('/opt/vx/weights/'+name, map_location='cpu', weights_only=True))
+model.load_state_dict(state, strict=True)
+assert sum(p.numel() for p in model.parameters()) == 111365468
+print('Pinned model strict CPU load passed; GPU numerical qualification is separate.')
+PY
+
+%runscript
+    exec /opt/vx/venv/bin/python "$@"

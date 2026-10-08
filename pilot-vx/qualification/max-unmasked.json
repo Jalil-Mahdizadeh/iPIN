@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-07T20:23:34.878532+00:00",
+  "depth": 128,
+  "combined_length": 1536,
+  "all_query_columns_valid": true,
+  "two_orientation_seconds": 7.654379373998381,
+  "peak_gib": 24.41998529434204,
+  "encoder_sha256": "b699cd9d65a51c2ae25ed1f05206f53f5c9c8d21a6ce67cccf0f65d98fbdc61c"
+}

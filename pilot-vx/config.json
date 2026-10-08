@@ -1,0 +1,23 @@
+{
+  "study": "Bernett Vx paired-MSA pilot",
+  "seed": 20261007,
+  "dataset": "original released Bernett, raw rows; no additional homology exclusions",
+  "train_pairs": 4000,
+  "dev_pairs": 4000,
+  "coverage_proteins": 2000,
+  "maximum_paired_rows_including_query": 128,
+  "maximum_combined_residues": 1536,
+  "maximum_cached_homologs_per_protein": 4096,
+  "minimum_homolog_query_coverage": 0.5,
+  "minimum_paired_homologs": 8,
+  "minimum_quality_fraction_per_chain": 0.5,
+  "redundancy_identity": 0.9,
+  "minimum_identity_comparison_coverage": 0.8,
+  "windows": false,
+  "local_search_rescue": false,
+  "budgets": {"allocated_gpu_hours": 24, "qualification_gpu_hours_reserved": 4, "batch_gpu_hours": 20, "cpu_core_hours": 2000, "additional_bytes": 150000000000},
+  "encoder": {"repository": "https://github.com/yoakiyama/MSA_Pairformer", "commit": "875363570df1ae484cf725aba382790444223005", "weights_repository": "yoakiyama/MSA-Pairformer", "weights_revision": "7563e77a87536b5572f91683c39073ef348639a4", "precision": "BF16 autocast, FP32 weights", "frozen": true},
+  "archive": {"doi": "10.5061/dryad.15dv41p84", "version": 396143, "file_id": 4357017, "filename": "protein_omicMSAs.tar.gz", "bytes": 17244466432, "sha256": "0d81c035db2243f0bad088e47508684caf670b6e53c3b1f96715ba3bd6cca58f"},
+  "baseline": {"checkpoint": "plm-interact-reproducability/checkpoints/PLM-interact-650M-Leakage-Free-Dataset/pytorch_model.bin", "sha256": "207f1bf02e9bebc393fe510a98c0f9af04039d0a9258047ac107c6d24221c7e2", "orientation": "mean of AB and BA logits", "maximum_tokens": null, "truncation": "none; established benchmark-v1 full-sequence baseline", "precision": "FP32 weights, BF16 autocast, TF32 disabled"},
+  "fusion": {"C": 0.1, "pca_components": 32, "alpha_grid": [0, 0.1, 0.25, 0.5, 1], "bootstrap_replicates": 1000, "continuation_delta_ap": 0.01}
+}

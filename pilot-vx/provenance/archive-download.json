@@ -1,0 +1,11 @@
+{
+  "completed_unix": 1791402793.699018,
+  "files": [
+    {
+      "url": "https://conglab.swmed.edu/humanPPI/downloads/protein_omicMSAs.tar.gz",
+      "path": "pilot-vx/data/protein_omicMSAs.tar.gz",
+      "sha256": "0d81c035db2243f0bad088e47508684caf670b6e53c3b1f96715ba3bd6cca58f",
+      "bytes": 17244466432
+    }
+  ]
+}

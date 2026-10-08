@@ -1,0 +1,67 @@
+## 3. What paired coevolution would contribute
+
+For candidate human proteins A and B, an informative paired MSA has rows resembling:
+
+```text
+human query:       A_human          | B_human
+ortholog context: A_species_1      | B_species_1
+ortholog context: A_species_2      | B_species_2
+                  ...              | ...
+```
+
+Positions are aligned within each family. Each non-query row should pair plausible corresponding homologs from the same organism or matched genomic dataset. Interface compatibility can constrain substitutions across the boundary: a change in A can be associated with compensating changes in B.
+
+The desired evidence is **cross-chain dependence beyond the marginal conservation of A and B**. Simply concatenating two independently ordered MSAs does not supply valid paired coevolution. Neither do two mean MSA embeddings, which mainly retain separate-family information.
+
+Three questions must remain distinct:
+
+1. **Partner assignment:** which paralog of family A goes with which paralog of family B in another species?
+2. **Contact inference:** which residues could form an interface, given an alignment?
+3. **Our task:** does this particular human pair receive the positive interaction label used in the benchmark?
+
+Success on the first two questions does not guarantee success on the third. A family can retain some interacting members while the queried human paralogs do not interact. Conversely, a real recent, transient, or motif-mediated interaction may carry little detectable family-wide covariance.
+
+## 4. Literature: support, limits, and consequences for Vx
+
+The following are primary papers or author resources. Findings are separated from my proposed use of them.
+
+| Source | What it contributes | Consequence for iPIN |
+|---|---|---|
+| Hopf et al., *eLife* 2014, [EVcomplex](https://doi.org/10.7554/eLife.03430) | Inter-protein evolutionary couplings can identify interface residues and help assemble complexes. Alignment construction and evolutionary diversity matter. | A classical coupling score is a useful mechanistic reference, but small conserved-complex successes are not a human interactome guarantee. |
+| Green et al., *Nature Communications* 2021, [EVcomplex2](https://www.nature.com/articles/s41467-021-21636-z) | Extends coevolution to interaction classification at scale, with reciprocal-identity pairing and calibrated residue/interaction scores; much evidence is bacterial. | Supports a score-level coevolution branch. Do not transfer its coverage or performance numbers directly to HIPPIE. |
+| Rao et al., ICML 2021, [MSA Transformer](https://proceedings.mlr.press/v139/rao21a.html) | A pretrained row/column-attention model extracts information from an alignment rather than a single sequence. | A possible technical fallback, although its interface behavior and length constraints make it less attractive than the newer candidate. |
+| Lupo et al., *Nature Communications* 2022, [phylogeny in MSA language models](https://www.nature.com/articles/s41467-022-34032-y) | MSA representations encode evolutionary relatedness; controlled experiments distinguish phylogenetic correlations from contact information. | A raw correlation is not necessarily a physical interface. Include phylogeny-aware controls. |
+| Lupo et al., PNAS 2024, [DiffPALM](https://doi.org/10.1073/pnas.2311887121) | Uses an MSA language-model objective to optimize within-species paralog assignments, with promising difficult-pairing examples. | Potential rescue for ambiguous families, but its repeated optimization is unsuitable as the default for hundreds of thousands of candidates. |
+| Lupo et al., 2024, [DiffPaSS paper and detailed methods](https://arxiv.org/html/2409.16142v1) | Differentiable matching with mutual-information or graph scores offers cheaper pairing optimization. Its standard formulation assumes one-to-one partners. | More plausible than DiffPALM for a restricted future rescue step. Human many-to-many interactions and negative pairs remain problematic. |
+| Zhang et al., *Science* 2025, [human-proteome PPI prediction](https://doi.org/10.1126/science.adt1630) | Combines substantially deeper human/eukaryotic MSAs with RF2-PPI, a model designed for PPI identification. | The most directly relevant evidence that this information can help human PPI prediction. Reuse its sequence resources rather than regenerate them. |
+| Akiyama et al., *Cell* 2026, [MSA Pairformer](https://doi.org/10.1016/j.cell.2026.06.029) | A 111M-parameter MSA/pair-representation model reports strong interface-contact and interface-variant results despite individual-chain language-model training. | Preferred frozen feature extractor, conditional on exposure and runtime qualification. It has not established an AP gain on the original Bernett test. |
+| Luo et al., April 2026 preprint, [depth-over-pairing study](https://www.biorxiv.org/content/10.64898/2026.04.14.718427v1) | On 439 heterodimers, AFM/AF3 experiments attribute much of the alignment benefit to added depth; shuffled pairings can preserve improvements. | Essential counterevidence: test paired information against depth-matched controls. This structure-prediction result neither proves nor disproves our classifier hypothesis. |
+| Mirdita et al., *Nature Methods* 2022, [ColabFold](https://doi.org/10.1038/s41592-022-01488-1), and Kallenborn et al., *Nature Methods* 2025, [MMseqs2-GPU](https://doi.org/10.1038/s41592-025-02819-8) | Practical, accelerated sequence search and MSA workflows. | Local batched search is a fallback; published speedups are not timing estimates for our database, lengths, or GH200 installation. |
+
+### The human-proteome paper is encouraging, with important scope differences
+
+Zhang and colleagues report sevenfold deeper MSAs generated from a very large collection of unassembled sequence data. Their system combines alignment improvements, model design, and additional training evidence; its overall gain cannot be attributed solely to “adding paired MSA.” Their accuracy estimation also differs from our balanced Bernett/ILP evaluation. Their RF2-PPI training uses structural and domain-interaction information, so its checkpoint requires a separate exposure assessment. [Paper and methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC13281779/).
+
+For Vx, the most valuable immediate asset is the **unlabeled homolog alignment collection**. Importing the authors' published human PPI probabilities would create a different experiment, with additional training/exposure and candidate-selection concerns.
+
+### Why prefer MSA Pairformer, cautiously
+
+The accessible 2025 preprint describes masked-language-model training on OpenProteinSet MSAs and a contact readout fitted using 20 structural examples. That readout is supervised even though the representation learning is self-supervised. Its interface experiment uses conserved complexes; a contact precision result is not a general human PPI AP result. [Preprint and methods](https://www.biorxiv.org/content/10.1101/2025.08.02.668173v1).
+
+The currently released implementation exposes pair representations and contact heads, with explicit complex boundaries. This makes it practical to extract an inter-chain feature channel without retraining an MSA foundation model. The released weights and training provenance must be treated as distinct artifacts; the final publication's details should not be assumed identical to the earlier preprint. [Author implementation](https://github.com/yoakiyama/MSA_Pairformer).
+
+The recommendation is a choice of an existing feature extractor, not a prediction that it will outperform native PLM-interact. Its pretrained contact probabilities must not be presented as calibrated human interaction probabilities.
+
+### Reasons the idea could fail
+
+- **Wrong partners:** human gene duplication, isoforms, lineage-specific loss and functional divergence complicate ortholog pairing.
+- **Wrong biological target:** a physical-interface channel is most naturally aligned with direct binding; database interaction labels can reflect broader experimental associations.
+- **Insufficient diversity:** hundreds of close mammalian sequences can contain much less independent information than their raw row count suggests.
+- **False confidence from shared ancestry:** correlated substitutions can arise without the particular physical interaction we seek.
+- **Generic family compatibility:** a family-level interface can exist without the queried human proteins interacting in the relevant context.
+- **Coverage shortcuts:** positives may have deeper, more complete, or better-curated alignments than negatives. A model may exploit that instead of coupling.
+- **New architecture, old supervision exposure:** structural contact heads or pretrained PPI models can have seen relevant proteins or complexes.
+- **Cost:** a smaller parameter count does not make dense residue-pair computation cheap.
+
+These are reasons to test the information carefully, not reasons to dismiss it. The depth-over-pairing paper especially changes the experimental design: an improvement without a pairing-sensitive control would support useful MSA context, but not the stronger claim of useful explicit coevolution.
+
