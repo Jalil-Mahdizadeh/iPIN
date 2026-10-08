@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-10-08T17:25:15.474227+00:00",
+  "job_id": "3516311",
+  "fingerprint": "d0fabe239e515cce588aadbbed9901155c149d361aeb6dce2a2a8f65e262e2e3",
+  "seconds": 7250.319054228021,
+  "batch_gpu_hours_lower_bound": 8.055910060253357,
+  "scheduler_accounting_required": true,
+  "production_started": false
+}

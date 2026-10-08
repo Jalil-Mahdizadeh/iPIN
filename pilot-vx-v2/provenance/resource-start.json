@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-10-08T09:43:49.958841+00:00",
+  "qualification_start_unix": 1791451463.0,
+  "qualification_deadline_unix": 1791455063.0,
+  "qualification_gpu_hours_reserved": 1,
+  "existing_allocation": "3511678",
+  "existing_gpu_count": 1,
+  "accounting": "Conservatively charge the full one-hour v2 preparation/qualification reservation, including idle time, then actual separately allocated batch time. No use of allocation 3513707."
+}

@@ -1,0 +1,15 @@
+{
+  "study": "Original Bernett Vx v2 frozen local-pooling ablation",
+  "seed": 20261007,
+  "source_fingerprint": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086",
+  "arms": ["local_true", "local_shuffled", "scrambled_true", "scrambled_shuffled"],
+  "pooling": {"block_target_length": 8, "top_k": 4, "minimum_block_quality": 0.5, "dimensions": 128, "coordinate_policy": "balanced contiguous partitions of original query coordinates", "spatial_seed_namespace": "vx-v2-spatial"},
+  "diagnostics": {"identity": 0.8, "comparison_coverage": 0.8, "family_source": "DEV-only FADI shared-family witnesses; complete family annotation unavailable without mixed-cohort inputs"},
+  "fusion": {"C": 0.1, "pca_components": 32, "alpha_grid": [0, 0.1, 0.25, 0.5, 1], "bootstrap_replicates": 1000, "continuation_delta_ap": 0.01, "maximum_auroc_decline": 0.005},
+  "budgets": {"cumulative_gpu_hours_ceiling": 24, "prior_gpu_hours_charged": 12.893333333333333, "v2_qualification_gpu_hours_reserved": 1, "v2_batch_gpu_hours_maximum": 10, "batch_wall_seconds": 9000, "worker_wall_seconds": 8340, "world_size": 4, "prior_cpu_core_hours_conservatively_reserved": 700, "v2_cpu_core_hours_reserved": 260, "cumulative_cpu_core_hours_ceiling": 2000, "additional_bytes_ceiling": 150000000000},
+  "qualification_uids": ["val-057993", "val-041603", "train-027500"],
+  "global_feature_max_absolute_error": 0,
+  "test_access": false,
+  "automatic_requeue": false,
+  "automatic_production_continuation": false
+}

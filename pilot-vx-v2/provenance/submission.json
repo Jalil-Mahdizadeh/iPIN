@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-10-08T09:51:54.429229+00:00",
+  "fingerprint": "d0fabe239e515cce588aadbbed9901155c149d361aeb6dce2a2a8f65e262e2e3",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/pilot-vx-v2/logs/batch-%j.log",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/pilot-vx-v2/slurm/pilot.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/pilot-vx-v2"
+  ],
+  "image_verified": true,
+  "additional_bytes_at_launch": 35078044008,
+  "maximum_cumulative_gpu_hours": 23.89333333333333,
+  "maximum_batch_gpu_hours": 10,
+  "qualification_gpu_hours_charged": 1,
+  "no_automatic_requeue": true,
+  "job_id": "3516311",
+  "scheduler_response": "3516311"
+}

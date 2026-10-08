@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-10-08T17:25:15.208306+00:00",
+  "status": "no_go_or_inconclusive",
+  "checks": {
+    "pairing_gap_improvement": false,
+    "local_minus_baseline": true,
+    "local_minus_shuffled": false,
+    "local_minus_quality": false,
+    "true_model_improves_over_original": false,
+    "practical_baseline_gain": true,
+    "auroc_noninferiority": true,
+    "actual_null_adequate": true
+  },
+  "locality_statistics_met": false,
+  "family_breadth_established": false,
+  "primary_point": -0.007895833884927317,
+  "primary_interval": {
+    "low": -0.023482225614623594,
+    "high": 0.007892053084654302,
+    "replicates": 1000
+  },
+  "assessment_previously_inspected": true,
+  "production_authorized": false,
+  "test_accessed": false,
+  "metrics_sha256": "be8c72d6176a2fab4fd98610d7e212796c8a9160d0877bc7365496c979618a09"
+}

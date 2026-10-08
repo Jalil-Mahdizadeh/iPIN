@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-08T09:51:02.672458+00:00",
+  "tests_sha256": {
+    "tests/test_analysis_flow.py": "c8303435f04f7a3d3867ffe3816a4b8b014c10091d02fd13e6edc2f2e51bc7ec",
+    "tests/test_invariants.py": "78daaa930fa8002ac3f26ab74150e34e0c9416378a2b0dbb83296603c3ada493"
+  }
+}
