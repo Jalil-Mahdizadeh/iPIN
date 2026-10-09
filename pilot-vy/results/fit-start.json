@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-08T21:03:05.538803+00:00",
+  "fingerprint": "efbae9e879283ac8dbdf363957496fe788a1426162461f56f05c4ebc1679afcb",
+  "counts": {
+    "fit": [
+      1231,
+      1255
+    ],
+    "calibration": [
+      540,
+      528
+    ],
+    "assessment": [
+      494,
+      464
+    ]
+  },
+  "complete_required_monomers": 3801,
+  "distinct_fit_proteins": 1881
+}

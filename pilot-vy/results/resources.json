@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-08T21:03:37.437762+00:00",
+  "state": "completed",
+  "job_id": "3511678",
+  "study_started_unix": 1791485534.4396927,
+  "study_ended_unix": 1791493417.0791957,
+  "elapsed_seconds_including_preparation": 7882.639503002167,
+  "allocated_gpus": 1,
+  "allocated_cpus": 72,
+  "allocated_gpu_hours_charged": 2.1896220841672687,
+  "allocated_cpu_core_hours_charged": 157.65279006004334,
+  "gpu_hour_ceiling": 8,
+  "cpu_core_hour_ceiling": 600,
+  "additional_bytes": 257845050,
+  "additional_byte_ceiling": 10000000000,
+  "within_limits": true,
+  "accounting_scope": "All elapsed time in this dedicated VY preparation/execution interval; full allocated GPU and CPU counts, including idle/failure time. Does not charge the earlier unrelated interactive allocation lifetime.",
+  "original_allocation_not_cancelled": true,
+  "separate_from_vx": true
+}

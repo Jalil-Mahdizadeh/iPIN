@@ -1,0 +1,280 @@
+{
+  "at_utc": "2026-10-08T19:03:06.903930+00:00",
+  "passed": true,
+  "labels_used": false,
+  "selection": "deep monomers nearest fixed length targets plus longest and shallowest required cases",
+  "cases": [
+    {
+      "pid": "477",
+      "length": 256,
+      "depth": 127,
+      "timings": [
+        {
+          "M": {
+            "seconds": 0.6648500929586589,
+            "peak_cuda_bytes": 1250284032,
+            "rows": 128,
+            "length": 256,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 0.12315043900161982,
+            "peak_cuda_bytes": 1189649408,
+            "rows": 1,
+            "length": 256,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        },
+        {
+          "M": {
+            "seconds": 0.13814657600596547,
+            "peak_cuda_bytes": 1250284032,
+            "rows": 128,
+            "length": 256,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 0.10586051002610475,
+            "peak_cuda_bytes": 1189649408,
+            "rows": 1,
+            "length": 256,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        }
+      ],
+      "context_rms_change": 3.242118947858397,
+      "deterministic_repeat_exact": true,
+      "query_sha256": "ba500ed993a503dd20bf2462256b1cddda1f203c0552cacf53fefcb092a2a2b1",
+      "tokens_sha256": "bf4c9d74cb41b9ddac864215178cd067e98b6a76edd22ee5e0b01fa15a88f014",
+      "row_permutation_relative_rms": 0.0014050160546232942
+    },
+    {
+      "pid": "10",
+      "length": 768,
+      "depth": 127,
+      "timings": [
+        {
+          "M": {
+            "seconds": 1.211784770945087,
+            "peak_cuda_bytes": 7010178560,
+            "rows": 128,
+            "length": 768,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 1.0349129459355026,
+            "peak_cuda_bytes": 6828274176,
+            "rows": 1,
+            "length": 768,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        },
+        {
+          "M": {
+            "seconds": 1.1597307949559763,
+            "peak_cuda_bytes": 7010178560,
+            "rows": 128,
+            "length": 768,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 1.0355383679270744,
+            "peak_cuda_bytes": 6828274176,
+            "rows": 1,
+            "length": 768,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        }
+      ],
+      "context_rms_change": 1.6563216821138163,
+      "deterministic_repeat_exact": true,
+      "query_sha256": "27e97812a5f05c1d45cf14a0144b958e402da37460e555dc0a01191f94a40572",
+      "tokens_sha256": "3f50ca0e443f54ee044c16461012fcdd3a6fcf33bdc2f9adf895502df509a2f5"
+    },
+    {
+      "pid": "162",
+      "length": 1282,
+      "depth": 127,
+      "timings": [
+        {
+          "M": {
+            "seconds": 3.5602486779680476,
+            "peak_cuda_bytes": 18464707584,
+            "rows": 128,
+            "length": 1282,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 3.293331688037142,
+            "peak_cuda_bytes": 18161269248,
+            "rows": 1,
+            "length": 1282,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        },
+        {
+          "M": {
+            "seconds": 3.52385898004286,
+            "peak_cuda_bytes": 18464707584,
+            "rows": 128,
+            "length": 1282,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 3.2944743760162964,
+            "peak_cuda_bytes": 18161269248,
+            "rows": 1,
+            "length": 1282,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        }
+      ],
+      "context_rms_change": 2.398067297948565,
+      "deterministic_repeat_exact": true,
+      "query_sha256": "14924c53dff19ced54eac8b72ace56feef1c519c6eecd16fb17f8f1ecd531d6c",
+      "tokens_sha256": "0529016c7f6eb9940d3904b103b3e10335bf06c94c85272b4567de9950831746"
+    },
+    {
+      "pid": "805",
+      "length": 1532,
+      "depth": 127,
+      "timings": [
+        {
+          "M": {
+            "seconds": 4.981047214008868,
+            "peak_cuda_bytes": 26087815680,
+            "rows": 128,
+            "length": 1532,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 4.677282075979747,
+            "peak_cuda_bytes": 25725329920,
+            "rows": 1,
+            "length": 1532,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        },
+        {
+          "M": {
+            "seconds": 4.9482538040028885,
+            "peak_cuda_bytes": 26087815680,
+            "rows": 128,
+            "length": 1532,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 4.672881460050121,
+            "peak_cuda_bytes": 25725329920,
+            "rows": 1,
+            "length": 1532,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        }
+      ],
+      "context_rms_change": 2.320589998632903,
+      "deterministic_repeat_exact": true,
+      "query_sha256": "21919ba4357d465084d0ef0b1d6993b751374f4c8259bbe42c39f3bd0acb317f",
+      "tokens_sha256": "b609597415f0027b485bc58bec78ac27d12705b4dc3676aefbf368e490bcc428"
+    },
+    {
+      "pid": "4366",
+      "length": 110,
+      "depth": 9,
+      "timings": [
+        {
+          "M": {
+            "seconds": 0.17187682492658496,
+            "peak_cuda_bytes": 617353728,
+            "rows": 10,
+            "length": 110,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 0.10919853101950139,
+            "peak_cuda_bytes": 615507456,
+            "rows": 1,
+            "length": 110,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        },
+        {
+          "M": {
+            "seconds": 0.10678835702128708,
+            "peak_cuda_bytes": 617353728,
+            "rows": 10,
+            "length": 110,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          },
+          "S": {
+            "seconds": 0.10184167500119656,
+            "peak_cuda_bytes": 615507456,
+            "rows": 1,
+            "length": 110,
+            "final_msa_updates": 1,
+            "core_layers": 22
+          }
+        }
+      ],
+      "context_rms_change": 1.0170322789197521,
+      "deterministic_repeat_exact": true,
+      "query_sha256": "0038fb29a50caa56d3a27f41789cdc50dfe18eec649c8abdce227423556f86af",
+      "tokens_sha256": "d9b0e3fff1cb0ef099b9f6c1416edf358b91b65b51cdea1b3aeb4cebf66deb85"
+    }
+  ],
+  "required_monomers": 3801,
+  "estimated_extraction_seconds": 11960.303430022206,
+  "conservative_total_seconds": 26320.606860044412,
+  "timing_safety_factor": 2.0,
+  "upper_length_timing_buckets": [
+    [
+      110,
+      0.28107535594608635
+    ],
+    [
+      256,
+      0.7880005319602787
+    ],
+    [
+      768,
+      2.2466977168805897
+    ],
+    [
+      1282,
+      6.85358036600519
+    ],
+    [
+      1532,
+      9.658329289988615
+    ]
+  ],
+  "seconds": 50.97225588897709,
+  "gpu": "NVIDIA GH200 120GB",
+  "forbidden_heads_evaluated": false,
+  "code_sha256": {
+    "config.json": "61fed008ae40577677ef587f662676330d5029e56b2b950c456b6934887aadeb",
+    "scripts/encoder.py": "df9530fe7494451d2fd505d40c6a7c6225e6b8970596bd814692711c037a0e3d",
+    "scripts/monomers.py": "c88ca7f24e382341784d41afc2101e4f5a9a06eef34b3257f101316eb0fa7169",
+    "scripts/study.py": "f12e97a1d1ce0b0006c2d4c2c0ade7426fdd3a18a6c4d971e8b622175c86b907",
+    "scripts/qualify.py": "d4aceb36c1a2ff411e7957a4817cf1b28c1bc9ac6c8ad85c71bb87ca1d72d8d2"
+  }
+}

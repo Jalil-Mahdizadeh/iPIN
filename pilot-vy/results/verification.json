@@ -1,0 +1,135 @@
+{
+  "at_utc": "2026-10-08T21:03:36.398003+00:00",
+  "passed": true,
+  "fingerprint": "efbae9e879283ac8dbdf363957496fe788a1426162461f56f05c4ebc1679afcb",
+  "required_monomers_verified": 3801,
+  "pairs_verified": 8000,
+  "complete_coverage": true,
+  "transforms": {
+    "M": {
+      "unique_train_proteins": 1881,
+      "retained_variance": 0.6159708190800428
+    },
+    "S": {
+      "unique_train_proteins": 1881,
+      "retained_variance": 0.6158952948701902
+    },
+    "P": {
+      "unique_train_proteins": 1881,
+      "retained_variance": 0.576923059575678
+    }
+  },
+  "calibration_alphas_independently_reproduced": {
+    "M": 0,
+    "S": 0,
+    "P": 1,
+    "SP": 0.5,
+    "U": 0
+  },
+  "maximum_prediction_reconstruction_error": 0.0,
+  "prediction_errors": {
+    "baseline": 0.0,
+    "vx_true": 0.0,
+    "vx_shuffled": 0.0,
+    "vx_quality": 0.0,
+    "M": 0.0,
+    "S": 0.0,
+    "P": 0.0,
+    "SP": 0.0,
+    "U": 0.0,
+    "M_on_S": 0.0
+  },
+  "independent_sklearn_assessment_intervals": {
+    "M_minus_SP": {
+      "low": -0.017919530417212944,
+      "high": 0.008214161824239336,
+      "replicates": 1000
+    },
+    "M_minus_baseline": {
+      "low": 0.0,
+      "high": 0.0,
+      "replicates": 1000
+    },
+    "M_minus_S": {
+      "low": 0.0,
+      "high": 0.0,
+      "replicates": 1000
+    },
+    "M_minus_P": {
+      "low": -0.02059814171542691,
+      "high": 0.013106588779399455,
+      "replicates": 1000
+    },
+    "M_minus_U": {
+      "low": 0.0,
+      "high": 0.0,
+      "replicates": 1000
+    },
+    "M_minus_vx_true": {
+      "low": -0.04008649004355471,
+      "high": -0.004592191204051829,
+      "replicates": 1000
+    },
+    "M_minus_vx_shuffled": {
+      "low": -0.03881221693922838,
+      "high": -0.0013685088937784478,
+      "replicates": 1000
+    },
+    "M_minus_vx_quality": {
+      "low": -0.022874064249640686,
+      "high": 0.008207255560611745,
+      "replicates": 1000
+    },
+    "M_same_head_context": {
+      "low": 0.0,
+      "high": 0.0,
+      "replicates": 1000
+    },
+    "SP_minus_baseline": {
+      "low": -0.008214161824239338,
+      "high": 0.017919530417212944,
+      "replicates": 1000
+    },
+    "P_minus_baseline": {
+      "low": -0.013106588779399459,
+      "high": 0.020598141715426906,
+      "replicates": 1000
+    },
+    "S_minus_baseline": {
+      "low": 0.0,
+      "high": 0.0,
+      "replicates": 1000
+    },
+    "U_minus_baseline": {
+      "low": 0.0,
+      "high": 0.0,
+      "replicates": 1000
+    }
+  },
+  "metric_populations_reproduced": [
+    "assessment",
+    "calibration",
+    "fixed_dev_sample",
+    "crossing_descriptive",
+    "assessment/availability_both",
+    "assessment/availability_vy_only",
+    "assessment/availability_vx_only",
+    "assessment/availability_neither",
+    "fixed_dev_sample/availability_both",
+    "fixed_dev_sample/availability_vy_only",
+    "fixed_dev_sample/availability_vx_only",
+    "fixed_dev_sample/availability_neither"
+  ],
+  "heads_refitted": false,
+  "test_accessed": false,
+  "exact_baseline_fallback": true,
+  "scientific_result_hashes": {
+    "heads.json": "994995ace6745c254d2fd3ab4c1b6771533ec1ff74f7a8d53ba7d21a56833e5d",
+    "metrics.json": "b73b83aacb02fdba0be22acd83cfe5941133976609c5be0bee30f3d6a3047dd8",
+    "decision.json": "75c46a6356a545f70da00b1c7dc462dfaa2c87ffb89c5fa807f65fb4cd78f03e",
+    "dev_predictions.npz": "bdbc06767b5621406cd06e772042454def7aed0aedc6fbdedd3748b148c1c672",
+    "dev_evidence.npz": "1c0582f57810465f1cde089552cc29a5f943fd3563d781d6e0fa832208804a63"
+  },
+  "script_sha256": "12620ccea05c2db2fc4e8152cb6926a8c4112471e348741d109ae9a481ebb3c6",
+  "seconds": 8.726679651997983
+}

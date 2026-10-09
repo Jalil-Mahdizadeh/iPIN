@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-10-08T19:14:56.774242+00:00",
+  "passed": true,
+  "tests_sha256": {
+    "tests/test_analysis_flow.py": "2e9df8be0e600113d11f600a03f678f2c1daa7c95f7417ff543b701da755a67b",
+    "tests/test_heads.py": "b35b133fd82a3afed6efca2778052e5d7f8b486295833de22fadf3d7ec0ecd12",
+    "tests/test_monomers.py": "678c82457ebdeff23094a00486656d6237ecdcebad70b39c15cd273db773b64f"
+  },
+  "output_sha256": "dd71c4b5d73a8ee4c7c505c2cc9873d4b941f1040b0c58b235261417b3cf736a"
+}

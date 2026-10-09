@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-10-08T21:03:37.441720+00:00",
+  "fingerprint": "efbae9e879283ac8dbdf363957496fe788a1426162461f56f05c4ebc1679afcb",
+  "verified": true,
+  "required_monomers": 3801,
+  "pairs": 8000,
+  "result_hashes": {
+    "heads.json": "994995ace6745c254d2fd3ab4c1b6771533ec1ff74f7a8d53ba7d21a56833e5d",
+    "metrics.json": "b73b83aacb02fdba0be22acd83cfe5941133976609c5be0bee30f3d6a3047dd8",
+    "decision.json": "75c46a6356a545f70da00b1c7dc462dfaa2c87ffb89c5fa807f65fb4cd78f03e",
+    "verification.json": "5ac15b0c6ba498338d2eac6683dd6521a147ba1adc4edfd54fe66d963a7115a0",
+    "dev_predictions.npz": "bdbc06767b5621406cd06e772042454def7aed0aedc6fbdedd3748b148c1c672",
+    "dev_evidence.npz": "1c0582f57810465f1cde089552cc29a5f943fd3563d781d6e0fa832208804a63",
+    "resources.json": "1bfb66edb4ddd289db1ac44614206980983d6c24a3d87cb626148f23e22e7934",
+    "REPORT.md": "105937559e9ba80f7532f8b2f1570397160b54e097bcc54a2715a6ffa2d08023"
+  },
+  "test_accessed": false,
+  "production_started": false
+}

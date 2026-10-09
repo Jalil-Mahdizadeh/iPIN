@@ -1,0 +1,41 @@
+{
+  "study": "Original Bernett VY independent monomer-MSA pilot",
+  "seed": 20261008,
+  "source_vx_fingerprint": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086",
+  "source_v2_fingerprint": "d0fabe239e515cce588aadbbed9901155c149d361aeb6dce2a2a8f65e262e2e3",
+  "arms": ["M", "S", "P", "SP", "U"],
+  "monomer": {
+    "maximum_residues": 1536, "maximum_homologs": 127, "minimum_homologs": 8,
+    "minimum_quality_fraction": 0.5, "minimum_good_column_coverage": 0.5,
+    "redundancy_identity": 0.9, "comparison_coverage": 0.8, "neff_identity": 0.8,
+    "row_selection": "query-seeded hash order; taxonomic-family round robin; monomer-only redundancy",
+    "windows": false, "local_search": false
+  },
+  "encoder": {
+    "image": "images/msa-pairformer/msa-pairformer-arm64-v1.sif",
+    "code_commit": "875363570df1ae484cf725aba382790444223005",
+    "weights_revision": "7563e77a87536b5572f91683c39073ef348639a4",
+    "representation": "final query-row MSA state; all 22 blocks and final MSA update",
+    "precision": "FP32 parameters; BF16 autocast; TF32 disabled", "frozen": true,
+    "channels": 464, "summaries": ["global_mean", "global_std", "block_0_mean", "block_1_mean", "block_2_mean", "block_3_mean"],
+    "summary_dimensions": 2784, "sequence_blocks": 4, "structural_heads": false
+  },
+  "profile_dimensions": 192,
+  "fusion": {
+    "protein_pca_components": 16, "C": 0.1, "max_iter": 2000,
+    "alpha_grid": [0, 0.1, 0.25, 0.5, 1], "bootstrap_replicates": 1000,
+    "minimum_fit_per_class": 100, "minimum_calibration_assessment_per_class": 50,
+    "minimum_subgroup_per_class": 10, "practical_delta_ap": 0.01, "maximum_auroc_decline": 0.005
+  },
+  "qualification": {
+    "length_targets": [256, 768, 1280, 1536], "timing_repetitions": 2,
+    "row_permutation_max_relative_rms": 0.05, "budget_safety_factor": 2.0
+  },
+  "budgets": {
+    "allocated_gpu_hours": 8, "allocated_cpu_core_hours": 600,
+    "additional_bytes": 10000000000, "gpu_count": 1, "allocated_cpus": 72,
+    "preparation_workers": 8, "torch_threads": 8, "analysis_threads": 8,
+    "analysis_reserve_seconds": 1800, "shutdown_reserve_seconds": 120
+  },
+  "test_access": false, "automatic_retry": false, "automatic_production": false
+}

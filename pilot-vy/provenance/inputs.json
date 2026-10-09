@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-10-08T19:00:58.745303+00:00",
+  "source_files": {
+    "pilot-vx-v2/data/sample.json": "ee136cf3cfef035ce845f918bf555a0ba3fefc5ac09c0046246e7bd77336702e",
+    "pilot-vx-v2/data/proteins.json": "dde981de94a0c097357b0898a0590d92f22152e9d05cbf308cff2b73d93b5ee8",
+    "pilot-vx-v2/data/baseline.json": "a28a441b1124ed1356ce9e1d8c39a54deac06440c00fbb8d22feeaf8f88e9da2",
+    "pilot-vx-v2/data/dev-groups.json": "fe0f98be91e711d0136be7db62ab95ac7631ff1e427ae8e69e90fec46a34afd5",
+    "pilot-vx-v2/data/monomer-catalog.json": "51b2284fdf802379b168d0ca003899676934f3314b4b3b020fbffe09d68fc2b3",
+    "pilot-vx-v2/data/source.npz": "0fe324f767e8bc73756409190f9919232e1da9e078c19b6a07b0f63b47c47751",
+    "pilot-vx-v2/data/source_heads.json": "3bfa616a7bcfd830dbe02c64343a46409d94d638a395066ccb0d5f049ce4662a",
+    "pilot-vx-v2/data/source_metrics.json": "48f21ed21a15e3423da2df21b578673883517867acbd778bde3559c45fb8d9ff",
+    "pilot-vx-v2/data/dev_family_witnesses.json": "1c47257ea48e93f43a983260f06ec72f3300a6ae5c74dac56251ecc56bbabf2b",
+    "pilot-vx/provenance/freeze.json": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086",
+    "pilot-vx-v2/provenance/freeze.json": "d0fabe239e515cce588aadbbed9901155c149d361aeb6dce2a2a8f65e262e2e3"
+  },
+  "image": "images/msa-pairformer/msa-pairformer-arm64-v1.sif",
+  "image_sha256": "123e43b91faf0daf1ac61b1d218c6290a7069c7230264aa294f1233ad6d67d75",
+  "sample_pairs": 8000,
+  "monomers": 4946,
+  "available_monomers": 4096,
+  "required_monomer_encodings": 3801,
+  "cached_monomers_verified": 4563,
+  "complete_family_annotations": false,
+  "test_accessed": false,
+  "outcome_models_fitted": false,
+  "seconds": 511.0014956999803
+}

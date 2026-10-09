@@ -1,0 +1,64 @@
+{
+  "at_utc": "2026-10-08T19:00:58.750651+00:00",
+  "populations": {
+    "train": {
+      "rows": 4000,
+      "vy_available": 2486,
+      "vx_available": 1825,
+      "availability_groups": {
+        "neither": 1514,
+        "both": 1825,
+        "vy_only": 661
+      }
+    },
+    "calibration": {
+      "rows": 1068,
+      "vy_available": 784,
+      "vx_available": 692,
+      "availability_groups": {
+        "both": 692,
+        "neither": 284,
+        "vy_only": 92
+      }
+    },
+    "assessment": {
+      "rows": 958,
+      "vy_available": 727,
+      "vx_available": 659,
+      "availability_groups": {
+        "both": 659,
+        "neither": 231,
+        "vy_only": 68
+      }
+    },
+    "crossing": {
+      "rows": 1974,
+      "vy_available": 1446,
+      "vx_available": 1277,
+      "availability_groups": {
+        "both": 1277,
+        "neither": 528,
+        "vy_only": 169
+      }
+    },
+    "val": {
+      "rows": 4000,
+      "vy_available": 2957,
+      "vx_available": 2628,
+      "availability_groups": {
+        "both": 2628,
+        "neither": 1043,
+        "vy_only": 329
+      }
+    }
+  },
+  "monomer_reasons": {
+    "available": 4096,
+    "low_quality_coverage": 466,
+    "long_monomer": 244,
+    "missing_exact_query": 139,
+    "shallow_monomer_alignment": 1
+  },
+  "required_monomer_encodings": 3801,
+  "labels_used_for_selection": false
+}

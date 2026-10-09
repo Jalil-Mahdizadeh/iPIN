@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-10-08T21:03:26.001312+00:00",
+  "fingerprint": "efbae9e879283ac8dbdf363957496fe788a1426162461f56f05c4ebc1679afcb",
+  "status": "no_go_or_inconclusive",
+  "primary_point": -0.004933418881381546,
+  "primary_interval": {
+    "replicates": 1000,
+    "low": -0.017919530417212948,
+    "high": 0.00821416182423923
+  },
+  "checks": {
+    "M_minus_SP": false,
+    "M_minus_baseline": false,
+    "M_minus_S": false,
+    "M_minus_P": false,
+    "practical_baseline_gain": false,
+    "auroc_noninferiority": true,
+    "positive_after_frequent_group_removal": false
+  },
+  "pair_terms_supported": false,
+  "family_breadth_established": false,
+  "assessment_previously_inspected": true,
+  "production_authorized": false,
+  "test_accessed": false,
+  "metrics_sha256": "b73b83aacb02fdba0be22acd83cfe5941133976609c5be0bee30f3d6a3047dd8"
+}
