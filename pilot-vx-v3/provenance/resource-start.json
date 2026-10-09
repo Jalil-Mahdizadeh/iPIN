@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-10-09T17:26:36+00:00",
+  "started_unix": 1791566796.0,
+  "deadline_unix": 1791602796.0,
+  "job_id": "3565552",
+  "allocated_gpu_count": 1,
+  "allocated_cpus": 72,
+  "charging": "All elapsed time from this task preparation start through extraction, fitting and audit, charging the full allocated GPU and 72 CPUs including idle time and failures; excludes earlier unrelated allocation lifetime.",
+  "separate_from_previous_pilots": true
+}

@@ -35,6 +35,32 @@ The added diagnostic Neff is informative rather than identical to retained depth
 
 None of the reported assessment strata has a positive lower interval bound for local true versus shuffled, improvement of the pairing gap, or the spatial-order pairing-gap advantage. This includes the highest Neff and coverage groups. Removing each of the ten most frequent proteins or recorded family witnesses leaves the primary contrast negative. These observations do not establish universal family independence: only partial TRAIN-shared family witnesses were available, and subgroup intervals are unadjusted.
 
+## Hypothesis: useful family context survives pairing shuffle
+
+**User-proposed interpretation, added 9 October 2026 after VZ completed.** This is a post hoc explanatory hypothesis, not an established mechanism or a change to either frozen experiment.
+
+Shuffling the correspondence between homolog rows leaves the encoder jointly processing members of protein family A and members of protein family B. Schematically, `(A_i, B_i)` becomes `(A_i, B_permutation(i))`; each chain still contains the same homolog sequences. If compatibility between the two families is broadly conserved, the remaining information could support prediction through conserved interface residues, domain-related sequence patterns, tolerated substitutions, or structural constraints. Correct species-by-species matching may add little to this particular classifier even when homolog context is useful.
+
+The [original shuffle implementation](../../pilot-vx/scripts/msa.py) preserves more than family identity:
+
+| Input property | Effect of the implemented shuffle |
+|---|---|
+| Query A–B row | Remains correctly joined and unchanged |
+| Each chain's homolog sequence collection | Preserved exactly |
+| Per-position residue/gap frequencies and within-chain covariance | Preserved exactly |
+| Original A–B homolog row assignments | Disrupted within permitted taxonomic groups |
+| Depth, masks, eligibility, and reliability gate | Unchanged |
+
+Permutations occur within **taxonomic** family, then order/class where needed; these groups are distinct from protein families. Residual singletons stay unchanged. Shared phylogenetic structure can therefore survive, and the intervention does not guarantee elimination of all cross-chain statistical association. It tests dependence on the original row assignments under this restricted null. It also does not establish that every original same-genome homolog pair is a biologically interacting pair.
+
+The observed median **27.66% change in unmasked B-chain homolog tokens** is consistent with substantial conservation surviving the permutation. That percentage measures changed input tokens, not the fraction of predictive information destroyed or retained. The tensor can still change through joint processing even where individual input residues remain identical.
+
+The subsequent [VZ query-only ablation](../../pilot-vz/results/REPORT.md) is consistent with this hypothesis: assessment AP was **0.643861 for Q**, **0.663248 for shuffled**, and **0.664361 for true**. Shuffled exceeded Q by +0.019387 AP, with a 95% matched protein interval [+0.000528, +0.035510]. True minus shuffled remained +0.001113 [-0.009639, +0.013333]. Thus homolog-bearing inputs provide useful information that survives this shuffle; the experiments do not demonstrate true/shuffled equivalence or an additional benefit from the original pairing.
+
+Several explanations remain possible: site conservation, within-chain correlations, compatibility between families, residual cross-chain association, input-depth effects, and family/quality characteristics correlated with dataset labels. Family membership alone does not guarantee binding or preserve specificity among paralogs. Q changes both homolog content and depth, so its loss cannot identify which explanation is responsible. [VY's negative result](../../pilot-vy/results/REPORT.md) does not exclude useful family context during joint encoding: its independently pooled monomer features used a different representation and eligible population.
+
+This hypothesis also leaves open whether the original global summaries discard localized pairing-sensitive information. The tested Vx v2 pooling did not establish a recovery of that information. The interpretation therefore supports retaining the distinction between **useful homolog context** and **demonstrated pairing-specific benefit**, while preserving the existing negative/inconclusive pooling decision. No new extraction, fitting, threshold change, or TEST evaluation follows from this documentation update.
+
 ## Completion and accounting
 
 SLURM job **3516311** finished with `COMPLETED`, exit `0:0`. All four workers completed their assignments: **8,000/8,000 records**, including **4,453 eligible pairs**. Runtime was **2:01:01**, using **8.0678 allocated GPU-hours** and **145.22 allocated CPU-core-hours**. Cumulative GPU charge, including the existing qualification/audit reservations and the one-hour v2 reservation, is **21.9611 of 24 GPU-hours**. Final scheduler accounting is in [resources.json](../results/resources.json).
