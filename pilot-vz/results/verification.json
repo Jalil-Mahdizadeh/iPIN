@@ -1,0 +1,127 @@
+{
+  "at_utc": "2026-10-09T12:55:23.125961+00:00",
+  "passed": true,
+  "fingerprint": "8a2815e9991d1f4b8ca01bfdb065ea1364846664bbc22c57aa1e8056884c04be",
+  "pairs_verified": 8000,
+  "required_pairs_verified": 4453,
+  "complete_coverage": true,
+  "Q_alpha_independently_reproduced": 0.5,
+  "maximum_prediction_reconstruction_error": 4.440892098500626e-16,
+  "prediction_errors": {
+    "baseline": 0.0,
+    "Q": 4.440892098500626e-16,
+    "true": 0.0,
+    "shuffled": 0.0,
+    "quality": 0.0
+  },
+  "independent_sklearn_intervals": {
+    "assessment": {
+      "Q_minus_shuffled": {
+        "low": -0.03550978171509487,
+        "high": -0.000527799320352488,
+        "replicates": 1000
+      },
+      "Q_minus_true": {
+        "low": -0.035193909904198156,
+        "high": -0.001869433034378574,
+        "replicates": 1000
+      },
+      "Q_minus_baseline": {
+        "low": -0.004616666252871213,
+        "high": 0.010492729503837804,
+        "replicates": 1000
+      },
+      "Q_minus_quality": {
+        "low": -0.0200034395487349,
+        "high": 0.011033224694172868,
+        "replicates": 1000
+      },
+      "true_minus_shuffled": {
+        "low": -0.009639084011290022,
+        "high": 0.013333175861625053,
+        "replicates": 1000
+      },
+      "true_minus_baseline": {
+        "low": 0.0036012236209894575,
+        "high": 0.03753911938205694,
+        "replicates": 1000
+      },
+      "shuffled_minus_baseline": {
+        "low": 0.0007979763649858002,
+        "high": 0.03836478559616206,
+        "replicates": 1000
+      },
+      "true_minus_Q": {
+        "low": 0.0018694330343785731,
+        "high": 0.03519390990419815,
+        "replicates": 1000
+      },
+      "shuffled_minus_Q": {
+        "low": 0.0005277993203524795,
+        "high": 0.03550978171509487,
+        "replicates": 1000
+      }
+    },
+    "assessment/eligible": {
+      "Q_minus_shuffled": {
+        "low": -0.04275497352311848,
+        "high": 0.0008253436719413833,
+        "replicates": 1000
+      },
+      "Q_minus_true": {
+        "low": -0.04391785598974513,
+        "high": -0.002133422967484325,
+        "replicates": 1000
+      },
+      "Q_minus_baseline": {
+        "low": -0.005922429282858477,
+        "high": 0.014011200553809337,
+        "replicates": 1000
+      },
+      "Q_minus_quality": {
+        "low": -0.02678773907058034,
+        "high": 0.012517083680402294,
+        "replicates": 1000
+      },
+      "true_minus_shuffled": {
+        "low": -0.012677570411294784,
+        "high": 0.01753582337308922,
+        "replicates": 1000
+      },
+      "true_minus_baseline": {
+        "low": 0.00486826377240029,
+        "high": 0.04724082804622456,
+        "replicates": 1000
+      },
+      "shuffled_minus_baseline": {
+        "low": -0.00041746840346501546,
+        "high": 0.04868757973533801,
+        "replicates": 1000
+      },
+      "true_minus_Q": {
+        "low": 0.002133422967484322,
+        "high": 0.043917855989745125,
+        "replicates": 1000
+      },
+      "shuffled_minus_Q": {
+        "low": -0.0008253436719413837,
+        "high": 0.042754973523118474,
+        "replicates": 1000
+      }
+    }
+  },
+  "TRAIN_only_transforms_verified": true,
+  "exact_baseline_fallback": true,
+  "original_predictions_and_intervals_reproduced": true,
+  "heads_refitted": false,
+  "test_accessed": false,
+  "scientific_result_hashes": {
+    "heads.json": "da33d1ebdd6ba3641fe54d88c6ddc92cb9298a7fd27cca528a81c4d01f477d86",
+    "metrics.json": "014d7185fe707a9a6cb7d176a4243cf7182f83c17a30c595334333d3cd006269",
+    "decision.json": "6fb7aea3a34dbda44e59026a9b4c714d16574bbf2c90adb237566b975a64c428",
+    "dev_predictions.npz": "b4c4d40fd5066bf7d6eaa6c076a351a466496124c7b52ff13dcf59d1e3754de7",
+    "dev_evidence.npz": "06de9592bae774ffebeb473dc3d8d8e1be59c4c3e42fe9086f5adc3b36a9ad3c"
+  },
+  "script_sha256": "d67979e1ac612aa95ed991a0ea42abe5b1ab90725984a8cc84a59e417d924776",
+  "seconds": 5.584741805912927
+}

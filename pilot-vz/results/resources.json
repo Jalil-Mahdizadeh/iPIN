@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-09T12:55:25.502619+00:00",
+  "state": "completed",
+  "job_id": "3565552",
+  "study_started_unix": 1791535440.0152495,
+  "study_ended_unix": 1791550524.9471397,
+  "elapsed_seconds_including_preparation": 15084.931890249252,
+  "allocated_gpus": 1,
+  "allocated_cpus": 72,
+  "allocated_gpu_hours_charged": 4.19025885840257,
+  "allocated_cpu_core_hours_charged": 301.698637804985,
+  "gpu_hour_ceiling": 8,
+  "cpu_core_hour_ceiling": 600,
+  "additional_bytes": 111882811,
+  "additional_byte_ceiling": 5000000000,
+  "within_limits": true,
+  "accounting_scope": "All elapsed time in this dedicated VZ preparation/execution interval, charging the full allocated GPU and CPU counts, including idle time and failures; excludes earlier unrelated allocation lifetime.",
+  "original_allocation_not_cancelled": true,
+  "separate_from_vx": true
+}

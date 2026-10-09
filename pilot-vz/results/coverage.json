@@ -1,0 +1,10 @@
+{
+  "pairs": 8000,
+  "train": 4000,
+  "dev": 4000,
+  "eligible_train": 1825,
+  "eligible_dev": 2628,
+  "calibration": 1068,
+  "assessment": 958,
+  "crossing": 1974
+}

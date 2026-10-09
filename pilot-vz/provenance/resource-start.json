@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-10-09T08:44:00.015252+00:00",
+  "started_unix": 1791535440.0152495,
+  "deadline_unix": 1791564240.0152495,
+  "job_id": "3565552",
+  "allocated_gpu_count": 1,
+  "allocated_cpus": 72,
+  "charging": "All elapsed time in this dedicated VZ preparation/execution interval, charging the full allocated GPU and CPU counts, including idle time and failures; excludes earlier unrelated allocation lifetime.",
+  "separate_from_vx_and_vy": true
+}

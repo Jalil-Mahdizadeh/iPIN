@@ -1,0 +1,5504 @@
+{
+  "at_utc": "2026-10-09T12:55:15.463730+00:00",
+  "fingerprint": "8a2815e9991d1f4b8ca01bfdb065ea1364846664bbc22c57aa1e8056884c04be",
+  "primary_contrast": "Q_minus_shuffled",
+  "contrast_definitions": {
+    "Q_minus_shuffled": {
+      "Q": 1,
+      "shuffled": -1
+    },
+    "Q_minus_true": {
+      "Q": 1,
+      "true": -1
+    },
+    "Q_minus_baseline": {
+      "Q": 1,
+      "baseline": -1
+    },
+    "Q_minus_quality": {
+      "Q": 1,
+      "quality": -1
+    },
+    "true_minus_shuffled": {
+      "true": 1,
+      "shuffled": -1
+    },
+    "true_minus_baseline": {
+      "true": 1,
+      "baseline": -1
+    },
+    "shuffled_minus_baseline": {
+      "shuffled": 1,
+      "baseline": -1
+    },
+    "true_minus_Q": {
+      "true": 1,
+      "Q": -1
+    },
+    "shuffled_minus_Q": {
+      "shuffled": 1,
+      "Q": -1
+    }
+  },
+  "results": {
+    "assessment": {
+      "rows": 958,
+      "positive": 464,
+      "negative": 494,
+      "eligible": 659,
+      "eligible_positive": 331,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6409298984735158,
+          "auroc": 0.6481441086137094,
+          "ap_at_50_percent_prevalence": 0.6545136620837213
+        },
+        "true": {
+          "ap": 0.6643610214625079,
+          "auroc": 0.65865820885104,
+          "ap_at_50_percent_prevalence": 0.6771422862074942
+        },
+        "shuffled": {
+          "ap": 0.6632477115533787,
+          "auroc": 0.661070780399274,
+          "ap_at_50_percent_prevalence": 0.6761310338310045
+        },
+        "quality": {
+          "ap": 0.6509423881688445,
+          "auroc": 0.6527249406673182,
+          "ap_at_50_percent_prevalence": 0.6641732998494686
+        },
+        "Q": {
+          "ap": 0.6438605948220597,
+          "auroc": 0.6519527432639954,
+          "ap_at_50_percent_prevalence": 0.6573744299883515
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.019387116731318987,
+        "Q_minus_true": -0.020500426640448155,
+        "Q_minus_baseline": 0.0029306963485439264,
+        "Q_minus_quality": -0.007081793346784826,
+        "true_minus_shuffled": 0.0011133099091291676,
+        "true_minus_baseline": 0.02343112298899208,
+        "shuffled_minus_baseline": 0.022317813079862914,
+        "true_minus_Q": 0.020500426640448155,
+        "shuffled_minus_Q": 0.019387116731318987
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.035509781715094765,
+          "high": -0.0005277993203524936
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.03519390990419826,
+          "high": -0.0018694330343787906
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.004616666252871318,
+          "high": 0.010492729503837804
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.02000343954873479,
+          "high": 0.011033224694172864
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.00963908401129002,
+          "high": 0.01333317586162527
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0036012236209894523,
+          "high": 0.03753911938205672
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0007979763649857974,
+          "high": 0.03836478559616206
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0018694330343787897,
+          "high": 0.03519390990419826
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": 0.000527799320352485,
+          "high": 0.035509781715094765
+        }
+      }
+    },
+    "fixed_dev_sample": {
+      "rows": 4000,
+      "positive": 2000,
+      "negative": 2000,
+      "eligible": 2628,
+      "eligible_positive": 1343,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6483543556315394,
+          "auroc": 0.649527,
+          "ap_at_50_percent_prevalence": 0.6483543556315416
+        },
+        "true": {
+          "ap": 0.6574534160836327,
+          "auroc": 0.6534579999999999,
+          "ap_at_50_percent_prevalence": 0.6574534160836354
+        },
+        "shuffled": {
+          "ap": 0.6553094219577839,
+          "auroc": 0.65303575,
+          "ap_at_50_percent_prevalence": 0.6553094219577864
+        },
+        "quality": {
+          "ap": 0.6534457164331609,
+          "auroc": 0.6524165,
+          "ap_at_50_percent_prevalence": 0.6534457164331634
+        },
+        "Q": {
+          "ap": 0.6503182199455233,
+          "auroc": 0.65164125,
+          "ap_at_50_percent_prevalence": 0.6503182199455256
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.004991202012260554,
+        "Q_minus_true": -0.007135196138109423,
+        "Q_minus_baseline": 0.0019638643139838763,
+        "Q_minus_quality": -0.003127496487637549,
+        "true_minus_shuffled": 0.0021439941258488693,
+        "true_minus_baseline": 0.0090990604520933,
+        "shuffled_minus_baseline": 0.00695506632624443,
+        "true_minus_Q": 0.007135196138109423,
+        "shuffled_minus_Q": 0.004991202012260554
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.01468828378830098,
+          "high": 0.005369931767667313
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.016369077648951253,
+          "high": 0.0029299733680210847
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0022200592578407036,
+          "high": 0.006173152643807125
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.010342972719712388,
+          "high": 0.00482744495243539
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.003382431016629506,
+          "high": 0.007973946378910695
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0010402038518066586,
+          "high": 0.018794148558890247
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0035542179605445035,
+          "high": 0.016827085909284827
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.002929973368021085,
+          "high": 0.016369077648951253
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.005369931767667316,
+          "high": 0.014688283788300976
+        }
+      }
+    },
+    "calibration": {
+      "rows": 1068,
+      "positive": 528,
+      "negative": 540,
+      "eligible": 692,
+      "eligible_positive": 351,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6427660788023095,
+          "auroc": 0.6517711840628506,
+          "ap_at_50_percent_prevalence": 0.6476793216730989
+        },
+        "true": {
+          "ap": 0.6512062186581613,
+          "auroc": 0.6549102132435466,
+          "ap_at_50_percent_prevalence": 0.6560295376258705
+        },
+        "shuffled": {
+          "ap": 0.6505740300771738,
+          "auroc": 0.6527286756453423,
+          "ap_at_50_percent_prevalence": 0.6553900576270473
+        },
+        "quality": {
+          "ap": 0.6496772604768563,
+          "auroc": 0.6570426487093153,
+          "ap_at_50_percent_prevalence": 0.6545308738750246
+        },
+        "Q": {
+          "ap": 0.6445259805353861,
+          "auroc": 0.652034231200898,
+          "ap_at_50_percent_prevalence": 0.6494178672102885
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.006048049541787726,
+        "Q_minus_true": -0.006680238122775184,
+        "Q_minus_baseline": 0.0017599017330766076,
+        "Q_minus_quality": -0.005151279941470133,
+        "true_minus_shuffled": 0.0006321885809874583,
+        "true_minus_baseline": 0.008440139855851791,
+        "shuffled_minus_baseline": 0.007807951274864333,
+        "true_minus_Q": 0.006680238122775184,
+        "shuffled_minus_Q": 0.006048049541787726
+      }
+    },
+    "crossing_descriptive": {
+      "rows": 1974,
+      "positive": 1008,
+      "negative": 966,
+      "eligible": 1277,
+      "eligible_positive": 661,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6554346760925479,
+          "auroc": 0.647719897137599,
+          "ap_at_50_percent_prevalence": 0.6461826791553944
+        },
+        "true": {
+          "ap": 0.6585705594893094,
+          "auroc": 0.6495931101909362,
+          "ap_at_50_percent_prevalence": 0.6493423655292032
+        },
+        "shuffled": {
+          "ap": 0.6551226786640216,
+          "auroc": 0.64883519833054,
+          "ap_at_50_percent_prevalence": 0.6458226281102254
+        },
+        "quality": {
+          "ap": 0.6576384394554559,
+          "auroc": 0.6486760163002399,
+          "ap_at_50_percent_prevalence": 0.6484150140151752
+        },
+        "Q": {
+          "ap": 0.6574685519227987,
+          "auroc": 0.6504198297676558,
+          "ap_at_50_percent_prevalence": 0.648222176087772
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": 0.002345873258777109,
+        "Q_minus_true": -0.0011020075665106877,
+        "Q_minus_baseline": 0.002033875830250831,
+        "Q_minus_quality": -0.0001698875326571203,
+        "true_minus_shuffled": 0.003447880825287797,
+        "true_minus_baseline": 0.0031358833967615185,
+        "shuffled_minus_baseline": -0.0003119974285262783,
+        "true_minus_Q": 0.0011020075665106877,
+        "shuffled_minus_Q": -0.002345873258777109
+      }
+    },
+    "assessment/eligible": {
+      "rows": 659,
+      "positive": 331,
+      "negative": 328,
+      "eligible": 659,
+      "eligible_positive": 331,
+      "metrics": {
+        "baseline": {
+          "ap": 0.660629239430838,
+          "auroc": 0.6493580060422961,
+          "ap_at_50_percent_prevalence": 0.6586953562407819
+        },
+        "true": {
+          "ap": 0.689536410411969,
+          "auroc": 0.6632709453982758,
+          "ap_at_50_percent_prevalence": 0.6877535338413773
+        },
+        "shuffled": {
+          "ap": 0.6881859622135618,
+          "auroc": 0.6661723528111414,
+          "ap_at_50_percent_prevalence": 0.6863848041554784
+        },
+        "quality": {
+          "ap": 0.6737572442450505,
+          "auroc": 0.6554693832436814,
+          "ap_at_50_percent_prevalence": 0.6718932352817759
+        },
+        "Q": {
+          "ap": 0.6644734270910924,
+          "auroc": 0.6543088202785352,
+          "ap_at_50_percent_prevalence": 0.6625540039481204
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.023712535122469403,
+        "Q_minus_true": -0.02506298332087664,
+        "Q_minus_baseline": 0.0038441876602544056,
+        "Q_minus_quality": -0.009283817153958096,
+        "true_minus_shuffled": 0.0013504481984072392,
+        "true_minus_baseline": 0.028907170981131047,
+        "shuffled_minus_baseline": 0.027556722782723808,
+        "true_minus_Q": 0.02506298332087664,
+        "shuffled_minus_Q": 0.023712535122469403
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.042754973523118585,
+          "high": 0.0008253436719414888
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.04391785598974513,
+          "high": -0.0021334229674842197
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.005922429282858477,
+          "high": 0.014011200553809234
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.026787739070580453,
+          "high": 0.0125170836804024
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.012677570411294786,
+          "high": 0.017535823373089003
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0048682637724002924,
+          "high": 0.04724082804622499
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0004174684034651237,
+          "high": 0.04868757973533811
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0021334229674842167,
+          "high": 0.043917855989745125
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.0008253436719414892,
+          "high": 0.04275497352311858
+        }
+      }
+    },
+    "assessment/fallback": {
+      "rows": 299,
+      "positive": 133,
+      "negative": 166,
+      "eligible": 0,
+      "eligible_positive": 0,
+      "metrics": {
+        "baseline": {
+          "ap": 0.593341143835404,
+          "auroc": 0.6456653682398767,
+          "ap_at_50_percent_prevalence": 0.6432373766124642
+        },
+        "true": {
+          "ap": 0.593341143835404,
+          "auroc": 0.6456653682398767,
+          "ap_at_50_percent_prevalence": 0.6432373766124642
+        },
+        "shuffled": {
+          "ap": 0.593341143835404,
+          "auroc": 0.6456653682398767,
+          "ap_at_50_percent_prevalence": 0.6432373766124642
+        },
+        "quality": {
+          "ap": 0.593341143835404,
+          "auroc": 0.6456653682398767,
+          "ap_at_50_percent_prevalence": 0.6432373766124642
+        },
+        "Q": {
+          "ap": 0.593341143835404,
+          "auroc": 0.6456653682398767,
+          "ap_at_50_percent_prevalence": 0.6432373766124642
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": 0.0,
+        "Q_minus_true": 0.0,
+        "Q_minus_baseline": 0.0,
+        "Q_minus_quality": 0.0,
+        "true_minus_shuffled": 0.0,
+        "true_minus_baseline": 0.0,
+        "shuffled_minus_baseline": 0.0,
+        "true_minus_Q": 0.0,
+        "shuffled_minus_Q": 0.0
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        }
+      }
+    },
+    "assessment/length_le512": {
+      "rows": 103,
+      "positive": 63,
+      "negative": 40,
+      "eligible": 88,
+      "eligible_positive": 59,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7575844077549916,
+          "auroc": 0.610515873015873,
+          "ap_at_50_percent_prevalence": 0.6777071942573683
+        },
+        "true": {
+          "ap": 0.7869390141119905,
+          "auroc": 0.6424603174603175,
+          "ap_at_50_percent_prevalence": 0.7151614027158254
+        },
+        "shuffled": {
+          "ap": 0.7792717989862401,
+          "auroc": 0.6365079365079366,
+          "ap_at_50_percent_prevalence": 0.7044289983908609
+        },
+        "quality": {
+          "ap": 0.7840879410170187,
+          "auroc": 0.6357142857142858,
+          "ap_at_50_percent_prevalence": 0.712386507373256
+        },
+        "Q": {
+          "ap": 0.7775013971921247,
+          "auroc": 0.6365079365079365,
+          "ap_at_50_percent_prevalence": 0.7031152668824713
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.0017704017941153616,
+        "Q_minus_true": -0.009437616919865777,
+        "Q_minus_baseline": 0.01991698943713316,
+        "Q_minus_quality": -0.006586543824893987,
+        "true_minus_shuffled": 0.007667215125750415,
+        "true_minus_baseline": 0.029354606356998936,
+        "shuffled_minus_baseline": 0.02168739123124852,
+        "true_minus_Q": 0.009437616919865777,
+        "shuffled_minus_Q": 0.0017704017941153616
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.042699168112070536,
+          "high": 0.055805377486549665
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.05237101784576312,
+          "high": 0.02775010764551082
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.004218542849378889,
+          "high": 0.0614213584242
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.046504546263955324,
+          "high": 0.03276186809426388
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.013397767191589574,
+          "high": 0.04685378217838444
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.006153370498344993,
+          "high": 0.0808034018492642
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02436296480313469,
+          "high": 0.07002040827845853
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.027750107645510825,
+          "high": 0.052371017845763104
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.055805377486549665,
+          "high": 0.04269916811207053
+        }
+      }
+    },
+    "assessment/length_513_1024": {
+      "rows": 450,
+      "positive": 207,
+      "negative": 243,
+      "eligible": 352,
+      "eligible_positive": 161,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6392763997719698,
+          "auroc": 0.6595495119381324,
+          "ap_at_50_percent_prevalence": 0.6730775732147032
+        },
+        "true": {
+          "ap": 0.6503252435705984,
+          "auroc": 0.6616568259080337,
+          "ap_at_50_percent_prevalence": 0.6830607733178369
+        },
+        "shuffled": {
+          "ap": 0.6538854653635973,
+          "auroc": 0.6651160016699469,
+          "ap_at_50_percent_prevalence": 0.6864473026966329
+        },
+        "quality": {
+          "ap": 0.6520737390826312,
+          "auroc": 0.6645195920558239,
+          "ap_at_50_percent_prevalence": 0.6846629005794643
+        },
+        "Q": {
+          "ap": 0.6369980108240807,
+          "auroc": 0.6579193256595296,
+          "ap_at_50_percent_prevalence": 0.6709372296758009
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.016887454539516566,
+        "Q_minus_true": -0.013327232746517703,
+        "Q_minus_baseline": -0.0022783889478891206,
+        "Q_minus_quality": -0.015075728258550525,
+        "true_minus_shuffled": -0.0035602217929988633,
+        "true_minus_baseline": 0.011048843798628583,
+        "shuffled_minus_baseline": 0.014609065591627446,
+        "true_minus_Q": 0.013327232746517703,
+        "shuffled_minus_Q": 0.016887454539516566
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.040946028499587665,
+          "high": 0.016138819686930095
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.03265825500884473,
+          "high": 0.014056348478465569
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0148915480900626,
+          "high": 0.007821896991756887
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.032616522002394135,
+          "high": 0.011225209729528951
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.021827452983744045,
+          "high": 0.0177434990833507
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01951949341626552,
+          "high": 0.030019633814179943
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01968575590403332,
+          "high": 0.038122362000301155
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.01405634847846558,
+          "high": 0.032658255008844714
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.0161388196869301,
+          "high": 0.04094602849958765
+        }
+      }
+    },
+    "assessment/length_1025_1536": {
+      "rows": 254,
+      "positive": 127,
+      "negative": 127,
+      "eligible": 219,
+      "eligible_positive": 111,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6319222599097494,
+          "auroc": 0.6605803211606422,
+          "ap_at_50_percent_prevalence": 0.6319222599097494
+        },
+        "true": {
+          "ap": 0.6666039171012962,
+          "auroc": 0.6729493458986918,
+          "ap_at_50_percent_prevalence": 0.6666039171012961
+        },
+        "shuffled": {
+          "ap": 0.6568877254941793,
+          "auroc": 0.6787153574307149,
+          "ap_at_50_percent_prevalence": 0.6568877254941792
+        },
+        "quality": {
+          "ap": 0.6210666430988809,
+          "auroc": 0.6569533139066277,
+          "ap_at_50_percent_prevalence": 0.6210666430988808
+        },
+        "Q": {
+          "ap": 0.6400026479578915,
+          "auroc": 0.6682993365986732,
+          "ap_at_50_percent_prevalence": 0.6400026479578915
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.016885077536287763,
+        "Q_minus_true": -0.02660126914340466,
+        "Q_minus_baseline": 0.00808038804814215,
+        "Q_minus_quality": 0.01893600485901059,
+        "true_minus_shuffled": 0.009716191607116897,
+        "true_minus_baseline": 0.03468165719154681,
+        "shuffled_minus_baseline": 0.024965465584429913,
+        "true_minus_Q": 0.02660126914340466,
+        "shuffled_minus_Q": 0.016885077536287763
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.0528476300082963,
+          "high": 0.017481420987407723
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.06767175616443558,
+          "high": 0.008973285509316963
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.005630331376642786,
+          "high": 0.02809370607117479
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.01551217713486567,
+          "high": 0.04837327508216235
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.01853893728446388,
+          "high": 0.044176953261591045
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.002330170540725129,
+          "high": 0.0741132124115825
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.010968558577758658,
+          "high": 0.060629120957987705
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.00897328550931697,
+          "high": 0.06767175616443558
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.017481420987407726,
+          "high": 0.05284763000829629
+        }
+      }
+    },
+    "assessment/length_over1536": {
+      "rows": 151,
+      "positive": 67,
+      "negative": 84,
+      "eligible": 0,
+      "eligible_positive": 0,
+      "metrics": {
+        "baseline": {
+          "ap": 0.5730719422406079,
+          "auroc": 0.6182480454868514,
+          "ap_at_50_percent_prevalence": 0.623830529629534
+        },
+        "true": {
+          "ap": 0.5730719422406079,
+          "auroc": 0.6182480454868514,
+          "ap_at_50_percent_prevalence": 0.623830529629534
+        },
+        "shuffled": {
+          "ap": 0.5730719422406079,
+          "auroc": 0.6182480454868514,
+          "ap_at_50_percent_prevalence": 0.623830529629534
+        },
+        "quality": {
+          "ap": 0.5730719422406079,
+          "auroc": 0.6182480454868514,
+          "ap_at_50_percent_prevalence": 0.623830529629534
+        },
+        "Q": {
+          "ap": 0.5730719422406079,
+          "auroc": 0.6182480454868514,
+          "ap_at_50_percent_prevalence": 0.623830529629534
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": 0.0,
+        "Q_minus_true": 0.0,
+        "Q_minus_baseline": 0.0,
+        "Q_minus_quality": 0.0,
+        "true_minus_shuffled": 0.0,
+        "true_minus_baseline": 0.0,
+        "shuffled_minus_baseline": 0.0,
+        "true_minus_Q": 0.0,
+        "shuffled_minus_Q": 0.0
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        }
+      }
+    },
+    "fixed_dev_sample/eligible": {
+      "rows": 2628,
+      "positive": 1343,
+      "negative": 1285,
+      "eligible": 2628,
+      "eligible_positive": 1343,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6692943021375769,
+          "auroc": 0.6597506598561209,
+          "ap_at_50_percent_prevalence": 0.6599329485459993
+        },
+        "true": {
+          "ap": 0.6814291664684204,
+          "auroc": 0.6657010989393048,
+          "ap_at_50_percent_prevalence": 0.6723350272766706
+        },
+        "shuffled": {
+          "ap": 0.6783257257249036,
+          "auroc": 0.664923468279101,
+          "ap_at_50_percent_prevalence": 0.6691454882915031
+        },
+        "quality": {
+          "ap": 0.6763207997501866,
+          "auroc": 0.663985328160718,
+          "ap_at_50_percent_prevalence": 0.6671164648503549
+        },
+        "Q": {
+          "ap": 0.6719045652130935,
+          "auroc": 0.6627371788000035,
+          "ap_at_50_percent_prevalence": 0.6625782159341849
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.006421160511810076,
+        "Q_minus_true": -0.009524601255326948,
+        "Q_minus_baseline": 0.0026102630755165945,
+        "Q_minus_quality": -0.004416234537093056,
+        "true_minus_shuffled": 0.003103440743516872,
+        "true_minus_baseline": 0.012134864330843542,
+        "shuffled_minus_baseline": 0.00903142358732667,
+        "true_minus_Q": 0.009524601255326948,
+        "shuffled_minus_Q": 0.006421160511810076
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.020024393051438355,
+          "high": 0.007751183910492186
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.02242537525054589,
+          "high": 0.00421526959929349
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.002730520801843056,
+          "high": 0.008161680581438934
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.014030878249538489,
+          "high": 0.006477789522205604
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.00466976311320918,
+          "high": 0.010892982525733468
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.001984016991456547,
+          "high": 0.025600605737549652
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.005683775144735747,
+          "high": 0.02253943032378471
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.004215269599293491,
+          "high": 0.02242537525054589
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.00775118391049219,
+          "high": 0.02002439305143835
+        }
+      }
+    },
+    "fixed_dev_sample/fallback": {
+      "rows": 1372,
+      "positive": 657,
+      "negative": 715,
+      "eligible": 0,
+      "eligible_positive": 0,
+      "metrics": {
+        "baseline": {
+          "ap": 0.5977913123181595,
+          "auroc": 0.628272184436568,
+          "ap_at_50_percent_prevalence": 0.617477765163306
+        },
+        "true": {
+          "ap": 0.5977913123181595,
+          "auroc": 0.628272184436568,
+          "ap_at_50_percent_prevalence": 0.617477765163306
+        },
+        "shuffled": {
+          "ap": 0.5977913123181595,
+          "auroc": 0.628272184436568,
+          "ap_at_50_percent_prevalence": 0.617477765163306
+        },
+        "quality": {
+          "ap": 0.5977913123181595,
+          "auroc": 0.628272184436568,
+          "ap_at_50_percent_prevalence": 0.617477765163306
+        },
+        "Q": {
+          "ap": 0.5977913123181595,
+          "auroc": 0.628272184436568,
+          "ap_at_50_percent_prevalence": 0.617477765163306
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": 0.0,
+        "Q_minus_true": 0.0,
+        "Q_minus_baseline": 0.0,
+        "Q_minus_quality": 0.0,
+        "true_minus_shuffled": 0.0,
+        "true_minus_baseline": 0.0,
+        "shuffled_minus_baseline": 0.0,
+        "true_minus_Q": 0.0,
+        "shuffled_minus_Q": 0.0
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        }
+      }
+    },
+    "fixed_dev_sample/length_le512": {
+      "rows": 416,
+      "positive": 221,
+      "negative": 195,
+      "eligible": 351,
+      "eligible_positive": 197,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6827599226980191,
+          "auroc": 0.6623854275437986,
+          "ap_at_50_percent_prevalence": 0.6562989548848231
+        },
+        "true": {
+          "ap": 0.7118758985498311,
+          "auroc": 0.6873187144680357,
+          "ap_at_50_percent_prevalence": 0.6871269741495776
+        },
+        "shuffled": {
+          "ap": 0.6978811355570329,
+          "auroc": 0.6795683954054994,
+          "ap_at_50_percent_prevalence": 0.6720258584541403
+        },
+        "quality": {
+          "ap": 0.7001746134608193,
+          "auroc": 0.6780368952314654,
+          "ap_at_50_percent_prevalence": 0.6745444914886578
+        },
+        "Q": {
+          "ap": 0.6933745207361055,
+          "auroc": 0.677247940596357,
+          "ap_at_50_percent_prevalence": 0.6672915112181783
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.0045066148209274015,
+        "Q_minus_true": -0.018501377813725628,
+        "Q_minus_baseline": 0.010614598038086398,
+        "Q_minus_quality": -0.006800092724713824,
+        "true_minus_shuffled": 0.013994762992798226,
+        "true_minus_baseline": 0.029115975851812026,
+        "shuffled_minus_baseline": 0.0151212128590138,
+        "true_minus_Q": 0.018501377813725628,
+        "shuffled_minus_Q": 0.0045066148209274015
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.027482968996501315,
+          "high": 0.017299479103317562
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.041331676550775916,
+          "high": 0.004223280257982076
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.007465077447612847,
+          "high": 0.02700331933247815
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.04041810463512398,
+          "high": 0.018959123248398307
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.004542131442943342,
+          "high": 0.0339233691529264
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.004965465510165898,
+          "high": 0.05605116198704961
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.012096133885510462,
+          "high": 0.04485172557051443
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.004223280257982076,
+          "high": 0.041331676550775916
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.017299479103317566,
+          "high": 0.02748296899650131
+        }
+      }
+    },
+    "fixed_dev_sample/length_513_1024": {
+      "rows": 1759,
+      "positive": 883,
+      "negative": 876,
+      "eligible": 1450,
+      "eligible_positive": 731,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6724850657418469,
+          "auroc": 0.6664346070111751,
+          "ap_at_50_percent_prevalence": 0.6708302308293372
+        },
+        "true": {
+          "ap": 0.6796031978812642,
+          "auroc": 0.6684985804930266,
+          "ap_at_50_percent_prevalence": 0.6779806189492024
+        },
+        "shuffled": {
+          "ap": 0.6770115858633281,
+          "auroc": 0.6666653738552154,
+          "ap_at_50_percent_prevalence": 0.6753787073905502
+        },
+        "quality": {
+          "ap": 0.6778075817423295,
+          "auroc": 0.6690881025147768,
+          "ap_at_50_percent_prevalence": 0.6761777623032147
+        },
+        "Q": {
+          "ap": 0.6714629269034498,
+          "auroc": 0.6661922048640738,
+          "ap_at_50_percent_prevalence": 0.6698018471705155
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.005548658959878328,
+        "Q_minus_true": -0.008140270977814446,
+        "Q_minus_baseline": -0.0010221388383970798,
+        "Q_minus_quality": -0.006344654838879693,
+        "true_minus_shuffled": 0.002591612017936118,
+        "true_minus_baseline": 0.007118132139417366,
+        "shuffled_minus_baseline": 0.004526520121481248,
+        "true_minus_Q": 0.008140270977814446,
+        "shuffled_minus_Q": 0.005548658959878328
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.022331761085431365,
+          "high": 0.014498035234333453
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.025371676967639045,
+          "high": 0.011306932619911158
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.007256554660055978,
+          "high": 0.005226072882315688
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.016354902153446746,
+          "high": 0.006562656429417929
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.0052464592675814685,
+          "high": 0.011247855718919262
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.011950964229887378,
+          "high": 0.023036076301602888
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.015393140888840454,
+          "high": 0.021645859733576977
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.01130693261991116,
+          "high": 0.025371676967639045
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.014498035234333453,
+          "high": 0.022331761085431362
+        }
+      }
+    },
+    "fixed_dev_sample/length_1025_1536": {
+      "rows": 1051,
+      "positive": 518,
+      "negative": 533,
+      "eligible": 827,
+      "eligible_positive": 415,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6275088712481326,
+          "auroc": 0.6420910994081725,
+          "ap_at_50_percent_prevalence": 0.6339264803642686
+        },
+        "true": {
+          "ap": 0.6380482588361043,
+          "auroc": 0.6432193383412895,
+          "ap_at_50_percent_prevalence": 0.6443241087816645
+        },
+        "shuffled": {
+          "ap": 0.6380218343307698,
+          "auroc": 0.6477866233963794,
+          "ap_at_50_percent_prevalence": 0.6443165810969875
+        },
+        "quality": {
+          "ap": 0.6276276620693891,
+          "auroc": 0.6428498989474599,
+          "ap_at_50_percent_prevalence": 0.634054753360811
+        },
+        "Q": {
+          "ap": 0.632163152701329,
+          "auroc": 0.644657254413352,
+          "ap_at_50_percent_prevalence": 0.6385292830146267
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.0058586816294408095,
+        "Q_minus_true": -0.005885106134775331,
+        "Q_minus_baseline": 0.004654281453196352,
+        "Q_minus_quality": 0.004535490631939809,
+        "true_minus_shuffled": 2.6424505334521342e-05,
+        "true_minus_baseline": 0.010539387587971683,
+        "shuffled_minus_baseline": 0.010512963082637161,
+        "true_minus_Q": 0.005885106134775331,
+        "shuffled_minus_Q": 0.0058586816294408095
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.022199254258334664,
+          "high": 0.011248745952179978
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.02539458755661825,
+          "high": 0.012424364899249482
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.002092586993669082,
+          "high": 0.011696982196190663
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.0104074791690516,
+          "high": 0.019278218707798403
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.011328820504119102,
+          "high": 0.014653835486298578
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.006178490826560556,
+          "high": 0.029066661037037953
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.005310066261786047,
+          "high": 0.02649907139641583
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.012424364899249488,
+          "high": 0.025394587556618237
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.011248745952179978,
+          "high": 0.02219925425833465
+        }
+      }
+    },
+    "fixed_dev_sample/length_over1536": {
+      "rows": 774,
+      "positive": 378,
+      "negative": 396,
+      "eligible": 0,
+      "eligible_positive": 0,
+      "metrics": {
+        "baseline": {
+          "ap": 0.5926146739295354,
+          "auroc": 0.611328229383785,
+          "ap_at_50_percent_prevalence": 0.6035474242030444
+        },
+        "true": {
+          "ap": 0.5926146739295354,
+          "auroc": 0.611328229383785,
+          "ap_at_50_percent_prevalence": 0.6035474242030444
+        },
+        "shuffled": {
+          "ap": 0.5926146739295354,
+          "auroc": 0.611328229383785,
+          "ap_at_50_percent_prevalence": 0.6035474242030444
+        },
+        "quality": {
+          "ap": 0.5926146739295354,
+          "auroc": 0.611328229383785,
+          "ap_at_50_percent_prevalence": 0.6035474242030444
+        },
+        "Q": {
+          "ap": 0.5926146739295354,
+          "auroc": 0.611328229383785,
+          "ap_at_50_percent_prevalence": 0.6035474242030444
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": 0.0,
+        "Q_minus_true": 0.0,
+        "Q_minus_baseline": 0.0,
+        "Q_minus_quality": 0.0,
+        "true_minus_shuffled": 0.0,
+        "true_minus_baseline": 0.0,
+        "shuffled_minus_baseline": 0.0,
+        "true_minus_Q": 0.0,
+        "shuffled_minus_Q": 0.0
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0,
+          "high": 0.0
+        }
+      }
+    },
+    "assessment/neff80_paired/train_quantile_bin_0": {
+      "rows": 219,
+      "positive": 106,
+      "negative": 113,
+      "eligible": 219,
+      "eligible_positive": 106,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6375437254119489,
+          "auroc": 0.6490232092168977,
+          "ap_at_50_percent_prevalence": 0.6513241358121156
+        },
+        "true": {
+          "ap": 0.6625052576046457,
+          "auroc": 0.6628819502421106,
+          "ap_at_50_percent_prevalence": 0.6755596097674641
+        },
+        "shuffled": {
+          "ap": 0.6644048655791495,
+          "auroc": 0.6641342461178829,
+          "ap_at_50_percent_prevalence": 0.6774115237541061
+        },
+        "quality": {
+          "ap": 0.6587718564615557,
+          "auroc": 0.6597929537485391,
+          "ap_at_50_percent_prevalence": 0.67180088155319
+        },
+        "Q": {
+          "ap": 0.6486871300513013,
+          "auroc": 0.6578727667390215,
+          "ap_at_50_percent_prevalence": 0.6621445839845371
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.015717735527848165,
+        "Q_minus_true": -0.01381812755334444,
+        "Q_minus_baseline": 0.011143404639352372,
+        "Q_minus_quality": -0.010084726410254374,
+        "true_minus_shuffled": -0.0018996079745037253,
+        "true_minus_baseline": 0.02496153219269681,
+        "shuffled_minus_baseline": 0.026861140167200537,
+        "true_minus_Q": 0.01381812755334444,
+        "shuffled_minus_Q": 0.015717735527848165
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.0569673673923718,
+          "high": 0.0173082347744304
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.04934115206096782,
+          "high": 0.019826836371709802
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.011337256389723532,
+          "high": 0.03795128700484084
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.055212639035851246,
+          "high": 0.02926552616049832
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03243236255065751,
+          "high": 0.026350691485596982
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.011219254844790092,
+          "high": 0.06468423682677506
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.008531395337869929,
+          "high": 0.06859612140081264
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.019826836371709813,
+          "high": 0.04934115206096781
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.017308234774430418,
+          "high": 0.05696736739237179
+        }
+      }
+    },
+    "assessment/neff80_paired/train_quantile_bin_1": {
+      "rows": 144,
+      "positive": 84,
+      "negative": 60,
+      "eligible": 144,
+      "eligible_positive": 84,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7961991113729889,
+          "auroc": 0.7075396825396825,
+          "ap_at_50_percent_prevalence": 0.743659829105617
+        },
+        "true": {
+          "ap": 0.8124232412418023,
+          "auroc": 0.7212301587301587,
+          "ap_at_50_percent_prevalence": 0.7641952785751001
+        },
+        "shuffled": {
+          "ap": 0.8138233309690305,
+          "auroc": 0.723015873015873,
+          "ap_at_50_percent_prevalence": 0.7657432778543098
+        },
+        "quality": {
+          "ap": 0.8031595197477854,
+          "auroc": 0.7158730158730159,
+          "ap_at_50_percent_prevalence": 0.7522633235376941
+        },
+        "Q": {
+          "ap": 0.796839924115758,
+          "auroc": 0.7085317460317461,
+          "ap_at_50_percent_prevalence": 0.7445105777605379
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.016983406853272487,
+        "Q_minus_true": -0.015583317126044327,
+        "Q_minus_baseline": 0.0006408127427690591,
+        "Q_minus_quality": -0.006319595632027442,
+        "true_minus_shuffled": -0.0014000897272281598,
+        "true_minus_baseline": 0.016224129868813386,
+        "shuffled_minus_baseline": 0.017624219596041546,
+        "true_minus_Q": 0.015583317126044327,
+        "shuffled_minus_Q": 0.016983406853272487
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.052439350172018534,
+          "high": 0.010393350831855403
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.05017704817826787,
+          "high": 0.008513638146403055
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.014278627002400112,
+          "high": 0.016174311862677006
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03990182258448807,
+          "high": 0.024216174098958643
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.023878770769800335,
+          "high": 0.025995776807995568
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.007449712252658861,
+          "high": 0.05051240429185994
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.009460117710078732,
+          "high": 0.050380855997657854
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.008513638146403055,
+          "high": 0.05017704817826786
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.010393350831855405,
+          "high": 0.05243935017201852
+        }
+      }
+    },
+    "assessment/neff80_paired/train_quantile_bin_2": {
+      "rows": 143,
+      "positive": 67,
+      "negative": 76,
+      "eligible": 143,
+      "eligible_positive": 67,
+      "metrics": {
+        "baseline": {
+          "ap": 0.648851184886711,
+          "auroc": 0.6549489395129614,
+          "ap_at_50_percent_prevalence": 0.6749292373275648
+        },
+        "true": {
+          "ap": 0.6793049674344005,
+          "auroc": 0.667910447761194,
+          "ap_at_50_percent_prevalence": 0.7034138248320437
+        },
+        "shuffled": {
+          "ap": 0.678526143991826,
+          "auroc": 0.667910447761194,
+          "ap_at_50_percent_prevalence": 0.7027186367090031
+        },
+        "quality": {
+          "ap": 0.6648581236873192,
+          "auroc": 0.6549489395129615,
+          "ap_at_50_percent_prevalence": 0.6897379407597297
+        },
+        "Q": {
+          "ap": 0.6482854258505755,
+          "auroc": 0.6596622152395916,
+          "ap_at_50_percent_prevalence": 0.6746152244338254
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.03024071814125051,
+        "Q_minus_true": -0.031019541583825028,
+        "Q_minus_baseline": -0.000565759036135538,
+        "Q_minus_quality": -0.016572697836743755,
+        "true_minus_shuffled": 0.0007788234425745166,
+        "true_minus_baseline": 0.03045378254768949,
+        "shuffled_minus_baseline": 0.029674959105114973,
+        "true_minus_Q": 0.031019541583825028,
+        "shuffled_minus_Q": 0.03024071814125051
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.0765175035065127,
+          "high": 0.025978709449479682
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.07154574176114964,
+          "high": 0.028525749301037778
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02757679996254998,
+          "high": 0.02195658655362466
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.057116077147969235,
+          "high": 0.03370746510266564
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.041353775552251754,
+          "high": 0.03796038697721528
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02566961493015878,
+          "high": 0.07440648963683522
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0330262708656353,
+          "high": 0.07701048821286045
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.028525749301037785,
+          "high": 0.0715457417611496
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.025978709449479685,
+          "high": 0.07651750350651268
+        }
+      }
+    },
+    "assessment/neff80_paired/train_quantile_bin_3": {
+      "rows": 153,
+      "positive": 74,
+      "negative": 79,
+      "eligible": 153,
+      "eligible_positive": 74,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6085444398431674,
+          "auroc": 0.5940814231953473,
+          "ap_at_50_percent_prevalence": 0.623093348588418
+        },
+        "true": {
+          "ap": 0.6320887521083149,
+          "auroc": 0.6096476223058502,
+          "ap_at_50_percent_prevalence": 0.6459081640610782
+        },
+        "shuffled": {
+          "ap": 0.6226711198682265,
+          "auroc": 0.6205952788231269,
+          "ap_at_50_percent_prevalence": 0.637088693974238
+        },
+        "quality": {
+          "ap": 0.6186811222086103,
+          "auroc": 0.6017789941840574,
+          "ap_at_50_percent_prevalence": 0.6329468643959634
+        },
+        "Q": {
+          "ap": 0.6201371230147072,
+          "auroc": 0.6022921655833049,
+          "ap_at_50_percent_prevalence": 0.6342578915501575
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.0025339968535192936,
+        "Q_minus_true": -0.011951629093607696,
+        "Q_minus_baseline": 0.01159268317153983,
+        "Q_minus_quality": 0.0014560008060969798,
+        "true_minus_shuffled": 0.009417632240088403,
+        "true_minus_baseline": 0.023544312265147527,
+        "shuffled_minus_baseline": 0.014126680025059124,
+        "true_minus_Q": 0.011951629093607696,
+        "shuffled_minus_Q": 0.0025339968535192936
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.052327434900506106,
+          "high": 0.05067445497530348
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.05436029954543774,
+          "high": 0.031235260251455375
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02162508692654851,
+          "high": 0.04056934870157643
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.043504956199066906,
+          "high": 0.04537282100895905
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03201575573364292,
+          "high": 0.051737539461022476
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02350628984638702,
+          "high": 0.06759557774112898
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.05793680630671811,
+          "high": 0.06994810613524668
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.031235260251455375,
+          "high": 0.054360299545437724
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.05067445497530352,
+          "high": 0.052327434900506106
+        }
+      }
+    },
+    "assessment/neff80_per_residue/train_quantile_bin_0": {
+      "rows": 149,
+      "positive": 69,
+      "negative": 80,
+      "eligible": 149,
+      "eligible_positive": 69,
+      "metrics": {
+        "baseline": {
+          "ap": 0.5450618788152375,
+          "auroc": 0.622463768115942,
+          "ap_at_50_percent_prevalence": 0.5812485261958336
+        },
+        "true": {
+          "ap": 0.5509270229408099,
+          "auroc": 0.6282608695652174,
+          "ap_at_50_percent_prevalence": 0.5866655433474911
+        },
+        "shuffled": {
+          "ap": 0.5517579067404585,
+          "auroc": 0.628804347826087,
+          "ap_at_50_percent_prevalence": 0.5877012319441495
+        },
+        "quality": {
+          "ap": 0.5232600046883424,
+          "auroc": 0.6097826086956522,
+          "ap_at_50_percent_prevalence": 0.5596025761669239
+        },
+        "Q": {
+          "ap": 0.5425974535052769,
+          "auroc": 0.6268115942028986,
+          "ap_at_50_percent_prevalence": 0.5789022256687997
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.009160453235181665,
+        "Q_minus_true": -0.00832956943553298,
+        "Q_minus_baseline": -0.002464425309960605,
+        "Q_minus_quality": 0.019337448816934444,
+        "true_minus_shuffled": -0.0008308837996486851,
+        "true_minus_baseline": 0.005865144125572375,
+        "shuffled_minus_baseline": 0.00669602792522106,
+        "true_minus_Q": 0.00832956943553298,
+        "shuffled_minus_Q": 0.009160453235181665
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.06620205665252613,
+          "high": 0.04750430079709438
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.055553915928308745,
+          "high": 0.037316604628787504
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02885020625481161,
+          "high": 0.030654681720891194
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03617243044093424,
+          "high": 0.07952111866400133
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.046471335886510985,
+          "high": 0.044398860247704536
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.03743028697519583,
+          "high": 0.0540231202772981
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.04685003089377859,
+          "high": 0.06378335948807926
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.037316604628787504,
+          "high": 0.055553915928308745
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.0475043007970944,
+          "high": 0.0662020566525261
+        }
+      }
+    },
+    "assessment/neff80_per_residue/train_quantile_bin_1": {
+      "rows": 115,
+      "positive": 52,
+      "negative": 63,
+      "eligible": 115,
+      "eligible_positive": 52,
+      "metrics": {
+        "baseline": {
+          "ap": 0.5784233813550259,
+          "auroc": 0.63003663003663,
+          "ap_at_50_percent_prevalence": 0.6221718301229597
+        },
+        "true": {
+          "ap": 0.6081678760132593,
+          "auroc": 0.6373626373626373,
+          "ap_at_50_percent_prevalence": 0.649805180016753
+        },
+        "shuffled": {
+          "ap": 0.6085227058603198,
+          "auroc": 0.6471306471306472,
+          "ap_at_50_percent_prevalence": 0.6503413963032401
+        },
+        "quality": {
+          "ap": 0.5729013092733225,
+          "auroc": 0.6239316239316239,
+          "ap_at_50_percent_prevalence": 0.6177273294545824
+        },
+        "Q": {
+          "ap": 0.5741228430234084,
+          "auroc": 0.6269841269841271,
+          "ap_at_50_percent_prevalence": 0.6180938103462792
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.03439986283691132,
+        "Q_minus_true": -0.03404503298985084,
+        "Q_minus_baseline": -0.004300538331617476,
+        "Q_minus_quality": 0.0012215337500859347,
+        "true_minus_shuffled": -0.00035482984706047827,
+        "true_minus_baseline": 0.029744494658233367,
+        "shuffled_minus_baseline": 0.030099324505293845,
+        "true_minus_Q": 0.03404503298985084,
+        "shuffled_minus_Q": 0.03439986283691132
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.10037359718535965,
+          "high": 0.020685301978561787
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.10211549848715466,
+          "high": 0.025047543980210765
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.04001208347338262,
+          "high": 0.021741393269322607
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.07348143076215422,
+          "high": 0.06414870824618327
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03984821465959846,
+          "high": 0.04428489006216151
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02929918494411713,
+          "high": 0.09470888708163916
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.023233387830247764,
+          "high": 0.09124664237735591
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.025047543980210772,
+          "high": 0.10211549848715466
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.020685301978561787,
+          "high": 0.10037359718535965
+        }
+      }
+    },
+    "assessment/neff80_per_residue/train_quantile_bin_2": {
+      "rows": 138,
+      "positive": 68,
+      "negative": 70,
+      "eligible": 138,
+      "eligible_positive": 68,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6590894211449845,
+          "auroc": 0.6493697478991597,
+          "ap_at_50_percent_prevalence": 0.6651442743089049
+        },
+        "true": {
+          "ap": 0.6966835247714106,
+          "auroc": 0.667016806722689,
+          "ap_at_50_percent_prevalence": 0.7021094171400577
+        },
+        "shuffled": {
+          "ap": 0.7065791487887829,
+          "auroc": 0.6705882352941176,
+          "ap_at_50_percent_prevalence": 0.7118302042300899
+        },
+        "quality": {
+          "ap": 0.6584693334005094,
+          "auroc": 0.6478991596638656,
+          "ap_at_50_percent_prevalence": 0.6645506905693577
+        },
+        "Q": {
+          "ap": 0.6634474389702316,
+          "auroc": 0.647689075630252,
+          "ap_at_50_percent_prevalence": 0.6694061942059444
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.0431317098185513,
+        "Q_minus_true": -0.03323608580117898,
+        "Q_minus_baseline": 0.00435801782524714,
+        "Q_minus_quality": 0.004978105569722224,
+        "true_minus_shuffled": -0.009895624017372318,
+        "true_minus_baseline": 0.03759410362642612,
+        "shuffled_minus_baseline": 0.04748972764379844,
+        "true_minus_Q": 0.03323608580117898,
+        "shuffled_minus_Q": 0.0431317098185513
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.08878345717686734,
+          "high": 0.00786740209209903
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.0820931634628719,
+          "high": 0.018070860853554322
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0179538506610015,
+          "high": 0.037771566955771635
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.02646220367321343,
+          "high": 0.05654162934156204
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03301333599152307,
+          "high": 0.016789862604264297
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.011596895614214191,
+          "high": 0.08964711829554957
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0010710009959168636,
+          "high": 0.09362797333627365
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.018070860853554326,
+          "high": 0.08209316346287189
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.007867402092099032,
+          "high": 0.08878345717686734
+        }
+      }
+    },
+    "assessment/neff80_per_residue/train_quantile_bin_3": {
+      "rows": 257,
+      "positive": 142,
+      "negative": 115,
+      "eligible": 257,
+      "eligible_positive": 142,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7399366670004321,
+          "auroc": 0.6645131659522352,
+          "ap_at_50_percent_prevalence": 0.7017008813650866
+        },
+        "true": {
+          "ap": 0.7669987868664738,
+          "auroc": 0.684996938150643,
+          "ap_at_50_percent_prevalence": 0.7327058445052753
+        },
+        "shuffled": {
+          "ap": 0.7595970282847406,
+          "auroc": 0.6870177587262707,
+          "ap_at_50_percent_prevalence": 0.723576447915604
+        },
+        "quality": {
+          "ap": 0.7627969569671609,
+          "auroc": 0.686037966932027,
+          "ap_at_50_percent_prevalence": 0.7276075039553984
+        },
+        "Q": {
+          "ap": 0.748920475268928,
+          "auroc": 0.6769136558481323,
+          "ap_at_50_percent_prevalence": 0.7115995148689422
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.010676553015812607,
+        "Q_minus_true": -0.018078311597545804,
+        "Q_minus_baseline": 0.008983808268495874,
+        "Q_minus_quality": -0.013876481698232856,
+        "true_minus_shuffled": 0.007401758581733198,
+        "true_minus_baseline": 0.02706211986604168,
+        "shuffled_minus_baseline": 0.01966036128430848,
+        "true_minus_Q": 0.018078311597545804,
+        "shuffled_minus_Q": 0.010676553015812607
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.042747058060140064,
+          "high": 0.026217474196998214
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.05049803580600745,
+          "high": 0.007174303351283556
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.010457516150294896,
+          "high": 0.028000778516448215
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.04314260924341633,
+          "high": 0.011108037272354388
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.013013711239992001,
+          "high": 0.04386656754079499
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0015594431134143929,
+          "high": 0.06049772353267334
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.025859052753791023,
+          "high": 0.05359642644563742
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.007174303351283556,
+          "high": 0.05049803580600745
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.02621747419699822,
+          "high": 0.04274705806014006
+        }
+      }
+    },
+    "assessment/minimum_quality/train_quantile_bin_0": {
+      "rows": 170,
+      "positive": 90,
+      "negative": 80,
+      "eligible": 170,
+      "eligible_positive": 90,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7444799742362684,
+          "auroc": 0.6952083333333333,
+          "ap_at_50_percent_prevalence": 0.7238896661349915
+        },
+        "true": {
+          "ap": 0.7455699387519318,
+          "auroc": 0.6961111111111111,
+          "ap_at_50_percent_prevalence": 0.72504445409638
+        },
+        "shuffled": {
+          "ap": 0.7503777863964558,
+          "auroc": 0.7005555555555555,
+          "ap_at_50_percent_prevalence": 0.7301824887952952
+        },
+        "quality": {
+          "ap": 0.7472019435677472,
+          "auroc": 0.7038888888888888,
+          "ap_at_50_percent_prevalence": 0.7265702035200303
+        },
+        "Q": {
+          "ap": 0.7456687119286629,
+          "auroc": 0.6994444444444444,
+          "ap_at_50_percent_prevalence": 0.7250735463383213
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.004709074467792895,
+        "Q_minus_true": 9.877317673112618e-05,
+        "Q_minus_baseline": 0.0011887376923944704,
+        "Q_minus_quality": -0.0015332316390842538,
+        "true_minus_shuffled": -0.0048078476445240215,
+        "true_minus_baseline": 0.0010899645156633442,
+        "shuffled_minus_baseline": 0.005897812160187366,
+        "true_minus_Q": -9.877317673112618e-05,
+        "shuffled_minus_Q": 0.004709074467792895
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03132300241287082,
+          "high": 0.01680416907522489
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.03185342751916738,
+          "high": 0.0276259107922222
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.013896494587302636,
+          "high": 0.018290511169321594
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03681210621287834,
+          "high": 0.026479011661511686
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.02675473281563016,
+          "high": 0.01907628601678104
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.027484971583245192,
+          "high": 0.031642208275744405
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01512598338093972,
+          "high": 0.031486162193601654
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.027625910792222208,
+          "high": 0.03185342751916737
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.016804169075224897,
+          "high": 0.031323002412870816
+        }
+      }
+    },
+    "assessment/minimum_quality/train_quantile_bin_1": {
+      "rows": 167,
+      "positive": 84,
+      "negative": 83,
+      "eligible": 167,
+      "eligible_positive": 84,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7225927092872918,
+          "auroc": 0.6869621342512908,
+          "ap_at_50_percent_prevalence": 0.7204475165306757
+        },
+        "true": {
+          "ap": 0.7429686137991725,
+          "auroc": 0.6987951807228916,
+          "ap_at_50_percent_prevalence": 0.7409979689633764
+        },
+        "shuffled": {
+          "ap": 0.7459590575390025,
+          "auroc": 0.6975043029259897,
+          "ap_at_50_percent_prevalence": 0.7440138964581268
+        },
+        "quality": {
+          "ap": 0.7299511946715775,
+          "auroc": 0.6878944348823867,
+          "ap_at_50_percent_prevalence": 0.7278924608306039
+        },
+        "Q": {
+          "ap": 0.7307339712774201,
+          "auroc": 0.6943488238668962,
+          "ap_at_50_percent_prevalence": 0.7286507482095079
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.015225086261582366,
+        "Q_minus_true": -0.012234642521752326,
+        "Q_minus_baseline": 0.008141261990128323,
+        "Q_minus_quality": 0.0007827766058425834,
+        "true_minus_shuffled": -0.00299044373983004,
+        "true_minus_baseline": 0.02037590451188065,
+        "shuffled_minus_baseline": 0.02336634825171069,
+        "true_minus_Q": 0.012234642521752326,
+        "shuffled_minus_Q": 0.015225086261582366
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.04811961680375088,
+          "high": 0.010807776607040949
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.04836384740892626,
+          "high": 0.017691654205316567
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.011723752578796806,
+          "high": 0.030974925734883627
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.030775470472264747,
+          "high": 0.034498429418726724
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.02617619337263783,
+          "high": 0.01712721438366807
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01046199165331306,
+          "high": 0.06153344449395845
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0058621190026798,
+          "high": 0.05825151344301271
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.01769165420531657,
+          "high": 0.04836384740892626
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.010807776607040956,
+          "high": 0.04811961680375088
+        }
+      }
+    },
+    "assessment/minimum_quality/train_quantile_bin_2": {
+      "rows": 123,
+      "positive": 58,
+      "negative": 65,
+      "eligible": 123,
+      "eligible_positive": 58,
+      "metrics": {
+        "baseline": {
+          "ap": 0.604258620479933,
+          "auroc": 0.5965517241379311,
+          "ap_at_50_percent_prevalence": 0.6285555582234594
+        },
+        "true": {
+          "ap": 0.6213108372166735,
+          "auroc": 0.6026525198938991,
+          "ap_at_50_percent_prevalence": 0.6448406028802981
+        },
+        "shuffled": {
+          "ap": 0.6115517464518325,
+          "auroc": 0.6047745358090185,
+          "ap_at_50_percent_prevalence": 0.6357001555647823
+        },
+        "quality": {
+          "ap": 0.6111137600684552,
+          "auroc": 0.6045092838196288,
+          "ap_at_50_percent_prevalence": 0.6354072950936692
+        },
+        "Q": {
+          "ap": 0.6108188282430133,
+          "auroc": 0.596551724137931,
+          "ap_at_50_percent_prevalence": 0.6346460049309507
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.0007329182088192665,
+        "Q_minus_true": -0.010492008973660205,
+        "Q_minus_baseline": 0.006560207763080306,
+        "Q_minus_quality": -0.0002949318254419353,
+        "true_minus_shuffled": 0.009759090764840939,
+        "true_minus_baseline": 0.01705221673674051,
+        "shuffled_minus_baseline": 0.007293125971899572,
+        "true_minus_Q": 0.010492008973660205,
+        "shuffled_minus_Q": 0.0007329182088192665
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.038761261100394816,
+          "high": 0.03889581628850268
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.05523284662481176,
+          "high": 0.02743554911941635
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02222825113545908,
+          "high": 0.044262840253797765
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.04883908277650028,
+          "high": 0.04691477806763504
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.018393939513840663,
+          "high": 0.04862273220804697
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01821119774680759,
+          "high": 0.06735368456460754
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.03134318242186925,
+          "high": 0.0508142202039673
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.02743554911941635,
+          "high": 0.05523284662481175
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.03889581628850269,
+          "high": 0.03876126110039478
+        }
+      }
+    },
+    "assessment/minimum_quality/train_quantile_bin_3": {
+      "rows": 199,
+      "positive": 99,
+      "negative": 100,
+      "eligible": 199,
+      "eligible_positive": 99,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6197001238018565,
+          "auroc": 0.6177777777777779,
+          "ap_at_50_percent_prevalence": 0.6219858008668244
+        },
+        "true": {
+          "ap": 0.6683192737580579,
+          "auroc": 0.6498989898989899,
+          "ap_at_50_percent_prevalence": 0.6703903921224376
+        },
+        "shuffled": {
+          "ap": 0.664188466215172,
+          "auroc": 0.6530303030303031,
+          "ap_at_50_percent_prevalence": 0.6662881429443083
+        },
+        "quality": {
+          "ap": 0.6350038019539822,
+          "auroc": 0.628989898989899,
+          "ap_at_50_percent_prevalence": 0.6372351238416474
+        },
+        "Q": {
+          "ap": 0.6278777854702837,
+          "auroc": 0.6295959595959597,
+          "ap_at_50_percent_prevalence": 0.6301458674823517
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.0363106807448883,
+        "Q_minus_true": -0.04044148828777416,
+        "Q_minus_baseline": 0.00817766166842726,
+        "Q_minus_quality": -0.007126016483698483,
+        "true_minus_shuffled": 0.0041308075428858615,
+        "true_minus_baseline": 0.048619149956201424,
+        "shuffled_minus_baseline": 0.04448834241331556,
+        "true_minus_Q": 0.04044148828777416,
+        "shuffled_minus_Q": 0.0363106807448883
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.07477587889281795,
+          "high": 0.019173802912471914
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.0818982345470893,
+          "high": 0.016663456847707668
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.022552553865413636,
+          "high": 0.03750806358581044
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.043658094717212735,
+          "high": 0.04250238656937873
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.031296384262142006,
+          "high": 0.037839292393214034
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.011087399205233259,
+          "high": 0.09138035485363717
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.014660465541686917,
+          "high": 0.08493839881825783
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.01666345684770769,
+          "high": 0.08189823454708929
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.019173802912471914,
+          "high": 0.07477587889281793
+        }
+      }
+    },
+    "assessment/valid_interchain_cells/train_quantile_bin_0": {
+      "rows": 258,
+      "positive": 137,
+      "negative": 121,
+      "eligible": 258,
+      "eligible_positive": 137,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7177424138189359,
+          "auroc": 0.6632080593593533,
+          "ap_at_50_percent_prevalence": 0.6944565699202355
+        },
+        "true": {
+          "ap": 0.7425035285757688,
+          "auroc": 0.6827532122820776,
+          "ap_at_50_percent_prevalence": 0.7211240596340294
+        },
+        "shuffled": {
+          "ap": 0.7427935114333484,
+          "auroc": 0.6838993786571756,
+          "ap_at_50_percent_prevalence": 0.7213801749327132
+        },
+        "quality": {
+          "ap": 0.7392678767005003,
+          "auroc": 0.6814260722688062,
+          "ap_at_50_percent_prevalence": 0.7175676735022793
+        },
+        "Q": {
+          "ap": 0.7270834147942331,
+          "auroc": 0.6738855040115822,
+          "ap_at_50_percent_prevalence": 0.7043893193050936
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.015710096639115267,
+        "Q_minus_true": -0.015420113781535738,
+        "Q_minus_baseline": 0.00934100097529722,
+        "Q_minus_quality": -0.012184461906267208,
+        "true_minus_shuffled": -0.00028998285757952935,
+        "true_minus_baseline": 0.024761114756832958,
+        "shuffled_minus_baseline": 0.025051097614412488,
+        "true_minus_Q": 0.015420113781535738,
+        "shuffled_minus_Q": 0.015710096639115267
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.04164229257494846,
+          "high": 0.008824356512078668
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.044114972536000344,
+          "high": 0.007893764531522279
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.007935605798703265,
+          "high": 0.026764823023983874
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.04040882532935048,
+          "high": 0.01297769837450556
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.017634997451746046,
+          "high": 0.01973537357662944
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0026966341299755558,
+          "high": 0.05394696920670148
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0027438796117586705,
+          "high": 0.05230968781121907
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.007893764531522279,
+          "high": 0.044114972536000344
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.008824356512078668,
+          "high": 0.04164229257494845
+        }
+      }
+    },
+    "assessment/valid_interchain_cells/train_quantile_bin_1": {
+      "rows": 186,
+      "positive": 86,
+      "negative": 100,
+      "eligible": 186,
+      "eligible_positive": 86,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6541382157347736,
+          "auroc": 0.6563953488372094,
+          "ap_at_50_percent_prevalence": 0.6840457573846594
+        },
+        "true": {
+          "ap": 0.6616351745520241,
+          "auroc": 0.6577906976744186,
+          "ap_at_50_percent_prevalence": 0.6911331083283441
+        },
+        "shuffled": {
+          "ap": 0.6625435232357901,
+          "auroc": 0.6633720930232558,
+          "ap_at_50_percent_prevalence": 0.6923181742214046
+        },
+        "quality": {
+          "ap": 0.6614058357532651,
+          "auroc": 0.6613953488372093,
+          "ap_at_50_percent_prevalence": 0.6907849232279419
+        },
+        "Q": {
+          "ap": 0.6520987194506742,
+          "auroc": 0.6580232558139534,
+          "ap_at_50_percent_prevalence": 0.6824182041037805
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.01044480378511592,
+        "Q_minus_true": -0.009536455101349928,
+        "Q_minus_baseline": -0.0020394962840993847,
+        "Q_minus_quality": -0.009307116302590845,
+        "true_minus_shuffled": -0.0009083486837659915,
+        "true_minus_baseline": 0.007496958817250543,
+        "shuffled_minus_baseline": 0.008405307501016535,
+        "true_minus_Q": 0.009536455101349928,
+        "shuffled_minus_Q": 0.01044480378511592
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.05674941909143164,
+          "high": 0.03424298940557746
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.0545439410688309,
+          "high": 0.0368377388098653
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.027516874938581945,
+          "high": 0.020347735916905304
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.04243572037259279,
+          "high": 0.022704929173930116
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.032344428959497094,
+          "high": 0.02901931921445895
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.03757230813909532,
+          "high": 0.05410657928808412
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.042036285285756224,
+          "high": 0.058065510054369045
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.0368377388098653,
+          "high": 0.0545439410688309
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.03424298940557746,
+          "high": 0.056749419091431635
+        }
+      }
+    },
+    "assessment/valid_interchain_cells/train_quantile_bin_2": {
+      "rows": 135,
+      "positive": 65,
+      "negative": 70,
+      "eligible": 135,
+      "eligible_positive": 65,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6395576831523658,
+          "auroc": 0.6707692307692307,
+          "ap_at_50_percent_prevalence": 0.6558472789718707
+        },
+        "true": {
+          "ap": 0.6792521680486641,
+          "auroc": 0.6896703296703297,
+          "ap_at_50_percent_prevalence": 0.6941971977627428
+        },
+        "shuffled": {
+          "ap": 0.6729124024835127,
+          "auroc": 0.6960439560439561,
+          "ap_at_50_percent_prevalence": 0.6881918442538382
+        },
+        "quality": {
+          "ap": 0.6227327465285805,
+          "auroc": 0.6637362637362638,
+          "ap_at_50_percent_prevalence": 0.6395789425966686
+        },
+        "Q": {
+          "ap": 0.6435578190517371,
+          "auroc": 0.6725274725274726,
+          "ap_at_50_percent_prevalence": 0.6597103947313465
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.02935458343177555,
+        "Q_minus_true": -0.03569434899692692,
+        "Q_minus_baseline": 0.004000135899371315,
+        "Q_minus_quality": 0.020825072523156685,
+        "true_minus_shuffled": 0.006339765565151367,
+        "true_minus_baseline": 0.03969448489629823,
+        "shuffled_minus_baseline": 0.033354719331146865,
+        "true_minus_Q": 0.03569434899692692,
+        "shuffled_minus_Q": 0.02935458343177555
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.0821161824317173,
+          "high": 0.02565882137113081
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.08908898821836939,
+          "high": 0.01762152065211662
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02150807372769792,
+          "high": 0.03531184000847729
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03244304787788258,
+          "high": 0.07877515206252175
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.042557619728653504,
+          "high": 0.05253357105377187
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.013763692320180118,
+          "high": 0.09730009892920219
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.022343072092224126,
+          "high": 0.08411815813314477
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.017621520652116626,
+          "high": 0.08908898821836934
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.025658821371130815,
+          "high": 0.08211618243171728
+        }
+      }
+    },
+    "assessment/valid_interchain_cells/train_quantile_bin_3": {
+      "rows": 80,
+      "positive": 43,
+      "negative": 37,
+      "eligible": 80,
+      "eligible_positive": 43,
+      "metrics": {
+        "baseline": {
+          "ap": 0.5771363706279647,
+          "auroc": 0.5260842237586424,
+          "ap_at_50_percent_prevalence": 0.5411380888053998
+        },
+        "true": {
+          "ap": 0.5923903350363859,
+          "auroc": 0.5329981143934632,
+          "ap_at_50_percent_prevalence": 0.55673109434438
+        },
+        "shuffled": {
+          "ap": 0.5890209274149645,
+          "auroc": 0.541169076052797,
+          "ap_at_50_percent_prevalence": 0.5532293881390644
+        },
+        "quality": {
+          "ap": 0.5525691269498406,
+          "auroc": 0.5172847265870522,
+          "ap_at_50_percent_prevalence": 0.5154774497747749
+        },
+        "Q": {
+          "ap": 0.5803478363508274,
+          "auroc": 0.5348837209302325,
+          "ap_at_50_percent_prevalence": 0.544444265060761
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.00867309106413705,
+        "Q_minus_true": -0.012042498685558511,
+        "Q_minus_baseline": 0.003211465722862683,
+        "Q_minus_quality": 0.027778709400986812,
+        "true_minus_shuffled": 0.0033694076214214608,
+        "true_minus_baseline": 0.015253964408421194,
+        "shuffled_minus_baseline": 0.011884556786999734,
+        "true_minus_Q": 0.012042498685558511,
+        "shuffled_minus_Q": 0.00867309106413705
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.08355358148557429,
+          "high": 0.04680428049716525
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.08761797968073758,
+          "high": 0.055185811189405486
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02626060151705209,
+          "high": 0.03426912381547946
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03616608180530034,
+          "high": 0.08592255734336422
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.04469692023438245,
+          "high": 0.05035875028721196
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.05389572145359572,
+          "high": 0.09346522464612066
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.05022992150679895,
+          "high": 0.08551651871419494
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.05518581118940556,
+          "high": 0.08761797968073756
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.04680428049716528,
+          "high": 0.08355358148557429
+        }
+      }
+    },
+    "assessment/joint_support_fraction/train_quantile_bin_0": {
+      "rows": 147,
+      "positive": 65,
+      "negative": 82,
+      "eligible": 147,
+      "eligible_positive": 65,
+      "metrics": {
+        "baseline": {
+          "ap": 0.5699123315410919,
+          "auroc": 0.6284240150093808,
+          "ap_at_50_percent_prevalence": 0.6239778815662953
+        },
+        "true": {
+          "ap": 0.606035809918121,
+          "auroc": 0.6457786116322701,
+          "ap_at_50_percent_prevalence": 0.6566728320121125
+        },
+        "shuffled": {
+          "ap": 0.5963224516223868,
+          "auroc": 0.650844277673546,
+          "ap_at_50_percent_prevalence": 0.6483994355341836
+        },
+        "quality": {
+          "ap": 0.5764143742637794,
+          "auroc": 0.6292682926829268,
+          "ap_at_50_percent_prevalence": 0.629290831814371
+        },
+        "Q": {
+          "ap": 0.5506916827761905,
+          "auroc": 0.6232645403377112,
+          "ap_at_50_percent_prevalence": 0.6064922604465159
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.04563076884619632,
+        "Q_minus_true": -0.05534412714193049,
+        "Q_minus_baseline": -0.01922064876490137,
+        "Q_minus_quality": -0.025722691487588878,
+        "true_minus_shuffled": 0.009713358295734165,
+        "true_minus_baseline": 0.03612347837702912,
+        "shuffled_minus_baseline": 0.026410120081294952,
+        "true_minus_Q": 0.05534412714193049,
+        "shuffled_minus_Q": 0.04563076884619632
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.1035582426893985,
+          "high": 0.02367658002274247
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.11020185914525236,
+          "high": 0.011309659460260817
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.04495130224687434,
+          "high": 0.011533812664689683
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.06656828111509028,
+          "high": 0.04032190796401878
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.029277659118117246,
+          "high": 0.05585488293393444
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.022629869376410705,
+          "high": 0.09550962095125608
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.04311397769726424,
+          "high": 0.08847510385119062
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.011309659460260819,
+          "high": 0.11020185914525234
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.02367658002274247,
+          "high": 0.10355824268939849
+        }
+      }
+    },
+    "assessment/joint_support_fraction/train_quantile_bin_1": {
+      "rows": 149,
+      "positive": 74,
+      "negative": 75,
+      "eligible": 149,
+      "eligible_positive": 74,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6146196549853268,
+          "auroc": 0.6097297297297297,
+          "ap_at_50_percent_prevalence": 0.6176828352205672
+        },
+        "true": {
+          "ap": 0.6403234841670749,
+          "auroc": 0.6072072072072072,
+          "ap_at_50_percent_prevalence": 0.6431539536106768
+        },
+        "shuffled": {
+          "ap": 0.6423958439935016,
+          "auroc": 0.6169369369369371,
+          "ap_at_50_percent_prevalence": 0.6452485129028045
+        },
+        "quality": {
+          "ap": 0.5993641360288051,
+          "auroc": 0.6055855855855857,
+          "ap_at_50_percent_prevalence": 0.602510837434229
+        },
+        "Q": {
+          "ap": 0.620915697163259,
+          "auroc": 0.6154954954954955,
+          "ap_at_50_percent_prevalence": 0.6239381552310155
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.021480146830242575,
+        "Q_minus_true": -0.019407787003815846,
+        "Q_minus_baseline": 0.006296042177932226,
+        "Q_minus_quality": 0.02155156113445389,
+        "true_minus_shuffled": -0.0020723598264267284,
+        "true_minus_baseline": 0.025703829181748072,
+        "shuffled_minus_baseline": 0.0277761890081748,
+        "true_minus_Q": 0.019407787003815846,
+        "shuffled_minus_Q": 0.021480146830242575
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.07025035841370078,
+          "high": 0.02167471520578313
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.07189671742042862,
+          "high": 0.030568249329970803
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.020533775378425184,
+          "high": 0.031137860327361384
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.025625179133440274,
+          "high": 0.055473748272284025
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03449367407017144,
+          "high": 0.02615609397842069
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02692240207383452,
+          "high": 0.07280379089702699
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01863068080117316,
+          "high": 0.07082394295406305
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.03056824932997081,
+          "high": 0.07189671742042858
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.02167471520578314,
+          "high": 0.07025035841370078
+        }
+      }
+    },
+    "assessment/joint_support_fraction/train_quantile_bin_2": {
+      "rows": 141,
+      "positive": 69,
+      "negative": 72,
+      "eligible": 141,
+      "eligible_positive": 69,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6717260829222182,
+          "auroc": 0.6402979066022545,
+          "ap_at_50_percent_prevalence": 0.6800223242445442
+        },
+        "true": {
+          "ap": 0.6817894179174374,
+          "auroc": 0.644927536231884,
+          "ap_at_50_percent_prevalence": 0.6898817099241379
+        },
+        "shuffled": {
+          "ap": 0.6847840984105544,
+          "auroc": 0.6477455716586151,
+          "ap_at_50_percent_prevalence": 0.6928494944970431
+        },
+        "quality": {
+          "ap": 0.6790910741585077,
+          "auroc": 0.6417069243156199,
+          "ap_at_50_percent_prevalence": 0.6872267164404207
+        },
+        "Q": {
+          "ap": 0.674116674954048,
+          "auroc": 0.6415056360708534,
+          "ap_at_50_percent_prevalence": 0.6823481648198662
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.010667423456506397,
+        "Q_minus_true": -0.0076727429633893784,
+        "Q_minus_baseline": 0.0023905920318297857,
+        "Q_minus_quality": -0.004974399204459634,
+        "true_minus_shuffled": -0.002994680493117019,
+        "true_minus_baseline": 0.010063334995219164,
+        "shuffled_minus_baseline": 0.013058015488336183,
+        "true_minus_Q": 0.0076727429633893784,
+        "shuffled_minus_Q": 0.010667423456506397
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.049925168965004145,
+          "high": 0.02434577291174033
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.04725279367602333,
+          "high": 0.023895368662178656
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.013565935688856123,
+          "high": 0.02102770967823284
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.040816398832076106,
+          "high": 0.027908012646741632
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03090138452887734,
+          "high": 0.032051420651082636
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01875183037823769,
+          "high": 0.05254839043197215
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0173568325468277,
+          "high": 0.05047479042289421
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.023895368662178663,
+          "high": 0.04725279367602333
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.02434577291174033,
+          "high": 0.04992516896500414
+        }
+      }
+    },
+    "assessment/joint_support_fraction/train_quantile_bin_3": {
+      "rows": 222,
+      "positive": 123,
+      "negative": 99,
+      "eligible": 222,
+      "eligible_positive": 123,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7381762568724819,
+          "auroc": 0.6937258766527059,
+          "ap_at_50_percent_prevalence": 0.6971587772964213
+        },
+        "true": {
+          "ap": 0.7679510402872447,
+          "auroc": 0.7155292765048862,
+          "ap_at_50_percent_prevalence": 0.7307349268505802
+        },
+        "shuffled": {
+          "ap": 0.7693960956437398,
+          "auroc": 0.7141332019380799,
+          "ap_at_50_percent_prevalence": 0.7326594783746834
+        },
+        "quality": {
+          "ap": 0.7600214109717383,
+          "auroc": 0.7068243409706824,
+          "ap_at_50_percent_prevalence": 0.7220233132888147
+        },
+        "Q": {
+          "ap": 0.7426452981413604,
+          "auroc": 0.7029646054036299,
+          "ap_at_50_percent_prevalence": 0.7019880734874651
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.02675079750237941,
+        "Q_minus_true": -0.025305742145884325,
+        "Q_minus_baseline": 0.004469041268878482,
+        "Q_minus_quality": -0.017376112830377877,
+        "true_minus_shuffled": -0.001445055356495084,
+        "true_minus_baseline": 0.029774783414762807,
+        "shuffled_minus_baseline": 0.03121983877125789,
+        "true_minus_Q": 0.025305742145884325,
+        "shuffled_minus_Q": 0.02675079750237941
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.054099052482953255,
+          "high": 0.008453795380358304
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.05256107317221799,
+          "high": 0.008062291108382996
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.014997672973634798,
+          "high": 0.02396409455530657
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.04390472594077209,
+          "high": 0.02274663578235591
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.02486809519411493,
+          "high": 0.015987586157695653
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0055308399532903426,
+          "high": 0.056705551123307066
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.004462528492693512,
+          "high": 0.058370742601434586
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.008062291108383001,
+          "high": 0.05256107317221798
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.008453795380358306,
+          "high": 0.05409905248295325
+        }
+      }
+    },
+    "assessment/actual_null_token_change/train_quantile_bin_0": {
+      "rows": 157,
+      "positive": 89,
+      "negative": 68,
+      "eligible": 157,
+      "eligible_positive": 89,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7695737529253452,
+          "auroc": 0.6759748843357567,
+          "ap_at_50_percent_prevalence": 0.7257838731918609
+        },
+        "true": {
+          "ap": 0.7839559565067964,
+          "auroc": 0.6979510905485788,
+          "ap_at_50_percent_prevalence": 0.7422201203553198
+        },
+        "shuffled": {
+          "ap": 0.7761320550197055,
+          "auroc": 0.6956378056840714,
+          "ap_at_50_percent_prevalence": 0.7321363538779767
+        },
+        "quality": {
+          "ap": 0.7747303975995271,
+          "auroc": 0.6855584930601454,
+          "ap_at_50_percent_prevalence": 0.7312329026826102
+        },
+        "Q": {
+          "ap": 0.7722240894781216,
+          "auroc": 0.686384666226041,
+          "ap_at_50_percent_prevalence": 0.7282094413582246
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.003907965541583902,
+        "Q_minus_true": -0.011731867028674792,
+        "Q_minus_baseline": 0.0026503365527763556,
+        "Q_minus_quality": -0.0025063081214055094,
+        "true_minus_shuffled": 0.00782390148709089,
+        "true_minus_baseline": 0.014382203581451147,
+        "shuffled_minus_baseline": 0.006558302094360258,
+        "true_minus_Q": 0.011731867028674792,
+        "shuffled_minus_Q": 0.003907965541583902
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.04278183959137864,
+          "high": 0.03878023419134415
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.045500828231334646,
+          "high": 0.02033891965182168
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01744502895018439,
+          "high": 0.022648131833081547
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03725996958106123,
+          "high": 0.028395740778542324
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.02317298186176705,
+          "high": 0.04688781415799602
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.017399661590484464,
+          "high": 0.053224968675489585
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.038598284641975664,
+          "high": 0.046935664134922055
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.020338919651821684,
+          "high": 0.04550082823133464
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.03878023419134418,
+          "high": 0.042781839591378636
+        }
+      }
+    },
+    "assessment/actual_null_token_change/train_quantile_bin_1": {
+      "rows": 145,
+      "positive": 85,
+      "negative": 60,
+      "eligible": 145,
+      "eligible_positive": 85,
+      "metrics": {
+        "baseline": {
+          "ap": 0.71386414122167,
+          "auroc": 0.6327450980392156,
+          "ap_at_50_percent_prevalence": 0.6418131436307388
+        },
+        "true": {
+          "ap": 0.736217306543475,
+          "auroc": 0.6435294117647059,
+          "ap_at_50_percent_prevalence": 0.6682951729839312
+        },
+        "shuffled": {
+          "ap": 0.7436593321228828,
+          "auroc": 0.6519607843137255,
+          "ap_at_50_percent_prevalence": 0.6772076006360215
+        },
+        "quality": {
+          "ap": 0.7220766133396819,
+          "auroc": 0.6407843137254903,
+          "ap_at_50_percent_prevalence": 0.6509599263050434
+        },
+        "Q": {
+          "ap": 0.7142502164713702,
+          "auroc": 0.6356862745098039,
+          "ap_at_50_percent_prevalence": 0.6419663677614557
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.029409115651512607,
+        "Q_minus_true": -0.021967090072104734,
+        "Q_minus_baseline": 0.0003860752497002462,
+        "Q_minus_quality": -0.007826396868311658,
+        "true_minus_shuffled": -0.007442025579407874,
+        "true_minus_baseline": 0.02235316532180498,
+        "shuffled_minus_baseline": 0.029795190901212854,
+        "true_minus_Q": 0.021967090072104734,
+        "shuffled_minus_Q": 0.029409115651512607
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.060082780260483123,
+          "high": 0.01161794904382625
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.05469217966010852,
+          "high": 0.014746980886083363
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.013835235722422666,
+          "high": 0.015929357695576574
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.042180851802663843,
+          "high": 0.032313999036724994
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03653181068445453,
+          "high": 0.016811702191001806
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.013550142843769366,
+          "high": 0.05250500658549419
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.010057721667447433,
+          "high": 0.06160741339900572
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.014746980886083363,
+          "high": 0.05469217966010852
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.011617949043826252,
+          "high": 0.0600827802604831
+        }
+      }
+    },
+    "assessment/actual_null_token_change/train_quantile_bin_2": {
+      "rows": 139,
+      "positive": 62,
+      "negative": 77,
+      "eligible": 139,
+      "eligible_positive": 62,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6141699917519889,
+          "auroc": 0.6723921240050271,
+          "ap_at_50_percent_prevalence": 0.6620592617008645
+        },
+        "true": {
+          "ap": 0.6424017752564896,
+          "auroc": 0.6857980728948471,
+          "ap_at_50_percent_prevalence": 0.6873463648443563
+        },
+        "shuffled": {
+          "ap": 0.6264555825035978,
+          "auroc": 0.6864264767490574,
+          "ap_at_50_percent_prevalence": 0.673352049763412
+        },
+        "quality": {
+          "ap": 0.6254678466982966,
+          "auroc": 0.6694595726853791,
+          "ap_at_50_percent_prevalence": 0.6719093700289585
+        },
+        "Q": {
+          "ap": 0.6203109459462022,
+          "auroc": 0.679514034352744,
+          "ap_at_50_percent_prevalence": 0.6679906150062371
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.006144636557395611,
+        "Q_minus_true": -0.022090829310287385,
+        "Q_minus_baseline": 0.006140954194213233,
+        "Q_minus_quality": -0.005156900752094407,
+        "true_minus_shuffled": 0.015946192752891775,
+        "true_minus_baseline": 0.028231783504500618,
+        "shuffled_minus_baseline": 0.012285590751608844,
+        "true_minus_Q": 0.022090829310287385,
+        "shuffled_minus_Q": 0.006144636557395611
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.05341575953372609,
+          "high": 0.04378857543055696
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.06799251531778942,
+          "high": 0.033616652346672625
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01872164312841072,
+          "high": 0.044020922019858695
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.04546482821651917,
+          "high": 0.04933996789374944
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.02692398781831705,
+          "high": 0.055376236785518694
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.017556547459118336,
+          "high": 0.07516439042344154
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0319312604896169,
+          "high": 0.06484511950705026
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.033616652346672625,
+          "high": 0.06799251531778941
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.04378857543055697,
+          "high": 0.053415759533726084
+        }
+      }
+    },
+    "assessment/actual_null_token_change/train_quantile_bin_3": {
+      "rows": 218,
+      "positive": 95,
+      "negative": 123,
+      "eligible": 218,
+      "eligible_positive": 95,
+      "metrics": {
+        "baseline": {
+          "ap": 0.5716262300886668,
+          "auroc": 0.6415917843388961,
+          "ap_at_50_percent_prevalence": 0.6304002300876407
+        },
+        "true": {
+          "ap": 0.6094718327263582,
+          "auroc": 0.6449293966623877,
+          "ap_at_50_percent_prevalence": 0.6640948256646363
+        },
+        "shuffled": {
+          "ap": 0.6151604465039279,
+          "auroc": 0.6509199828840393,
+          "ap_at_50_percent_prevalence": 0.6692577058357069
+        },
+        "quality": {
+          "ap": 0.5947137465752032,
+          "auroc": 0.6504065040650407,
+          "ap_at_50_percent_prevalence": 0.6515974070990995
+        },
+        "Q": {
+          "ap": 0.5766341100738182,
+          "auroc": 0.6408215661103979,
+          "ap_at_50_percent_prevalence": 0.6348102560879503
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.03852633643010972,
+        "Q_minus_true": -0.032837722652540036,
+        "Q_minus_baseline": 0.005007879985151398,
+        "Q_minus_quality": -0.018079636501385,
+        "true_minus_shuffled": -0.005688613777569684,
+        "true_minus_baseline": 0.03784560263769143,
+        "shuffled_minus_baseline": 0.04353421641526112,
+        "true_minus_Q": 0.032837722652540036,
+        "shuffled_minus_Q": 0.03852633643010972
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.08698817432724015,
+          "high": 0.01252115538397341
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.07973300849436346,
+          "high": 0.01571509933169685
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01853558208480601,
+          "high": 0.032812414838892405
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.06525916468625537,
+          "high": 0.02476728496693565
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03511971720689083,
+          "high": 0.023674275870771536
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01307237246286889,
+          "high": 0.08890898724980915
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.006963074276143188,
+          "high": 0.09341927621857367
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.015715099331696854,
+          "high": 0.07973300849436343
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.012521155383973415,
+          "high": 0.08698817432724014
+        }
+      }
+    },
+    "assessment/length_asymmetry/train_quantile_bin_0": {
+      "rows": 185,
+      "positive": 102,
+      "negative": 83,
+      "eligible": 185,
+      "eligible_positive": 102,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6390702147332532,
+          "auroc": 0.590656744625561,
+          "ap_at_50_percent_prevalence": 0.59132057115305
+        },
+        "true": {
+          "ap": 0.6789597972000331,
+          "auroc": 0.612095440585873,
+          "ap_at_50_percent_prevalence": 0.6352712891773367
+        },
+        "shuffled": {
+          "ap": 0.6743373419521476,
+          "auroc": 0.6146940703992441,
+          "ap_at_50_percent_prevalence": 0.6298631946569984
+        },
+        "quality": {
+          "ap": 0.6684477777736264,
+          "auroc": 0.6067800614221592,
+          "ap_at_50_percent_prevalence": 0.6237518459102877
+        },
+        "Q": {
+          "ap": 0.6420732583246668,
+          "auroc": 0.5935506732813608,
+          "ap_at_50_percent_prevalence": 0.5946776641847951
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.03226408362748079,
+        "Q_minus_true": -0.036886538875366304,
+        "Q_minus_baseline": 0.003003043591413568,
+        "Q_minus_quality": -0.026374519448959632,
+        "true_minus_shuffled": 0.004622455247885515,
+        "true_minus_baseline": 0.03988958246677987,
+        "shuffled_minus_baseline": 0.035267127218894356,
+        "true_minus_Q": 0.036886538875366304,
+        "shuffled_minus_Q": 0.03226408362748079
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.06602492791341381,
+          "high": 0.015438017576683645
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.0680784711022436,
+          "high": 0.0069076185556682
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.017761836503307444,
+          "high": 0.022088246858192263
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.05453594500058233,
+          "high": 0.01231450544684421
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.022906598503631834,
+          "high": 0.03528657880527577
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.00237613199252647,
+          "high": 0.06631289862472076
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.015897403064035778,
+          "high": 0.06805394756066885
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.006907618555668204,
+          "high": 0.06807847110224358
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.015438017576683657,
+          "high": 0.06602492791341379
+        }
+      }
+    },
+    "assessment/length_asymmetry/train_quantile_bin_1": {
+      "rows": 157,
+      "positive": 81,
+      "negative": 76,
+      "eligible": 157,
+      "eligible_positive": 81,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7523519826392548,
+          "auroc": 0.7021604938271605,
+          "ap_at_50_percent_prevalence": 0.7418707507801682
+        },
+        "true": {
+          "ap": 0.7708376495352869,
+          "auroc": 0.7158869395711501,
+          "ap_at_50_percent_prevalence": 0.7611766156288591
+        },
+        "shuffled": {
+          "ap": 0.7694686844152802,
+          "auroc": 0.7176738141650422,
+          "ap_at_50_percent_prevalence": 0.7596607180584074
+        },
+        "quality": {
+          "ap": 0.7439256941599981,
+          "auroc": 0.6998050682261209,
+          "ap_at_50_percent_prevalence": 0.73307829279129
+        },
+        "Q": {
+          "ap": 0.7565662829185079,
+          "auroc": 0.7090643274853801,
+          "ap_at_50_percent_prevalence": 0.7461983562795245
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.012902401496772242,
+        "Q_minus_true": -0.014271366616778969,
+        "Q_minus_baseline": 0.004214300279253069,
+        "Q_minus_quality": 0.012640588758509819,
+        "true_minus_shuffled": 0.0013689651200067265,
+        "true_minus_baseline": 0.018485666896032038,
+        "shuffled_minus_baseline": 0.01711670177602531,
+        "true_minus_Q": 0.014271366616778969,
+        "shuffled_minus_Q": 0.012902401496772242
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.05495333446772016,
+          "high": 0.02946778598242681
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.06656389072271696,
+          "high": 0.0299257510500388
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.014101812640428202,
+          "high": 0.02418504230777163
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.017729570129565466,
+          "high": 0.04861164465826522
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.025361109324855004,
+          "high": 0.03015061186949263
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02597825982174868,
+          "high": 0.07038056337945629
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.023196283045187376,
+          "high": 0.059982576603916295
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.029925751050038862,
+          "high": 0.06656389072271696
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.02946778598242682,
+          "high": 0.05495333446772016
+        }
+      }
+    },
+    "assessment/length_asymmetry/train_quantile_bin_2": {
+      "rows": 172,
+      "positive": 77,
+      "negative": 95,
+      "eligible": 172,
+      "eligible_positive": 77,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6380370786046222,
+          "auroc": 0.6279562542720437,
+          "ap_at_50_percent_prevalence": 0.6790082825439971
+        },
+        "true": {
+          "ap": 0.6399377285653263,
+          "auroc": 0.6236500341763499,
+          "ap_at_50_percent_prevalence": 0.6806609818827387
+        },
+        "shuffled": {
+          "ap": 0.6547190969979211,
+          "auroc": 0.6356801093643198,
+          "ap_at_50_percent_prevalence": 0.6939161795541142
+        },
+        "quality": {
+          "ap": 0.6475356952531326,
+          "auroc": 0.6363636363636364,
+          "ap_at_50_percent_prevalence": 0.6878638594534804
+        },
+        "Q": {
+          "ap": 0.637077614583216,
+          "auroc": 0.6284347231715652,
+          "ap_at_50_percent_prevalence": 0.678204721103325
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.01764148241470509,
+        "Q_minus_true": -0.0028601139821102795,
+        "Q_minus_baseline": -0.0009594640214062311,
+        "Q_minus_quality": -0.010458080669916603,
+        "true_minus_shuffled": -0.01478136843259481,
+        "true_minus_baseline": 0.0019006499607040483,
+        "shuffled_minus_baseline": 0.01668201839329886,
+        "true_minus_Q": 0.0028601139821102795,
+        "shuffled_minus_Q": 0.01764148241470509
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.057443456410475574,
+          "high": 0.018568185947763854
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.044997803209029005,
+          "high": 0.03364192933117832
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.023452954122613015,
+          "high": 0.017965019427611157
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.05235114950202994,
+          "high": 0.02162399320332982
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.05215268646420029,
+          "high": 0.013469483782665425
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.03861998909654652,
+          "high": 0.043993580289229846
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.018096726189013614,
+          "high": 0.05618074523127431
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.03364192933117833,
+          "high": 0.044997803209029
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.018568185947763858,
+          "high": 0.05744345641047557
+        }
+      }
+    },
+    "assessment/length_asymmetry/train_quantile_bin_3": {
+      "rows": 145,
+      "positive": 71,
+      "negative": 74,
+      "eligible": 145,
+      "eligible_positive": 71,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6618467946880758,
+          "auroc": 0.6815759421393224,
+          "ap_at_50_percent_prevalence": 0.6706706572664414
+        },
+        "true": {
+          "ap": 0.692911695590483,
+          "auroc": 0.7046060144651695,
+          "ap_at_50_percent_prevalence": 0.7011332168870782
+        },
+        "shuffled": {
+          "ap": 0.6823566558696099,
+          "auroc": 0.701941377997716,
+          "ap_at_50_percent_prevalence": 0.6907923751385576
+        },
+        "quality": {
+          "ap": 0.6648029328675472,
+          "auroc": 0.6804339550818423,
+          "ap_at_50_percent_prevalence": 0.6735068202192582
+        },
+        "Q": {
+          "ap": 0.6705709959396332,
+          "auroc": 0.6924248191853826,
+          "ap_at_50_percent_prevalence": 0.6792387324317855
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.01178565992997671,
+        "Q_minus_true": -0.022340699650849838,
+        "Q_minus_baseline": 0.008724201251557373,
+        "Q_minus_quality": 0.005768063072085994,
+        "true_minus_shuffled": 0.010555039720873127,
+        "true_minus_baseline": 0.03106490090240721,
+        "shuffled_minus_baseline": 0.020509861181534084,
+        "true_minus_Q": 0.022340699650849838,
+        "shuffled_minus_Q": 0.01178565992997671
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.05230338167915672,
+          "high": 0.027077523722860677
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.06870866310028809,
+          "high": 0.012943763263069612
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.015502754654374375,
+          "high": 0.03476175913147171
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03243192215461226,
+          "high": 0.04462817697432397
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.01973195735602429,
+          "high": 0.053877011514827856
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01009275603748748,
+          "high": 0.08076488476958667
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.025422284845084686,
+          "high": 0.05890340297911012
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.012943763263069613,
+          "high": 0.06870866310028807
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.027077523722860694,
+          "high": 0.05230338167915671
+        }
+      }
+    },
+    "assessment/candidate_depth/train_quantile_bin_0": {
+      "rows": 251,
+      "positive": 125,
+      "negative": 126,
+      "eligible": 251,
+      "eligible_positive": 125,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6031006935770162,
+          "auroc": 0.625968253968254,
+          "ap_at_50_percent_prevalence": 0.604967730833607
+        },
+        "true": {
+          "ap": 0.6160121820251752,
+          "auroc": 0.6273015873015872,
+          "ap_at_50_percent_prevalence": 0.6178430171582292
+        },
+        "shuffled": {
+          "ap": 0.6229550271202322,
+          "auroc": 0.6335873015873016,
+          "ap_at_50_percent_prevalence": 0.6247726940070124
+        },
+        "quality": {
+          "ap": 0.5855400095446534,
+          "auroc": 0.6068571428571428,
+          "ap_at_50_percent_prevalence": 0.5874456586284283
+        },
+        "Q": {
+          "ap": 0.5885476857557739,
+          "auroc": 0.6201269841269841,
+          "ap_at_50_percent_prevalence": 0.5904600354533455
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.03440734136445833,
+        "Q_minus_true": -0.027464496269401284,
+        "Q_minus_baseline": -0.014553007821242359,
+        "Q_minus_quality": 0.0030076762111205246,
+        "true_minus_shuffled": -0.006942845095057049,
+        "true_minus_baseline": 0.012911488448158925,
+        "shuffled_minus_baseline": 0.019854333543215974,
+        "true_minus_Q": 0.027464496269401284,
+        "shuffled_minus_Q": 0.03440734136445833
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.07835200722027054,
+          "high": 0.01757033197168931
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.0706174700181183,
+          "high": 0.023962529870210955
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.03489158179310651,
+          "high": 0.015307069300631712
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03694152665548249,
+          "high": 0.05096982605938561
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.036664987271214276,
+          "high": 0.0257126446813724
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.033660048712254344,
+          "high": 0.05849693939395424
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02924409573568657,
+          "high": 0.06590537294030228
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.02396252987021098,
+          "high": 0.07061747001811824
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.01757033197168932,
+          "high": 0.07835200722027051
+        }
+      }
+    },
+    "assessment/candidate_depth/train_quantile_bin_1": {
+      "rows": 175,
+      "positive": 77,
+      "negative": 98,
+      "eligible": 175,
+      "eligible_positive": 77,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6173649247027673,
+          "auroc": 0.6385502252849192,
+          "ap_at_50_percent_prevalence": 0.6675542487214929
+        },
+        "true": {
+          "ap": 0.6331863944307903,
+          "auroc": 0.6429896633978268,
+          "ap_at_50_percent_prevalence": 0.6810147019464933
+        },
+        "shuffled": {
+          "ap": 0.6376018667597826,
+          "auroc": 0.6509408958388551,
+          "ap_at_50_percent_prevalence": 0.6853963009771117
+        },
+        "quality": {
+          "ap": 0.6251521334850152,
+          "auroc": 0.6444473893453485,
+          "ap_at_50_percent_prevalence": 0.6748599883871598
+        },
+        "Q": {
+          "ap": 0.6228401638635922,
+          "auroc": 0.6427246223164591,
+          "ap_at_50_percent_prevalence": 0.6723007284341229
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.014761702896190387,
+        "Q_minus_true": -0.010346230567198078,
+        "Q_minus_baseline": 0.0054752391608249296,
+        "Q_minus_quality": -0.0023119696214229934,
+        "true_minus_shuffled": -0.004415472328992309,
+        "true_minus_baseline": 0.015821469728023008,
+        "shuffled_minus_baseline": 0.020236942057015317,
+        "true_minus_Q": 0.010346230567198078,
+        "shuffled_minus_Q": 0.014761702896190387
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.06536795196214802,
+          "high": 0.018770942703378493
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.051204908793697705,
+          "high": 0.024911033923577467
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.01800296845599025,
+          "high": 0.033643169413812415
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.05632516067368964,
+          "high": 0.041537837386866124
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03700471511359628,
+          "high": 0.02603122984958161
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.02434953570377856,
+          "high": 0.060577115037136385
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0157414057689792,
+          "high": 0.06211277094899919
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.024911033923577488,
+          "high": 0.05120490879369765
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.018770942703378504,
+          "high": 0.06536795196214802
+        }
+      }
+    },
+    "assessment/candidate_depth/train_quantile_bin_2": {
+      "rows": 109,
+      "positive": 55,
+      "negative": 54,
+      "eligible": 109,
+      "eligible_positive": 55,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7540828461817303,
+          "auroc": 0.7185185185185186,
+          "ap_at_50_percent_prevalence": 0.7511280461572861
+        },
+        "true": {
+          "ap": 0.7628809134264282,
+          "auroc": 0.7299663299663299,
+          "ap_at_50_percent_prevalence": 0.7599957122351563
+        },
+        "shuffled": {
+          "ap": 0.7635314556053625,
+          "auroc": 0.7323232323232323,
+          "ap_at_50_percent_prevalence": 0.7606477812170217
+        },
+        "quality": {
+          "ap": 0.7633225119140131,
+          "auroc": 0.7326599326599327,
+          "ap_at_50_percent_prevalence": 0.7604161974000176
+        },
+        "Q": {
+          "ap": 0.7531021559692269,
+          "auroc": 0.7202020202020202,
+          "ap_at_50_percent_prevalence": 0.7501149800626797
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.010429299636135592,
+        "Q_minus_true": -0.009778757457201248,
+        "Q_minus_baseline": -0.0009806902125033545,
+        "Q_minus_quality": -0.010220355944786208,
+        "true_minus_shuffled": -0.0006505421789343435,
+        "true_minus_baseline": 0.008798067244697894,
+        "shuffled_minus_baseline": 0.009448609423632237,
+        "true_minus_Q": 0.009778757457201248,
+        "shuffled_minus_Q": 0.010429299636135592
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.053929771624321894,
+          "high": 0.033606349180126796
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.053214878261527036,
+          "high": 0.03697707927900522
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.028517801606070557,
+          "high": 0.018165556063099258
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.0516044825204497,
+          "high": 0.027052320345943664
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.031161203081189453,
+          "high": 0.027373946323050225
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.034318474280242484,
+          "high": 0.05238349212223685
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.03502534565125071,
+          "high": 0.05044541919284685
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.036977079279005245,
+          "high": 0.05321487826152702
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.0336063491801268,
+          "high": 0.05392977162432189
+        }
+      }
+    },
+    "assessment/candidate_depth/train_quantile_bin_3": {
+      "rows": 124,
+      "positive": 74,
+      "negative": 50,
+      "eligible": 124,
+      "eligible_positive": 74,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7183551259912878,
+          "auroc": 0.6381081081081081,
+          "ap_at_50_percent_prevalence": 0.6364287797960457
+        },
+        "true": {
+          "ap": 0.7723561170690515,
+          "auroc": 0.6827027027027027,
+          "ap_at_50_percent_prevalence": 0.7023645130013001
+        },
+        "shuffled": {
+          "ap": 0.781129912639497,
+          "auroc": 0.6808108108108109,
+          "ap_at_50_percent_prevalence": 0.7145335445316938
+        },
+        "quality": {
+          "ap": 0.7674565211891186,
+          "auroc": 0.6627027027027028,
+          "ap_at_50_percent_prevalence": 0.6980312252306833
+        },
+        "Q": {
+          "ap": 0.737025405510524,
+          "auroc": 0.6562162162162162,
+          "ap_at_50_percent_prevalence": 0.6591252771279806
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.04410450712897307,
+        "Q_minus_true": -0.03533071155852752,
+        "Q_minus_baseline": 0.018670279519236166,
+        "Q_minus_quality": -0.030431115678594578,
+        "true_minus_shuffled": -0.008773795570445553,
+        "true_minus_baseline": 0.05400099107776368,
+        "shuffled_minus_baseline": 0.06277478664820924,
+        "true_minus_Q": 0.03533071155852752,
+        "shuffled_minus_Q": 0.04410450712897307
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.08280903716195732,
+          "high": -0.0021862367813724227
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.06616703425084286,
+          "high": 0.003622622174756562
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0064744483176771474,
+          "high": 0.0574099502624442
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.06853298073210251,
+          "high": 0.010087025079123643
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.04979490845531092,
+          "high": 0.021892470434145384
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.008893102660878643,
+          "high": 0.09174005747762248
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": 0.008167577799055937,
+          "high": 0.10566928995566009
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.00362262217475657,
+          "high": 0.06616703425084286
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": 0.0021862367813724193,
+          "high": 0.08280903716195731
+        }
+      }
+    },
+    "assessment/family_witness_count_-1": {
+      "rows": 0,
+      "positive": 0,
+      "negative": 0,
+      "eligible": 0,
+      "eligible_positive": 0,
+      "status": "insufficient_classes"
+    },
+    "assessment/family_witness_count_0": {
+      "rows": 272,
+      "positive": 150,
+      "negative": 122,
+      "eligible": 272,
+      "eligible_positive": 150,
+      "metrics": {
+        "baseline": {
+          "ap": 0.7367055040396704,
+          "auroc": 0.6666939890710383,
+          "ap_at_50_percent_prevalence": 0.6993844044592896
+        },
+        "true": {
+          "ap": 0.751317518192921,
+          "auroc": 0.6777049180327868,
+          "ap_at_50_percent_prevalence": 0.7157011915552294
+        },
+        "shuffled": {
+          "ap": 0.7463961099342293,
+          "auroc": 0.6758469945355191,
+          "ap_at_50_percent_prevalence": 0.7100300844799632
+        },
+        "quality": {
+          "ap": 0.7415009078476384,
+          "auroc": 0.6715846994535519,
+          "ap_at_50_percent_prevalence": 0.704712933839283
+        },
+        "Q": {
+          "ap": 0.7367949330076298,
+          "auroc": 0.6693989071038251,
+          "ap_at_50_percent_prevalence": 0.6993096989118909
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.009601176926599564,
+        "Q_minus_true": -0.014522585185291259,
+        "Q_minus_baseline": 8.942896795938182e-05,
+        "Q_minus_quality": -0.004705974840008675,
+        "true_minus_shuffled": 0.004921408258691695,
+        "true_minus_baseline": 0.014612014153250641,
+        "shuffled_minus_baseline": 0.009690605894558946,
+        "true_minus_Q": 0.014522585185291259,
+        "shuffled_minus_Q": 0.009601176926599564
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.03701296882760379,
+          "high": 0.01722310189661958
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.0436694864934537,
+          "high": 0.009078776802127807
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.014846360078621964,
+          "high": 0.015766703066020845
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.030864363742693784,
+          "high": 0.020700393047249428
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.011561826051933915,
+          "high": 0.027142742107949102
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.008612195659037172,
+          "high": 0.04285458247095584
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.017442334121804005,
+          "high": 0.03616115386227856
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.00907877680212782,
+          "high": 0.043669486493453695
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.017223101896619582,
+          "high": 0.03701296882760379
+        }
+      }
+    },
+    "assessment/family_witness_count_1": {
+      "rows": 298,
+      "positive": 130,
+      "negative": 168,
+      "eligible": 298,
+      "eligible_positive": 130,
+      "metrics": {
+        "baseline": {
+          "ap": 0.5441799736259014,
+          "auroc": 0.6098443223443224,
+          "ap_at_50_percent_prevalence": 0.6054987470073752
+        },
+        "true": {
+          "ap": 0.5832167399417401,
+          "auroc": 0.6237637362637363,
+          "ap_at_50_percent_prevalence": 0.6404599844087829
+        },
+        "shuffled": {
+          "ap": 0.586070403414078,
+          "auroc": 0.6303571428571428,
+          "ap_at_50_percent_prevalence": 0.6431640886917509
+        },
+        "quality": {
+          "ap": 0.556571530653721,
+          "auroc": 0.6170329670329671,
+          "ap_at_50_percent_prevalence": 0.6164587004700903
+        },
+        "Q": {
+          "ap": 0.5510778818123288,
+          "auroc": 0.6175824175824176,
+          "ap_at_50_percent_prevalence": 0.6119320652982858
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.03499252160174926,
+        "Q_minus_true": -0.03213885812941131,
+        "Q_minus_baseline": 0.006897908186427326,
+        "Q_minus_quality": -0.005493648841392251,
+        "true_minus_shuffled": -0.002853663472337953,
+        "true_minus_baseline": 0.039036766315838634,
+        "shuffled_minus_baseline": 0.041890429788176586,
+        "true_minus_Q": 0.03213885812941131,
+        "shuffled_minus_Q": 0.03499252160174926
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.06661337886062946,
+          "high": 0.002830988435011844
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.06245858245938322,
+          "high": 0.005846035412812694
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.013326289061596771,
+          "high": 0.024052745934700942
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03771642366328051,
+          "high": 0.03247158838735914
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.02832055253510201,
+          "high": 0.023074867866478395
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0009055577703715539,
+          "high": 0.06870317774071785
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.00017234415419336253,
+          "high": 0.07154949407015838
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.005846035412812696,
+          "high": 0.06245858245938322
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.0028309884350118495,
+          "high": 0.06661337886062944
+        }
+      }
+    },
+    "assessment/family_witness_count_2": {
+      "rows": 89,
+      "positive": 51,
+      "negative": 38,
+      "eligible": 89,
+      "eligible_positive": 51,
+      "metrics": {
+        "baseline": {
+          "ap": 0.8114899061524035,
+          "auroc": 0.7314241486068112,
+          "ap_at_50_percent_prevalence": 0.7693737303412398
+        },
+        "true": {
+          "ap": 0.8216497570766733,
+          "auroc": 0.738390092879257,
+          "ap_at_50_percent_prevalence": 0.7820619609266799
+        },
+        "shuffled": {
+          "ap": 0.8318137050122348,
+          "auroc": 0.7512899896800825,
+          "ap_at_50_percent_prevalence": 0.7941886147663104
+        },
+        "quality": {
+          "ap": 0.8140074762226285,
+          "auroc": 0.7270381836945303,
+          "ap_at_50_percent_prevalence": 0.7730423414033598
+        },
+        "Q": {
+          "ap": 0.8082531818844381,
+          "auroc": 0.7301341589267286,
+          "ap_at_50_percent_prevalence": 0.7652616610064731
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.023560523127796773,
+        "Q_minus_true": -0.01339657519223525,
+        "Q_minus_baseline": -0.0032367242679653963,
+        "Q_minus_quality": -0.005754294338190413,
+        "true_minus_shuffled": -0.010163947935561524,
+        "true_minus_baseline": 0.010159850924269853,
+        "shuffled_minus_baseline": 0.020323798859831377,
+        "true_minus_Q": 0.01339657519223525,
+        "shuffled_minus_Q": 0.023560523127796773
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.07908128615966095,
+          "high": 0.024031561687253972
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.06649152803870591,
+          "high": 0.03598244722575455
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.0485999372152685,
+          "high": 0.03173197604589407
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.05811589416052584,
+          "high": 0.035904200380559956
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.04611830951269833,
+          "high": 0.02000888837190191
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.047036720507204345,
+          "high": 0.06431885678784786
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.031171560049949705,
+          "high": 0.07110933970794862
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.035982447225754555,
+          "high": 0.06649152803870588
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.024031561687253993,
+          "high": 0.07908128615966094
+        }
+      }
+    },
+    "assessment/both_family_annotations_adequate": {
+      "rows": 39,
+      "positive": 23,
+      "negative": 16,
+      "eligible": 39,
+      "eligible_positive": 23,
+      "metrics": {
+        "baseline": {
+          "ap": 0.6984880761254241,
+          "auroc": 0.6114130434782609,
+          "ap_at_50_percent_prevalence": 0.6245358267451282
+        },
+        "true": {
+          "ap": 0.7059453260564796,
+          "auroc": 0.625,
+          "ap_at_50_percent_prevalence": 0.6326092241828738
+        },
+        "shuffled": {
+          "ap": 0.7079163374782921,
+          "auroc": 0.6304347826086957,
+          "ap_at_50_percent_prevalence": 0.6345038754043427
+        },
+        "quality": {
+          "ap": 0.6950157606895742,
+          "auroc": 0.6114130434782609,
+          "ap_at_50_percent_prevalence": 0.6209156408344075
+        },
+        "Q": {
+          "ap": 0.7058908598255429,
+          "auroc": 0.6277173913043478,
+          "ap_at_50_percent_prevalence": 0.6328285013618895
+        }
+      },
+      "contrasts": {
+        "Q_minus_shuffled": -0.002025477652749186,
+        "Q_minus_true": -5.4466230936744964e-05,
+        "Q_minus_baseline": 0.00740278370011882,
+        "Q_minus_quality": 0.010875099135968735,
+        "true_minus_shuffled": -0.001971011421812441,
+        "true_minus_baseline": 0.007457249931055565,
+        "shuffled_minus_baseline": 0.009428261352868006,
+        "true_minus_Q": 5.4466230936744964e-05,
+        "shuffled_minus_Q": 0.002025477652749186
+      },
+      "ap_intervals": {
+        "Q_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.06923270575383282,
+          "high": 0.07625042669543107
+        },
+        "Q_minus_true": {
+          "replicates": 1000,
+          "low": -0.07641734923634518,
+          "high": 0.08465801673655286
+        },
+        "Q_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.00362401795735129,
+          "high": 0.04981713559949386
+        },
+        "Q_minus_quality": {
+          "replicates": 1000,
+          "low": -0.03664016043480342,
+          "high": 0.08549181240625098
+        },
+        "true_minus_shuffled": {
+          "replicates": 1000,
+          "low": -0.038129500184972416,
+          "high": 0.034850796133690964
+        },
+        "true_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.06865898273088449,
+          "high": 0.08834658873064677
+        },
+        "shuffled_minus_baseline": {
+          "replicates": 1000,
+          "low": -0.06071533294747581,
+          "high": 0.07619154516793837
+        },
+        "true_minus_Q": {
+          "replicates": 1000,
+          "low": -0.08465801673655289,
+          "high": 0.07641734923634506
+        },
+        "shuffled_minus_Q": {
+          "replicates": 1000,
+          "low": -0.07625042669543113,
+          "high": 0.06923270575383281
+        }
+      }
+    }
+  },
+  "fit_counts": {
+    "fit": [
+      894,
+      931
+    ],
+    "calibration": [
+      540,
+      528
+    ],
+    "assessment": [
+      494,
+      464
+    ]
+  },
+  "alphas": {
+    "Q": 0.5,
+    "true": 1,
+    "shuffled": 1,
+    "quality": 1
+  },
+  "common_alpha_descriptive": {
+    "assessment": {
+      "0": {
+        "Q": {
+          "ap": 0.6409298984735158,
+          "auroc": 0.6481441086137094
+        },
+        "true": {
+          "ap": 0.6409298984735158,
+          "auroc": 0.6481441086137094
+        },
+        "shuffled": {
+          "ap": 0.6409298984735158,
+          "auroc": 0.6481441086137094
+        }
+      },
+      "0.1": {
+        "Q": {
+          "ap": 0.6415672817954787,
+          "auroc": 0.6488726790450928
+        },
+        "true": {
+          "ap": 0.6435301128001484,
+          "auroc": 0.6496928661175485
+        },
+        "shuffled": {
+          "ap": 0.6426618668642297,
+          "auroc": 0.6495358090185677
+        }
+      },
+      "0.25": {
+        "Q": {
+          "ap": 0.6425018223670457,
+          "auroc": 0.6500375191958677
+        },
+        "true": {
+          "ap": 0.6472195256556884,
+          "auroc": 0.6514030434175625
+        },
+        "shuffled": {
+          "ap": 0.6470372674588482,
+          "auroc": 0.6516648052491973
+        }
+      },
+      "0.5": {
+        "Q": {
+          "ap": 0.6438605948220597,
+          "auroc": 0.6519527432639954
+        },
+        "true": {
+          "ap": 0.6540023014218339,
+          "auroc": 0.6540773767974312
+        },
+        "shuffled": {
+          "ap": 0.6533944293882428,
+          "auroc": 0.6550807971520312
+        }
+      },
+      "1": {
+        "Q": {
+          "ap": 0.6467153332245006,
+          "auroc": 0.6544307552701382
+        },
+        "true": {
+          "ap": 0.6643610214625079,
+          "auroc": 0.65865820885104
+        },
+        "shuffled": {
+          "ap": 0.6632477115533787,
+          "auroc": 0.661070780399274
+        }
+      }
+    },
+    "assessment/eligible": {
+      "0": {
+        "Q": {
+          "ap": 0.660629239430838,
+          "auroc": 0.6493580060422961
+        },
+        "true": {
+          "ap": 0.660629239430838,
+          "auroc": 0.6493580060422961
+        },
+        "shuffled": {
+          "ap": 0.660629239430838,
+          "auroc": 0.6493580060422961
+        }
+      },
+      "0.1": {
+        "Q": {
+          "ap": 0.6616458625592099,
+          "auroc": 0.6503481688895438
+        },
+        "true": {
+          "ap": 0.6639432792509614,
+          "auroc": 0.6514442561344043
+        },
+        "shuffled": {
+          "ap": 0.6628138886569689,
+          "auroc": 0.6512231965219955
+        }
+      },
+      "0.25": {
+        "Q": {
+          "ap": 0.6629213700556044,
+          "auroc": 0.651914007810773
+        },
+        "true": {
+          "ap": 0.6688435173120748,
+          "auroc": 0.6539495984083707
+        },
+        "shuffled": {
+          "ap": 0.6686963106645772,
+          "auroc": 0.6541246039348609
+        }
+      },
+      "0.5": {
+        "Q": {
+          "ap": 0.6644734270910924,
+          "auroc": 0.6543088202785352
+        },
+        "true": {
+          "ap": 0.6771667046602581,
+          "auroc": 0.6574957630240955
+        },
+        "shuffled": {
+          "ap": 0.6766016845220713,
+          "auroc": 0.6586286935376906
+        }
+      },
+      "1": {
+        "Q": {
+          "ap": 0.6686111092616136,
+          "auroc": 0.6576523469162185
+        },
+        "true": {
+          "ap": 0.689536410411969,
+          "auroc": 0.6632709453982758
+        },
+        "shuffled": {
+          "ap": 0.6881859622135618,
+          "auroc": 0.6661723528111414
+        }
+      }
+    },
+    "fixed_dev_sample": {
+      "0": {
+        "Q": {
+          "ap": 0.6483543556315394,
+          "auroc": 0.649527
+        },
+        "true": {
+          "ap": 0.6483543556315394,
+          "auroc": 0.649527
+        },
+        "shuffled": {
+          "ap": 0.6483543556315394,
+          "auroc": 0.649527
+        }
+      },
+      "0.1": {
+        "Q": {
+          "ap": 0.6488068335592538,
+          "auroc": 0.6500322500000001
+        },
+        "true": {
+          "ap": 0.6496718811618034,
+          "auroc": 0.65022175
+        },
+        "shuffled": {
+          "ap": 0.6495600549230862,
+          "auroc": 0.6501172500000001
+        }
+      },
+      "0.25": {
+        "Q": {
+          "ap": 0.6495269087542979,
+          "auroc": 0.6507229999999999
+        },
+        "true": {
+          "ap": 0.651897242698827,
+          "auroc": 0.6511077500000001
+        },
+        "shuffled": {
+          "ap": 0.6514789704504587,
+          "auroc": 0.65085025
+        }
+      },
+      "0.5": {
+        "Q": {
+          "ap": 0.6503182199455233,
+          "auroc": 0.65164125
+        },
+        "true": {
+          "ap": 0.6545632806560036,
+          "auroc": 0.65218325
+        },
+        "shuffled": {
+          "ap": 0.653527060521366,
+          "auroc": 0.6519087499999999
+        }
+      },
+      "1": {
+        "Q": {
+          "ap": 0.6505024334790886,
+          "auroc": 0.6530495000000001
+        },
+        "true": {
+          "ap": 0.6574534160836327,
+          "auroc": 0.6534579999999999
+        },
+        "shuffled": {
+          "ap": 0.6553094219577839,
+          "auroc": 0.65303575
+        }
+      }
+    },
+    "calibration": {
+      "0": {
+        "Q": {
+          "ap": 0.6427660788023095,
+          "auroc": 0.6517711840628506
+        },
+        "true": {
+          "ap": 0.6427660788023095,
+          "auroc": 0.6517711840628506
+        },
+        "shuffled": {
+          "ap": 0.6427660788023095,
+          "auroc": 0.6517711840628506
+        }
+      },
+      "0.1": {
+        "Q": {
+          "ap": 0.6432391645650842,
+          "auroc": 0.6517957351290684
+        },
+        "true": {
+          "ap": 0.6438337630467569,
+          "auroc": 0.6522551907968575
+        },
+        "shuffled": {
+          "ap": 0.6438428090910099,
+          "auroc": 0.6521780303030302
+        }
+      },
+      "0.25": {
+        "Q": {
+          "ap": 0.643732695340262,
+          "auroc": 0.652118406285073
+        },
+        "true": {
+          "ap": 0.6457073486103981,
+          "auroc": 0.6529776936026936
+        },
+        "shuffled": {
+          "ap": 0.6452820223800431,
+          "auroc": 0.6525322671156004
+        }
+      },
+      "0.5": {
+        "Q": {
+          "ap": 0.6445259805353861,
+          "auroc": 0.652034231200898
+        },
+        "true": {
+          "ap": 0.6479635717846451,
+          "auroc": 0.6539176487093155
+        },
+        "shuffled": {
+          "ap": 0.6471545361926253,
+          "auroc": 0.6529636644219978
+        }
+      },
+      "1": {
+        "Q": {
+          "ap": 0.6442497627659443,
+          "auroc": 0.6510872615039281
+        },
+        "true": {
+          "ap": 0.6512062186581613,
+          "auroc": 0.6549102132435466
+        },
+        "shuffled": {
+          "ap": 0.6505740300771738,
+          "auroc": 0.6527286756453423
+        }
+      }
+    }
+  },
+  "unfused_eligible_head_metrics": {
+    "assessment": {
+      "true": {
+        "ap": 0.6356412223901218,
+        "auroc": 0.6126482941566576
+      },
+      "shuffled": {
+        "ap": 0.6416279461865385,
+        "auroc": 0.622476236091666
+      },
+      "quality": {
+        "ap": 0.5809884500038502,
+        "auroc": 0.5642178174047602
+      },
+      "Q": {
+        "ap": 0.5728403305427328,
+        "auroc": 0.5494344558249208
+      }
+    },
+    "assessment/eligible": {
+      "true": {
+        "ap": 0.6356412223901218,
+        "auroc": 0.6126482941566576
+      },
+      "shuffled": {
+        "ap": 0.6416279461865385,
+        "auroc": 0.622476236091666
+      },
+      "quality": {
+        "ap": 0.5809884500038502,
+        "auroc": 0.5642178174047602
+      },
+      "Q": {
+        "ap": 0.5728403305427328,
+        "auroc": 0.5494344558249208
+      }
+    },
+    "fixed_dev_sample": {
+      "true": {
+        "ap": 0.592001093006012,
+        "auroc": 0.5623764671114961
+      },
+      "shuffled": {
+        "ap": 0.5822255618861815,
+        "auroc": 0.5523947489649458
+      },
+      "quality": {
+        "ap": 0.5709498080446833,
+        "auroc": 0.5586134764204653
+      },
+      "Q": {
+        "ap": 0.5494803958929589,
+        "auroc": 0.5326955448484866
+      }
+    },
+    "calibration": {
+      "true": {
+        "ap": 0.5659619005721407,
+        "auroc": 0.5393053780150554
+      },
+      "shuffled": {
+        "ap": 0.5497874960291388,
+        "auroc": 0.516613613387807
+      },
+      "quality": {
+        "ap": 0.5743056412117594,
+        "auroc": 0.5805365482784838
+      },
+      "Q": {
+        "ap": 0.5000026339126671,
+        "auroc": 0.494439849278559
+      }
+    }
+  },
+  "diagnostic_stratum_cuts_from_eligible_train": {
+    "neff80_paired": [
+      72.37572090910191,
+      86.39680947707264,
+      97.40396825396826
+    ],
+    "neff80_per_residue": [
+      0.07811338160027871,
+      0.09837404658833229,
+      0.12813518696069032
+    ],
+    "minimum_quality": [
+      0.667910447761194,
+      0.7663551401869159,
+      0.8568872987477638
+    ],
+    "valid_interchain_cells": [
+      82350.0,
+      145800.0,
+      231660.0
+    ],
+    "joint_support_fraction": [
+      0.7906480682580769,
+      0.8825201636234647,
+      0.9366558324304803
+    ],
+    "actual_null_token_change": [
+      0.2053931156694585,
+      0.2659629336725922,
+      0.3175753974149458
+    ],
+    "length_asymmetry": [
+      1.3418647166361974,
+      1.8312883435582823,
+      2.828828828828829
+    ],
+    "candidate_depth": [
+      1455.0,
+      2152.0,
+      2639.0
+    ]
+  },
+  "assessment_group_influence": {
+    "protein": [
+      {
+        "group": "4659",
+        "removed_pairs": 30,
+        "remaining_pairs": 928,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019733161879896266,
+          "Q_minus_true": -0.0208793996501343,
+          "Q_minus_baseline": 0.00288610243138121,
+          "Q_minus_quality": -0.007108227069313244,
+          "true_minus_shuffled": 0.0011462377702380344,
+          "true_minus_baseline": 0.02376550208151551,
+          "shuffled_minus_baseline": 0.022619264311277476,
+          "true_minus_Q": 0.0208793996501343,
+          "shuffled_minus_Q": 0.019733161879896266
+        }
+      },
+      {
+        "group": "4424",
+        "removed_pairs": 13,
+        "remaining_pairs": 945,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019442249449384108,
+          "Q_minus_true": -0.02051448987099158,
+          "Q_minus_baseline": 0.002714788005154234,
+          "Q_minus_quality": -0.006670734863525318,
+          "true_minus_shuffled": 0.0010722404216074732,
+          "true_minus_baseline": 0.023229277876145815,
+          "shuffled_minus_baseline": 0.022157037454538342,
+          "true_minus_Q": 0.02051448987099158,
+          "shuffled_minus_Q": 0.019442249449384108
+        }
+      },
+      {
+        "group": "4306",
+        "removed_pairs": 11,
+        "remaining_pairs": 947,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019775273901235346,
+          "Q_minus_true": -0.020908453629722823,
+          "Q_minus_baseline": 0.002980402514480951,
+          "Q_minus_quality": -0.0072273267869223945,
+          "true_minus_shuffled": 0.0011331797284874767,
+          "true_minus_baseline": 0.023888856144203774,
+          "shuffled_minus_baseline": 0.022755676415716297,
+          "true_minus_Q": 0.020908453629722823,
+          "shuffled_minus_Q": 0.019775273901235346
+        }
+      },
+      {
+        "group": "4357",
+        "removed_pairs": 11,
+        "remaining_pairs": 947,
+        "contrasts": {
+          "Q_minus_shuffled": -0.01998815365406137,
+          "Q_minus_true": -0.020840624688542975,
+          "Q_minus_baseline": 0.0030035248081490273,
+          "Q_minus_quality": -0.006953045571579164,
+          "true_minus_shuffled": 0.0008524710344816055,
+          "true_minus_baseline": 0.023844149496692002,
+          "shuffled_minus_baseline": 0.022991678462210396,
+          "true_minus_Q": 0.020840624688542975,
+          "shuffled_minus_Q": 0.01998815365406137
+        }
+      },
+      {
+        "group": "5085",
+        "removed_pairs": 11,
+        "remaining_pairs": 947,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019514981821527333,
+          "Q_minus_true": -0.020652192432661476,
+          "Q_minus_baseline": 0.002929606746166491,
+          "Q_minus_quality": -0.007141551557087511,
+          "true_minus_shuffled": 0.001137210611134143,
+          "true_minus_baseline": 0.023581799178827967,
+          "shuffled_minus_baseline": 0.022444588567693824,
+          "true_minus_Q": 0.020652192432661476,
+          "shuffled_minus_Q": 0.019514981821527333
+        }
+      },
+      {
+        "group": "4355",
+        "removed_pairs": 10,
+        "remaining_pairs": 948,
+        "contrasts": {
+          "Q_minus_shuffled": -0.018790729755293722,
+          "Q_minus_true": -0.019631042189408587,
+          "Q_minus_baseline": 0.0024063118481786328,
+          "Q_minus_quality": -0.006646294003065378,
+          "true_minus_shuffled": 0.0008403124341148649,
+          "true_minus_baseline": 0.02203735403758722,
+          "shuffled_minus_baseline": 0.021197041603472355,
+          "true_minus_Q": 0.019631042189408587,
+          "shuffled_minus_Q": 0.018790729755293722
+        }
+      },
+      {
+        "group": "4364",
+        "removed_pairs": 9,
+        "remaining_pairs": 949,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019472812949697937,
+          "Q_minus_true": -0.02068951290615728,
+          "Q_minus_baseline": 0.0028845652509472686,
+          "Q_minus_quality": -0.007159895204763123,
+          "true_minus_shuffled": 0.001216699956459344,
+          "true_minus_baseline": 0.02357407815710455,
+          "shuffled_minus_baseline": 0.022357378200645206,
+          "true_minus_Q": 0.02068951290615728,
+          "shuffled_minus_Q": 0.019472812949697937
+        }
+      },
+      {
+        "group": "4369",
+        "removed_pairs": 9,
+        "remaining_pairs": 949,
+        "contrasts": {
+          "Q_minus_shuffled": -0.01963350094201577,
+          "Q_minus_true": -0.02041404656463175,
+          "Q_minus_baseline": 0.0028350005435526793,
+          "Q_minus_quality": -0.0071579908920428315,
+          "true_minus_shuffled": 0.0007805456226159802,
+          "true_minus_baseline": 0.02324904710818443,
+          "shuffled_minus_baseline": 0.02246850148556845,
+          "true_minus_Q": 0.02041404656463175,
+          "shuffled_minus_Q": 0.01963350094201577
+        }
+      },
+      {
+        "group": "4586",
+        "removed_pairs": 9,
+        "remaining_pairs": 949,
+        "contrasts": {
+          "Q_minus_shuffled": -0.018784116453528732,
+          "Q_minus_true": -0.019839174203487686,
+          "Q_minus_baseline": 0.00312278876207972,
+          "Q_minus_quality": -0.0072918824065622,
+          "true_minus_shuffled": 0.0010550577499589542,
+          "true_minus_baseline": 0.022961962965567406,
+          "shuffled_minus_baseline": 0.021906905215608452,
+          "true_minus_Q": 0.019839174203487686,
+          "shuffled_minus_Q": 0.018784116453528732
+        }
+      },
+      {
+        "group": "4597",
+        "removed_pairs": 9,
+        "remaining_pairs": 949,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019495917949144848,
+          "Q_minus_true": -0.020622886457429823,
+          "Q_minus_baseline": 0.002936994659236025,
+          "Q_minus_quality": -0.007171534474840202,
+          "true_minus_shuffled": 0.0011269685082849756,
+          "true_minus_baseline": 0.02355988111666585,
+          "shuffled_minus_baseline": 0.022432912608380873,
+          "true_minus_Q": 0.020622886457429823,
+          "shuffled_minus_Q": 0.019495917949144848
+        }
+      }
+    ],
+    "family_witness": [
+      {
+        "group": "PF00047",
+        "removed_pairs": 38,
+        "remaining_pairs": 920,
+        "contrasts": {
+          "Q_minus_shuffled": -0.01842898309881591,
+          "Q_minus_true": -0.018785316662153884,
+          "Q_minus_baseline": 0.00314206473443035,
+          "Q_minus_quality": -0.006788551118530273,
+          "true_minus_shuffled": 0.00035633356333797384,
+          "true_minus_baseline": 0.021927381396584233,
+          "shuffled_minus_baseline": 0.02157104783324626,
+          "true_minus_Q": 0.018785316662153884,
+          "shuffled_minus_Q": 0.01842898309881591
+        }
+      },
+      {
+        "group": "PF00240",
+        "removed_pairs": 35,
+        "remaining_pairs": 923,
+        "contrasts": {
+          "Q_minus_shuffled": -0.01965897452579335,
+          "Q_minus_true": -0.021147592043575192,
+          "Q_minus_baseline": 0.002567843791098312,
+          "Q_minus_quality": -0.007114978832847729,
+          "true_minus_shuffled": 0.0014886175177818428,
+          "true_minus_baseline": 0.023715435834673504,
+          "shuffled_minus_baseline": 0.02222681831689166,
+          "true_minus_Q": 0.021147592043575192,
+          "shuffled_minus_Q": 0.01965897452579335
+        }
+      },
+      {
+        "group": "PF00008",
+        "removed_pairs": 27,
+        "remaining_pairs": 931,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019038053531641896,
+          "Q_minus_true": -0.01990882190622667,
+          "Q_minus_baseline": 0.002529898241652395,
+          "Q_minus_quality": -0.0069692736575874825,
+          "true_minus_shuffled": 0.0008707683745847739,
+          "true_minus_baseline": 0.022438720147879065,
+          "shuffled_minus_baseline": 0.02156795177329429,
+          "true_minus_Q": 0.01990882190622667,
+          "shuffled_minus_Q": 0.019038053531641896
+        }
+      },
+      {
+        "group": "PF00560",
+        "removed_pairs": 27,
+        "remaining_pairs": 931,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019096705428926497,
+          "Q_minus_true": -0.021212187388406134,
+          "Q_minus_baseline": 0.0031889515614411668,
+          "Q_minus_quality": -0.00685164255144155,
+          "true_minus_shuffled": 0.002115481959479637,
+          "true_minus_baseline": 0.0244011389498473,
+          "shuffled_minus_baseline": 0.022285656990367664,
+          "true_minus_Q": 0.021212187388406134,
+          "shuffled_minus_Q": 0.019096705428926497
+        }
+      },
+      {
+        "group": "PF00443",
+        "removed_pairs": 26,
+        "remaining_pairs": 932,
+        "contrasts": {
+          "Q_minus_shuffled": -0.0191022678492081,
+          "Q_minus_true": -0.020506410988008317,
+          "Q_minus_baseline": 0.003061389394180991,
+          "Q_minus_quality": -0.006891029572211993,
+          "true_minus_shuffled": 0.001404143138800218,
+          "true_minus_baseline": 0.023567800382189308,
+          "shuffled_minus_baseline": 0.02216365724338909,
+          "true_minus_Q": 0.020506410988008317,
+          "shuffled_minus_Q": 0.0191022678492081
+        }
+      },
+      {
+        "group": "PF07686",
+        "removed_pairs": 26,
+        "remaining_pairs": 932,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019242635990033063,
+          "Q_minus_true": -0.021049224541731304,
+          "Q_minus_baseline": 0.002399873783596851,
+          "Q_minus_quality": -0.009113823496714746,
+          "true_minus_shuffled": 0.0018065885516982405,
+          "true_minus_baseline": 0.023449098325328155,
+          "shuffled_minus_baseline": 0.021642509773629914,
+          "true_minus_Q": 0.021049224541731304,
+          "shuffled_minus_Q": 0.019242635990033063
+        }
+      },
+      {
+        "group": "PF00041",
+        "removed_pairs": 21,
+        "remaining_pairs": 937,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019385203828742315,
+          "Q_minus_true": -0.02031249501448462,
+          "Q_minus_baseline": 0.003003378692659431,
+          "Q_minus_quality": -0.007329446682111662,
+          "true_minus_shuffled": 0.0009272911857423072,
+          "true_minus_baseline": 0.023315873707144052,
+          "shuffled_minus_baseline": 0.022388582521401745,
+          "true_minus_Q": 0.02031249501448462,
+          "shuffled_minus_Q": 0.019385203828742315
+        }
+      },
+      {
+        "group": "PF13202",
+        "removed_pairs": 17,
+        "remaining_pairs": 941,
+        "contrasts": {
+          "Q_minus_shuffled": -0.019213034075124757,
+          "Q_minus_true": -0.020309914405516105,
+          "Q_minus_baseline": 0.002895941869836327,
+          "Q_minus_quality": -0.0068108322231581475,
+          "true_minus_shuffled": 0.0010968803303913477,
+          "true_minus_baseline": 0.023205856275352432,
+          "shuffled_minus_baseline": 0.022108975944961085,
+          "true_minus_Q": 0.020309914405516105,
+          "shuffled_minus_Q": 0.019213034075124757
+        }
+      },
+      {
+        "group": "PF00675",
+        "removed_pairs": 13,
+        "remaining_pairs": 945,
+        "contrasts": {
+          "Q_minus_shuffled": -0.014941060640215165,
+          "Q_minus_true": -0.017038071445418468,
+          "Q_minus_baseline": 0.003103194161818701,
+          "Q_minus_quality": -0.003219960816955081,
+          "true_minus_shuffled": 0.002097010805203303,
+          "true_minus_baseline": 0.02014126560723717,
+          "shuffled_minus_baseline": 0.018044254802033866,
+          "true_minus_Q": 0.017038071445418468,
+          "shuffled_minus_Q": 0.014941060640215165
+        }
+      },
+      {
+        "group": "PF04969",
+        "removed_pairs": 12,
+        "remaining_pairs": 946,
+        "contrasts": {
+          "Q_minus_shuffled": -0.01910396201306963,
+          "Q_minus_true": -0.020342681401371188,
+          "Q_minus_baseline": 0.003094229327977205,
+          "Q_minus_quality": -0.007100933747619109,
+          "true_minus_shuffled": 0.0012387193883015568,
+          "true_minus_baseline": 0.023436910729348392,
+          "shuffled_minus_baseline": 0.022198191341046836,
+          "true_minus_Q": 0.020342681401371188,
+          "shuffled_minus_Q": 0.01910396201306963
+        }
+      }
+    ]
+  },
+  "bootstrap": "Original Vx population-specific matched protein Poisson multipliers, 1000 draws, seed 20261007, endpoint product weights, 95% percentile intervals conditional on fitted heads and selected alpha",
+  "subgroup_intervals": "Exploratory, unadjusted; minimum 10 per class",
+  "assessment_previously_inspected": true,
+  "original_metrics_and_intervals_reproduced": true,
+  "original_verified_predictions_reproduced": true,
+  "exact_baseline_fallback": true,
+  "test_accessed": false,
+  "forbidden_heads_evaluated": false,
+  "seconds": 23.447958345990628
+}
