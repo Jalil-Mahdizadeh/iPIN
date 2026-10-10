@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-10-10T06:11:04.288407+00:00",
+  "runtime_parent_pid": 2144189,
+  "job_id": "3615626",
+  "preparation_code_sha256": {
+    "README.md": "ec4ab7ec24b3962b2e0f8f826a46255593b7ffa6f276d9efee9eec44db2d95b0",
+    "config.json": "aca8f8350d8ec58c92be7310595175e7bc62366925a4500e6c63639e60a723c0",
+    "scripts/prepare.py": "038be95024f59a57e11a0b21e74de46c7e2ed999f74b6eba79159c96875ecd0c",
+    "scripts/inputs.py": "9eb220b7fa4652c2915ac9f342b8c33e09c9d3f2c5eba853b09da5917c31b4b3",
+    "scripts/diagnostics.py": "0a74bf9821fb7f4d670eb46e594beb856c35725908a7d887d243cf40617b6e1c",
+    "scripts/study.py": "9a7c0adaceb72936dbf2935e1ec05acc66a83564538229a3e0d70c7b6d973ff1",
+    "scripts/heads.py": "5b45f35bc149c9a25a522670d043b504525715c20f2f670c71043cd73d4a08b8"
+  }
+}

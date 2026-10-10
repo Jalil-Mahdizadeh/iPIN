@@ -1,0 +1,22 @@
+{
+  "at_utc": "2026-10-10T14:10:40.604164+00:00",
+  "fingerprint": "2a403289dabd256f1ba9e0630370e96987427ac215d07b19b95b7625c09b8054",
+  "verified": true,
+  "required_pairs": 4453,
+  "pairs": 8000,
+  "result_hashes": {
+    "heads.json": "af7f7f20179d02d8aacc349e5160eea80fadd699e2fe6d88f46af9dc795f3e2f",
+    "metrics.json": "60e0b21877647bf4d7c0754098ba438a3e5e2eda36886977299b68999527567b",
+    "decision.json": "7927f9e6a885f5159a8fb4a321f75962cc3b0cdb744c4978c159cca65ac6940f",
+    "verification.json": "fe2bfa3f9ec5ee1665b43144f82961302558f58d15388048f9b590dd416650cf",
+    "dev_predictions.npz": "2e8d7a9d3fc87eb7e073977d0f1980284ca0538ede7897d66cc15082bbfb70a3",
+    "dev_evidence.npz": "5c5aaea95611f8eb50135105290a87f2b0a986ff4fc427c98ce04551ed598e14",
+    "input-diagnostics.json": "3d0314160f0a2ab8cc394be3b789f97c7635ae521b676bdaf699bf7d3144b934",
+    "depth-coverage.json": "deaa1b7b6ff4931f8979548fc860be4a8b0b3dbe129568d5106e38106b8c1194",
+    "resources.json": "5584fac67246265ba2f6de88749c28ae22416edd7d0ca701c72067ecccfffc8e",
+    "REPORT.md": "ca62926f942be09ea5f895a5b47635cbbf3ce1442c9b27b9e7c1e5be15194662"
+  },
+  "test_accessed": false,
+  "production_started": false,
+  "R_evaluated": false
+}

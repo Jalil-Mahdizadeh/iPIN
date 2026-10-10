@@ -1,0 +1,34 @@
+{
+  "cohort": {
+    "pairs": 8000,
+    "train": 4000,
+    "dev": 4000,
+    "eligible_train": 1825,
+    "eligible_dev": 2628,
+    "calibration": 1068,
+    "assessment": 958,
+    "crossing": 1974
+  },
+  "depth_groups": {
+    "train": {
+      "eligible": 1825,
+      "unchanged_depth": 110,
+      "increased_depth": 1715,
+      "reached_256": 1558
+    },
+    "dev": {
+      "eligible": 2628,
+      "unchanged_depth": 271,
+      "increased_depth": 2357,
+      "reached_256": 2008
+    },
+    "assessment": {
+      "eligible": 659,
+      "unchanged_depth": 67,
+      "increased_depth": 592,
+      "reached_256": 510
+    }
+  },
+  "eligibility_expanded": false,
+  "test_accessed": false
+}

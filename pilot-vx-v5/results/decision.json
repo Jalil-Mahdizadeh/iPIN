@@ -1,0 +1,26 @@
+{
+  "status": "material_depth_gain_not_supported_within_interval",
+  "primary_point": -0.005301943832302647,
+  "primary_interval": {
+    "replicates": 1000,
+    "low": -0.018242460540631857,
+    "high": 0.007690440990902844
+  },
+  "meaningful_depth_gain": false,
+  "auroc_noninferiority_to_true128": true,
+  "material_gain_ruled_out_within_interval": true,
+  "material_depth_loss": false,
+  "depths_equivalent_within_margin": false,
+  "T256_material_gain_over_native": false,
+  "S256_material_gain_over_shuffled128": false,
+  "P256_material_gain_over_quality128": false,
+  "T256_material_gain_over_P256": false,
+  "pairing_sensitivity_increased_exploratory": false,
+  "assessment_previously_inspected": true,
+  "test_accessed": false,
+  "R_evaluated": false,
+  "production_authorized": false,
+  "at_utc": "2026-10-10T14:04:08.151497+00:00",
+  "fingerprint": "2a403289dabd256f1ba9e0630370e96987427ac215d07b19b95b7625c09b8054",
+  "metrics_sha256": "60e0b21877647bf4d7c0754098ba438a3e5e2eda36886977299b68999527567b"
+}

@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-10T06:04:00+00:00",
+  "started_unix": 1791612240.0,
+  "deadline_unix": 1791695040.0,
+  "job_id": "3615626",
+  "allocated_gpu_count": 1,
+  "allocated_cpus": 72,
+  "charging": "All elapsed time from task inspection through preparation, qualification, extraction, fitting and audit; full allocated GPU and CPUs including idle time. Separate from previous studies.",
+  "allocation_end_estimate_unix": 1791698459.172003,
+  "deadline_scope": "Earlier of 23 allocated GPU-hours and allocation expiry minus 120 seconds."
+}

@@ -1,0 +1,15 @@
+{
+  "at_utc": "2026-10-10T06:28:09.658488+00:00",
+  "stage": "extraction startup before GPU encoding",
+  "finding": "The frozen worker builds its historical-feature lookup with repeated npz member reads inside the row loop. This repeats decompression of the same three arrays.",
+  "read_only_profile": {
+    "sampled_rows": 12,
+    "seconds": 0.6420178010012023,
+    "projected_8000_row_seconds": 428.0118673341349
+  },
+  "prespecified_io_reserve_seconds": 600,
+  "action": "Continue this frozen run within its existing reserve; no inputs, code, fingerprints, outcome fits or sampling rules changed.",
+  "future_full_benchmark_note": "Load each of the three reference arrays once before iterating over records; avoid scaling this repeated-decompression startup to the full dataset.",
+  "test_accessed": false,
+  "new_outcome_fit_started_at_diagnosis": false
+}

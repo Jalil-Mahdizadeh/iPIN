@@ -2,7 +2,7 @@
 
 Status: **10 October 2026**. Links lead to detailed reports.
 
-**Names:** V1–V6 are retraining/data proposals. Vx, Vx-v2, Vy, Vz, Vx-v3 and Vx-v4 are MSA pilots. STRING V11/V12.5 are database versions, not additional iPIN model versions.
+**Names:** V1–V6 are retraining/data proposals. Vx, Vx-v2, Vy, Vz, Vx-v3, Vx-v4 and Vx-v5 are MSA pilots. STRING V11/V12.5 are database versions, not additional iPIN model versions.
 
 **Scores:** AP means average precision, not accuracy; higher is better. Compare scores only within the same evaluation set: historical TEST and pilot DEV scores are not directly comparable.
 
@@ -33,6 +33,7 @@ Vx uses up to **127 homolog rows + 1 query = 128 rows**. Ineligible pairs retain
 | [Vz / Q](pilot-vz/results/REPORT.md) | Keep Vx joint encoding/readout but supply **only the query pair: depth 1**. Reuse true/shuffled predictions. | **Q 0.6439**, below true/shuffled; its gain over native is uncertain. It did not recover Vx's gain. Homolog-content and depth effects remain entangled. |
 | [Vx-v3 / C](pilot-vx-v3/results/REPORT.md) | Independently shuffle non-query residues within each alignment column. Preserve the query, depth and per-position residue/gap frequencies, while disrupting coherent homolog sequences. | **Completed and verified. C: 0.6501.** Recovery of Vx's gain was not established. C − shuffled: −0.0132, 95% interval [−0.0292, +0.0093]. The difference is inconclusive; any loss could also reflect unnatural synthetic inputs. |
 | [Vx-v4 / I](pilot-vx-v4/results/REPORT.md) | Sample intact A/B homologs independently, then encode them jointly. Remove the shared-accession requirement while keeping Vx's original cohort, each pair's depth, masks, gate and readout. | **Completed and verified. I: 0.6493.** No established gain over native or recovery of Vx. I − shuffled: −0.0139, 95% interval [−0.0293, +0.0042]; I − true: −0.0150 [−0.0299, −0.0010]. Sampling also changes homolog composition/diversity, so this does not prove accession matching is necessary. |
+| [Vx-v5 / depth 256](pilot-vx-v5/results/REPORT.md) | Increase the matched MSA limit from 128 to 256 total rows, preserving the original true rows as a prefix. Compare new matched, shuffled and quality/profile arms with their frozen depth-128 references. Same cohort, gates, encoder and readout; naturally shallow inputs keep their available depth. | **Completed and verified. True256 0.6591; shuffled256 0.6598; quality256 0.6510.** True256 − true128: −0.0053, 95% interval [−0.0182, +0.0077]. No demonstrated depth benefit; the interval excludes the preset +0.010 AP target, but establishes neither a loss nor equivalence. Of 4,453 eligible pairs, 4,072 gained rows and 3,566 reached depth 256. No full benchmark or TEST evaluation. |
 
 “True” uses the original shared-accession homolog matching; it does not verify biological interaction between every homolog pair. “Shuffled” rearranges intact B homolog rows within taxonomic groups, preserving each chain's family information. “Quality/profile” uses alignment statistics without learned Pairformer features. Similar true/shuffled scores do **not** establish statistical equivalence.
 
@@ -51,4 +52,4 @@ FADI-v1 and TRIQ-v1 are completed local studies; their files await a separate co
 **Discussed, not run**
 
 - **R, repeated query:** repeat the query pair to Vx depth to test depth alone. **On hold.**
-- **Deeper MSAs (256/512):** discussed; no experiment or result yet.
+- **Depth 512:** discussed; no experiment or result yet. Depth 256 is now Vx-v5 above.

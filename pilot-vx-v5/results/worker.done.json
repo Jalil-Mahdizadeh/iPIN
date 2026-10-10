@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-10T14:02:21.078746+00:00",
+  "completed": 8000,
+  "total": 8000,
+  "encoded_pairs": 4072,
+  "encoded_arms": 8144,
+  "unchanged_depth_reused": 381,
+  "eligible_pairs": 4453,
+  "budget_stopped": false,
+  "seconds": 27532.399262902003,
+  "fingerprint": "2a403289dabd256f1ba9e0630370e96987427ac215d07b19b95b7625c09b8054"
+}
