@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-10T03:43:55.642357+00:00",
+  "fingerprint": "5e67ec5906700ca41be4869c5357af3f77f2956b098af7be5ec06c6ce856e930",
+  "verified": true,
+  "required_pairs": 4453,
+  "pairs": 8000,
+  "result_hashes": {
+    "heads.json": "2bf2120b6f061f2ef06cfdde3e04bcfef3b486d566ae44da7e14efd5443207e5",
+    "metrics.json": "5eef0bce7709c9d5ad32e7ca6d99ab358b437e7ddc95a76c6bd4dc7a1e14f9af",
+    "decision.json": "becbf2fb204c1500adfd23a5331e4e79ece10ae14778733ca81017d2cdb41982",
+    "verification.json": "bb4c79f06222c845b168a6ebe3a925776a9734153619e412791f343d4069439b",
+    "dev_predictions.npz": "0a54c0b044ffea34b7c80aafb83617a9e4b1dbd6808f790aec37ffbc5ec56bdb",
+    "dev_evidence.npz": "b2eba20c3260552ccb3fcd96c1395a068c83d7f53e613037d5380f93f79b409e",
+    "input-diagnostics.json": "0491fdf703b54fb259422cf63a1e74a231f9e0eb2b8af70bf6ed62c8966d37b7",
+    "resources.json": "92de877787bb160546a1254f264d801ef4c0e9233b733dc0811c7be9f4f657bc",
+    "REPORT.md": "19704f16e811428b9348b1b98ce4d6438a937691a5786aa49ac67ca3db82af53"
+  },
+  "test_accessed": false,
+  "production_started": false,
+  "R_evaluated": false
+}

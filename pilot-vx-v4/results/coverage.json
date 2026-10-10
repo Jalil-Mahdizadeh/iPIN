@@ -1,0 +1,80 @@
+{
+  "fixed_original_cohort": {
+    "pairs": 8000,
+    "train": 4000,
+    "dev": 4000,
+    "eligible_train": 1825,
+    "eligible_dev": 2628,
+    "calibration": 1068,
+    "assessment": 958,
+    "crossing": 1974
+  },
+  "label_free_potential_coverage": {
+    "train": {
+      "pairs": 4000,
+      "original_eligible": 1825,
+      "potential_independent_eligible": 1830,
+      "newly_potential_only": 5,
+      "reasons": {
+        "long_query": 1687,
+        "low_quality_coverage": 453,
+        "original_eligible": 1825,
+        "missing_cached_monomer": 30,
+        "independently_available": 5
+      }
+    },
+    "val": {
+      "pairs": 4000,
+      "original_eligible": 2628,
+      "potential_independent_eligible": 2634,
+      "newly_potential_only": 6,
+      "reasons": {
+        "original_eligible": 2628,
+        "low_quality_coverage": 553,
+        "long_query": 774,
+        "missing_cached_monomer": 39,
+        "independently_available": 6
+      }
+    },
+    "calibration": {
+      "pairs": 1068,
+      "original_eligible": 692,
+      "potential_independent_eligible": 692,
+      "newly_potential_only": 0,
+      "reasons": {
+        "original_eligible": 692,
+        "long_query": 226,
+        "low_quality_coverage": 136,
+        "missing_cached_monomer": 14
+      }
+    },
+    "assessment": {
+      "pairs": 958,
+      "original_eligible": 659,
+      "potential_independent_eligible": 660,
+      "newly_potential_only": 1,
+      "reasons": {
+        "original_eligible": 659,
+        "long_query": 151,
+        "low_quality_coverage": 138,
+        "missing_cached_monomer": 9,
+        "independently_available": 1
+      }
+    },
+    "crossing": {
+      "pairs": 1974,
+      "original_eligible": 1277,
+      "potential_independent_eligible": 1282,
+      "newly_potential_only": 5,
+      "reasons": {
+        "original_eligible": 1277,
+        "low_quality_coverage": 279,
+        "long_query": 397,
+        "missing_cached_monomer": 16,
+        "independently_available": 5
+      }
+    }
+  },
+  "expanded_predictions_computed": false,
+  "used_for_model_selection": false
+}

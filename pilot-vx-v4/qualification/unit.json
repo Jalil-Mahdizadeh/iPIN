@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-10-09T23:36:54.883463+00:00",
+  "passed": true,
+  "tests_sha256": {
+    "tests/test_analysis_flow.py": "66953d2e83b27f27a006a67003d5e6aecbb4e5d463d04d6fbc139d67384470d9",
+    "tests/test_invariants.py": "7382a4f2b5e50eaa9665e413fc3ac70597d7d978dc648c0019d4d3bd06732cdf"
+  },
+  "output_sha256": "8462e94a5de2ef02bf6e3f0bdf7cb9beff6106528ccca471ec9afb780e85625b"
+}

@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-10T03:43:55.607916+00:00",
+  "state": "completed",
+  "job_id": "3565552",
+  "study_started_unix": 1791586949.0,
+  "study_ended_unix": 1791603834.9414568,
+  "elapsed_seconds_including_preparation": 16885.94145679474,
+  "allocated_gpus": 1,
+  "allocated_cpus": 72,
+  "allocated_gpu_hours_charged": 4.690539293554094,
+  "allocated_cpu_core_hours_charged": 337.7188291358948,
+  "gpu_hour_ceiling": 10,
+  "cpu_core_hour_ceiling": 720,
+  "additional_bytes": 450088387,
+  "additional_byte_ceiling": 5000000000,
+  "within_limits": true,
+  "accounting_scope": "All elapsed time from task inspection/preparation through extraction, fitting and audit; full allocated GPU and CPUs charged including idle time. Separate from preceding studies.",
+  "original_allocation_not_cancelled": true,
+  "separate_from_vx": true
+}

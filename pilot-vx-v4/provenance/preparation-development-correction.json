@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-09T23:11:13.425398+00:00",
+  "problem": "Optional fallback coverage audit requested a cached monomer absent from the old eligible-only digest map. Preparation failed closed before qualification, fitting or freeze.",
+  "correction": "Coverage-only monomers are verified against the frozen catalog hashes; original eligible monomers must still have their old hashes. All accessed hashes are retained. Sampling and cohort unchanged.",
+  "preserved_partial_inputs": 13,
+  "outcome_fitting_started": false,
+  "old_attempt": "work/preparation-development-1",
+  "same_resource_clock": true,
+  "orchestration_note": "Initial preflight entry rejected the Apptainer runtime-parent PID before pinning or launch. Reattached to the existing preparation Python child after checking its exact command; preparation was never restarted or interrupted for this correction.",
+  "preflight_metadata_correction": {
+    "at_utc": "2026-10-09T23:34:35.079986+00:00",
+    "problem": "Supervisor expected prepared_independent_inputs; completed preparation writes required_pairs. It failed closed before any GPU qualification or outcome fitting.",
+    "correction": "Validate the actual required_pairs field, full cohort counts, historical C record count, primary replicate and no-outcome/no-TEST flags. Added an incomplete/corrupt-manifest regression test.",
+    "preserved_failure": "work/preflight-development-2",
+    "prepared_inputs_manifest_sha256": "f7f540d47c4f0126ab6928270292ea33c956ff3c40f6fe62271f5431cd56e331",
+    "inputs_regenerated": false,
+    "sampling_or_protocol_changed": false,
+    "same_resource_clock": true,
+    "manual_development_restart": true
+  }
+}
