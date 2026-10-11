@@ -4,6 +4,11 @@ Research code, protocols, provenance and evaluation results for protein–protei
 
 ## Current results
 
+- [Final research report](FINAL_RESEARCH_REPORT.md): consolidated evidence through 11 October 2026, including V1–V8, dataset audits and the corrected historical OpenPPI findings. Vx adds a modest Bernett AP gain, while pairing-specific and incremental partner-ranking benefits remain unestablished. The report recommends closing the current round of incremental model development.
+- [Experiment walkthrough](walkthrough.md): short explanations and results for each version.
+- [Full Vx-128 benchmark](benchmark-vx/results/REPORT.md): TEST AP 0.698620 versus native 0.690319, with frozen TRAIN-fitted heads and VAL-selected fusion. The gain missed the preset +0.010 practical target on this historically evaluated TEST.
+- [V7 contact-head pilot](pilot-v7-v1/results/REPORT.md): compact pretrained contact-map summaries did not add a useful gain beyond Vx.
+- [V8 partner diagnostics and assay feasibility](benchmark-v8/results/REPORT.md): no demonstrated incremental partner-ranking benefit; external inference was not run because the panel missed its fixed support floor.
 - [V5 model benchmark](benchmark-v5/REPORT.md): frozen iPIN ESM2 and ESMC checkpoints, native PLM-interact, and other published predictors on the original Bernett test and a custom ILP-negative test.
 - [V5 simple-baseline benchmark](benchmark-v5-baselines/REPORT.md): three fixed CPU methods refitted on v5 TRAIN and evaluated on v5 validation and both tests. Their AP and AUROC are approximately 0.500–0.506; the iPIN checkpoints score substantially higher. This addresses the tested mechanisms, not every possible dataset bias.
 - [STRING V11 simple baselines](literature/string-v11-baselines/REPORT.md): the same homology-transferred degree, sequence-propensity and interolog methods on V11 human validation and five species.
@@ -21,6 +26,9 @@ The two v5 tests share their positive pairs and are not independent replications
 | `benchmark-v1/` through `benchmark-v5/` | Evaluation code, comparisons, reports and figures |
 | `data-preparation-v5/` | Protected tests, sequence partitioning and ILP negative-sampling implementation |
 | `benchmark-v5-baselines/` | Fixed simple baselines fitted on v5 TRAIN |
+| `pilot-vx-series/`, `pilot-vy/`, `pilot-vz/` | Frozen MSA representation pilots and controlled ablations |
+| `retrain-vx/`, `benchmark-vx/` | Full Vx-128 TRAIN/VAL fitting and frozen TEST evaluation |
+| `pilot-v7-v1/`, `benchmark-v8/` | Contact-head pilot, partner diagnostics and external-panel feasibility |
 | `literature/` | Research notes and baseline/data audits |
 | `images/` | Container documentation and checksums |
 | `improvment-proposal-*.md` | Recorded development proposals; historical filenames are retained |

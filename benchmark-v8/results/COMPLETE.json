@@ -1,0 +1,19 @@
+{
+  "all_required_work_complete": true,
+  "at_utc": "2026-10-11T20:23:38.699351+00:00",
+  "external_inference_performed": false,
+  "fingerprint": "33776881dc099f2ea04a2da2f0b07a5cf8d31c25a16ae97c3989d446b4dbffa3",
+  "models_fitted": 0,
+  "phase_AB_early_checks_complete": true,
+  "result_hashes": {
+    "REPORT.md": "f88d946cea74d71bb2c2c1372f862fd9f57a2aacb1ce9805c9dbec115ed488ec",
+    "decision.json": "872107014e68e7def9bfc0ce58c600f96361e1fba3f318272e9444cd6e364c78",
+    "external_feasibility.json": "2f57d2767a24f6f86ba185005c068d6c5e81456c5e700df5066bec3acfa7de82",
+    "resources.json": "6ded4282701352f8b5d234ae0156cdc08fb8dcdce3d68497469879c2adda1b5a",
+    "validation_diagnostics.json": "352e600b397acc428eaaa710d9e217f423a97af4b4533191fad9ad37ce788916",
+    "verification.json": "0dfaa5477568ad7839a423164ea309a3f006e7abff4347b5e9aca331e694338b"
+  },
+  "status": "complete_external_gate_no_go",
+  "test_accessed": false,
+  "verified": true
+}

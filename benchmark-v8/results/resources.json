@@ -1,0 +1,11 @@
+{
+  "additional_bytes": 8661337,
+  "allocation_id": "3683336",
+  "at_utc": "2026-10-11T20:23:38.691724+00:00",
+  "cpu_thread_limit": 8,
+  "execution": "CPU-only processes in an already running interactive GPU allocation; container hashing and idle validation time included",
+  "new_encoder_calls": 0,
+  "no_new_gpu_allocation": true,
+  "source_files_unchanged": true,
+  "wall_seconds": 36.801703123986954
+}

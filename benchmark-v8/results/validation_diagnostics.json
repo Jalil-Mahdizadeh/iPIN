@@ -1,0 +1,1750 @@
+{
+  "at_utc": "2026-10-11T20:23:28.725490+00:00",
+  "bootstrap_replicates": 2000,
+  "interpretation": "Retrospective fixed-model diagnostics, not untouched confirmation or physical binding specificity.",
+  "models": [
+    "native",
+    "vx",
+    "quality",
+    "aac_cosine",
+    "kmer3_cosine",
+    "length_ratio"
+  ],
+  "new_encoder_calls": 0,
+  "primary": "assessment_new_rows",
+  "research_screen": {
+    "checks": {
+      "swap_above_aac_cosine": true,
+      "swap_above_kmer3_cosine": true,
+      "swap_preference_above_native": false,
+      "swap_preference_above_quality": false,
+      "swap_preference_practical_gain": false,
+      "within_anchor_above_native": false,
+      "within_anchor_above_quality": false,
+      "within_anchor_practical_gain": false
+    },
+    "status": "no_go_or_inconclusive"
+  },
+  "retrieval_uncertainty": "Anchor-component resampling, conditional on fixed lists; shared-partner dependence remains.",
+  "seconds": 13.865075342997443,
+  "seed": 20261011,
+  "sequence_component_rule": "inherited MMseqs >=40% identity, >=80% coverage both endpoints, E<=1e-3",
+  "test_accessed": false,
+  "training_uncertainty_included": false,
+  "views": {
+    "assessment_all": {
+      "additive_cancellation_checked": true,
+      "contrasts": {
+        "ndcg@1": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              -0.03333892617449664,
+              0.137202743902439
+            ],
+            "finite_replicates": 2000,
+            "point": 0.04999999999999993,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.1372521008403362,
+              0.32486536695332724
+            ],
+            "finite_replicates": 2000,
+            "point": 0.23235294117647054,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.037267080745341685,
+              0.23880884594369195
+            ],
+            "finite_replicates": 2000,
+            "point": 0.13725490196078427,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.033524260875023505,
+              0.07143843725335429
+            ],
+            "finite_replicates": 2000,
+            "point": 0.01764705882352935,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.02777777777777779,
+              0.07738191244239626
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0235294117647058,
+            "support_qualified": true
+          }
+        },
+        "ndcg@10": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.032511166940343235,
+              0.11030744521848554
+            ],
+            "finite_replicates": 2000,
+            "point": 0.07194006818165788,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.12454271237040827,
+              0.2117437845997714
+            ],
+            "finite_replicates": 2000,
+            "point": 0.16718204317365826,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.10814040074880266,
+              0.192025942626126
+            ],
+            "finite_replicates": 2000,
+            "point": 0.15014607935944324,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.0032616118365063895,
+              0.016472032574546748
+            ],
+            "finite_replicates": 2000,
+            "point": 0.006402083032309713,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.009849618152511463,
+              0.008240825592971096
+            ],
+            "finite_replicates": 2000,
+            "point": -0.0004920621015056525,
+            "support_qualified": true
+          }
+        },
+        "ndcg@5": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.01892345316364582,
+              0.12097223806473748
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0684281793720537,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.1455329314124259,
+              0.256305237055564
+            ],
+            "finite_replicates": 2000,
+            "point": 0.19958058356961628,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.12000191849998929,
+              0.22307799896633876
+            ],
+            "finite_replicates": 2000,
+            "point": 0.17127664117665287,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.004105181468719645,
+              0.030679950961602566
+            ],
+            "finite_replicates": 2000,
+            "point": 0.01358794301506161,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.016603836034211512,
+              0.022295928158505583
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0029810580538777165,
+            "support_qualified": true
+          }
+        },
+        "recall@1": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              -0.0022733685608421397,
+              0.005331784474792094
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0015033863155738056,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.0034836283536073716,
+              0.011677627057412316
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0076191383928326355,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              8.58630347820243e-05,
+              0.009403923715473706
+            ],
+            "finite_replicates": 2000,
+            "point": 0.004732864179675535,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.0025485258323922227,
+              0.0026168577464137656
+            ],
+            "finite_replicates": 2000,
+            "point": 9.790904077152177e-05,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.0022997513073616514,
+              0.002614954980366594
+            ],
+            "finite_replicates": 2000,
+            "point": 0.00015925444597505653,
+            "support_qualified": true
+          }
+        },
+        "recall@10": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.01274280250380321,
+              0.04203569323885385
+            ],
+            "finite_replicates": 2000,
+            "point": 0.027393177440094063,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.033983146097759945,
+              0.06518775368046657
+            ],
+            "finite_replicates": 2000,
+            "point": 0.04923860305140698,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.03467607482046833,
+              0.0663559736668859
+            ],
+            "finite_replicates": 2000,
+            "point": 0.05044652029489036,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.003952925807511699,
+              0.003352194787283796
+            ],
+            "finite_replicates": 2000,
+            "point": -0.0003711358787479857,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.005084256939956669,
+              0.0009360040269041905
+            ],
+            "finite_replicates": 2000,
+            "point": -0.001995761737078744,
+            "support_qualified": true
+          }
+        },
+        "recall@5": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.0039992762437818935,
+              0.024698704023983376
+            ],
+            "finite_replicates": 2000,
+            "point": 0.014322437993506187,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.023877813651747626,
+              0.04540970081925325
+            ],
+            "finite_replicates": 2000,
+            "point": 0.034703021478188587,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.02251731597202858,
+              0.04256450241918907
+            ],
+            "finite_replicates": 2000,
+            "point": 0.03264605199310387,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.002817751238603164,
+              0.0041632694021626025
+            ],
+            "finite_replicates": 2000,
+            "point": 0.000623238304641005,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.005205803565798229,
+              0.0025409168267615224
+            ],
+            "finite_replicates": 2000,
+            "point": -0.0012377234888628907,
+            "support_qualified": true
+          }
+        },
+        "swap_preference": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              -0.006715307849526558,
+              0.2259074583309949
+            ],
+            "finite_replicates": 2000,
+            "point": 0.11349999999999993,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.03482945939375802,
+              0.26271742287337024
+            ],
+            "finite_replicates": 2000,
+            "point": 0.14949999999999997,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.09273209137814832,
+              0.3383341752563027
+            ],
+            "finite_replicates": 2000,
+            "point": 0.21899999999999997,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.023575873526336923,
+              0.036670340576119266
+            ],
+            "finite_replicates": 2000,
+            "point": 0.005249999999999977,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.03279352549323761,
+              0.02813810965211459
+            ],
+            "finite_replicates": 2000,
+            "point": -0.0020000000000000018,
+            "support_qualified": true
+          }
+        },
+        "within_anchor": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.0648494437476883,
+              0.11716748559577755
+            ],
+            "finite_replicates": 2000,
+            "point": 0.08790237475707685,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.0825575638499706,
+              0.1388715171438455
+            ],
+            "finite_replicates": 2000,
+            "point": 0.10721683100388868,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.09838979892285182,
+              0.1592961936957005
+            ],
+            "finite_replicates": 2000,
+            "point": 0.1249671214414454,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.002064005218286921,
+              0.009979759999972863
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0032987934866294255,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.0035372515479076606,
+              0.009411278757402474
+            ],
+            "finite_replicates": 2000,
+            "point": 0.002553758233777015,
+            "support_qualified": true
+          }
+        }
+      },
+      "counts_sha256": "34e95393a7ecceddb2019f10f5e5d46ef2fdfe32a74466653da51fc136ffb7c9",
+      "metrics": {
+        "ndcg@1": {
+          "aac_cosine": {
+            "ci95": [
+              0.6105247858017135,
+              0.7514132458116978
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6823529411764706,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.4244501866860942,
+              0.5808383233532934
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.5223873012983861,
+              0.6718784815062389
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5950980392156863,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6505616459843837,
+              0.7803503454109686
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7147058823529412,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.641299346492398,
+              0.7757601880877742
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7088235294117647,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.6685656855707107,
+              0.7981393701645417
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7323529411764705,
+            "support_qualified": true
+          }
+        },
+        "ndcg@10": {
+          "aac_cosine": {
+            "ci95": [
+              0.5819586966954963,
+              0.6436783019755626
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6132387879968746,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.4869626263468951,
+              0.5488969300614303
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5179968130048742,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.5053921599306804,
+              0.5651152853762601
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5350327768190892,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6460996608273398,
+              0.71127637805588
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6787767731462228,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.6523107536037245,
+              0.7187734987613865
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6856709182800381,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.6511511038909116,
+              0.7202082710978712
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6851788561785325,
+            "support_qualified": true
+          }
+        },
+        "ndcg@5": {
+          "aac_cosine": {
+            "ci95": [
+              0.6031854963727055,
+              0.6825802980587206
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6429443511460994,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.46819041316062027,
+              0.5523916253498198
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5117919469485368,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.5038434205655269,
+              0.5773038984230847
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5400958893415002,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6585677851727348,
+              0.7358929679315314
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6977845875030915,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.6668868464416446,
+              0.7489509411581913
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7083914724642754,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.671952679768537,
+              0.7518265113397739
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7113725305181531,
+            "support_qualified": true
+          }
+        },
+        "recall@1": {
+          "aac_cosine": {
+            "ci95": [
+              0.021480131309546104,
+              0.02797058733603581
+            ],
+            "finite_replicates": 2000,
+            "point": 0.024687661091596813,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.015106056582706504,
+              0.022240673364394455
+            ],
+            "finite_replicates": 2000,
+            "point": 0.018571909014337983,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.01837549494314614,
+              0.02470688595147105
+            ],
+            "finite_replicates": 2000,
+            "point": 0.021458183227495084,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.022609066717784,
+              0.029510026571072472
+            ],
+            "finite_replicates": 2000,
+            "point": 0.026093138366399097,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.022519198584425002,
+              0.02950897338342629
+            ],
+            "finite_replicates": 2000,
+            "point": 0.026031792961195562,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.023083535560338576,
+              0.029541906795973384
+            ],
+            "finite_replicates": 2000,
+            "point": 0.02619104740717062,
+            "support_qualified": true
+          }
+        },
+        "recall@10": {
+          "aac_cosine": {
+            "ci95": [
+              0.19794287788052553,
+              0.22668631493177374
+            ],
+            "finite_replicates": 2000,
+            "point": 0.21180667173787154,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.1743228090096161,
+              0.20487107977105323
+            ],
+            "finite_replicates": 2000,
+            "point": 0.18996124612655862,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.17478204277708007,
+              0.203147962557981
+            ],
+            "finite_replicates": 2000,
+            "point": 0.18875332888307525,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.22163295265225494,
+              0.25733671429688604
+            ],
+            "finite_replicates": 2000,
+            "point": 0.2395709850567136,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.2232706213221335,
+              0.2582491272009973
+            ],
+            "finite_replicates": 2000,
+            "point": 0.24119561091504435,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.2213233869713709,
+              0.25638423300183844
+            ],
+            "finite_replicates": 2000,
+            "point": 0.2391998491779656,
+            "support_qualified": true
+          }
+        },
+        "recall@5": {
+          "aac_cosine": {
+            "ci95": [
+              0.10322144901986555,
+              0.12243412768142559
+            ],
+            "finite_replicates": 2000,
+            "point": 0.11286260195218037,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.0827507389164081,
+              0.10219542374410552
+            ],
+            "finite_replicates": 2000,
+            "point": 0.09248201846749797,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.08657231745635333,
+              0.10241324036698518
+            ],
+            "finite_replicates": 2000,
+            "point": 0.09453898795258268,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.11556683830740598,
+              0.1377400425355524
+            ],
+            "finite_replicates": 2000,
+            "point": 0.12656180164104555,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.1173403320388329,
+              0.13946369268388314
+            ],
+            "finite_replicates": 2000,
+            "point": 0.12842276343454945,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.11673203509519332,
+              0.13759211597674248
+            ],
+            "finite_replicates": 2000,
+            "point": 0.12718503994568656,
+            "support_qualified": true
+          }
+        },
+        "swap_preference": {
+          "aac_cosine": {
+            "ci95": [
+              0.5449236954344677,
+              0.72290310496163
+            ],
+            "finite_replicates": 2000,
+            "point": 0.638,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.5093253740333269,
+              0.6906880818928758
+            ],
+            "finite_replicates": 2000,
+            "point": 0.602,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.43615277596626234,
+              0.6259993258353065
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5325,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6584671752426926,
+              0.8259067704840046
+            ],
+            "finite_replicates": 2000,
+            "point": 0.74625,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.6615226739091359,
+              0.831267328167633
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7535,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.6612733228884774,
+              0.831962982165383
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7515,
+            "support_qualified": true
+          }
+        },
+        "within_anchor": {
+          "aac_cosine": {
+            "ci95": [
+              0.5399976174943323,
+              0.5826975196692858
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5610011863838926,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.520822731795288,
+              0.5632495632275005
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5416867301370808,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.4993455237945345,
+              0.5471669779028755
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5239364396995241,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6256728918835782,
+              0.6688407435546226
+            ],
+            "finite_replicates": 2000,
+            "point": 0.64560476765434,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.6263277366179497,
+              0.6710805148471355
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6463498029071925,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.629847751366581,
+              0.6735252491312703
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6489035611409695,
+            "support_qualified": true
+          }
+        }
+      },
+      "support": {
+        "active_evidence_rows": 9390,
+        "anchor_components": 1451,
+        "anchor_support_pass": true,
+        "anchors": 1477,
+        "eligible_quartet_candidates": 45605,
+        "negative_labelled": 7005,
+        "participating_components": 1729,
+        "participating_proteins": 1766,
+        "positive": 7008,
+        "quartet_components": 890,
+        "retrieval_anchor_components": 170,
+        "retrieval_anchors": 170,
+        "retrieval_candidate_size_quantiles": [
+          29.0,
+          44.25,
+          57.0,
+          80.75,
+          362.0
+        ],
+        "retrieval_support_pass": true,
+        "rows": 14013,
+        "selected_quartets": 2000,
+        "swap_support_pass": true
+      }
+    },
+    "assessment_new_rows": {
+      "additive_cancellation_checked": true,
+      "contrasts": {
+        "ndcg@1": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              -0.03597773954749244,
+              0.1582376691401134
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0629139072847682,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.1385135135135135,
+              0.34494005170262076
+            ],
+            "finite_replicates": 2000,
+            "point": 0.24172185430463577,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.002203442625170882,
+              0.21364724946939712
+            ],
+            "finite_replicates": 2000,
+            "point": 0.10816777041942616,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.040543287189628685,
+              0.06748466257668706
+            ],
+            "finite_replicates": 2000,
+            "point": 0.013245033112582738,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.027215543751747305,
+              0.0808823529411764
+            ],
+            "finite_replicates": 2000,
+            "point": 0.026490066225165587,
+            "support_qualified": true
+          }
+        },
+        "ndcg@10": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.02783690897046539,
+              0.11459670008492974
+            ],
+            "finite_replicates": 2000,
+            "point": 0.07137335021365909,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.11553465901783952,
+              0.20865469185598762
+            ],
+            "finite_replicates": 2000,
+            "point": 0.16299694811300236,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.09449935279911968,
+              0.17849516763834944
+            ],
+            "finite_replicates": 2000,
+            "point": 0.13588548958034907,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.005098095209070857,
+              0.014397354713918184
+            ],
+            "finite_replicates": 2000,
+            "point": 0.004678211801006915,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.013762678009884542,
+              0.005283880841202781
+            ],
+            "finite_replicates": 2000,
+            "point": -0.004052743184342011,
+            "support_qualified": true
+          }
+        },
+        "ndcg@5": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.014225167242232179,
+              0.12344440180506017
+            ],
+            "finite_replicates": 2000,
+            "point": 0.06927545064319063,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.13245740793323266,
+              0.250347664656089
+            ],
+            "finite_replicates": 2000,
+            "point": 0.19225005091953662,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.0988842728638279,
+              0.20704061673759824
+            ],
+            "finite_replicates": 2000,
+            "point": 0.15251950026641836,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.004167546019532031,
+              0.03297781296490307
+            ],
+            "finite_replicates": 2000,
+            "point": 0.014182104621532798,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.020037823652997562,
+              0.019207816159107247
+            ],
+            "finite_replicates": 2000,
+            "point": 2.939078151509289e-05,
+            "support_qualified": true
+          }
+        },
+        "recall@1": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              -0.0030680643522460055,
+              0.006223802866327306
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0015843255919990792,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.0032847496300023524,
+              0.01234446666040829
+            ],
+            "finite_replicates": 2000,
+            "point": 0.007668427410688464,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              -0.0018377352282024026,
+              0.007593211213581879
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0029263340024090097,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.0027568401798071353,
+              0.0027830908312153515
+            ],
+            "finite_replicates": 2000,
+            "point": 2.2221725605852533e-05,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.002338291398331557,
+              0.002963478076264717
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0003740303964970132,
+            "support_qualified": true
+          }
+        },
+        "recall@10": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.009103746627547678,
+              0.04192979677127113
+            ],
+            "finite_replicates": 2000,
+            "point": 0.02601775399573436,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.030826765213465744,
+              0.06367350215279854
+            ],
+            "finite_replicates": 2000,
+            "point": 0.04726820802315265,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.030976837774496578,
+              0.06261800865852014
+            ],
+            "finite_replicates": 2000,
+            "point": 0.047084900735677476,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.004187190613261055,
+              0.0024503504118831955
+            ],
+            "finite_replicates": 2000,
+            "point": -0.0006966782086458567,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.0066914786848731225,
+              0.00027294163375049177
+            ],
+            "finite_replicates": 2000,
+            "point": -0.0032206455387610855,
+            "support_qualified": true
+          }
+        },
+        "recall@5": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.0025067299744908674,
+              0.025396960681839647
+            ],
+            "finite_replicates": 2000,
+            "point": 0.013803220091660434,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.01973274878933262,
+              0.0437058664365543
+            ],
+            "finite_replicates": 2000,
+            "point": 0.03179240557169824,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.01892584362529376,
+              0.040578561796132305
+            ],
+            "finite_replicates": 2000,
+            "point": 0.02941218400193804,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.0021203224339137123,
+              0.005889866533171174
+            ],
+            "finite_replicates": 2000,
+            "point": 0.001657829074582784,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.006165647350964469,
+              0.0017999843592743845
+            ],
+            "finite_replicates": 2000,
+            "point": -0.0020608943656605094,
+            "support_qualified": true
+          }
+        },
+        "swap_preference": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.015754109436154937,
+              0.25063093533890135
+            ],
+            "finite_replicates": 2000,
+            "point": 0.132,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.04599905498281791,
+              0.2708516132122925
+            ],
+            "finite_replicates": 2000,
+            "point": 0.15550000000000008,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.11509336502351951,
+              0.3537273807780412
+            ],
+            "finite_replicates": 2000,
+            "point": 0.23575000000000002,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.023174055685708832,
+              0.030709881240849297
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0025000000000000577,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.03221260595336618,
+              0.029766371471974005
+            ],
+            "finite_replicates": 2000,
+            "point": -0.0014999999999999458,
+            "support_qualified": true
+          }
+        },
+        "within_anchor": {
+          "vx_minus_aac_cosine": {
+            "ci95": [
+              0.05989942003399129,
+              0.11889408847842103
+            ],
+            "finite_replicates": 2000,
+            "point": 0.08515228758524263,
+            "support_qualified": true
+          },
+          "vx_minus_kmer3_cosine": {
+            "ci95": [
+              0.08101389759357634,
+              0.14018503206465507
+            ],
+            "finite_replicates": 2000,
+            "point": 0.10608459319454877,
+            "support_qualified": true
+          },
+          "vx_minus_length_ratio": {
+            "ci95": [
+              0.09739462201847154,
+              0.1586134605082819
+            ],
+            "finite_replicates": 2000,
+            "point": 0.12665195632089798,
+            "support_qualified": true
+          },
+          "vx_minus_native": {
+            "ci95": [
+              -0.0026125790857353228,
+              0.009952831392320666
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0030222116452760517,
+            "support_qualified": true
+          },
+          "vx_minus_quality": {
+            "ci95": [
+              -0.003583784502529136,
+              0.009242385496316034
+            ],
+            "finite_replicates": 2000,
+            "point": 0.0024908922557940194,
+            "support_qualified": true
+          }
+        }
+      },
+      "counts_sha256": "16fde6fa774ddd172c87a0e7551ffa1dcfcded05cc2a291171612bb5418efcfc",
+      "metrics": {
+        "ndcg@1": {
+          "aac_cosine": {
+            "ci95": [
+              0.6024599542334096,
+              0.7462786069651741
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6754966887417219,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.4154857507618812,
+              0.5792693439865433
+            ],
+            "finite_replicates": 2000,
+            "point": 0.4966887417218543,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.5535692075337598,
+              0.709560139239745
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6302428256070639,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6521626686656672,
+              0.7953233092410944
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7251655629139073,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.6413774362818591,
+              0.7843250876509543
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7119205298013245,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.6679903409090909,
+              0.8064590342370868
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7384105960264901,
+            "support_qualified": true
+          }
+        },
+        "ndcg@10": {
+          "aac_cosine": {
+            "ci95": [
+              0.5758542715564363,
+              0.6416993183172136
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6092307514120255,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.4853851387215701,
+              0.5515284346898602
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5176071535126823,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.5135882124669616,
+              0.5779437375426756
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5447186120453356,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6403525450267938,
+              0.7129595934105077
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6759258898246777,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.6488057956242826,
+              0.7220224854922429
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6846568448100266,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.6437013621602198,
+              0.7178747165011599
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6806041016256846,
+            "support_qualified": true
+          }
+        },
+        "ndcg@5": {
+          "aac_cosine": {
+            "ci95": [
+              0.596943980825577,
+              0.6780661141096826
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6376534862417657,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.47012620396526855,
+              0.5602144381745066
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5146788859654197,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.5136692955926501,
+              0.5969735951240657
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5544094366185379,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6506642319172977,
+              0.7355228598609878
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6927468322634235,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.6644014901375694,
+              0.7496764841310961
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7068995461034412,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.6637856124792662,
+              0.7499334374073625
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7069289368849563,
+            "support_qualified": true
+          }
+        },
+        "recall@1": {
+          "aac_cosine": {
+            "ci95": [
+              0.021234044603721705,
+              0.027831004169014843
+            ],
+            "finite_replicates": 2000,
+            "point": 0.024452518170015994,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.014791782048511677,
+              0.022058586200720598
+            ],
+            "finite_replicates": 2000,
+            "point": 0.01836841635132661,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.019825947318646155,
+              0.026494323468693036
+            ],
+            "finite_replicates": 2000,
+            "point": 0.023110509759606063,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.022504095622025773,
+              0.029467399184824807
+            ],
+            "finite_replicates": 2000,
+            "point": 0.02601462203640922,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.022130024231620634,
+              0.029276955579227704
+            ],
+            "finite_replicates": 2000,
+            "point": 0.02566281336551806,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.022639789534821382,
+              0.029416977273807175
+            ],
+            "finite_replicates": 2000,
+            "point": 0.026036843762015073,
+            "support_qualified": true
+          }
+        },
+        "recall@10": {
+          "aac_cosine": {
+            "ci95": [
+              0.19594160068539698,
+              0.2278873444805719
+            ],
+            "finite_replicates": 2000,
+            "point": 0.2114888099355702,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.17503559494214846,
+              0.20648085779548206
+            ],
+            "finite_replicates": 2000,
+            "point": 0.1902383559081519,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.17624098647608377,
+              0.20430459992508318
+            ],
+            "finite_replicates": 2000,
+            "point": 0.1904216631956271,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.22014585240877915,
+              0.257155095536471
+            ],
+            "finite_replicates": 2000,
+            "point": 0.23820324213995042,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.22287660038735074,
+              0.25983173883747857
+            ],
+            "finite_replicates": 2000,
+            "point": 0.24072720947006565,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.21954561705353998,
+              0.2559944779019845
+            ],
+            "finite_replicates": 2000,
+            "point": 0.23750656393130457,
+            "support_qualified": true
+          }
+        },
+        "recall@5": {
+          "aac_cosine": {
+            "ci95": [
+              0.10283086781111696,
+              0.12178662892337985
+            ],
+            "finite_replicates": 2000,
+            "point": 0.11208918973099857,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.08381738155851584,
+              0.10520678105716558
+            ],
+            "finite_replicates": 2000,
+            "point": 0.09410000425096077,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.08769640105570436,
+              0.1053255190003003
+            ],
+            "finite_replicates": 2000,
+            "point": 0.09648022582072097,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.11271820519200308,
+              0.13576416672990266
+            ],
+            "finite_replicates": 2000,
+            "point": 0.12423458074807622,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.115843677789047,
+              0.14008885698034368
+            ],
+            "finite_replicates": 2000,
+            "point": 0.12795330418831952,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.11504221361091971,
+              0.13686735835830827
+            ],
+            "finite_replicates": 2000,
+            "point": 0.125892409822659,
+            "support_qualified": true
+          }
+        },
+        "swap_preference": {
+          "aac_cosine": {
+            "ci95": [
+              0.5247492270763078,
+              0.7054946511391962
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6145,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.49359509234828497,
+              0.6795268647281921
+            ],
+            "finite_replicates": 2000,
+            "point": 0.591,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.4162914004198237,
+              0.6030487899095854
+            ],
+            "finite_replicates": 2000,
+            "point": 0.51075,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6550719384227437,
+              0.8255513432783764
+            ],
+            "finite_replicates": 2000,
+            "point": 0.744,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.659631887159921,
+              0.8316184707399186
+            ],
+            "finite_replicates": 2000,
+            "point": 0.748,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.6578759328012262,
+              0.8294813306778193
+            ],
+            "finite_replicates": 2000,
+            "point": 0.7465,
+            "support_qualified": true
+          }
+        },
+        "within_anchor": {
+          "aac_cosine": {
+            "ci95": [
+              0.5373450717370511,
+              0.5838205347735597
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5624489418089158,
+            "support_qualified": true
+          },
+          "kmer3_cosine": {
+            "ci95": [
+              0.5176111447341745,
+              0.5623783603744913
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5415166361996097,
+            "support_qualified": true
+          },
+          "length_ratio": {
+            "ci95": [
+              0.500218877916822,
+              0.5441943306870681
+            ],
+            "finite_replicates": 2000,
+            "point": 0.5209492730732604,
+            "support_qualified": true
+          },
+          "native": {
+            "ci95": [
+              0.6234773203865001,
+              0.6690842458350638
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6445790177488824,
+            "support_qualified": true
+          },
+          "quality": {
+            "ci95": [
+              0.6243893073611443,
+              0.6705118061702371
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6451103371383644,
+            "support_qualified": true
+          },
+          "vx": {
+            "ci95": [
+              0.6271127750451162,
+              0.6723608132790234
+            ],
+            "finite_replicates": 2000,
+            "point": 0.6476012293941584,
+            "support_qualified": true
+          }
+        }
+      },
+      "support": {
+        "active_evidence_rows": 8731,
+        "anchor_components": 1419,
+        "anchor_support_pass": true,
+        "anchors": 1445,
+        "eligible_quartet_candidates": 34401,
+        "negative_labelled": 6511,
+        "participating_components": 1709,
+        "participating_proteins": 1746,
+        "positive": 6544,
+        "quartet_components": 903,
+        "retrieval_anchor_components": 151,
+        "retrieval_anchors": 151,
+        "retrieval_candidate_size_quantiles": [
+          30.0,
+          45.5,
+          57.0,
+          76.0,
+          332.0
+        ],
+        "retrieval_support_pass": true,
+        "rows": 13055,
+        "selected_quartets": 2000,
+        "swap_support_pass": true
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "at_utc": "2026-10-11T20:18:55.072944+00:00",
+  "checks": [
+    "exhaustive_tie_permutation_0",
+    "exhaustive_tie_permutation_1",
+    "exhaustive_tie_permutation_2",
+    "weighted_concordance_bruteforce",
+    "both_existing_alternative_matchings",
+    "quartet_shared_component_once_and_zero_mass",
+    "within_anchor_shared_component_bruteforce",
+    "bootstrap_count_census_and_determinism",
+    "query_orientation_invariance",
+    "duplicate_candidate_fail_closed"
+  ],
+  "passed": true,
+  "source": "synthetic fixtures only; no biological scores or outcomes"
+}

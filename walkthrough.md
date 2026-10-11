@@ -2,7 +2,9 @@
 
 Status: **11 October 2026**. Links lead to detailed reports.
 
-**Names:** V1–V6 are retraining/data proposals. Vx, Vx-v2, Vy, Vz, Vx-v3, Vx-v4 and Vx-v5 are MSA pilots. V7 tests pretrained contact-head features. STRING V11/V12.5 are database versions, not additional iPIN model versions.
+The [final research report](FINAL_RESEARCH_REPORT.md) brings the evidence together and explains the recommendation to close the current round of incremental model development.
+
+**Names:** V1–V6 are retraining/data proposals. Vx, Vx-v2, Vy, Vz, Vx-v3, Vx-v4 and Vx-v5 are MSA pilots. V7 tests pretrained contact-head features. V8 evaluates frozen scores for partner discrimination and audits external-assay feasibility. STRING V11/V12.5 are database versions, not additional iPIN model versions.
 
 **Scores:** AP means average precision, not accuracy; higher is better. Compare scores only within the same evaluation set: historical TEST and pilot DEV scores are not directly comparable.
 
@@ -48,6 +50,12 @@ The [full Vx-128 TEST benchmark](benchmark-vx/results/REPORT.md) **completed and
 [V7 v1](pilot-v7-v1/README.md) implements the [V7 proposal](improvment-proposal-v7.md): apply the frozen layer-15 Cβ contact head before compression, then fit six compact contact-map features to test improvement beyond native + Vx. It reused the original 4,000 TRAIN / 4,000 VAL pairs with shuffled, map-coordinate, boundary and quality/length controls. All new fitting and calibration used TRAIN only; **no TEST access**. The protocol was frozen before the Vx TEST results.
 
 **Completed and independently verified** on 11 October in allocation **3665593**: about **8 hours**, **8.44 GPU-hours including preparation**, all **8,000 records and 8,906 contact maps** checked. On the original 958-pair assessment, AP was **native 0.640930 / native + contacts 0.641509 / native + Vx 0.664361 / native + Vx + contacts 0.664466**. Contacts added **+0.000105 AP over Vx**, 95% protein interval **[−0.000627, +0.001011]**, below the preset +0.005 target; pairing and spatial controls showed no convincing separation. **No demonstrated useful gain from these six contact summaries; no-go/inconclusive.** See [results](pilot-v7-v1/results/REPORT.md).
+
+**V8: partner diagnostics and external-assay feasibility**
+
+[V8](benchmark-v8/results/REPORT.md) **completed and passed verification** on 11 October. It reused frozen full Vx/native/quality VAL scores: no new fitting, encoder predictions or TEST access. On 13,055 assessment rows, Vx − native was **+0.0030 within-anchor concordance** (95% interval **[−0.0026, +0.0100]**) and **+0.0025 partner-swap preference [−0.0232, +0.0307]**; Recall@10 changed by **−0.0007**. No demonstrated incremental partner-ranking benefit; the fixed research screen was **no-go/inconclusive**.
+
+The external Y2H panel retained **40 positives** after current TRAIN/VAL pair exclusions and conservative exclusion of every historical TEST protein. Only **38** satisfied Vx's length limit, below the preset **40 usable-positive floor** even with perfect MSA availability. **External inference was not run.** This is a panel-feasibility outcome, not evidence that Vx failed externally; the modest completed Bernett AP gain remains valid within its stated limits.
 
 **Supporting versioned benchmarks and audits**
 

@@ -1,0 +1,19 @@
+{
+  "all_component_assignments_replayed": true,
+  "at_utc": "2026-10-11T20:23:12.431463+00:00",
+  "cached_test_sequence_hash_list_reused": true,
+  "controls": "A-Z amino-acid counts and ordered 3-mer counts, L2 cosine; min/max length ratio; no fitting",
+  "fusion_max_errors": {
+    "quality": 0.0,
+    "true": 0.0
+  },
+  "native_fallback_exact": true,
+  "new_encoder_calls": 0,
+  "new_models_fitted": 0,
+  "sequence_hashes_verified": 7997,
+  "source_freezes_verified": true,
+  "test_files_opened": false,
+  "train_rows": 163192,
+  "val_rows": 59260,
+  "val_sha256": "69bb087006bc17aa171dadc1a8353d44e8f814872bcc327003b43456d9206e8e"
+}

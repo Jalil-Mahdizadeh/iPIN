@@ -1,0 +1,23 @@
+{
+  "at_utc": "2026-10-11T20:23:36.867439+00:00",
+  "external_failures": [
+    "even_all_length_eligible_positives_below_40_MSA_support_floor"
+  ],
+  "external_status": "no_go_insufficient_panel_support",
+  "further_external_audit_required": false,
+  "new_training_authorized": false,
+  "partner_screen": {
+    "checks": {
+      "swap_above_aac_cosine": true,
+      "swap_above_kmer3_cosine": true,
+      "swap_preference_above_native": false,
+      "swap_preference_above_quality": false,
+      "swap_preference_practical_gain": false,
+      "within_anchor_above_native": false,
+      "within_anchor_above_quality": false,
+      "within_anchor_practical_gain": false
+    },
+    "status": "no_go_or_inconclusive"
+  },
+  "test_accessed": false
+}

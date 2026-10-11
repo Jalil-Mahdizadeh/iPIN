@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-10-11T20:23:34.775691+00:00",
+  "checks": [
+    "all_native_vx_quality_logits_byte_value_identical",
+    "assessment_new_rows:independent_graph_enumeration_all_quartets_and_caps",
+    "assessment_new_rows:all_anchor_points_and_12_full_component_draws_bruteforce",
+    "assessment_new_rows:all_retrieval_points_individual_rank_oracle",
+    "assessment_new_rows:all_swap_credits_and_12_component_draws",
+    "assessment_new_rows:all_2000_draw_intervals_and_paired_differences_replayed",
+    "assessment_all:independent_graph_enumeration_all_quartets_and_caps",
+    "assessment_all:all_anchor_points_and_12_full_component_draws_bruteforce",
+    "assessment_all:all_retrieval_points_individual_rank_oracle",
+    "assessment_all:all_swap_credits_and_12_component_draws",
+    "assessment_all:all_2000_draw_intervals_and_paired_differences_replayed",
+    "32_sequence_control_pairs_independent_string_counters",
+    "every_external_pair_exposure_and_all_attrition_counts_independently_rebuilt",
+    "fixed_external_gate_replayed_without_relaxation",
+    "partner_research_conjunction_independently_replayed"
+  ],
+  "maximum_sampled_bootstrap_oracle_error": 1.1102230246251565e-16,
+  "passed": true,
+  "scope": "All point metrics, quartet selection, reported intervals and external exposure counts; 12 raw bootstrap replicates per view independently rebuilt.",
+  "test_accessed": false
+}

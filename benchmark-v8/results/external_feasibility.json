@@ -1,0 +1,96 @@
+{
+  "MSA_eligibility_not_yet_established": true,
+  "at_utc": "2026-10-11T20:23:13.353694+00:00",
+  "cache_support_is_only_a_known_input_inventory": true,
+  "component_and_MSA_audit_skipped_due_to_earlier_floor": true,
+  "component_floor_not_yet_evaluated": true,
+  "exact_pair_identity": "unordered SHA256 of full sequences",
+  "exposures_in_historical_primary": {
+    "test_hash_any_endpoint": {
+      "assay_nondetection": 625,
+      "pairs": 654,
+      "positive": 29
+    },
+    "test_hash_both_endpoints": {
+      "assay_nondetection": 123,
+      "pairs": 131,
+      "positive": 8
+    },
+    "train_any_endpoint": {
+      "assay_nondetection": 721,
+      "pairs": 756,
+      "positive": 35
+    },
+    "train_both_endpoints": {
+      "assay_nondetection": 145,
+      "pairs": 154,
+      "positive": 9
+    },
+    "train_pair": {
+      "assay_nondetection": 97,
+      "pairs": 105,
+      "positive": 8
+    },
+    "val_any_endpoint": {
+      "assay_nondetection": 655,
+      "pairs": 680,
+      "positive": 25
+    },
+    "val_both_endpoints": {
+      "assay_nondetection": 112,
+      "pairs": 112,
+      "positive": 0
+    },
+    "val_pair": {
+      "assay_nondetection": 65,
+      "pairs": 65,
+      "positive": 0
+    }
+  },
+  "external_model_predictions_computed": false,
+  "external_truth_read_for_feasibility_only": true,
+  "failures": [
+    "even_all_length_eligible_positives_below_40_MSA_support_floor"
+  ],
+  "homology_to_current_training_not_yet_audited": true,
+  "inference_authorized_by_gate": false,
+  "interpretation": "Panel-support failure is not evidence against Vx or a negative experimental result.",
+  "native_train_exclusion": "conservative all raw TRAIN rows, covering the cleaned native subset",
+  "source_replayed": true,
+  "status": "no_go_insufficient_panel_support",
+  "test_accessed": false,
+  "test_exclusion": "any endpoint in pre-existing 3022 TEST sequence hashes; no TEST files opened",
+  "uncached_external_sequences_may_exist_in_archive": true,
+  "views": {
+    "current_train_val_pair_disjoint": {
+      "assay_nondetection": 1701,
+      "pairs": 1770,
+      "positive": 69
+    },
+    "eligible_final_source": {
+      "assay_nondetection": 2298,
+      "pairs": 2674,
+      "positive": 376
+    },
+    "historical_primary": {
+      "assay_nondetection": 1863,
+      "pairs": 1940,
+      "positive": 77
+    },
+    "primary": {
+      "assay_nondetection": 1076,
+      "pairs": 1116,
+      "positive": 40
+    },
+    "primary_both_cached_and_length_eligible": {
+      "assay_nondetection": 233,
+      "pairs": 240,
+      "positive": 7
+    },
+    "primary_length_eligible": {
+      "assay_nondetection": 986,
+      "pairs": 1024,
+      "positive": 38
+    }
+  }
+}

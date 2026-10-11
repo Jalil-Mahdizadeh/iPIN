@@ -1,0 +1,124 @@
+{
+  "allocation": {
+    "cpu_threads": 8,
+    "host": "n447",
+    "job": "3683336",
+    "new_gpu_requests": 0
+  },
+  "at_utc": "2026-10-11T20:23:10.498626+00:00",
+  "completed_before_new_diagnostic_scores_or_external_support_counts": true,
+  "image": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/msa-pairformer/msa-pairformer-arm64-v1.sif",
+    "sha256": "123e43b91faf0daf1ac61b1d218c6290a7069c7230264aa294f1233ad6d67d75"
+  },
+  "implementation": {
+    "README.md": "ab7fa3957eea9a06256acc98ed70466d1889bc5e6af2079371719efde4d87989",
+    "config.json": "b83face038ba43e5ef0e19f9f6740d134f9feebd098a9d85a5272a15df903a75",
+    "qualification/metrics.json": "8848076f65c1598b6a18070f1d59cd44ca48708e1f1e7952248948cbc8390678",
+    "scripts/evaluate.py": "5cee55142e126a219684d43d3281a01695173a0eccc297950780d8c6be1e795c",
+    "scripts/external_audit.py": "f2a1b5959d8d26389b337dcaec3415e5ce192b74baca13e1e3242ffa8be2c7c0",
+    "scripts/io_v8.py": "4d902405a41ace9aa6c5349530f79864fefeacb818f957f5229da9147c019737",
+    "scripts/metrics.py": "3485f9a46196fabf41aea8bc9600ee8541958e20bf71f151f7021fd52fed31be",
+    "scripts/prepare.py": "c464c530c149f0a81544c754500c6e64e8d1917f15b59204ea1f15a9339a7417",
+    "scripts/qualify.py": "87744279f1f87fb64258060f95912bbdb9e68474e3b13a4f1454c0b7240d80cb",
+    "scripts/report.py": "5e841dafd1a3051e74a1e636f703d9cad276845516faf99a3a7ad8d2f038b184",
+    "scripts/run.py": "e2032defa6802dac92bd5742a94e41b036eb64100f5613d9ca453894533878b5",
+    "scripts/verify.py": "3e38c7b51f574c36a876a78f93349ab5928620b149f19c34c1bd7291b93043e0"
+  },
+  "inputs": {
+    "assay_candidates.npz": {
+      "bytes": 53498,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/independent_human_binary_v1/data/candidates.npz",
+      "sha256": "7353b3e2f038aa0fb846d7950d4e2382935273c8f615c92da20b801c736b86f3"
+    },
+    "assay_exposure.npz": {
+      "bytes": 21526,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/independent_human_binary_v1/private/exposure.npz",
+      "sha256": "4405d4df0b3d792beb884d12876235d40d1949b2d6a12456264b5fca7233bfd8"
+    },
+    "assay_sequences.json": {
+      "bytes": 11555177,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/independent_human_binary_v1/data/sequences.json",
+      "sha256": "1a9716111fd22c294c6d89afcdeb27888c37edf0cb41a573a889e9ca3b2d2776"
+    },
+    "assay_source_freeze.json": {
+      "bytes": 12177,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/independent_human_binary_v1/SOURCE_FREEZE.json",
+      "sha256": "c0a4ff327d825caa2fce22bce2c55a01611964eb8f813ec499c8b3c645b3b40d"
+    },
+    "assay_truth.npz": {
+      "bytes": 25167,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN-OpenPPI/experiments/independent_human_binary_v1/private/truth.npz",
+      "sha256": "c92321b9be466eaf1db19788c05c003b171e963ef25fca257f1e52f29a6260af"
+    },
+    "pilot_freeze.json": {
+      "bytes": 4173,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/pilot-vx-series/pilot-vx/provenance/freeze.json",
+      "project_relative": "pilot-vx-series/pilot-vx/provenance/freeze.json",
+      "sha256": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086"
+    },
+    "test_sequence_hashes.json": {
+      "bytes": 211543,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/pilot-vx-series/pilot-vx/data/test-sequence-hashes.json",
+      "project_relative": "pilot-vx-series/pilot-vx/data/test-sequence-hashes.json",
+      "sha256": "a2f8225ec2811b8bbfa72abbfa1b6f7063c758e39306c286488768acdce17d95"
+    },
+    "vx_catalog.json": {
+      "bytes": 4247598,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/data/monomer-catalog.json",
+      "project_relative": "retrain-vx/data/monomer-catalog.json",
+      "sha256": "b84e4f9a2b572f9bda00eb8f75a3e24ddea326b9f28431e363c00f9748d577d7"
+    },
+    "vx_complete.json": {
+      "bytes": 968,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/results/COMPLETE.json",
+      "project_relative": "retrain-vx/results/COMPLETE.json",
+      "sha256": "68aa3d7e72d6cd21d982bd558f09912e916b07b11ed6ce3f5ec290f36d64fb7a"
+    },
+    "vx_evidence.npz": {
+      "bytes": 759930,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/results/val_evidence.npz",
+      "project_relative": "retrain-vx/results/val_evidence.npz",
+      "sha256": "08355d9853bcdee855ae5ca65af767b0eb01435ffacfb05a33c1b888e6b6305c"
+    },
+    "vx_freeze.json": {
+      "bytes": 3009900,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/provenance/freeze.json",
+      "project_relative": "retrain-vx/provenance/freeze.json",
+      "sha256": "7e8f986a27c5a63605f26de4ca2b2ba05047d42cb70771c3824f76d0a255c14b"
+    },
+    "vx_groups.json": {
+      "bytes": 165187,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/data/dev-groups.json",
+      "project_relative": "retrain-vx/data/dev-groups.json",
+      "sha256": "fe0f98be91e711d0136be7db62ab95ac7631ff1e427ae8e69e90fec46a34afd5"
+    },
+    "vx_heads.json": {
+      "bytes": 205908,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/results/heads.json",
+      "project_relative": "retrain-vx/results/heads.json",
+      "sha256": "d020bedffe40254f54ef1d1b2655f9513a1d34bd324e90d9bed97d164624c703"
+    },
+    "vx_pairs.json": {
+      "bytes": 45724754,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/data/pairs.json",
+      "project_relative": "retrain-vx/data/pairs.json",
+      "sha256": "896b7d418925b64efab91b402268e8df6d46acc7bf2445d987ab4b94bc1170e8"
+    },
+    "vx_predictions.npz": {
+      "bytes": 1160888,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/results/val_predictions.npz",
+      "project_relative": "retrain-vx/results/val_predictions.npz",
+      "sha256": "5a2cedae8f5b7a91b015ae5e647121e0dc461d24dde08d63d5e3e73b6211bb0e"
+    },
+    "vx_proteins.json": {
+      "bytes": 6528458,
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/data/proteins.json",
+      "project_relative": "retrain-vx/data/proteins.json",
+      "sha256": "dde981de94a0c097357b0898a0590d92f22152e9d05cbf308cff2b73d93b5ee8"
+    }
+  },
+  "no_new_model_fits": true,
+  "proposal_sha256": "de0ea58f4756639917c78f21acf9ca0fe7e172513b273ed1423552b5f12f0efb",
+  "test_access": false
+}
