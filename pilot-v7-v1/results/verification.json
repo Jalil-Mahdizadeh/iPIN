@@ -1,0 +1,17 @@
+{
+  "at_utc": "2026-10-11T17:43:26.909042+00:00",
+  "fingerprint": "7cdab3c0d5734d31dfc585ee0eaa4cb509efbaace97e4a3ea8186dd4eeadcfd4",
+  "passed": true,
+  "records": 8000,
+  "maps_checked": 8906,
+  "maximum_feature_reconstruction_error": 0.0,
+  "all_scores_reconstructed": true,
+  "exact_fallback": true,
+  "train_only_fit_and_calibration": true,
+  "all_oof_calibration_grids_reconstructed": true,
+  "primary_interval_independently_verified": true,
+  "test_accessed": false,
+  "seconds": 176.077948214981,
+  "metrics_sha256": "5355bc4e87a361c1d4489bc13cda9d6c140a174a1d179188c82ce7d26638de40",
+  "heads_sha256": "bac4e3a2524720860ec90672cb87207ba90c89aecc6a3f52c33df116b85d9ad2"
+}

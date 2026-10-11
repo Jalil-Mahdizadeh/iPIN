@@ -1,0 +1,22 @@
+{
+  "at_utc": "2026-10-11T17:40:27.796537+00:00",
+  "fingerprint": "7cdab3c0d5734d31dfc585ee0eaa4cb509efbaace97e4a3ea8186dd4eeadcfd4",
+  "status": "no_go_or_inconclusive",
+  "checks": {
+    "meaningful_gain": false,
+    "positive_primary_interval": false,
+    "separation_from_quality": false,
+    "auroc_noninferiority": true,
+    "boundary_exclusion_retains_positive_point": true,
+    "top_group_removals_retain_positive_point": true
+  },
+  "primary_point": 0.00010454696908068772,
+  "primary_interval": {
+    "replicates": 1000,
+    "low": -0.0006269247085461338,
+    "high": 0.0010106270515599888
+  },
+  "contact_head_training_membership_resolved": false,
+  "production_authorized": false,
+  "test_accessed": false
+}

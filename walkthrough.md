@@ -45,7 +45,9 @@ The [full Vx-128 TEST benchmark](benchmark-vx/results/REPORT.md) **completed and
 
 **V7: pretrained contact-head pilot**
 
-[V7 v1](pilot-v7-v1/README.md) implements the [V7 proposal](improvment-proposal-v7.md): apply the frozen layer-15 Cβ contact head before compression, then fit six compact contact-map features to test improvement beyond native + Vx. It reuses the original 4,000 TRAIN / 4,000 VAL pairs and includes shuffled, map-coordinate, boundary and quality/length controls. All new fitting and calibration use TRAIN only; **no TEST access**. **Contact extraction is running; no result yet.** The protocol was frozen before the Vx TEST results. See [status](pilot-v7-v1/STATUS.md).
+[V7 v1](pilot-v7-v1/README.md) implements the [V7 proposal](improvment-proposal-v7.md): apply the frozen layer-15 Cβ contact head before compression, then fit six compact contact-map features to test improvement beyond native + Vx. It reused the original 4,000 TRAIN / 4,000 VAL pairs with shuffled, map-coordinate, boundary and quality/length controls. All new fitting and calibration used TRAIN only; **no TEST access**. The protocol was frozen before the Vx TEST results.
+
+**Completed and independently verified** on 11 October in allocation **3665593**: about **8 hours**, **8.44 GPU-hours including preparation**, all **8,000 records and 8,906 contact maps** checked. On the original 958-pair assessment, AP was **native 0.640930 / native + contacts 0.641509 / native + Vx 0.664361 / native + Vx + contacts 0.664466**. Contacts added **+0.000105 AP over Vx**, 95% protein interval **[−0.000627, +0.001011]**, below the preset +0.005 target; pairing and spatial controls showed no convincing separation. **No demonstrated useful gain from these six contact summaries; no-go/inconclusive.** See [results](pilot-v7-v1/results/REPORT.md).
 
 **Supporting versioned benchmarks and audits**
 

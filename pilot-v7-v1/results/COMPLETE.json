@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-11T17:43:27.259718+00:00",
+  "fingerprint": "7cdab3c0d5734d31dfc585ee0eaa4cb509efbaace97e4a3ea8186dd4eeadcfd4",
+  "job_id": "3665593",
+  "seconds": 29049.69044170901,
+  "active_allocation_interval_gpu_hours": 8.4414610301786,
+  "separate_gpu_hour_ceiling": 14,
+  "owned_bytes": 4659429823,
+  "test_accessed": false,
+  "production_started": false
+}
