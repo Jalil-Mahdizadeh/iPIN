@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-10T16:56:26.097652+00:00",
+  "request": "Move Vx pilots under pilot-vx-series; initiate full original TRAIN/VAL in retrain-vx, no shuffle, using two complete four-GPU nodes.",
+  "encoders_frozen": true,
+  "new_head_arms": [
+    "true",
+    "quality"
+  ],
+  "test_authorized": false,
+  "existing_interactive_job": "3615626",
+  "preflight_start_unix": 1791651000
+}

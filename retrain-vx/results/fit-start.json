@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-10-11T07:02:25.624461+00:00",
+  "fingerprint": "7e8f986a27c5a63605f26de4ca2b2ba05047d42cb70771c3824f76d0a255c14b",
+  "all_rows_verified": 222452,
+  "train_fit_rows": 74576,
+  "train_fit_classes": [
+    36992,
+    37584
+  ],
+  "arms": [
+    "true",
+    "quality"
+  ],
+  "test_accessed": false,
+  "native_train_logits_used": false
+}

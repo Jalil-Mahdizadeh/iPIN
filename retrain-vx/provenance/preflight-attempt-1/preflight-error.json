@@ -1,0 +1,4 @@
+{
+  "at_utc": "2026-10-10T17:18:50.076109+00:00",
+  "traceback": "Traceback (most recent call last):\n  File \"/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/scripts/preflight.py\", line 46, in <module>\n    main()\n  File \"/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/scripts/preflight.py\", line 35, in main\n    run_command(gpu + [str(ROOT / 'scripts/qualify.py')], deadline, ROOT / 'logs/qualification.log')\n  File \"/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/scripts/runtime.py\", line 80, in run_command\n    raise RuntimeError(f'Command failed ({p.returncode}); inspect {log_path}')\nRuntimeError: Command failed (1); inspect /nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/logs/qualification.log\n"
+}

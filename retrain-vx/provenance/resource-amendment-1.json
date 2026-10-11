@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-10T17:20:46.695142+00:00",
+  "reason": "First label-free GPU qualification reached all reproduction checks, then stopped because its conservative 25.97h estimate exceeded the initial 24h resource request. No outcome head was fitted and no batch submitted.",
+  "old_wall_hours": 24,
+  "new_wall_hours": 28,
+  "prior_conservative_estimate_floor_hours": 25.98,
+  "nodes": 2,
+  "gpus": 8,
+  "scientific_config_unchanged": true,
+  "old_file_sha256": {
+    "config.json": "c089f4709b0dbec53bacfd17ce7a5b5362fc58bc0b1dff930dba995a98279e1d",
+    "README.md": "e5edae1ce74eed67badae856786510a04d895ce74366001aa3d2e7ed8277a31a"
+  },
+  "new_file_sha256": {
+    "config.json": "6bbd193a90cc8d71c400182de179c7bfbadf687b974205366c22bbd1c18e80bf",
+    "README.md": "7e93423d0fb28f06d6cbbb549cee2a61d8a7a112ed0cd764293f58e86ad145ac"
+  },
+  "manual_preflight_retry": true,
+  "no_outcomes_inspected": true,
+  "failed_attempt_directory": "retrain-vx/provenance/preflight-attempt-1"
+}

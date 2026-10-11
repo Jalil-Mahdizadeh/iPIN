@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-10-11T07:03:51.110691+00:00",
+  "verified": true,
+  "fingerprint": "7e8f986a27c5a63605f26de4ca2b2ba05047d42cb70771c3824f76d0a255c14b",
+  "rows": 222452,
+  "result_hashes": {
+    "heads.json": "d020bedffe40254f54ef1d1b2655f9513a1d34bd324e90d9bed97d164624c703",
+    "metrics.json": "1d40448a74dcf8fe58da27d3a20df775a7fa3b3af0d899409f257494284167ae",
+    "decision.json": "5a031b07650ebafddf9d254b6f1abc3c8db9b22a85ca82f7e3104c27eece0333",
+    "verification.json": "c0f2cb95fb6b528c57be1a4d45be02785da334014b316d7f406fe9ab54b1b7ea",
+    "val_predictions.npz": "5a2cedae8f5b7a91b015ae5e647121e0dc461d24dde08d63d5e3e73b6211bb0e",
+    "val_evidence.npz": "08355d9853bcdee855ae5ca65af767b0eb01435ffacfb05a33c1b888e6b6305c",
+    "REPORT.md": "3b45325c04d5b5acf325e77ddf4254768f0091624ae1c74a5d5268fbee50a3fb",
+    "resources.json": "15dfaa32d4fefb993a20ed7380ed7aee1d3d90e57e53d519783711d641e4b510"
+  },
+  "test_accessed": false,
+  "shuffled_arm": false
+}

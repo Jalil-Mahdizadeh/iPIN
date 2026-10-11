@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-10-11T06:32:32.225770+00:00",
+  "rank": 1,
+  "world": 8,
+  "rows": 27815,
+  "counts": {
+    "encoded": 13613,
+    "reused_original": 990,
+    "fallback": 13212
+  },
+  "seconds": 46310.33481975799,
+  "fingerprint": "7e8f986a27c5a63605f26de4ca2b2ba05047d42cb70771c3824f76d0a255c14b",
+  "host": "n90",
+  "gpu_uuid": "d93400df-9c31-83a8-185b-c5c9418e54b9",
+  "job_id": "3642615",
+  "test_accessed": false,
+  "shuffle_encoded": false
+}

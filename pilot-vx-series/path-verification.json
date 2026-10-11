@@ -1,0 +1,11 @@
+{
+  "all_frozen_paths_resolve": true,
+  "manifest_file_counts": {
+    "pilot-vx": 35,
+    "pilot-vx-v2": 59,
+    "pilot-vx-v3": 4534,
+    "pilot-vx-v4": 4548,
+    "pilot-vx-v5": 4528
+  },
+  "file_contents_changed": false
+}

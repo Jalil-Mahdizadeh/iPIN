@@ -1,0 +1,10 @@
+{
+  "rank": 2,
+  "world": 8,
+  "local_rank": 2,
+  "host": "n90",
+  "gpu_uuid": "ce992373-7a5e-0e77-a5ef-bfbdbd1469ae",
+  "gpu_name": "NVIDIA GH200 120GB",
+  "job_id": "3642615",
+  "fingerprint": "7e8f986a27c5a63605f26de4ca2b2ba05047d42cb70771c3824f76d0a255c14b"
+}

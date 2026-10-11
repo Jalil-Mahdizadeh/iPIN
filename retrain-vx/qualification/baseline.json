@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-10T17:02:32.459696+00:00",
+  "passed": true,
+  "rows": 59260,
+  "reused": 59258,
+  "new_original_rows": [
+    23930,
+    25304
+  ],
+  "checks": [
+    {
+      "length": 450,
+      "pairs": 8,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "length": 650,
+      "pairs": 8,
+      "maximum_logit_difference": 0.0
+    },
+    {
+      "length": 1024,
+      "pairs": 8,
+      "maximum_logit_difference": 0.0
+    }
+  ],
+  "baseline_sha256": "a0020d2b9318472542fb53d5c8a9c9d058abc326da08f866b94a8b282740b205",
+  "code_sha256": "d7961c0266ef3ffb45bd2223aacc5e44adca0555b25cd4ea2fb70cc5bb046002",
+  "test_accessed": false,
+  "train_logits_generated": false,
+  "seconds": 19.827238828998816
+}

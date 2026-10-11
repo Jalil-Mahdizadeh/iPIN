@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-11T06:55:55.907928+00:00",
+  "rank": 4,
+  "processed": 27792,
+  "committed": 27776,
+  "total": 27806,
+  "current_length": 1077,
+  "elapsed_seconds": 47122.79158002899,
+  "fingerprint": "7e8f986a27c5a63605f26de4ca2b2ba05047d42cb70771c3824f76d0a255c14b",
+  "host": "n102"
+}

@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-10T17:40:15.589424+00:00",
+  "started_unix": 1791653422.999514,
+  "job_id": "3642615",
+  "nodes": "n[90,102]",
+  "gpus": 8,
+  "cpus": 576,
+  "fingerprint": "7e8f986a27c5a63605f26de4ca2b2ba05047d42cb70771c3824f76d0a255c14b",
+  "wall_hours_ceiling": 28,
+  "pid": 974716
+}

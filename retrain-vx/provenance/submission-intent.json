@@ -1,0 +1,17 @@
+{
+  "at_utc": "2026-10-10T17:27:25.959814+00:00",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/logs/trainval-%j.log",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx/slurm/trainval.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/retrain-vx"
+  ],
+  "fingerprint": "7e8f986a27c5a63605f26de4ca2b2ba05047d42cb70771c3824f76d0a255c14b",
+  "nodes": 2,
+  "gpus_per_node": 4,
+  "allocated_cpu_cores": 576,
+  "no_shuffle": true,
+  "test_authorized": false,
+  "scheduler_preview": "sbatch: Job 3642614 to start at 2026-10-10T22:18:03 a using 576 processors on nodes n[60,70] in partition gpu\n"
+}

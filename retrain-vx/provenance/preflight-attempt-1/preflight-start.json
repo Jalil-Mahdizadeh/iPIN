@@ -1,0 +1,31 @@
+{
+  "at_utc": "2026-10-10T17:16:09.891201+00:00",
+  "pid": 2562410,
+  "code_sha256": {
+    "README.md": "e5edae1ce74eed67badae856786510a04d895ce74366001aa3d2e7ed8277a31a",
+    "config.json": "c089f4709b0dbec53bacfd17ce7a5b5362fc58bc0b1dff930dba995a98279e1d",
+    "scripts/analyze.py": "fd6c2cfaec7921b271167ffc88960936f826a272b6513f20e3424c750c6cdfdf",
+    "scripts/baseline_missing.py": "d7961c0266ef3ffb45bd2223aacc5e44adca0555b25cd4ea2fb70cc5bb046002",
+    "scripts/chunks.py": "561f3a3963b35b3bc96dd5b18d2093eb94173c59512463db64ad499f36f4973e",
+    "scripts/collect.py": "984efc89591be26575ad9b6ac7127a1248c409fb506c23a82b82dad5c1a5ca2f",
+    "scripts/freeze.py": "f9ed15bd20e2ac24c5f534828fa8c598b18a42280adb5fb8adde3e4e7f6aa931",
+    "scripts/guarded_encoder.py": "b7ed0e1ecf74dbc54feb1f627ad499e9b3b88be6005d857a17330935eb846e4d",
+    "scripts/heads.py": "7414babb9dc2637cfd192175da8ffaa081b4a2569e87f30ead1ca13d3653ba72",
+    "scripts/inputs.py": "8bedf95b066264e88c7d6f577f4fe5a8f923a81ae43d447ef195639deb56fd3e",
+    "scripts/launch.py": "4b02f820a2fd0b6aeb1eb60f6ba24b52e8b7b5023c622c43722ae9d2a937384f",
+    "scripts/preflight.py": "b9e140629393de926b987c49460d754024fe4950ecffcbf9a288b072989f848e",
+    "scripts/prepare.py": "0b6745859322bcb18490eef9e96b6e2cc6c0cc4a7e212851dba47a6d40c25fc4",
+    "scripts/qualify.py": "5c6891bd208cb42069fa7d765b8cb800916babf1478a2efbc6a08c307cead5f5",
+    "scripts/run.py": "952e04e670caba4f220105dcd76a817110cad21d625b3c94d2c9ad5f2044305c",
+    "scripts/runtime.py": "e6262cfaa70558fc4f61d80ac4077fe75b2974ff17327c120c0092bd600ef709",
+    "scripts/shared.py": "70e534da6599348d2b864d552e7000f23d7c79704d0d83f51bbd91f395948e9f",
+    "scripts/statistics_rx.py": "3c75f7afd2066d0f06e7b522b019b39d911c65ecad9e149c72e306ba49886397",
+    "scripts/status.py": "2a33597d549ae9f36e98d078a45dcfb7eda62fe534c94b083a550638472db8e0",
+    "scripts/verify.py": "116dc2fff48b6b42e8585efce94e28963df33a4c55490630b564e26898af8f92",
+    "scripts/worker.py": "b6fdfe28a149abc66e09b763b241f1d50798e8748bd72f20a8131d0ecdac9ff4",
+    "tests/test_contracts.py": "925e9a5f084352c1728e96ca302d6bf08031f75adbeccb0b810c57408fad138d",
+    "tests/test_pipeline.py": "5418f466aff78a05d9a2389c97a5026400b4cb962e79fe866f48d1bc3f4ad8a0",
+    "tests/test_runtime.py": "279b130c7b1380ec3265c19bfa1721052616edd99a440c801bb453dbaf73d793",
+    "slurm/trainval.sbatch": "70bb669d2da87f86025f91c977ca0f93524b935ffdc446463dc665cca3a9eb35"
+  }
+}
