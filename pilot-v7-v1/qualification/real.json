@@ -1,0 +1,107 @@
+{
+  "at_utc": "2026-10-11T09:37:29.684658+00:00",
+  "passed": true,
+  "labels_used": false,
+  "test_accessed": false,
+  "cases": [
+    {
+      "uid": "train-160795",
+      "length": 512,
+      "depth": 128,
+      "seconds": 2.2272286640072707,
+      "old_v2_seconds": 1.6233278979780152,
+      "global_errors": {
+        "true": 0.0,
+        "shuffled": 0.0
+      },
+      "minimum_quality": 0.6131578947368421
+    },
+    {
+      "uid": "train-012468",
+      "length": 1024,
+      "depth": 128,
+      "seconds": 6.584268545004306,
+      "old_v2_seconds": 6.832502559991553,
+      "global_errors": {
+        "true": 0.0,
+        "shuffled": 0.0
+      },
+      "minimum_quality": 0.8354430379746836
+    },
+    {
+      "uid": "train-147906",
+      "length": 1536,
+      "depth": 128,
+      "seconds": 14.061719939025352,
+      "old_v2_seconds": 14.093359292950481,
+      "global_errors": {
+        "true": 0.0,
+        "shuffled": 0.0
+      },
+      "minimum_quality": 0.5005107252298263
+    },
+    {
+      "uid": "train-111648",
+      "length": 897,
+      "depth": 128,
+      "seconds": 4.988653045002138,
+      "old_v2_seconds": 5.432128584012389,
+      "global_errors": {
+        "true": 0.0,
+        "shuffled": 0.0
+      },
+      "minimum_quality": 0.5118110236220472
+    }
+  ],
+  "length_estimates": [
+    {
+      "length_upper": 512,
+      "pairs": 463,
+      "maximum_measured_ratio": 1.3720140378179062,
+      "prior_seconds": 596.6003125058487,
+      "projected_seconds": 818.5440037245742
+    },
+    {
+      "length_upper": 1024,
+      "pairs": 2218,
+      "maximum_measured_ratio": 0.963668653936435,
+      "prior_seconds": 8997.60298237484,
+      "projected_seconds": 8670.707954679614
+    },
+    {
+      "length_upper": 1536,
+      "pairs": 1772,
+      "maximum_measured_ratio": 0.9977550168652157,
+      "prior_seconds": 18783.702768047457,
+      "projected_seconds": 18741.53367212439
+    }
+  ],
+  "native_estimated_seconds": 299.2069946359952,
+  "conservative_total_seconds": 44594.988937746864,
+  "fits_remaining_budget": true,
+  "official_api_exact": true,
+  "chain_swap_exact": true,
+  "global_features_exact": true,
+  "peak_allocated_gpu_bytes": 26220759552,
+  "seconds": 33.73548993901932,
+  "code_sha256": {
+    "pilot-v7-v1/scripts/analyze.py": "46dd692cf805ddb0bfe8c8b5397f4fa508b48d3b81c2d8175dfd77ba476f1071",
+    "pilot-v7-v1/scripts/audit_exposure.py": "985380525c4b4d91e30dc726da7ea10863433634bc0faccb3ec0201d2f8b21e6",
+    "pilot-v7-v1/scripts/contact_encoder.py": "46f05db51fc7d229124308ab97176c0ca9b095c9b8f2cfb19665406c6811f099",
+    "pilot-v7-v1/scripts/contact_features.py": "9e9ad5382dfe641b4133d9114b2cc5480f3ac9f4dda11ab31b7613b8f88ab4dc",
+    "pilot-v7-v1/scripts/freeze.py": "2bf6c5ce602e3031b4369d7d42a76b2911b49ad68c588a57b22090f76eea7cff",
+    "pilot-v7-v1/scripts/heads.py": "7b556294227c4208d6124d8aeae5eff73576a34214d7af6008ebe5e0fd5fbc83",
+    "pilot-v7-v1/scripts/inputs.py": "4b2c912f87035a1531bde1f23eb847ae4790705ec845ceb7f62512256ad41094",
+    "pilot-v7-v1/scripts/launch.py": "9c6c23c8804ec150629f48d43f4300b0c117969ca3891e51d10d1cc6c323ac69",
+    "pilot-v7-v1/scripts/native.py": "96dd5cc19c03b49a3d0d26e18b492221a56bb94d0dc3809418381a84c404c8a5",
+    "pilot-v7-v1/scripts/prepare.py": "34b4898ea2e6792d28938c3d4689fadc8c7bb4af4650479db2c2e5e3d8f615e6",
+    "pilot-v7-v1/scripts/qualify.py": "637b397d8430a9f9d4ffdd87f84bef90c9aa395849853eedc80a830b8db66d29",
+    "pilot-v7-v1/scripts/run.py": "2bf1f8593c9d48dd5eea2c40e13ffcc14ca859926e47468514650f0e89a8008b",
+    "pilot-v7-v1/scripts/statistics_v7.py": "b1c7788c71c0644b23d13a5999d8de892424accc3aae8cff1f0d2e7f6c8f4817",
+    "pilot-v7-v1/scripts/study.py": "869a7237adf99f72048b667076e82fa33fdf56434403ff652ca67f289524e73c",
+    "pilot-v7-v1/scripts/verify.py": "7a09d8be9256b9abf05c5a8838cdb016eb12ae57dde7ffa06369c596f36423ea",
+    "pilot-v7-v1/scripts/worker.py": "5a382ade9af98d07e1e21a8a8aa0a381fe51eb763e14c6a92d54cd0d4c0443a6",
+    "pilot-v7-v1/tests/test_core.py": "36dd851eadb8c350c0b5788c37ae01fc0061e38e0fc22e06d12103a0497a7d3d"
+  },
+  "input_manifest_sha256": "b9f1a365911d9a85fc96f0d9d45b5cf301124f9d1c23ddb438068dabf5a405f6"
+}

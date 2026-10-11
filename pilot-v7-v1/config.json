@@ -1,0 +1,17 @@
+{
+  "study": "V7 v1 frozen C-beta contact readout on original Bernett pilot",
+  "seed": 20261011,
+  "source_seed": 20261007,
+  "source_fingerprint": "5ca9f1d0dc7a8b5513f07ab037925d50d9c54d34c4709047b46b62508eadc086",
+  "image": "images/msa-pairformer/msa-pairformer-arm64-v1.sif",
+  "image_sha256": "123e43b91faf0daf1ac61b1d218c6290a7069c7230264aa294f1233ad6d67d75",
+  "encoder": {"layer": 15, "head": "contact_head", "source_commit": "875363570df1ae484cf725aba382790444223005", "weights_revision": "7563e77a87536b5572f91683c39073ef348639a4", "precision": "FP32 weights, BF16 autocast; FP32 probability-map cache", "global_feature_atol": 0.0},
+  "features": {"top_k": 20, "threshold": 0.5, "window": 5, "minimum_window_valid_fraction": 0.8, "boundary_width": 5, "dimensions": 6, "empty_summary": "six zeros, explicit diagnostic; never change source eligibility", "names": ["top20_mean", "fraction_ge_0_5", "minimum_residue_participation", "maximum_residue_participation", "mean_normalized_marginal_entropy", "maximum_supported_5x5_mean"]},
+  "arms": ["true", "shuffled", "coordinate_true", "coordinate_shuffled", "boundary_true", "boundary_shuffled"],
+  "fitting": {"C": 0.1, "max_iter": 1000, "folds": 5, "fold_policy": "StratifiedGroupKFold on eligible TRAIN; group identical unordered query-sequence pairs", "fusion_alpha_grid": [0, 0.1, 0.25, 0.5, 1], "quality_pca": 32, "minimum_class_count": 100, "minimum_fold_class_count": 50, "calibration_population": "eligible TRAIN out-of-fold predictions only; native TRAIN logits remain in-sample for the pretrained native model"},
+  "evaluation": {"primary": "combined_true_minus_vx", "meaningful_ap_gain": 0.005, "maximum_auroc_decline": 0.005, "bootstrap_replicates": 1000, "minimum_subgroup_per_class": 10, "family_annotation": "reuse Vx-v2 VAL-to-TRAIN family witnesses; incomplete family annotation"},
+  "budgets": {"allocated_gpu_hours_ceiling": 14, "cpu_core_hours_ceiling": 112, "additional_bytes_ceiling": 30000000000, "cpu_threads": 8, "analysis_reserve_seconds": 1800, "shutdown_reserve_seconds": 300, "timing_safety_factor": 1.5, "world_size": 1},
+  "test_access": false,
+  "automatic_retry": false,
+  "automatic_production_continuation": false
+}

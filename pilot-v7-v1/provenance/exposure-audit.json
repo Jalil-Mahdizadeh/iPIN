@@ -1,0 +1,29 @@
+{
+  "at_utc": "2026-10-11T09:28:42.288249+00:00",
+  "source_commit": "875363570df1ae484cf725aba382790444223005",
+  "weights_revision": "7563e77a87536b5572f91683c39073ef348639a4",
+  "head": "contact.bin:contact_head",
+  "sources_inspected": [
+    {
+      "url": "https://api.github.com/repos/yoakiyama/MSA_Pairformer/git/trees/875363570df1ae484cf725aba382790444223005?recursive=1",
+      "sha256": "30eb9c859bbec7068546bc958291affec52f59800bb46ad45032d8801a6c6e30",
+      "bytes": 21038
+    },
+    {
+      "url": "https://raw.githubusercontent.com/yoakiyama/MSA_Pairformer/875363570df1ae484cf725aba382790444223005/MSA_Pairformer/regression.py",
+      "sha256": "49723a6de2ec3a1b078b418a58699aa6fa3f0f807eae6ba1b37f2a8817cf836c",
+      "bytes": 3907
+    },
+    {
+      "url": "https://raw.githubusercontent.com/yoakiyama/MSA_Pairformer/875363570df1ae484cf725aba382790444223005/Cell_2026_analysis_notebooks/Figure2/Figure2_fit_ESMC_contact_heads.ipynb",
+      "sha256": "d39a0db7f775c8df539e2646df86b0261cbb0fb9b1d34e2d75fbf40a22284a2a",
+      "bytes": 63741
+    }
+  ],
+  "membership_resolved": false,
+  "overlap_assessable": false,
+  "finding": "No verified training-membership list for the released MSA Pairformer C-beta head was identified in these artifacts. The ESMC notebook references an absent MSA_Transformer_training_set.txt, but that is not proof of the MSA Pairformer head membership.",
+  "existing_review_sha256": "2ce9257fc1d35b42dff3deb208717c6ce60e4790a31c5f184149a64afbfb391d",
+  "claim_limit": "Exploratory Bernett utility only; no exposure-free generalization claim. No inference that missing membership means zero overlap.",
+  "test_accessed": false
+}

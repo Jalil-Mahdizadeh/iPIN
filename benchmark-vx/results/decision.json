@@ -1,0 +1,14 @@
+{
+  "status": "no_go_or_inconclusive",
+  "primary_ap_change": 0.00830156223765588,
+  "native_effect_size_and_interval_pass": false,
+  "beyond_quality_supported": true,
+  "auroc_noninferiority": true,
+  "pairing_specific_claim": false,
+  "test_authorized": true,
+  "test_accessed": true,
+  "automatic_followup": false,
+  "at_utc": "2026-10-11T14:20:56.758244+00:00",
+  "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430",
+  "metrics_sha256": "9b4e3b1b5915db69d45810e08ce026298ed18bf749a6cb4e61507745500ff1c6"
+}

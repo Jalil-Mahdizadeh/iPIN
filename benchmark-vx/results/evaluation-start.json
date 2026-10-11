@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-10-11T14:20:54.216295+00:00",
+  "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430",
+  "complete_rows": 52048,
+  "heads_sha256": "d020bedffe40254f54ef1d1b2655f9513a1d34bd324e90d9bed97d164624c703",
+  "alphas": {
+    "true": 1,
+    "quality": 1
+  },
+  "heads_fitted": false,
+  "calibration_performed": false,
+  "test_authorized": true
+}

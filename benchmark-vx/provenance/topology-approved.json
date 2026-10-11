@@ -1,0 +1,47 @@
+{
+  "at_utc": "2026-10-11T08:37:12.222081+00:00",
+  "job_id": "3667033",
+  "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430",
+  "workers": [
+    {
+      "rank": 0,
+      "world": 4,
+      "local_rank": 0,
+      "host": "n413",
+      "gpu_uuid": "05847d60-9e48-b6bd-7da2-a040e379527f",
+      "gpu_name": "NVIDIA GH200 120GB",
+      "job_id": "3667033",
+      "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430"
+    },
+    {
+      "rank": 1,
+      "world": 4,
+      "local_rank": 1,
+      "host": "n413",
+      "gpu_uuid": "4f38e4cd-e430-07ef-9193-61c1743ebfe9",
+      "gpu_name": "NVIDIA GH200 120GB",
+      "job_id": "3667033",
+      "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430"
+    },
+    {
+      "rank": 2,
+      "world": 4,
+      "local_rank": 2,
+      "host": "n413",
+      "gpu_uuid": "d928d8c0-2b5e-9550-6e55-4cc10c74f4b1",
+      "gpu_name": "NVIDIA GH200 120GB",
+      "job_id": "3667033",
+      "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430"
+    },
+    {
+      "rank": 3,
+      "world": 4,
+      "local_rank": 3,
+      "host": "n413",
+      "gpu_uuid": "6912f6fb-7b76-33e2-f2a6-0eb774136086",
+      "gpu_name": "NVIDIA GH200 120GB",
+      "job_id": "3667033",
+      "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430"
+    }
+  ]
+}

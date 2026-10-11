@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-10-11T09:29:09.183215+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "length": 450,
+      "pairs": 8,
+      "seconds": 1.2415586380229797,
+      "maximum_logit_error": 0.0
+    },
+    {
+      "length": 650,
+      "pairs": 8,
+      "seconds": 0.08967700699577108,
+      "maximum_logit_error": 0.0
+    },
+    {
+      "length": 1024,
+      "pairs": 8,
+      "seconds": 0.14427412298391573,
+      "maximum_logit_error": 0.0
+    }
+  ],
+  "seconds": 15.976430337002967,
+  "code_sha256": "96dd5cc19c03b49a3d0d26e18b492221a56bb94d0dc3809418381a84c404c8a5",
+  "test_accessed": false
+}

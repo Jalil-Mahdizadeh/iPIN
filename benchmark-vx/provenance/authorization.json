@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-10-11T08:08:40.348176+00:00",
+  "request": "i want to conduct benchmarking on test. create a new folder 'benchmark-vx' and do it on full 4x GPU of one node.",
+  "test_authorized": true,
+  "supersedes_prior_test_not_authorized": true,
+  "prior_trainval_decision": "no_go_or_inconclusive",
+  "explicit_user_continuation": true,
+  "refit_authorized": false,
+  "shuffle_authorized": false,
+  "full_node_gpus": 4,
+  "source_commit": "6d0266b1ac0a386051fd7649845323f79645b7bd",
+  "preflight_start_unix": 1791706120.351339,
+  "preflight_allocation": "3665593",
+  "preflight_gpus": 1,
+  "preflight_cpus": 72
+}

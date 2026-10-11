@@ -1,0 +1,22 @@
+{
+  "at_utc": "2026-10-11T08:35:22.407015+00:00",
+  "job_id": "3667033",
+  "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430",
+  "nodes": 1,
+  "gpus": 4,
+  "cpus": 288,
+  "wall_hours": 24,
+  "preflight_seconds": 1602.0556881427765,
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--chdir=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN",
+    "--output=/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-vx/logs/benchmark-%j.log",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-vx/slurm/benchmark.sbatch",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/benchmark-vx"
+  ],
+  "test_authorized": true,
+  "heads_fitted": false,
+  "calibration_performed": false,
+  "shuffled_arm": false
+}

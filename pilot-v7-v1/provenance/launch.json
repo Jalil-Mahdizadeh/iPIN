@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-10-11T09:39:17.211352+00:00",
+  "fingerprint": "7cdab3c0d5734d31dfc585ee0eaa4cb509efbaace97e4a3ea8186dd4eeadcfd4",
+  "job_id": "3665593",
+  "command": [
+    "apptainer",
+    "exec",
+    "--nv",
+    "--env",
+    "OPENBLAS_NUM_THREADS=1",
+    "--env",
+    "OMP_NUM_THREADS=8",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/images/msa-pairformer/msa-pairformer-arm64-v1.sif",
+    "python",
+    "-B",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/iPIN/pilot-v7-v1/scripts/run.py"
+  ],
+  "new_scheduler_submission": false,
+  "conservative_seconds": 44594.988937746864,
+  "allocation_remaining_seconds": 80047,
+  "separate_gpu_hour_ceiling": 14,
+  "test_accessed": false,
+  "controller_pid": 3502450
+}

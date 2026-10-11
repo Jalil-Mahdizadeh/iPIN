@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-11T14:22:19.790645+00:00",
+  "verified": true,
+  "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430",
+  "rows": 52048,
+  "heads_sha256": "d020bedffe40254f54ef1d1b2655f9513a1d34bd324e90d9bed97d164624c703",
+  "result_hashes": {
+    "metrics.json": "9b4e3b1b5915db69d45810e08ce026298ed18bf749a6cb4e61507745500ff1c6",
+    "decision.json": "9329135e7b7801aaace0f9b3ead862b17485cbc73de69625b7a546f10594e4bb",
+    "verification.json": "814dc93bdc394383b0df85fb940797297edd67e6e15b17d0773326705e698a40",
+    "test_predictions.npz": "30bd0566eecfd58e43a197ba58a283a9b9d4014f623cc586ee5ce4e4c0d7ff6c",
+    "test_evidence.npz": "361d7ffb694dcc0f71d06cd9502d2811017a5cde154cb93ecf31619d29b24c61",
+    "REPORT.md": "bc531d0af22d4216eb2dc7a5d6b61bea4e7ebadd035bb4831ccd176d9f05bb59",
+    "resources.json": "9fc45bb13282288b1e56f15d79b9e9f35653bac11a89755189282305258ecc3c"
+  },
+  "test_authorized": true,
+  "test_accessed": true,
+  "heads_fitted": false,
+  "calibration_performed": false,
+  "shuffled_arm": false
+}

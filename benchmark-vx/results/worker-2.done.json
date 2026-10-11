@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-11T14:15:05.403298+00:00",
+  "rank": 2,
+  "world": 4,
+  "local_rank": 2,
+  "host": "n413",
+  "gpu_uuid": "d928d8c0-2b5e-9550-6e55-4cc10c74f4b1",
+  "gpu_name": "NVIDIA GH200 120GB",
+  "job_id": "3667033",
+  "fingerprint": "359e8673346371d6e7981fa5bbd90054ad0e319e2968c261f64178312d444430",
+  "rows": 13012,
+  "counts": {
+    "encoded": 8080,
+    "fallback": 4932
+  },
+  "seconds": 20270.725641722995,
+  "test_authorized": true,
+  "shuffle_encoded": false,
+  "heads_fitted": false
+}

@@ -2,7 +2,7 @@
 
 Status: **11 October 2026**. Links lead to detailed reports.
 
-**Names:** V1–V6 are retraining/data proposals. Vx, Vx-v2, Vy, Vz, Vx-v3, Vx-v4 and Vx-v5 are MSA pilots. STRING V11/V12.5 are database versions, not additional iPIN model versions.
+**Names:** V1–V6 are retraining/data proposals. Vx, Vx-v2, Vy, Vz, Vx-v3, Vx-v4 and Vx-v5 are MSA pilots. V7 tests pretrained contact-head features. STRING V11/V12.5 are database versions, not additional iPIN model versions.
 
 **Scores:** AP means average precision, not accuracy; higher is better. Compare scores only within the same evaluation set: historical TEST and pilot DEV scores are not directly comparable.
 
@@ -39,7 +39,13 @@ The Vx pilot folders are collected in [pilot-vx-series](pilot-vx-series/README.m
 
 On the primary **13,055 previously unevaluated assessment pairs**, AP was **native 0.6480 / true128 0.6550 / quality 0.6519**. True − native: **+0.0070**, 95% protein interval **[+0.0024, +0.0122]**; true − quality: **+0.0031 [−0.0013, +0.0077]**. The modest native gain missed the preset +0.010 AP target, and improvement beyond quality/profile was uncertain: **no-go/inconclusive under the frozen criteria**, despite successful execution. Full VAL AP was native **0.6422**, true **0.6505**, quality **0.6449**; this is descriptive because it includes calibration. The primary rows can share proteins/families with the pilots, so the result remains exploratory.
 
+The [full Vx-128 TEST benchmark](benchmark-vx/results/REPORT.md) **completed and passed independent verification** on 11 October: job **3667033**, one full four-GPU node, **5 h 47 min**, all **52,048 original TEST pairs**. AP was **native 0.69032 / true128 0.69862 / quality 0.69260**; native/true AUROC was **0.69947 / 0.70379**. True − native: **+0.00830**, 95% protein interval **[+0.00519, +0.01138]**; true − quality: **+0.00602 [+0.00201, +0.00994]**. This supports a modest gain beyond the quality/profile control, but the observed gain missed the preset +0.010 AP target: **no-go/inconclusive under the frozen practical criteria**. MSA evidence applied to **32,340 pairs (62.1%)**; the rest retained exact native scores. TRAIN-fitted heads and VAL-selected weights remained fixed; **no TEST fitting, calibration or shuffled arm**. The benchmark was explicitly authorized after the TRAIN/VAL no-go. This historically evaluated TEST set is not newly blind, and the intervals omit research-selection uncertainty.
+
 “True” uses the original shared-accession homolog matching; it does not verify biological interaction between every homolog pair. “Shuffled” rearranges intact B homolog rows within taxonomic groups, preserving each chain's family information. “Quality/profile” uses alignment statistics without learned Pairformer features. Similar true/shuffled scores do **not** establish statistical equivalence.
+
+**V7: pretrained contact-head pilot**
+
+[V7 v1](pilot-v7-v1/README.md) implements the [V7 proposal](improvment-proposal-v7.md): apply the frozen layer-15 Cβ contact head before compression, then fit six compact contact-map features to test improvement beyond native + Vx. It reuses the original 4,000 TRAIN / 4,000 VAL pairs and includes shuffled, map-coordinate, boundary and quality/length controls. All new fitting and calibration use TRAIN only; **no TEST access**. **Contact extraction is running; no result yet.** The protocol was frozen before the Vx TEST results. See [status](pilot-v7-v1/STATUS.md).
 
 **Supporting versioned benchmarks and audits**
 
